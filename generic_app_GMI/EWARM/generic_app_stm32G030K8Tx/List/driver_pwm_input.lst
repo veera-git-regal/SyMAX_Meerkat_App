@@ -1,0 +1,840 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:39
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_pwm_input.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWC1CF.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_pwm_input.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\driver_pwm_input.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\driver_pwm_input.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_pwm_input.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    driver_timed_input.c 
+      4            * @author  Logan Schaufler
+      5            * @brief   Digital Input timed for use as PWM Input
+      6            * @details    
+      7            ********************************************************************************************************************************
+      8            */
+      9          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     10          #include "driver_pwm_input.h"
+     11          #include "main.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_SetEXTISource(uint32_t, uint32_t)
+   \                     LL_EXTI_SetEXTISource: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x2203             MOVS     R2,#+3
+   \        0x4   0x....             LDR      R3,??DataTable2  ;; 0x40021860
+   \        0x6   0x0014             MOVS     R4,R2
+   \        0x8   0x400C             ANDS     R4,R4,R1
+   \        0xA   0x2504             MOVS     R5,#+4
+   \        0xC   0x436C             MULS     R4,R5,R4
+   \        0xE   0x591C             LDR      R4,[R3, R4]
+   \       0x10   0x2507             MOVS     R5,#+7
+   \       0x12   0x000E             MOVS     R6,R1
+   \       0x14   0x0C36             LSRS     R6,R6,#+16
+   \       0x16   0x40B5             LSLS     R5,R5,R6
+   \       0x18   0x43AC             BICS     R4,R4,R5
+   \       0x1A   0x000D             MOVS     R5,R1
+   \       0x1C   0x0C2D             LSRS     R5,R5,#+16
+   \       0x1E   0x0006             MOVS     R6,R0
+   \       0x20   0x40AE             LSLS     R6,R6,R5
+   \       0x22   0x4326             ORRS     R6,R6,R4
+   \       0x24   0x400A             ANDS     R2,R2,R1
+   \       0x26   0x2404             MOVS     R4,#+4
+   \       0x28   0x4362             MULS     R2,R4,R2
+   \       0x2A   0x509E             STR      R6,[R3, R2]
+   \       0x2C   0xBC70             POP      {R4-R6}
+   \       0x2E   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_GPIO_SetPinMode(GPIO_TypeDef *, uint32_t, uint32_t)
+   \                     LL_GPIO_SetPinMode: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x6803             LDR      R3,[R0, #+0]
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x434C             MULS     R4,R1,R4
+   \        0x8   0x2503             MOVS     R5,#+3
+   \        0xA   0x436C             MULS     R4,R5,R4
+   \        0xC   0x43A3             BICS     R3,R3,R4
+   \        0xE   0x000C             MOVS     R4,R1
+   \       0x10   0x434C             MULS     R4,R1,R4
+   \       0x12   0x4354             MULS     R4,R2,R4
+   \       0x14   0x431C             ORRS     R4,R4,R3
+   \       0x16   0x6004             STR      R4,[R0, #+0]
+   \       0x18   0xBC30             POP      {R4,R5}
+   \       0x1A   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_GPIO_SetPinPull(GPIO_TypeDef *, uint32_t, uint32_t)
+   \                     LL_GPIO_SetPinPull: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x68C3             LDR      R3,[R0, #+12]
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x434C             MULS     R4,R1,R4
+   \        0x8   0x2503             MOVS     R5,#+3
+   \        0xA   0x436C             MULS     R4,R5,R4
+   \        0xC   0x43A3             BICS     R3,R3,R4
+   \        0xE   0x000C             MOVS     R4,R1
+   \       0x10   0x434C             MULS     R4,R1,R4
+   \       0x12   0x4354             MULS     R4,R2,R4
+   \       0x14   0x431C             ORRS     R4,R4,R3
+   \       0x16   0x60C4             STR      R4,[R0, #+12]
+   \       0x18   0xBC30             POP      {R4,R5}
+   \       0x1A   0x4770             BX       LR               ;; return
+     12          
+     13          /* Content --------------------------------------------------------------------------------------------------------------------*/
+     14          
+     15          /* Private Variables */
+
+   \                                 In section .bss, align 4
+     16          TIM_HandleTypeDef htim1;
+   \                     htim1:
+   \        0x0                      DS8 64
+     17          
+
+   \                                 In section .bss, align 4
+     18          TIM1_Control tim1_Control;
+   \                     tim1_Control:
+   \        0x0                      DS8 8
+     19          
+     20          /* Captured Values (in TIM1 referenced milliseconds from original htim1 starting point) */
+
+   \                                 In section .bss, align 4
+     21          float pwm_input_falling_edge_capture = 0;
+   \                     pwm_input_falling_edge_capture:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     22          float pwm_input_rising_edge_capture = 0;
+   \                     pwm_input_rising_edge_capture:
+   \        0x0                      DS8 4
+     23          
+     24          /* Calculations */
+     25          
+     26          
+     27          /* User defined number of pwm duty cycle and frequency values sampled to be averaged */
+
+   \                                 In section .bss, align 1
+     28          uint8_t TIM1_PWM_Average_Index = 0; //used to calculate pwm duty cycle and frequency average over specified number of samples
+   \                     TIM1_PWM_Average_Index:
+   \        0x0                      DS8 1
+     29          //uint8_t avg_exponent_u8 = 0;
+     30          //float tim1_Result_Sum_f[2] = {0,0};
+     31          //uint64_t tim1_Result_Sum_u16[2] = {0,0};
+     32          //uint8_t TIM1_PWM_averaging_index = 0;
+
+   \                                 In section .bss, align 1
+     33          uint8_t is_rising_edge_triggered = FALSE;
+   \                     is_rising_edge_triggered:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     34          uint8_t is_falling_edge_triggered = FALSE;
+   \                     is_falling_edge_triggered:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 8
+     35          uint64_t pwm_input_falling_edge_capture_sum_u64 = 0;
+   \                     pwm_input_falling_edge_capture_sum_u64:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 8
+     36          uint64_t pwm_input_rising_edge_capture_sum_u64 = 0;
+   \                     pwm_input_rising_edge_capture_sum_u64:
+   \        0x0                      DS8 8
+     37          
+     38          
+     39          //TIM1_Control tim1_Control;
+     40          static void MX_TIM1_Init(void);
+     41          
+     42          /**
+     43            * @brief TIM Initialization Function
+     44            * @param None
+     45            * @retval None
+     46            */
+
+   \                                 In section .text, align 2, keep-with-next
+     47          void PWMInputTimerInit(void)
+     48          {
+   \                     PWMInputTimerInit: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     49            MX_TIM1_Init();
+   \        0x2   0x....'....        BL       MX_TIM1_Init
+     50          }
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+     51          
+     52          /**
+     53            * @brief Init input as a PWM input
+     54            * @param None
+     55            * @retval None
+     56            */
+
+   \                                 In section .text, align 2, keep-with-next
+     57          void PWMInput_GPIO_PwmInput_Init(){
+   \                     PWMInput_GPIO_PwmInput_Init: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+   \        0x2   0x2208             MOVS     R2,#+8
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0x....'....        BL       memset
+     58            
+     59            LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
+     60            
+     61             /**/
+     62            //LL_EXTI_SetEXTISource(LL_EXTI_CONFIG_PORTA, LL_EXTI_CONFIG_LINE8);
+     63            LL_EXTI_SetEXTISource(PWM_IN_EXTI_CONFIG_Port, PWN_IN_EXTI_CONFIG_Line);
+   \        0xC   0x2102             MOVS     R1,#+2
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x....'....        BL       LL_EXTI_SetEXTISource
+     64          
+     65            /**/
+     66            EXTI_InitStruct.Line_0_31 = PWM_IN_EXTI_Line;
+   \       0x14   0x2480             MOVS     R4,#+128
+   \       0x16   0x0064             LSLS     R4,R4,#+1        ;; #+256
+   \       0x18   0x9400             STR      R4,[SP, #+0]
+     67            EXTI_InitStruct.LineCommand = ENABLE;
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x4669             MOV      R1,SP
+   \       0x1E   0x7108             STRB     R0,[R1, #+4]
+     68            EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
+   \       0x20   0x2200             MOVS     R2,#+0
+   \       0x22   0x714A             STRB     R2,[R1, #+5]
+     69            EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_RISING;
+   \       0x24   0x7188             STRB     R0,[R1, #+6]
+     70            LL_EXTI_Init(&EXTI_InitStruct);
+   \       0x26   0x4668             MOV      R0,SP
+   \       0x28   0x....'....        BL       LL_EXTI_Init
+     71          
+     72            /**/
+     73            LL_GPIO_SetPinPull(PWM_IN_GPIO_Port, PWM_IN_Pin, LL_GPIO_PULL_NO);
+   \       0x2C   0x25A0             MOVS     R5,#+160
+   \       0x2E   0x05ED             LSLS     R5,R5,#+23       ;; #+1342177280
+   \       0x30   0x2200             MOVS     R2,#+0
+   \       0x32   0x0021             MOVS     R1,R4
+   \       0x34   0x0028             MOVS     R0,R5
+   \       0x36   0x....'....        BL       LL_GPIO_SetPinPull
+     74          
+     75            /**/
+     76            LL_GPIO_SetPinMode(PWM_IN_GPIO_Port, PWM_IN_Pin, LL_GPIO_MODE_INPUT); 
+   \       0x3A   0x2200             MOVS     R2,#+0
+   \       0x3C   0x0021             MOVS     R1,R4
+   \       0x3E   0x0028             MOVS     R0,R5
+   \       0x40   0x....'....        BL       LL_GPIO_SetPinMode
+     77          }
+   \       0x44   0xBD37             POP      {R0-R2,R4,R5,PC}  ;; return
+     78          
+     79          
+     80          /**
+     81            * @brief Init input as a digital input
+     82            * @param None
+     83            * @retval None
+     84            */
+
+   \                                 In section .text, align 2, keep-with-next
+     85          void PWMInput_GPIO_DigitalInput_Init()
+     86          {
+   \                     PWMInput_GPIO_DigitalInput_Init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+   \        0x4   0x2218             MOVS     R2,#+24
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x....'....        BL       memset
+     87            LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+     88            
+     89            GPIO_InitStruct.Pin = PWM_IN_Pin;
+   \        0xE   0x2080             MOVS     R0,#+128
+   \       0x10   0x0040             LSLS     R0,R0,#+1        ;; #+256
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+     90            GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x9001             STR      R0,[SP, #+4]
+     91            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x18   0x9004             STR      R0,[SP, #+16]
+     92            LL_GPIO_Init(PWM_IN_GPIO_Port, &GPIO_InitStruct);
+   \       0x1A   0x4669             MOV      R1,SP
+   \       0x1C   0x20A0             MOVS     R0,#+160
+   \       0x1E   0x05C0             LSLS     R0,R0,#+23       ;; #+1342177280
+   \       0x20   0x....'....        BL       LL_GPIO_Init
+     93          }
+   \       0x24   0xB007             ADD      SP,SP,#+28
+   \       0x26   0xBD00             POP      {PC}             ;; return
+     94          
+     95          /**
+     96            * @brief TIM1 Initialization Function
+     97            * @param None
+     98            * @retval None
+     99            */
+
+   \                                 In section .text, align 2, keep-with-next
+    100          static void MX_TIM1_Init(void)
+    101          {
+   \                     MX_TIM1_Init: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB099             SUB      SP,SP,#+100
+   \        0x4   0x2214             MOVS     R2,#+20
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0xA807             ADD      R0,SP,#+28
+   \        0xA   0x....'....        BL       memset
+   \        0xE   0x220C             MOVS     R2,#+12
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0xA804             ADD      R0,SP,#+16
+   \       0x14   0x....'....        BL       memset
+   \       0x18   0x2210             MOVS     R2,#+16
+   \       0x1A   0x2100             MOVS     R1,#+0
+   \       0x1C   0x4668             MOV      R0,SP
+   \       0x1E   0x....'....        BL       memset
+   \       0x22   0x2234             MOVS     R2,#+52
+   \       0x24   0x2100             MOVS     R1,#+0
+   \       0x26   0xA80C             ADD      R0,SP,#+48
+   \       0x28   0x....'....        BL       memset
+    102          
+    103            /* USER CODE BEGIN TIM1_Init 0 */
+    104          
+    105            /* USER CODE END TIM1_Init 0 */
+    106          
+    107            TIM_SlaveConfigTypeDef sSlaveConfig = {0};
+    108            TIM_MasterConfigTypeDef sMasterConfig = {0};
+    109            TIM_IC_InitTypeDef sConfigIC = {0};
+    110            TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+    111          
+    112            /* USER CODE BEGIN TIM1_Init 1 */
+    113          
+    114            /* USER CODE END TIM1_Init 1 */
+    115            htim1.Instance = TIM1;
+   \       0x2C   0x....             LDR      R5,??DataTable2_1
+   \       0x2E   0x....             LDR      R0,??DataTable2_2  ;; 0x40012c00
+   \       0x30   0x6028             STR      R0,[R5, #+0]
+    116            htim1.Init.Prescaler = 20; // 20 supports functional pwm input 50hz - 10khz (50Hz max) 
+   \       0x32   0x2014             MOVS     R0,#+20
+   \       0x34   0x6068             STR      R0,[R5, #+4]
+    117            // - 50Hz = Period count of 61100 (overflow at 65536)
+    118            // - 47Hz = Period count of 65011
+    119            htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+   \       0x36   0x2400             MOVS     R4,#+0
+   \       0x38   0x60AC             STR      R4,[R5, #+8]
+    120            htim1.Init.Period = 0xFFFF;
+   \       0x3A   0x....             LDR      R0,??DataTable2_3  ;; 0xffff
+   \       0x3C   0x60E8             STR      R0,[R5, #+12]
+    121            htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+   \       0x3E   0x612C             STR      R4,[R5, #+16]
+    122            htim1.Init.RepetitionCounter = 0;
+   \       0x40   0x616C             STR      R4,[R5, #+20]
+    123            htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+   \       0x42   0x61AC             STR      R4,[R5, #+24]
+    124            if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
+   \       0x44   0x0028             MOVS     R0,R5
+   \       0x46   0x....'....        BL       HAL_TIM_Base_Init
+   \       0x4A   0x2800             CMP      R0,#+0
+   \       0x4C   0xD001             BEQ      ??MX_TIM1_Init_0
+    125            {
+    126              Error_Handler();
+   \       0x4E   0x....'....        BL       Error_Handler
+    127            }
+    128            if (HAL_TIM_IC_Init(&htim1) != HAL_OK)
+   \                     ??MX_TIM1_Init_0: (+1)
+   \       0x52   0x0028             MOVS     R0,R5
+   \       0x54   0x....'....        BL       HAL_TIM_IC_Init
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD001             BEQ      ??MX_TIM1_Init_1
+    129            {
+    130              Error_Handler();
+   \       0x5C   0x....'....        BL       Error_Handler
+    131            }
+    132            sSlaveConfig.SlaveMode = TIM_SLAVEMODE_RESET;
+   \                     ??MX_TIM1_Init_1: (+1)
+   \       0x60   0x2004             MOVS     R0,#+4
+   \       0x62   0x9007             STR      R0,[SP, #+28]
+    133            sSlaveConfig.InputTrigger = TIM_TS_TI1FP1;
+   \       0x64   0x2050             MOVS     R0,#+80
+   \       0x66   0x9008             STR      R0,[SP, #+32]
+    134            sSlaveConfig.TriggerPolarity = TIM_INPUTCHANNELPOLARITY_RISING;
+   \       0x68   0x9409             STR      R4,[SP, #+36]
+    135            sSlaveConfig.TriggerFilter = 0;
+   \       0x6A   0x940B             STR      R4,[SP, #+44]
+    136            if (HAL_TIM_SlaveConfigSynchro(&htim1, &sSlaveConfig) != HAL_OK)
+   \       0x6C   0xA907             ADD      R1,SP,#+28
+   \       0x6E   0x0028             MOVS     R0,R5
+   \       0x70   0x....'....        BL       HAL_TIM_SlaveConfigSynchro
+   \       0x74   0x2800             CMP      R0,#+0
+   \       0x76   0xD001             BEQ      ??MX_TIM1_Init_2
+    137            {
+    138              Error_Handler();
+   \       0x78   0x....'....        BL       Error_Handler
+    139            }
+    140            sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+   \                     ??MX_TIM1_Init_2: (+1)
+   \       0x7C   0x9404             STR      R4,[SP, #+16]
+    141            sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;
+   \       0x7E   0x9405             STR      R4,[SP, #+20]
+    142            sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+   \       0x80   0x9406             STR      R4,[SP, #+24]
+    143            if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+   \       0x82   0xA904             ADD      R1,SP,#+16
+   \       0x84   0x0028             MOVS     R0,R5
+   \       0x86   0x....'....        BL       HAL_TIMEx_MasterConfigSynchronization
+   \       0x8A   0x2800             CMP      R0,#+0
+   \       0x8C   0xD001             BEQ      ??MX_TIM1_Init_3
+    144            {
+    145              Error_Handler();
+   \       0x8E   0x....'....        BL       Error_Handler
+    146            }
+    147            sConfigIC.ICPolarity = TIM_INPUTCHANNELPOLARITY_RISING;
+   \                     ??MX_TIM1_Init_3: (+1)
+   \       0x92   0x9400             STR      R4,[SP, #+0]
+    148            sConfigIC.ICSelection = TIM_ICSELECTION_DIRECTTI;
+   \       0x94   0x2001             MOVS     R0,#+1
+   \       0x96   0x9001             STR      R0,[SP, #+4]
+    149            sConfigIC.ICPrescaler = TIM_ICPSC_DIV1;
+   \       0x98   0x9402             STR      R4,[SP, #+8]
+    150            sConfigIC.ICFilter = 0;
+   \       0x9A   0x9403             STR      R4,[SP, #+12]
+    151            if (HAL_TIM_IC_ConfigChannel(&htim1, &sConfigIC, TIM_CHANNEL_1) != HAL_OK)
+   \       0x9C   0x2200             MOVS     R2,#+0
+   \       0x9E   0x4669             MOV      R1,SP
+   \       0xA0   0x0028             MOVS     R0,R5
+   \       0xA2   0x....'....        BL       HAL_TIM_IC_ConfigChannel
+   \       0xA6   0x2800             CMP      R0,#+0
+   \       0xA8   0xD001             BEQ      ??MX_TIM1_Init_4
+    152            {
+    153              Error_Handler();
+   \       0xAA   0x....'....        BL       Error_Handler
+    154            }
+    155            sConfigIC.ICPolarity = TIM_INPUTCHANNELPOLARITY_FALLING;
+   \                     ??MX_TIM1_Init_4: (+1)
+   \       0xAE   0x2002             MOVS     R0,#+2
+   \       0xB0   0x9000             STR      R0,[SP, #+0]
+    156            sConfigIC.ICSelection = TIM_ICSELECTION_INDIRECTTI;
+   \       0xB2   0x9001             STR      R0,[SP, #+4]
+    157            if (HAL_TIM_IC_ConfigChannel(&htim1, &sConfigIC, TIM_CHANNEL_2) != HAL_OK)
+   \       0xB4   0x2204             MOVS     R2,#+4
+   \       0xB6   0x4669             MOV      R1,SP
+   \       0xB8   0x0028             MOVS     R0,R5
+   \       0xBA   0x....'....        BL       HAL_TIM_IC_ConfigChannel
+   \       0xBE   0x2800             CMP      R0,#+0
+   \       0xC0   0xD001             BEQ      ??MX_TIM1_Init_5
+    158            {
+    159              Error_Handler();
+   \       0xC2   0x....'....        BL       Error_Handler
+    160            }
+    161            sBreakDeadTimeConfig.BreakAFMode = TIM_BREAK_AFMODE_INPUT;
+   \                     ??MX_TIM1_Init_5: (+1)
+   \       0xC6   0x9413             STR      R4,[SP, #+76]
+    162            sBreakDeadTimeConfig.Break2AFMode = TIM_BREAK_AFMODE_INPUT;
+   \       0xC8   0x9417             STR      R4,[SP, #+92]
+    163            if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
+   \       0xCA   0xA90C             ADD      R1,SP,#+48
+   \       0xCC   0x0028             MOVS     R0,R5
+   \       0xCE   0x....'....        BL       HAL_TIMEx_ConfigBreakDeadTime
+   \       0xD2   0x2800             CMP      R0,#+0
+   \       0xD4   0xD001             BEQ      ??MX_TIM1_Init_6
+    164            {
+    165              Error_Handler();
+   \       0xD6   0x....'....        BL       Error_Handler
+    166            }
+    167            /* USER CODE BEGIN TIM1_Init 2 */
+    168          
+    169                /*## Start the Input Capture in interrupt mode ##########################*/
+    170            if (HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_2) != HAL_OK)
+   \                     ??MX_TIM1_Init_6: (+1)
+   \       0xDA   0x2104             MOVS     R1,#+4
+   \       0xDC   0x0028             MOVS     R0,R5
+   \       0xDE   0x....'....        BL       HAL_TIM_IC_Start_IT
+   \       0xE2   0x2800             CMP      R0,#+0
+   \       0xE4   0xD001             BEQ      ??MX_TIM1_Init_7
+    171            {
+    172              /* Starting Error */
+    173              Error_Handler();
+   \       0xE6   0x....'....        BL       Error_Handler
+    174            }
+    175          
+    176            /*## Start the Input Capture in interrupt mode ##########################*/
+    177            if (HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1) != HAL_OK)
+   \                     ??MX_TIM1_Init_7: (+1)
+   \       0xEA   0x2100             MOVS     R1,#+0
+   \       0xEC   0x0028             MOVS     R0,R5
+   \       0xEE   0x....'....        BL       HAL_TIM_IC_Start_IT
+   \       0xF2   0x2800             CMP      R0,#+0
+   \       0xF4   0xD001             BEQ      ??MX_TIM1_Init_8
+    178            {
+    179              /* Starting Error */
+    180              Error_Handler();
+   \       0xF6   0x....'....        BL       Error_Handler
+    181            }
+    182          
+    183            /* USER CODE END TIM1_Init 2 */
+    184          
+    185          }
+   \                     ??MX_TIM1_Init_8: (+1)
+   \       0xFA   0xB019             ADD      SP,SP,#+100
+   \       0xFC   0xBD30             POP      {R4,R5,PC}       ;; return
+    186          
+    187          /*void CalculateSamplingExponentPWMInput()  //Does nothing currently, for future use in optimizing code
+    188          {
+    189            uint8_t result_u8 = PWM_INPUT_AVERAGING_BUF_SIZE;
+    190            do{
+    191              avg_exponent_u8++;
+    192              result_u8 =(uint8_t)(result_u8/2);
+    193            }while(result_u8);
+    194            avg_exponent_u8--;
+    195          }*/
+    196          
+    197          /**
+    198            * @brief  Input Capture callback in non blocking mode; LS All Timer Input captures are handled here via HAL_TIM_ACTIVE_CHANNEL_x 
+    199            * @param  htim : TIM IC handle
+    200            * @retval None
+    201            */
+    202          
+
+   \                                 In section .text, align 2, keep-with-next
+    203          void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
+    204          {
+   \                     HAL_TIM_IC_CaptureCallback: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+    205            // Rising edge triggerred
+    206            if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1)
+   \        0x4   0x9802             LDR      R0,[SP, #+8]
+   \        0x6   0x7F00             LDRB     R0,[R0, #+28]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD16B             BNE      ??HAL_TIM_IC_CaptureCallback_0
+    207            {
+    208              is_rising_edge_triggered = TRUE;
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x....             LDR      R1,??DataTable2_4
+   \       0x10   0x7008             STRB     R0,[R1, #+0]
+    209          
+    210              if (is_falling_edge_triggered)
+   \       0x12   0x....             LDR      R0,??DataTable2_5
+   \       0x14   0x7800             LDRB     R0,[R0, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD064             BEQ      ??HAL_TIM_IC_CaptureCallback_0
+    211              {
+    212                /* Get the Input Capture value */
+    213                if (TIM1_PWM_Average_Index < PWM_INPUT_AVERAGING_BUF_SIZE)
+   \       0x1A   0x....             LDR      R7,??DataTable2_6
+   \       0x1C   0x7838             LDRB     R0,[R7, #+0]
+   \       0x1E   0x2805             CMP      R0,#+5
+   \       0x20   0xDA28             BGE      ??HAL_TIM_IC_CaptureCallback_1
+    214                {
+    215                  // Captured rising edge value stored in terms of ticks
+    216                  pwm_input_rising_edge_capture = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
+   \       0x22   0x....             LDR      R4,??DataTable2_7
+   \       0x24   0x2100             MOVS     R1,#+0
+   \       0x26   0x9802             LDR      R0,[SP, #+8]
+   \       0x28   0x....'....        BL       HAL_TIM_ReadCapturedValue
+   \       0x2C   0x....'....        BL       __aeabi_ui2f
+   \       0x30   0x6020             STR      R0,[R4, #+0]
+    217                  if (pwm_input_rising_edge_capture != 0)
+   \       0x32   0x6820             LDR      R0,[R4, #+0]
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0x....'....        BL       __aeabi_cfcmpeq
+   \       0x3A   0xD01B             BEQ      ??HAL_TIM_IC_CaptureCallback_1
+    218                  {
+    219                    pwm_input_falling_edge_capture_sum_u64 += pwm_input_falling_edge_capture; //Total sum of falling edge ticks
+   \       0x3C   0x....             LDR      R5,??DataTable2_8
+   \       0x3E   0xCD03             LDM      R5!,{R0,R1}
+   \       0x40   0x3D08             SUBS     R5,R5,#+8
+   \       0x42   0x....'....        BL       __aeabi_ul2f
+   \       0x46   0x....             LDR      R1,??DataTable2_9
+   \       0x48   0x6809             LDR      R1,[R1, #+0]
+   \       0x4A   0x....'....        BL       __aeabi_fadd
+   \       0x4E   0x....'....        BL       __aeabi_f2ulz
+   \       0x52   0xC503             STM      R5!,{R0,R1}
+   \       0x54   0x3D08             SUBS     R5,R5,#+8
+    220                    pwm_input_rising_edge_capture_sum_u64 += pwm_input_rising_edge_capture;   //Total sum of rising edge ticks
+   \       0x56   0x....             LDR      R5,??DataTable2_10
+   \       0x58   0xCD03             LDM      R5!,{R0,R1}
+   \       0x5A   0x3D08             SUBS     R5,R5,#+8
+   \       0x5C   0x....'....        BL       __aeabi_ul2f
+   \       0x60   0x6821             LDR      R1,[R4, #+0]
+   \       0x62   0x....'....        BL       __aeabi_fadd
+   \       0x66   0x....'....        BL       __aeabi_f2ulz
+   \       0x6A   0xC503             STM      R5!,{R0,R1}
+   \       0x6C   0x3D08             SUBS     R5,R5,#+8
+    221                    TIM1_PWM_Average_Index++;
+   \       0x6E   0x7838             LDRB     R0,[R7, #+0]
+   \       0x70   0x1C40             ADDS     R0,R0,#+1
+   \       0x72   0x7038             STRB     R0,[R7, #+0]
+    222                  } 
+    223                }        
+    224                  
+    225                if (TIM1_PWM_Average_Index == PWM_INPUT_AVERAGING_BUF_SIZE)
+   \                     ??HAL_TIM_IC_CaptureCallback_1: (+1)
+   \       0x74   0x7838             LDRB     R0,[R7, #+0]
+   \       0x76   0x2805             CMP      R0,#+5
+   \       0x78   0xD134             BNE      ??HAL_TIM_IC_CaptureCallback_0
+    226                {
+    227                  //FOR FUTURE USE             
+    228                  //tim1_Result_Sum_u16[0] = (uint64_t)(tim1_Result_Sum_f[0]);
+    229                  //tim1_Result_Sum_u16[1] = (uint64_t)(tim1_Result_Sum_f[1]);
+    230                  //tim1_Control.tim1_ResultAvg.PWMInputDutyCycleAverageCalc_f = (float)(tim1_Result_Sum_u16[0] >> avg_exponent_u8 );
+    231                  //tim1_Control.tim1_ResultAvg.PWMInputFrequencyAverageCalc_u16 = (uint16_t)(tim1_Result_Sum_u16[1] >> avg_exponent_u8 );
+    232          
+    233                  tim1_Control.tim1_ResultAvg.PWMInputDutyCycleAverageCalc_f = (float)((pwm_input_falling_edge_capture_sum_u64 * 100) / (float)pwm_input_rising_edge_capture_sum_u64);    //PWM Input Duty Cycle calculation // Divition automatically does the averagind of the captures
+   \       0x7A   0x....             LDR      R4,??DataTable2_11
+   \       0x7C   0x....             LDR      R5,??DataTable2_10
+   \       0x7E   0x....             LDR      R6,??DataTable2_8
+   \       0x80   0xCE03             LDM      R6!,{R0,R1}
+   \       0x82   0x3E08             SUBS     R6,R6,#+8
+   \       0x84   0x2264             MOVS     R2,#+100
+   \       0x86   0x2300             MOVS     R3,#+0
+   \       0x88   0x....'....        BL       __aeabi_lmul
+   \       0x8C   0x....'....        BL       __aeabi_ul2f
+   \       0x90   0x9000             STR      R0,[SP, #+0]
+   \       0x92   0xCD03             LDM      R5!,{R0,R1}
+   \       0x94   0x3D08             SUBS     R5,R5,#+8
+   \       0x96   0x....'....        BL       __aeabi_ul2f
+   \       0x9A   0x0001             MOVS     R1,R0
+   \       0x9C   0x9800             LDR      R0,[SP, #+0]
+   \       0x9E   0x....'....        BL       __aeabi_fdiv
+   \       0xA2   0x6020             STR      R0,[R4, #+0]
+    234                  tim1_Control.tim1_ResultAvg.PWMInputFrequencyAverageCalc_u16 = (uint16_t)((HAL_RCC_GetSysClockFreq() * PWM_INPUT_AVERAGING_BUF_SIZE) / (float)((htim1.Init.Prescaler + 1) * pwm_input_rising_edge_capture_sum_u64));  //PWM Input Frequency Calculation
+   \       0xA4   0x....'....        BL       HAL_RCC_GetSysClockFreq
+   \       0xA8   0x2105             MOVS     R1,#+5
+   \       0xAA   0x4348             MULS     R0,R1,R0
+   \       0xAC   0x....'....        BL       __aeabi_ui2f
+   \       0xB0   0x9000             STR      R0,[SP, #+0]
+   \       0xB2   0x....             LDR      R0,??DataTable2_1
+   \       0xB4   0x6840             LDR      R0,[R0, #+4]
+   \       0xB6   0x1C40             ADDS     R0,R0,#+1
+   \       0xB8   0x2100             MOVS     R1,#+0
+   \       0xBA   0xCD0C             LDM      R5!,{R2,R3}
+   \       0xBC   0x3D08             SUBS     R5,R5,#+8
+   \       0xBE   0x....'....        BL       __aeabi_lmul
+   \       0xC2   0x....'....        BL       __aeabi_ul2f
+   \       0xC6   0x0001             MOVS     R1,R0
+   \       0xC8   0x9800             LDR      R0,[SP, #+0]
+   \       0xCA   0x....'....        BL       __aeabi_fdiv
+   \       0xCE   0x....'....        BL       __aeabi_f2iz
+   \       0xD2   0x80A0             STRH     R0,[R4, #+4]
+    235          
+    236                  TIM1_PWM_Average_Index = 0;
+   \       0xD4   0x2000             MOVS     R0,#+0
+   \       0xD6   0x7038             STRB     R0,[R7, #+0]
+    237                  pwm_input_falling_edge_capture_sum_u64 = 0;
+   \       0xD8   0x2000             MOVS     R0,#+0
+   \       0xDA   0x2100             MOVS     R1,#+0
+   \       0xDC   0xC603             STM      R6!,{R0,R1}
+   \       0xDE   0x3E08             SUBS     R6,R6,#+8
+    238                  pwm_input_rising_edge_capture_sum_u64 = 0;
+   \       0xE0   0xC503             STM      R5!,{R0,R1}
+   \       0xE2   0x3D08             SUBS     R5,R5,#+8
+    239                } 
+    240              }
+    241            }
+    242                
+    243            if(htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2)
+   \                     ??HAL_TIM_IC_CaptureCallback_0: (+1)
+   \       0xE4   0x9802             LDR      R0,[SP, #+8]
+   \       0xE6   0x7F00             LDRB     R0,[R0, #+28]
+   \       0xE8   0x2802             CMP      R0,#+2
+   \       0xEA   0xD10E             BNE      ??HAL_TIM_IC_CaptureCallback_2
+    244            {
+    245              // Falling edge triggerred
+    246              if (is_rising_edge_triggered)
+   \       0xEC   0x....             LDR      R0,??DataTable2_4
+   \       0xEE   0x7800             LDRB     R0,[R0, #+0]
+   \       0xF0   0x2800             CMP      R0,#+0
+   \       0xF2   0xD00A             BEQ      ??HAL_TIM_IC_CaptureCallback_2
+    247              {
+    248                // Captured falling edge value stored in terms of ticks
+    249                pwm_input_falling_edge_capture = (HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2));
+   \       0xF4   0x2104             MOVS     R1,#+4
+   \       0xF6   0x9802             LDR      R0,[SP, #+8]
+   \       0xF8   0x....'....        BL       HAL_TIM_ReadCapturedValue
+   \       0xFC   0x....'....        BL       __aeabi_ui2f
+   \      0x100   0x....             LDR      R1,??DataTable2_9
+   \      0x102   0x6008             STR      R0,[R1, #+0]
+    250                is_falling_edge_triggered = TRUE;
+   \      0x104   0x2001             MOVS     R0,#+1
+   \      0x106   0x....             LDR      R1,??DataTable2_5
+   \      0x108   0x7008             STRB     R0,[R1, #+0]
+    251              }
+    252            }
+    253          }
+   \                     ??HAL_TIM_IC_CaptureCallback_2: (+1)
+   \      0x10A   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x4002'1860        DC32     0x40021860
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     htim1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x4001'2C00        DC32     0x40012c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x....'....        DC32     is_rising_edge_triggered
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x....'....        DC32     is_falling_edge_triggered
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x....'....        DC32     TIM1_PWM_Average_Index
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \        0x0   0x....'....        DC32     pwm_input_rising_edge_capture
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_8:
+   \        0x0   0x....'....        DC32     pwm_input_falling_edge_capture_sum_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_9:
+   \        0x0   0x....'....        DC32     pwm_input_falling_edge_capture
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_10:
+   \        0x0   0x....'....        DC32     pwm_input_rising_edge_capture_sum_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_11:
+   \        0x0   0x....'....        DC32     tim1_Control
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   HAL_TIM_IC_CaptureCallback
+        32   -> HAL_RCC_GetSysClockFreq
+        32   -> HAL_TIM_ReadCapturedValue
+        32   -> __aeabi_f2iz
+        32   -> __aeabi_f2ulz
+        32   -> __aeabi_fadd
+        32   -> __aeabi_fdiv
+        32   -> __aeabi_ui2f
+        32   -> __aeabi_ul2f
+        32 __aeabi_cfcmpeq
+        32 __aeabi_lmul
+      12   LL_EXTI_SetEXTISource
+       8   LL_GPIO_SetPinMode
+       8   LL_GPIO_SetPinPull
+     112   MX_TIM1_Init
+       112   -> Error_Handler
+       112   -> HAL_TIMEx_ConfigBreakDeadTime
+       112   -> HAL_TIMEx_MasterConfigSynchronization
+       112   -> HAL_TIM_Base_Init
+       112   -> HAL_TIM_IC_ConfigChannel
+       112   -> HAL_TIM_IC_Init
+       112   -> HAL_TIM_IC_Start_IT
+       112   -> HAL_TIM_SlaveConfigSynchro
+       112   -> memset
+       8   PWMInputTimerInit
+         8   -> MX_TIM1_Init
+      32   PWMInput_GPIO_DigitalInput_Init
+        32   -> LL_GPIO_Init
+        32   -> memset
+      24   PWMInput_GPIO_PwmInput_Init
+        24   -> LL_EXTI_Init
+        24   -> LL_EXTI_SetEXTISource
+        24   -> LL_GPIO_SetPinMode
+        24   -> LL_GPIO_SetPinPull
+        24   -> memset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+     268  HAL_TIM_IC_CaptureCallback
+      48  LL_EXTI_SetEXTISource
+      28  LL_GPIO_SetPinMode
+      28  LL_GPIO_SetPinPull
+     254  MX_TIM1_Init
+       8  PWMInputTimerInit
+      40  PWMInput_GPIO_DigitalInput_Init
+      70  PWMInput_GPIO_PwmInput_Init
+       1  TIM1_PWM_Average_Index
+      64  htim1
+       1  is_falling_edge_triggered
+       1  is_rising_edge_triggered
+       4  pwm_input_falling_edge_capture
+       8  pwm_input_falling_edge_capture_sum_u64
+       4  pwm_input_rising_edge_capture
+       8  pwm_input_rising_edge_capture_sum_u64
+       8  tim1_Control
+
+ 
+  99 bytes in section .bss
+ 792 bytes in section .text
+ 
+ 792 bytes of CODE memory
+  99 bytes of DATA memory
+
+Errors: none
+Warnings: none

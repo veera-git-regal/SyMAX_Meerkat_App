@@ -1,0 +1,633 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         11/Feb/2022  22:50:34
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_usart1.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW6D57.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_usart1.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_usart1.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_usart1.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_usart1.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_usart1.c 
+      4          * @author  Justin Moon/ Myron Mychal
+      5          * @brief   Main driver module for USART1 Communication.
+      6          * @details This module initializes the USART1 port and attaches the pre-selected fixed memory allocation to the module.
+      7          To Transmitt data in the RUN_MODULE case: put data into seqMemTX, and call this function:
+      8          *             USART_ITConfig(USART1, USART_IT_TXE, ENABLE);
+      9          ********************************************************************************************************************************
+     10          */
+     11          
+     12          // Includes --------------------------------------------------------------------
+     13          #include "module_usart1.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_TXE_TXFNF: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x09C1             LSRS     R1,R0,#+7
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_RTO(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_RTO: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0AC1             LSRS     R1,R0,#+11
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_EnableIT_RXNE_RXFNE(USART_TypeDef *)
+   \                     LL_USART_EnableIT_RXNE_RXFNE: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2220             MOVS     R2,#+32
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6002             STR      R2,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_DisableIT_RXNE_RXFNE(USART_TypeDef *)
+   \                     LL_USART_DisableIT_RXNE_RXFNE: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2220             MOVS     R2,#+32
+   \        0x4   0x4391             BICS     R1,R1,R2
+   \        0x6   0x6001             STR      R1,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+     14          #include "driver_usart1.h"
+
+   \                                 In section .bss, align 4
+   \   static __absolute Ring_Buf * usart1SeqMem_RawRx
+   \                     usart1SeqMem_RawRx:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+   \   static __absolute Ring_Buf * usart1SeqMem_ModbusRx
+   \                     usart1SeqMem_ModbusRx:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+   \   static __absolute Ring_Buf * usart1SeqMem_Tx
+   \                     usart1SeqMem_Tx:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+   \   static __absolute Ram_Buf * usart1StructMem
+   \                     usart1StructMem:
+   \        0x0                      DS8 4
+     15          
+     16          // Content ---------------------------------------------------------------------
+     17          
+     18          // - Function Prototypes
+     19          extern void Delay(__IO uint32_t nTime);
+     20          void assignModuleMem_USART1(void);
+     21          
+     22          // -- Module States
+     23          enum {
+     24            MEMORY_INIT_MODULE,
+     25            INIT_MODULE,
+     26            RUN_MODULE,
+     27            // additional states to be added here as necessary.
+     28            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     29            KILL_MODULE = KILL_APP
+     30          };
+     31          
+     32          // - External Variables
+     33          extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     34          extern ProcessInfo processInfoTable[];
+     35          
+     36          extern uint8_t usart1_CaptureLen;
+     37          extern uint8_t ModbusProtocolState;
+     38          extern __IO uint8_t indexTx_Usart1;
+     39          
+     40          // - Global variables specific to this module
+     41          // -- Define Pointers that will be used as References to other Modules, where applicable
+     42          extern Usart1_Control usart1Control;
+     43          extern Ram_Buf_Handle usart1StructMem;
+     44          
+
+   \                                 In section .bss, align 4
+     45          uint8_t usart1_RawRxBuf_u8[TX_RX_BUF_SIZE];
+   \                     usart1_RawRxBuf_u8:
+   \        0x0                      DS8 80
+
+   \                                 In section .bss, align 4
+     46          uint8_t usart1_ModbusRxBuf_u8[TX_RX_BUF_SIZE];
+   \                     usart1_ModbusRxBuf_u8:
+   \        0x0                      DS8 80
+
+   \                                 In section .bss, align 4
+     47          uint8_t usart1_TxBuf_u8[TX_RX_BUF_SIZE+7];
+   \                     usart1_TxBuf_u8:
+   \        0x0                      DS8 88
+     48          /**
+     49          ********************************************************************************************************************************
+     50          * @brief   State machine for USART1 module
+     51          * @details
+     52          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+     53          * @retval  return_state_u8
+     54          ********************************************************************************************************************************
+     55          */
+
+   \                                 In section .bss, align 4
+     56          uint32_t test_timeout_counter = 0;
+   \                     test_timeout_counter:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     57          uint32_t test_timeout_counter2 = 0;
+   \                     test_timeout_counter2:
+   \        0x0                      DS8 4
+
+   \                                 In section .text, align 2, keep-with-next
+     58          uint8_t moduleUsart1(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8, uint8_t irq_id_u8) {
+   \                     moduleUsart1: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB081             SUB      SP,SP,#+4
+     59            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2700             MOVS     R7,#+0
+     60            switch (next_state_u8) {
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0x7B00             LDRB     R0,[R0, #+12]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD006             BEQ      ??moduleUsart1_0
+   \        0xE   0x2801             CMP      R0,#+1
+   \       0x10   0xD008             BEQ      ??moduleUsart1_1
+   \       0x12   0x2802             CMP      R0,#+2
+   \       0x14   0xD00D             BEQ      ??moduleUsart1_2
+   \       0x16   0x28FF             CMP      R0,#+255
+   \       0x18   0xD039             BEQ      ??moduleUsart1_3
+   \       0x1A   0xE04B             B        ??moduleUsart1_4
+     61            case MEMORY_INIT_MODULE:
+     62              {
+     63                assignModuleMem_USART1(); // Assign structured memory
+   \                     ??moduleUsart1_0: (+1)
+   \       0x1C   0x....'....        BL       assignModuleMem_USART1
+     64                return_state_u8 = INIT_MODULE;
+   \       0x20   0x2001             MOVS     R0,#+1
+     65                break;
+   \       0x22   0xE048             B        ??moduleUsart1_5
+     66              }
+     67            case INIT_MODULE: {
+     68              
+     69              //assignModuleMem_USART1();
+     70              
+     71              /*
+     72              // Find the structured memory for the UART2 driver module, by searching for the UART2 onwer id.
+     73              Ram_Buf_Handle this_ram_buf_u32;
+     74              for (uint8_t struct_mem_index_u8 = 0; struct_mem_index_u8 < TOTAL_NUM_OF_STRUCT_MEM_INSTANCES;
+     75              struct_mem_index_u8++) {
+     76                this_ram_buf_u32 = &sharedMemArray[struct_mem_index_u8];
+     77                if (RamBuf_GetOwner(this_ram_buf_u32) == drv_id_u8) {
+     78                  usart1StructMem = &sharedMemArray[struct_mem_index_u8];
+     79                }
+     80              }
+     81              
+     82              // Attach the structured memory to the process's master shared memory.
+     83              uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+     84              if (table_index_u8 != INDEX_NOT_FOUND) {
+     85                processInfoTable[table_index_u8].Sched_DrvData.irqState_u8 = DEFAULT_IRQ_STATE;
+     86                processInfoTable[table_index_u8].Sched_DrvData.p_masterSharedMem_u32 =
+     87                  usart1StructMem;
+     88              }
+     89              
+     90              //Get structured memory for ADC1 data
+     91              usart1Control = (Usart1_Control*)((*(processInfoTable[table_index_u8].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);
+     92              */
+     93              
+     94              usart1_CaptureLen = ModbusHeaderLen;                                 //pam bug without this
+   \                     ??moduleUsart1_1: (+1)
+   \       0x24   0x2003             MOVS     R0,#+3
+   \       0x26   0x....             LDR      R1,??DataTable2
+   \       0x28   0x7008             STRB     R0,[R1, #+0]
+     95              //usart1_CaptureLen = 1;           // TODO: Why init to header len?
+     96              
+     97              Usart1_Init(); // The interrupts need seq memeory. So init seq memory first.
+   \       0x2A   0x....'....        BL       Usart1_Init
+     98              
+     99              return_state_u8 = RUN_MODULE;
+   \       0x2E   0x2002             MOVS     R0,#+2
+    100              break;
+   \       0x30   0xE041             B        ??moduleUsart1_5
+    101            }
+    102            case RUN_MODULE: {
+    103              // if (1) { // !test: Uart transmit every 1 second
+    104              //   static uint64_t last_send_time = 0;
+    105              //   const uint8_t test_buf[8] = {1,2,3,4,5,6,7,8}; 
+    106              //   static uint8_t test_index = 0;
+    107              //   uint64_t current_time = getSysCount();
+    108              //   if (current_time - last_send_time > 1000) {
+    109              //       LL_USART_TransmitData8(USART1, test_buf[test_index]);
+    110              //       test_index = test_index + 1 & 0x07;
+    111              //       last_send_time = current_time;
+    112              //   }
+    113              // }
+    114              
+    115              // If items in buffer, parse the buffer
+    116              if((RingBuf_GetUsedNumOfElements((usart1Control).seqMem_RawRx) >= 1 ))
+   \                     ??moduleUsart1_2: (+1)
+   \       0x32   0x....             LDR      R4,??DataTable2_1
+   \       0x34   0x68A0             LDR      R0,[R4, #+8]
+   \       0x36   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD012             BEQ      ??moduleUsart1_6
+    117              {
+    118                LL_USART_DisableIT_RXNE(USART1); // disable interrupts so new data doesn't come in while we are editing receive buffer
+   \       0x3E   0x....             LDR      R5,??DataTable2_2  ;; 0x40013800
+   \       0x40   0x0028             MOVS     R0,R5
+   \       0x42   0x....'....        BL       LL_USART_DisableIT_RXNE_RXFNE
+    119                // Idle line detection: Only interpret messages when transmission is complete
+    120                //uint32_t idle_line = LL_USART_IsActiveFlag_IDLE(USART1); // TODO: LL calls should be in Driver only, Audit this file for those!
+    121                uint32_t idle_line = LL_USART_IsActiveFlag_RTO(USART1);
+   \       0x46   0x0028             MOVS     R0,R5
+   \       0x48   0x....'....        BL       LL_USART_IsActiveFlag_RTO
+   \       0x4C   0x0006             MOVS     R6,R0
+    122                if (idle_line) {
+   \       0x4E   0x2E00             CMP      R6,#+0
+   \       0x50   0xD005             BEQ      ??moduleUsart1_7
+    123                  protocolHeaderFetch_Usart1();
+   \       0x52   0x....'....        BL       protocolHeaderFetch_Usart1
+    124                  // LL_USART_ClearFlag_IDLE(USART1); // Clear the idle line flag.
+    125                  WRITE_REG(USART1->ICR, USART_ICR_RTOCF); // Clear the timeout flag. Note: Commented out - USING Idle Line detection instead
+   \       0x56   0x2080             MOVS     R0,#+128
+   \       0x58   0x0100             LSLS     R0,R0,#+4        ;; #+2048
+   \       0x5A   0x....             LDR      R1,??DataTable2_3  ;; 0x40013820
+   \       0x5C   0x6008             STR      R0,[R1, #+0]
+    126                }
+    127                LL_USART_EnableIT_RXNE(USART1); // re-enable the receive interrupt after parsing the received data
+   \                     ??moduleUsart1_7: (+1)
+   \       0x5E   0x0028             MOVS     R0,R5
+   \       0x60   0x....'....        BL       LL_USART_EnableIT_RXNE_RXFNE
+    128              } 
+    129              
+    130              uint8_t TxLen = ModbusHeaderLen;
+   \                     ??moduleUsart1_6: (+1)
+   \       0x64   0x2503             MOVS     R5,#+3
+    131              //if((RingBuf_GetUsedNumOfElements((Ring_Buf_Handle)((*(usart1Control).seqMemTX).p_ringBuf_u8)) >= TxLen) && !indexTx_Usart1)
+    132              if(((RingBuf_GetUsedNumOfElements((usart1Control).seqMemTX) >= TxLen) && !indexTx_Usart1) && (LL_USART_IsActiveFlag_TXE(USART1)))
+   \       0x66   0x6860             LDR      R0,[R4, #+4]
+   \       0x68   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x6C   0x0029             MOVS     R1,R5
+   \       0x6E   0xB2C9             UXTB     R1,R1
+   \       0x70   0x4288             CMP      R0,R1
+   \       0x72   0xD30A             BCC      ??moduleUsart1_8
+   \       0x74   0x....             LDR      R0,??DataTable2_4
+   \       0x76   0x7800             LDRB     R0,[R0, #+0]
+   \       0x78   0x2800             CMP      R0,#+0
+   \       0x7A   0xD106             BNE      ??moduleUsart1_8
+   \       0x7C   0x....             LDR      R0,??DataTable2_2  ;; 0x40013800
+   \       0x7E   0x....'....        BL       LL_USART_IsActiveFlag_TXE_TXFNF
+   \       0x82   0x2800             CMP      R0,#+0
+   \       0x84   0xD001             BEQ      ??moduleUsart1_8
+    133              {
+    134                TxProcess_Usart1();
+   \       0x86   0x....'....        BL       TxProcess_Usart1
+    135              }  
+    136              return_state_u8 = RUN_MODULE;
+   \                     ??moduleUsart1_8: (+1)
+   \       0x8A   0x2002             MOVS     R0,#+2
+    137              break;
+   \       0x8C   0xE013             B        ??moduleUsart1_5
+    138            }
+    139            case KILL_MODULE: {
+    140              // The USART1 driver module must only be executed once.
+    141              // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    142              uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+   \                     ??moduleUsart1_3: (+1)
+   \       0x8E   0x4668             MOV      R0,SP
+   \       0x90   0x7900             LDRB     R0,[R0, #+4]
+   \       0x92   0x....'....        BL       getProcessInfoIndex
+   \       0x96   0x0001             MOVS     R1,R0
+    143              if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x98   0x0008             MOVS     R0,R1
+   \       0x9A   0xB2C0             UXTB     R0,R0
+   \       0x9C   0x28FF             CMP      R0,#+255
+   \       0x9E   0xD007             BEQ      ??moduleUsart1_9
+    144                processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0xA0   0x20FF             MOVS     R0,#+255
+   \       0xA2   0x....             LDR      R2,??DataTable2_5
+   \       0xA4   0x000B             MOVS     R3,R1
+   \       0xA6   0xB2DB             UXTB     R3,R3
+   \       0xA8   0x2416             MOVS     R4,#+22
+   \       0xAA   0x4363             MULS     R3,R4,R3
+   \       0xAC   0x18D2             ADDS     R2,R2,R3
+   \       0xAE   0x7290             STRB     R0,[R2, #+10]
+    145              }
+    146              return_state_u8 = KILL_MODULE;
+   \                     ??moduleUsart1_9: (+1)
+   \       0xB0   0x20FF             MOVS     R0,#+255
+    147              break;
+   \       0xB2   0xE000             B        ??moduleUsart1_5
+    148            }
+    149            default: {
+    150              return_state_u8 = KILL_MODULE;
+   \                     ??moduleUsart1_4: (+1)
+   \       0xB4   0x20FF             MOVS     R0,#+255
+    151              break;
+    152            }
+    153            }
+    154            return return_state_u8;
+   \                     ??moduleUsart1_5: (+1)
+   \       0xB6   0xB2C0             UXTB     R0,R0
+   \       0xB8   0xB005             ADD      SP,SP,#+20
+   \       0xBA   0xBDF0             POP      {R4-R7,PC}       ;; return
+    155          }
+    156          
+    157          /**
+    158          ********************************************************************************************************************************
+    159          * @brief   Assign structured/sequential memory
+    160          * @details Assign structured/sequential memory for USART1 module
+    161          * @param   None 
+    162          * @return  None
+    163          ********************************************************************************************************************************
+    164          */
+
+   \                                 In section .text, align 2, keep-with-next
+    165          void assignModuleMem_USART1(){  
+   \                     assignModuleMem_USART1: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    166            usart1SeqMem_RawRx = SeqMem_CreateInstance(MODULE_USART1, TX_RX_BUF_SIZE, 
+    167                                                       ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for this driver need to be bigger than 1 complete frame 
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+   \        0x6   0x2300             MOVS     R3,#+0
+   \        0x8   0x2202             MOVS     R2,#+2
+   \        0xA   0x2150             MOVS     R1,#+80
+   \        0xC   0x2009             MOVS     R0,#+9
+   \        0xE   0x....'....        BL       SeqMem_CreateInstance
+   \       0x12   0x....             LDR      R1,??DataTable2_6
+   \       0x14   0x6008             STR      R0,[R1, #+0]
+    168          (*usart1SeqMem_RawRx).p_ringBuf_u8 = (uint8_t *)usart1_RawRxBuf_u8;
+   \       0x16   0x....             LDR      R0,??DataTable2_7
+   \       0x18   0x....             LDR      R1,??DataTable2_6
+   \       0x1A   0x6809             LDR      R1,[R1, #+0]
+   \       0x1C   0x6008             STR      R0,[R1, #+0]
+    169            usart1SeqMem_ModbusRx = SeqMem_CreateInstance(MODULE_USART1, TX_RX_BUF_SIZE, 
+    170                                                          ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for final packet receiver buffer 
+   \       0x1E   0x....             LDR      R7,??DataTable2_8
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x9000             STR      R0,[SP, #+0]
+   \       0x24   0x2300             MOVS     R3,#+0
+   \       0x26   0x2202             MOVS     R2,#+2
+   \       0x28   0x2150             MOVS     R1,#+80
+   \       0x2A   0x2009             MOVS     R0,#+9
+   \       0x2C   0x....'....        BL       SeqMem_CreateInstance
+   \       0x30   0x6038             STR      R0,[R7, #+0]
+    171           (*usart1SeqMem_ModbusRx).p_ringBuf_u8 = (uint8_t *)usart1_ModbusRxBuf_u8;
+   \       0x32   0x....             LDR      R0,??DataTable2_9
+   \       0x34   0x6839             LDR      R1,[R7, #+0]
+   \       0x36   0x6008             STR      R0,[R1, #+0]
+    172            usart1SeqMem_Tx = SeqMem_CreateInstance(MODULE_USART1, TX_RX_BUF_SIZE +7 , 
+    173                                                    ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for Tx data 
+   \       0x38   0x....             LDR      R6,??DataTable2_10
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x9000             STR      R0,[SP, #+0]
+   \       0x3E   0x2300             MOVS     R3,#+0
+   \       0x40   0x2202             MOVS     R2,#+2
+   \       0x42   0x2157             MOVS     R1,#+87
+   \       0x44   0x2009             MOVS     R0,#+9
+   \       0x46   0x....'....        BL       SeqMem_CreateInstance
+   \       0x4A   0x6030             STR      R0,[R6, #+0]
+    174          (*usart1SeqMem_Tx).p_ringBuf_u8 = (uint8_t *)usart1_TxBuf_u8;
+   \       0x4C   0x....             LDR      R0,??DataTable2_11
+   \       0x4E   0x6831             LDR      R1,[R6, #+0]
+   \       0x50   0x6008             STR      R0,[R1, #+0]
+    175            //usart1StructMem =  StructMem_CreateInstance(MODULE_USART1, sizeof(Usart1_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a structured memory for this driver [should map it back to this driver local struct]
+    176            
+    177            usart1StructMem =  StructMem_CreateInstance(MODULE_USART1, sizeof(Usart1_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a structured memory for this driver [should map it back to this driver local struct]
+   \       0x52   0x....             LDR      R5,??DataTable2_12
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0x9000             STR      R0,[SP, #+0]
+   \       0x58   0x2300             MOVS     R3,#+0
+   \       0x5A   0x2202             MOVS     R2,#+2
+   \       0x5C   0x2114             MOVS     R1,#+20
+   \       0x5E   0x2009             MOVS     R0,#+9
+   \       0x60   0x....'....        BL       StructMem_CreateInstance
+   \       0x64   0x6028             STR      R0,[R5, #+0]
+    178            (*usart1StructMem).p_ramBuf_u8 = (uint8_t *)&usart1Control ;    // Map the usart1Control memory into the structured memory
+   \       0x66   0x....             LDR      R4,??DataTable2_1
+   \       0x68   0x6828             LDR      R0,[R5, #+0]
+   \       0x6A   0x6004             STR      R4,[R0, #+0]
+    179            uint8_t usart1_index_u8 = getProcessInfoIndex(MODULE_USART1);
+   \       0x6C   0x2009             MOVS     R0,#+9
+   \       0x6E   0x....'....        BL       getProcessInfoIndex
+   \       0x72   0x4669             MOV      R1,SP
+   \       0x74   0x7008             STRB     R0,[R1, #+0]
+    180            processInfoTable[usart1_index_u8].Sched_DrvData.irqState_u8 = DEFAULT_IRQ_STATE;
+   \       0x76   0x....             LDR      R0,??DataTable2_5
+   \       0x78   0x21C8             MOVS     R1,#+200
+   \       0x7A   0x466A             MOV      R2,SP
+   \       0x7C   0x7812             LDRB     R2,[R2, #+0]
+   \       0x7E   0x2316             MOVS     R3,#+22
+   \       0x80   0x435A             MULS     R2,R3,R2
+   \       0x82   0x1882             ADDS     R2,R0,R2
+   \       0x84   0x7251             STRB     R1,[R2, #+9]
+    181            processInfoTable[usart1_index_u8].Sched_DrvData.p_masterSharedMem_u32 = (Ram_Buf_Handle)usart1StructMem;
+   \       0x86   0x4669             MOV      R1,SP
+   \       0x88   0x7809             LDRB     R1,[R1, #+0]
+   \       0x8A   0x2216             MOVS     R2,#+22
+   \       0x8C   0x4351             MULS     R1,R2,R1
+   \       0x8E   0x1840             ADDS     R0,R0,R1
+   \       0x90   0x0001             MOVS     R1,R0
+   \       0x92   0x310B             ADDS     R1,R1,#+11
+   \       0x94   0x6828             LDR      R0,[R5, #+0]
+   \       0x96   0x....'....        BL       __aeabi_uwrite4
+    182            
+    183            
+    184            //usart1Control = (Usart1_Control*)(*usart1StructMem).p_ramBuf_u8;
+    185            
+    186            /** assign all the new generated sequential-memory of USART1 to the structured-memory **/
+    187            usart1Control.seqMemTX = usart1SeqMem_Tx;
+   \       0x9A   0x6830             LDR      R0,[R6, #+0]
+   \       0x9C   0x6060             STR      R0,[R4, #+4]
+    188            usart1Control.seqMemTX->is_OverwrittingAllowed_u8 = TRUE; //FALSE;
+   \       0x9E   0x2001             MOVS     R0,#+1
+   \       0xA0   0x6861             LDR      R1,[R4, #+4]
+   \       0xA2   0x7508             STRB     R0,[R1, #+20]
+    189            usart1Control.seqMem_ModbusRx = usart1SeqMem_ModbusRx;
+   \       0xA4   0x6838             LDR      R0,[R7, #+0]
+   \       0xA6   0x6020             STR      R0,[R4, #+0]
+    190            usart1Control.seqMem_RawRx = usart1SeqMem_RawRx;
+   \       0xA8   0x....             LDR      R0,??DataTable2_6
+   \       0xAA   0x6800             LDR      R0,[R0, #+0]
+   \       0xAC   0x60A0             STR      R0,[R4, #+8]
+    191            usart1Control.errorCode_u8 = 0;
+   \       0xAE   0x2000             MOVS     R0,#+0
+   \       0xB0   0x7420             STRB     R0,[R4, #+16]
+    192            
+    193          }
+   \       0xB2   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     usart1_CaptureLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     usart1Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x4001'3800        DC32     0x40013800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x4001'3820        DC32     0x40013820
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x....'....        DC32     indexTx_Usart1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x....'....        DC32     usart1SeqMem_RawRx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \        0x0   0x....'....        DC32     usart1_RawRxBuf_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_8:
+   \        0x0   0x....'....        DC32     usart1SeqMem_ModbusRx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_9:
+   \        0x0   0x....'....        DC32     usart1_ModbusRxBuf_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_10:
+   \        0x0   0x....'....        DC32     usart1SeqMem_Tx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_11:
+   \        0x0   0x....'....        DC32     usart1_TxBuf_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_12:
+   \        0x0   0x....'....        DC32     usart1StructMem
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LL_USART_DisableIT_RXNE_RXFNE
+       0   LL_USART_EnableIT_RXNE_RXFNE
+       0   LL_USART_IsActiveFlag_RTO
+       0   LL_USART_IsActiveFlag_TXE_TXFNF
+      24   assignModuleMem_USART1
+        24   -> SeqMem_CreateInstance
+        24   -> StructMem_CreateInstance
+        24   -> getProcessInfoIndex
+        24 __aeabi_uwrite4
+      40   moduleUsart1
+        40   -> LL_USART_DisableIT_RXNE_RXFNE
+        40   -> LL_USART_EnableIT_RXNE_RXFNE
+        40   -> LL_USART_IsActiveFlag_RTO
+        40   -> LL_USART_IsActiveFlag_TXE_TXFNF
+        40   -> RingBuf_GetUsedNumOfElements
+        40   -> TxProcess_Usart1
+        40   -> Usart1_Init
+        40   -> assignModuleMem_USART1
+        40   -> getProcessInfoIndex
+        40   -> protocolHeaderFetch_Usart1
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_12
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+      10  LL_USART_DisableIT_RXNE_RXFNE
+      10  LL_USART_EnableIT_RXNE_RXFNE
+      12  LL_USART_IsActiveFlag_RTO
+      12  LL_USART_IsActiveFlag_TXE_TXFNF
+     180  assignModuleMem_USART1
+     188  moduleUsart1
+       4  test_timeout_counter
+       4  test_timeout_counter2
+       4  usart1SeqMem_ModbusRx
+       4  usart1SeqMem_RawRx
+       4  usart1SeqMem_Tx
+       4  usart1StructMem
+      80  usart1_ModbusRxBuf_u8
+      80  usart1_RawRxBuf_u8
+      88  usart1_TxBuf_u8
+
+ 
+ 272 bytes in section .bss
+ 464 bytes in section .text
+ 
+ 464 bytes of CODE memory
+ 272 bytes of DATA memory
+
+Errors: none
+Warnings: none

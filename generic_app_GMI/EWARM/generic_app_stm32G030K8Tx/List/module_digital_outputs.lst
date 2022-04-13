@@ -1,0 +1,3041 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:45
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_digital_outputs.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWD97A.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_digital_outputs.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_digital_outputs.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_digital_outputs.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_digital_outputs.c
+      1          /**
+      2          *******************************************************************************
+      3          * @file    module_digital_outputs.c 
+      4          * @author  Satya Akkina
+      5          * @brief   Module to handle all digital ouputs
+      6          * @details Module handles PWM out, fault out, LED out and relay output
+      7          *******************************************************************************
+      8          */
+      9          
+     10          // Includes -------------------------------------------------------------------
+     11          #include "module_digital_outputs.h"
+     12          
+     13          #include "module_gpio.h"
+     14          #include "macros.h"
+     15          #include "module_analog_0_10v.h"
+     16          #include "module_motor_com.h"
+     17          //#include "module_motor_demand_multiplexer.h"
+     18          
+     19          //#include <stdio.h> // for debug only
+     20          
+     21          // Content --------------------------------------------------------------------
+     22          // Function Prototypes
+     23          void AssignModuleMemDigitalOutputs(void);
+     24          void InitDigitalOutputsSetting(void);
+     25          void InitDigitalOutputsLocalVariables(void);
+     26          void ExecuteFaultLedOutBlinking(uint8_t output_num_u8);
+     27          void ProcessFaultLedOut(uint8_t output_num_u8);
+     28          void ProcessRelayOut(uint8_t output_num_u8);
+     29          void ProcessPwmDutyCycleOut(uint8_t output_num_u8);
+     30          void ProcessPwmFrequencyOutput(uint8_t output_num_u8);
+     31          
+     32          // - Constants
+     33          #define RELAY_ON_TH_SPEED 500
+     34          // -- Module States
+     35          enum {
+     36            MEMORY_INIT_MODULE,
+     37            INIT_MODULE,
+     38            RUN_MODULE,
+     39            // Additional states to be added here as necessary.
+     40            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     41            KILL_MODULE = KILL_APP
+     42          };
+     43          // State for Fault/LED output sequence
+     44          enum
+     45          {
+     46            SEQ_LOW = 0,
+     47            SEQ_HI,        // 1
+     48            SEQ_DELAY,     // 2
+     49            SEQ_NO_CHANGE, // 3
+     50          };
+     51          
+     52          // - External Variables
+     53          extern ProcessInfo processInfoTable[];
+     54          
+     55          // - Global variables specific to this module
+
+   \                                 In section .bss, align 4
+     56          static Ram_Buf_Handle digital_Outputs_StructMem_u32;
+   \                     digital_Outputs_StructMem_u32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     57          Digital_Outputs_Control digital_Outputs_Control;
+   \                     digital_Outputs_Control:
+   \        0x0                      DS8 80
+
+   \                                 In section .bss, align 1
+     58          uint8_t onBoardLedExternalSequences_u8 = 0; // Sequences that need to be executed next. Other modules can added to this
+   \                     onBoardLedExternalSequences_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     59          uint8_t current_external_sequence_u8 = 0;   // External sequence that is currently executed
+   \                     current_external_sequence_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     60          uint8_t current_external_sequence_count_u8 = 0; // Count of sequence that finihsed executing
+   \                     current_external_sequence_count_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     61          uint8_t is_external_led_sequence_executing = FALSE; // Flag that identifies that external sequence is being executed
+   \                     is_external_led_sequence_executing:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+     62          uint8_t is_processed_led_fault_outputs[TOTAL_DIGITAL_OUTPUTS]; // Once LED/Fault output sequence execution is compelte update the corresponding flag.
+   \                     is_processed_led_fault_outputs:
+   \        0x0                      DS8 12
+     63          
+
+   \                                 In section .bss, align 1
+     64          uint8_t current_sequence_u8 = 0;        // Current sequence that is being executed
+   \                     current_sequence_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     65          uint8_t fault_led_outputs_count_u8 = 0; // Total number of fault/led outputs
+   \                     fault_led_outputs_count_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     66          uint8_t processed_fault_led_outputs_count_u8 = 0;     // Number of fault/led ouputs that completed executing sequence
+   \                     processed_fault_led_outputs_count_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     67          uint8_t new_sequence_u8 = 0; // First finish current sequence and then execute this. Executes only when is_sequence_executing = FALSE.
+   \                     new_sequence_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+     68          uint8_t is_sequence_executing[TOTAL_DIGITAL_OUTPUTS]; // Flags identifying what ouptuts are already executing sequence 
+   \                     is_sequence_executing:
+   \        0x0                      DS8 12
+
+   \                                 In section .bss, align 8
+     69          uint64_t sequence_time_u64 =0;         // Placed holder for current systick time
+   \                     sequence_time_u64:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 8
+     70          uint64_t seq_change_time_u64[TOTAL_DIGITAL_OUTPUTS];  // Time when output state is changed
+   \                     seq_change_time_u64:
+   \        0x0                      DS8 80
+
+   \                                 In section .bss, align 4
+     71          uint8_t output_seq_count_u8[TOTAL_DIGITAL_OUTPUTS];   // Placed holder for current sequence step
+   \                     output_seq_count_u8:
+   \        0x0                      DS8 12
+     72          
+
+   \                                 In section .bss, align 8
+     73          uint64_t module_digital_outputs_poll_time_u64 =0;     // Poll time for the module
+   \                     module_digital_outputs_poll_time_u64:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 1
+     74          uint8_t pwm_out_init_error_state = 0;  // Error state that identifies if wrong pin it used for PWM out. Only Dout1 can be used for PWM out
+   \                     pwm_out_init_error_state:
+   \        0x0                      DS8 1
+     75          
+
+   \                                 In section .bss, align 4
+     76          float pwm_freq_output_slope_f = 0;     // Slope used for PWM frequency output
+   \                     pwm_freq_output_slope_f:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     77          float pwm_freq_output_intercept_f = 0; // Intercept used for PWM frequency output
+   \                     pwm_freq_output_intercept_f:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     78          float pwm_duty_output_slope_f = 0;     // Slope used for PWM duty cycle output
+   \                     pwm_duty_output_slope_f:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     79          float pwm_duty_output_intercept_f = 0; // Intercept used for PWM duty cycle output
+   \                     pwm_duty_output_intercept_f:
+   \        0x0                      DS8 4
+     80          
+
+   \                                 In section .bss, align 4
+     81          uint32_t faultStatus_u32 = 0;   // fault status flags
+   \                     faultStatus_u32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 2
+     82          uint16_t measuredSpeed_u16 = 0; // Speed in RPM
+   \                     measuredSpeed_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     83          uint16_t demand_percent_u16 =0; // demand percent
+   \                     demand_percent_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     84          uint16_t Realy_On_Check_Counter=0,Realy_Off_Check_Counter=0;
+   \                     Realy_On_Check_Counter:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+   \                     Realy_Off_Check_Counter:
+   \        0x0                      DS8 2
+     85          // -- Define Pointers that will be used as References to other Modules, where applicable
+     86          //MotorDemandMux_Control* digitalOutputs_MotorDemandMux_Control;
+
+   \                                 In section .bss, align 4
+     87          Motor_Com_Control* digitalOutputs_MotorCom_Control_ptr;
+   \                     digitalOutputs_MotorCom_Control_ptr:
+   \        0x0                      DS8 4
+     88          
+     89          /**
+     90          ********************************************************************************
+     91          * @brief   State machine for digital outputs module
+     92          * @details
+     93          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+     94          * @retval  return_state_u8
+     95          ********************************************************************************
+     96          */
+
+   \                                 In section .text, align 2, keep-with-next
+     97          uint8_t module_Digital_Outputs_u32(uint8_t drv_identifier_u8, uint8_t previous_state_u8, uint8_t next_state_u8,
+     98                                             uint8_t irq_identifier_u8)
+     99          {
+   \                     module_Digital_Outputs_u32: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    100            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x0027             MOVS     R7,R4
+    101            switch (next_state_u8)
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x7900             LDRB     R0,[R0, #+4]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD00A             BEQ      ??module_Digital_Outputs_u32_0
+   \       0x10   0x2801             CMP      R0,#+1
+   \       0x12   0xD00C             BEQ      ??module_Digital_Outputs_u32_1
+   \       0x14   0x2802             CMP      R0,#+2
+   \       0x16   0xD01A             BEQ      ??module_Digital_Outputs_u32_2
+   \       0x18   0x28C8             CMP      R0,#+200
+   \       0x1A   0xD100             BNE      .+4
+   \       0x1C   0xE08F             B        ??module_Digital_Outputs_u32_3
+   \       0x1E   0x28FF             CMP      R0,#+255
+   \       0x20   0xD100             BNE      .+4
+   \       0x22   0xE08E             B        ??module_Digital_Outputs_u32_4
+   \       0x24   0xE0A0             B        ??module_Digital_Outputs_u32_5
+    102            {
+    103            case MEMORY_INIT_MODULE:
+    104              {
+    105                AssignModuleMemDigitalOutputs(); // Assign structured memory
+   \                     ??module_Digital_Outputs_u32_0: (+1)
+   \       0x26   0x....'....        BL       AssignModuleMemDigitalOutputs
+    106                return_state_u8 = INIT_MODULE;
+   \       0x2A   0x2001             MOVS     R0,#+1
+    107                break;
+   \       0x2C   0xE09D             B        ??module_Digital_Outputs_u32_6
+    108              }
+    109            case INIT_MODULE:
+    110              {     
+    111                AssignModuleMemDigitalOutputs(); // Assign structured memory for module   
+   \                     ??module_Digital_Outputs_u32_1: (+1)
+   \       0x2E   0x....'....        BL       AssignModuleMemDigitalOutputs
+    112                InitDigitalOutputsSetting();     // Init settings
+   \       0x32   0x....'....        BL       InitDigitalOutputsSetting
+    113                InitDigitalOutputsLocalVariables(); // Init local variables
+   \       0x36   0x....'....        BL       InitDigitalOutputsLocalVariables
+    114                module_digital_outputs_poll_time_u64 = getSysCount() + DIGITAL_OUTPUTS_POLL_TIME; // Store time tick value 
+   \       0x3A   0x....'....        BL       getSysCount
+   \       0x3E   0x2200             MOVS     R2,#+0
+   \       0x40   0x300A             ADDS     R0,R0,#+10
+   \       0x42   0x4151             ADCS     R1,R1,R2
+   \       0x44   0x....             LDR      R2,??DataTable2
+   \       0x46   0xC203             STM      R2!,{R0,R1}
+   \       0x48   0x3A08             SUBS     R2,R2,#+8
+    115                return_state_u8 = RUN_MODULE;
+   \       0x4A   0x2002             MOVS     R0,#+2
+    116                break;
+   \       0x4C   0xE08D             B        ??module_Digital_Outputs_u32_6
+    117                
+    118              }   
+    119            case RUN_MODULE:                                                             
+    120              {
+    121                // Process digital outputs every "DIGITAL_OUTPUTS_POLL_TIME" mSec
+    122                if (getSysCount() >= module_digital_outputs_poll_time_u64) // Time above poll time
+   \                     ??module_Digital_Outputs_u32_2: (+1)
+   \       0x4E   0x....'....        BL       getSysCount
+   \       0x52   0x0002             MOVS     R2,R0
+   \       0x54   0x000B             MOVS     R3,R1
+   \       0x56   0x....             LDR      R5,??DataTable2
+   \       0x58   0xCD03             LDM      R5!,{R0,R1}
+   \       0x5A   0x3D08             SUBS     R5,R5,#+8
+   \       0x5C   0x428B             CMP      R3,R1
+   \       0x5E   0xD36C             BCC      ??module_Digital_Outputs_u32_7
+   \       0x60   0xD801             BHI      ??module_Digital_Outputs_u32_8
+   \       0x62   0x4282             CMP      R2,R0
+   \       0x64   0xD369             BCC      ??module_Digital_Outputs_u32_7
+    123                {
+    124                  module_digital_outputs_poll_time_u64 = getSysCount() + DIGITAL_OUTPUTS_POLL_TIME; // Next poll time
+   \                     ??module_Digital_Outputs_u32_8: (+1)
+   \       0x66   0x....'....        BL       getSysCount
+   \       0x6A   0x2200             MOVS     R2,#+0
+   \       0x6C   0x300A             ADDS     R0,R0,#+10
+   \       0x6E   0x4151             ADCS     R1,R1,R2
+   \       0x70   0xC503             STM      R5!,{R0,R1}
+   \       0x72   0x3D08             SUBS     R5,R5,#+8
+    125                  
+    126                  uint8_t output_function_u8;
+    127                  
+    128                  for(uint8_t output_num_u8=0; output_num_u8 < TOTAL_DIGITAL_OUTPUTS; output_num_u8++){
+   \                     ??module_Digital_Outputs_u32_9: (+1)
+   \       0x74   0x0020             MOVS     R0,R4
+   \       0x76   0xB2C0             UXTB     R0,R0
+   \       0x78   0x280A             CMP      R0,#+10
+   \       0x7A   0xDA5E             BGE      ??module_Digital_Outputs_u32_7
+    129                    output_function_u8 = digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8];
+   \       0x7C   0x....             LDR      R0,??DataTable2_1
+   \       0x7E   0x0021             MOVS     R1,R4
+   \       0x80   0xB2C9             UXTB     R1,R1
+   \       0x82   0x2202             MOVS     R2,#+2
+   \       0x84   0x4351             MULS     R1,R2,R1
+   \       0x86   0x1841             ADDS     R1,R0,R1
+   \       0x88   0x8B89             LDRH     R1,[R1, #+28]
+   \       0x8A   0x000D             MOVS     R5,R1
+    130                    
+    131                    switch(output_function_u8){
+   \       0x8C   0x0029             MOVS     R1,R5
+   \       0x8E   0xB2C9             UXTB     R1,R1
+   \       0x90   0x2900             CMP      R1,#+0
+   \       0x92   0xD009             BEQ      ??module_Digital_Outputs_u32_10
+   \       0x94   0x2902             CMP      R1,#+2
+   \       0x96   0xD014             BEQ      ??module_Digital_Outputs_u32_11
+   \       0x98   0xD307             BCC      ??module_Digital_Outputs_u32_12
+   \       0x9A   0x2904             CMP      R1,#+4
+   \       0x9C   0xD01D             BEQ      ??module_Digital_Outputs_u32_13
+   \       0x9E   0xD310             BCC      ??module_Digital_Outputs_u32_11
+   \       0xA0   0x2906             CMP      R1,#+6
+   \       0xA2   0xD037             BEQ      ??module_Digital_Outputs_u32_14
+   \       0xA4   0xD325             BCC      ??module_Digital_Outputs_u32_15
+   \       0xA6   0xE046             B        ??module_Digital_Outputs_u32_16
+    132                      
+    133                    case DISABLE: //0
+    134                      break;
+   \                     ??module_Digital_Outputs_u32_10: (+1)
+   \       0xA8   0xE045             B        ??module_Digital_Outputs_u32_17
+    135                    case FAULT_OUTPUT:  //1
+    136                      {
+    137                        if ( ((digital_Outputs_Control.digital_outputs_Setting.outputEnable_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI)
+   \                     ??module_Digital_Outputs_u32_12: (+1)
+   \       0xAA   0x8840             LDRH     R0,[R0, #+2]
+   \       0xAC   0x2101             MOVS     R1,#+1
+   \       0xAE   0x40A1             LSLS     R1,R1,R4
+   \       0xB0   0x4001             ANDS     R1,R1,R0
+   \       0xB2   0x4121             ASRS     R1,R1,R4
+   \       0xB4   0x2900             CMP      R1,#+0
+   \       0xB6   0xD003             BEQ      ??module_Digital_Outputs_u32_18
+    138                        { // Output Enabled
+    139                          ProcessFaultLedOut(output_num_u8);
+   \       0xB8   0x0020             MOVS     R0,R4
+   \       0xBA   0xB2C0             UXTB     R0,R0
+   \       0xBC   0x....'....        BL       ProcessFaultLedOut
+    140                        }
+    141                        break;
+   \                     ??module_Digital_Outputs_u32_18: (+1)
+   \       0xC0   0xE039             B        ??module_Digital_Outputs_u32_17
+    142                      }
+    143                    case LED_OUTPUT:    // 2
+    144                    case ON_BOARD_LED_OUTPUT: // 3
+    145                      {
+    146                        if ( ((digital_Outputs_Control.digital_outputs_Setting.outputEnable_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI)
+   \                     ??module_Digital_Outputs_u32_11: (+1)
+   \       0xC2   0x8840             LDRH     R0,[R0, #+2]
+   \       0xC4   0x2101             MOVS     R1,#+1
+   \       0xC6   0x40A1             LSLS     R1,R1,R4
+   \       0xC8   0x4001             ANDS     R1,R1,R0
+   \       0xCA   0x4121             ASRS     R1,R1,R4
+   \       0xCC   0x2900             CMP      R1,#+0
+   \       0xCE   0xD003             BEQ      ??module_Digital_Outputs_u32_19
+    147                        { // Output Enabled
+    148                          ProcessFaultLedOut(output_num_u8);
+   \       0xD0   0x0020             MOVS     R0,R4
+   \       0xD2   0xB2C0             UXTB     R0,R0
+   \       0xD4   0x....'....        BL       ProcessFaultLedOut
+    149                        }
+    150                        break;
+   \                     ??module_Digital_Outputs_u32_19: (+1)
+   \       0xD8   0xE02D             B        ??module_Digital_Outputs_u32_17
+    151                      }  
+    152                    case RELAY_OUTPUT:   // 5
+    153                      {
+    154                        if ( ((digital_Outputs_Control.digital_outputs_Setting.outputEnable_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI)
+   \                     ??module_Digital_Outputs_u32_13: (+1)
+   \       0xDA   0x8840             LDRH     R0,[R0, #+2]
+   \       0xDC   0x2101             MOVS     R1,#+1
+   \       0xDE   0x40A1             LSLS     R1,R1,R4
+   \       0xE0   0x4001             ANDS     R1,R1,R0
+   \       0xE2   0x4121             ASRS     R1,R1,R4
+   \       0xE4   0x2900             CMP      R1,#+0
+   \       0xE6   0xD003             BEQ      ??module_Digital_Outputs_u32_20
+    155                        { // Output Enabled
+    156                          ProcessRelayOut(output_num_u8);
+   \       0xE8   0x0020             MOVS     R0,R4
+   \       0xEA   0xB2C0             UXTB     R0,R0
+   \       0xEC   0x....'....        BL       ProcessRelayOut
+    157                        }
+    158                        break;
+   \                     ??module_Digital_Outputs_u32_20: (+1)
+   \       0xF0   0xE021             B        ??module_Digital_Outputs_u32_17
+    159                      }
+    160                    case PWM_DUTY_CYCLE_OUTPUT:     // 5
+    161                      {
+    162                        if ( ((digital_Outputs_Control.digital_outputs_Setting.outputEnable_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI)
+   \                     ??module_Digital_Outputs_u32_15: (+1)
+   \       0xF2   0x8840             LDRH     R0,[R0, #+2]
+   \       0xF4   0x2101             MOVS     R1,#+1
+   \       0xF6   0x40A1             LSLS     R1,R1,R4
+   \       0xF8   0x4001             ANDS     R1,R1,R0
+   \       0xFA   0x4121             ASRS     R1,R1,R4
+   \       0xFC   0x2900             CMP      R1,#+0
+   \       0xFE   0xD004             BEQ      ??module_Digital_Outputs_u32_21
+    163                        { // Output Enabled
+    164                          // No error in PWM out init
+    165                          ProcessPwmDutyCycleOut(output_num_u8);
+   \      0x100   0x0020             MOVS     R0,R4
+   \      0x102   0xB2C0             UXTB     R0,R0
+   \      0x104   0x....'....        BL       ProcessPwmDutyCycleOut
+   \      0x108   0xE003             B        ??module_Digital_Outputs_u32_22
+    166                        } else {
+    167                          Module_Gpio_StopPwmOut(output_num_u8);
+   \                     ??module_Digital_Outputs_u32_21: (+1)
+   \      0x10A   0x0020             MOVS     R0,R4
+   \      0x10C   0xB2C0             UXTB     R0,R0
+   \      0x10E   0x....'....        BL       Module_Gpio_StopPwmOut
+    168                        }
+    169                        break;
+   \                     ??module_Digital_Outputs_u32_22: (+1)
+   \      0x112   0xE010             B        ??module_Digital_Outputs_u32_17
+    170                      }
+    171                    case PWM_FREQUENCY_OUTPUT:   // 6
+    172                      {
+    173                        if ( ((digital_Outputs_Control.digital_outputs_Setting.outputEnable_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI)
+   \                     ??module_Digital_Outputs_u32_14: (+1)
+   \      0x114   0x8840             LDRH     R0,[R0, #+2]
+   \      0x116   0x2101             MOVS     R1,#+1
+   \      0x118   0x40A1             LSLS     R1,R1,R4
+   \      0x11A   0x4001             ANDS     R1,R1,R0
+   \      0x11C   0x4121             ASRS     R1,R1,R4
+   \      0x11E   0x2900             CMP      R1,#+0
+   \      0x120   0xD004             BEQ      ??module_Digital_Outputs_u32_23
+    174                        { // Output Enabled
+    175                          // No error in PWM out init
+    176                          ProcessPwmFrequencyOutput(output_num_u8);
+   \      0x122   0x0020             MOVS     R0,R4
+   \      0x124   0xB2C0             UXTB     R0,R0
+   \      0x126   0x....'....        BL       ProcessPwmFrequencyOutput
+   \      0x12A   0xE003             B        ??module_Digital_Outputs_u32_24
+    177                        } else {
+    178                          Module_Gpio_StopPwmOut(output_num_u8);
+   \                     ??module_Digital_Outputs_u32_23: (+1)
+   \      0x12C   0x0020             MOVS     R0,R4
+   \      0x12E   0xB2C0             UXTB     R0,R0
+   \      0x130   0x....'....        BL       Module_Gpio_StopPwmOut
+    179                        }
+    180                        break;
+   \                     ??module_Digital_Outputs_u32_24: (+1)
+   \      0x134   0xE7FF             B        ??module_Digital_Outputs_u32_17
+    181                      }
+    182                    default:
+    183                      break;            
+    184                    }          
+    185                  }
+   \                     ??module_Digital_Outputs_u32_16: (+1)
+   \                     ??module_Digital_Outputs_u32_17: (+1)
+   \      0x136   0x1C64             ADDS     R4,R4,#+1
+   \      0x138   0xE79C             B        ??module_Digital_Outputs_u32_9
+    186                }
+    187                return_state_u8 = RUN_MODULE;
+   \                     ??module_Digital_Outputs_u32_7: (+1)
+   \      0x13A   0x2002             MOVS     R0,#+2
+    188                break;
+   \      0x13C   0xE015             B        ??module_Digital_Outputs_u32_6
+    189              }
+    190            case IRQ_MODULE: 
+    191              {
+    192                // If there are more than one interrupts, from different drivers, you can identify each individually by:
+    193                // tableIndex_u8 = getProcessInfoIndex(irq_identifier_u8);
+    194                // Then use processInfoTable[tableIndex_u8] to tailor your response appropriately.
+    195                return_state_u8 = RUN_MODULE;
+   \                     ??module_Digital_Outputs_u32_3: (+1)
+   \      0x13E   0x2002             MOVS     R0,#+2
+    196                break;
+   \      0x140   0xE013             B        ??module_Digital_Outputs_u32_6
+    197              }
+    198              
+    199            case KILL_MODULE: 
+    200              {
+    201                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    202                uint8_t table_index_u8 = getProcessInfoIndex(drv_identifier_u8);
+   \                     ??module_Digital_Outputs_u32_4: (+1)
+   \      0x142   0x0030             MOVS     R0,R6
+   \      0x144   0xB2C0             UXTB     R0,R0
+   \      0x146   0x....'....        BL       getProcessInfoIndex
+   \      0x14A   0x0001             MOVS     R1,R0
+    203                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \      0x14C   0x0008             MOVS     R0,R1
+   \      0x14E   0xB2C0             UXTB     R0,R0
+   \      0x150   0x28FF             CMP      R0,#+255
+   \      0x152   0xD007             BEQ      ??module_Digital_Outputs_u32_25
+    204                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \      0x154   0x20FF             MOVS     R0,#+255
+   \      0x156   0x....             LDR      R2,??DataTable4
+   \      0x158   0x000B             MOVS     R3,R1
+   \      0x15A   0xB2DB             UXTB     R3,R3
+   \      0x15C   0x2416             MOVS     R4,#+22
+   \      0x15E   0x4363             MULS     R3,R4,R3
+   \      0x160   0x18D2             ADDS     R2,R2,R3
+   \      0x162   0x7290             STRB     R0,[R2, #+10]
+    205                }
+    206                return_state_u8 = INIT_MODULE;
+   \                     ??module_Digital_Outputs_u32_25: (+1)
+   \      0x164   0x2001             MOVS     R0,#+1
+    207                break;
+   \      0x166   0xE000             B        ??module_Digital_Outputs_u32_6
+    208              }
+    209            default:
+    210              {
+    211                return_state_u8 = KILL_MODULE; //10; 
+   \                     ??module_Digital_Outputs_u32_5: (+1)
+   \      0x168   0x20FF             MOVS     R0,#+255
+    212                break;
+    213              }
+    214            }
+    215            return return_state_u8;
+   \                     ??module_Digital_Outputs_u32_6: (+1)
+   \      0x16A   0xB2C0             UXTB     R0,R0
+   \      0x16C   0xBDFE             POP      {R1-R7,PC}       ;; return
+    216          }
+    217          
+    218          /**
+    219          ********************************************************************************
+    220          * @brief   Assign structured memory
+    221          * @details Assign structured memory for digital outputs module
+    222          * @param   None 
+    223          * @return  None
+    224          ********************************************************************************
+    225          */
+
+   \                                 In section .text, align 2, keep-with-next
+    226          void AssignModuleMemDigitalOutputs(void){   
+   \                     AssignModuleMemDigitalOutputs: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    227            digital_Outputs_StructMem_u32 =  StructMem_CreateInstance(MODULE_DIGITAL_OUTPUTS, sizeof(Digital_Outputs_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R4,??DataTable4_1
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x214E             MOVS     R1,#+78
+   \        0xE   0x200E             MOVS     R0,#+14
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    228            (*digital_Outputs_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&digital_Outputs_Control ;    // Map the ADC1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable2_1
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    229            uint8_t module_digital_outputs_index_u8 = getProcessInfoIndex(MODULE_DIGITAL_OUTPUTS);
+   \       0x1C   0x200E             MOVS     R0,#+14
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    230            processInfoTable[module_digital_outputs_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)digital_Outputs_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable4
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    231          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    232          
+    233          /**
+    234          ********************************************************************************
+    235          * @brief   Init digital outputs settings
+    236          * @details Init global variables from flash
+    237          * @param   None 
+    238          * @return  None
+    239          ********************************************************************************
+    240          */
+
+   \                                 In section .text, align 2, keep-with-next
+    241          void InitDigitalOutputsSetting(void){ 
+   \                     InitDigitalOutputsSetting: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+    242            digital_Outputs_Control.digital_outputs_Setting.maxPwmOutFreq_u16 = 10000;
+   \        0x2   0x....             LDR      R0,??DataTable2_1
+   \        0x4   0x....             LDR      R1,??DataTable4_2  ;; 0x2710
+   \        0x6   0x80C1             STRH     R1,[R0, #+6]
+    243            digital_Outputs_Control.digital_outputs_Setting.minPwmOutFreq_u16 = 50;
+   \        0x8   0x2132             MOVS     R1,#+50
+   \        0xA   0x8081             STRH     R1,[R0, #+4]
+    244            digital_Outputs_Control.digital_outputs_Setting.minPwmOutDuty_u16 = 100; // 1.00% // Maximum PWM output duty cycle corresponding to min demand (0.01%)
+   \        0xC   0x2164             MOVS     R1,#+100
+   \        0xE   0x8101             STRH     R1,[R0, #+8]
+    245            digital_Outputs_Control.digital_outputs_Setting.maxPwmOutDuty_u16 = 9500; // 95.00% // Minimum PWM output duty cycle corresponding to max demand (100%)
+   \       0x10   0x....             LDR      R2,??DataTable4_3  ;; 0x251c
+   \       0x12   0x8142             STRH     R2,[R0, #+10]
+    246            digital_Outputs_Control.digital_outputs_Setting.pwmOutFreq_u16 = 100; // Output frequency for duty cycle mode
+   \       0x14   0x8181             STRH     R1,[R0, #+12]
+    247            digital_Outputs_Control.digital_outputs_Setting.outputEnable_u16 = 0xffff;
+   \       0x16   0x....             LDR      R2,??DataTable4_4  ;; 0xffff
+   \       0x18   0x8042             STRH     R2,[R0, #+2]
+    248            digital_Outputs_Control.digital_outputs_Setting.outputFunction[0] = PWM_DUTY_CYCLE_OUTPUT;//PWM_FREQUENCY_OUTPUT;//PWM_DUTY_CYCLE_OUTPUT; //PWM_DUTY_CYCLE_OUTPUT or FAULT_OUTPUT;
+   \       0x1A   0x2205             MOVS     R2,#+5
+   \       0x1C   0x8382             STRH     R2,[R0, #+28]
+    249            digital_Outputs_Control.digital_outputs_Setting.outputFunction[1] = LED_OUTPUT; //(uint8_t)LED_OUTPUT;
+   \       0x1E   0x2302             MOVS     R3,#+2
+   \       0x20   0x83C3             STRH     R3,[R0, #+30]
+    250            digital_Outputs_Control.digital_outputs_Setting.outputFunction[2] = ON_BOARD_LED_OUTPUT; //(uint8_t)LED_OUTPUT;
+   \       0x22   0x2303             MOVS     R3,#+3
+   \       0x24   0x8403             STRH     R3,[R0, #+32]
+    251            digital_Outputs_Control.digital_outputs_Setting.outputFunction[3] = RELAY_OUTPUT; //(uint8_t)RELAY_OUTPUT;
+   \       0x26   0x2404             MOVS     R4,#+4
+   \       0x28   0x8444             STRH     R4,[R0, #+34]
+    252            digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[0] = MODE_1; // 
+   \       0x2A   0x2401             MOVS     R4,#+1
+   \       0x2C   0x8604             STRH     R4,[R0, #+48]
+    253            digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[1] = MODE_1; // High during normal operation and blink when fault
+   \       0x2E   0x8644             STRH     R4,[R0, #+50]
+    254            digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[2] = MODE_3; // High during normal operation and blink seq when faulted
+   \       0x30   0x8683             STRH     R3,[R0, #+52]
+    255            digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[3] = MODE_3; // NO when (low) during normal operation. NC (high) when faulted
+   \       0x32   0x86C3             STRH     R3,[R0, #+54]
+    256            digital_Outputs_Control.digital_outputs_Setting.outputHighTime_u16 = 200; // On/High Time in mSec
+   \       0x34   0x23C8             MOVS     R3,#+200
+   \       0x36   0x81C3             STRH     R3,[R0, #+14]
+    257            digital_Outputs_Control.digital_outputs_Setting.outputLowTime_u16 = 500; // Off/low time in mSec
+   \       0x38   0x25FA             MOVS     R5,#+250
+   \       0x3A   0x006D             LSLS     R5,R5,#+1        ;; #+500
+   \       0x3C   0x8205             STRH     R5,[R0, #+16]
+    258            digital_Outputs_Control.digital_outputs_Setting.outputSequenceDelay_u16 = 2000; // delay between sequence in mSec
+   \       0x3E   0x25FA             MOVS     R5,#+250
+   \       0x40   0x00ED             LSLS     R5,R5,#+3        ;; #+2000
+   \       0x42   0x8245             STRH     R5,[R0, #+18]
+    259            digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 = 0x0005; // Active Low  
+   \       0x44   0x8002             STRH     R2,[R0, #+0]
+    260            digital_Outputs_Control.digital_outputs_Setting.pwmFreqOutputScaleFactor_u16 = 1; // value * speed = Output frequency
+   \       0x46   0x8344             STRH     R4,[R0, #+26]
+    261            digital_Outputs_Control.digital_outputs_Setting.relayEnableDemandThreshold_u16 = 5000; //50%
+   \       0x48   0x....             LDR      R2,??DataTable4_5  ;; 0x1388
+   \       0x4A   0x8302             STRH     R2,[R0, #+24]
+    262            digital_Outputs_Control.digital_outputs_Setting.ledExternalSequenceHighTime_u16 = 100; // High time for sequences initiated by external modules
+   \       0x4C   0x8281             STRH     R1,[R0, #+20]
+    263            digital_Outputs_Control.digital_outputs_Setting.ledExternalSequenceLowTime_u16 = 200;
+   \       0x4E   0x82C3             STRH     R3,[R0, #+22]
+    264            
+    265          }  
+   \       0x50   0xBC30             POP      {R4,R5}
+   \       0x52   0x4770             BX       LR               ;; return
+    266          
+    267          /**
+    268          ********************************************************************************
+    269          * @brief   Init module variables
+    270          * @details Init local variables
+    271          * @param   None 
+    272          * @return  None
+    273          ********************************************************************************
+    274          */
+
+   \                                 In section .text, align 2, keep-with-next
+    275          void InitDigitalOutputsLocalVariables(void)
+    276          {
+   \                     InitDigitalOutputsLocalVariables: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    277            // Local variable init
+    278            for(uint8_t output_num_u8= 0; output_num_u8 < TOTAL_DIGITAL_OUTPUTS; output_num_u8++){
+   \        0x2   0x2600             MOVS     R6,#+0
+   \        0x4   0x0034             MOVS     R4,R6
+   \                     ??InitDigitalOutputsLocalVariables_0: (+1)
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0xB2C0             UXTB     R0,R0
+   \        0xA   0x280A             CMP      R0,#+10
+   \        0xC   0xDB00             BLT      .+4
+   \        0xE   0xE0C1             B        ??InitDigitalOutputsLocalVariables_1
+    279              output_seq_count_u8[output_num_u8] = 0;
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x....             LDR      R1,??DataTable4_6
+   \       0x14   0x0022             MOVS     R2,R4
+   \       0x16   0xB2D2             UXTB     R2,R2
+   \       0x18   0x5488             STRB     R0,[R1, R2]
+    280              is_sequence_executing[output_num_u8] = FALSE;
+   \       0x1A   0x0030             MOVS     R0,R6
+   \       0x1C   0x....             LDR      R1,??DataTable4_7
+   \       0x1E   0x0022             MOVS     R2,R4
+   \       0x20   0xB2D2             UXTB     R2,R2
+   \       0x22   0x5488             STRB     R0,[R1, R2]
+    281              seq_change_time_u64[output_num_u8] = 0;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x2100             MOVS     R1,#+0
+   \       0x28   0x....             LDR      R2,??DataTable4_8
+   \       0x2A   0x0023             MOVS     R3,R4
+   \       0x2C   0xB2DB             UXTB     R3,R3
+   \       0x2E   0x2508             MOVS     R5,#+8
+   \       0x30   0x436B             MULS     R3,R5,R3
+   \       0x32   0x18D2             ADDS     R2,R2,R3
+   \       0x34   0xC203             STM      R2!,{R0,R1}
+   \       0x36   0x3A08             SUBS     R2,R2,#+8
+    282              is_processed_led_fault_outputs[output_num_u8] = FALSE;
+   \       0x38   0x0030             MOVS     R0,R6
+   \       0x3A   0x....             LDR      R1,??DataTable4_9
+   \       0x3C   0x0022             MOVS     R2,R4
+   \       0x3E   0xB2D2             UXTB     R2,R2
+   \       0x40   0x5488             STRB     R0,[R1, R2]
+    283              if( (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == FAULT_OUTPUT) || (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == LED_OUTPUT) || (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == ON_BOARD_LED_OUTPUT))
+   \       0x42   0x....             LDR      R5,??DataTable4_10
+   \       0x44   0x0020             MOVS     R0,R4
+   \       0x46   0xB2C0             UXTB     R0,R0
+   \       0x48   0x2102             MOVS     R1,#+2
+   \       0x4A   0x4348             MULS     R0,R1,R0
+   \       0x4C   0x1828             ADDS     R0,R5,R0
+   \       0x4E   0x8B80             LDRH     R0,[R0, #+28]
+   \       0x50   0x2801             CMP      R0,#+1
+   \       0x52   0xD00F             BEQ      ??InitDigitalOutputsLocalVariables_2
+   \       0x54   0x0020             MOVS     R0,R4
+   \       0x56   0xB2C0             UXTB     R0,R0
+   \       0x58   0x2102             MOVS     R1,#+2
+   \       0x5A   0x4348             MULS     R0,R1,R0
+   \       0x5C   0x1828             ADDS     R0,R5,R0
+   \       0x5E   0x8B80             LDRH     R0,[R0, #+28]
+   \       0x60   0x2802             CMP      R0,#+2
+   \       0x62   0xD007             BEQ      ??InitDigitalOutputsLocalVariables_2
+   \       0x64   0x0020             MOVS     R0,R4
+   \       0x66   0xB2C0             UXTB     R0,R0
+   \       0x68   0x2102             MOVS     R1,#+2
+   \       0x6A   0x4348             MULS     R0,R1,R0
+   \       0x6C   0x1828             ADDS     R0,R5,R0
+   \       0x6E   0x8B80             LDRH     R0,[R0, #+28]
+   \       0x70   0x2803             CMP      R0,#+3
+   \       0x72   0xD11D             BNE      ??InitDigitalOutputsLocalVariables_3
+    284              {
+    285                {  
+    286                  if(digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[output_num_u8] == MODE_3)
+   \                     ??InitDigitalOutputsLocalVariables_2: (+1)
+   \       0x74   0x0020             MOVS     R0,R4
+   \       0x76   0xB2C0             UXTB     R0,R0
+   \       0x78   0x2102             MOVS     R1,#+2
+   \       0x7A   0x4348             MULS     R0,R1,R0
+   \       0x7C   0x1828             ADDS     R0,R5,R0
+   \       0x7E   0x8E00             LDRH     R0,[R0, #+48]
+   \       0x80   0x2803             CMP      R0,#+3
+   \       0x82   0xD103             BNE      ??InitDigitalOutputsLocalVariables_4
+    287                  {
+    288                    // Only count ouputs that need to execute blink sequence
+    289                    fault_led_outputs_count_u8++; 
+   \       0x84   0x....             LDR      R0,??DataTable4_11
+   \       0x86   0x7801             LDRB     R1,[R0, #+0]
+   \       0x88   0x1C49             ADDS     R1,R1,#+1
+   \       0x8A   0x7001             STRB     R1,[R0, #+0]
+    290                  }
+    291                }      
+    292                // Init output state
+    293                if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI) // Invert Polarity
+   \                     ??InitDigitalOutputsLocalVariables_4: (+1)
+   \       0x8C   0x8828             LDRH     R0,[R5, #+0]
+   \       0x8E   0x2101             MOVS     R1,#+1
+   \       0x90   0x40A1             LSLS     R1,R1,R4
+   \       0x92   0x4001             ANDS     R1,R1,R0
+   \       0x94   0x4121             ASRS     R1,R1,R4
+   \       0x96   0x2900             CMP      R1,#+0
+   \       0x98   0xD005             BEQ      ??InitDigitalOutputsLocalVariables_5
+    294                {  // Inverted output
+    295                  Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_HI);
+   \       0x9A   0x2101             MOVS     R1,#+1
+   \       0x9C   0x0020             MOVS     R0,R4
+   \       0x9E   0xB2C0             UXTB     R0,R0
+   \       0xA0   0x....'....        BL       Module_Gpio_WriteGpioState
+   \       0xA4   0xE004             B        ??InitDigitalOutputsLocalVariables_3
+    296                } else{
+    297                  Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_LOW);
+   \                     ??InitDigitalOutputsLocalVariables_5: (+1)
+   \       0xA6   0x2100             MOVS     R1,#+0
+   \       0xA8   0x0020             MOVS     R0,R4
+   \       0xAA   0xB2C0             UXTB     R0,R0
+   \       0xAC   0x....'....        BL       Module_Gpio_WriteGpioState
+    298                }
+    299              } 
+    300              if( (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == PWM_DUTY_CYCLE_OUTPUT) || (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == PWM_FREQUENCY_OUTPUT) )
+   \                     ??InitDigitalOutputsLocalVariables_3: (+1)
+   \       0xB0   0x0020             MOVS     R0,R4
+   \       0xB2   0xB2C0             UXTB     R0,R0
+   \       0xB4   0x2102             MOVS     R1,#+2
+   \       0xB6   0x4348             MULS     R0,R1,R0
+   \       0xB8   0x1828             ADDS     R0,R5,R0
+   \       0xBA   0x8B80             LDRH     R0,[R0, #+28]
+   \       0xBC   0x2805             CMP      R0,#+5
+   \       0xBE   0xD007             BEQ      ??InitDigitalOutputsLocalVariables_6
+   \       0xC0   0x0020             MOVS     R0,R4
+   \       0xC2   0xB2C0             UXTB     R0,R0
+   \       0xC4   0x2102             MOVS     R1,#+2
+   \       0xC6   0x4348             MULS     R0,R1,R0
+   \       0xC8   0x1828             ADDS     R0,R5,R0
+   \       0xCA   0x8B80             LDRH     R0,[R0, #+28]
+   \       0xCC   0x2806             CMP      R0,#+6
+   \       0xCE   0xD15B             BNE      ??InitDigitalOutputsLocalVariables_7
+    301              {
+    302                
+    303                Module_Gpio_StartPwmOut(output_num_u8);
+   \                     ??InitDigitalOutputsLocalVariables_6: (+1)
+   \       0xD0   0x0020             MOVS     R0,R4
+   \       0xD2   0xB2C0             UXTB     R0,R0
+   \       0xD4   0x....'....        BL       Module_Gpio_StartPwmOut
+    304                
+    305                if(pwm_out_init_error_state == 0) 
+   \       0xD8   0x....             LDR      R0,??DataTable4_12
+   \       0xDA   0x7800             LDRB     R0,[R0, #+0]
+   \       0xDC   0x2800             CMP      R0,#+0
+   \       0xDE   0xD157             BNE      ??InitDigitalOutputsLocalVariables_8
+    306                { // Dout1 pin is used for PWM out 
+    307                  if( digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == PWM_FREQUENCY_OUTPUT)
+   \       0xE0   0x0020             MOVS     R0,R4
+   \       0xE2   0xB2C0             UXTB     R0,R0
+   \       0xE4   0x2102             MOVS     R1,#+2
+   \       0xE6   0x4348             MULS     R0,R1,R0
+   \       0xE8   0x1828             ADDS     R0,R5,R0
+   \       0xEA   0x8B80             LDRH     R0,[R0, #+28]
+   \       0xEC   0x2806             CMP      R0,#+6
+   \       0xEE   0xD11E             BNE      ??InitDigitalOutputsLocalVariables_9
+    308                  {
+    309                    Module_Gpio_SetPwmOutPeriod(output_num_u8, digital_Outputs_Control.digital_outputs_Setting.minPwmOutFreq_u16 ); 
+   \       0xF0   0x88A9             LDRH     R1,[R5, #+4]
+   \       0xF2   0x0020             MOVS     R0,R4
+   \       0xF4   0xB2C0             UXTB     R0,R0
+   \       0xF6   0x....'....        BL       Module_Gpio_SetPwmOutPeriod
+    310                    Module_Gpio_SetPwmOutDutyCycle(output_num_u8, DEFAULT_PERCENT_DUTY_CYCLE);
+   \       0xFA   0x....             LDR      R1,??DataTable4_5  ;; 0x1388
+   \       0xFC   0x0020             MOVS     R0,R4
+   \       0xFE   0xB2C0             UXTB     R0,R0
+   \      0x100   0x....'....        BL       Module_Gpio_SetPwmOutDutyCycle
+    311                    
+    312                    pwm_freq_output_slope_f = (digital_Outputs_Control.digital_outputs_Setting.maxPwmOutFreq_u16  - digital_Outputs_Control.digital_outputs_Setting.minPwmOutFreq_u16 );
+   \      0x104   0x....             LDR      R7,??DataTable4_13
+   \      0x106   0x88E8             LDRH     R0,[R5, #+6]
+   \      0x108   0x88A9             LDRH     R1,[R5, #+4]
+   \      0x10A   0x1A40             SUBS     R0,R0,R1
+   \      0x10C   0x....'....        BL       __aeabi_i2f
+   \      0x110   0x6038             STR      R0,[R7, #+0]
+    313                    pwm_freq_output_slope_f = pwm_freq_output_slope_f/ ((float)(MAX_PERCENT_DEMAND - MIN_PERCENT_DEMAND));       
+   \      0x112   0x6838             LDR      R0,[R7, #+0]
+   \      0x114   0x....             LDR      R1,??DataTable4_14  ;; 0x461c3c00
+   \      0x116   0x....'....        BL       __aeabi_fdiv
+   \      0x11A   0x6038             STR      R0,[R7, #+0]
+    314                    pwm_freq_output_intercept_f = digital_Outputs_Control.digital_outputs_Setting.minPwmOutFreq_u16 - pwm_freq_output_slope_f * 1; // Min freq at 0.01%
+   \      0x11C   0x88A8             LDRH     R0,[R5, #+4]
+   \      0x11E   0x....'....        BL       __aeabi_ui2f
+   \      0x122   0x6839             LDR      R1,[R7, #+0]
+   \      0x124   0x....'....        BL       __aeabi_fsub
+   \      0x128   0x....             LDR      R1,??DataTable4_15
+   \      0x12A   0x6008             STR      R0,[R1, #+0]
+   \      0x12C   0xE020             B        ??InitDigitalOutputsLocalVariables_10
+    315                    
+    316                  }
+    317                  else if (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == PWM_DUTY_CYCLE_OUTPUT)
+   \                     ??InitDigitalOutputsLocalVariables_9: (+1)
+   \      0x12E   0x0020             MOVS     R0,R4
+   \      0x130   0xB2C0             UXTB     R0,R0
+   \      0x132   0x2102             MOVS     R1,#+2
+   \      0x134   0x4348             MULS     R0,R1,R0
+   \      0x136   0x1828             ADDS     R0,R5,R0
+   \      0x138   0x8B80             LDRH     R0,[R0, #+28]
+   \      0x13A   0x2805             CMP      R0,#+5
+   \      0x13C   0xD118             BNE      ??InitDigitalOutputsLocalVariables_10
+    318                  {
+    319                    Module_Gpio_SetPwmOutPeriod(output_num_u8, digital_Outputs_Control.digital_outputs_Setting.pwmOutFreq_u16 ); 
+   \      0x13E   0x89A9             LDRH     R1,[R5, #+12]
+   \      0x140   0x0020             MOVS     R0,R4
+   \      0x142   0xB2C0             UXTB     R0,R0
+   \      0x144   0x....'....        BL       Module_Gpio_SetPwmOutPeriod
+    320                    
+    321                    pwm_duty_output_slope_f = digital_Outputs_Control.digital_outputs_Setting.maxPwmOutDuty_u16 - digital_Outputs_Control.digital_outputs_Setting.minPwmOutDuty_u16;
+   \      0x148   0x....             LDR      R7,??DataTable4_16
+   \      0x14A   0x8968             LDRH     R0,[R5, #+10]
+   \      0x14C   0x8929             LDRH     R1,[R5, #+8]
+   \      0x14E   0x1A40             SUBS     R0,R0,R1
+   \      0x150   0x....'....        BL       __aeabi_i2f
+   \      0x154   0x6038             STR      R0,[R7, #+0]
+    322                    pwm_duty_output_slope_f = pwm_duty_output_slope_f / ((float)(MAX_PERCENT_DEMAND - MIN_PERCENT_DEMAND));
+   \      0x156   0x6838             LDR      R0,[R7, #+0]
+   \      0x158   0x....             LDR      R1,??DataTable4_14  ;; 0x461c3c00
+   \      0x15A   0x....'....        BL       __aeabi_fdiv
+   \      0x15E   0x6038             STR      R0,[R7, #+0]
+    323                    pwm_duty_output_intercept_f = digital_Outputs_Control.digital_outputs_Setting.minPwmOutDuty_u16 - pwm_duty_output_slope_f * 1; // @ 0.01% demand = minPwmOutDuty_u16
+   \      0x160   0x8928             LDRH     R0,[R5, #+8]
+   \      0x162   0x....'....        BL       __aeabi_ui2f
+   \      0x166   0x6839             LDR      R1,[R7, #+0]
+   \      0x168   0x....'....        BL       __aeabi_fsub
+   \      0x16C   0x....             LDR      R1,??DataTable4_17
+   \      0x16E   0x6008             STR      R0,[R1, #+0]
+    324                  }
+    325                  
+    326                  uint8_t polarity_value = ((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 >> output_num_u8) & (1u));
+   \                     ??InitDigitalOutputsLocalVariables_10: (+1)
+   \      0x170   0x8828             LDRH     R0,[R5, #+0]
+   \      0x172   0x4120             ASRS     R0,R0,R4
+   \      0x174   0x0005             MOVS     R5,R0
+   \      0x176   0x07ED             LSLS     R5,R5,#+31       ;; ZeroExtS R5,R5,#+31,#+31
+   \      0x178   0x0FED             LSRS     R5,R5,#+31
+    327                  
+    328                  Module_Gpio_SetPwmOutPolarity(output_num_u8, polarity_value); // Module_Gpio_StartPwm() resets polarity. So, set polarity here. 
+   \      0x17A   0x0029             MOVS     R1,R5
+   \      0x17C   0xB2C9             UXTB     R1,R1
+   \      0x17E   0x0020             MOVS     R0,R4
+   \      0x180   0xB2C0             UXTB     R0,R0
+   \      0x182   0x....'....        BL       Module_Gpio_SetPwmOutPolarity
+   \      0x186   0xE003             B        ??InitDigitalOutputsLocalVariables_8
+    329                }
+    330              } else //if(digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == FAULT_OUTPUT)
+    331              {
+    332                Module_Gpio_Dout1_Init(output_num_u8); // Initilize Dout1 as a digital output
+   \                     ??InitDigitalOutputsLocalVariables_7: (+1)
+   \      0x188   0x0020             MOVS     R0,R4
+   \      0x18A   0xB2C0             UXTB     R0,R0
+   \      0x18C   0x....'....        BL       Module_Gpio_Dout1_Init
+    333              }
+    334            }  
+   \                     ??InitDigitalOutputsLocalVariables_8: (+1)
+   \      0x190   0x1C64             ADDS     R4,R4,#+1
+   \      0x192   0xE738             B        ??InitDigitalOutputsLocalVariables_0
+    335            
+    336            /*Attach motor demand mux module structured memory into this App*/
+    337            //uint8_t module_motor_demand_mux_index  = getProcessInfoIndex(MODULE_MOTOR_DEMAND_MUX);   //return Process index from processInfo array
+    338            //digitalOutputs_MotorDemandMux_Control = (MotorDemandMux_Control*)((*(processInfoTable[module_motor_demand_mux_index].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory for Analog 0-10V input
+    339            uint8_t module_motor_com_index  = getProcessInfoIndex(MODULE_MOTOR_COM);   //return Process index from processInfo array
+   \                     ??InitDigitalOutputsLocalVariables_1: (+1)
+   \      0x194   0x200D             MOVS     R0,#+13
+   \      0x196   0x....'....        BL       getProcessInfoIndex
+   \      0x19A   0x0004             MOVS     R4,R0
+    340            digitalOutputs_MotorCom_Control_ptr = (Motor_Com_Control*)((*(processInfoTable[module_motor_com_index].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory 
+   \      0x19C   0x....             LDR      R0,??DataTable4
+   \      0x19E   0x0021             MOVS     R1,R4
+   \      0x1A0   0xB2C9             UXTB     R1,R1
+   \      0x1A2   0x2216             MOVS     R2,#+22
+   \      0x1A4   0x4351             MULS     R1,R2,R1
+   \      0x1A6   0x1840             ADDS     R0,R0,R1
+   \      0x1A8   0x300B             ADDS     R0,R0,#+11
+   \      0x1AA   0x....'....        BL       __aeabi_uread4
+   \      0x1AE   0x6800             LDR      R0,[R0, #+0]
+   \      0x1B0   0x....             LDR      R1,??DataTable4_18
+   \      0x1B2   0x6008             STR      R0,[R1, #+0]
+    341          }
+   \      0x1B4   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    342          
+    343          /**
+    344          ********************************************************************************
+    345          * @brief   Add data to LED output sequence
+    346          * @details Sets the on board/debug LED output to a sequence
+    347          * @param   output_num_u8 
+    348          * @return  None
+    349          ********************************************************************************
+    350          */
+
+   \                                 In section .text, align 2, keep-with-next
+    351          void DigitalOutputs_AddLedSequence(uint8_t sequence_value_u8){
+    352            onBoardLedExternalSequences_u8 = sequence_value_u8;
+   \                     DigitalOutputs_AddLedSequence: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable4_19
+   \        0x2   0x7008             STRB     R0,[R1, #+0]
+    353          }
+   \        0x4   0x4770             BX       LR               ;; return
+    354          
+    355          /**
+    356          ********************************************************************************
+    357          * @brief   Set the LED/Fault output sequence
+    358          * @details Sets the digital output to a sequence. Every state transition from 
+    359          *          SEQ_HI to SEQ_LOW state is counted as a sequence count. 
+    360          * @param   output_num_u8 (digital output number)
+    361          * @return  None
+    362          ********************************************************************************
+    363          */
+
+   \                                 In section .text, align 4, keep-with-next
+    364          void ExecuteFaultLedOutBlinking(uint8_t output_num_u8){
+   \                     ExecuteFaultLedOutBlinking: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+    365            uint8_t sequence_u8 =0;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x0020             MOVS     R0,R4
+    366            
+    367            if( ((is_external_led_sequence_executing == TRUE) && (current_external_sequence_u8 != 0)) && (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == ON_BOARD_LED_OUTPUT))
+   \        0x8   0x4DB4             LDR      R5,??ExecuteFaultLedOutBlinking_0
+   \        0xA   0x7829             LDRB     R1,[R5, #+0]
+   \        0xC   0x2901             CMP      R1,#+1
+   \        0xE   0xD110             BNE      ??ExecuteFaultLedOutBlinking_1
+   \       0x10   0x49B3             LDR      R1,??ExecuteFaultLedOutBlinking_0+0x4
+   \       0x12   0x780A             LDRB     R2,[R1, #+0]
+   \       0x14   0x2A00             CMP      R2,#+0
+   \       0x16   0xD00C             BEQ      ??ExecuteFaultLedOutBlinking_1
+   \       0x18   0x4AB2             LDR      R2,??ExecuteFaultLedOutBlinking_0+0x8
+   \       0x1A   0x466B             MOV      R3,SP
+   \       0x1C   0x7C1B             LDRB     R3,[R3, #+16]
+   \       0x1E   0x2602             MOVS     R6,#+2
+   \       0x20   0x4373             MULS     R3,R6,R3
+   \       0x22   0x18D2             ADDS     R2,R2,R3
+   \       0x24   0x8B92             LDRH     R2,[R2, #+28]
+   \       0x26   0x2A03             CMP      R2,#+3
+   \       0x28   0xD103             BNE      ??ExecuteFaultLedOutBlinking_1
+    368            { // User external sequence if its present
+    369              sequence_u8 = current_external_sequence_u8;
+   \       0x2A   0x7809             LDRB     R1,[R1, #+0]
+   \       0x2C   0x466A             MOV      R2,SP
+   \       0x2E   0x7211             STRB     R1,[R2, #+8]
+   \       0x30   0xE003             B        ??ExecuteFaultLedOutBlinking_2
+    370            } else{
+    371              // Fault sequence
+    372              sequence_u8 = current_sequence_u8;
+   \                     ??ExecuteFaultLedOutBlinking_1: (+1)
+   \       0x32   0x49AD             LDR      R1,??ExecuteFaultLedOutBlinking_0+0xC
+   \       0x34   0x7809             LDRB     R1,[R1, #+0]
+   \       0x36   0x466A             MOV      R2,SP
+   \       0x38   0x7211             STRB     R1,[R2, #+8]
+    373            }
+    374            
+    375            // Check if output sequence is complete
+    376            // First start a sequnce when output_seq_count_u8 = 0. Once a sequnce is started finish it before moving to next one. 
+    377            // A sequence can be in one of the following states
+    378            // SEQ_LOW: Output is low
+    379            // SEQ_HI: Ouptut is high
+    380            // SEQ_DELAY: Delay state. Delay between two sequences
+    381            // SEQ_NO_CHANGE: Delay between low.hi of a current sequence
+    382            if(output_seq_count_u8[output_num_u8] <= sequence_u8)
+   \                     ??ExecuteFaultLedOutBlinking_2: (+1)
+   \       0x3A   0x4668             MOV      R0,SP
+   \       0x3C   0x7A00             LDRB     R0,[R0, #+8]
+   \       0x3E   0x49AB             LDR      R1,??ExecuteFaultLedOutBlinking_0+0x10
+   \       0x40   0x466A             MOV      R2,SP
+   \       0x42   0x7C12             LDRB     R2,[R2, #+16]
+   \       0x44   0x5C89             LDRB     R1,[R1, R2]
+   \       0x46   0x4288             CMP      R0,R1
+   \       0x48   0xD200             BCS      .+4
+   \       0x4A   0xE166             B        ??ExecuteFaultLedOutBlinking_3
+    383            {
+    384              uint8_t state_u8=0;
+   \       0x4C   0x0020             MOVS     R0,R4
+   \       0x4E   0x4669             MOV      R1,SP
+   \       0x50   0x7248             STRB     R0,[R1, #+9]
+    385              sequence_time_u64 = getSysCount(); // Store time tick value    
+   \       0x52   0x....'....        BL       getSysCount
+   \       0x56   0x4AA6             LDR      R2,??ExecuteFaultLedOutBlinking_0+0x14
+   \       0x58   0xC203             STM      R2!,{R0,R1}
+   \       0x5A   0x3A08             SUBS     R2,R2,#+8
+    386              
+    387              // Check if new sequence has to start
+    388              if(output_seq_count_u8[output_num_u8] == 0 ) 
+   \       0x5C   0x4AA3             LDR      R2,??ExecuteFaultLedOutBlinking_0+0x10
+   \       0x5E   0x4668             MOV      R0,SP
+   \       0x60   0x7C00             LDRB     R0,[R0, #+16]
+   \       0x62   0x5C10             LDRB     R0,[R2, R0]
+   \       0x64   0x2800             CMP      R0,#+0
+   \       0x66   0xD12B             BNE      ??ExecuteFaultLedOutBlinking_4
+    389              { 
+    390                // Each sequence start after outputSequenceDelay_u16 dealy is satisfied
+    391                if((sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.outputSequenceDelay_u16) // Check the delay once previous sequence ended
+   \       0x68   0x4BA2             LDR      R3,??ExecuteFaultLedOutBlinking_0+0x18
+   \       0x6A   0x4EA1             LDR      R6,??ExecuteFaultLedOutBlinking_0+0x14
+   \       0x6C   0x489D             LDR      R0,??ExecuteFaultLedOutBlinking_0+0x8
+   \       0x6E   0x8A40             LDRH     R0,[R0, #+18]
+   \       0x70   0x2100             MOVS     R1,#+0
+   \       0x72   0x9000             STR      R0,[SP, #+0]
+   \       0x74   0x9101             STR      R1,[SP, #+4]
+   \       0x76   0xCE30             LDM      R6!,{R4,R5}
+   \       0x78   0x3E08             SUBS     R6,R6,#+8
+   \       0x7A   0x4668             MOV      R0,SP
+   \       0x7C   0x7C01             LDRB     R1,[R0, #+16]
+   \       0x7E   0x2008             MOVS     R0,#+8
+   \       0x80   0x4341             MULS     R1,R0,R1
+   \       0x82   0x1858             ADDS     R0,R3,R1
+   \       0x84   0xC803             LDM      R0,{R0,R1}
+   \       0x86   0x1A24             SUBS     R4,R4,R0
+   \       0x88   0x418D             SBCS     R5,R5,R1
+   \       0x8A   0x9800             LDR      R0,[SP, #+0]
+   \       0x8C   0x9901             LDR      R1,[SP, #+4]
+   \       0x8E   0x42A9             CMP      R1,R5
+   \       0x90   0xD814             BHI      ??ExecuteFaultLedOutBlinking_5
+   \       0x92   0xD301             BCC      ??ExecuteFaultLedOutBlinking_6
+   \       0x94   0x42A0             CMP      R0,R4
+   \       0x96   0xD211             BCS      ??ExecuteFaultLedOutBlinking_5
+    392                { // Start new sequence
+    393                  output_seq_count_u8[output_num_u8]++;
+   \                     ??ExecuteFaultLedOutBlinking_6: (+1)
+   \       0x98   0x4668             MOV      R0,SP
+   \       0x9A   0x7C00             LDRB     R0,[R0, #+16]
+   \       0x9C   0x5C10             LDRB     R0,[R2, R0]
+   \       0x9E   0x1C40             ADDS     R0,R0,#+1
+   \       0xA0   0x4669             MOV      R1,SP
+   \       0xA2   0x7C09             LDRB     R1,[R1, #+16]
+   \       0xA4   0x5450             STRB     R0,[R2, R1]
+    394                  state_u8 = SEQ_HI; // Next state        
+   \       0xA6   0x2401             MOVS     R4,#+1
+    395                  seq_change_time_u64[output_num_u8] = sequence_time_u64; // Time when output is changed
+   \       0xA8   0xCE03             LDM      R6!,{R0,R1}
+   \       0xAA   0x3E08             SUBS     R6,R6,#+8
+   \       0xAC   0x466A             MOV      R2,SP
+   \       0xAE   0x7C12             LDRB     R2,[R2, #+16]
+   \       0xB0   0x2508             MOVS     R5,#+8
+   \       0xB2   0x436A             MULS     R2,R5,R2
+   \       0xB4   0x189A             ADDS     R2,R3,R2
+   \       0xB6   0xC203             STM      R2!,{R0,R1}
+   \       0xB8   0x3A08             SUBS     R2,R2,#+8
+   \       0xBA   0xE0D1             B        ??ExecuteFaultLedOutBlinking_7
+    396                }
+    397                else{ // Wait until outputSequenceDelay_u16 delay 
+    398                  state_u8 = SEQ_DELAY;
+   \                     ??ExecuteFaultLedOutBlinking_5: (+1)
+   \       0xBC   0x2402             MOVS     R4,#+2
+   \       0xBE   0xE0CF             B        ??ExecuteFaultLedOutBlinking_7
+    399                }
+    400              } else{ // Finish current sequence
+    401                // Check if output is hi or low
+    402                // Then check for the correspodning delay
+    403                // If delay is satisfied, change state and increment sequence count (output_seq_count_u8) if the state changes from HI to LOW
+    404                
+    405                if(((((digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16)& (uint16_t)((1 << output_num_u8))) >> output_num_u8) && BIT_HI)) // Check if current output is hi
+   \                     ??ExecuteFaultLedOutBlinking_4: (+1)
+   \       0xC0   0x2601             MOVS     R6,#+1
+   \       0xC2   0x4888             LDR      R0,??ExecuteFaultLedOutBlinking_0+0x8
+   \       0xC4   0x2144             MOVS     R1,#+68
+   \       0xC6   0x5A41             LDRH     R1,[R0, R1]
+   \       0xC8   0x466B             MOV      R3,SP
+   \       0xCA   0x7C1F             LDRB     R7,[R3, #+16]
+   \       0xCC   0x0033             MOVS     R3,R6
+   \       0xCE   0x40BB             LSLS     R3,R3,R7
+   \       0xD0   0xB29B             UXTH     R3,R3
+   \       0xD2   0x400B             ANDS     R3,R3,R1
+   \       0xD4   0x4669             MOV      R1,SP
+   \       0xD6   0x7C09             LDRB     R1,[R1, #+16]
+   \       0xD8   0x410B             ASRS     R3,R3,R1
+   \       0xDA   0x2B00             CMP      R3,#+0
+   \       0xDC   0xD068             BEQ      ??ExecuteFaultLedOutBlinking_8
+    406                { 
+    407                  // Check if on board LED and if an external sequence is executing
+    408                  if( (is_external_led_sequence_executing == TRUE)&& (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == ON_BOARD_LED_OUTPUT) )
+   \       0xDE   0x7829             LDRB     R1,[R5, #+0]
+   \       0xE0   0x2901             CMP      R1,#+1
+   \       0xE2   0xD133             BNE      ??ExecuteFaultLedOutBlinking_9
+   \       0xE4   0x4669             MOV      R1,SP
+   \       0xE6   0x7C09             LDRB     R1,[R1, #+16]
+   \       0xE8   0x2302             MOVS     R3,#+2
+   \       0xEA   0x4359             MULS     R1,R3,R1
+   \       0xEC   0x1841             ADDS     R1,R0,R1
+   \       0xEE   0x8B89             LDRH     R1,[R1, #+28]
+   \       0xF0   0x2903             CMP      R1,#+3
+   \       0xF2   0xD12B             BNE      ??ExecuteFaultLedOutBlinking_9
+    409                  {
+    410                    if( (sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.ledExternalSequenceHighTime_u16)
+   \       0xF4   0x4B7F             LDR      R3,??ExecuteFaultLedOutBlinking_0+0x18
+   \       0xF6   0x4D7E             LDR      R5,??ExecuteFaultLedOutBlinking_0+0x14
+   \       0xF8   0x8A80             LDRH     R0,[R0, #+20]
+   \       0xFA   0x2100             MOVS     R1,#+0
+   \       0xFC   0x9000             STR      R0,[SP, #+0]
+   \       0xFE   0x9101             STR      R1,[SP, #+4]
+   \      0x100   0xCD03             LDM      R5!,{R0,R1}
+   \      0x102   0x3D08             SUBS     R5,R5,#+8
+   \      0x104   0x0006             MOVS     R6,R0
+   \      0x106   0x000F             MOVS     R7,R1
+   \      0x108   0x4668             MOV      R0,SP
+   \      0x10A   0x7C01             LDRB     R1,[R0, #+16]
+   \      0x10C   0x2008             MOVS     R0,#+8
+   \      0x10E   0x4341             MULS     R1,R0,R1
+   \      0x110   0x1858             ADDS     R0,R3,R1
+   \      0x112   0xC803             LDM      R0,{R0,R1}
+   \      0x114   0x1A36             SUBS     R6,R6,R0
+   \      0x116   0x418F             SBCS     R7,R7,R1
+   \      0x118   0x9800             LDR      R0,[SP, #+0]
+   \      0x11A   0x9901             LDR      R1,[SP, #+4]
+   \      0x11C   0x42B9             CMP      R1,R7
+   \      0x11E   0xD813             BHI      ??ExecuteFaultLedOutBlinking_10
+   \      0x120   0xD301             BCC      ??ExecuteFaultLedOutBlinking_11
+   \      0x122   0x42B0             CMP      R0,R6
+   \      0x124   0xD210             BCS      ??ExecuteFaultLedOutBlinking_10
+    411                    {            
+    412                      state_u8 = SEQ_LOW; // Next state
+    413                      seq_change_time_u64[output_num_u8] = sequence_time_u64; // Time when output is changed
+   \                     ??ExecuteFaultLedOutBlinking_11: (+1)
+   \      0x126   0xCD03             LDM      R5!,{R0,R1}
+   \      0x128   0x3D08             SUBS     R5,R5,#+8
+   \      0x12A   0x466D             MOV      R5,SP
+   \      0x12C   0x7C2D             LDRB     R5,[R5, #+16]
+   \      0x12E   0x2608             MOVS     R6,#+8
+   \      0x130   0x4375             MULS     R5,R6,R5
+   \      0x132   0x195B             ADDS     R3,R3,R5
+   \      0x134   0xC303             STM      R3!,{R0,R1}
+   \      0x136   0x3B08             SUBS     R3,R3,#+8
+    414                      output_seq_count_u8[output_num_u8]++;
+   \      0x138   0x4668             MOV      R0,SP
+   \      0x13A   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x13C   0x5C10             LDRB     R0,[R2, R0]
+   \      0x13E   0x1C40             ADDS     R0,R0,#+1
+   \      0x140   0x4669             MOV      R1,SP
+   \      0x142   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x144   0x5450             STRB     R0,[R2, R1]
+   \      0x146   0xE08B             B        ??ExecuteFaultLedOutBlinking_12
+    415                    } else{ // Wait until outputHighTime_u16 delay 
+    416                      state_u8 = SEQ_NO_CHANGE;
+   \                     ??ExecuteFaultLedOutBlinking_10: (+1)
+   \      0x148   0x2403             MOVS     R4,#+3
+   \      0x14A   0xE089             B        ??ExecuteFaultLedOutBlinking_12
+    417                    }          
+    418                  } else if( (is_sequence_executing[output_num_u8] == TRUE) && ((sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.outputHighTime_u16) )
+   \                     ??ExecuteFaultLedOutBlinking_9: (+1)
+   \      0x14C   0x....             LDR      R1,??DataTable5
+   \      0x14E   0x466B             MOV      R3,SP
+   \      0x150   0x7C1B             LDRB     R3,[R3, #+16]
+   \      0x152   0x5CC9             LDRB     R1,[R1, R3]
+   \      0x154   0x2901             CMP      R1,#+1
+   \      0x156   0xD129             BNE      ??ExecuteFaultLedOutBlinking_13
+   \      0x158   0x4B66             LDR      R3,??ExecuteFaultLedOutBlinking_0+0x18
+   \      0x15A   0x4D65             LDR      R5,??ExecuteFaultLedOutBlinking_0+0x14
+   \      0x15C   0x89C0             LDRH     R0,[R0, #+14]
+   \      0x15E   0x2100             MOVS     R1,#+0
+   \      0x160   0x9000             STR      R0,[SP, #+0]
+   \      0x162   0x9101             STR      R1,[SP, #+4]
+   \      0x164   0xCD03             LDM      R5!,{R0,R1}
+   \      0x166   0x3D08             SUBS     R5,R5,#+8
+   \      0x168   0x0006             MOVS     R6,R0
+   \      0x16A   0x000F             MOVS     R7,R1
+   \      0x16C   0x4668             MOV      R0,SP
+   \      0x16E   0x7C01             LDRB     R1,[R0, #+16]
+   \      0x170   0x2008             MOVS     R0,#+8
+   \      0x172   0x4341             MULS     R1,R0,R1
+   \      0x174   0x1858             ADDS     R0,R3,R1
+   \      0x176   0xC803             LDM      R0,{R0,R1}
+   \      0x178   0x1A36             SUBS     R6,R6,R0
+   \      0x17A   0x418F             SBCS     R7,R7,R1
+   \      0x17C   0x9800             LDR      R0,[SP, #+0]
+   \      0x17E   0x9901             LDR      R1,[SP, #+4]
+   \      0x180   0x42B9             CMP      R1,R7
+   \      0x182   0xD813             BHI      ??ExecuteFaultLedOutBlinking_13
+   \      0x184   0xD301             BCC      ??ExecuteFaultLedOutBlinking_14
+   \      0x186   0x42B0             CMP      R0,R6
+   \      0x188   0xD210             BCS      ??ExecuteFaultLedOutBlinking_13
+    419                  { // Check if the output high delay time is above outputHighTime_u16
+    420                    output_seq_count_u8[output_num_u8]++;
+   \                     ??ExecuteFaultLedOutBlinking_14: (+1)
+   \      0x18A   0x4668             MOV      R0,SP
+   \      0x18C   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x18E   0x5C10             LDRB     R0,[R2, R0]
+   \      0x190   0x1C40             ADDS     R0,R0,#+1
+   \      0x192   0x4669             MOV      R1,SP
+   \      0x194   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x196   0x5450             STRB     R0,[R2, R1]
+    421                    state_u8 = SEQ_LOW; // Next state
+    422                    seq_change_time_u64[output_num_u8] = sequence_time_u64; // Time when output is changed
+   \      0x198   0xCD03             LDM      R5!,{R0,R1}
+   \      0x19A   0x3D08             SUBS     R5,R5,#+8
+   \      0x19C   0x466A             MOV      R2,SP
+   \      0x19E   0x7C12             LDRB     R2,[R2, #+16]
+   \      0x1A0   0x2508             MOVS     R5,#+8
+   \      0x1A2   0x436A             MULS     R2,R5,R2
+   \      0x1A4   0x189A             ADDS     R2,R3,R2
+   \      0x1A6   0xC203             STM      R2!,{R0,R1}
+   \      0x1A8   0x3A08             SUBS     R2,R2,#+8
+   \      0x1AA   0xE059             B        ??ExecuteFaultLedOutBlinking_12
+    423                  } else{ // Wait until outputHighTime_u16 delay 
+    424                    state_u8 = SEQ_NO_CHANGE;
+   \                     ??ExecuteFaultLedOutBlinking_13: (+1)
+   \      0x1AC   0x2403             MOVS     R4,#+3
+   \      0x1AE   0xE057             B        ??ExecuteFaultLedOutBlinking_12
+    425                  }
+    426                } else{ // Current output is low
+    427                  
+    428                  if( (is_external_led_sequence_executing == TRUE)&& (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == ON_BOARD_LED_OUTPUT) ){
+   \                     ??ExecuteFaultLedOutBlinking_8: (+1)
+   \      0x1B0   0x7829             LDRB     R1,[R5, #+0]
+   \      0x1B2   0x2901             CMP      R1,#+1
+   \      0x1B4   0xD12B             BNE      ??ExecuteFaultLedOutBlinking_15
+   \      0x1B6   0x4669             MOV      R1,SP
+   \      0x1B8   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x1BA   0x2202             MOVS     R2,#+2
+   \      0x1BC   0x4351             MULS     R1,R2,R1
+   \      0x1BE   0x1841             ADDS     R1,R0,R1
+   \      0x1C0   0x8B89             LDRH     R1,[R1, #+28]
+   \      0x1C2   0x2903             CMP      R1,#+3
+   \      0x1C4   0xD123             BNE      ??ExecuteFaultLedOutBlinking_15
+    429                    // Check if on board LED and if an external sequence is executing
+    430                    if( (sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.ledExternalSequenceLowTime_u16)
+   \      0x1C6   0x4A4B             LDR      R2,??ExecuteFaultLedOutBlinking_0+0x18
+   \      0x1C8   0x4B49             LDR      R3,??ExecuteFaultLedOutBlinking_0+0x14
+   \      0x1CA   0x8AC0             LDRH     R0,[R0, #+22]
+   \      0x1CC   0x2100             MOVS     R1,#+0
+   \      0x1CE   0x9000             STR      R0,[SP, #+0]
+   \      0x1D0   0x9101             STR      R1,[SP, #+4]
+   \      0x1D2   0xCB30             LDM      R3!,{R4,R5}
+   \      0x1D4   0x3B08             SUBS     R3,R3,#+8
+   \      0x1D6   0x4668             MOV      R0,SP
+   \      0x1D8   0x7C01             LDRB     R1,[R0, #+16]
+   \      0x1DA   0x2008             MOVS     R0,#+8
+   \      0x1DC   0x4341             MULS     R1,R0,R1
+   \      0x1DE   0x1850             ADDS     R0,R2,R1
+   \      0x1E0   0xC803             LDM      R0,{R0,R1}
+   \      0x1E2   0x1A24             SUBS     R4,R4,R0
+   \      0x1E4   0x418D             SBCS     R5,R5,R1
+   \      0x1E6   0x9800             LDR      R0,[SP, #+0]
+   \      0x1E8   0x9901             LDR      R1,[SP, #+4]
+   \      0x1EA   0x42A9             CMP      R1,R5
+   \      0x1EC   0xD80D             BHI      ??ExecuteFaultLedOutBlinking_16
+   \      0x1EE   0xD301             BCC      ??ExecuteFaultLedOutBlinking_17
+   \      0x1F0   0x42A0             CMP      R0,R4
+   \      0x1F2   0xD20A             BCS      ??ExecuteFaultLedOutBlinking_16
+    431                    {
+    432                      state_u8 = SEQ_HI; // Next state
+   \                     ??ExecuteFaultLedOutBlinking_17: (+1)
+   \      0x1F4   0x0034             MOVS     R4,R6
+    433                      seq_change_time_u64[output_num_u8] = sequence_time_u64;
+   \      0x1F6   0xCB03             LDM      R3!,{R0,R1}
+   \      0x1F8   0x3B08             SUBS     R3,R3,#+8
+   \      0x1FA   0x466B             MOV      R3,SP
+   \      0x1FC   0x7C1B             LDRB     R3,[R3, #+16]
+   \      0x1FE   0x2508             MOVS     R5,#+8
+   \      0x200   0x436B             MULS     R3,R5,R3
+   \      0x202   0x18D2             ADDS     R2,R2,R3
+   \      0x204   0xC203             STM      R2!,{R0,R1}
+   \      0x206   0x3A08             SUBS     R2,R2,#+8
+   \      0x208   0xE02A             B        ??ExecuteFaultLedOutBlinking_12
+    434                      
+    435                    } else{ // Wait until outputLowTime_u16 delay
+    436                      state_u8 = SEQ_NO_CHANGE;
+   \                     ??ExecuteFaultLedOutBlinking_16: (+1)
+   \      0x20A   0x2403             MOVS     R4,#+3
+   \      0x20C   0xE028             B        ??ExecuteFaultLedOutBlinking_12
+    437                    }
+    438                  } else if( (is_sequence_executing[output_num_u8] == TRUE) && ((sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.outputLowTime_u16) ) 
+   \                     ??ExecuteFaultLedOutBlinking_15: (+1)
+   \      0x20E   0x....             LDR      R1,??DataTable5
+   \      0x210   0x466A             MOV      R2,SP
+   \      0x212   0x7C12             LDRB     R2,[R2, #+16]
+   \      0x214   0x5C89             LDRB     R1,[R1, R2]
+   \      0x216   0x2901             CMP      R1,#+1
+   \      0x218   0xD121             BNE      ??ExecuteFaultLedOutBlinking_18
+   \      0x21A   0x4A36             LDR      R2,??ExecuteFaultLedOutBlinking_0+0x18
+   \      0x21C   0x4B34             LDR      R3,??ExecuteFaultLedOutBlinking_0+0x14
+   \      0x21E   0x8A00             LDRH     R0,[R0, #+16]
+   \      0x220   0x2100             MOVS     R1,#+0
+   \      0x222   0x9000             STR      R0,[SP, #+0]
+   \      0x224   0x9101             STR      R1,[SP, #+4]
+   \      0x226   0xCB30             LDM      R3!,{R4,R5}
+   \      0x228   0x3B08             SUBS     R3,R3,#+8
+   \      0x22A   0x4668             MOV      R0,SP
+   \      0x22C   0x7C01             LDRB     R1,[R0, #+16]
+   \      0x22E   0x2008             MOVS     R0,#+8
+   \      0x230   0x4341             MULS     R1,R0,R1
+   \      0x232   0x1850             ADDS     R0,R2,R1
+   \      0x234   0xC803             LDM      R0,{R0,R1}
+   \      0x236   0x1A24             SUBS     R4,R4,R0
+   \      0x238   0x418D             SBCS     R5,R5,R1
+   \      0x23A   0x9800             LDR      R0,[SP, #+0]
+   \      0x23C   0x9901             LDR      R1,[SP, #+4]
+   \      0x23E   0x42A9             CMP      R1,R5
+   \      0x240   0xD80D             BHI      ??ExecuteFaultLedOutBlinking_18
+   \      0x242   0xD301             BCC      ??ExecuteFaultLedOutBlinking_19
+   \      0x244   0x42A0             CMP      R0,R4
+   \      0x246   0xD20A             BCS      ??ExecuteFaultLedOutBlinking_18
+    439                  { // Check if the output low delay time is above outputLowTime_u16
+    440                    state_u8 = SEQ_HI; // Next state
+   \                     ??ExecuteFaultLedOutBlinking_19: (+1)
+   \      0x248   0x0034             MOVS     R4,R6
+    441                    seq_change_time_u64[output_num_u8] = sequence_time_u64;
+   \      0x24A   0xCB03             LDM      R3!,{R0,R1}
+   \      0x24C   0x3B08             SUBS     R3,R3,#+8
+   \      0x24E   0x466B             MOV      R3,SP
+   \      0x250   0x7C1B             LDRB     R3,[R3, #+16]
+   \      0x252   0x2508             MOVS     R5,#+8
+   \      0x254   0x436B             MULS     R3,R5,R3
+   \      0x256   0x18D2             ADDS     R2,R2,R3
+   \      0x258   0xC203             STM      R2!,{R0,R1}
+   \      0x25A   0x3A08             SUBS     R2,R2,#+8
+   \      0x25C   0xE000             B        ??ExecuteFaultLedOutBlinking_12
+    442                    
+    443                  } else{ // Wait until outputLowTime_u16 delay
+    444                    state_u8 = SEQ_NO_CHANGE;
+   \                     ??ExecuteFaultLedOutBlinking_18: (+1)
+   \      0x25E   0x2403             MOVS     R4,#+3
+    445                  }
+    446                }
+    447                
+    448                // Output sequence is complete when state_u8 is "SEQ_LOW" and output is "low"
+    449                if((state_u8 == SEQ_LOW) && ((((digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16) & ((uint16_t)(~(1 << output_num_u8)))) >> output_num_u8) && BIT_LOW) ) // Sequence dealy
+    450                {   
+    451                  state_u8 = SEQ_DELAY;
+    452                }      
+    453              }
+    454              
+    455              // State machine for the output state
+    456              // Apply output polarity as necessary
+    457              switch(state_u8)
+   \                     ??ExecuteFaultLedOutBlinking_12: (+1)
+   \                     ??ExecuteFaultLedOutBlinking_7: (+1)
+   \      0x260   0x0020             MOVS     R0,R4
+   \      0x262   0xB2C0             UXTB     R0,R0
+   \      0x264   0x2800             CMP      R0,#+0
+   \      0x266   0xD005             BEQ      ??ExecuteFaultLedOutBlinking_20
+   \      0x268   0x2802             CMP      R0,#+2
+   \      0x26A   0xD053             BEQ      ??ExecuteFaultLedOutBlinking_21
+   \      0x26C   0xD323             BCC      ??ExecuteFaultLedOutBlinking_22
+   \      0x26E   0x2803             CMP      R0,#+3
+   \      0x270   0xD051             BEQ      ??ExecuteFaultLedOutBlinking_23
+   \      0x272   0xE051             B        ??ExecuteFaultLedOutBlinking_24
+    458              {
+    459              case SEQ_LOW: // Change output to low
+    460                {
+    461                  if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8)) >> output_num_u8) && BIT_HI) // Invert Polarity
+   \                     ??ExecuteFaultLedOutBlinking_20: (+1)
+   \      0x274   0x2501             MOVS     R5,#+1
+   \      0x276   0x4E1B             LDR      R6,??ExecuteFaultLedOutBlinking_0+0x8
+   \      0x278   0x8830             LDRH     R0,[R6, #+0]
+   \      0x27A   0x4669             MOV      R1,SP
+   \      0x27C   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x27E   0x002A             MOVS     R2,R5
+   \      0x280   0x408A             LSLS     R2,R2,R1
+   \      0x282   0x4002             ANDS     R2,R2,R0
+   \      0x284   0x4668             MOV      R0,SP
+   \      0x286   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x288   0x4102             ASRS     R2,R2,R0
+   \      0x28A   0x2A00             CMP      R2,#+0
+   \      0x28C   0xD005             BEQ      ??ExecuteFaultLedOutBlinking_25
+    462                  {  // Inverted output
+    463                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_HI);
+   \      0x28E   0x2101             MOVS     R1,#+1
+   \      0x290   0x4668             MOV      R0,SP
+   \      0x292   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x294   0x....'....        BL       Module_Gpio_WriteGpioState
+   \      0x298   0xE004             B        ??ExecuteFaultLedOutBlinking_26
+    464                  } else{
+    465                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_LOW);
+   \                     ??ExecuteFaultLedOutBlinking_25: (+1)
+   \      0x29A   0x2100             MOVS     R1,#+0
+   \      0x29C   0x4668             MOV      R0,SP
+   \      0x29E   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x2A0   0x....'....        BL       Module_Gpio_WriteGpioState
+    466                  }
+    467                  digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 &= (uint16_t)(~(1 << output_num_u8));
+   \                     ??ExecuteFaultLedOutBlinking_26: (+1)
+   \      0x2A4   0x2044             MOVS     R0,#+68
+   \      0x2A6   0x5A30             LDRH     R0,[R6, R0]
+   \      0x2A8   0x4669             MOV      R1,SP
+   \      0x2AA   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x2AC   0x408D             LSLS     R5,R5,R1
+   \      0x2AE   0x43A8             BICS     R0,R0,R5
+   \      0x2B0   0x2144             MOVS     R1,#+68
+   \      0x2B2   0x5270             STRH     R0,[R6, R1]
+    468                  break;
+   \      0x2B4   0xE091             B        ??ExecuteFaultLedOutBlinking_27
+    469                }
+    470              case SEQ_HI: // Change output to high
+    471                {
+    472                  if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8))  >> output_num_u8) && BIT_HI) // Invert Polarity
+   \                     ??ExecuteFaultLedOutBlinking_22: (+1)
+   \      0x2B6   0x2501             MOVS     R5,#+1
+   \      0x2B8   0x4E0A             LDR      R6,??ExecuteFaultLedOutBlinking_0+0x8
+   \      0x2BA   0x8830             LDRH     R0,[R6, #+0]
+   \      0x2BC   0x4669             MOV      R1,SP
+   \      0x2BE   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x2C0   0x002A             MOVS     R2,R5
+   \      0x2C2   0x408A             LSLS     R2,R2,R1
+   \      0x2C4   0x4002             ANDS     R2,R2,R0
+   \      0x2C6   0x4668             MOV      R0,SP
+   \      0x2C8   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x2CA   0x4102             ASRS     R2,R2,R0
+   \      0x2CC   0x2A00             CMP      R2,#+0
+   \      0x2CE   0xD013             BEQ      ??ExecuteFaultLedOutBlinking_28
+    473                  { // Inverted output
+    474                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_LOW);
+   \      0x2D0   0x2100             MOVS     R1,#+0
+   \      0x2D2   0x4668             MOV      R0,SP
+   \      0x2D4   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x2D6   0x....'....        BL       Module_Gpio_WriteGpioState
+   \      0x2DA   0xE012             B        ??ExecuteFaultLedOutBlinking_29
+   \                     ??ExecuteFaultLedOutBlinking_0:
+   \      0x2DC   0x....'....        DC32     is_external_led_sequence_executing
+   \      0x2E0   0x....'....        DC32     current_external_sequence_u8
+   \      0x2E4   0x....'....        DC32     digital_Outputs_Control
+   \      0x2E8   0x....'....        DC32     current_sequence_u8
+   \      0x2EC   0x....'....        DC32     output_seq_count_u8
+   \      0x2F0   0x....'....        DC32     sequence_time_u64
+   \      0x2F4   0x....'....        DC32     seq_change_time_u64
+    475                  } else{
+    476                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_HI);
+   \                     ??ExecuteFaultLedOutBlinking_28: (+1)
+   \      0x2F8   0x2101             MOVS     R1,#+1
+   \      0x2FA   0x4668             MOV      R0,SP
+   \      0x2FC   0x7C00             LDRB     R0,[R0, #+16]
+   \      0x2FE   0x....'....        BL       Module_Gpio_WriteGpioState
+    477                  }
+    478                  digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 |= (uint16_t)(1 << output_num_u8);
+   \                     ??ExecuteFaultLedOutBlinking_29: (+1)
+   \      0x302   0x2044             MOVS     R0,#+68
+   \      0x304   0x5A30             LDRH     R0,[R6, R0]
+   \      0x306   0x4669             MOV      R1,SP
+   \      0x308   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x30A   0x408D             LSLS     R5,R5,R1
+   \      0x30C   0x4305             ORRS     R5,R5,R0
+   \      0x30E   0x2044             MOVS     R0,#+68
+   \      0x310   0x5235             STRH     R5,[R6, R0]
+    479                  break;
+   \      0x312   0xE062             B        ??ExecuteFaultLedOutBlinking_27
+    480                }
+    481              case SEQ_DELAY: // Wait for sequence delay
+    482                break;
+   \                     ??ExecuteFaultLedOutBlinking_21: (+1)
+   \      0x314   0xE061             B        ??ExecuteFaultLedOutBlinking_27
+    483                
+    484              case SEQ_NO_CHANGE: // Delay between ON/OFF for current sequence
+    485                break;
+   \                     ??ExecuteFaultLedOutBlinking_23: (+1)
+   \      0x316   0xE060             B        ??ExecuteFaultLedOutBlinking_27
+    486                
+    487              default:
+    488                break;
+   \                     ??ExecuteFaultLedOutBlinking_24: (+1)
+   \      0x318   0xE05F             B        ??ExecuteFaultLedOutBlinking_27
+    489              }
+    490              // End of if(output_seq_count_u8[output_num_u8] <= sequence_u8)
+    491            } else{ 
+    492              // A sequence is complete
+    493              // processed_fault_led_outputs_count_u8 indicates if all outputs have completed executing sequence
+    494              // Each output sequence wont be synced once an external sequence is recieved due to the time stored in seq_change_time_u64.
+    495              
+    496              sequence_u8 = 0;
+   \                     ??ExecuteFaultLedOutBlinking_3: (+1)
+   \      0x31A   0x0020             MOVS     R0,R4
+   \      0x31C   0x4669             MOV      R1,SP
+   \      0x31E   0x7208             STRB     R0,[R1, #+8]
+    497              
+    498              if (is_processed_led_fault_outputs[output_num_u8] == FALSE) // Current output sequence complete.
+   \      0x320   0x....             LDR      R0,??DataTable5_1
+   \      0x322   0x4669             MOV      R1,SP
+   \      0x324   0x7C09             LDRB     R1,[R1, #+16]
+   \      0x326   0x5C41             LDRB     R1,[R0, R1]
+   \      0x328   0x2900             CMP      R1,#+0
+   \      0x32A   0xD107             BNE      ??ExecuteFaultLedOutBlinking_30
+    499              { // This assures that same output is not checked twice
+    500                processed_fault_led_outputs_count_u8++; // Increment the ouputs that finished sequence
+   \      0x32C   0x....             LDR      R1,??DataTable5_2
+   \      0x32E   0x780A             LDRB     R2,[R1, #+0]
+   \      0x330   0x1C52             ADDS     R2,R2,#+1
+   \      0x332   0x700A             STRB     R2,[R1, #+0]
+    501                is_processed_led_fault_outputs[output_num_u8] = TRUE;
+   \      0x334   0x2101             MOVS     R1,#+1
+   \      0x336   0x466A             MOV      R2,SP
+   \      0x338   0x7C12             LDRB     R2,[R2, #+16]
+   \      0x33A   0x5481             STRB     R1,[R0, R2]
+    502              }    
+    503              
+    504              // Clear all local variables/flags once all outputs are processed.
+    505              // Need to wait for all ouputs to complte since the "current_sequence_u8" is used by all outputs
+    506              if (processed_fault_led_outputs_count_u8 >= fault_led_outputs_count_u8) // All Fault and LED outputs processed
+   \                     ??ExecuteFaultLedOutBlinking_30: (+1)
+   \      0x33C   0x....             LDR      R1,??DataTable5_2
+   \      0x33E   0x780A             LDRB     R2,[R1, #+0]
+   \      0x340   0x....             LDR      R3,??DataTable5_3
+   \      0x342   0x781B             LDRB     R3,[R3, #+0]
+   \      0x344   0x429A             CMP      R2,R3
+   \      0x346   0xD32E             BCC      ??ExecuteFaultLedOutBlinking_31
+    507              {
+    508                for (uint8_t output_number_u8 = 0; output_number_u8 < TOTAL_DIGITAL_OUTPUTS; output_number_u8++)
+   \      0x348   0x0022             MOVS     R2,R4
+   \                     ??ExecuteFaultLedOutBlinking_32: (+1)
+   \      0x34A   0x0013             MOVS     R3,R2
+   \      0x34C   0xB2DB             UXTB     R3,R3
+   \      0x34E   0x2B0A             CMP      R3,#+10
+   \      0x350   0xDA24             BGE      ??ExecuteFaultLedOutBlinking_33
+    509                {
+    510                  if ((digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_number_u8] == ON_BOARD_LED_OUTPUT))
+   \      0x352   0x....             LDR      R3,??DataTable5_4
+   \      0x354   0x0016             MOVS     R6,R2
+   \      0x356   0xB2F6             UXTB     R6,R6
+   \      0x358   0x2702             MOVS     R7,#+2
+   \      0x35A   0x437E             MULS     R6,R7,R6
+   \      0x35C   0x199B             ADDS     R3,R3,R6
+   \      0x35E   0x8B9B             LDRH     R3,[R3, #+28]
+   \      0x360   0x2B03             CMP      R3,#+3
+   \      0x362   0xD10B             BNE      ??ExecuteFaultLedOutBlinking_34
+    511                  {
+    512                    if((is_external_led_sequence_executing == TRUE))
+   \      0x364   0x782B             LDRB     R3,[R5, #+0]
+   \      0x366   0x2B01             CMP      R3,#+1
+   \      0x368   0xD105             BNE      ??ExecuteFaultLedOutBlinking_35
+    513                    {
+    514                      // Clear flags and variables
+    515                      is_external_led_sequence_executing = FALSE;
+   \      0x36A   0x0023             MOVS     R3,R4
+   \      0x36C   0x702B             STRB     R3,[R5, #+0]
+    516                      current_external_sequence_u8 = 0;
+   \      0x36E   0x0023             MOVS     R3,R4
+   \      0x370   0x....             LDR      R6,??DataTable5_5
+   \      0x372   0x7033             STRB     R3,[R6, #+0]
+   \      0x374   0xE002             B        ??ExecuteFaultLedOutBlinking_34
+    517                    }
+    518                    else{
+    519                      // Clear flags and variables
+    520                      current_sequence_u8 = 0;
+   \                     ??ExecuteFaultLedOutBlinking_35: (+1)
+   \      0x376   0x0023             MOVS     R3,R4
+   \      0x378   0x....             LDR      R6,??DataTable5_6
+   \      0x37A   0x7033             STRB     R3,[R6, #+0]
+    521                    }
+    522                  }
+    523                  is_sequence_executing[output_number_u8] = FALSE;
+   \                     ??ExecuteFaultLedOutBlinking_34: (+1)
+   \      0x37C   0x0023             MOVS     R3,R4
+   \      0x37E   0x....             LDR      R6,??DataTable5
+   \      0x380   0x0017             MOVS     R7,R2
+   \      0x382   0xB2FF             UXTB     R7,R7
+   \      0x384   0x55F3             STRB     R3,[R6, R7]
+    524                  output_seq_count_u8[output_number_u8] = 0;
+   \      0x386   0x0023             MOVS     R3,R4
+   \      0x388   0x....             LDR      R6,??DataTable6
+   \      0x38A   0x0017             MOVS     R7,R2
+   \      0x38C   0xB2FF             UXTB     R7,R7
+   \      0x38E   0x55F3             STRB     R3,[R6, R7]
+    525                  is_processed_led_fault_outputs[output_number_u8] = FALSE;
+   \      0x390   0x0023             MOVS     R3,R4
+   \      0x392   0x0016             MOVS     R6,R2
+   \      0x394   0xB2F6             UXTB     R6,R6
+   \      0x396   0x5583             STRB     R3,[R0, R6]
+    526                }
+   \      0x398   0x1C52             ADDS     R2,R2,#+1
+   \      0x39A   0xE7D6             B        ??ExecuteFaultLedOutBlinking_32
+    527                processed_fault_led_outputs_count_u8 = 0;
+   \                     ??ExecuteFaultLedOutBlinking_33: (+1)
+   \      0x39C   0x0020             MOVS     R0,R4
+   \      0x39E   0x7008             STRB     R0,[R1, #+0]
+    528                current_sequence_u8 = 0;
+   \      0x3A0   0x....             LDR      R0,??DataTable5_6
+   \      0x3A2   0x7004             STRB     R4,[R0, #+0]
+   \      0x3A4   0xE019             B        ??ExecuteFaultLedOutBlinking_27
+    529              } else {
+    530                // No fault codes and external led seq is complete. fault_led_outputs_count_u8 wont be satisifed when external seq only.
+    531                if(current_sequence_u8 == 0)
+   \                     ??ExecuteFaultLedOutBlinking_31: (+1)
+   \      0x3A6   0x....             LDR      R2,??DataTable5_6
+   \      0x3A8   0x7813             LDRB     R3,[R2, #+0]
+   \      0x3AA   0x2B00             CMP      R3,#+0
+   \      0x3AC   0xD115             BNE      ??ExecuteFaultLedOutBlinking_27
+    532                {
+    533                  is_external_led_sequence_executing = FALSE;
+   \      0x3AE   0x0023             MOVS     R3,R4
+   \      0x3B0   0x702B             STRB     R3,[R5, #+0]
+    534                  current_external_sequence_u8 = 0;
+   \      0x3B2   0x0023             MOVS     R3,R4
+   \      0x3B4   0x....             LDR      R5,??DataTable5_5
+   \      0x3B6   0x702B             STRB     R3,[R5, #+0]
+    535                  is_sequence_executing[output_num_u8] = FALSE;
+   \      0x3B8   0x0023             MOVS     R3,R4
+   \      0x3BA   0x....             LDR      R5,??DataTable5
+   \      0x3BC   0x466E             MOV      R6,SP
+   \      0x3BE   0x7C36             LDRB     R6,[R6, #+16]
+   \      0x3C0   0x55AB             STRB     R3,[R5, R6]
+    536                  output_seq_count_u8[output_num_u8] = 0;
+   \      0x3C2   0x0023             MOVS     R3,R4
+   \      0x3C4   0x....             LDR      R5,??DataTable6
+   \      0x3C6   0x466E             MOV      R6,SP
+   \      0x3C8   0x7C36             LDRB     R6,[R6, #+16]
+   \      0x3CA   0x55AB             STRB     R3,[R5, R6]
+    537                  is_processed_led_fault_outputs[output_num_u8] = FALSE;
+   \      0x3CC   0x0023             MOVS     R3,R4
+   \      0x3CE   0x466D             MOV      R5,SP
+   \      0x3D0   0x7C2D             LDRB     R5,[R5, #+16]
+   \      0x3D2   0x5543             STRB     R3,[R0, R5]
+    538                  processed_fault_led_outputs_count_u8 = 0;
+   \      0x3D4   0x0020             MOVS     R0,R4
+   \      0x3D6   0x7008             STRB     R0,[R1, #+0]
+    539                  current_sequence_u8 = 0;
+   \      0x3D8   0x7014             STRB     R4,[R2, #+0]
+    540                }
+    541              }    
+    542            }
+    543          }
+   \                     ??ExecuteFaultLedOutBlinking_27: (+1)
+   \      0x3DA   0xB005             ADD      SP,SP,#+20
+   \      0x3DC   0xBDF0             POP      {R4-R7,PC}       ;; return
+    544          
+    545          /**
+    546          ********************************************************************************
+    547          * @brief   Check for faults flags and process settings
+    548          * @details Process ouputs based on function mode
+    549          * @param   output_num_u8 
+    550          * @return  None
+    551          ********************************************************************************
+    552          */
+
+   \                                 In section .text, align 2, keep-with-next
+    553          void ProcessFaultLedOut(uint8_t output_num_u8){
+   \                     ProcessFaultLedOut: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    554            uint8_t mode_u8;
+    555            mode_u8 = digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[output_num_u8];
+   \        0x4   0x....             LDR      R4,??DataTable6_1
+   \        0x6   0x0030             MOVS     R0,R6
+   \        0x8   0xB2C0             UXTB     R0,R0
+   \        0xA   0x2102             MOVS     R1,#+2
+   \        0xC   0x4348             MULS     R0,R1,R0
+   \        0xE   0x1820             ADDS     R0,R4,R0
+   \       0x10   0x8E00             LDRH     R0,[R0, #+48]
+   \       0x12   0x4669             MOV      R1,SP
+   \       0x14   0x7248             STRB     R0,[R1, #+9]
+    556            faultStatus_u32 = (*digitalOutputs_MotorCom_Control_ptr).motor_Metering_Data.motor_alarms_u32;
+   \       0x16   0x....             LDR      R1,??DataTable6_2
+   \       0x18   0x....             LDR      R0,??DataTable6_3
+   \       0x1A   0x6800             LDR      R0,[R0, #+0]
+   \       0x1C   0x6940             LDR      R0,[R0, #+20]
+   \       0x1E   0x6008             STR      R0,[R1, #+0]
+    557            switch(mode_u8){
+   \       0x20   0x4668             MOV      R0,SP
+   \       0x22   0x7A40             LDRB     R0,[R0, #+9]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD006             BEQ      ??ProcessFaultLedOut_0
+   \       0x28   0x2802             CMP      R0,#+2
+   \       0x2A   0xD048             BEQ      ??ProcessFaultLedOut_1
+   \       0x2C   0xD304             BCC      ??ProcessFaultLedOut_2
+   \       0x2E   0x2803             CMP      R0,#+3
+   \       0x30   0xD100             BNE      .+4
+   \       0x32   0xE0BE             B        ??ProcessFaultLedOut_3
+   \       0x34   0xE11F             B        ??ProcessFaultLedOut_4
+    558              
+    559            case MODE_0:  // Disabled
+    560              // Do nothing
+    561              break;
+   \                     ??ProcessFaultLedOut_0: (+1)
+   \       0x36   0xE126             B        ??ProcessFaultLedOut_5
+    562            case MODE_1: // Low when no fault, High when faulted
+    563              {
+    564                if(faultStatus_u32 != 0)
+   \                     ??ProcessFaultLedOut_2: (+1)
+   \       0x38   0x6808             LDR      R0,[R1, #+0]
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD01F             BEQ      ??ProcessFaultLedOut_6
+    565                {
+    566                  if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8))  >> output_num_u8) && BIT_HI) // Invert Polarity
+   \       0x3E   0x2501             MOVS     R5,#+1
+   \       0x40   0x8820             LDRH     R0,[R4, #+0]
+   \       0x42   0x0029             MOVS     R1,R5
+   \       0x44   0x40B1             LSLS     R1,R1,R6
+   \       0x46   0x4001             ANDS     R1,R1,R0
+   \       0x48   0x4131             ASRS     R1,R1,R6
+   \       0x4A   0x2900             CMP      R1,#+0
+   \       0x4C   0xD00B             BEQ      ??ProcessFaultLedOut_7
+    567                  {
+    568                    // Inverted output
+    569                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_LOW);
+   \       0x4E   0x2100             MOVS     R1,#+0
+   \       0x50   0x0030             MOVS     R0,R6
+   \       0x52   0xB2C0             UXTB     R0,R0
+   \       0x54   0x....'....        BL       Module_Gpio_WriteGpioState
+    570                    digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 &= (uint16_t)(~(1 << output_num_u8));
+   \       0x58   0x2044             MOVS     R0,#+68
+   \       0x5A   0x5A20             LDRH     R0,[R4, R0]
+   \       0x5C   0x40B5             LSLS     R5,R5,R6
+   \       0x5E   0x43A8             BICS     R0,R0,R5
+   \       0x60   0x2144             MOVS     R1,#+68
+   \       0x62   0x5260             STRH     R0,[R4, R1]
+   \       0x64   0xE02A             B        ??ProcessFaultLedOut_8
+    571                  } else {
+    572                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_HI);
+   \                     ??ProcessFaultLedOut_7: (+1)
+   \       0x66   0x2101             MOVS     R1,#+1
+   \       0x68   0x0030             MOVS     R0,R6
+   \       0x6A   0xB2C0             UXTB     R0,R0
+   \       0x6C   0x....'....        BL       Module_Gpio_WriteGpioState
+    573                    digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 |= (uint16_t)(1 << output_num_u8);
+   \       0x70   0x2044             MOVS     R0,#+68
+   \       0x72   0x5A20             LDRH     R0,[R4, R0]
+   \       0x74   0x40B5             LSLS     R5,R5,R6
+   \       0x76   0x4305             ORRS     R5,R5,R0
+   \       0x78   0x2044             MOVS     R0,#+68
+   \       0x7A   0x5225             STRH     R5,[R4, R0]
+   \       0x7C   0xE01E             B        ??ProcessFaultLedOut_8
+    574                  }
+    575                } else {
+    576                  if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8))  >> output_num_u8) && BIT_HI) // Invert Polarity
+   \                     ??ProcessFaultLedOut_6: (+1)
+   \       0x7E   0x2501             MOVS     R5,#+1
+   \       0x80   0x8820             LDRH     R0,[R4, #+0]
+   \       0x82   0x0029             MOVS     R1,R5
+   \       0x84   0x40B1             LSLS     R1,R1,R6
+   \       0x86   0x4001             ANDS     R1,R1,R0
+   \       0x88   0x4131             ASRS     R1,R1,R6
+   \       0x8A   0x2900             CMP      R1,#+0
+   \       0x8C   0xD00B             BEQ      ??ProcessFaultLedOut_9
+    577                  {
+    578                    // Inverted output
+    579                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_HI);
+   \       0x8E   0x2101             MOVS     R1,#+1
+   \       0x90   0x0030             MOVS     R0,R6
+   \       0x92   0xB2C0             UXTB     R0,R0
+   \       0x94   0x....'....        BL       Module_Gpio_WriteGpioState
+    580                    digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 |= (uint16_t)(1 << output_num_u8);          
+   \       0x98   0x2044             MOVS     R0,#+68
+   \       0x9A   0x5A20             LDRH     R0,[R4, R0]
+   \       0x9C   0x40B5             LSLS     R5,R5,R6
+   \       0x9E   0x4305             ORRS     R5,R5,R0
+   \       0xA0   0x2044             MOVS     R0,#+68
+   \       0xA2   0x5225             STRH     R5,[R4, R0]
+   \       0xA4   0xE00A             B        ??ProcessFaultLedOut_8
+    581                  } else {
+    582                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_LOW);
+   \                     ??ProcessFaultLedOut_9: (+1)
+   \       0xA6   0x2100             MOVS     R1,#+0
+   \       0xA8   0x0030             MOVS     R0,R6
+   \       0xAA   0xB2C0             UXTB     R0,R0
+   \       0xAC   0x....'....        BL       Module_Gpio_WriteGpioState
+    583                    digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 &= (uint16_t)(~(1 << output_num_u8));
+   \       0xB0   0x2044             MOVS     R0,#+68
+   \       0xB2   0x5A20             LDRH     R0,[R4, R0]
+   \       0xB4   0x40B5             LSLS     R5,R5,R6
+   \       0xB6   0x43A8             BICS     R0,R0,R5
+   \       0xB8   0x2144             MOVS     R1,#+68
+   \       0xBA   0x5260             STRH     R0,[R4, R1]
+    584                  }
+    585                }
+    586                break;
+   \                     ??ProcessFaultLedOut_8: (+1)
+   \       0xBC   0xE0E3             B        ??ProcessFaultLedOut_5
+    587              }
+    588            case MODE_2: // High when no fault, blinks when faulted
+    589              {
+    590                if(faultStatus_u32 != 0) // Faults are present
+   \                     ??ProcessFaultLedOut_1: (+1)
+   \       0xBE   0x6808             LDR      R0,[R1, #+0]
+   \       0xC0   0x2800             CMP      R0,#+0
+   \       0xC2   0xD056             BEQ      ??ProcessFaultLedOut_10
+    591                {
+    592                  uint8_t state_u8;
+    593                  sequence_time_u64 = getSysCount(); // Store time tick value  
+   \       0xC4   0x....             LDR      R7,??DataTable6_4
+   \       0xC6   0x....'....        BL       getSysCount
+   \       0xCA   0xC703             STM      R7!,{R0,R1}
+   \       0xCC   0x3F08             SUBS     R7,R7,#+8
+    594                  state_u8 = Module_Gpio_ReadGpioOutputState(output_num_u8);
+   \       0xCE   0x0030             MOVS     R0,R6
+   \       0xD0   0xB2C0             UXTB     R0,R0
+   \       0xD2   0x....'....        BL       Module_Gpio_ReadGpioOutputState
+   \       0xD6   0x4669             MOV      R1,SP
+   \       0xD8   0x7208             STRB     R0,[R1, #+8]
+    595                  if((state_u8 == ACTIVE_LOW))
+   \       0xDA   0x4668             MOV      R0,SP
+   \       0xDC   0x7A00             LDRB     R0,[R0, #+8]
+   \       0xDE   0x2800             CMP      R0,#+0
+   \       0xE0   0xD123             BNE      ??ProcessFaultLedOut_11
+    596                  {
+    597                    if(((sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.outputLowTime_u16)){
+   \       0xE2   0x....             LDR      R2,??DataTable6_5
+   \       0xE4   0x8A20             LDRH     R0,[R4, #+16]
+   \       0xE6   0x2100             MOVS     R1,#+0
+   \       0xE8   0x9000             STR      R0,[SP, #+0]
+   \       0xEA   0x9101             STR      R1,[SP, #+4]
+   \       0xEC   0xCF30             LDM      R7!,{R4,R5}
+   \       0xEE   0x3F08             SUBS     R7,R7,#+8
+   \       0xF0   0x0031             MOVS     R1,R6
+   \       0xF2   0xB2C9             UXTB     R1,R1
+   \       0xF4   0x2008             MOVS     R0,#+8
+   \       0xF6   0x4341             MULS     R1,R0,R1
+   \       0xF8   0x1850             ADDS     R0,R2,R1
+   \       0xFA   0xC803             LDM      R0,{R0,R1}
+   \       0xFC   0x1A24             SUBS     R4,R4,R0
+   \       0xFE   0x418D             SBCS     R5,R5,R1
+   \      0x100   0x9800             LDR      R0,[SP, #+0]
+   \      0x102   0x9901             LDR      R1,[SP, #+4]
+   \      0x104   0x42A9             CMP      R1,R5
+   \      0x106   0xD853             BHI      ??ProcessFaultLedOut_12
+   \      0x108   0xD301             BCC      ??ProcessFaultLedOut_13
+   \      0x10A   0x42A0             CMP      R0,R4
+   \      0x10C   0xD250             BCS      ??ProcessFaultLedOut_12
+    598                      seq_change_time_u64[output_num_u8] = sequence_time_u64;
+   \                     ??ProcessFaultLedOut_13: (+1)
+   \      0x10E   0xCF03             LDM      R7!,{R0,R1}
+   \      0x110   0x3F08             SUBS     R7,R7,#+8
+   \      0x112   0x0033             MOVS     R3,R6
+   \      0x114   0xB2DB             UXTB     R3,R3
+   \      0x116   0x2408             MOVS     R4,#+8
+   \      0x118   0x4363             MULS     R3,R4,R3
+   \      0x11A   0x18D2             ADDS     R2,R2,R3
+   \      0x11C   0xC203             STM      R2!,{R0,R1}
+   \      0x11E   0x3A08             SUBS     R2,R2,#+8
+    599                      Module_Gpio_TogglePin(output_num_u8);
+   \      0x120   0x0030             MOVS     R0,R6
+   \      0x122   0xB2C0             UXTB     R0,R0
+   \      0x124   0x....'....        BL       Module_Gpio_TogglePin
+   \      0x128   0xE042             B        ??ProcessFaultLedOut_12
+    600                    }
+    601                  } else{
+    602                    if((sequence_time_u64 - seq_change_time_u64[output_num_u8]) > digital_Outputs_Control.digital_outputs_Setting.outputHighTime_u16)
+   \                     ??ProcessFaultLedOut_11: (+1)
+   \      0x12A   0x....             LDR      R2,??DataTable6_5
+   \      0x12C   0x89E0             LDRH     R0,[R4, #+14]
+   \      0x12E   0x2100             MOVS     R1,#+0
+   \      0x130   0x9000             STR      R0,[SP, #+0]
+   \      0x132   0x9101             STR      R1,[SP, #+4]
+   \      0x134   0xCF30             LDM      R7!,{R4,R5}
+   \      0x136   0x3F08             SUBS     R7,R7,#+8
+   \      0x138   0x0031             MOVS     R1,R6
+   \      0x13A   0xB2C9             UXTB     R1,R1
+   \      0x13C   0x2008             MOVS     R0,#+8
+   \      0x13E   0x4341             MULS     R1,R0,R1
+   \      0x140   0x1850             ADDS     R0,R2,R1
+   \      0x142   0xC803             LDM      R0,{R0,R1}
+   \      0x144   0x1A24             SUBS     R4,R4,R0
+   \      0x146   0x418D             SBCS     R5,R5,R1
+   \      0x148   0x9800             LDR      R0,[SP, #+0]
+   \      0x14A   0x9901             LDR      R1,[SP, #+4]
+   \      0x14C   0x42A9             CMP      R1,R5
+   \      0x14E   0xD82F             BHI      ??ProcessFaultLedOut_12
+   \      0x150   0xD301             BCC      ??ProcessFaultLedOut_14
+   \      0x152   0x42A0             CMP      R0,R4
+   \      0x154   0xD22C             BCS      ??ProcessFaultLedOut_12
+    603                    {
+    604                      seq_change_time_u64[output_num_u8] = sequence_time_u64;
+   \                     ??ProcessFaultLedOut_14: (+1)
+   \      0x156   0xCF03             LDM      R7!,{R0,R1}
+   \      0x158   0x3F08             SUBS     R7,R7,#+8
+   \      0x15A   0x0033             MOVS     R3,R6
+   \      0x15C   0xB2DB             UXTB     R3,R3
+   \      0x15E   0x2408             MOVS     R4,#+8
+   \      0x160   0x4363             MULS     R3,R4,R3
+   \      0x162   0x18D2             ADDS     R2,R2,R3
+   \      0x164   0xC203             STM      R2!,{R0,R1}
+   \      0x166   0x3A08             SUBS     R2,R2,#+8
+    605                      Module_Gpio_TogglePin(output_num_u8);
+   \      0x168   0x0030             MOVS     R0,R6
+   \      0x16A   0xB2C0             UXTB     R0,R0
+   \      0x16C   0x....'....        BL       Module_Gpio_TogglePin
+   \      0x170   0xE01E             B        ??ProcessFaultLedOut_12
+    606                    }
+    607                  }
+    608                } else{ // No faults
+    609                  if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8))  >> output_num_u8) && BIT_HI) // Invert Polarity
+   \                     ??ProcessFaultLedOut_10: (+1)
+   \      0x172   0x2501             MOVS     R5,#+1
+   \      0x174   0x8820             LDRH     R0,[R4, #+0]
+   \      0x176   0x0029             MOVS     R1,R5
+   \      0x178   0x40B1             LSLS     R1,R1,R6
+   \      0x17A   0x4001             ANDS     R1,R1,R0
+   \      0x17C   0x4131             ASRS     R1,R1,R6
+   \      0x17E   0x2900             CMP      R1,#+0
+   \      0x180   0xD00B             BEQ      ??ProcessFaultLedOut_15
+    610                  {
+    611                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_HI);
+   \      0x182   0x2101             MOVS     R1,#+1
+   \      0x184   0x0030             MOVS     R0,R6
+   \      0x186   0xB2C0             UXTB     R0,R0
+   \      0x188   0x....'....        BL       Module_Gpio_WriteGpioState
+    612                    digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 |= (uint16_t)(1 << output_num_u8); 
+   \      0x18C   0x2044             MOVS     R0,#+68
+   \      0x18E   0x5A20             LDRH     R0,[R4, R0]
+   \      0x190   0x40B5             LSLS     R5,R5,R6
+   \      0x192   0x4305             ORRS     R5,R5,R0
+   \      0x194   0x2044             MOVS     R0,#+68
+   \      0x196   0x5225             STRH     R5,[R4, R0]
+   \      0x198   0xE00A             B        ??ProcessFaultLedOut_12
+    613                  }
+    614                  else{
+    615                    Module_Gpio_WriteGpioState(output_num_u8, ACTIVE_LOW);
+   \                     ??ProcessFaultLedOut_15: (+1)
+   \      0x19A   0x2100             MOVS     R1,#+0
+   \      0x19C   0x0030             MOVS     R0,R6
+   \      0x19E   0xB2C0             UXTB     R0,R0
+   \      0x1A0   0x....'....        BL       Module_Gpio_WriteGpioState
+    616                    digital_Outputs_Control.digital_outputs_Data.digitalOutputsStatus_u16 &= (uint16_t)(~(1 << output_num_u8));
+   \      0x1A4   0x2044             MOVS     R0,#+68
+   \      0x1A6   0x5A20             LDRH     R0,[R4, R0]
+   \      0x1A8   0x40B5             LSLS     R5,R5,R6
+   \      0x1AA   0x43A8             BICS     R0,R0,R5
+   \      0x1AC   0x2144             MOVS     R1,#+68
+   \      0x1AE   0x5260             STRH     R0,[R4, R1]
+    617                  }
+    618                }
+    619              }
+    620              break;
+   \                     ??ProcessFaultLedOut_12: (+1)
+   \      0x1B0   0xE069             B        ??ProcessFaultLedOut_5
+    621              
+    622            case MODE_3: // High when no fault, fault code blink sequenc when faulted   
+    623              {
+    624                if((is_sequence_executing[output_num_u8] == FALSE)) // Check if no sequence is in process. 
+   \                     ??ProcessFaultLedOut_3: (+1)
+   \      0x1B2   0x....             LDR      R0,??DataTable8
+   \      0x1B4   0x0032             MOVS     R2,R6
+   \      0x1B6   0xB2D2             UXTB     R2,R2
+   \      0x1B8   0x5C82             LDRB     R2,[R0, R2]
+   \      0x1BA   0x2A00             CMP      R2,#+0
+   \      0x1BC   0xD156             BNE      ??ProcessFaultLedOut_16
+    625                { // No sequence is in process
+    626                  
+    627                  // Check if external LED sequence is present and if the ouptut is on board/debug LED.
+    628                  if( (digital_Outputs_Control.digital_outputs_Setting.outputFunction[output_num_u8] == ON_BOARD_LED_OUTPUT) && (onBoardLedExternalSequences_u8 != 0) ) 
+   \      0x1BE   0x0032             MOVS     R2,R6
+   \      0x1C0   0xB2D2             UXTB     R2,R2
+   \      0x1C2   0x2302             MOVS     R3,#+2
+   \      0x1C4   0x435A             MULS     R2,R3,R2
+   \      0x1C6   0x18A2             ADDS     R2,R4,R2
+   \      0x1C8   0x8B92             LDRH     R2,[R2, #+28]
+   \      0x1CA   0x2A03             CMP      R2,#+3
+   \      0x1CC   0xD120             BNE      ??ProcessFaultLedOut_17
+   \      0x1CE   0x....             LDR      R2,??DataTable8_1
+   \      0x1D0   0x7813             LDRB     R3,[R2, #+0]
+   \      0x1D2   0x2B00             CMP      R3,#+0
+   \      0x1D4   0xD01C             BEQ      ??ProcessFaultLedOut_17
+    629                  {
+    630                    current_external_sequence_u8 = onBoardLedExternalSequences_u8; // Execute the sequence
+   \      0x1D6   0x....             LDR      R1,??DataTable8_2
+   \      0x1D8   0x7813             LDRB     R3,[R2, #+0]
+   \      0x1DA   0x700B             STRB     R3,[R1, #+0]
+    631                    onBoardLedExternalSequences_u8 = 0; // Ready to take net sequence
+   \      0x1DC   0x2300             MOVS     R3,#+0
+   \      0x1DE   0x001C             MOVS     R4,R3
+   \      0x1E0   0x7014             STRB     R4,[R2, #+0]
+    632                    is_external_led_sequence_executing = TRUE; // Indicate that external sequnce is running
+   \      0x1E2   0x2201             MOVS     R2,#+1
+   \      0x1E4   0x0014             MOVS     R4,R2
+   \      0x1E6   0x....             LDR      R5,??DataTable8_3
+   \      0x1E8   0x702C             STRB     R4,[R5, #+0]
+    633                    
+    634                    is_sequence_executing[output_num_u8] = TRUE;
+   \      0x1EA   0x0034             MOVS     R4,R6
+   \      0x1EC   0xB2E4             UXTB     R4,R4
+   \      0x1EE   0x5502             STRB     R2,[R0, R4]
+    635                    output_seq_count_u8[output_num_u8] = 0;
+   \      0x1F0   0x....             LDR      R0,??DataTable6
+   \      0x1F2   0x0032             MOVS     R2,R6
+   \      0x1F4   0xB2D2             UXTB     R2,R2
+   \      0x1F6   0x5483             STRB     R3,[R0, R2]
+    636                    if( (current_sequence_u8 != 0) || (current_external_sequence_u8 != 0) )
+   \      0x1F8   0x....             LDR      R0,??DataTable8_4
+   \      0x1FA   0x7800             LDRB     R0,[R0, #+0]
+   \      0x1FC   0x2800             CMP      R0,#+0
+   \      0x1FE   0xD102             BNE      ??ProcessFaultLedOut_18
+   \      0x200   0x7808             LDRB     R0,[R1, #+0]
+   \      0x202   0x2800             CMP      R0,#+0
+   \      0x204   0xD036             BEQ      ??ProcessFaultLedOut_19
+    637                    {
+    638                      ExecuteFaultLedOutBlinking(output_num_u8); // process new_sequence_u8
+   \                     ??ProcessFaultLedOut_18: (+1)
+   \      0x206   0x0030             MOVS     R0,R6
+   \      0x208   0xB2C0             UXTB     R0,R0
+   \      0x20A   0x....'....        BL       ExecuteFaultLedOutBlinking
+   \      0x20E   0xE031             B        ??ProcessFaultLedOut_19
+    639                    }
+    640                  } else {
+    641                    
+    642                    // Get new sequence
+    643                    //faultStatus_u32 = (*digitalOutputs_MotorCom_Control_ptr).motor_Metering_Data.motor_alarms_u32;
+    644                    if(faultStatus_u32 != 0) //FAULTS_NONE)
+   \                     ??ProcessFaultLedOut_17: (+1)
+   \      0x210   0x680A             LDR      R2,[R1, #+0]
+   \      0x212   0x2A00             CMP      R2,#+0
+   \      0x214   0xD013             BEQ      ??ProcessFaultLedOut_20
+    645                    {
+    646                      uint8_t bit_no_u8=0;
+   \      0x216   0x2300             MOVS     R3,#+0
+   \      0x218   0x001A             MOVS     R2,R3
+    647                      while(bit_no_u8 < 32){
+   \                     ??ProcessFaultLedOut_21: (+1)
+   \      0x21A   0x0014             MOVS     R4,R2
+   \      0x21C   0xB2E4             UXTB     R4,R4
+   \      0x21E   0x2C20             CMP      R4,#+32
+   \      0x220   0xDA0D             BGE      ??ProcessFaultLedOut_20
+    648                        if((faultStatus_u32 >> bit_no_u8) & BIT_HI){
+   \      0x222   0x680C             LDR      R4,[R1, #+0]
+   \      0x224   0x40D4             LSRS     R4,R4,R2
+   \      0x226   0x07E4             LSLS     R4,R4,#+31
+   \      0x228   0xD504             BPL      ??ProcessFaultLedOut_22
+    649                          new_sequence_u8 =(uint8_t) ((bit_no_u8 + 1)); //*2); // Count for falling and rising edge 
+   \      0x22A   0x0011             MOVS     R1,R2
+   \      0x22C   0x1C49             ADDS     R1,R1,#+1
+   \      0x22E   0x....             LDR      R3,??DataTable9
+   \      0x230   0x7019             STRB     R1,[R3, #+0]
+    650                          break; // lowest no fault gets the first priority.
+   \      0x232   0xE004             B        ??ProcessFaultLedOut_20
+    651                        } else{
+    652                          new_sequence_u8 = 0;
+   \                     ??ProcessFaultLedOut_22: (+1)
+   \      0x234   0x001C             MOVS     R4,R3
+   \      0x236   0x....             LDR      R5,??DataTable9
+   \      0x238   0x702C             STRB     R4,[R5, #+0]
+    653                          bit_no_u8++;
+   \      0x23A   0x1C52             ADDS     R2,R2,#+1
+   \      0x23C   0xE7ED             B        ??ProcessFaultLedOut_21
+    654                        }          
+    655                      }  
+    656                    }
+    657                    if(new_sequence_u8 != 0)
+   \                     ??ProcessFaultLedOut_20: (+1)
+   \      0x23E   0x....             LDR      R2,??DataTable9
+   \      0x240   0x7811             LDRB     R1,[R2, #+0]
+   \      0x242   0x2900             CMP      R1,#+0
+   \      0x244   0xD016             BEQ      ??ProcessFaultLedOut_19
+    658                    {
+    659                      current_sequence_u8 = new_sequence_u8;
+   \      0x246   0x7811             LDRB     R1,[R2, #+0]
+   \      0x248   0x....             LDR      R3,??DataTable8_4
+   \      0x24A   0x7019             STRB     R1,[R3, #+0]
+    660                      new_sequence_u8 = 0;  
+   \      0x24C   0x2100             MOVS     R1,#+0
+   \      0x24E   0x000B             MOVS     R3,R1
+   \      0x250   0x7013             STRB     R3,[R2, #+0]
+    661                      is_sequence_executing[output_num_u8] = TRUE;
+   \      0x252   0x2201             MOVS     R2,#+1
+   \      0x254   0x0033             MOVS     R3,R6
+   \      0x256   0xB2DB             UXTB     R3,R3
+   \      0x258   0x54C2             STRB     R2,[R0, R3]
+    662                      output_seq_count_u8[output_num_u8] = 0;
+   \      0x25A   0x....             LDR      R0,??DataTable6
+   \      0x25C   0x0032             MOVS     R2,R6
+   \      0x25E   0xB2D2             UXTB     R2,R2
+   \      0x260   0x5481             STRB     R1,[R0, R2]
+    663                      ExecuteFaultLedOutBlinking(output_num_u8); // process new_sequence_u8
+   \      0x262   0x0030             MOVS     R0,R6
+   \      0x264   0xB2C0             UXTB     R0,R0
+   \      0x266   0x....'....        BL       ExecuteFaultLedOutBlinking
+   \      0x26A   0xE003             B        ??ProcessFaultLedOut_19
+    664                    }
+    665                  }      
+    666                } else { // current_sequence_u8 is under process
+    667                  // Even if fault is cleared, the current sequence has to finish before going to default state (reset)
+    668                  ExecuteFaultLedOutBlinking(output_num_u8);
+   \                     ??ProcessFaultLedOut_16: (+1)
+   \      0x26C   0x0030             MOVS     R0,R6
+   \      0x26E   0xB2C0             UXTB     R0,R0
+   \      0x270   0x....'....        BL       ExecuteFaultLedOutBlinking
+    669                }    
+    670                break;
+   \                     ??ProcessFaultLedOut_19: (+1)
+   \      0x274   0xE007             B        ??ProcessFaultLedOut_5
+    671              }
+    672            default:    
+    673              {
+    674                current_sequence_u8 = 0;
+   \                     ??ProcessFaultLedOut_4: (+1)
+   \      0x276   0x2000             MOVS     R0,#+0
+   \      0x278   0x0001             MOVS     R1,R0
+   \      0x27A   0x....             LDR      R2,??DataTable8_4
+   \      0x27C   0x7011             STRB     R1,[R2, #+0]
+    675                is_sequence_executing[output_num_u8] = FALSE;
+   \      0x27E   0x....             LDR      R1,??DataTable8
+   \      0x280   0x0032             MOVS     R2,R6
+   \      0x282   0xB2D2             UXTB     R2,R2
+   \      0x284   0x5488             STRB     R0,[R1, R2]
+    676                break;
+    677              }
+    678            }
+    679          }
+   \                     ??ProcessFaultLedOut_5: (+1)
+   \      0x286   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    680          
+    681          /**
+    682          ********************************************************************************
+    683          * @brief   Check for satus and set outputs
+    684          * @details Check fault falgs/user enable/speed threshold and set relay accordingly
+    685          * @param   output_num_u8 
+    686          * @return  None
+    687          ********************************************************************************
+    688          */
+
+   \                                 In section .text, align 2, keep-with-next
+    689          void ProcessRelayOut(uint8_t output_num_u8){
+   \                     ProcessRelayOut: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    690            static uint8_t mode_u8, state_u8;
+    691            mode_u8 = digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[output_num_u8];
+   \        0x4   0x....             LDR      R1,??DataTable9_1
+   \        0x6   0x....             LDR      R0,??DataTable9_2
+   \        0x8   0x0022             MOVS     R2,R4
+   \        0xA   0xB2D2             UXTB     R2,R2
+   \        0xC   0x2302             MOVS     R3,#+2
+   \        0xE   0x435A             MULS     R2,R3,R2
+   \       0x10   0x1882             ADDS     R2,R0,R2
+   \       0x12   0x8E12             LDRH     R2,[R2, #+48]
+   \       0x14   0x700A             STRB     R2,[R1, #+0]
+    692            
+    693            
+    694            switch(mode_u8){
+   \       0x16   0x7809             LDRB     R1,[R1, #+0]
+   \       0x18   0x2901             CMP      R1,#+1
+   \       0x1A   0xD004             BEQ      ??ProcessRelayOut_0
+   \       0x1C   0xD351             BCC      ??ProcessRelayOut_1
+   \       0x1E   0x2903             CMP      R1,#+3
+   \       0x20   0xD01C             BEQ      ??ProcessRelayOut_2
+   \       0x22   0xD30C             BCC      ??ProcessRelayOut_3
+   \       0x24   0xE04D             B        ??ProcessRelayOut_1
+    695            case MODE_1: // Fault Mode
+    696              {
+    697                if(faultStatus_u32 != 0)
+   \                     ??ProcessRelayOut_0: (+1)
+   \       0x26   0x....             LDR      R1,??DataTable9_3
+   \       0x28   0x6809             LDR      R1,[R1, #+0]
+   \       0x2A   0x2900             CMP      R1,#+0
+   \       0x2C   0xD003             BEQ      ??ProcessRelayOut_4
+    698                {
+    699                  state_u8 = ENABLE;
+   \       0x2E   0x2101             MOVS     R1,#+1
+   \       0x30   0x....             LDR      R2,??DataTable9_4
+   \       0x32   0x7011             STRB     R1,[R2, #+0]
+   \       0x34   0xE002             B        ??ProcessRelayOut_5
+    700                } else{
+    701                  state_u8 = DISABLE;
+   \                     ??ProcessRelayOut_4: (+1)
+   \       0x36   0x2100             MOVS     R1,#+0
+   \       0x38   0x....             LDR      R2,??DataTable9_4
+   \       0x3A   0x7011             STRB     R1,[R2, #+0]
+    702                }
+    703                break;
+   \                     ??ProcessRelayOut_5: (+1)
+   \       0x3C   0xE041             B        ??ProcessRelayOut_6
+    704              }
+    705            case MODE_2: // User Enable Mode
+    706              {
+    707                if(digital_Outputs_Control.digital_outputs_Data.discretes_u16.is_relayOutputEnable)
+   \                     ??ProcessRelayOut_3: (+1)
+   \       0x3E   0x2101             MOVS     R1,#+1
+   \       0x40   0x224C             MOVS     R2,#+76
+   \       0x42   0x5A82             LDRH     R2,[R0, R2]
+   \       0x44   0x000B             MOVS     R3,R1
+   \       0x46   0x4013             ANDS     R3,R3,R2
+   \       0x48   0xB29B             UXTH     R3,R3
+   \       0x4A   0x2B00             CMP      R3,#+0
+   \       0x4C   0xD002             BEQ      ??ProcessRelayOut_7
+    708                {
+    709                  state_u8 = ENABLE;
+   \       0x4E   0x....             LDR      R2,??DataTable9_4
+   \       0x50   0x7011             STRB     R1,[R2, #+0]
+   \       0x52   0xE002             B        ??ProcessRelayOut_8
+    710                } else{
+    711                  state_u8 = DISABLE;
+   \                     ??ProcessRelayOut_7: (+1)
+   \       0x54   0x2100             MOVS     R1,#+0
+   \       0x56   0x....             LDR      R2,??DataTable9_4
+   \       0x58   0x7011             STRB     R1,[R2, #+0]
+    712                }
+    713                break;
+   \                     ??ProcessRelayOut_8: (+1)
+   \       0x5A   0xE032             B        ??ProcessRelayOut_6
+    714              }
+    715            case MODE_3: // Speed Threshold Mode
+    716              {
+    717                //demand_percent_u16 =Actual_Measured_Speed;// (*digitalOutputs_MotorCom_Control_ptr).motor_Metering_Data.demand_Reference_Percent_u16;
+    718                
+    719                  if(Actual_Measured_Speed==0){
+   \                     ??ProcessRelayOut_2: (+1)
+   \       0x5C   0x....             LDR      R1,??DataTable9_5
+   \       0x5E   0x2200             MOVS     R2,#+0
+   \       0x60   0x5E8A             LDRSH    R2,[R1, R2]
+   \       0x62   0x2A00             CMP      R2,#+0
+   \       0x64   0xD103             BNE      ??ProcessRelayOut_9
+    720                    state_u8 = DISABLE;
+   \       0x66   0x2100             MOVS     R1,#+0
+   \       0x68   0x....             LDR      R2,??DataTable9_4
+   \       0x6A   0x7011             STRB     R1,[R2, #+0]
+   \       0x6C   0xE028             B        ??ProcessRelayOut_10
+    721                  }else if( Actual_Measured_Speed > RELAY_ON_TH_SPEED-5)//digital_Outputs_Control.digital_outputs_Setting.relayEnableDemandThreshold_u16)
+   \                     ??ProcessRelayOut_9: (+1)
+   \       0x6E   0x2200             MOVS     R2,#+0
+   \       0x70   0x5E8A             LDRSH    R2,[R1, R2]
+   \       0x72   0x23F8             MOVS     R3,#+248
+   \       0x74   0x005B             LSLS     R3,R3,#+1        ;; #+496
+   \       0x76   0x429A             CMP      R2,R3
+   \       0x78   0xDB0E             BLT      ??ProcessRelayOut_11
+    722                  {
+    723                    Realy_Off_Check_Counter=0;
+   \       0x7A   0x2100             MOVS     R1,#+0
+   \       0x7C   0x....             LDR      R2,??DataTable9_6
+   \       0x7E   0x8011             STRH     R1,[R2, #+0]
+    724                    if(Realy_On_Check_Counter>=100){
+   \       0x80   0x....             LDR      R1,??DataTable9_7
+   \       0x82   0x880A             LDRH     R2,[R1, #+0]
+   \       0x84   0x2A64             CMP      R2,#+100
+   \       0x86   0xDB03             BLT      ??ProcessRelayOut_12
+    725                      //Realy_On_Check_Counter=0;
+    726                      state_u8 = ENABLE;
+   \       0x88   0x2101             MOVS     R1,#+1
+   \       0x8A   0x....             LDR      R2,??DataTable9_4
+   \       0x8C   0x7011             STRB     R1,[R2, #+0]
+   \       0x8E   0xE017             B        ??ProcessRelayOut_10
+    727                    }else{
+    728                      Realy_On_Check_Counter++;
+   \                     ??ProcessRelayOut_12: (+1)
+   \       0x90   0x880A             LDRH     R2,[R1, #+0]
+   \       0x92   0x1C52             ADDS     R2,R2,#+1
+   \       0x94   0x800A             STRH     R2,[R1, #+0]
+   \       0x96   0xE013             B        ??ProcessRelayOut_10
+    729                    }
+    730                  } else if( Actual_Measured_Speed < RELAY_ON_TH_SPEED-30)//digital_Outputs_Control.digital_outputs_Setting.relayEnableDemandThreshold_u16)
+   \                     ??ProcessRelayOut_11: (+1)
+   \       0x98   0x2200             MOVS     R2,#+0
+   \       0x9A   0x5E89             LDRSH    R1,[R1, R2]
+   \       0x9C   0x22EB             MOVS     R2,#+235
+   \       0x9E   0x0052             LSLS     R2,R2,#+1        ;; #+470
+   \       0xA0   0x4291             CMP      R1,R2
+   \       0xA2   0xDA0D             BGE      ??ProcessRelayOut_10
+    731                  {
+    732                    Realy_On_Check_Counter=0;
+   \       0xA4   0x2100             MOVS     R1,#+0
+   \       0xA6   0x000A             MOVS     R2,R1
+   \       0xA8   0x....             LDR      R3,??DataTable9_7
+   \       0xAA   0x801A             STRH     R2,[R3, #+0]
+    733                    if(Realy_Off_Check_Counter>=100){
+   \       0xAC   0x....             LDR      R2,??DataTable9_6
+   \       0xAE   0x8813             LDRH     R3,[R2, #+0]
+   \       0xB0   0x2B64             CMP      R3,#+100
+   \       0xB2   0xDB02             BLT      ??ProcessRelayOut_13
+    734                      state_u8 = DISABLE;
+   \       0xB4   0x....             LDR      R2,??DataTable9_4
+   \       0xB6   0x7011             STRB     R1,[R2, #+0]
+   \       0xB8   0xE002             B        ??ProcessRelayOut_10
+    735                    }else{
+    736                      Realy_Off_Check_Counter++;
+   \                     ??ProcessRelayOut_13: (+1)
+   \       0xBA   0x8811             LDRH     R1,[R2, #+0]
+   \       0xBC   0x1C49             ADDS     R1,R1,#+1
+   \       0xBE   0x8011             STRH     R1,[R2, #+0]
+    737                    }
+    738                  }
+    739                
+    740               // Actual_Measured_Speed=0;
+    741                break;
+   \                     ??ProcessRelayOut_10: (+1)
+   \       0xC0   0xE7FF             B        ??ProcessRelayOut_6
+    742              }
+    743            default:
+    744              break;
+    745            }
+    746            
+    747            // Set output state
+    748            if(state_u8 == ENABLE)
+   \                     ??ProcessRelayOut_1: (+1)
+   \                     ??ProcessRelayOut_6: (+1)
+   \       0xC2   0x....             LDR      R1,??DataTable9_4
+   \       0xC4   0x7809             LDRB     R1,[R1, #+0]
+   \       0xC6   0x2901             CMP      R1,#+1
+   \       0xC8   0xD112             BNE      ??ProcessRelayOut_14
+    749            {
+    750              if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8))  >> output_num_u8) && BIT_HI) // Invert Polarity
+   \       0xCA   0x8800             LDRH     R0,[R0, #+0]
+   \       0xCC   0x2101             MOVS     R1,#+1
+   \       0xCE   0x40A1             LSLS     R1,R1,R4
+   \       0xD0   0x4001             ANDS     R1,R1,R0
+   \       0xD2   0x4121             ASRS     R1,R1,R4
+   \       0xD4   0x2900             CMP      R1,#+0
+   \       0xD6   0xD005             BEQ      ??ProcessRelayOut_15
+    751              { 
+    752                Module_Gpio_WriteGpioState(output_num_u8, NORMAL_OPEN);
+   \       0xD8   0x2100             MOVS     R1,#+0
+   \       0xDA   0x0020             MOVS     R0,R4
+   \       0xDC   0xB2C0             UXTB     R0,R0
+   \       0xDE   0x....'....        BL       Module_Gpio_WriteGpioState
+   \       0xE2   0xE017             B        ??ProcessRelayOut_16
+    753              } else{
+    754                Module_Gpio_WriteGpioState(output_num_u8, NORMAL_CLOSED);
+   \                     ??ProcessRelayOut_15: (+1)
+   \       0xE4   0x2101             MOVS     R1,#+1
+   \       0xE6   0x0020             MOVS     R0,R4
+   \       0xE8   0xB2C0             UXTB     R0,R0
+   \       0xEA   0x....'....        BL       Module_Gpio_WriteGpioState
+   \       0xEE   0xE011             B        ??ProcessRelayOut_16
+    755              }
+    756            } else {
+    757              if(((digital_Outputs_Control.digital_outputs_Setting.outputPolarity_u16 & (1 << output_num_u8))  >> output_num_u8) && BIT_HI) // Invert Polarity
+   \                     ??ProcessRelayOut_14: (+1)
+   \       0xF0   0x8800             LDRH     R0,[R0, #+0]
+   \       0xF2   0x2101             MOVS     R1,#+1
+   \       0xF4   0x40A1             LSLS     R1,R1,R4
+   \       0xF6   0x4001             ANDS     R1,R1,R0
+   \       0xF8   0x4121             ASRS     R1,R1,R4
+   \       0xFA   0x2900             CMP      R1,#+0
+   \       0xFC   0xD005             BEQ      ??ProcessRelayOut_17
+    758              { 
+    759                Module_Gpio_WriteGpioState(output_num_u8, NORMAL_CLOSED);
+   \       0xFE   0x2101             MOVS     R1,#+1
+   \      0x100   0x0020             MOVS     R0,R4
+   \      0x102   0xB2C0             UXTB     R0,R0
+   \      0x104   0x....'....        BL       Module_Gpio_WriteGpioState
+   \      0x108   0xE004             B        ??ProcessRelayOut_16
+    760              } else{
+    761                Module_Gpio_WriteGpioState(output_num_u8, NORMAL_OPEN);
+   \                     ??ProcessRelayOut_17: (+1)
+   \      0x10A   0x2100             MOVS     R1,#+0
+   \      0x10C   0x0020             MOVS     R0,R4
+   \      0x10E   0xB2C0             UXTB     R0,R0
+   \      0x110   0x....'....        BL       Module_Gpio_WriteGpioState
+    762              }
+    763            }
+    764            
+    765          }
+   \                     ??ProcessRelayOut_16: (+1)
+   \      0x114   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .bss, align 1
+   \                     `ProcessRelayOut::mode_u8`:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+   \                     `ProcessRelayOut::state_u8`:
+   \        0x0                      DS8 1
+    766          
+    767          /**
+    768          ********************************************************************************
+    769          * @brief   Set PWM output duty cycle in PWM_DUTY_CYCLE_OUTPUT mode
+    770          * @details Used %demand (xxxyy = xxx.yy% format) to set duty cycle
+    771          * @param   output_num_u8 
+    772          * @return  None
+    773          ********************************************************************************
+    774          */
+
+   \                                 In section .text, align 2, keep-with-next
+    775          void ProcessPwmDutyCycleOut(uint8_t output_num_u8){   
+   \                     ProcessPwmDutyCycleOut: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    776            uint16_t pwm_duty_u16 =0;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x002E             MOVS     R6,R5
+    777            demand_percent_u16 = (*digitalOutputs_MotorCom_Control_ptr).motor_Metering_Data.demand_Reference_Percent_u16;
+   \        0x8   0x....             LDR      R0,??DataTable9_8
+   \        0xA   0x....             LDR      R1,??DataTable9_9
+   \        0xC   0x6809             LDR      R1,[R1, #+0]
+   \        0xE   0x8B89             LDRH     R1,[R1, #+28]
+   \       0x10   0x8001             STRH     R1,[R0, #+0]
+    778            if(demand_percent_u16 == 0)
+   \       0x12   0x8801             LDRH     R1,[R0, #+0]
+   \       0x14   0x2900             CMP      R1,#+0
+   \       0x16   0xD00D             BEQ      ??ProcessPwmDutyCycleOut_0
+    779            {
+    780              pwm_duty_u16 = 0;
+    781            } else {
+    782              pwm_duty_u16 = (uint16_t)(pwm_duty_output_slope_f * demand_percent_u16 + pwm_duty_output_intercept_f);
+   \                     ??ProcessPwmDutyCycleOut_1: (+1)
+   \       0x18   0x8800             LDRH     R0,[R0, #+0]
+   \       0x1A   0x....'....        BL       __aeabi_ui2f
+   \       0x1E   0x....             LDR      R1,??DataTable9_10
+   \       0x20   0x6809             LDR      R1,[R1, #+0]
+   \       0x22   0x....'....        BL       __aeabi_fmul
+   \       0x26   0x....             LDR      R1,??DataTable9_11
+   \       0x28   0x6809             LDR      R1,[R1, #+0]
+   \       0x2A   0x....'....        BL       __aeabi_fadd
+   \       0x2E   0x....'....        BL       __aeabi_f2iz
+   \       0x32   0x0005             MOVS     R5,R0
+    783            }
+    784            digital_Outputs_Control.digital_outputs_Data.pwmOutputDutyCycle_u16 = pwm_duty_u16;  
+   \                     ??ProcessPwmDutyCycleOut_0: (+1)
+   \       0x34   0x....             LDR      R0,??DataTable9_12
+   \       0x36   0x8005             STRH     R5,[R0, #+0]
+    785             Module_Gpio_SetPwmOutDutyCycle(output_num_u8, pwm_duty_u16); 
+   \       0x38   0x0029             MOVS     R1,R5
+   \       0x3A   0xB289             UXTH     R1,R1
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0xB2C0             UXTB     R0,R0
+   \       0x40   0x....'....        BL       Module_Gpio_SetPwmOutDutyCycle
+    786          }
+   \       0x44   0xBD70             POP      {R4-R6,PC}       ;; return
+    787          
+    788          /**
+    789          ********************************************************************************************************************************
+    790          * @brief   Set PWM output duty cycle in PWM_FREQUENCY_OUTPUT mode
+    791          * @details Uses %demand (xxxyy = xxx.yy% format) or speed in RPM to set output frequency
+    792          * @param   output_num_u8 
+    793          * @return  None
+    794          ********************************************************************************************************************************
+    795          */
+
+   \                                 In section .text, align 2, keep-with-next
+    796          void ProcessPwmFrequencyOutput(uint8_t output_num_u8){  
+   \                     ProcessPwmFrequencyOutput: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    797            uint8_t mode_u8;
+    798            mode_u8 = digital_Outputs_Control.digital_outputs_Setting.outputFunctionMode[output_num_u8];
+   \        0x4   0x....             LDR      R6,??DataTable9_2
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0xB2C0             UXTB     R0,R0
+   \        0xA   0x2102             MOVS     R1,#+2
+   \        0xC   0x4348             MULS     R0,R1,R0
+   \        0xE   0x1830             ADDS     R0,R6,R0
+   \       0x10   0x8E00             LDRH     R0,[R0, #+48]
+   \       0x12   0x4669             MOV      R1,SP
+   \       0x14   0x7008             STRB     R0,[R1, #+0]
+    799            uint16_t pwm_freq_u16 = 0;
+   \       0x16   0x2500             MOVS     R5,#+0
+   \       0x18   0x002F             MOVS     R7,R5
+    800            switch(mode_u8){
+   \       0x1A   0x4668             MOV      R0,SP
+   \       0x1C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x1E   0x2801             CMP      R0,#+1
+   \       0x20   0xD002             BEQ      ??ProcessPwmFrequencyOutput_0
+   \       0x22   0x2802             CMP      R0,#+2
+   \       0x24   0xD00C             BEQ      ??ProcessPwmFrequencyOutput_1
+   \       0x26   0xE022             B        ??ProcessPwmFrequencyOutput_2
+    801            case MODE_1: // Measured speed output
+    802              {
+    803                measuredSpeed_u16 = (*digitalOutputs_MotorCom_Control_ptr).motor_Metering_Data.demand_Reference_Speed_u16;
+   \                     ??ProcessPwmFrequencyOutput_0: (+1)
+   \       0x28   0x....             LDR      R0,??DataTable9_13
+   \       0x2A   0x....             LDR      R1,??DataTable9_9
+   \       0x2C   0x6809             LDR      R1,[R1, #+0]
+   \       0x2E   0x8BC9             LDRH     R1,[R1, #+30]
+   \       0x30   0x8001             STRH     R1,[R0, #+0]
+    804                if(measuredSpeed_u16 == 0)
+   \       0x32   0x8801             LDRH     R1,[R0, #+0]
+   \       0x34   0x2900             CMP      R1,#+0
+   \       0x36   0xD002             BEQ      ??ProcessPwmFrequencyOutput_3
+    805                {
+    806                  pwm_freq_u16 = 0;
+    807                } else {
+    808                  pwm_freq_u16 = (uint16_t)(measuredSpeed_u16 * digital_Outputs_Control.digital_outputs_Setting.pwmFreqOutputScaleFactor_u16);
+   \                     ??ProcessPwmFrequencyOutput_4: (+1)
+   \       0x38   0x8805             LDRH     R5,[R0, #+0]
+   \       0x3A   0x8B70             LDRH     R0,[R6, #+26]
+   \       0x3C   0x4345             MULS     R5,R0,R5
+    809                }
+    810                break;
+   \                     ??ProcessPwmFrequencyOutput_3: (+1)
+   \       0x3E   0xE016             B        ??ProcessPwmFrequencyOutput_5
+    811              }
+    812            case MODE_2: // Commanded demand output
+    813              {
+    814                demand_percent_u16 =(*digitalOutputs_MotorCom_Control_ptr).motor_Metering_Data.demand_Reference_Percent_u16;
+   \                     ??ProcessPwmFrequencyOutput_1: (+1)
+   \       0x40   0x....             LDR      R0,??DataTable9_8
+   \       0x42   0x....             LDR      R1,??DataTable9_9
+   \       0x44   0x6809             LDR      R1,[R1, #+0]
+   \       0x46   0x8B89             LDRH     R1,[R1, #+28]
+   \       0x48   0x8001             STRH     R1,[R0, #+0]
+    815                if(demand_percent_u16 == 0)
+   \       0x4A   0x8801             LDRH     R1,[R0, #+0]
+   \       0x4C   0x2900             CMP      R1,#+0
+   \       0x4E   0xD00D             BEQ      ??ProcessPwmFrequencyOutput_6
+    816                {
+    817                  pwm_freq_u16 = 0;
+    818                } else {         
+    819                  pwm_freq_u16 = (uint16_t)(pwm_freq_output_slope_f * demand_percent_u16 + pwm_freq_output_intercept_f); // No need to left shift
+   \                     ??ProcessPwmFrequencyOutput_7: (+1)
+   \       0x50   0x8800             LDRH     R0,[R0, #+0]
+   \       0x52   0x....'....        BL       __aeabi_ui2f
+   \       0x56   0x....             LDR      R1,??DataTable9_14
+   \       0x58   0x6809             LDR      R1,[R1, #+0]
+   \       0x5A   0x....'....        BL       __aeabi_fmul
+   \       0x5E   0x....             LDR      R1,??DataTable9_15
+   \       0x60   0x6809             LDR      R1,[R1, #+0]
+   \       0x62   0x....'....        BL       __aeabi_fadd
+   \       0x66   0x....'....        BL       __aeabi_f2iz
+   \       0x6A   0x0005             MOVS     R5,R0
+    820                }
+    821                break;
+   \                     ??ProcessPwmFrequencyOutput_6: (+1)
+   \       0x6C   0xE7FF             B        ??ProcessPwmFrequencyOutput_5
+    822              }
+    823            default:
+    824              {
+    825                pwm_freq_u16 = 0;
+    826                break;
+    827              }
+    828            }
+    829            if(pwm_freq_u16 != 0){ // Set to "0" if Speed or demand are zeros
+   \                     ??ProcessPwmFrequencyOutput_2: (+1)
+   \                     ??ProcessPwmFrequencyOutput_5: (+1)
+   \       0x6E   0x0028             MOVS     R0,R5
+   \       0x70   0xB280             UXTH     R0,R0
+   \       0x72   0x2800             CMP      R0,#+0
+   \       0x74   0xD006             BEQ      ??ProcessPwmFrequencyOutput_8
+    830              if(pwm_freq_u16 > digital_Outputs_Control.digital_outputs_Setting.maxPwmOutFreq_u16)
+   \       0x76   0x88F0             LDRH     R0,[R6, #+6]
+   \       0x78   0x0029             MOVS     R1,R5
+   \       0x7A   0xB289             UXTH     R1,R1
+   \       0x7C   0x4288             CMP      R0,R1
+   \       0x7E   0xD201             BCS      ??ProcessPwmFrequencyOutput_8
+    831              {
+    832                pwm_freq_u16 = digital_Outputs_Control.digital_outputs_Setting.maxPwmOutFreq_u16;
+   \       0x80   0x88F0             LDRH     R0,[R6, #+6]
+   \       0x82   0x0005             MOVS     R5,R0
+    833              } 
+    834            }
+    835            digital_Outputs_Control.digital_outputs_Data.pwmOuputFrequency_u16 = pwm_freq_u16;
+   \                     ??ProcessPwmFrequencyOutput_8: (+1)
+   \       0x84   0x204A             MOVS     R0,#+74
+   \       0x86   0x5235             STRH     R5,[R6, R0]
+    836            Module_Gpio_SetPwmOutPeriod(output_num_u8, pwm_freq_u16); // Set frequency
+   \       0x88   0x0029             MOVS     R1,R5
+   \       0x8A   0xB289             UXTH     R1,R1
+   \       0x8C   0x0020             MOVS     R0,R4
+   \       0x8E   0xB2C0             UXTB     R0,R0
+   \       0x90   0x....'....        BL       Module_Gpio_SetPwmOutPeriod
+    837            Module_Gpio_SetPwmOutDutyCycle(output_num_u8, DEFAULT_PERCENT_DUTY_CYCLE); // Set duty cycle. Need this since duty cycle calculation repends on PWM period value
+   \       0x94   0x....             LDR      R1,??DataTable9_16  ;; 0x1388
+   \       0x96   0x0020             MOVS     R0,R4
+   \       0x98   0xB2C0             UXTB     R0,R0
+   \       0x9A   0x....'....        BL       Module_Gpio_SetPwmOutDutyCycle
+    838            
+    839          }
+   \       0x9E   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     module_digital_outputs_poll_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     digital_Outputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     digital_Outputs_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x0000'2710        DC32     0x2710
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x0000'251C        DC32     0x251c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x0000'1388        DC32     0x1388
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x....'....        DC32     output_seq_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x....'....        DC32     is_sequence_executing
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0x....'....        DC32     seq_change_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \        0x0   0x....'....        DC32     is_processed_led_fault_outputs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \        0x0   0x....'....        DC32     digital_Outputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \        0x0   0x....'....        DC32     fault_led_outputs_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_12:
+   \        0x0   0x....'....        DC32     pwm_out_init_error_state
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_13:
+   \        0x0   0x....'....        DC32     pwm_freq_output_slope_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_14:
+   \        0x0   0x461C'3C00        DC32     0x461c3c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_15:
+   \        0x0   0x....'....        DC32     pwm_freq_output_intercept_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_16:
+   \        0x0   0x....'....        DC32     pwm_duty_output_slope_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_17:
+   \        0x0   0x....'....        DC32     pwm_duty_output_intercept_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_18:
+   \        0x0   0x....'....        DC32     digitalOutputs_MotorCom_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_19:
+   \        0x0   0x....'....        DC32     onBoardLedExternalSequences_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     is_sequence_executing
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     is_processed_led_fault_outputs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     processed_fault_led_outputs_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     fault_led_outputs_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     digital_Outputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     current_external_sequence_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \        0x0   0x....'....        DC32     current_sequence_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     output_seq_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     digital_Outputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     faultStatus_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     digitalOutputs_MotorCom_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     sequence_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     seq_change_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x....'....        DC32     is_sequence_executing
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x....'....        DC32     onBoardLedExternalSequences_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x....'....        DC32     current_external_sequence_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x....'....        DC32     is_external_led_sequence_executing
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0x....'....        DC32     current_sequence_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \        0x0   0x....'....        DC32     new_sequence_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \        0x0   0x....'....        DC32     `ProcessRelayOut::mode_u8`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \        0x0   0x....'....        DC32     digital_Outputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \        0x0   0x....'....        DC32     faultStatus_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \        0x0   0x....'....        DC32     `ProcessRelayOut::state_u8`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \        0x0   0x....'....        DC32     Actual_Measured_Speed
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \        0x0   0x....'....        DC32     Realy_Off_Check_Counter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_7:
+   \        0x0   0x....'....        DC32     Realy_On_Check_Counter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_8:
+   \        0x0   0x....'....        DC32     demand_percent_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_9:
+   \        0x0   0x....'....        DC32     digitalOutputs_MotorCom_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_10:
+   \        0x0   0x....'....        DC32     pwm_duty_output_slope_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_11:
+   \        0x0   0x....'....        DC32     pwm_duty_output_intercept_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_12:
+   \        0x0   0x....'....        DC32     digital_Outputs_Control+0x46
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_13:
+   \        0x0   0x....'....        DC32     measuredSpeed_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_14:
+   \        0x0   0x....'....        DC32     pwm_freq_output_slope_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_15:
+   \        0x0   0x....'....        DC32     pwm_freq_output_intercept_f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_16:
+   \        0x0   0x0000'1388        DC32     0x1388
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   AssignModuleMemDigitalOutputs
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+       0   DigitalOutputs_AddLedSequence
+      40   ExecuteFaultLedOutBlinking
+        40   -> Module_Gpio_WriteGpioState
+        40   -> getSysCount
+      24   InitDigitalOutputsLocalVariables
+        24   -> Module_Gpio_Dout1_Init
+        24   -> Module_Gpio_SetPwmOutDutyCycle
+        24   -> Module_Gpio_SetPwmOutPeriod
+        24   -> Module_Gpio_SetPwmOutPolarity
+        24   -> Module_Gpio_StartPwmOut
+        24   -> Module_Gpio_WriteGpioState
+        24   -> __aeabi_fdiv
+        24   -> __aeabi_fsub
+        24   -> __aeabi_i2f
+        24   -> __aeabi_ui2f
+        24   -> getProcessInfoIndex
+        24 __aeabi_uread4
+       8   InitDigitalOutputsSetting
+      32   ProcessFaultLedOut
+        32   -> ExecuteFaultLedOutBlinking
+        32   -> Module_Gpio_ReadGpioOutputState
+        32   -> Module_Gpio_TogglePin
+        32   -> Module_Gpio_WriteGpioState
+        32   -> getSysCount
+      16   ProcessPwmDutyCycleOut
+        16   -> Module_Gpio_SetPwmOutDutyCycle
+        16   -> __aeabi_f2iz
+        16   -> __aeabi_fadd
+        16   -> __aeabi_fmul
+        16   -> __aeabi_ui2f
+      24   ProcessPwmFrequencyOutput
+        24   -> Module_Gpio_SetPwmOutDutyCycle
+        24   -> Module_Gpio_SetPwmOutPeriod
+        24   -> __aeabi_f2iz
+        24   -> __aeabi_fadd
+        24   -> __aeabi_fmul
+        24   -> __aeabi_ui2f
+       8   ProcessRelayOut
+         8   -> Module_Gpio_WriteGpioState
+      32   module_Digital_Outputs_u32
+        32   -> AssignModuleMemDigitalOutputs
+        32   -> InitDigitalOutputsLocalVariables
+        32   -> InitDigitalOutputsSetting
+        32   -> Module_Gpio_StopPwmOut
+        32   -> ProcessFaultLedOut
+        32   -> ProcessPwmDutyCycleOut
+        32   -> ProcessPwmFrequencyOutput
+        32   -> ProcessRelayOut
+        32   -> getProcessInfoIndex
+        32   -> getSysCount
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_12
+       4  ??DataTable4_13
+       4  ??DataTable4_14
+       4  ??DataTable4_15
+       4  ??DataTable4_16
+       4  ??DataTable4_17
+       4  ??DataTable4_18
+       4  ??DataTable4_19
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_10
+       4  ??DataTable9_11
+       4  ??DataTable9_12
+       4  ??DataTable9_13
+       4  ??DataTable9_14
+       4  ??DataTable9_15
+       4  ??DataTable9_16
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+      60  AssignModuleMemDigitalOutputs
+       6  DigitalOutputs_AddLedSequence
+     990  ExecuteFaultLedOutBlinking
+     438  InitDigitalOutputsLocalVariables
+      84  InitDigitalOutputsSetting
+     648  ProcessFaultLedOut
+      70  ProcessPwmDutyCycleOut
+     160  ProcessPwmFrequencyOutput
+     278  ProcessRelayOut
+       2  Realy_Off_Check_Counter
+       2  Realy_On_Check_Counter
+       1  current_external_sequence_count_u8
+       1  current_external_sequence_u8
+       1  current_sequence_u8
+       2  demand_percent_u16
+       4  digitalOutputs_MotorCom_Control_ptr
+      80  digital_Outputs_Control
+       4  digital_Outputs_StructMem_u32
+       4  faultStatus_u32
+       1  fault_led_outputs_count_u8
+       1  is_external_led_sequence_executing
+      12  is_processed_led_fault_outputs
+      12  is_sequence_executing
+       2  measuredSpeed_u16
+       1  mode_u8
+     366  module_Digital_Outputs_u32
+       8  module_digital_outputs_poll_time_u64
+       1  new_sequence_u8
+       1  onBoardLedExternalSequences_u8
+      12  output_seq_count_u8
+       1  processed_fault_led_outputs_count_u8
+       4  pwm_duty_output_intercept_f
+       4  pwm_duty_output_slope_f
+       4  pwm_freq_output_intercept_f
+       4  pwm_freq_output_slope_f
+       1  pwm_out_init_error_state
+      80  seq_change_time_u64
+       8  sequence_time_u64
+       1  state_u8
+
+ 
+   259 bytes in section .bss
+ 3'328 bytes in section .text
+ 
+ 3'328 bytes of CODE memory
+   259 bytes of DATA memory
+
+Errors: none
+Warnings: none

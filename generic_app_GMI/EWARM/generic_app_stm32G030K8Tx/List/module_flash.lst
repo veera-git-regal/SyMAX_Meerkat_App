@@ -1,0 +1,3126 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         09/Feb/2022  11:38:39
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_flash.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWC439.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_flash.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_flash.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_flash.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_flash.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_flash.c 
+      4          * @author  Pamela Lee
+      5          * @brief   Main driver module for flash.
+      6          * @details This module initializes the flash
+      7          *          The ST motor libraries parameters will be mapped from the top of FLASH_USER_START_ADDR in 16bit data,
+      8          *          the data can be updated by using the function of uint8_t FlashDatSet(uint16_t _offset, uint16_t _flashDat), then 
+      9          *          data and offset will store in internal buffer as temporary data, user can either store all the temporary data into flash 
+     10          *          by flashPageUpdate(), or if the internal buffer is full will also update the temporary into flash.
+     11          ********************************************************************************************************************************
+     12          */
+     13          
+     14          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     15          #include "zz_module_flash.h"
+     16          
+     17          #include "module_analog_0_10V.h"
+     18          
+     19          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     20          
+     21          //extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     22          extern ProcessInfo processInfoTable[];
+
+   \                                 In section .bss, align 4
+     23          uint32_t Address = 0;                                     //, PageError = 0;
+   \                     Address:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 1
+     24          __IO uint8_t readData = 0 , MemoryProgramStatus = 0;
+   \                     readData:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+   \                     MemoryProgramStatus:
+   \        0x0                      DS8 1
+     25          
+     26          /*Variable used for Erase procedure*/
+
+   \                                 In section .bss, align 4
+     27          static FLASH_EraseInitTypeDef EraseInitStruct;
+   \                     EraseInitStruct:
+   \        0x0                      DS8 12
+     28          
+     29          
+     30          //*****************************************************************************************
+     31          typedef  struct 
+     32          {
+     33            uint16_t      offset;
+     34            uint64_t      flashDat;
+     35          }FlashBufInfo;
+     36          #define FlashBufSize 20
+
+   \                                 In section .bss, align 8
+     37          FlashBufInfo flashBuf[FlashBufSize];
+   \                     flashBuf:
+   \        0x0                      DS8 320
+
+   \                                 In section .bss, align 1
+     38          uint8_t Flash_BufHead = 0;
+   \                     Flash_BufHead:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     39          uint8_t Flash_BufTail = 0;
+   \                     Flash_BufTail:
+   \        0x0                      DS8 1
+
+   \                                 In section .data, align 1
+     40          uint8_t is_flashInitComplete = TRUE;
+   \                     is_flashInitComplete:
+   \        0x0   0x01               DC8 1
+
+   \                                 In section .bss, align 1
+     41          uint8_t is_flashUpdate = FALSE;
+   \                     is_flashUpdate:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     42          uint8_t flash_status_u8 = 0;
+   \                     flash_status_u8:
+   \        0x0                      DS8 1
+     43          
+
+   \                                 In section .bss, align 4
+     44          uint32_t address_value_ptr = 0;
+   \                     address_value_ptr:
+   \        0x0                      DS8 4
+     45          #include "module_analog_4_20ma.h"
+
+   \                                 In section .bss, align 4
+     46          Analog_4_20ma_Control* flash_AnalogAmpsControl_ptr;
+   \                     flash_AnalogAmpsControl_ptr:
+   \        0x0                      DS8 4
+     47          //********************************************************************************************************************************************************
+     48          
+     49          enum {
+     50            MEMORY_INIT_MODULE,
+     51            INIT_MODULE,
+     52            RUN_MODULE,
+     53            // additional states to be added here as necessary.
+     54            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     55            KILL_MODULE = KILL_APP
+     56          };
+     57          
+     58          void Get_Flash_Index(void);
+     59          void Flash_Buf_Init(void);
+     60          //void Get_Flash_Index(void);
+     61          void Update_Flash(uint8_t module_id_u8, uint8_t flash_state_u8);
+     62          uint8_t update_Flash_Settings(uint8_t);
+     63          uint8_t init_Flash_Settings(void);
+     64          void copy_Data_To_Buffer(uint32_t index_u32, uint8_t* buff);
+     65          uint8_t update_Flash_Settings(uint8_t module_id_u8);
+     66          uint8_t flashBlockProgram8bytes(uint8_t drv_id_u8, uint32_t _TopageAddress, uint32_t _length);
+     67          //uint32_t flashGetSettingAddress(uint8_t drv_id_u8, uint8_t *module_address_ptr, uint8_t *setting_address_ptr);
+     68          uint8_t check_flash_empty(uint32_t page_start_addres_u32, uint16_t page_size_u16);
+     69          uint8_t flashWriteCRC32Version(uint8_t module_id_u8, uint32_t _TopageAddress);
+     70          
+
+   \                                 In section .text, align 2, keep-with-next
+     71          uint8_t moduleFlash_u32(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8, uint8_t irq_id_u8) {
+   \                     moduleFlash_u32: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB081             SUB      SP,SP,#+4
+     72            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+     73            switch (next_state_u8) 
+   \        0xC   0x4668             MOV      R0,SP
+   \        0xE   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD006             BEQ      ??moduleFlash_u32_0
+   \       0x14   0x2801             CMP      R0,#+1
+   \       0x16   0xD006             BEQ      ??moduleFlash_u32_1
+   \       0x18   0x2802             CMP      R0,#+2
+   \       0x1A   0xD006             BEQ      ??moduleFlash_u32_2
+   \       0x1C   0x28FF             CMP      R0,#+255
+   \       0x1E   0xD03C             BEQ      ??moduleFlash_u32_3
+   \       0x20   0xE04E             B        ??moduleFlash_u32_4
+     74            {
+     75            case MEMORY_INIT_MODULE:
+     76              {
+     77                //AssignModuleMemFlash(); // Assign structured memory
+     78                return_state_u8 = INIT_MODULE;
+   \                     ??moduleFlash_u32_0: (+1)
+   \       0x22   0x2001             MOVS     R0,#+1
+     79                break;
+   \       0x24   0xE04D             B        ??moduleFlash_u32_5
+     80              }
+     81            case INIT_MODULE: 
+     82              {
+     83                //FlashBufInit();
+     84                
+     85                /** for pam testing the buffer system **/
+     86                
+     87                //FlashDataSet(0, 0xaaaabbbb);
+     88                //FlashDataSet(16, 0xccccdddd);
+     89                //FlashDataSet(0x1ff, 0x5555);
+     90                //FlashDataSet(0x122, 0x5555);   //going to delete before write inflash
+     91                
+     92                //FlashDataSet(0x3fe, 0xaaaa);
+     93                //FlashDataSet(0x200, 0x5555);
+     94                //FlashDataSet(0x3fe, 0xaa55);   //going to replace the former same address
+     95                //FlashDataSet(0x0ff, 0xaaaa);
+     96                //FlashDataSet(0x320, 0xaaaa);
+     97                //FlashDataSet(0x200, 0xaaaa);
+     98                
+     99                ////flashPageErase(drv_id_u8, FLASH_USER_START_ADDR);       //elase all two page for update
+    100                //flashPageErase(drv_id_u8, MIRROR_FLASH_BLOCK_SETTING_PAGE);       //elase all two page for update 
+    101                
+    102                ////flashPageCopy(_module_id_u8, MIRROR_FLASH_BLOCK_SETTING_PAGE, FLASH_BLOCK_SETTING_PAGE);
+    103                //flashPageUpdate(drv_id_u8, (FLASH_USER_START_ADDR), MIRROR_FLASH_BLOCK_SETTING_PAGE); //copy the lower page to upper page with ram data in buffer
+    104                
+    105                //flashPageCopy(drv_id_u8, FLASH_USER_START_ADDR, (FLASH_USER_START_ADDR + FLASH_PAGE_SIZE)); //copy the whole page from one to other
+    106                
+    107                //  flashPageErase(drv_id_u8, ADDR_FLASH_PAGE_31);
+    108                //   flashPageCopy(drv_id_u8, ADDR_FLASH_PAGE_30, ADDR_FLASH_PAGE_31);
+    109                
+    110                return_state_u8 = RUN_MODULE;
+   \                     ??moduleFlash_u32_1: (+1)
+   \       0x26   0x2002             MOVS     R0,#+2
+    111                break;
+   \       0x28   0xE04B             B        ??moduleFlash_u32_5
+    112              }
+    113            case RUN_MODULE: 
+    114              {
+    115                /** Program the user Flash area word by word(area defined by FLASH_USER_START_ADDR and FLASH_USER_END_ADDR) **/
+    116                
+    117                if( (is_flashInitComplete == FALSE) || (is_flashUpdate == TRUE) )
+   \                     ??moduleFlash_u32_2: (+1)
+   \       0x2A   0x....             LDR      R0,??DataTable3
+   \       0x2C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD003             BEQ      ??moduleFlash_u32_6
+   \       0x32   0x....             LDR      R0,??DataTable3_1
+   \       0x34   0x7800             LDRB     R0,[R0, #+0]
+   \       0x36   0x2801             CMP      R0,#+1
+   \       0x38   0xD125             BNE      ??moduleFlash_u32_7
+    118                {
+    119                  Get_Flash_Index();
+   \                     ??moduleFlash_u32_6: (+1)
+   \       0x3A   0x....'....        BL       Get_Flash_Index
+    120                  flash_status_u8 = check_flash_empty(FLASH_USER_START_ADDR, PAGE_SIZE);
+   \       0x3E   0x....             LDR      R7,??DataTable3_2
+   \       0x40   0x....             LDR      R5,??DataTable3_3  ;; 0x800f000
+   \       0x42   0x2680             MOVS     R6,#+128
+   \       0x44   0x0136             LSLS     R6,R6,#+4        ;; #+2048
+   \       0x46   0x0031             MOVS     R1,R6
+   \       0x48   0x0028             MOVS     R0,R5
+   \       0x4A   0x....'....        BL       check_flash_empty
+   \       0x4E   0x7038             STRB     R0,[R7, #+0]
+    121                  flashPageErase(drv_id_u8, FLASH_USER_START_ADDR);           //elase all two page for update
+   \       0x50   0x0029             MOVS     R1,R5
+   \       0x52   0x4668             MOV      R0,SP
+   \       0x54   0x7900             LDRB     R0,[R0, #+4]
+   \       0x56   0x....'....        BL       flashPageErase
+    122                  flashPageErase(drv_id_u8, MIRROR_FLASH_BLOCK_SETTING_PAGE); //elase all two page for update 
+   \       0x5A   0x....             LDR      R1,??DataTable4  ;; 0x800f800
+   \       0x5C   0x4668             MOV      R0,SP
+   \       0x5E   0x7900             LDRB     R0,[R0, #+4]
+   \       0x60   0x....'....        BL       flashPageErase
+    123                  flash_status_u8 = check_flash_empty(FLASH_USER_START_ADDR, PAGE_SIZE);
+   \       0x64   0x0031             MOVS     R1,R6
+   \       0x66   0x0028             MOVS     R0,R5
+   \       0x68   0x....'....        BL       check_flash_empty
+   \       0x6C   0x7038             STRB     R0,[R7, #+0]
+    124                  init_Flash_Settings();
+   \       0x6E   0x....'....        BL       init_Flash_Settings
+    125                  flashWriteCRC32Version(drv_id_u8, FLASH_USER_START_ADDR); // write flash version and CRC
+   \       0x72   0x0029             MOVS     R1,R5
+   \       0x74   0x4668             MOV      R0,SP
+   \       0x76   0x7900             LDRB     R0,[R0, #+4]
+   \       0x78   0x....'....        BL       flashWriteCRC32Version
+    126                  is_flashInitComplete = TRUE;
+   \       0x7C   0x2001             MOVS     R0,#+1
+   \       0x7E   0x....             LDR      R1,??DataTable3
+   \       0x80   0x7008             STRB     R0,[R1, #+0]
+    127                  is_flashUpdate = FALSE;
+   \       0x82   0x....             LDR      R0,??DataTable3_1
+   \       0x84   0x7004             STRB     R4,[R0, #+0]
+    128                }
+    129                //address_value_ptr =  flashGetSettingAddress(6,(uint8_t *)(flash_AnalogAmpsControl_ptr) , (uint8_t *)&((*flash_AnalogAmpsControl_ptr).analog_4_20mA_Setting.analogVoltsToAmpsGain_f));
+    130                address_value_ptr =  flashGetSettingAddress(6,(uint8_t *)(flash_AnalogAmpsControl_ptr) , (uint8_t *)&((*flash_AnalogAmpsControl_ptr).analog_4_20mA_Setting.analogGain_f));
+   \                     ??moduleFlash_u32_7: (+1)
+   \       0x86   0x....             LDR      R0,??DataTable4_1
+   \       0x88   0x6802             LDR      R2,[R0, #+0]
+   \       0x8A   0x6801             LDR      R1,[R0, #+0]
+   \       0x8C   0x2006             MOVS     R0,#+6
+   \       0x8E   0x....'....        BL       flashGetSettingAddress
+   \       0x92   0x....             LDR      R1,??DataTable4_2
+   \       0x94   0x6008             STR      R0,[R1, #+0]
+    131                //getSettingsFromFalsh(6); // Get flash setting for 4-20mA module and copy them to RAM
+    132                return_state_u8 = RUN_MODULE;
+   \       0x96   0x2002             MOVS     R0,#+2
+    133                break;
+   \       0x98   0xE013             B        ??moduleFlash_u32_5
+    134              }
+    135            case KILL_MODULE: 
+    136              {
+    137                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    138                uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+   \                     ??moduleFlash_u32_3: (+1)
+   \       0x9A   0x4668             MOV      R0,SP
+   \       0x9C   0x7900             LDRB     R0,[R0, #+4]
+   \       0x9E   0x....'....        BL       getProcessInfoIndex
+   \       0xA2   0x0001             MOVS     R1,R0
+    139                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0xA4   0x0008             MOVS     R0,R1
+   \       0xA6   0xB2C0             UXTB     R0,R0
+   \       0xA8   0x28FF             CMP      R0,#+255
+   \       0xAA   0xD007             BEQ      ??moduleFlash_u32_8
+    140                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0xAC   0x20FF             MOVS     R0,#+255
+   \       0xAE   0x....             LDR      R2,??DataTable4_3
+   \       0xB0   0x000B             MOVS     R3,R1
+   \       0xB2   0xB2DB             UXTB     R3,R3
+   \       0xB4   0x2416             MOVS     R4,#+22
+   \       0xB6   0x4363             MULS     R3,R4,R3
+   \       0xB8   0x18D2             ADDS     R2,R2,R3
+   \       0xBA   0x7290             STRB     R0,[R2, #+10]
+    141                }
+    142                return_state_u8 = KILL_MODULE;
+   \                     ??moduleFlash_u32_8: (+1)
+   \       0xBC   0x20FF             MOVS     R0,#+255
+    143                break;
+   \       0xBE   0xE000             B        ??moduleFlash_u32_5
+    144              }
+    145            default: 
+    146              {
+    147                return_state_u8 = KILL_MODULE;
+   \                     ??moduleFlash_u32_4: (+1)
+   \       0xC0   0x20FF             MOVS     R0,#+255
+    148                break;
+    149              }
+    150            }
+    151            return return_state_u8;
+   \                     ??moduleFlash_u32_5: (+1)
+   \       0xC2   0xB2C0             UXTB     R0,R0
+   \       0xC4   0xB005             ADD      SP,SP,#+20
+   \       0xC6   0xBDF0             POP      {R4-R7,PC}       ;; return
+    152          }
+    153          
+    154          /** =========================== private functions =========================================== **/
+    155          /**
+    156          * @brief  Erase page/s of flash data
+    157          * @param  drv_id_u8   The function caller module ID in case error occur within this function
+    158          *         pageAddress The starting address of the flash page
+    159          * @retval successful
+    160          */
+
+   \                                 In section .text, align 2, keep-with-next
+    161          uint8_t flashPageErase(uint8_t drv_id_u8, uint32_t pageAddress)                 //pam tested
+    162          {
+   \                     flashPageErase: (+1)
+   \        0x0   0xB5F3             PUSH     {R0,R1,R4-R7,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+    163            uint8_t returnValue = true;
+   \        0x4   0x2501             MOVS     R5,#+1
+   \        0x6   0x002E             MOVS     R6,R5
+    164            uint32_t PageError = 0;
+   \        0x8   0x2400             MOVS     R4,#+0
+   \        0xA   0x9402             STR      R4,[SP, #+8]
+    165            volatile uint32_t page_number_u32 = 0;
+   \        0xC   0x9403             STR      R4,[SP, #+12]
+    166            
+    167            /** Unlock the Flash to enable the flash control register access **/
+    168            HAL_FLASH_Unlock();
+   \        0xE   0x....'....        BL       HAL_FLASH_Unlock
+    169            /* Fill EraseInit structure*/
+    170            EraseInitStruct.TypeErase   = FLASH_TYPEERASE_PAGES;
+   \       0x12   0x....             LDR      R7,??DataTable4_4
+   \       0x14   0x2002             MOVS     R0,#+2
+   \       0x16   0x6038             STR      R0,[R7, #+0]
+    171            page_number_u32 = (uint32_t)( (pageAddress - FLASH_START_ADDR) / (float)PAGE_SIZE) ;
+   \       0x18   0x9806             LDR      R0,[SP, #+24]
+   \       0x1A   0x21F8             MOVS     R1,#+248
+   \       0x1C   0x0609             LSLS     R1,R1,#+24       ;; #-134217728
+   \       0x1E   0x1840             ADDS     R0,R0,R1
+   \       0x20   0x....'....        BL       __aeabi_ui2f
+   \       0x24   0x218A             MOVS     R1,#+138
+   \       0x26   0x05C9             LSLS     R1,R1,#+23       ;; #+1157627904
+   \       0x28   0x....'....        BL       __aeabi_fdiv
+   \       0x2C   0x....'....        BL       __aeabi_f2uiz
+   \       0x30   0x9003             STR      R0,[SP, #+12]
+    172            EraseInitStruct.Page = page_number_u32;  //pageAddress;
+   \       0x32   0x9803             LDR      R0,[SP, #+12]
+   \       0x34   0x6078             STR      R0,[R7, #+4]
+    173            EraseInitStruct.NbPages     = (uint32_t)NUMBER_OF_FLASH_PAGES;
+   \       0x36   0x60BD             STR      R5,[R7, #+8]
+    174            /**                                                Flash erase                                             **/
+    175            if (HAL_FLASHEx_Erase(&EraseInitStruct, &PageError) != HAL_OK)   //22ms
+   \       0x38   0xA902             ADD      R1,SP,#+8
+   \       0x3A   0x0038             MOVS     R0,R7
+   \       0x3C   0x....'....        BL       HAL_FLASHEx_Erase
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD00B             BEQ      ??flashPageErase_0
+    176            {  // Error occurred while page erase.                                                                           
+    177              setupSoftwareIRQ(drv_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, sizeof(uint32_t), (uint8_t*)(&PageError));     //report the error address 
+   \       0x44   0xA802             ADD      R0,SP,#+8
+   \       0x46   0x9001             STR      R0,[SP, #+4]
+   \       0x48   0x2004             MOVS     R0,#+4
+   \       0x4A   0x9000             STR      R0,[SP, #+0]
+   \       0x4C   0x2300             MOVS     R3,#+0
+   \       0x4E   0x22E4             MOVS     R2,#+228
+   \       0x50   0x210F             MOVS     R1,#+15
+   \       0x52   0x4668             MOV      R0,SP
+   \       0x54   0x7D00             LDRB     R0,[R0, #+20]
+   \       0x56   0x....'....        BL       setupSoftwareIRQ
+    178              returnValue = false;
+   \       0x5A   0x0026             MOVS     R6,R4
+    179            }
+    180            /** Lock the Flash to disable the flash control register access (recommended to protect the FLASH memory against possible unwanted operation) **/
+    181            HAL_FLASH_Lock();    
+   \                     ??flashPageErase_0: (+1)
+   \       0x5C   0x....'....        BL       HAL_FLASH_Lock
+    182            return returnValue;
+   \       0x60   0x0030             MOVS     R0,R6
+   \       0x62   0xB2C0             UXTB     R0,R0
+   \       0x64   0xB007             ADD      SP,SP,#+28
+   \       0x66   0xBDF0             POP      {R4-R7,PC}       ;; return
+    183          }
+    184          
+    185          /**
+    186          * @brief  Copy page/s of flash data to another sector with all the temporary storage in internal buffer
+    187          * @param  drv_id_u8        The function caller module ID in case error occur within this function
+    188          *         _FrompageAddress The starting address of the source flash page/s
+    189          *         _TopageAddress   The starting address of the sink flash page/s
+    190          * @retval successful
+    191          */
+
+   \                                 In section .text, align 2, keep-with-next
+    192          uint8_t flashPageUpdate(uint8_t drv_id_u8, uint32_t _FrompageAddress, uint32_t _TopageAddress)
+    193          {
+   \                     flashPageUpdate: (+1)
+   \        0x0   0xB5F3             PUSH     {R0,R1,R4-R7,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x0016             MOVS     R6,R2
+    194            /** Unlock the Flash to enable the flash control register access **/
+    195            HAL_FLASH_Unlock();
+   \        0x6   0x....'....        BL       HAL_FLASH_Unlock
+    196            uint16_t indx = 0;
+   \        0xA   0x2500             MOVS     R5,#+0
+   \        0xC   0x002C             MOVS     R4,R5
+    197            volatile uint64_t currentDat;
+    198            uint64_t returnBuf = 0;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0xAA04             ADD      R2,SP,#+16
+   \       0x14   0xC203             STM      R2!,{R0,R1}
+   \       0x16   0x3A08             SUBS     R2,R2,#+8
+    199            uint8_t returnValue = TRUE;
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0x4669             MOV      R1,SP
+   \       0x1C   0x7208             STRB     R0,[R1, #+8]
+    200            for(  ;  indx < ((FLASH_PAGE_SIZE * NUMBER_OF_FLASH_PAGES) - FLASH_COPY_BYTE_SIZE) ; indx += FLASH_COPY_BYTE_SIZE)
+   \                     ??flashPageUpdate_0: (+1)
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0xB280             UXTH     R0,R0
+   \       0x22   0x21FF             MOVS     R1,#+255
+   \       0x24   0x00C9             LSLS     R1,R1,#+3        ;; #+2040
+   \       0x26   0x4288             CMP      R0,R1
+   \       0x28   0xD231             BCS      ??flashPageUpdate_1
+    201            {
+    202              if(FlashBufDeRegistered(indx, &returnBuf))  //check this offset address is changed 
+   \       0x2A   0xA904             ADD      R1,SP,#+16
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0xB280             UXTH     R0,R0
+   \       0x30   0x....'....        BL       FlashBufDeRegistered
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD005             BEQ      ??flashPageUpdate_2
+    203              {
+    204                currentDat = returnBuf;         
+   \       0x38   0xA804             ADD      R0,SP,#+16
+   \       0x3A   0xC803             LDM      R0,{R0,R1}
+   \       0x3C   0xAA06             ADD      R2,SP,#+24
+   \       0x3E   0xC203             STM      R2!,{R0,R1}
+   \       0x40   0x3A08             SUBS     R2,R2,#+8
+   \       0x42   0xE007             B        ??flashPageUpdate_3
+    205              }
+    206              else
+    207              {
+    208                currentDat = FlashRead64Bits((unsigned char*) _FrompageAddress, indx); //no updated data then just read the old data
+   \                     ??flashPageUpdate_2: (+1)
+   \       0x44   0x0021             MOVS     R1,R4
+   \       0x46   0xB289             UXTH     R1,R1
+   \       0x48   0x980A             LDR      R0,[SP, #+40]
+   \       0x4A   0x....'....        BL       FlashRead64Bits
+   \       0x4E   0xAA06             ADD      R2,SP,#+24
+   \       0x50   0xC203             STM      R2!,{R0,R1}
+   \       0x52   0x3A08             SUBS     R2,R2,#+8
+    209              } 
+    210              // You can only write to flash when flash contains "0XFFFF FFFF" data or else you get HAL_ERROR (PROGERR)
+    211              if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, (_TopageAddress + indx), (uint64_t)currentDat) == HAL_OK) //write 64bit data
+   \                     ??flashPageUpdate_3: (+1)
+   \       0x54   0xA806             ADD      R0,SP,#+24
+   \       0x56   0xC80C             LDM      R0!,{R2,R3}
+   \       0x58   0x3808             SUBS     R0,R0,#+8
+   \       0x5A   0x0020             MOVS     R0,R4
+   \       0x5C   0xB280             UXTH     R0,R0
+   \       0x5E   0x1831             ADDS     R1,R6,R0
+   \       0x60   0x2001             MOVS     R0,#+1
+   \       0x62   0x....'....        BL       HAL_FLASH_Program
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD104             BNE      ??flashPageUpdate_4
+    212              {
+    213                Address += FLASH_COPY_BYTE_SIZE;
+   \       0x6A   0x....             LDR      R0,??DataTable6
+   \       0x6C   0x6801             LDR      R1,[R0, #+0]
+   \       0x6E   0x3108             ADDS     R1,R1,#+8
+   \       0x70   0x6001             STR      R1,[R0, #+0]
+   \       0x72   0xE00A             B        ??flashPageUpdate_5
+    214              }
+    215              else
+    216              {
+    217                // Error occurred while writing data in Flash memory.                                                                 
+    218                setupSoftwareIRQ(drv_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, 0x00, NULL);     //report the error address 
+   \                     ??flashPageUpdate_4: (+1)
+   \       0x74   0x2000             MOVS     R0,#+0
+   \       0x76   0x9001             STR      R0,[SP, #+4]
+   \       0x78   0x2000             MOVS     R0,#+0
+   \       0x7A   0x9000             STR      R0,[SP, #+0]
+   \       0x7C   0x2300             MOVS     R3,#+0
+   \       0x7E   0x22E4             MOVS     R2,#+228
+   \       0x80   0x210F             MOVS     R1,#+15
+   \       0x82   0xA809             ADD      R0,SP,#+36
+   \       0x84   0x7800             LDRB     R0,[R0, #+0]
+   \       0x86   0x....'....        BL       setupSoftwareIRQ
+    219              }  
+    220            }
+   \                     ??flashPageUpdate_5: (+1)
+   \       0x8A   0x3408             ADDS     R4,R4,#+8
+   \       0x8C   0xE7C7             B        ??flashPageUpdate_0
+    221            // put CRC to the last 2byte
+    222            uint16_t uwCRCValue = Calculate_CRC((uint16_t)((FLASH_PAGE_SIZE * NUMBER_OF_FLASH_PAGES) - 2) , (unsigned char*)_TopageAddress);    
+                                                       ^
+Warning[Pe069]: integer conversion resulted in truncation
+   \                     ??flashPageUpdate_1: (+1)
+   \       0x8E   0x0031             MOVS     R1,R6
+   \       0x90   0x20FE             MOVS     R0,#+254
+   \       0x92   0x....'....        BL       Calculate_CRC
+   \       0x96   0x0007             MOVS     R7,R0
+    223            //put calculated CRC back to the last word of the page
+    224            if (!HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, (_TopageAddress + indx), (uint64_t)uwCRCValue) == HAL_OK) //write 16bit data
+   \       0x98   0x003A             MOVS     R2,R7
+   \       0x9A   0xB292             UXTH     R2,R2
+   \       0x9C   0x2300             MOVS     R3,#+0
+   \       0x9E   0x0020             MOVS     R0,R4
+   \       0xA0   0xB280             UXTH     R0,R0
+   \       0xA2   0x1831             ADDS     R1,R6,R0
+   \       0xA4   0x2001             MOVS     R0,#+1
+   \       0xA6   0x....'....        BL       HAL_FLASH_Program
+   \       0xAA   0x2800             CMP      R0,#+0
+   \       0xAC   0xD00C             BEQ      ??flashPageUpdate_6
+    225            {
+    226              // Error occurred while writing data in Flash memory.                                                                 
+    227              setupSoftwareIRQ(drv_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, 0x00, NULL);     //report the error address
+   \       0xAE   0x2000             MOVS     R0,#+0
+   \       0xB0   0x9001             STR      R0,[SP, #+4]
+   \       0xB2   0x2000             MOVS     R0,#+0
+   \       0xB4   0x9000             STR      R0,[SP, #+0]
+   \       0xB6   0x2300             MOVS     R3,#+0
+   \       0xB8   0x22E4             MOVS     R2,#+228
+   \       0xBA   0x210F             MOVS     R1,#+15
+   \       0xBC   0xA809             ADD      R0,SP,#+36
+   \       0xBE   0x7800             LDRB     R0,[R0, #+0]
+   \       0xC0   0x....'....        BL       setupSoftwareIRQ
+    228              returnValue = FALSE;
+   \       0xC4   0x4668             MOV      R0,SP
+   \       0xC6   0x7205             STRB     R5,[R0, #+8]
+    229            }  
+    230            /** Lock the Flash to disable the flash control register access (recommended to protect the FLASH memory against possible unwanted operation) **/
+    231            HAL_FLASH_Lock();
+   \                     ??flashPageUpdate_6: (+1)
+   \       0xC8   0x....'....        BL       HAL_FLASH_Lock
+    232            return returnValue;
+   \       0xCC   0x4668             MOV      R0,SP
+   \       0xCE   0x7A00             LDRB     R0,[R0, #+8]
+   \       0xD0   0xB00B             ADD      SP,SP,#+44
+   \       0xD2   0xBDF0             POP      {R4-R7,PC}       ;; return
+    233          }
+    234          
+    235          /**
+    236          * @brief  Program a block of data into flash with input buffer
+    237          * @param  drv_id_u8       The function caller module ID in case error occur within this function
+    238          *         _TopageAddress  The starting address of the sink flash page/s
+    239          *         _buf            Buffer of data to burn into flash
+    240          *          _length        The starting address of the source flash page/s
+    241          * @retval successful
+    242          */
+
+   \                                 In section .text, align 2, keep-with-next
+    243          uint8_t flashBlockProgram(uint8_t drv_id_u8, uint32_t _TopageAddress, uint8_t* _buf, uint32_t _length)                  //Pam Tested
+    244          {
+   \                     flashBlockProgram: (+1)
+   \        0x0   0xB5FB             PUSH     {R0,R1,R3-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0015             MOVS     R5,R2
+    245            uint8_t returnValue = TRUE;
+   \        0x6   0x2001             MOVS     R0,#+1
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x7208             STRB     R0,[R1, #+8]
+    246            HAL_FLASH_Unlock();
+   \        0xC   0x....'....        BL       HAL_FLASH_Unlock
+    247            
+    248            for(uint16_t index = 0  ;  index < _length ; index += FLASH_COPY_BYTE_SIZE)
+   \       0x10   0x2400             MOVS     R4,#+0
+   \                     ??flashBlockProgram_0: (+1)
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0xB280             UXTH     R0,R0
+   \       0x16   0x9906             LDR      R1,[SP, #+24]
+   \       0x18   0x4288             CMP      R0,R1
+   \       0x1A   0xD263             BCS      ??flashBlockProgram_1
+    249            {
+    250              uint64_t data_u64 = (((uint64_t)_buf[index]) << 56)     + (((uint64_t)_buf[index + 1]) << 48) + 
+    251                (((uint64_t)_buf[index + 2]) << 40) + (((uint64_t)_buf[index + 3]) << 32) + 
+    252                  (((uint64_t)_buf[index + 4]) << 24) + (((uint64_t)_buf[index + 5]) << 16) + 
+    253                    (((uint64_t)_buf[index + 6]) << 8)  +  _buf[index +7];
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0xB280             UXTH     R0,R0
+   \       0x20   0x5C28             LDRB     R0,[R5, R0]
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x0601             LSLS     R1,R0,#+24
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x0022             MOVS     R2,R4
+   \       0x2A   0xB292             UXTH     R2,R2
+   \       0x2C   0x18AA             ADDS     R2,R5,R2
+   \       0x2E   0x7852             LDRB     R2,[R2, #+1]
+   \       0x30   0x2300             MOVS     R3,#+0
+   \       0x32   0x0413             LSLS     R3,R2,#+16
+   \       0x34   0x2200             MOVS     R2,#+0
+   \       0x36   0x1812             ADDS     R2,R2,R0
+   \       0x38   0x414B             ADCS     R3,R3,R1
+   \       0x3A   0x0020             MOVS     R0,R4
+   \       0x3C   0xB280             UXTH     R0,R0
+   \       0x3E   0x1828             ADDS     R0,R5,R0
+   \       0x40   0x7880             LDRB     R0,[R0, #+2]
+   \       0x42   0x2100             MOVS     R1,#+0
+   \       0x44   0x0201             LSLS     R1,R0,#+8
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x1880             ADDS     R0,R0,R2
+   \       0x4A   0x4159             ADCS     R1,R1,R3
+   \       0x4C   0x0022             MOVS     R2,R4
+   \       0x4E   0xB292             UXTH     R2,R2
+   \       0x50   0x18AA             ADDS     R2,R5,R2
+   \       0x52   0x78D2             LDRB     R2,[R2, #+3]
+   \       0x54   0x2300             MOVS     R3,#+0
+   \       0x56   0x0013             MOVS     R3,R2
+   \       0x58   0x2200             MOVS     R2,#+0
+   \       0x5A   0x1812             ADDS     R2,R2,R0
+   \       0x5C   0x414B             ADCS     R3,R3,R1
+   \       0x5E   0x0020             MOVS     R0,R4
+   \       0x60   0xB280             UXTH     R0,R0
+   \       0x62   0x1828             ADDS     R0,R5,R0
+   \       0x64   0x7900             LDRB     R0,[R0, #+4]
+   \       0x66   0x2100             MOVS     R1,#+0
+   \       0x68   0x0609             LSLS     R1,R1,#+24
+   \       0x6A   0x0A06             LSRS     R6,R0,#+8
+   \       0x6C   0x4331             ORRS     R1,R1,R6
+   \       0x6E   0x0600             LSLS     R0,R0,#+24
+   \       0x70   0x1880             ADDS     R0,R0,R2
+   \       0x72   0x4159             ADCS     R1,R1,R3
+   \       0x74   0x0022             MOVS     R2,R4
+   \       0x76   0xB292             UXTH     R2,R2
+   \       0x78   0x18AA             ADDS     R2,R5,R2
+   \       0x7A   0x7952             LDRB     R2,[R2, #+5]
+   \       0x7C   0x2300             MOVS     R3,#+0
+   \       0x7E   0x041B             LSLS     R3,R3,#+16
+   \       0x80   0x0C16             LSRS     R6,R2,#+16
+   \       0x82   0x4333             ORRS     R3,R3,R6
+   \       0x84   0x0412             LSLS     R2,R2,#+16
+   \       0x86   0x1812             ADDS     R2,R2,R0
+   \       0x88   0x414B             ADCS     R3,R3,R1
+   \       0x8A   0x0020             MOVS     R0,R4
+   \       0x8C   0xB280             UXTH     R0,R0
+   \       0x8E   0x1828             ADDS     R0,R5,R0
+   \       0x90   0x7980             LDRB     R0,[R0, #+6]
+   \       0x92   0x2100             MOVS     R1,#+0
+   \       0x94   0x0209             LSLS     R1,R1,#+8
+   \       0x96   0x0E06             LSRS     R6,R0,#+24
+   \       0x98   0x4331             ORRS     R1,R1,R6
+   \       0x9A   0x0200             LSLS     R0,R0,#+8
+   \       0x9C   0x1880             ADDS     R0,R0,R2
+   \       0x9E   0x4159             ADCS     R1,R1,R3
+   \       0xA0   0x0022             MOVS     R2,R4
+   \       0xA2   0xB292             UXTH     R2,R2
+   \       0xA4   0x18AA             ADDS     R2,R5,R2
+   \       0xA6   0x79D6             LDRB     R6,[R2, #+7]
+   \       0xA8   0x2700             MOVS     R7,#+0
+   \       0xAA   0x1836             ADDS     R6,R6,R0
+   \       0xAC   0x414F             ADCS     R7,R7,R1
+    254              if (!HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, (_TopageAddress + index), data_u64) == HAL_OK) //write 16bit data
+   \       0xAE   0x0032             MOVS     R2,R6
+   \       0xB0   0x003B             MOVS     R3,R7
+   \       0xB2   0x9805             LDR      R0,[SP, #+20]
+   \       0xB4   0x0021             MOVS     R1,R4
+   \       0xB6   0xB289             UXTH     R1,R1
+   \       0xB8   0x1841             ADDS     R1,R0,R1
+   \       0xBA   0x2001             MOVS     R0,#+1
+   \       0xBC   0x....'....        BL       HAL_FLASH_Program
+   \       0xC0   0x2800             CMP      R0,#+0
+   \       0xC2   0xD00D             BEQ      ??flashBlockProgram_2
+    255              {
+    256                // Error occurred while writing data in Flash memory.                                                                 
+    257                setupSoftwareIRQ(drv_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, 0x00, NULL);     //report the error address 
+   \       0xC4   0x2000             MOVS     R0,#+0
+   \       0xC6   0x9001             STR      R0,[SP, #+4]
+   \       0xC8   0x2000             MOVS     R0,#+0
+   \       0xCA   0x9000             STR      R0,[SP, #+0]
+   \       0xCC   0x2300             MOVS     R3,#+0
+   \       0xCE   0x22E4             MOVS     R2,#+228
+   \       0xD0   0x210F             MOVS     R1,#+15
+   \       0xD2   0x4668             MOV      R0,SP
+   \       0xD4   0x7C00             LDRB     R0,[R0, #+16]
+   \       0xD6   0x....'....        BL       setupSoftwareIRQ
+    258                returnValue = FALSE;
+   \       0xDA   0x2000             MOVS     R0,#+0
+   \       0xDC   0x4669             MOV      R1,SP
+   \       0xDE   0x7208             STRB     R0,[R1, #+8]
+    259              }  
+    260            }
+   \                     ??flashBlockProgram_2: (+1)
+   \       0xE0   0x3408             ADDS     R4,R4,#+8
+   \       0xE2   0xE796             B        ??flashBlockProgram_0
+    261            /** Lock the Flash to disable the flash control register access (recommended to protect the FLASH memory against possible unwanted operation) **/
+    262            HAL_FLASH_Lock();
+   \                     ??flashBlockProgram_1: (+1)
+   \       0xE4   0x....'....        BL       HAL_FLASH_Lock
+    263            return returnValue;
+   \       0xE8   0x4668             MOV      R0,SP
+   \       0xEA   0x7A00             LDRB     R0,[R0, #+8]
+   \       0xEC   0xB007             ADD      SP,SP,#+28
+   \       0xEE   0xBDF0             POP      {R4-R7,PC}       ;; return
+    264          }
+    265          
+    266          
+    267          /**
+    268          * @brief  Check the active flash content with the last word CRC is valid
+    269          * @param  _FLASH_START_ADDR      CRC sector starting address
+    270          *         NUMBER_OF_FLASH_PAGES  Number of sector for CRC check ( @Caution each page will contains two bytes of CRC and is accumulated                                             
+    271          *                                                                 for example> page0 CRC= page0, if also has page1 CRC in the last two bytes of page1 will be from page0 to page1 )
+    272          * @retval successful
+    273          */
+
+   \                                 In section .text, align 2, keep-with-next
+    274          uint8_t isFlashCRCValid(uint32_t _FLASH_START_ADDR, uint16_t _NumOfPage){               //pam tested
+   \                     isFlashCRCValid: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    275            unsigned char* _pageAddress = (unsigned char*) _FLASH_START_ADDR;
+   \        0x6   0x0037             MOVS     R7,R6
+    276            uint16_t uwCRCValue = Calculate_CRC((uint16_t)((FLASH_PAGE_SIZE * _NumOfPage) - 2) , _pageAddress);   
+   \        0x8   0x0039             MOVS     R1,R7
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0xB292             UXTH     R2,R2
+   \        0xE   0x2080             MOVS     R0,#+128
+   \       0x10   0x0100             LSLS     R0,R0,#+4        ;; #+2048
+   \       0x12   0x4350             MULS     R0,R2,R0
+   \       0x14   0x1E80             SUBS     R0,R0,#+2
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x....'....        BL       Calculate_CRC
+   \       0x1C   0x0004             MOVS     R4,R0
+    277            uint16_t FlashCRCValue = FlashRead64Bits((unsigned char*)_pageAddress, (uint16_t)((FLASH_PAGE_SIZE * NUMBER_OF_FLASH_PAGES) - 2));
+   \       0x1E   0x....             LDR      R1,??DataTable10  ;; 0x7fe
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0x....'....        BL       FlashRead64Bits
+   \       0x26   0x0002             MOVS     R2,R0
+    278            if(uwCRCValue == FlashCRCValue) 
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x0011             MOVS     R1,R2
+   \       0x2C   0xB280             UXTH     R0,R0
+   \       0x2E   0xB289             UXTH     R1,R1
+   \       0x30   0x4288             CMP      R0,R1
+   \       0x32   0xD101             BNE      ??isFlashCRCValid_0
+    279              return(true);
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0xE000             B        ??isFlashCRCValid_1
+    280            else
+    281              return (false);
+   \                     ??isFlashCRCValid_0: (+1)
+   \       0x38   0x2000             MOVS     R0,#+0
+   \                     ??isFlashCRCValid_1: (+1)
+   \       0x3A   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    282          }
+    283          
+    284          
+    285          /**
+    286          * @brief  Copy page/s of flash memory to another sector
+    287          * @param  drv_id_u8          The function caller module ID in case error occur within this function
+    288          *         _FrompageAddress   The starting address of the source flash page/s
+    289          *         _TopageAddress     The starting address of the sink flash page/s
+    290          * @retval successful
+    291          */
+    292          //copy the whole page to another page only
+
+   \                                 In section .text, align 2, keep-with-next
+    293          uint8_t flashPageCopy(uint8_t drv_id_u8, uint32_t _FrompageAddress, uint32_t _TopageAddress)
+    294          {
+   \                     flashPageCopy: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000E             MOVS     R6,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    295            /** Unlock the Flash to enable the flash control register access **/
+    296            HAL_FLASH_Unlock();
+   \        0x8   0x....'....        BL       HAL_FLASH_Unlock
+    297            uint16_t indx = 0;
+   \        0xC   0x2400             MOVS     R4,#+0
+    298            uint16_t currentDat;
+    299            for(  ;  indx < (FLASH_PAGE_SIZE * NUMBER_OF_FLASH_PAGES) ; indx += FLASH_COPY_BYTE_SIZE)
+   \                     ??flashPageCopy_0: (+1)
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0xB280             UXTH     R0,R0
+   \       0x12   0x2180             MOVS     R1,#+128
+   \       0x14   0x0109             LSLS     R1,R1,#+4        ;; #+2048
+   \       0x16   0x4288             CMP      R0,R1
+   \       0x18   0xD223             BCS      ??flashPageCopy_1
+    300            {
+    301              currentDat = FlashRead64Bits((unsigned char*)_FrompageAddress, indx); 
+   \       0x1A   0x0021             MOVS     R1,R4
+   \       0x1C   0xB289             UXTH     R1,R1
+   \       0x1E   0x0030             MOVS     R0,R6
+   \       0x20   0x....'....        BL       FlashRead64Bits
+   \       0x24   0x4669             MOV      R1,SP
+   \       0x26   0x8108             STRH     R0,[R1, #+8]
+    302              if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, (_TopageAddress + indx), (uint64_t)currentDat) == HAL_OK) //write 16bit data
+   \       0x28   0x4668             MOV      R0,SP
+   \       0x2A   0x8902             LDRH     R2,[R0, #+8]
+   \       0x2C   0x2300             MOVS     R3,#+0
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0xB280             UXTH     R0,R0
+   \       0x32   0x1829             ADDS     R1,R5,R0
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0x....'....        BL       HAL_FLASH_Program
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD104             BNE      ??flashPageCopy_2
+    303              {
+    304                Address += FLASH_COPY_BYTE_SIZE;
+   \       0x3E   0x....             LDR      R0,??DataTable6
+   \       0x40   0x6801             LDR      R1,[R0, #+0]
+   \       0x42   0x3108             ADDS     R1,R1,#+8
+   \       0x44   0x6001             STR      R1,[R0, #+0]
+   \       0x46   0xE00A             B        ??flashPageCopy_3
+    305              }
+    306              else
+    307              {
+    308                // Error occurred while writing data in Flash memory.                                                                 
+    309                setupSoftwareIRQ(drv_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, 0x00, NULL);     //report the error address 
+   \                     ??flashPageCopy_2: (+1)
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0x9001             STR      R0,[SP, #+4]
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \       0x4E   0x9000             STR      R0,[SP, #+0]
+   \       0x50   0x2300             MOVS     R3,#+0
+   \       0x52   0x22E4             MOVS     R2,#+228
+   \       0x54   0x210F             MOVS     R1,#+15
+   \       0x56   0x0038             MOVS     R0,R7
+   \       0x58   0xB2C0             UXTB     R0,R0
+   \       0x5A   0x....'....        BL       setupSoftwareIRQ
+    310              }  
+    311            }     
+   \                     ??flashPageCopy_3: (+1)
+   \       0x5E   0x3408             ADDS     R4,R4,#+8
+   \       0x60   0xE7D5             B        ??flashPageCopy_0
+    312            /** Lock the Flash to disable the flash control register access (recommended to protect the FLASH memory against possible unwanted operation) **/
+    313            HAL_FLASH_Lock();
+   \                     ??flashPageCopy_1: (+1)
+   \       0x62   0x....'....        BL       HAL_FLASH_Lock
+    314            return 0;
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0xBDFE             POP      {R1-R7,PC}       ;; return
+    315          }
+    316          
+    317          
+    318          /**
+    319          * @brief  Read data from flash
+    320          * @param  pageAddress flash page starting address
+    321          *         offsetByte  offset of the physical flash address (as the offset in byte [caution !!! this is absolute offset address in flash !!!])
+    322          * @retval data (16bit)
+    323          */
+
+   \                                 In section .text, align 2, keep-with-next
+    324          uint16_t FlashRead(unsigned char* aDataBuf, uint16_t offsetByte)       //this read a word
+    325          {
+    326            return((((uint16_t)aDataBuf[offsetByte]) << 8) +  aDataBuf[offsetByte +1]);
+   \                     FlashRead: (+1)
+   \        0x0   0x000A             MOVS     R2,R1
+   \        0x2   0xB292             UXTH     R2,R2
+   \        0x4   0x5C82             LDRB     R2,[R0, R2]
+   \        0x6   0x0212             LSLS     R2,R2,#+8
+   \        0x8   0xB289             UXTH     R1,R1
+   \        0xA   0x1840             ADDS     R0,R0,R1
+   \        0xC   0x7840             LDRB     R0,[R0, #+1]
+   \        0xE   0x1810             ADDS     R0,R2,R0
+   \       0x10   0xB280             UXTH     R0,R0
+   \       0x12   0x4770             BX       LR               ;; return
+    327          }
+    328          
+    329          /**
+    330          * @brief  Read data from flash
+    331          * @param  pageAddress flash page starting address
+    332          *         offsetByte  offset of the physical flash address (as the offset in byte [caution !!! this is absolute offset address in flash !!!])
+    333          * @retval data (16bit)
+    334          */
+
+   \                                 In section .text, align 2, keep-with-next
+    335          uint64_t FlashRead64Bits(unsigned char* aDataBuf, uint16_t offsetByte) //this read a word
+    336          {
+   \                     FlashRead64Bits: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    337            return( (((uint64_t)aDataBuf[offsetByte]) << 56) + (((uint64_t)aDataBuf[offsetByte]) << 48) + 
+    338                   (((uint64_t)aDataBuf[offsetByte]) << 40) + (((uint64_t)aDataBuf[offsetByte]) << 32) + 
+    339                     (((uint64_t)aDataBuf[offsetByte]) << 24) + (((uint64_t)aDataBuf[offsetByte]) << 16) + 
+    340                       (((uint64_t)aDataBuf[offsetByte]) << 8)  +  aDataBuf[offsetByte +1] );
+   \        0x2   0x000A             MOVS     R2,R1
+   \        0x4   0xB292             UXTH     R2,R2
+   \        0x6   0x5C82             LDRB     R2,[R0, R2]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x0613             LSLS     R3,R2,#+24
+   \        0xC   0x2200             MOVS     R2,#+0
+   \        0xE   0x000C             MOVS     R4,R1
+   \       0x10   0xB2A4             UXTH     R4,R4
+   \       0x12   0x5D04             LDRB     R4,[R0, R4]
+   \       0x14   0x2500             MOVS     R5,#+0
+   \       0x16   0x0425             LSLS     R5,R4,#+16
+   \       0x18   0x2400             MOVS     R4,#+0
+   \       0x1A   0x18A4             ADDS     R4,R4,R2
+   \       0x1C   0x415D             ADCS     R5,R5,R3
+   \       0x1E   0x000A             MOVS     R2,R1
+   \       0x20   0xB292             UXTH     R2,R2
+   \       0x22   0x5C82             LDRB     R2,[R0, R2]
+   \       0x24   0x2300             MOVS     R3,#+0
+   \       0x26   0x0213             LSLS     R3,R2,#+8
+   \       0x28   0x2200             MOVS     R2,#+0
+   \       0x2A   0x1912             ADDS     R2,R2,R4
+   \       0x2C   0x416B             ADCS     R3,R3,R5
+   \       0x2E   0x000C             MOVS     R4,R1
+   \       0x30   0xB2A4             UXTH     R4,R4
+   \       0x32   0x5D04             LDRB     R4,[R0, R4]
+   \       0x34   0x2500             MOVS     R5,#+0
+   \       0x36   0x0025             MOVS     R5,R4
+   \       0x38   0x2400             MOVS     R4,#+0
+   \       0x3A   0x18A4             ADDS     R4,R4,R2
+   \       0x3C   0x415D             ADCS     R5,R5,R3
+   \       0x3E   0x000A             MOVS     R2,R1
+   \       0x40   0xB292             UXTH     R2,R2
+   \       0x42   0x5C82             LDRB     R2,[R0, R2]
+   \       0x44   0x2300             MOVS     R3,#+0
+   \       0x46   0x061B             LSLS     R3,R3,#+24
+   \       0x48   0x0A16             LSRS     R6,R2,#+8
+   \       0x4A   0x4333             ORRS     R3,R3,R6
+   \       0x4C   0x0612             LSLS     R2,R2,#+24
+   \       0x4E   0x1912             ADDS     R2,R2,R4
+   \       0x50   0x416B             ADCS     R3,R3,R5
+   \       0x52   0x000C             MOVS     R4,R1
+   \       0x54   0xB2A4             UXTH     R4,R4
+   \       0x56   0x5D04             LDRB     R4,[R0, R4]
+   \       0x58   0x2500             MOVS     R5,#+0
+   \       0x5A   0x042D             LSLS     R5,R5,#+16
+   \       0x5C   0x0C26             LSRS     R6,R4,#+16
+   \       0x5E   0x4335             ORRS     R5,R5,R6
+   \       0x60   0x0424             LSLS     R4,R4,#+16
+   \       0x62   0x18A4             ADDS     R4,R4,R2
+   \       0x64   0x415D             ADCS     R5,R5,R3
+   \       0x66   0x000A             MOVS     R2,R1
+   \       0x68   0xB292             UXTH     R2,R2
+   \       0x6A   0x5C82             LDRB     R2,[R0, R2]
+   \       0x6C   0x2300             MOVS     R3,#+0
+   \       0x6E   0x021B             LSLS     R3,R3,#+8
+   \       0x70   0x0E16             LSRS     R6,R2,#+24
+   \       0x72   0x4333             ORRS     R3,R3,R6
+   \       0x74   0x0212             LSLS     R2,R2,#+8
+   \       0x76   0x1912             ADDS     R2,R2,R4
+   \       0x78   0x416B             ADCS     R3,R3,R5
+   \       0x7A   0xB289             UXTH     R1,R1
+   \       0x7C   0x1840             ADDS     R0,R0,R1
+   \       0x7E   0x7840             LDRB     R0,[R0, #+1]
+   \       0x80   0x2100             MOVS     R1,#+0
+   \       0x82   0x1880             ADDS     R0,R0,R2
+   \       0x84   0x4159             ADCS     R1,R1,R3
+   \       0x86   0xBD70             POP      {R4-R6,PC}       ;; return
+    341          }
+    342          
+    343          /** ----------------------------------------- Flash internal ram storage system ----------------------------------------------------------------- **/
+    344          
+    345          /**
+    346          * @brief  initialize the internal buffer and head, tail pointer
+    347          * @param  None
+    348          * @retval None
+    349          */
+
+   \                                 In section .text, align 2, keep-with-next
+    350          void FlashBufInit(void)
+    351          {
+   \                     FlashBufInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    352            for(uint8_t index = 0; index < FlashBufSize ; index++)
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x0013             MOVS     R3,R2
+   \                     ??FlashBufInit_0: (+1)
+   \        0x6   0x0018             MOVS     R0,R3
+   \        0x8   0xB2C0             UXTB     R0,R0
+   \        0xA   0x2814             CMP      R0,#+20
+   \        0xC   0xDA12             BGE      ??FlashBufInit_1
+    353            {
+    354              flashBuf[index].offset = 0xffff;
+   \        0xE   0x....             LDR      R4,??DataTable10_1
+   \       0x10   0x....             LDR      R0,??DataTable10_2  ;; 0xffff
+   \       0x12   0x0019             MOVS     R1,R3
+   \       0x14   0xB2C9             UXTB     R1,R1
+   \       0x16   0x2510             MOVS     R5,#+16
+   \       0x18   0x4369             MULS     R1,R5,R1
+   \       0x1A   0x5260             STRH     R0,[R4, R1]
+    355              flashBuf[index].flashDat = 0;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x001D             MOVS     R5,R3
+   \       0x22   0xB2ED             UXTB     R5,R5
+   \       0x24   0x2610             MOVS     R6,#+16
+   \       0x26   0x4375             MULS     R5,R6,R5
+   \       0x28   0x1964             ADDS     R4,R4,R5
+   \       0x2A   0x3408             ADDS     R4,R4,#+8
+   \       0x2C   0xC403             STM      R4!,{R0,R1}
+   \       0x2E   0x3C08             SUBS     R4,R4,#+8
+    356            }  
+   \       0x30   0x1C5B             ADDS     R3,R3,#+1
+   \       0x32   0xE7E8             B        ??FlashBufInit_0
+    357            Flash_BufHead = 0;
+   \                     ??FlashBufInit_1: (+1)
+   \       0x34   0x....             LDR      R0,??DataTable10_3
+   \       0x36   0x7002             STRB     R2,[R0, #+0]
+    358            Flash_BufTail = 0;
+   \       0x38   0x....             LDR      R0,??DataTable10_4
+   \       0x3A   0x7002             STRB     R2,[R0, #+0]
+    359          }
+   \       0x3C   0xBD70             POP      {R4-R6,PC}       ;; return
+    360          
+    361          /**
+    362          * @brief  Empty the setting data according to offset of the setting data
+    363          * @param  _offset     offset of the setting data
+    364          *         _returnBuf  data found 
+    365          * @retval data found successfully = true/false, the data found will store in  _returnBuf
+    366          */
+
+   \                                 In section .text, align 2, keep-with-next
+    367          uint16_t FlashBufDeRegistered(uint16_t _offset, uint64_t* _returnBuf)  //Got the ack from the receiver and de-registered the record 
+    368          {
+   \                     FlashBufDeRegistered: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    369            for(uint8_t index = 0; index < FlashBufSize ; index++)
+   \        0x6   0x2500             MOVS     R5,#+0
+   \                     ??FlashBufDeRegistered_0: (+1)
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2814             CMP      R0,#+20
+   \        0xE   0xDA28             BGE      ??FlashBufDeRegistered_1
+    370            {
+    371              if(_offset == flashBuf[index].offset)        //search the received FrameAckID in buffer
+   \       0x10   0x....             LDR      R2,??DataTable10_1
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0xB2C9             UXTB     R1,R1
+   \       0x18   0x2310             MOVS     R3,#+16
+   \       0x1A   0x4359             MULS     R1,R3,R1
+   \       0x1C   0x5A51             LDRH     R1,[R2, R1]
+   \       0x1E   0xB280             UXTH     R0,R0
+   \       0x20   0x4288             CMP      R0,R1
+   \       0x22   0xD11C             BNE      ??FlashBufDeRegistered_2
+    372              {  //clear all this record when found
+    373                flashBuf[index].offset = 0xffff;
+   \       0x24   0x....             LDR      R0,??DataTable10_2  ;; 0xffff
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2310             MOVS     R3,#+16
+   \       0x2C   0x4359             MULS     R1,R3,R1
+   \       0x2E   0x5250             STRH     R0,[R2, R1]
+    374                *_returnBuf = flashBuf[index].flashDat;   //return the found value 
+   \       0x30   0x0028             MOVS     R0,R5
+   \       0x32   0xB2C0             UXTB     R0,R0
+   \       0x34   0x2110             MOVS     R1,#+16
+   \       0x36   0x4348             MULS     R0,R1,R0
+   \       0x38   0x1810             ADDS     R0,R2,R0
+   \       0x3A   0x3008             ADDS     R0,R0,#+8
+   \       0x3C   0xC803             LDM      R0,{R0,R1}
+   \       0x3E   0xC603             STM      R6!,{R0,R1}
+   \       0x40   0x3E08             SUBS     R6,R6,#+8
+    375                flashBuf[index].flashDat = 0;             //clear data
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x2100             MOVS     R1,#+0
+   \       0x46   0x002B             MOVS     R3,R5
+   \       0x48   0xB2DB             UXTB     R3,R3
+   \       0x4A   0x2710             MOVS     R7,#+16
+   \       0x4C   0x437B             MULS     R3,R7,R3
+   \       0x4E   0x18D2             ADDS     R2,R2,R3
+   \       0x50   0x3208             ADDS     R2,R2,#+8
+   \       0x52   0xC203             STM      R2!,{R0,R1}
+   \       0x54   0x3A08             SUBS     R2,R2,#+8
+    376                FlashFlushBuf();
+   \       0x56   0x....'....        BL       FlashFlushBuf
+    377                return true;
+   \       0x5A   0x2001             MOVS     R0,#+1
+   \       0x5C   0xE002             B        ??FlashBufDeRegistered_3
+    378              }
+    379            }  
+   \                     ??FlashBufDeRegistered_2: (+1)
+   \       0x5E   0x1C6D             ADDS     R5,R5,#+1
+   \       0x60   0xE7D2             B        ??FlashBufDeRegistered_0
+    380            return false;
+   \                     ??FlashBufDeRegistered_1: (+1)
+   \       0x62   0x2000             MOVS     R0,#+0
+   \                     ??FlashBufDeRegistered_3: (+1)
+   \       0x64   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    381          }
+    382          
+    383          /**
+    384          * @brief  Flush the internal buffer and packed the leading or trailing record is/are empty
+    385          * @param  None
+    386          * @retval None
+    387          */
+
+   \                                 In section .text, align 2, keep-with-next
+    388          void FlashFlushBuf(void)                                                           
+    389          { //push back all the trailing empty record, and move the tail back to the last trailing record
+   \                     FlashFlushBuf: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    390            while((Flash_BufHead != Flash_BufTail) && (flashBuf[Flash_BufTail].offset == 0xffff) )    
+   \                     ??FlashFlushBuf_0: (+1)
+   \        0x2   0x....             LDR      R0,??DataTable10_4
+   \        0x4   0x....             LDR      R1,??DataTable10_3
+   \        0x6   0x780A             LDRB     R2,[R1, #+0]
+   \        0x8   0x7803             LDRB     R3,[R0, #+0]
+   \        0xA   0x429A             CMP      R2,R3
+   \        0xC   0xD011             BEQ      ??FlashFlushBuf_1
+   \        0xE   0x....             LDR      R2,??DataTable10_1
+   \       0x10   0x7803             LDRB     R3,[R0, #+0]
+   \       0x12   0x2410             MOVS     R4,#+16
+   \       0x14   0x4363             MULS     R3,R4,R3
+   \       0x16   0x5AD2             LDRH     R2,[R2, R3]
+   \       0x18   0x....             LDR      R3,??DataTable10_2  ;; 0xffff
+   \       0x1A   0x429A             CMP      R2,R3
+   \       0x1C   0xD109             BNE      ??FlashFlushBuf_1
+    391            { //Move head to the closest in buffer
+    392              if(Flash_BufTail != 0 ){
+   \       0x1E   0x7801             LDRB     R1,[R0, #+0]
+   \       0x20   0x2900             CMP      R1,#+0
+   \       0x22   0xD003             BEQ      ??FlashFlushBuf_2
+    393                Flash_BufTail--;
+   \       0x24   0x7801             LDRB     R1,[R0, #+0]
+   \       0x26   0x1E49             SUBS     R1,R1,#+1
+   \       0x28   0x7001             STRB     R1,[R0, #+0]
+   \       0x2A   0xE7EA             B        ??FlashFlushBuf_0
+    394              }
+    395              else
+    396              {
+    397                Flash_BufTail = (FlashBufSize - 1);
+   \                     ??FlashFlushBuf_2: (+1)
+   \       0x2C   0x2113             MOVS     R1,#+19
+   \       0x2E   0x7001             STRB     R1,[R0, #+0]
+   \       0x30   0xE7E7             B        ??FlashFlushBuf_0
+    398              }
+    399            } 
+    400            //push back all the leading empty record, and move the head back to the first leading record
+    401            while((Flash_BufHead != Flash_BufTail) && (flashBuf[Flash_BufHead].offset == 0xffff) )
+   \                     ??FlashFlushBuf_1: (+1)
+   \       0x32   0x780A             LDRB     R2,[R1, #+0]
+   \       0x34   0x7803             LDRB     R3,[R0, #+0]
+   \       0x36   0x429A             CMP      R2,R3
+   \       0x38   0xD010             BEQ      ??FlashFlushBuf_3
+   \       0x3A   0x....             LDR      R2,??DataTable10_1
+   \       0x3C   0x780B             LDRB     R3,[R1, #+0]
+   \       0x3E   0x2410             MOVS     R4,#+16
+   \       0x40   0x4363             MULS     R3,R4,R3
+   \       0x42   0x5AD2             LDRH     R2,[R2, R3]
+   \       0x44   0x....             LDR      R3,??DataTable10_2  ;; 0xffff
+   \       0x46   0x429A             CMP      R2,R3
+   \       0x48   0xD108             BNE      ??FlashFlushBuf_3
+    402            { //Move head to the closest in buffer
+    403              if(++Flash_BufHead == FlashBufSize)  Flash_BufHead = 0;
+   \       0x4A   0x780A             LDRB     R2,[R1, #+0]
+   \       0x4C   0x1C52             ADDS     R2,R2,#+1
+   \       0x4E   0x700A             STRB     R2,[R1, #+0]
+   \       0x50   0x780A             LDRB     R2,[R1, #+0]
+   \       0x52   0x2A14             CMP      R2,#+20
+   \       0x54   0xD1ED             BNE      ??FlashFlushBuf_1
+   \       0x56   0x2200             MOVS     R2,#+0
+   \       0x58   0x700A             STRB     R2,[R1, #+0]
+   \       0x5A   0xE7EA             B        ??FlashFlushBuf_1
+    404            }  
+    405          }
+   \                     ??FlashFlushBuf_3: (+1)
+   \       0x5C   0xBD10             POP      {R4,PC}          ;; return
+    406          
+    407          
+    408          /**
+    409          * @brief  store current data(16bit offset) into internal buffer
+    410          * @param  _offset: ofset position of the 16bit setting data 
+    411          * @warning [caution !!! not absolute offset address in flash !!! please follow the FlashOffsetIndex ]
+    412          * @retval None
+    413          */
+
+   \                                 In section .text, align 2, keep-with-next
+    414          uint8_t FlashDataSet(uint16_t _offset, uint64_t _flashDat)
+    415          {
+   \                     FlashDataSet: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x0014             MOVS     R4,R2
+   \        0x6   0x001D             MOVS     R5,R3
+    416            uint64_t tmpryDat;
+    417            if(!IsFlashBufFull())
+   \        0x8   0x....'....        BL       IsFlashBufFull
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD11E             BNE      ??FlashDataSet_0
+    418            {
+    419              FlashBufDeRegistered((_offset * 8), &tmpryDat); //find this offset has already got data, will be replace    
+   \       0x10   0x4669             MOV      R1,SP
+   \       0x12   0x2008             MOVS     R0,#+8
+   \       0x14   0x4370             MULS     R0,R6,R0
+   \       0x16   0xB280             UXTH     R0,R0
+   \       0x18   0x....'....        BL       FlashBufDeRegistered
+    420              if(++Flash_BufTail == FlashBufSize) {
+   \       0x1C   0x....             LDR      R0,??DataTable10_4
+   \       0x1E   0x7801             LDRB     R1,[R0, #+0]
+   \       0x20   0x1C49             ADDS     R1,R1,#+1
+   \       0x22   0x7001             STRB     R1,[R0, #+0]
+   \       0x24   0x7801             LDRB     R1,[R0, #+0]
+   \       0x26   0x2914             CMP      R1,#+20
+   \       0x28   0xD101             BNE      ??FlashDataSet_1
+    421                Flash_BufTail = 0;
+   \       0x2A   0x2100             MOVS     R1,#+0
+   \       0x2C   0x7001             STRB     R1,[R0, #+0]
+    422              }  
+    423              flashBuf[Flash_BufTail].offset = _offset * 8;               //store as 16bit effective offset as no odd address!!! 
+   \                     ??FlashDataSet_1: (+1)
+   \       0x2E   0x....             LDR      R1,??DataTable10_1
+   \       0x30   0x2208             MOVS     R2,#+8
+   \       0x32   0x4372             MULS     R2,R6,R2
+   \       0x34   0x7803             LDRB     R3,[R0, #+0]
+   \       0x36   0x2710             MOVS     R7,#+16
+   \       0x38   0x437B             MULS     R3,R7,R3
+   \       0x3A   0x52CA             STRH     R2,[R1, R3]
+    424              flashBuf[Flash_BufTail].flashDat = _flashDat;
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0x2210             MOVS     R2,#+16
+   \       0x40   0x4350             MULS     R0,R2,R0
+   \       0x42   0x1808             ADDS     R0,R1,R0
+   \       0x44   0x3008             ADDS     R0,R0,#+8
+   \       0x46   0xC030             STM      R0!,{R4,R5}
+   \       0x48   0x3808             SUBS     R0,R0,#+8
+    425              return true;
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0xE000             B        ??FlashDataSet_2
+    426            }
+    427            return false;                         //if return also mean buffer full
+   \                     ??FlashDataSet_0: (+1)
+   \       0x4E   0x2000             MOVS     R0,#+0
+   \                     ??FlashDataSet_2: (+1)
+   \       0x50   0xBDFE             POP      {R1-R7,PC}       ;; return
+    428          }
+    429          
+    430          /**
+    431          * @brief  Internal buffer is full
+    432          * @param  None
+    433          * @retval ture/false
+    434          */
+
+   \                                 In section .text, align 2, keep-with-next
+    435          uint8_t IsFlashBufFull(void) 
+    436          {
+   \                     IsFlashBufFull: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    437            int16_t result = (int16_t)Flash_BufHead - (int16_t)Flash_BufTail;
+   \        0x2   0x....             LDR      R0,??DataTable10_3
+   \        0x4   0x7800             LDRB     R0,[R0, #+0]
+   \        0x6   0x....             LDR      R1,??DataTable10_4
+   \        0x8   0x7809             LDRB     R1,[R1, #+0]
+   \        0xA   0x1A41             SUBS     R1,R0,R1
+    438            if( (result == -(FlashBufSize-1)) || (result == 1)) 
+   \        0xC   0x0008             MOVS     R0,R1
+   \        0xE   0xB200             SXTH     R0,R0
+   \       0x10   0x2212             MOVS     R2,#+18
+   \       0x12   0x43D2             MVNS     R2,R2            ;; #-19
+   \       0x14   0x4290             CMP      R0,R2
+   \       0x16   0xD003             BEQ      ??IsFlashBufFull_0
+   \       0x18   0x0008             MOVS     R0,R1
+   \       0x1A   0xB200             SXTH     R0,R0
+   \       0x1C   0x2801             CMP      R0,#+1
+   \       0x1E   0xD101             BNE      ??IsFlashBufFull_1
+    439            { 
+    440              return (true);
+   \                     ??IsFlashBufFull_0: (+1)
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0xE000             B        ??IsFlashBufFull_2
+    441            }  
+    442            return (false);
+   \                     ??IsFlashBufFull_1: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \                     ??IsFlashBufFull_2: (+1)
+   \       0x26   0xBD00             POP      {PC}             ;; return
+    443          }
+    444          
+
+   \                                 In section .text, align 2, keep-with-next
+    445          uint8_t Reg2Ram(uint32_t _RegNum, uint16_t _Value)
+    446          {
+   \                     Reg2Ram: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    447            //uint8_t stage = 0;
+    448            //bool bNoError = FALSE;
+    449            //uint16_t Durationms;
+    450            //int16_t FinalMecSpeedUnit;
+    451            //int16_t FinalTorque;
+    452            switch((FlashOffsetIndex)_RegNum)
+    453            {
+    454          
+    455            default:
+    456              break;
+    457            }
+    458            return TRUE;
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x4770             BX       LR               ;; return
+    459          }
+    460          
+    461          
+    462          
+    463          
+    464          
+    465          // Includes -------------------------------------------------------------------
+    466          #include "scheduler.h"
+    467          #include "module_analog_0_10v.h"
+    468          //#include "module_analog_4_20ma.h"
+    469          #include "module_digital_inputs.h"
+    470          #include "module_digital_outputs.h"
+    471          #include "module_modbus.h"
+    472          #include "module_motor_com.h"
+    473          #include "module_motor_demand_multiplexer.h"
+    474          #include "module_pwm_input.h"
+    475          
+    476          #define FLASH_BUFFER_SIZE 10
+    477          #define FLASH_SETTINGS_START_ADDRESS  0x0800F000
+
+   \                                 In section .data, align 4
+    478          uint32_t  flashSettingsVersion_u32 = 0x00000001; // Version of flash setting version
+   \                     flashSettingsVersion_u32:
+   \        0x0   0x0000'0001        DC32 1
+    479          
+
+   \                                 In section .bss, align 1
+    480          uint8_t flash_buffer_head_u8 = 0;
+   \                     flash_buffer_head_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    481          uint8_t flash_buffer_tail_u8 = 0;
+   \                     flash_buffer_tail_u8:
+   \        0x0                      DS8 1
+    482          
+
+   \                                 In section .bss, align 4
+    483          AnalogVolts_Control* flash_AnalogVoltsControl_ptr;
+   \                     flash_AnalogVoltsControl_ptr:
+   \        0x0                      DS8 4
+    484          //Analog_4_20ma_Control* flash_AnalogAmpsControl_ptr;
+
+   \                                 In section .bss, align 4
+    485          DigitalInputs_Control* flash_DigitalInputsControl_ptr;
+   \                     flash_DigitalInputsControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    486          Digital_Outputs_Control* flash_DigitalOutputsControl_ptr;
+   \                     flash_DigitalOutputsControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    487          Modbus_Control* flash_ModbusControl_ptr;
+   \                     flash_ModbusControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    488          Motor_Com_Control* flash_MotorComControl_ptr;
+   \                     flash_MotorComControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    489          MotorDemandMux_Control* flash_MotorDemandMuxControl_ptr;
+   \                     flash_MotorDemandMuxControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    490          PwmInput_Control* flash_PwmInputControl_ptr;
+   \                     flash_PwmInputControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    491          Gpio_Control* flash_GpioControl_ptr; 
+   \                     flash_GpioControl_ptr:
+   \        0x0                      DS8 4
+    492          
+    493          // Flash states
+    494          enum
+    495          {	
+    496            FLASH_SETTINGS_INIT,
+    497            FLASH_SETTINGS_UPDATE,
+    498            FLASH_SETTINGS_ERASE,
+    499            NO_FLASH_SETTINGS_UPDATE,
+    500          };
+    501          
+    502          enum
+    503          {
+    504            FLASH_EMPTY = 1,
+    505            FLASH_NOT_EMPTY,
+    506            FLASH_CRC_EMPTY,
+    507            FLASH_CRC_ERROR,
+    508            FLASH_VERSION_ERROR,
+    509          };
+    510          
+    511          // Buffer that stores data that need to flashed
+    512          typedef  struct 
+    513          {
+    514            uint32_t address_u32;
+    515            uint64_t flashData_u64;
+    516          }FlashBuf;
+    517          
+    518          // Buffer that stores address offsets and pointers for both flash and RAM 
+    519          typedef struct
+    520          {
+    521            uint16_t module_settings_begin_offset_u16;
+    522            uint16_t module_settings_end_offset_u16;
+    523            uint16_t module_settings_size_u16;
+    524            uint8_t *module_settings_address_ptr;
+    525            uint32_t module_flash_settings_address_ptr;
+    526          }FlashSettingsIndex;
+    527          
+
+   \                                 In section .bss, align 8
+    528          FlashBuf flash_buffer[FLASH_BUFFER_SIZE]; // Buffer that stores data that need to flashed
+   \                     flash_buffer:
+   \        0x0                      DS8 160
+
+   \                                 In section .bss, align 4
+    529          FlashSettingsIndex flash_settings_index[TOTAL_NUM_OF_PROCESSES]; // Buffer that stores address offsets and pointers for both flash and RAM
+   \                     flash_settings_index:
+   \        0x0                      DS8 272
+    530          
+    531          // Init flash buffer to clear any junk values
+    532          /**
+    533          * @brief  Init flash_buffer to clear any junk values
+    534          * @param  None
+    535          *         
+    536          * @retval None
+    537          */
+
+   \                                 In section .text, align 2, keep-with-next
+    538          void Flash_Buf_Init(void)
+    539          {
+   \                     Flash_Buf_Init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    540            for(uint8_t index = 0; index < FLASH_BUFFER_SIZE ; index++)
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x0013             MOVS     R3,R2
+   \                     ??Flash_Buf_Init_0: (+1)
+   \        0x6   0x0018             MOVS     R0,R3
+   \        0x8   0xB2C0             UXTB     R0,R0
+   \        0xA   0x280A             CMP      R0,#+10
+   \        0xC   0xDA12             BGE      ??Flash_Buf_Init_1
+    541            {
+    542              flash_buffer[index].address_u32 = 0xffff;
+   \        0xE   0x....             LDR      R4,??DataTable10_5
+   \       0x10   0x....             LDR      R0,??DataTable10_2  ;; 0xffff
+   \       0x12   0x0019             MOVS     R1,R3
+   \       0x14   0xB2C9             UXTB     R1,R1
+   \       0x16   0x2510             MOVS     R5,#+16
+   \       0x18   0x4369             MULS     R1,R5,R1
+   \       0x1A   0x5060             STR      R0,[R4, R1]
+    543              flash_buffer[index].flashData_u64 = 0;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x001D             MOVS     R5,R3
+   \       0x22   0xB2ED             UXTB     R5,R5
+   \       0x24   0x2610             MOVS     R6,#+16
+   \       0x26   0x4375             MULS     R5,R6,R5
+   \       0x28   0x1964             ADDS     R4,R4,R5
+   \       0x2A   0x3408             ADDS     R4,R4,#+8
+   \       0x2C   0xC403             STM      R4!,{R0,R1}
+   \       0x2E   0x3C08             SUBS     R4,R4,#+8
+    544            }  
+   \       0x30   0x1C5B             ADDS     R3,R3,#+1
+   \       0x32   0xE7E8             B        ??Flash_Buf_Init_0
+    545            flash_buffer_head_u8 = 0;
+   \                     ??Flash_Buf_Init_1: (+1)
+   \       0x34   0x....             LDR      R0,??DataTable10_6
+   \       0x36   0x7002             STRB     R2,[R0, #+0]
+    546            flash_buffer_tail_u8 = 0;
+   \       0x38   0x....             LDR      R0,??DataTable11
+   \       0x3A   0x7002             STRB     R2,[R0, #+0]
+    547          }
+   \       0x3C   0xBD70             POP      {R4-R6,PC}       ;; return
+    548          
+    549          
+    550          /**
+    551          * @brief  Get all the addresses, begin/end address offset for settings structures of modules
+    552          * @param  None
+    553          *         
+    554          * @retval None
+    555          */
+
+   \                                 In section .bss, align 2
+    556          uint16_t current_Index_u16 = 0;
+   \                     current_Index_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .text, align 2, keep-with-next
+    557          void Get_Flash_Index(void)
+    558          {
+   \                     Get_Flash_Index: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    559            for(uint16_t current_Id_u16= MIN_MODULE_ID; current_Id_u16< TOTAL_NUM_OF_PROCESSES; current_Id_u16++)
+   \        0x2   0x2500             MOVS     R5,#+0
+   \                     ??Get_Flash_Index_0: (+1)
+   \        0x4   0x0028             MOVS     R0,R5
+   \        0x6   0xB280             UXTH     R0,R0
+   \        0x8   0x2811             CMP      R0,#+17
+   \        0xA   0xDB00             BLT      .+4
+   \        0xC   0xE190             B        ??Get_Flash_Index_1
+    560            {
+    561              // Module settings begin offset (previous module settings end index)
+    562              flash_settings_index[current_Id_u16].module_settings_begin_offset_u16 = current_Index_u16; // Module Memory Index Begin
+   \        0xE   0x....             LDR      R0,??DataTable11_1
+   \       0x10   0x8800             LDRH     R0,[R0, #+0]
+   \       0x12   0x....             LDR      R1,??DataTable11_2
+   \       0x14   0x002A             MOVS     R2,R5
+   \       0x16   0xB292             UXTH     R2,R2
+   \       0x18   0x2310             MOVS     R3,#+16
+   \       0x1A   0x4353             MULS     R3,R2,R3
+   \       0x1C   0x52C8             STRH     R0,[R1, R3]
+    563              uint8_t module_Index_u8 = 0;
+   \       0x1E   0x2600             MOVS     R6,#+0
+   \       0x20   0x0034             MOVS     R4,R6
+    564              uint16_t settings_size_u16 = 0;
+    565              switch(current_Id_u16)
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0xB280             UXTH     R0,R0
+   \       0x26   0x2801             CMP      R0,#+1
+   \       0x28   0xD100             BNE      .+4
+   \       0x2A   0xE12C             B        ??Get_Flash_Index_2
+   \       0x2C   0x2805             CMP      R0,#+5
+   \       0x2E   0xD012             BEQ      ??Get_Flash_Index_3
+   \       0x30   0x2806             CMP      R0,#+6
+   \       0x32   0xD033             BEQ      ??Get_Flash_Index_4
+   \       0x34   0x2807             CMP      R0,#+7
+   \       0x36   0xD054             BEQ      ??Get_Flash_Index_5
+   \       0x38   0x2808             CMP      R0,#+8
+   \       0x3A   0xD100             BNE      .+4
+   \       0x3C   0xE100             B        ??Get_Flash_Index_6
+   \       0x3E   0x280B             CMP      R0,#+11
+   \       0x40   0xD100             BNE      .+4
+   \       0x42   0xE094             B        ??Get_Flash_Index_7
+   \       0x44   0x280C             CMP      R0,#+12
+   \       0x46   0xD100             BNE      .+4
+   \       0x48   0xE0D7             B        ??Get_Flash_Index_8
+   \       0x4A   0x280D             CMP      R0,#+13
+   \       0x4C   0xD100             BNE      .+4
+   \       0x4E   0xE0B1             B        ??Get_Flash_Index_9
+   \       0x50   0x280E             CMP      R0,#+14
+   \       0x52   0xD069             BEQ      ??Get_Flash_Index_10
+   \       0x54   0xE139             B        ??Get_Flash_Index_11
+    566              {
+    567              case MODULE_ANALOG_0_10V:	
+    568                module_Index_u8 = getProcessInfoIndex(MODULE_ANALOG_0_10V);
+   \                     ??Get_Flash_Index_3: (+1)
+   \       0x56   0x2005             MOVS     R0,#+5
+   \       0x58   0x....'....        BL       getProcessInfoIndex
+   \       0x5C   0x0004             MOVS     R4,R0
+    569                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \       0x5E   0x....             LDR      R7,??DataTable11_3
+   \       0x60   0x0020             MOVS     R0,R4
+   \       0x62   0xB2C0             UXTB     R0,R0
+   \       0x64   0x2116             MOVS     R1,#+22
+   \       0x66   0x4348             MULS     R0,R1,R0
+   \       0x68   0x1838             ADDS     R0,R7,R0
+   \       0x6A   0x300B             ADDS     R0,R0,#+11
+   \       0x6C   0x....'....        BL       __aeabi_uread4
+   \       0x70   0x6800             LDR      R0,[R0, #+0]
+   \       0x72   0x....             LDR      R1,??DataTable11_2
+   \       0x74   0x002A             MOVS     R2,R5
+   \       0x76   0xB292             UXTH     R2,R2
+   \       0x78   0x2310             MOVS     R3,#+16
+   \       0x7A   0x4353             MULS     R3,R2,R3
+   \       0x7C   0x18C9             ADDS     R1,R1,R3
+   \       0x7E   0x6088             STR      R0,[R1, #+8]
+    570                flash_AnalogVoltsControl_ptr = (AnalogVolts_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \       0x80   0x0020             MOVS     R0,R4
+   \       0x82   0xB2C0             UXTB     R0,R0
+   \       0x84   0x2116             MOVS     R1,#+22
+   \       0x86   0x4348             MULS     R0,R1,R0
+   \       0x88   0x1838             ADDS     R0,R7,R0
+   \       0x8A   0x300B             ADDS     R0,R0,#+11
+   \       0x8C   0x....'....        BL       __aeabi_uread4
+   \       0x90   0x6800             LDR      R0,[R0, #+0]
+   \       0x92   0x....             LDR      R1,??DataTable11_4
+   \       0x94   0x6008             STR      R0,[R1, #+0]
+    571                settings_size_u16 = sizeof((*flash_AnalogVoltsControl_ptr).analogVolts_Setting);      
+   \       0x96   0x202C             MOVS     R0,#+44
+   \       0x98   0x0006             MOVS     R6,R0
+    572                break;
+   \       0x9A   0xE116             B        ??Get_Flash_Index_11
+    573                
+    574              case MODULE_ANALOG_4_20MA:
+    575                module_Index_u8 = getProcessInfoIndex(MODULE_ANALOG_4_20MA);
+   \                     ??Get_Flash_Index_4: (+1)
+   \       0x9C   0x2006             MOVS     R0,#+6
+   \       0x9E   0x....'....        BL       getProcessInfoIndex
+   \       0xA2   0x0004             MOVS     R4,R0
+    576                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \       0xA4   0x....             LDR      R7,??DataTable11_3
+   \       0xA6   0x0020             MOVS     R0,R4
+   \       0xA8   0xB2C0             UXTB     R0,R0
+   \       0xAA   0x2116             MOVS     R1,#+22
+   \       0xAC   0x4348             MULS     R0,R1,R0
+   \       0xAE   0x1838             ADDS     R0,R7,R0
+   \       0xB0   0x300B             ADDS     R0,R0,#+11
+   \       0xB2   0x....'....        BL       __aeabi_uread4
+   \       0xB6   0x6800             LDR      R0,[R0, #+0]
+   \       0xB8   0x....             LDR      R1,??DataTable11_2
+   \       0xBA   0x002A             MOVS     R2,R5
+   \       0xBC   0xB292             UXTH     R2,R2
+   \       0xBE   0x2310             MOVS     R3,#+16
+   \       0xC0   0x4353             MULS     R3,R2,R3
+   \       0xC2   0x18C9             ADDS     R1,R1,R3
+   \       0xC4   0x6088             STR      R0,[R1, #+8]
+    577                flash_AnalogAmpsControl_ptr = (Analog_4_20ma_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \       0xC6   0x0020             MOVS     R0,R4
+   \       0xC8   0xB2C0             UXTB     R0,R0
+   \       0xCA   0x2116             MOVS     R1,#+22
+   \       0xCC   0x4348             MULS     R0,R1,R0
+   \       0xCE   0x1838             ADDS     R0,R7,R0
+   \       0xD0   0x300B             ADDS     R0,R0,#+11
+   \       0xD2   0x....'....        BL       __aeabi_uread4
+   \       0xD6   0x6800             LDR      R0,[R0, #+0]
+   \       0xD8   0x....             LDR      R1,??DataTable11_5
+   \       0xDA   0x6008             STR      R0,[R1, #+0]
+    578                settings_size_u16 = sizeof((*flash_AnalogAmpsControl_ptr).analog_4_20mA_Setting);
+   \       0xDC   0x2030             MOVS     R0,#+48
+   \       0xDE   0x0006             MOVS     R6,R0
+    579                break;
+   \       0xE0   0xE0F3             B        ??Get_Flash_Index_11
+    580                
+    581              case MODULE_DIGITAL_INPUTS:
+    582                module_Index_u8 = getProcessInfoIndex(MODULE_DIGITAL_INPUTS);
+   \                     ??Get_Flash_Index_5: (+1)
+   \       0xE2   0x2007             MOVS     R0,#+7
+   \       0xE4   0x....'....        BL       getProcessInfoIndex
+   \       0xE8   0x0004             MOVS     R4,R0
+    583                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \       0xEA   0x....             LDR      R7,??DataTable11_3
+   \       0xEC   0x0020             MOVS     R0,R4
+   \       0xEE   0xB2C0             UXTB     R0,R0
+   \       0xF0   0x2116             MOVS     R1,#+22
+   \       0xF2   0x4348             MULS     R0,R1,R0
+   \       0xF4   0x1838             ADDS     R0,R7,R0
+   \       0xF6   0x300B             ADDS     R0,R0,#+11
+   \       0xF8   0x....'....        BL       __aeabi_uread4
+   \       0xFC   0x6800             LDR      R0,[R0, #+0]
+   \       0xFE   0x....             LDR      R1,??DataTable11_2
+   \      0x100   0x002A             MOVS     R2,R5
+   \      0x102   0xB292             UXTH     R2,R2
+   \      0x104   0x2310             MOVS     R3,#+16
+   \      0x106   0x4353             MULS     R3,R2,R3
+   \      0x108   0x18C9             ADDS     R1,R1,R3
+   \      0x10A   0x6088             STR      R0,[R1, #+8]
+    584                flash_DigitalInputsControl_ptr = (DigitalInputs_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x10C   0x0020             MOVS     R0,R4
+   \      0x10E   0xB2C0             UXTB     R0,R0
+   \      0x110   0x2116             MOVS     R1,#+22
+   \      0x112   0x4348             MULS     R0,R1,R0
+   \      0x114   0x1838             ADDS     R0,R7,R0
+   \      0x116   0x300B             ADDS     R0,R0,#+11
+   \      0x118   0x....'....        BL       __aeabi_uread4
+   \      0x11C   0x6800             LDR      R0,[R0, #+0]
+   \      0x11E   0x....             LDR      R1,??DataTable12
+   \      0x120   0x6008             STR      R0,[R1, #+0]
+    585                settings_size_u16 = sizeof((*flash_DigitalInputsControl_ptr).digitalInputs_Setting);
+   \      0x122   0x2026             MOVS     R0,#+38
+   \      0x124   0x0006             MOVS     R6,R0
+    586                break;
+   \      0x126   0xE0D0             B        ??Get_Flash_Index_11
+    587                
+    588              case MODULE_DIGITAL_OUTPUTS:
+    589                module_Index_u8 = getProcessInfoIndex(MODULE_DIGITAL_OUTPUTS);
+   \                     ??Get_Flash_Index_10: (+1)
+   \      0x128   0x200E             MOVS     R0,#+14
+   \      0x12A   0x....'....        BL       getProcessInfoIndex
+   \      0x12E   0x0004             MOVS     R4,R0
+    590                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x130   0x....             LDR      R7,??DataTable11_3
+   \      0x132   0x0020             MOVS     R0,R4
+   \      0x134   0xB2C0             UXTB     R0,R0
+   \      0x136   0x2116             MOVS     R1,#+22
+   \      0x138   0x4348             MULS     R0,R1,R0
+   \      0x13A   0x1838             ADDS     R0,R7,R0
+   \      0x13C   0x300B             ADDS     R0,R0,#+11
+   \      0x13E   0x....'....        BL       __aeabi_uread4
+   \      0x142   0x6800             LDR      R0,[R0, #+0]
+   \      0x144   0x....             LDR      R1,??DataTable11_2
+   \      0x146   0x002A             MOVS     R2,R5
+   \      0x148   0xB292             UXTH     R2,R2
+   \      0x14A   0x2310             MOVS     R3,#+16
+   \      0x14C   0x4353             MULS     R3,R2,R3
+   \      0x14E   0x18C9             ADDS     R1,R1,R3
+   \      0x150   0x6088             STR      R0,[R1, #+8]
+    591                flash_DigitalOutputsControl_ptr = (Digital_Outputs_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x152   0x0020             MOVS     R0,R4
+   \      0x154   0xB2C0             UXTB     R0,R0
+   \      0x156   0x2116             MOVS     R1,#+22
+   \      0x158   0x4348             MULS     R0,R1,R0
+   \      0x15A   0x1838             ADDS     R0,R7,R0
+   \      0x15C   0x300B             ADDS     R0,R0,#+11
+   \      0x15E   0x....'....        BL       __aeabi_uread4
+   \      0x162   0x6800             LDR      R0,[R0, #+0]
+   \      0x164   0x....             LDR      R1,??DataTable12_1
+   \      0x166   0x6008             STR      R0,[R1, #+0]
+    592                settings_size_u16 = sizeof((*flash_DigitalOutputsControl_ptr).digital_outputs_Setting);
+   \      0x168   0x2044             MOVS     R0,#+68
+   \      0x16A   0x0006             MOVS     R6,R0
+    593                break;
+   \      0x16C   0xE0AD             B        ??Get_Flash_Index_11
+    594                
+    595              case MODULE_MODBUS:
+    596                module_Index_u8 = getProcessInfoIndex(MODULE_MODBUS);
+   \                     ??Get_Flash_Index_7: (+1)
+   \      0x16E   0x200B             MOVS     R0,#+11
+   \      0x170   0x....'....        BL       getProcessInfoIndex
+   \      0x174   0x0004             MOVS     R4,R0
+    597                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x176   0x....             LDR      R7,??DataTable11_3
+   \      0x178   0x0020             MOVS     R0,R4
+   \      0x17A   0xB2C0             UXTB     R0,R0
+   \      0x17C   0x2116             MOVS     R1,#+22
+   \      0x17E   0x4348             MULS     R0,R1,R0
+   \      0x180   0x1838             ADDS     R0,R7,R0
+   \      0x182   0x300B             ADDS     R0,R0,#+11
+   \      0x184   0x....'....        BL       __aeabi_uread4
+   \      0x188   0x6800             LDR      R0,[R0, #+0]
+   \      0x18A   0x....             LDR      R1,??DataTable11_2
+   \      0x18C   0x002A             MOVS     R2,R5
+   \      0x18E   0xB292             UXTH     R2,R2
+   \      0x190   0x2310             MOVS     R3,#+16
+   \      0x192   0x4353             MULS     R3,R2,R3
+   \      0x194   0x18C9             ADDS     R1,R1,R3
+   \      0x196   0x6088             STR      R0,[R1, #+8]
+    598                flash_ModbusControl_ptr = (Modbus_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x198   0x0020             MOVS     R0,R4
+   \      0x19A   0xB2C0             UXTB     R0,R0
+   \      0x19C   0x2116             MOVS     R1,#+22
+   \      0x19E   0x4348             MULS     R0,R1,R0
+   \      0x1A0   0x1838             ADDS     R0,R7,R0
+   \      0x1A2   0x300B             ADDS     R0,R0,#+11
+   \      0x1A4   0x....'....        BL       __aeabi_uread4
+   \      0x1A8   0x6800             LDR      R0,[R0, #+0]
+   \      0x1AA   0x....             LDR      R1,??DataTable13
+   \      0x1AC   0x6008             STR      R0,[R1, #+0]
+    599                settings_size_u16 = sizeof((*flash_ModbusControl_ptr).modbus_Settings);
+   \      0x1AE   0x2008             MOVS     R0,#+8
+   \      0x1B0   0x0006             MOVS     R6,R0
+    600                break;
+   \      0x1B2   0xE08A             B        ??Get_Flash_Index_11
+    601              
+    602              case MODULE_MOTOR_COM:
+    603                module_Index_u8 = getProcessInfoIndex(MODULE_MOTOR_COM);
+   \                     ??Get_Flash_Index_9: (+1)
+   \      0x1B4   0x200D             MOVS     R0,#+13
+   \      0x1B6   0x....'....        BL       getProcessInfoIndex
+   \      0x1BA   0x0004             MOVS     R4,R0
+    604                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x1BC   0x....             LDR      R7,??DataTable11_3
+   \      0x1BE   0x0020             MOVS     R0,R4
+   \      0x1C0   0xB2C0             UXTB     R0,R0
+   \      0x1C2   0x2116             MOVS     R1,#+22
+   \      0x1C4   0x4348             MULS     R0,R1,R0
+   \      0x1C6   0x1838             ADDS     R0,R7,R0
+   \      0x1C8   0x300B             ADDS     R0,R0,#+11
+   \      0x1CA   0x....'....        BL       __aeabi_uread4
+   \      0x1CE   0x6800             LDR      R0,[R0, #+0]
+   \      0x1D0   0x....             LDR      R1,??DataTable11_2
+   \      0x1D2   0x002A             MOVS     R2,R5
+   \      0x1D4   0xB292             UXTH     R2,R2
+   \      0x1D6   0x2310             MOVS     R3,#+16
+   \      0x1D8   0x4353             MULS     R3,R2,R3
+   \      0x1DA   0x18C9             ADDS     R1,R1,R3
+   \      0x1DC   0x6088             STR      R0,[R1, #+8]
+    605                flash_MotorComControl_ptr = (Motor_Com_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x1DE   0x0020             MOVS     R0,R4
+   \      0x1E0   0xB2C0             UXTB     R0,R0
+   \      0x1E2   0x2116             MOVS     R1,#+22
+   \      0x1E4   0x4348             MULS     R0,R1,R0
+   \      0x1E6   0x1838             ADDS     R0,R7,R0
+   \      0x1E8   0x300B             ADDS     R0,R0,#+11
+   \      0x1EA   0x....'....        BL       __aeabi_uread4
+   \      0x1EE   0x6800             LDR      R0,[R0, #+0]
+   \      0x1F0   0x....             LDR      R1,??DataTable13_1
+   \      0x1F2   0x6008             STR      R0,[R1, #+0]
+    606                settings_size_u16 = sizeof((*flash_MotorComControl_ptr).motor_Setting);
+   \      0x1F4   0x2012             MOVS     R0,#+18
+   \      0x1F6   0x0006             MOVS     R6,R0
+    607                break;
+   \      0x1F8   0xE067             B        ??Get_Flash_Index_11
+    608                
+    609              case MODULE_MOTOR_DEMAND_MUX:
+    610                module_Index_u8 = getProcessInfoIndex(MODULE_MOTOR_DEMAND_MUX);
+   \                     ??Get_Flash_Index_8: (+1)
+   \      0x1FA   0x200C             MOVS     R0,#+12
+   \      0x1FC   0x....'....        BL       getProcessInfoIndex
+   \      0x200   0x0004             MOVS     R4,R0
+    611                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x202   0x....             LDR      R7,??DataTable11_3
+   \      0x204   0x0020             MOVS     R0,R4
+   \      0x206   0xB2C0             UXTB     R0,R0
+   \      0x208   0x2116             MOVS     R1,#+22
+   \      0x20A   0x4348             MULS     R0,R1,R0
+   \      0x20C   0x1838             ADDS     R0,R7,R0
+   \      0x20E   0x300B             ADDS     R0,R0,#+11
+   \      0x210   0x....'....        BL       __aeabi_uread4
+   \      0x214   0x6800             LDR      R0,[R0, #+0]
+   \      0x216   0x....             LDR      R1,??DataTable11_2
+   \      0x218   0x002A             MOVS     R2,R5
+   \      0x21A   0xB292             UXTH     R2,R2
+   \      0x21C   0x2310             MOVS     R3,#+16
+   \      0x21E   0x4353             MULS     R3,R2,R3
+   \      0x220   0x18C9             ADDS     R1,R1,R3
+   \      0x222   0x6088             STR      R0,[R1, #+8]
+    612                flash_MotorDemandMuxControl_ptr = (MotorDemandMux_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x224   0x0020             MOVS     R0,R4
+   \      0x226   0xB2C0             UXTB     R0,R0
+   \      0x228   0x2116             MOVS     R1,#+22
+   \      0x22A   0x4348             MULS     R0,R1,R0
+   \      0x22C   0x1838             ADDS     R0,R7,R0
+   \      0x22E   0x300B             ADDS     R0,R0,#+11
+   \      0x230   0x....'....        BL       __aeabi_uread4
+   \      0x234   0x6800             LDR      R0,[R0, #+0]
+   \      0x236   0x....             LDR      R1,??DataTable14
+   \      0x238   0x6008             STR      R0,[R1, #+0]
+    613                settings_size_u16 = sizeof((*flash_MotorDemandMuxControl_ptr).motorDemandMux_Settings);
+   \      0x23A   0x2010             MOVS     R0,#+16
+   \      0x23C   0x0006             MOVS     R6,R0
+    614                break;
+   \      0x23E   0xE044             B        ??Get_Flash_Index_11
+    615              
+    616              case MODULE_PWM_INPUT:
+    617                module_Index_u8 = getProcessInfoIndex(MODULE_PWM_INPUT);
+   \                     ??Get_Flash_Index_6: (+1)
+   \      0x240   0x2008             MOVS     R0,#+8
+   \      0x242   0x....'....        BL       getProcessInfoIndex
+   \      0x246   0x0004             MOVS     R4,R0
+    618                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x248   0x....             LDR      R7,??DataTable11_3
+   \      0x24A   0x0020             MOVS     R0,R4
+   \      0x24C   0xB2C0             UXTB     R0,R0
+   \      0x24E   0x2116             MOVS     R1,#+22
+   \      0x250   0x4348             MULS     R0,R1,R0
+   \      0x252   0x1838             ADDS     R0,R7,R0
+   \      0x254   0x300B             ADDS     R0,R0,#+11
+   \      0x256   0x....'....        BL       __aeabi_uread4
+   \      0x25A   0x6800             LDR      R0,[R0, #+0]
+   \      0x25C   0x....             LDR      R1,??DataTable11_2
+   \      0x25E   0x002A             MOVS     R2,R5
+   \      0x260   0xB292             UXTH     R2,R2
+   \      0x262   0x2310             MOVS     R3,#+16
+   \      0x264   0x4353             MULS     R3,R2,R3
+   \      0x266   0x18C9             ADDS     R1,R1,R3
+   \      0x268   0x6088             STR      R0,[R1, #+8]
+    619                flash_PwmInputControl_ptr = (PwmInput_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x26A   0x0020             MOVS     R0,R4
+   \      0x26C   0xB2C0             UXTB     R0,R0
+   \      0x26E   0x2116             MOVS     R1,#+22
+   \      0x270   0x4348             MULS     R0,R1,R0
+   \      0x272   0x1838             ADDS     R0,R7,R0
+   \      0x274   0x300B             ADDS     R0,R0,#+11
+   \      0x276   0x....'....        BL       __aeabi_uread4
+   \      0x27A   0x6800             LDR      R0,[R0, #+0]
+   \      0x27C   0x....             LDR      R1,??DataTable14_1
+   \      0x27E   0x6008             STR      R0,[R1, #+0]
+    620                settings_size_u16 = sizeof((*flash_PwmInputControl_ptr).pwmInput_Settings);
+   \      0x280   0x202C             MOVS     R0,#+44
+   \      0x282   0x0006             MOVS     R6,R0
+    621                break;
+   \      0x284   0xE021             B        ??Get_Flash_Index_11
+    622                
+    623              case MODULE_GPIO:
+    624                module_Index_u8 = getProcessInfoIndex(MODULE_GPIO);
+   \                     ??Get_Flash_Index_2: (+1)
+   \      0x286   0x2001             MOVS     R0,#+1
+   \      0x288   0x....'....        BL       getProcessInfoIndex
+   \      0x28C   0x0004             MOVS     R4,R0
+    625                flash_settings_index[current_Id_u16].module_settings_address_ptr= ((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x28E   0x....             LDR      R7,??DataTable11_3
+   \      0x290   0x0020             MOVS     R0,R4
+   \      0x292   0xB2C0             UXTB     R0,R0
+   \      0x294   0x2116             MOVS     R1,#+22
+   \      0x296   0x4348             MULS     R0,R1,R0
+   \      0x298   0x1838             ADDS     R0,R7,R0
+   \      0x29A   0x300B             ADDS     R0,R0,#+11
+   \      0x29C   0x....'....        BL       __aeabi_uread4
+   \      0x2A0   0x6800             LDR      R0,[R0, #+0]
+   \      0x2A2   0x....             LDR      R1,??DataTable11_2
+   \      0x2A4   0x002A             MOVS     R2,R5
+   \      0x2A6   0xB292             UXTH     R2,R2
+   \      0x2A8   0x2310             MOVS     R3,#+16
+   \      0x2AA   0x4353             MULS     R3,R2,R3
+   \      0x2AC   0x18C9             ADDS     R1,R1,R3
+   \      0x2AE   0x6088             STR      R0,[R1, #+8]
+    626                flash_GpioControl_ptr = (Gpio_Control*)((*(processInfoTable[module_Index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8); // Module Structured memory address
+   \      0x2B0   0x0020             MOVS     R0,R4
+   \      0x2B2   0xB2C0             UXTB     R0,R0
+   \      0x2B4   0x2116             MOVS     R1,#+22
+   \      0x2B6   0x4348             MULS     R0,R1,R0
+   \      0x2B8   0x1838             ADDS     R0,R7,R0
+   \      0x2BA   0x300B             ADDS     R0,R0,#+11
+   \      0x2BC   0x....'....        BL       __aeabi_uread4
+   \      0x2C0   0x6800             LDR      R0,[R0, #+0]
+   \      0x2C2   0x....             LDR      R1,??DataTable15
+   \      0x2C4   0x6008             STR      R0,[R1, #+0]
+    627                settings_size_u16 = sizeof((*flash_GpioControl_ptr).gpio_Settings);
+   \      0x2C6   0x2001             MOVS     R0,#+1
+   \      0x2C8   0x0006             MOVS     R6,R0
+    628                break;
+    629                  
+    630              }
+    631              if(settings_size_u16 % 8 != 0)
+   \                     ??Get_Flash_Index_11: (+1)
+   \      0x2CA   0x0030             MOVS     R0,R6
+   \      0x2CC   0xB280             UXTH     R0,R0
+   \      0x2CE   0x2108             MOVS     R1,#+8
+   \      0x2D0   0x....'....        BL       __aeabi_idivmod
+   \      0x2D4   0x2900             CMP      R1,#+0
+   \      0x2D6   0xD00D             BEQ      ??Get_Flash_Index_12
+    632              {
+    633                current_Index_u16 = current_Index_u16 + settings_size_u16 + (8 - (settings_size_u16% 8 )); // Since min len we can write is 64 bits (8 bytes)
+   \      0x2D8   0x....             LDR      R7,??DataTable11_1
+   \      0x2DA   0x8838             LDRH     R0,[R7, #+0]
+   \      0x2DC   0x1980             ADDS     R0,R0,R6
+   \      0x2DE   0x3008             ADDS     R0,R0,#+8
+   \      0x2E0   0x9000             STR      R0,[SP, #+0]
+   \      0x2E2   0x0030             MOVS     R0,R6
+   \      0x2E4   0xB280             UXTH     R0,R0
+   \      0x2E6   0x2108             MOVS     R1,#+8
+   \      0x2E8   0x....'....        BL       __aeabi_idivmod
+   \      0x2EC   0x9800             LDR      R0,[SP, #+0]
+   \      0x2EE   0x1A40             SUBS     R0,R0,R1
+   \      0x2F0   0x8038             STRH     R0,[R7, #+0]
+   \      0x2F2   0xE003             B        ??Get_Flash_Index_13
+    634              }
+    635              else
+    636              {
+    637                current_Index_u16 = current_Index_u16 + settings_size_u16; 
+   \                     ??Get_Flash_Index_12: (+1)
+   \      0x2F4   0x....             LDR      R0,??DataTable11_1
+   \      0x2F6   0x8801             LDRH     R1,[R0, #+0]
+   \      0x2F8   0x1989             ADDS     R1,R1,R6
+   \      0x2FA   0x8001             STRH     R1,[R0, #+0]
+    638              }
+    639              if(flash_settings_index[current_Id_u16].module_settings_end_offset_u16 != current_Index_u16)
+   \                     ??Get_Flash_Index_13: (+1)
+   \      0x2FC   0x....             LDR      R0,??DataTable11_2
+   \      0x2FE   0x....             LDR      R1,??DataTable11_1
+   \      0x300   0x002A             MOVS     R2,R5
+   \      0x302   0xB292             UXTH     R2,R2
+   \      0x304   0x2310             MOVS     R3,#+16
+   \      0x306   0x4353             MULS     R3,R2,R3
+   \      0x308   0x18C2             ADDS     R2,R0,R3
+   \      0x30A   0x8852             LDRH     R2,[R2, #+2]
+   \      0x30C   0x880B             LDRH     R3,[R1, #+0]
+   \      0x30E   0x429A             CMP      R2,R3
+   \      0x310   0xD00C             BEQ      ??Get_Flash_Index_14
+    640              {
+    641                // Module settings end offset (# of bytes + begin offset)
+    642                flash_settings_index[current_Id_u16].module_settings_size_u16 = settings_size_u16;       // Size of settings structure. This does not have the 8 byte padding
+   \      0x312   0x002A             MOVS     R2,R5
+   \      0x314   0xB292             UXTH     R2,R2
+   \      0x316   0x2310             MOVS     R3,#+16
+   \      0x318   0x4353             MULS     R3,R2,R3
+   \      0x31A   0x18C2             ADDS     R2,R0,R3
+   \      0x31C   0x8096             STRH     R6,[R2, #+4]
+    643                flash_settings_index[current_Id_u16].module_settings_end_offset_u16= current_Index_u16;  // Number of Bytes // Module Memory Index_End // Last address of the analog settings
+   \      0x31E   0x8809             LDRH     R1,[R1, #+0]
+   \      0x320   0x002A             MOVS     R2,R5
+   \      0x322   0xB292             UXTH     R2,R2
+   \      0x324   0x2310             MOVS     R3,#+16
+   \      0x326   0x4353             MULS     R3,R2,R3
+   \      0x328   0x18C0             ADDS     R0,R0,R3
+   \      0x32A   0x8041             STRH     R1,[R0, #+2]
+    644              }
+    645            }
+   \                     ??Get_Flash_Index_14: (+1)
+   \      0x32C   0x1C6D             ADDS     R5,R5,#+1
+   \      0x32E   0xE669             B        ??Get_Flash_Index_0
+    646          }
+   \                     ??Get_Flash_Index_1: (+1)
+   \      0x330   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    647          
+    648          // Update flash settings 
+    649          /*void Update_Flash(uint8_t module_id_u8, uint8_t flash_state_u8)
+    650          {
+    651            switch(flash_state_u8)
+    652            {
+    653            case FLASH_SETTINGS_INIT:
+    654              init_Flash_Settings();
+    655              break;
+    656            case FLASH_SETTINGS_UPDATE:
+    657              update_Flash_Settings(module_id_u8);
+    658              break;
+    659            case FLASH_SETTINGS_ERASE:
+    660              break;
+    661            default:
+    662              break;
+    663            }
+    664            
+    665          }*/
+    666          
+    667          
+    668          
+    669          /**
+    670          * @brief  Init flash setting on first power up
+    671          * @param  index_u32  Index of where the data need to be flashed
+    672          *         ptr_u8     Address from where we have to copy data
+    673          * @retval None
+    674          */
+
+   \                                 In section .text, align 2, keep-with-next
+    675          uint8_t init_Flash_Settings(void)
+    676          {
+   \                     init_Flash_Settings: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    677            uint16_t current_flash_index_u16 = 0;
+   \        0x2   0x2700             MOVS     R7,#+0
+    678            uint8_t error_u8 = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4669             MOV      R1,SP
+   \        0x8   0x7008             STRB     R0,[R1, #+0]
+    679            uint8_t current_Id = 0;
+   \        0xA   0x2000             MOVS     R0,#+0
+    680            for(current_Id= MIN_MODULE_ID; current_Id< TOTAL_NUM_OF_PROCESSES; current_Id++)
+   \        0xC   0x2500             MOVS     R5,#+0
+   \                     ??init_Flash_Settings_0: (+1)
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0xB2C0             UXTB     R0,R0
+   \       0x12   0x2811             CMP      R0,#+17
+   \       0x14   0xDA79             BGE      ??init_Flash_Settings_1
+    681            {
+    682              Flash_Buf_Init(); // Clear any junk values in buffer
+   \       0x16   0x....'....        BL       Flash_Buf_Init
+    683              uint16_t module_settings_index_u8= 0;
+   \       0x1A   0x2600             MOVS     R6,#+0
+    684              if(flash_settings_index[current_Id].module_settings_begin_offset_u16 != flash_settings_index[current_Id].module_settings_end_offset_u16)
+   \       0x1C   0x....             LDR      R4,??DataTable16
+   \       0x1E   0x0028             MOVS     R0,R5
+   \       0x20   0xB2C0             UXTB     R0,R0
+   \       0x22   0x2110             MOVS     R1,#+16
+   \       0x24   0x4348             MULS     R0,R1,R0
+   \       0x26   0x5A20             LDRH     R0,[R4, R0]
+   \       0x28   0x0029             MOVS     R1,R5
+   \       0x2A   0xB2C9             UXTB     R1,R1
+   \       0x2C   0x2210             MOVS     R2,#+16
+   \       0x2E   0x4351             MULS     R1,R2,R1
+   \       0x30   0x1861             ADDS     R1,R4,R1
+   \       0x32   0x8849             LDRH     R1,[R1, #+2]
+   \       0x34   0x4288             CMP      R0,R1
+   \       0x36   0xD045             BEQ      ??init_Flash_Settings_2
+    685              { 
+    686                flash_settings_index[current_Id].module_flash_settings_address_ptr = flash_settings_index[current_Id].module_settings_begin_offset_u16 + FLASH_SETTINGS_START_ADDRESS;
+   \       0x38   0x0028             MOVS     R0,R5
+   \       0x3A   0xB2C0             UXTB     R0,R0
+   \       0x3C   0x2110             MOVS     R1,#+16
+   \       0x3E   0x4348             MULS     R0,R1,R0
+   \       0x40   0x5A20             LDRH     R0,[R4, R0]
+   \       0x42   0x....             LDR      R1,??DataTable17  ;; 0x800f000
+   \       0x44   0x1840             ADDS     R0,R0,R1
+   \       0x46   0x0029             MOVS     R1,R5
+   \       0x48   0xB2C9             UXTB     R1,R1
+   \       0x4A   0x2210             MOVS     R2,#+16
+   \       0x4C   0x4351             MULS     R1,R2,R1
+   \       0x4E   0x1861             ADDS     R1,R4,R1
+   \       0x50   0x60C8             STR      R0,[R1, #+12]
+    687                // Copy 8 bytes at a time into flash_buffer
+    688                for(current_flash_index_u16 = flash_settings_index[current_Id].module_settings_begin_offset_u16; current_flash_index_u16 < flash_settings_index[current_Id].module_settings_end_offset_u16;  )
+   \       0x52   0x0028             MOVS     R0,R5
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x2110             MOVS     R1,#+16
+   \       0x58   0x4348             MULS     R0,R1,R0
+   \       0x5A   0x5A20             LDRH     R0,[R4, R0]
+   \       0x5C   0x0007             MOVS     R7,R0
+   \                     ??init_Flash_Settings_3: (+1)
+   \       0x5E   0x0038             MOVS     R0,R7
+   \       0x60   0x0029             MOVS     R1,R5
+   \       0x62   0xB2C9             UXTB     R1,R1
+   \       0x64   0x2210             MOVS     R2,#+16
+   \       0x66   0x4351             MULS     R1,R2,R1
+   \       0x68   0x1861             ADDS     R1,R4,R1
+   \       0x6A   0x8849             LDRH     R1,[R1, #+2]
+   \       0x6C   0xB280             UXTH     R0,R0
+   \       0x6E   0x4288             CMP      R0,R1
+   \       0x70   0xD228             BCS      ??init_Flash_Settings_2
+    689                {
+    690                  if(flash_settings_index[current_Id].module_settings_begin_offset_u16 != flash_settings_index[current_Id].module_settings_end_offset_u16)
+   \       0x72   0x0028             MOVS     R0,R5
+   \       0x74   0xB2C0             UXTB     R0,R0
+   \       0x76   0x2110             MOVS     R1,#+16
+   \       0x78   0x4348             MULS     R0,R1,R0
+   \       0x7A   0x5A20             LDRH     R0,[R4, R0]
+   \       0x7C   0x0029             MOVS     R1,R5
+   \       0x7E   0xB2C9             UXTB     R1,R1
+   \       0x80   0x2210             MOVS     R2,#+16
+   \       0x82   0x4351             MULS     R1,R2,R1
+   \       0x84   0x1861             ADDS     R1,R4,R1
+   \       0x86   0x8849             LDRH     R1,[R1, #+2]
+   \       0x88   0x4288             CMP      R0,R1
+   \       0x8A   0xD018             BEQ      ??init_Flash_Settings_4
+    691                  {  
+    692                    uint32_t address_u32 = FLASH_SETTINGS_START_ADDRESS+current_flash_index_u16;
+   \       0x8C   0x0038             MOVS     R0,R7
+   \       0x8E   0xB280             UXTH     R0,R0
+   \       0x90   0x....             LDR      R1,??DataTable17  ;; 0x800f000
+   \       0x92   0x1840             ADDS     R0,R0,R1
+   \       0x94   0x9001             STR      R0,[SP, #+4]
+    693                    if( address_u32 > (FLASH_SETTINGS_START_ADDRESS + FLASH_PAGE_SIZE) )
+   \       0x96   0x9801             LDR      R0,[SP, #+4]
+   \       0x98   0x....             LDR      R1,??DataTable17_1  ;; 0x800f801
+   \       0x9A   0x4288             CMP      R0,R1
+   \       0x9C   0xD303             BCC      ??init_Flash_Settings_5
+    694                    {
+    695                      error_u8 = 1;
+   \       0x9E   0x2001             MOVS     R0,#+1
+   \       0xA0   0x4669             MOV      R1,SP
+   \       0xA2   0x7008             STRB     R0,[R1, #+0]
+   \       0xA4   0xE00B             B        ??init_Flash_Settings_4
+    696                    }
+    697                    else
+    698                    {
+    699                      copy_Data_To_Buffer( address_u32, (flash_settings_index[current_Id].module_settings_address_ptr + module_settings_index_u8) ); // 
+   \                     ??init_Flash_Settings_5: (+1)
+   \       0xA6   0x0028             MOVS     R0,R5
+   \       0xA8   0xB2C0             UXTB     R0,R0
+   \       0xAA   0x2110             MOVS     R1,#+16
+   \       0xAC   0x4348             MULS     R0,R1,R0
+   \       0xAE   0x1820             ADDS     R0,R4,R0
+   \       0xB0   0x6880             LDR      R0,[R0, #+8]
+   \       0xB2   0x0031             MOVS     R1,R6
+   \       0xB4   0xB289             UXTH     R1,R1
+   \       0xB6   0x1841             ADDS     R1,R0,R1
+   \       0xB8   0x9801             LDR      R0,[SP, #+4]
+   \       0xBA   0x....'....        BL       copy_Data_To_Buffer
+    700                    }
+    701                  }
+    702                  current_flash_index_u16 = current_flash_index_u16 + 8;
+   \                     ??init_Flash_Settings_4: (+1)
+   \       0xBE   0x3708             ADDS     R7,R7,#+8
+    703                  module_settings_index_u8 = module_settings_index_u8 + 8;
+   \       0xC0   0x3608             ADDS     R6,R6,#+8
+   \       0xC2   0xE7CC             B        ??init_Flash_Settings_3
+    704                }
+    705              }
+    706              // Once all settings for a module are copied to buffer then flash them
+    707              if(flash_buffer_tail_u8 != flash_buffer_head_u8)
+   \                     ??init_Flash_Settings_2: (+1)
+   \       0xC4   0x....             LDR      R0,??DataTable18
+   \       0xC6   0x7800             LDRB     R0,[R0, #+0]
+   \       0xC8   0x....             LDR      R1,??DataTable18_1
+   \       0xCA   0x7809             LDRB     R1,[R1, #+0]
+   \       0xCC   0x4288             CMP      R0,R1
+   \       0xCE   0xD01A             BEQ      ??init_Flash_Settings_6
+    708              {
+    709                flashBlockProgram8bytes( current_Id,(flash_settings_index[current_Id].module_settings_begin_offset_u16+FLASH_SETTINGS_START_ADDRESS), (flash_settings_index[current_Id].module_settings_end_offset_u16 - flash_settings_index[current_Id].module_settings_begin_offset_u16)/8 );
+   \       0xD0   0x0028             MOVS     R0,R5
+   \       0xD2   0xB2C0             UXTB     R0,R0
+   \       0xD4   0x2110             MOVS     R1,#+16
+   \       0xD6   0x4348             MULS     R0,R1,R0
+   \       0xD8   0x1820             ADDS     R0,R4,R0
+   \       0xDA   0x8840             LDRH     R0,[R0, #+2]
+   \       0xDC   0x0029             MOVS     R1,R5
+   \       0xDE   0xB2C9             UXTB     R1,R1
+   \       0xE0   0x2210             MOVS     R2,#+16
+   \       0xE2   0x4351             MULS     R1,R2,R1
+   \       0xE4   0x5A61             LDRH     R1,[R4, R1]
+   \       0xE6   0x1A40             SUBS     R0,R0,R1
+   \       0xE8   0x2108             MOVS     R1,#+8
+   \       0xEA   0x....'....        BL       __aeabi_idiv
+   \       0xEE   0x0002             MOVS     R2,R0
+   \       0xF0   0x0028             MOVS     R0,R5
+   \       0xF2   0xB2C0             UXTB     R0,R0
+   \       0xF4   0x2110             MOVS     R1,#+16
+   \       0xF6   0x4348             MULS     R0,R1,R0
+   \       0xF8   0x5A20             LDRH     R0,[R4, R0]
+   \       0xFA   0x....             LDR      R1,??DataTable17  ;; 0x800f000
+   \       0xFC   0x1841             ADDS     R1,R0,R1
+   \       0xFE   0x0028             MOVS     R0,R5
+   \      0x100   0xB2C0             UXTB     R0,R0
+   \      0x102   0x....'....        BL       flashBlockProgram8bytes
+    710              }
+    711            }
+   \                     ??init_Flash_Settings_6: (+1)
+   \      0x106   0x1C6D             ADDS     R5,R5,#+1
+   \      0x108   0xE781             B        ??init_Flash_Settings_0
+    712            return(error_u8);
+   \                     ??init_Flash_Settings_1: (+1)
+   \      0x10A   0x4668             MOV      R0,SP
+   \      0x10C   0x7800             LDRB     R0,[R0, #+0]
+   \      0x10E   0xBDFE             POP      {R1-R7,PC}       ;; return
+    713            
+    714          }
+    715          
+    716          
+    717          /**
+    718          * @brief  Copy 8 bytes of data to buffer that needs to be flashed into flash
+    719          * @param  index_u32  Index of where the data need to be flashed
+    720          *         ptr_u8     Address from where we have to copy data
+    721          * @retval None
+    722          */
+
+   \                                 In section .text, align 2, keep-with-next
+    723          void copy_Data_To_Buffer(uint32_t index_u32, uint8_t* ptr_u8)
+    724          {
+   \                     copy_Data_To_Buffer: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+   \        0x4   0x000F             MOVS     R7,R1
+    725            flash_buffer[flash_buffer_tail_u8].address_u32 = index_u32;  
+   \        0x6   0x....             LDR      R6,??DataTable18
+   \        0x8   0x....             LDR      R4,??DataTable18_2
+   \        0xA   0x9802             LDR      R0,[SP, #+8]
+   \        0xC   0x7831             LDRB     R1,[R6, #+0]
+   \        0xE   0x2210             MOVS     R2,#+16
+   \       0x10   0x4351             MULS     R1,R2,R1
+   \       0x12   0x5060             STR      R0,[R4, R1]
+    726            uint64_t data_u64 = 0;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x2100             MOVS     R1,#+0
+    727            for(uint8_t byte_u8 = 0; byte_u8 < 8; byte_u8++)
+   \       0x18   0x2500             MOVS     R5,#+0
+   \                     ??copy_Data_To_Buffer_0: (+1)
+   \       0x1A   0x002A             MOVS     R2,R5
+   \       0x1C   0xB2D2             UXTB     R2,R2
+   \       0x1E   0x2A08             CMP      R2,#+8
+   \       0x20   0xDA0F             BGE      ??copy_Data_To_Buffer_1
+    728            {
+    729              data_u64 = (uint64_t)((uint64_t)data_u64 + (uint64_t)((uint64_t)(*(ptr_u8+(byte_u8))) << (byte_u8*8)) );
+   \       0x22   0x9000             STR      R0,[SP, #+0]
+   \       0x24   0x9101             STR      R1,[SP, #+4]
+   \       0x26   0x0028             MOVS     R0,R5
+   \       0x28   0xB2C0             UXTB     R0,R0
+   \       0x2A   0x5C38             LDRB     R0,[R7, R0]
+   \       0x2C   0x2100             MOVS     R1,#+0
+   \       0x2E   0x2208             MOVS     R2,#+8
+   \       0x30   0x436A             MULS     R2,R5,R2
+   \       0x32   0x....'....        BL       __aeabi_llsl
+   \       0x36   0x9A00             LDR      R2,[SP, #+0]
+   \       0x38   0x9B01             LDR      R3,[SP, #+4]
+   \       0x3A   0x1880             ADDS     R0,R0,R2
+   \       0x3C   0x4159             ADCS     R1,R1,R3
+    730              
+    731            }
+   \       0x3E   0x1C6D             ADDS     R5,R5,#+1
+   \       0x40   0xE7EB             B        ??copy_Data_To_Buffer_0
+    732            flash_buffer[flash_buffer_tail_u8].flashData_u64 = data_u64;
+   \                     ??copy_Data_To_Buffer_1: (+1)
+   \       0x42   0x7832             LDRB     R2,[R6, #+0]
+   \       0x44   0x2310             MOVS     R3,#+16
+   \       0x46   0x435A             MULS     R2,R3,R2
+   \       0x48   0x18A2             ADDS     R2,R4,R2
+   \       0x4A   0x3208             ADDS     R2,R2,#+8
+   \       0x4C   0xC203             STM      R2!,{R0,R1}
+   \       0x4E   0x3A08             SUBS     R2,R2,#+8
+    733            flash_buffer_tail_u8++;
+   \       0x50   0x7832             LDRB     R2,[R6, #+0]
+   \       0x52   0x1C52             ADDS     R2,R2,#+1
+   \       0x54   0x7032             STRB     R2,[R6, #+0]
+    734          }
+   \       0x56   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    735          
+    736          
+    737          // If a module setting is update then the whole module setting in the flash need to be updated
+    738          /**
+    739          * @brief  Update a a specific block of momory related to a module
+    740          * @param  module_id_u8       The function caller module ID in case error occur within this function
+    741          * @retval successful
+    742          */
+
+   \                                 In section .text, align 2, keep-with-next
+    743          uint8_t update_Flash_Settings(uint8_t module_id_u8)
+    744          {
+   \                     update_Flash_Settings: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+    745            uint8_t error_u8=0;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0x7004             STRB     R4,[R0, #+0]
+    746            for(uint8_t current_Id= MIN_MODULE_ID; current_Id< TOTAL_NUM_OF_PROCESSES; current_Id++)
+   \                     ??update_Flash_Settings_0: (+1)
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2811             CMP      R0,#+17
+   \       0x10   0xDA3F             BGE      ??update_Flash_Settings_1
+    747            {    
+    748              if(module_id_u8 == current_Id)
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x7A00             LDRB     R0,[R0, #+8]
+   \       0x16   0x0021             MOVS     R1,R4
+   \       0x18   0xB2C9             UXTB     R1,R1
+   \       0x1A   0x4288             CMP      R0,R1
+   \       0x1C   0xD137             BNE      ??update_Flash_Settings_2
+    749              {
+    750                FlashBufInit(); // Clear buffer
+   \       0x1E   0x....'....        BL       FlashBufInit
+    751                // Copy module settings into buffer
+    752                for(uint16_t current_flash_index_u16 = flash_settings_index[current_Id].module_settings_begin_offset_u16; current_flash_index_u16 < flash_settings_index[current_Id].module_settings_end_offset_u16; )
+   \       0x22   0x....             LDR      R6,??DataTable16
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0xB2C0             UXTB     R0,R0
+   \       0x28   0x2110             MOVS     R1,#+16
+   \       0x2A   0x4348             MULS     R0,R1,R0
+   \       0x2C   0x5A35             LDRH     R5,[R6, R0]
+   \                     ??update_Flash_Settings_3: (+1)
+   \       0x2E   0x0028             MOVS     R0,R5
+   \       0x30   0x0021             MOVS     R1,R4
+   \       0x32   0xB2C9             UXTB     R1,R1
+   \       0x34   0x2210             MOVS     R2,#+16
+   \       0x36   0x4351             MULS     R1,R2,R1
+   \       0x38   0x1871             ADDS     R1,R6,R1
+   \       0x3A   0x8849             LDRH     R1,[R1, #+2]
+   \       0x3C   0xB280             UXTH     R0,R0
+   \       0x3E   0x4288             CMP      R0,R1
+   \       0x40   0xD215             BCS      ??update_Flash_Settings_4
+    753                {
+    754                  uint32_t address_u32 = FLASH_SETTINGS_START_ADDRESS + current_flash_index_u16;
+   \       0x42   0x0028             MOVS     R0,R5
+   \       0x44   0xB280             UXTH     R0,R0
+   \       0x46   0x....             LDR      R1,??DataTable17  ;; 0x800f000
+   \       0x48   0x1847             ADDS     R7,R0,R1
+    755                  if( address_u32 > (FLASH_SETTINGS_START_ADDRESS + FLASH_PAGE_SIZE - 8) ) // Last 8 bytes for Flash Version (4 bytes) + CRC (4 bytes)
+   \       0x4A   0x....             LDR      R0,??DataTable18_3  ;; 0x800f7f9
+   \       0x4C   0x4287             CMP      R7,R0
+   \       0x4E   0xD303             BCC      ??update_Flash_Settings_5
+    756                  {
+    757                    error_u8 = 1;
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0x4669             MOV      R1,SP
+   \       0x54   0x7008             STRB     R0,[R1, #+0]
+   \       0x56   0xE008             B        ??update_Flash_Settings_6
+    758                  }
+    759                  else
+    760                  {
+    761                    copy_Data_To_Buffer( address_u32, (flash_settings_index[current_Id].module_settings_address_ptr) ); // 
+   \                     ??update_Flash_Settings_5: (+1)
+   \       0x58   0x0020             MOVS     R0,R4
+   \       0x5A   0xB2C0             UXTB     R0,R0
+   \       0x5C   0x2110             MOVS     R1,#+16
+   \       0x5E   0x4348             MULS     R0,R1,R0
+   \       0x60   0x1830             ADDS     R0,R6,R0
+   \       0x62   0x6881             LDR      R1,[R0, #+8]
+   \       0x64   0x0038             MOVS     R0,R7
+   \       0x66   0x....'....        BL       copy_Data_To_Buffer
+    762                  }
+    763                  current_flash_index_u16= current_flash_index_u16 + 8;
+   \                     ??update_Flash_Settings_6: (+1)
+   \       0x6A   0x3508             ADDS     R5,R5,#+8
+   \       0x6C   0xE7DF             B        ??update_Flash_Settings_3
+    764                }      
+    765                flashBlockProgram8bytes( current_Id,(flash_settings_index[current_Id].module_settings_begin_offset_u16+FLASH_SETTINGS_START_ADDRESS), (flash_buffer_tail_u8 - flash_buffer_head_u8) );      
+   \                     ??update_Flash_Settings_4: (+1)
+   \       0x6E   0x....             LDR      R0,??DataTable18
+   \       0x70   0x7800             LDRB     R0,[R0, #+0]
+   \       0x72   0x....             LDR      R1,??DataTable18_1
+   \       0x74   0x7809             LDRB     R1,[R1, #+0]
+   \       0x76   0x1A42             SUBS     R2,R0,R1
+   \       0x78   0x0020             MOVS     R0,R4
+   \       0x7A   0xB2C0             UXTB     R0,R0
+   \       0x7C   0x2110             MOVS     R1,#+16
+   \       0x7E   0x4348             MULS     R0,R1,R0
+   \       0x80   0x5A30             LDRH     R0,[R6, R0]
+   \       0x82   0x....             LDR      R1,??DataTable17  ;; 0x800f000
+   \       0x84   0x1841             ADDS     R1,R0,R1
+   \       0x86   0x0020             MOVS     R0,R4
+   \       0x88   0xB2C0             UXTB     R0,R0
+   \       0x8A   0x....'....        BL       flashBlockProgram8bytes
+    766              }
+    767              
+    768            }
+   \                     ??update_Flash_Settings_2: (+1)
+   \       0x8E   0x1C64             ADDS     R4,R4,#+1
+   \       0x90   0xE7BB             B        ??update_Flash_Settings_0
+    769            return(error_u8);
+   \                     ??update_Flash_Settings_1: (+1)
+   \       0x92   0x4668             MOV      R0,SP
+   \       0x94   0x7800             LDRB     R0,[R0, #+0]
+   \       0x96   0xBDFE             POP      {R1-R7,PC}       ;; return
+    770              
+    771          }
+    772          
+    773          
+    774          /**
+    775          * @brief  Program a data in flash_buffer into flash
+    776          * @param  module_id_u8       The function caller module ID in case error occur within this function
+    777          *         _TopageAddress  The starting address of the sink flash page/s
+    778          *          _length        The starting address of the source flash page/s
+    779          * @retval successful
+    780          */
+
+   \                                 In section .text, align 2, keep-with-next
+    781          uint8_t flashBlockProgram8bytes(uint8_t module_id_u8, uint32_t _TopageAddress, uint32_t _length)
+    782          {
+   \                     flashBlockProgram8bytes: (+1)
+   \        0x0   0xB5F3             PUSH     {R0,R1,R4-R7,LR}
+   \        0x2   0xB083             SUB      SP,SP,#+12
+   \        0x4   0x0017             MOVS     R7,R2
+    783            uint8_t returnValue = TRUE;
+   \        0x6   0x2601             MOVS     R6,#+1
+    784            HAL_FLASH_Unlock();
+   \        0x8   0x....'....        BL       HAL_FLASH_Unlock
+    785            for(uint16_t index_u16 = flash_buffer_head_u8  ;  index_u16 < _length ; index_u16 ++)
+   \        0xC   0x....             LDR      R5,??DataTable18_1
+   \        0xE   0x782C             LDRB     R4,[R5, #+0]
+   \                     ??flashBlockProgram8bytes_0: (+1)
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0xB280             UXTH     R0,R0
+   \       0x14   0x42B8             CMP      R0,R7
+   \       0x16   0xD227             BCS      ??flashBlockProgram8bytes_1
+    786            {
+    787              if (!HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, flash_buffer[index_u16].address_u32, flash_buffer[index_u16].flashData_u64) == HAL_OK) //write 16bit data
+   \       0x18   0x....             LDR      R0,??DataTable18_2
+   \       0x1A   0x0021             MOVS     R1,R4
+   \       0x1C   0xB289             UXTH     R1,R1
+   \       0x1E   0x2210             MOVS     R2,#+16
+   \       0x20   0x434A             MULS     R2,R1,R2
+   \       0x22   0x1881             ADDS     R1,R0,R2
+   \       0x24   0x3108             ADDS     R1,R1,#+8
+   \       0x26   0xC90C             LDM      R1!,{R2,R3}
+   \       0x28   0x3908             SUBS     R1,R1,#+8
+   \       0x2A   0x4684             MOV      R12,R0
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0xB280             UXTH     R0,R0
+   \       0x30   0x2110             MOVS     R1,#+16
+   \       0x32   0x4341             MULS     R1,R0,R1
+   \       0x34   0x4660             MOV      R0,R12
+   \       0x36   0x5841             LDR      R1,[R0, R1]
+   \       0x38   0x2001             MOVS     R0,#+1
+   \       0x3A   0x....'....        BL       HAL_FLASH_Program
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD00D             BEQ      ??flashBlockProgram8bytes_2
+    788              {
+    789                // Error occurred while writing data in Flash memory.                                                                 
+    790                setupSoftwareIRQ(module_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, 0x00, NULL);     //report the error address 
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x9001             STR      R0,[SP, #+4]
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x9000             STR      R0,[SP, #+0]
+   \       0x4A   0x2300             MOVS     R3,#+0
+   \       0x4C   0x22E4             MOVS     R2,#+228
+   \       0x4E   0x210F             MOVS     R1,#+15
+   \       0x50   0x4668             MOV      R0,SP
+   \       0x52   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x54   0x....'....        BL       setupSoftwareIRQ
+    791                returnValue = FALSE;
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0x0006             MOVS     R6,R0
+   \       0x5C   0xE002             B        ??flashBlockProgram8bytes_3
+    792              } else
+    793              {
+    794                flash_buffer_head_u8++;
+   \                     ??flashBlockProgram8bytes_2: (+1)
+   \       0x5E   0x7828             LDRB     R0,[R5, #+0]
+   \       0x60   0x1C40             ADDS     R0,R0,#+1
+   \       0x62   0x7028             STRB     R0,[R5, #+0]
+    795              }
+    796            }
+   \                     ??flashBlockProgram8bytes_3: (+1)
+   \       0x64   0x1C64             ADDS     R4,R4,#+1
+   \       0x66   0xE7D3             B        ??flashBlockProgram8bytes_0
+    797            // Lock the Flash to disable the flash control register access (recommended to protect the FLASH memory against possible unwanted operation) 
+    798            HAL_FLASH_Lock();
+   \                     ??flashBlockProgram8bytes_1: (+1)
+   \       0x68   0x....'....        BL       HAL_FLASH_Lock
+    799            return returnValue;
+   \       0x6C   0x0030             MOVS     R0,R6
+   \       0x6E   0xB2C0             UXTB     R0,R0
+   \       0x70   0xB005             ADD      SP,SP,#+20
+   \       0x72   0xBDF0             POP      {R4-R7,PC}       ;; return
+    800          }
+    801          
+    802          /**
+    803          * @brief  Get address of a setting in flash memory
+    804          * @param  module_id_u8                 The function caller module ID in case error occur within this function
+    805          *         *module_address_ptr       Module settings strucuture address
+    806          *         *setting_address_ptr      Address of setting in the structure
+    807          * @retval setting_address_flash_ptr Address of setting in flash memory
+    808          */
+
+   \                                 In section .text, align 2, keep-with-next
+    809          uint32_t flashGetSettingAddress(uint8_t module_id_u8, uint8_t *module_address_ptr, uint8_t *setting_address_ptr)
+    810          {
+   \                     flashGetSettingAddress: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+    811            uint16_t offset_u16 = 0;
+   \        0x4   0x2400             MOVS     R4,#+0
+    812            uint32_t module_falsh_address_ptr;
+    813            uint32_t setting_address_flash_ptr;  
+    814            module_falsh_address_ptr = flash_settings_index[module_id_u8].module_flash_settings_address_ptr;
+   \        0x6   0x....             LDR      R0,??DataTable16
+   \        0x8   0x001D             MOVS     R5,R3
+   \        0xA   0xB2ED             UXTB     R5,R5
+   \        0xC   0x2610             MOVS     R6,#+16
+   \        0xE   0x4375             MULS     R5,R6,R5
+   \       0x10   0x1940             ADDS     R0,R0,R5
+   \       0x12   0x68C5             LDR      R5,[R0, #+12]
+    815            offset_u16 = setting_address_ptr - module_address_ptr ;
+   \       0x14   0x0010             MOVS     R0,R2
+   \       0x16   0x000E             MOVS     R6,R1
+   \       0x18   0x1B86             SUBS     R6,R0,R6
+    816            setting_address_flash_ptr = module_falsh_address_ptr + offset_u16;
+   \       0x1A   0x0030             MOVS     R0,R6
+   \       0x1C   0xB280             UXTH     R0,R0
+   \       0x1E   0x1828             ADDS     R0,R5,R0
+    817            return(setting_address_flash_ptr);
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+    818          }
+    819          
+    820          /**
+    821          * @brief  Check if flash is empty by looking at the CRC
+    822          * @param  module_id_u8                 The function caller module ID in case error occur within this function
+    823          *         *module_address_ptr       Module settings strucuture address
+    824          *         *setting_address_ptr      Address of setting in the structure
+    825          * @retval setting_address_flash_ptr Address of setting in flash memory
+    826          */
+
+   \                                 In section .text, align 2, keep-with-next
+    827          uint8_t check_flash_empty(uint32_t page_start_address_u32, uint16_t page_size_u16)
+    828          {
+   \                     check_flash_empty: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+    829            uint8_t *crc_address_u32;
+    830            uint64_t crc_falsh_data_u64= 0; 
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x2500             MOVS     R5,#+0
+    831            crc_address_u32 = (uint8_t *)(page_start_address_u32 + page_size_u16 - 8); // Last 4 bytes is CRC
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x8800             LDRH     R0,[R0, #+0]
+   \        0xC   0x183E             ADDS     R6,R7,R0
+   \        0xE   0x3E08             SUBS     R6,R6,#+8
+    832            crc_falsh_data_u64 = ((uint64_t)*crc_address_u32) << 56       + ((uint64_t)*(crc_address_u32 + 1)) << 48 + 
+    833                                 ((uint64_t)*(crc_address_u32 + 2)) << 40 + ((uint64_t)*(crc_address_u32 + 3)) << 32 + 
+    834                                 ((uint64_t)*(crc_address_u32 + 4)) << 24 + ((uint64_t)*(crc_address_u32 + 5)) << 16 +
+    835                                 ((uint64_t)*(crc_address_u32 + 6)) << 8  + ((uint64_t)*(crc_address_u32 + 7))  ;
+   \       0x10   0x7830             LDRB     R0,[R6, #+0]
+   \       0x12   0x2100             MOVS     R1,#+0
+   \       0x14   0x7872             LDRB     R2,[R6, #+1]
+   \       0x16   0x3238             ADDS     R2,R2,#+56
+   \       0x18   0x....'....        BL       __aeabi_llsl
+   \       0x1C   0x78B2             LDRB     R2,[R6, #+2]
+   \       0x1E   0x3230             ADDS     R2,R2,#+48
+   \       0x20   0x....'....        BL       __aeabi_llsl
+   \       0x24   0x78F2             LDRB     R2,[R6, #+3]
+   \       0x26   0x3228             ADDS     R2,R2,#+40
+   \       0x28   0x....'....        BL       __aeabi_llsl
+   \       0x2C   0x7932             LDRB     R2,[R6, #+4]
+   \       0x2E   0x3220             ADDS     R2,R2,#+32
+   \       0x30   0x....'....        BL       __aeabi_llsl
+   \       0x34   0x7972             LDRB     R2,[R6, #+5]
+   \       0x36   0x3218             ADDS     R2,R2,#+24
+   \       0x38   0x....'....        BL       __aeabi_llsl
+   \       0x3C   0x79B2             LDRB     R2,[R6, #+6]
+   \       0x3E   0x3210             ADDS     R2,R2,#+16
+   \       0x40   0x....'....        BL       __aeabi_llsl
+   \       0x44   0x79F2             LDRB     R2,[R6, #+7]
+   \       0x46   0x3208             ADDS     R2,R2,#+8
+   \       0x48   0x....'....        BL       __aeabi_llsl
+   \       0x4C   0x0002             MOVS     R2,R0
+   \       0x4E   0x000B             MOVS     R3,R1
+    836            if( crc_falsh_data_u64 == 0xFFFFFFFF)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x54   0x2100             MOVS     R1,#+0
+   \       0x56   0x428B             CMP      R3,R1
+   \       0x58   0xD103             BNE      ??check_flash_empty_0
+   \       0x5A   0x4282             CMP      R2,R0
+   \       0x5C   0xD101             BNE      ??check_flash_empty_0
+    837            {
+    838              return(FLASH_EMPTY); 
+   \       0x5E   0x2001             MOVS     R0,#+1
+   \       0x60   0xE000             B        ??check_flash_empty_1
+    839            }
+    840            else
+    841            {
+    842              return(FLASH_NOT_EMPTY);  
+   \                     ??check_flash_empty_0: (+1)
+   \       0x62   0x2002             MOVS     R0,#+2
+   \                     ??check_flash_empty_1: (+1)
+   \       0x64   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    843            }
+    844            
+    845          }
+    846          
+    847          /**
+    848          * @brief  Write CRC32 and flash version to flash
+    849          * @param  module_id_u8       The function caller module ID in case error occur within this function
+    850          *         _TopageAddress  The starting address of the sink flash page/s
+    851          * @retval successful
+    852          */
+
+   \                                 In section .text, align 2, keep-with-next
+    853          uint8_t flashWriteCRC32Version(uint8_t module_id_u8, uint32_t _TopageAddress)
+    854          {
+   \                     flashWriteCRC32Version: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+   \        0x4   0x0007             MOVS     R7,R0
+   \        0x6   0x000E             MOVS     R6,R1
+    855            uint8_t returnValue = TRUE;
+   \        0x8   0x2401             MOVS     R4,#+1
+    856            HAL_FLASH_Unlock();
+   \        0xA   0x....'....        BL       HAL_FLASH_Unlock
+    857            
+    858            uint32_t uwCRCValue_u32 = Calculate_CRC32((uint32_t)((FLASH_PAGE_SIZE * NUMBER_OF_FLASH_PAGES) - 2) , (unsigned char*)_TopageAddress);    
+                                                             ^
+Warning[Pe069]: integer conversion resulted in truncation
+   \        0xE   0x0031             MOVS     R1,R6
+   \       0x10   0x20FE             MOVS     R0,#+254
+   \       0x12   0x....'....        BL       Calculate_CRC32
+   \       0x16   0x0005             MOVS     R5,R0
+    859            //put calculated CRC back to the last word of the page
+    860            uint64_t data_u64 = ((uint64_t)uwCRCValue_u32 << 32) + flashSettingsVersion_u32; // Flash writes MSB LSB in senond and first address resp
+   \       0x18   0xAA04             ADD      R2,SP,#+16
+   \       0x1A   0x4694             MOV      R12,R2
+   \       0x1C   0x0028             MOVS     R0,R5
+   \       0x1E   0x2100             MOVS     R1,#+0
+   \       0x20   0x0001             MOVS     R1,R0
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x0002             MOVS     R2,R0
+   \       0x26   0x000B             MOVS     R3,R1
+   \       0x28   0x....             LDR      R0,??DataTable18_4
+   \       0x2A   0x6800             LDR      R0,[R0, #+0]
+   \       0x2C   0x2100             MOVS     R1,#+0
+   \       0x2E   0x1880             ADDS     R0,R0,R2
+   \       0x30   0x4159             ADCS     R1,R1,R3
+   \       0x32   0x4662             MOV      R2,R12
+   \       0x34   0xC203             STM      R2!,{R0,R1}
+   \       0x36   0x3A08             SUBS     R2,R2,#+8
+    861            uint16_t offset_u16 = _TopageAddress + PAGE_SIZE - 8; // last 8 bytes are FLASH_VERSION (4 bytes) + CRC (4 bytes)
+   \       0x38   0x4668             MOV      R0,SP
+   \       0x3A   0x0031             MOVS     R1,R6
+   \       0x3C   0x22FF             MOVS     R2,#+255
+   \       0x3E   0x00D2             LSLS     R2,R2,#+3        ;; #+2040
+   \       0x40   0x1889             ADDS     R1,R1,R2
+   \       0x42   0x8101             STRH     R1,[R0, #+8]
+    862            if (!HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, offset_u16, data_u64) == HAL_OK) //write 64bit data
+   \       0x44   0xA804             ADD      R0,SP,#+16
+   \       0x46   0xC80C             LDM      R0!,{R2,R3}
+   \       0x48   0x3808             SUBS     R0,R0,#+8
+   \       0x4A   0x4668             MOV      R0,SP
+   \       0x4C   0x8901             LDRH     R1,[R0, #+8]
+   \       0x4E   0x2001             MOVS     R0,#+1
+   \       0x50   0x....'....        BL       HAL_FLASH_Program
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD00C             BEQ      ??flashWriteCRC32Version_0
+    863            {
+    864              // Error occurred while writing data in Flash memory.                                                                 
+    865              setupSoftwareIRQ(module_id_u8, MODULE_ERR_LOGHANDLE, 0xE4, 0x00, 0x00, NULL);     //report the error address
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0x9001             STR      R0,[SP, #+4]
+   \       0x5C   0x2000             MOVS     R0,#+0
+   \       0x5E   0x9000             STR      R0,[SP, #+0]
+   \       0x60   0x2300             MOVS     R3,#+0
+   \       0x62   0x22E4             MOVS     R2,#+228
+   \       0x64   0x210F             MOVS     R1,#+15
+   \       0x66   0x0038             MOVS     R0,R7
+   \       0x68   0xB2C0             UXTB     R0,R0
+   \       0x6A   0x....'....        BL       setupSoftwareIRQ
+    866              returnValue = FALSE;
+   \       0x6E   0x2000             MOVS     R0,#+0
+   \       0x70   0x0004             MOVS     R4,R0
+    867            }
+    868            
+    869            // Lock the Flash to disable the flash control register access (recommended to protect the FLASH memory against possible unwanted operation) 
+    870            HAL_FLASH_Lock();
+   \                     ??flashWriteCRC32Version_0: (+1)
+   \       0x72   0x....'....        BL       HAL_FLASH_Lock
+    871            return returnValue;
+   \       0x76   0x0020             MOVS     R0,R4
+   \       0x78   0xB2C0             UXTB     R0,R0
+   \       0x7A   0xB007             ADD      SP,SP,#+28
+   \       0x7C   0xBDF0             POP      {R4-R7,PC}       ;; return
+    872          }
+    873          
+
+   \                                 In section .bss, align 2
+    874          uint16_t value_u16 = 0;
+   \                     value_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .text, align 2, keep-with-next
+    875          void getSettingsFromFalsh(uint8_t module_id_u8)
+    876          { // Get setting from flash and update the RAM
+   \                     getSettingsFromFalsh: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+    877            uint16_t length_u16 = 0; // Lenght of module data in falsh 
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x000A             MOVS     R2,R1
+    878            uint32_t module_falsh_address_ptr;  // Address of structure in FALSH      
+    879            uint8_t *module_settings_struct_address_ptr; // Address of structure in RAM
+    880            module_falsh_address_ptr = flash_settings_index[module_id_u8].module_flash_settings_address_ptr;
+   \        0x6   0x....             LDR      R3,??DataTable18_5
+   \        0x8   0x0004             MOVS     R4,R0
+   \        0xA   0xB2E4             UXTB     R4,R4
+   \        0xC   0x2510             MOVS     R5,#+16
+   \        0xE   0x436C             MULS     R4,R5,R4
+   \       0x10   0x191C             ADDS     R4,R3,R4
+   \       0x12   0x68E4             LDR      R4,[R4, #+12]
+    881            module_settings_struct_address_ptr = flash_settings_index[module_id_u8].module_settings_address_ptr;
+   \       0x14   0x0005             MOVS     R5,R0
+   \       0x16   0xB2ED             UXTB     R5,R5
+   \       0x18   0x2610             MOVS     R6,#+16
+   \       0x1A   0x4375             MULS     R5,R6,R5
+   \       0x1C   0x195D             ADDS     R5,R3,R5
+   \       0x1E   0x68AD             LDR      R5,[R5, #+8]
+    882            length_u16 = flash_settings_index[module_id_u8].module_settings_size_u16;
+   \       0x20   0x0007             MOVS     R7,R0
+   \       0x22   0xB2FF             UXTB     R7,R7
+   \       0x24   0x2610             MOVS     R6,#+16
+   \       0x26   0x4377             MULS     R7,R6,R7
+   \       0x28   0x19DB             ADDS     R3,R3,R7
+   \       0x2A   0x889B             LDRH     R3,[R3, #+4]
+    883            
+    884            // Copy each byte info RAM from Flash
+    885            for (uint16_t index_u16 = 0; index_u16 < length_u16; index_u16++)
+   \                     ??getSettingsFromFalsh_0: (+1)
+   \       0x2C   0x000A             MOVS     R2,R1
+   \       0x2E   0x001E             MOVS     R6,R3
+   \       0x30   0xB292             UXTH     R2,R2
+   \       0x32   0xB2B6             UXTH     R6,R6
+   \       0x34   0x42B2             CMP      R2,R6
+   \       0x36   0xD207             BCS      ??getSettingsFromFalsh_1
+    886            {
+    887               *(module_settings_struct_address_ptr + index_u16) = *((uint8_t *)module_falsh_address_ptr + index_u16); // Copy data from falsh into RAM
+   \       0x38   0x000A             MOVS     R2,R1
+   \       0x3A   0xB292             UXTH     R2,R2
+   \       0x3C   0x5CA2             LDRB     R2,[R4, R2]
+   \       0x3E   0x000E             MOVS     R6,R1
+   \       0x40   0xB2B6             UXTH     R6,R6
+   \       0x42   0x55AA             STRB     R2,[R5, R6]
+    888            }
+   \       0x44   0x1C49             ADDS     R1,R1,#+1
+   \       0x46   0xE7F1             B        ??getSettingsFromFalsh_0
+    889          }
+   \                     ??getSettingsFromFalsh_1: (+1)
+   \       0x48   0xBDF0             POP      {R4-R7,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     is_flashInitComplete
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     is_flashUpdate
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     flash_status_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x0800'F000        DC32     0x800f000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x0800'F800        DC32     0x800f800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     flash_AnalogAmpsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x....'....        DC32     address_value_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x....'....        DC32     EraseInitStruct
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     Address
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x0000'07FE        DC32     0x7fe
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x....'....        DC32     flashBuf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x....'....        DC32     Flash_BufHead
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x....'....        DC32     Flash_BufTail
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x....'....        DC32     flash_buffer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0x....'....        DC32     flash_buffer_head_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0x....'....        DC32     flash_buffer_tail_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0x....'....        DC32     current_Index_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0x....'....        DC32     flash_settings_index
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x....'....        DC32     flash_AnalogVoltsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_5:
+   \        0x0   0x....'....        DC32     flash_AnalogAmpsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \        0x0   0x....'....        DC32     flash_DigitalInputsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \        0x0   0x....'....        DC32     flash_DigitalOutputsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0x....'....        DC32     flash_ModbusControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \        0x0   0x....'....        DC32     flash_MotorComControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0x....'....        DC32     flash_MotorDemandMuxControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0x....'....        DC32     flash_PwmInputControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15:
+   \        0x0   0x....'....        DC32     flash_GpioControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \        0x0   0x....'....        DC32     flash_settings_index
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17:
+   \        0x0   0x0800'F000        DC32     0x800f000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable17_1:
+   \        0x0   0x0800'F801        DC32     0x800f801
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18:
+   \        0x0   0x....'....        DC32     flash_buffer_tail_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_1:
+   \        0x0   0x....'....        DC32     flash_buffer_head_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_2:
+   \        0x0   0x....'....        DC32     flash_buffer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_3:
+   \        0x0   0x0800'F7F9        DC32     0x800f7f9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_4:
+   \        0x0   0x....'....        DC32     flashSettingsVersion_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable18_5:
+   \        0x0   0x....'....        DC32     flash_settings_index
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   FlashBufDeRegistered
+        24   -> FlashFlushBuf
+      16   FlashBufInit
+      32   FlashDataSet
+        32   -> FlashBufDeRegistered
+        32   -> IsFlashBufFull
+       8   FlashFlushBuf
+       0   FlashRead
+      16   FlashRead64Bits
+      16   Flash_Buf_Init
+      24   Get_Flash_Index
+        24   -> getProcessInfoIndex
+        24 __aeabi_idivmod
+        24 __aeabi_uread4
+       4   IsFlashBufFull
+       0   Reg2Ram
+      24   check_flash_empty
+        24 __aeabi_llsl
+      32   copy_Data_To_Buffer
+        32 __aeabi_llsl
+      48   flashBlockProgram
+        48   -> HAL_FLASH_Lock
+        48   -> HAL_FLASH_Program
+        48   -> HAL_FLASH_Unlock
+        48   -> setupSoftwareIRQ
+      40   flashBlockProgram8bytes
+        40   -> HAL_FLASH_Lock
+        40   -> HAL_FLASH_Program
+        40   -> HAL_FLASH_Unlock
+        40   -> setupSoftwareIRQ
+      12   flashGetSettingAddress
+      32   flashPageCopy
+        32   -> FlashRead64Bits
+        32   -> HAL_FLASH_Lock
+        32   -> HAL_FLASH_Program
+        32   -> HAL_FLASH_Unlock
+        32   -> setupSoftwareIRQ
+      48   flashPageErase
+        48   -> HAL_FLASHEx_Erase
+        48   -> HAL_FLASH_Lock
+        48   -> HAL_FLASH_Unlock
+        48   -> __aeabi_f2uiz
+        48   -> __aeabi_fdiv
+        48   -> __aeabi_ui2f
+        48   -> setupSoftwareIRQ
+      64   flashPageUpdate
+        64   -> Calculate_CRC
+        64   -> FlashBufDeRegistered
+        64   -> FlashRead64Bits
+        64   -> HAL_FLASH_Lock
+        64   -> HAL_FLASH_Program
+        64   -> HAL_FLASH_Unlock
+        64   -> setupSoftwareIRQ
+      48   flashWriteCRC32Version
+        48   -> Calculate_CRC32
+        48   -> HAL_FLASH_Lock
+        48   -> HAL_FLASH_Program
+        48   -> HAL_FLASH_Unlock
+        48   -> setupSoftwareIRQ
+      20   getSettingsFromFalsh
+      32   init_Flash_Settings
+        32   -> Flash_Buf_Init
+        32   -> copy_Data_To_Buffer
+        32   -> flashBlockProgram8bytes
+        32 __aeabi_idiv
+      24   isFlashCRCValid
+        24   -> Calculate_CRC
+        24   -> FlashRead64Bits
+      40   moduleFlash_u32
+        40   -> Get_Flash_Index
+        40   -> check_flash_empty
+        40   -> flashGetSettingAddress
+        40   -> flashPageErase
+        40   -> flashWriteCRC32Version
+        40   -> getProcessInfoIndex
+        40   -> init_Flash_Settings
+      32   update_Flash_Settings
+        32   -> FlashBufInit
+        32   -> copy_Data_To_Buffer
+        32   -> flashBlockProgram8bytes
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable15
+       4  ??DataTable16
+       4  ??DataTable17
+       4  ??DataTable17_1
+       4  ??DataTable18
+       4  ??DataTable18_1
+       4  ??DataTable18_2
+       4  ??DataTable18_3
+       4  ??DataTable18_4
+       4  ??DataTable18_5
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable6
+       4  Address
+      12  EraseInitStruct
+     102  FlashBufDeRegistered
+      62  FlashBufInit
+      82  FlashDataSet
+      94  FlashFlushBuf
+      20  FlashRead
+     136  FlashRead64Bits
+       1  Flash_BufHead
+       1  Flash_BufTail
+      62  Flash_Buf_Init
+     818  Get_Flash_Index
+      40  IsFlashBufFull
+       1  MemoryProgramStatus
+       6  Reg2Ram
+       4  address_value_ptr
+     102  check_flash_empty
+      88  copy_Data_To_Buffer
+       2  current_Index_u16
+     240  flashBlockProgram
+     116  flashBlockProgram8bytes
+     320  flashBuf
+      36  flashGetSettingAddress
+     106  flashPageCopy
+     104  flashPageErase
+     212  flashPageUpdate
+       4  flashSettingsVersion_u32
+     126  flashWriteCRC32Version
+       4  flash_AnalogAmpsControl_ptr
+       4  flash_AnalogVoltsControl_ptr
+       4  flash_DigitalInputsControl_ptr
+       4  flash_DigitalOutputsControl_ptr
+       4  flash_GpioControl_ptr
+       4  flash_ModbusControl_ptr
+       4  flash_MotorComControl_ptr
+       4  flash_MotorDemandMuxControl_ptr
+       4  flash_PwmInputControl_ptr
+     160  flash_buffer
+       1  flash_buffer_head_u8
+       1  flash_buffer_tail_u8
+     272  flash_settings_index
+       1  flash_status_u8
+      74  getSettingsFromFalsh
+     272  init_Flash_Settings
+      60  isFlashCRCValid
+       1  is_flashInitComplete
+       1  is_flashUpdate
+     200  moduleFlash_u32
+       1  readData
+     152  update_Flash_Settings
+       2  value_u16
+
+ 
+   820 bytes in section .bss
+     5 bytes in section .data
+ 3'466 bytes in section .text
+ 
+ 3'466 bytes of CODE memory
+   825 bytes of DATA memory
+
+Errors: none
+Warnings: 2

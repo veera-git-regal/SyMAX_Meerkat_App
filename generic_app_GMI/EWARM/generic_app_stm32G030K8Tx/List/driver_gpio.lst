@@ -1,0 +1,1258 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:39
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_gpio.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWC1D3.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_gpio.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\driver_gpio.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\driver_gpio.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  1
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_gpio.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    drv_gpio.c 
+      4            * @author  Pamela Lee
+      5            * @brief   Main Driver function/s for GPIO setup for particular port/s
+      6            * @details    
+      7            ********************************************************************************************************************************
+      8            */
+      9          
+     10          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     11          #include "driver_gpio.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_GPIO_ResetOutputPin(GPIO_TypeDef *, uint32_t)
+   \                     LL_GPIO_ResetOutputPin: (+1)
+   \        0x0   0x6281             STR      R1,[R0, #+40]
+   \        0x2   0x4770             BX       LR               ;; return
+     12          #include "main.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_IOP_GRP1_EnableClock(uint32_t)
+   \                     LL_IOP_GRP1_EnableClock: (+1)
+   \        0x0   0xB081             SUB      SP,SP,#+4
+   \        0x2   0x....             LDR      R1,??DataTable9  ;; 0x40021034
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x4302             ORRS     R2,R2,R0
+   \        0x8   0x600A             STR      R2,[R1, #+0]
+   \        0xA   0x6809             LDR      R1,[R1, #+0]
+   \        0xC   0x4001             ANDS     R1,R1,R0
+   \        0xE   0x9100             STR      R1,[SP, #+0]
+   \       0x10   0x9900             LDR      R1,[SP, #+0]
+   \       0x12   0xB001             ADD      SP,SP,#+4
+   \       0x14   0x4770             BX       LR               ;; return
+     13          #include "macros.h"
+     14          
+     15          #include <stdio.h>
+     16          
+     17          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     18          extern ProcessInfo processInfoTable[];
+     19          static void MX_GPIO_Init(void);
+     20          static void MX_TIM3_Init(void);
+     21          
+
+   \                                 In section .bss, align 4
+     22          uint32_t pwmPeriod_u32 = 0;
+   \                     pwmPeriod_u32:
+   \        0x0                      DS8 4
+     23          
+     24          typedef struct{
+     25            GPIO_TypeDef *gpioPort;
+     26            uint16_t pin;
+     27          }Gpio_Ports_Pins;
+     28          
+     29          // GPIO Inputs ports/pins
+     30          #if HARDWARE_VERSION == HARDWARE_VERSION_SYMAX_SRI
+
+   \                                 In section .data, align 4
+     31          Gpio_Ports_Pins gpioInputPortsPins[] = {
+   \                     gpioInputPortsPins:
+   \        0x0   0x5000'0400        DC32 0x5000'0400
+   \        0x4   0x0008             DC16 8
+   \        0x6                      DS8 2
+   \        0x8   0x5000'0800        DC32 0x5000'0800
+   \        0xC   0x8000             DC16 32'768
+   \        0xE                      DS8 2
+   \       0x10   0x5000'0800        DC32 0x5000'0800
+   \       0x14   0x4000             DC16 16'384
+   \       0x16                      DS8 2
+   \       0x18   0x5000'0400        DC32 0x5000'0400
+   \       0x1C   0x0200             DC16 512
+   \       0x1E                      DS8 2
+   \       0x20   0x5000'0000        DC32 0x5000'0000
+   \       0x24   0x0100             DC16 256
+   \       0x26                      DS8 2
+     32            {DIR_ROT_GPIO_Port, DIR_ROT_Pin},
+     33            {DIN1_GPIO_Port, DIN1_Pin},
+     34            {DIN2_GPIO_Port, DIN2_Pin},
+     35            {DIN3_GPIO_Port, DIN3_Pin},
+     36            {PWM_IN_GPIO_Port, PWM_IN_Pin},
+     37          };
+     38          #else
+     39          // GPIO Inputs ports/pins
+     40          Gpio_Ports_Pins gpioInputPortsPins[] = {
+     41            {DIN1_GPIO_Port, DIN1_Pin},
+     42            {DIN2_GPIO_Port, DIN2_Pin },
+     43            {DIN3_GPIO_Port, DIN3_Pin},
+     44            {PWM_IN_GPIO_Port, PWM_IN_Pin},
+     45          };
+     46          #endif
+     47          
+     48          // GPIO Outputs ports/pins
+
+   \                                 In section .data, align 4
+     49          Gpio_Ports_Pins gpioOutputPortsPins[] = {
+   \                     gpioOutputPortsPins:
+   \        0x0   0x5000'0400        DC32 0x5000'0400
+   \        0x4   0x0020             DC16 32
+   \        0x6                      DS8 2
+   \        0x8   0x5000'0400        DC32 0x5000'0400
+   \        0xC   0x0001             DC16 1
+   \        0xE                      DS8 2
+   \       0x10   0x5000'0400        DC32 0x5000'0400
+   \       0x14   0x0002             DC16 2
+   \       0x16                      DS8 2
+   \       0x18   0x5000'0400        DC32 0x5000'0400
+   \       0x1C   0x0010             DC16 16
+   \       0x1E                      DS8 2
+   \       0x20   0x5000'0000        DC32 0x5000'0000
+   \       0x24   0x1000             DC16 4'096
+   \       0x26                      DS8 2
+     50            {DOUT1_GPIO_Port, DOUT1_Pin},
+     51            {LED_ONBOARD_GPIO_Port, LED_ONBOARD_Pin },
+     52            {LED_OUT_GPIO_Port, LED_OUT_Pin},
+     53            {RELAY_OUT_GPIO_Port, RELAY_OUT_Pin},
+     54            {MODBUS_EN_GPIO_Port, MODBUS_EN_Pin},
+     55          };
+     56          
+     57          /**
+     58            ********************************************************************************************************************************
+     59            * @brief   GPIO Initialization Function
+     60            * @details 
+     61            * @param   None
+     62            * @return  None
+     63            ********************************************************************************************************************************
+     64          */
+
+   \                                 In section .text, align 2, keep-with-next
+     65          static void MX_GPIO_Init(void)
+     66          {
+   \                     MX_GPIO_Init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+   \        0x4   0x2218             MOVS     R2,#+24
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x....'....        BL       memset
+     67            LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+     68          
+     69            /* GPIO Ports Clock Enable */
+     70            LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOB);
+   \        0xE   0x2002             MOVS     R0,#+2
+   \       0x10   0x....'....        BL       LL_IOP_GRP1_EnableClock
+     71            LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOC);
+   \       0x14   0x2004             MOVS     R0,#+4
+   \       0x16   0x....'....        BL       LL_IOP_GRP1_EnableClock
+     72            LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x....'....        BL       LL_IOP_GRP1_EnableClock
+     73          
+     74            /**/
+     75            LL_GPIO_ResetOutputPin(LED_ONBOARD_GPIO_Port, LED_ONBOARD_Pin);
+   \       0x20   0x....             LDR      R6,??DataTable9_1  ;; 0x50000400
+   \       0x22   0x2101             MOVS     R1,#+1
+   \       0x24   0x0030             MOVS     R0,R6
+   \       0x26   0x....'....        BL       LL_GPIO_ResetOutputPin
+     76          
+     77            /**/
+     78            LL_GPIO_ResetOutputPin(LED_OUT_GPIO_Port, LED_OUT_Pin);
+   \       0x2A   0x2102             MOVS     R1,#+2
+   \       0x2C   0x0030             MOVS     R0,R6
+   \       0x2E   0x....'....        BL       LL_GPIO_ResetOutputPin
+     79          
+     80            /**/
+     81            LL_GPIO_ResetOutputPin(RELAY_OUT_GPIO_Port, RELAY_OUT_Pin);
+   \       0x32   0x2110             MOVS     R1,#+16
+   \       0x34   0x0030             MOVS     R0,R6
+   \       0x36   0x....'....        BL       LL_GPIO_ResetOutputPin
+     82          
+     83            // /**/    
+     84            // GPIO_InitStruct.Pin = SPI1_MISO_Pin;
+     85            // GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+     86            // GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+     87            // GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+     88            // GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+     89            // GPIO_InitStruct.Alternate = SPI1_GPIO_AF;
+     90            // LL_GPIO_Init(SPI1_MISO_Port, &GPIO_InitStruct);
+     91          
+     92            // /**/
+     93            // GPIO_InitStruct.Pin = SPI1_MOSI_Pin;
+     94            // GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+     95            // GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+     96            // GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+     97            // GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+     98            // GPIO_InitStruct.Alternate = SPI1_GPIO_AF;
+     99            // LL_GPIO_Init(SPI1_MOSI_Port, &GPIO_InitStruct);
+    100            
+    101            //  /**/
+    102            // GPIO_InitStruct.Pin = SPI1_SCK_Pin;
+    103            // GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+    104            // GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+    105            // GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+    106            // GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+    107            // GPIO_InitStruct.Alternate = SPI1_GPIO_AF;
+    108            // LL_GPIO_Init(SPI1_SCK_Port, &GPIO_InitStruct);
+    109          
+    110          #if HARDWARE_VERSION == HARDWARE_VERSION_SYMAX_SRI
+    111            GPIO_InitStruct.Pin = DIR_ROT_Pin;
+   \       0x3A   0x2008             MOVS     R0,#+8
+   \       0x3C   0x9000             STR      R0,[SP, #+0]
+    112            GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+   \       0x3E   0x2400             MOVS     R4,#+0
+   \       0x40   0x9401             STR      R4,[SP, #+4]
+    113            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x42   0x9404             STR      R4,[SP, #+16]
+    114            LL_GPIO_Init(DIR_ROT_GPIO_Port, &GPIO_InitStruct);  
+   \       0x44   0x4669             MOV      R1,SP
+   \       0x46   0x0030             MOVS     R0,R6
+   \       0x48   0x....'....        BL       LL_GPIO_Init
+    115          #endif
+    116            
+    117            /**/
+    118            GPIO_InitStruct.Pin = DIN1_Pin;
+   \       0x4C   0x2080             MOVS     R0,#+128
+   \       0x4E   0x0200             LSLS     R0,R0,#+8        ;; #+32768
+   \       0x50   0x9000             STR      R0,[SP, #+0]
+    119            GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+   \       0x52   0x9401             STR      R4,[SP, #+4]
+    120            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x54   0x9404             STR      R4,[SP, #+16]
+    121            LL_GPIO_Init(DIN1_GPIO_Port, &GPIO_InitStruct);
+   \       0x56   0x....             LDR      R5,??DataTable11  ;; 0x50000800
+   \       0x58   0x4669             MOV      R1,SP
+   \       0x5A   0x0028             MOVS     R0,R5
+   \       0x5C   0x....'....        BL       LL_GPIO_Init
+    122          
+    123            /**/
+    124            GPIO_InitStruct.Pin = DIN2_Pin;
+   \       0x60   0x2080             MOVS     R0,#+128
+   \       0x62   0x01C0             LSLS     R0,R0,#+7        ;; #+16384
+   \       0x64   0x9000             STR      R0,[SP, #+0]
+    125            GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+   \       0x66   0x9401             STR      R4,[SP, #+4]
+    126            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x68   0x9404             STR      R4,[SP, #+16]
+    127            LL_GPIO_Init(DIN2_GPIO_Port, &GPIO_InitStruct);
+   \       0x6A   0x4669             MOV      R1,SP
+   \       0x6C   0x0028             MOVS     R0,R5
+   \       0x6E   0x....'....        BL       LL_GPIO_Init
+    128          
+    129            /**/
+    130            GPIO_InitStruct.Pin = DIN3_Pin;
+   \       0x72   0x2080             MOVS     R0,#+128
+   \       0x74   0x0080             LSLS     R0,R0,#+2        ;; #+512
+   \       0x76   0x9000             STR      R0,[SP, #+0]
+    131            GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+   \       0x78   0x9401             STR      R4,[SP, #+4]
+    132            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x7A   0x9404             STR      R4,[SP, #+16]
+    133            LL_GPIO_Init(DIN3_GPIO_Port, &GPIO_InitStruct);
+   \       0x7C   0x4669             MOV      R1,SP
+   \       0x7E   0x0030             MOVS     R0,R6
+   \       0x80   0x....'....        BL       LL_GPIO_Init
+    134          
+    135            /**/
+    136            GPIO_InitStruct.Pin = LED_ONBOARD_Pin;
+   \       0x84   0x2501             MOVS     R5,#+1
+   \       0x86   0x9500             STR      R5,[SP, #+0]
+    137            GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+   \       0x88   0x9501             STR      R5,[SP, #+4]
+    138            GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+   \       0x8A   0x9402             STR      R4,[SP, #+8]
+    139            GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+   \       0x8C   0x9403             STR      R4,[SP, #+12]
+    140            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x8E   0x9404             STR      R4,[SP, #+16]
+    141            LL_GPIO_Init(LED_ONBOARD_GPIO_Port, &GPIO_InitStruct);
+   \       0x90   0x4669             MOV      R1,SP
+   \       0x92   0x0030             MOVS     R0,R6
+   \       0x94   0x....'....        BL       LL_GPIO_Init
+    142           
+    143            /**/
+    144            GPIO_InitStruct.Pin = LED_OUT_Pin;
+   \       0x98   0x2002             MOVS     R0,#+2
+   \       0x9A   0x9000             STR      R0,[SP, #+0]
+    145            GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+   \       0x9C   0x9501             STR      R5,[SP, #+4]
+    146            GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+   \       0x9E   0x9402             STR      R4,[SP, #+8]
+    147            GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+   \       0xA0   0x9403             STR      R4,[SP, #+12]
+    148            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0xA2   0x9404             STR      R4,[SP, #+16]
+    149            LL_GPIO_Init(LED_OUT_GPIO_Port, &GPIO_InitStruct);
+   \       0xA4   0x4669             MOV      R1,SP
+   \       0xA6   0x0030             MOVS     R0,R6
+   \       0xA8   0x....'....        BL       LL_GPIO_Init
+    150          
+    151            /**/
+    152            GPIO_InitStruct.Pin = RELAY_OUT_Pin;
+   \       0xAC   0x2010             MOVS     R0,#+16
+   \       0xAE   0x9000             STR      R0,[SP, #+0]
+    153            GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+   \       0xB0   0x9501             STR      R5,[SP, #+4]
+    154            GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+   \       0xB2   0x9402             STR      R4,[SP, #+8]
+    155            GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+   \       0xB4   0x9403             STR      R4,[SP, #+12]
+    156            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0xB6   0x9404             STR      R4,[SP, #+16]
+    157            LL_GPIO_Init(RELAY_OUT_GPIO_Port, &GPIO_InitStruct);
+   \       0xB8   0x4669             MOV      R1,SP
+   \       0xBA   0x0030             MOVS     R0,R6
+   \       0xBC   0x....'....        BL       LL_GPIO_Init
+    158          }
+   \       0xC0   0xB006             ADD      SP,SP,#+24
+   \       0xC2   0xBD70             POP      {R4-R6,PC}       ;; return
+    159          
+    160          /**
+    161            ********************************************************************************************************************************
+    162            * @brief   GPIO Initialization Function
+    163            * @details Wrapper function for ST GPIO init function
+    164            * @param   None 
+    165            * @return  None
+    166            ********************************************************************************************************************************
+    167          */
+
+   \                                 In section .text, align 2, keep-with-next
+    168          void GPIOInit(void)
+    169          {
+   \                     GPIOInit: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    170            MX_GPIO_Init();  
+   \        0x2   0x....'....        BL       MX_GPIO_Init
+    171          }
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+    172          
+    173          /**
+    174            ********************************************************************************************************************************
+    175            * @brief   Timer 17 init
+    176            * @details Init Timer 17 that is used for PWM output
+    177            * @param   None 
+    178            * @return  None
+    179            ********************************************************************************************************************************
+    180          */
+
+   \                                 In section .text, align 2, keep-with-next
+    181          static void MX_TIM3_Init(void)
+    182          {
+   \                     MX_TIM3_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB0A4             SUB      SP,SP,#+144
+    183            TIM_HandleTypeDef htim3;
+    184            __HAL_RCC_TIM3_CLK_ENABLE();
+   \        0x4   0x2502             MOVS     R5,#+2
+   \        0x6   0x....             LDR      R0,??DataTable11_1  ;; 0x4002103c
+   \        0x8   0x6801             LDR      R1,[R0, #+0]
+   \        0xA   0x4329             ORRS     R1,R1,R5
+   \        0xC   0x6001             STR      R1,[R0, #+0]
+   \        0xE   0x6800             LDR      R0,[R0, #+0]
+   \       0x10   0x4028             ANDS     R0,R0,R5
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+   \       0x14   0x9800             LDR      R0,[SP, #+0]
+   \       0x16   0x2210             MOVS     R2,#+16
+   \       0x18   0x2100             MOVS     R1,#+0
+   \       0x1A   0xA810             ADD      R0,SP,#+64
+   \       0x1C   0x....'....        BL       memset
+   \       0x20   0x220C             MOVS     R2,#+12
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0xA806             ADD      R0,SP,#+24
+   \       0x26   0x....'....        BL       memset
+   \       0x2A   0x221C             MOVS     R2,#+28
+   \       0x2C   0x2100             MOVS     R1,#+0
+   \       0x2E   0xA809             ADD      R0,SP,#+36
+   \       0x30   0x....'....        BL       memset
+    185            TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+    186            TIM_MasterConfigTypeDef sMasterConfig = {0};
+    187            TIM_OC_InitTypeDef sConfigOC = {0};
+    188          
+    189            /* USER CODE BEGIN TIM3_Init 1 */
+    190          
+    191            /* USER CODE END TIM3_Init 1 */
+    192            htim3.Instance = TIM3;
+   \       0x34   0x....             LDR      R0,??DataTable12  ;; 0x40000400
+   \       0x36   0x9014             STR      R0,[SP, #+80]
+    193            htim3.Init.Prescaler = 19;
+   \       0x38   0x2013             MOVS     R0,#+19
+   \       0x3A   0x9015             STR      R0,[SP, #+84]
+    194            htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+   \       0x3C   0x2400             MOVS     R4,#+0
+   \       0x3E   0x9416             STR      R4,[SP, #+88]
+    195            htim3.Init.Period = 1000;
+   \       0x40   0x20FA             MOVS     R0,#+250
+   \       0x42   0x0080             LSLS     R0,R0,#+2        ;; #+1000
+   \       0x44   0x9017             STR      R0,[SP, #+92]
+    196            htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+   \       0x46   0x9418             STR      R4,[SP, #+96]
+    197            htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+   \       0x48   0x2080             MOVS     R0,#+128
+   \       0x4A   0x901A             STR      R0,[SP, #+104]
+    198            if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+   \       0x4C   0xA814             ADD      R0,SP,#+80
+   \       0x4E   0x....'....        BL       HAL_TIM_Base_Init
+   \       0x52   0x2800             CMP      R0,#+0
+   \       0x54   0xD001             BEQ      ??MX_TIM3_Init_0
+    199            {
+    200              Error_Handler();
+   \       0x56   0x....'....        BL       Error_Handler
+    201            }
+    202            sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+   \                     ??MX_TIM3_Init_0: (+1)
+   \       0x5A   0x2080             MOVS     R0,#+128
+   \       0x5C   0x0140             LSLS     R0,R0,#+5        ;; #+4096
+   \       0x5E   0x9010             STR      R0,[SP, #+64]
+    203            if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+   \       0x60   0xA910             ADD      R1,SP,#+64
+   \       0x62   0xA814             ADD      R0,SP,#+80
+   \       0x64   0x....'....        BL       HAL_TIM_ConfigClockSource
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD001             BEQ      ??MX_TIM3_Init_1
+    204            {
+    205              Error_Handler();
+   \       0x6C   0x....'....        BL       Error_Handler
+    206            }
+    207            if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
+   \                     ??MX_TIM3_Init_1: (+1)
+   \       0x70   0xA814             ADD      R0,SP,#+80
+   \       0x72   0x....'....        BL       HAL_TIM_PWM_Init
+   \       0x76   0x2800             CMP      R0,#+0
+   \       0x78   0xD001             BEQ      ??MX_TIM3_Init_2
+    208            {
+    209              Error_Handler();
+   \       0x7A   0x....'....        BL       Error_Handler
+    210            }
+    211            sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+   \                     ??MX_TIM3_Init_2: (+1)
+   \       0x7E   0x9406             STR      R4,[SP, #+24]
+    212            sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+   \       0x80   0x9408             STR      R4,[SP, #+32]
+    213            if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+   \       0x82   0xA906             ADD      R1,SP,#+24
+   \       0x84   0xA814             ADD      R0,SP,#+80
+   \       0x86   0x....'....        BL       HAL_TIMEx_MasterConfigSynchronization
+   \       0x8A   0x2800             CMP      R0,#+0
+   \       0x8C   0xD001             BEQ      ??MX_TIM3_Init_3
+    214            {
+    215              Error_Handler();
+   \       0x8E   0x....'....        BL       Error_Handler
+    216            }
+    217            sConfigOC.OCMode = TIM_OCMODE_PWM1;
+   \                     ??MX_TIM3_Init_3: (+1)
+   \       0x92   0x2060             MOVS     R0,#+96
+   \       0x94   0x9009             STR      R0,[SP, #+36]
+    218            sConfigOC.Pulse = 500;
+   \       0x96   0x20FA             MOVS     R0,#+250
+   \       0x98   0x0040             LSLS     R0,R0,#+1        ;; #+500
+   \       0x9A   0x900A             STR      R0,[SP, #+40]
+    219            sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+   \       0x9C   0x940B             STR      R4,[SP, #+44]
+    220            sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+   \       0x9E   0x940D             STR      R4,[SP, #+52]
+    221            if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+   \       0xA0   0x2204             MOVS     R2,#+4
+   \       0xA2   0xA909             ADD      R1,SP,#+36
+   \       0xA4   0xA814             ADD      R0,SP,#+80
+   \       0xA6   0x....'....        BL       HAL_TIM_PWM_ConfigChannel
+   \       0xAA   0x2800             CMP      R0,#+0
+   \       0xAC   0xD001             BEQ      ??MX_TIM3_Init_4
+    222            {
+    223              Error_Handler();
+   \       0xAE   0x....'....        BL       Error_Handler
+   \                     ??MX_TIM3_Init_4: (+1)
+   \       0xB2   0x2214             MOVS     R2,#+20
+   \       0xB4   0x2100             MOVS     R1,#+0
+   \       0xB6   0xA801             ADD      R0,SP,#+4
+   \       0xB8   0x....'....        BL       memset
+    224            }
+    225            /* USER CODE BEGIN TIM3_Init 2 */
+    226          
+    227            /* USER CODE END TIM3_Init 2 */
+    228            GPIO_InitTypeDef GPIO_InitStruct = {0};
+    229           
+    230            __HAL_RCC_GPIOB_CLK_ENABLE();
+   \       0xBC   0x....             LDR      R0,??DataTable9  ;; 0x40021034
+   \       0xBE   0x6801             LDR      R1,[R0, #+0]
+   \       0xC0   0x4329             ORRS     R1,R1,R5
+   \       0xC2   0x6001             STR      R1,[R0, #+0]
+   \       0xC4   0x6800             LDR      R0,[R0, #+0]
+   \       0xC6   0x4028             ANDS     R0,R0,R5
+   \       0xC8   0x9000             STR      R0,[SP, #+0]
+   \       0xCA   0x9800             LDR      R0,[SP, #+0]
+    231            /**TIM3 GPIO Configuration
+    232            PB5     ------> TIM3_CH2
+    233            */
+    234            GPIO_InitStruct.Pin = DOUT1_Pin;
+   \       0xCC   0x2020             MOVS     R0,#+32
+   \       0xCE   0x9001             STR      R0,[SP, #+4]
+    235            GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+   \       0xD0   0x9502             STR      R5,[SP, #+8]
+    236            GPIO_InitStruct.Pull = GPIO_NOPULL;
+   \       0xD2   0x9403             STR      R4,[SP, #+12]
+    237            GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+   \       0xD4   0x9404             STR      R4,[SP, #+16]
+    238            GPIO_InitStruct.Alternate = DOUT1_LL_GPIO_AF;
+   \       0xD6   0x2001             MOVS     R0,#+1
+   \       0xD8   0x9005             STR      R0,[SP, #+20]
+    239            HAL_GPIO_Init(DOUT1_GPIO_Port, &GPIO_InitStruct);
+   \       0xDA   0xA901             ADD      R1,SP,#+4
+   \       0xDC   0x....             LDR      R0,??DataTable9_1  ;; 0x50000400
+   \       0xDE   0x....'....        BL       HAL_GPIO_Init
+    240           HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);
+   \       0xE2   0x2104             MOVS     R1,#+4
+   \       0xE4   0xA814             ADD      R0,SP,#+80
+   \       0xE6   0x....'....        BL       HAL_TIM_PWM_Start
+    241          }
+   \       0xEA   0xB025             ADD      SP,SP,#+148
+   \       0xEC   0xBD30             POP      {R4,R5,PC}       ;; return
+    242          
+    243          
+    244          /**
+    245            * @brief  Init DOUT1 GPIO
+    246            * @param  Initilize GPIO DOUT1 as digital ouput
+    247            * @param  output_num_u8
+    248            * @retval None
+    249            */
+
+   \                                 In section .text, align 2, keep-with-next
+    250          void Driver_GPIO_Dout1_Init(uint8_t output_num_u8){
+   \                     Driver_GPIO_Dout1_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x2218             MOVS     R2,#+24
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x....'....        BL       memset
+    251            LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+    252            LL_GPIO_ResetOutputPin(DOUT1_GPIO_Port, DOUT1_Pin);
+   \       0x10   0x....             LDR      R5,??DataTable9_1  ;; 0x50000400
+   \       0x12   0x2120             MOVS     R1,#+32
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x....'....        BL       LL_GPIO_ResetOutputPin
+    253            
+    254            if(gpioOutputPortsPins[output_num_u8].pin == DOUT1_Pin)
+   \       0x1A   0x....             LDR      R0,??DataTable13
+   \       0x1C   0x0021             MOVS     R1,R4
+   \       0x1E   0xB2C9             UXTB     R1,R1
+   \       0x20   0x2208             MOVS     R2,#+8
+   \       0x22   0x4351             MULS     R1,R2,R1
+   \       0x24   0x1840             ADDS     R0,R0,R1
+   \       0x26   0x8880             LDRH     R0,[R0, #+4]
+   \       0x28   0x2820             CMP      R0,#+32
+   \       0x2A   0xD10B             BNE      ??Driver_GPIO_Dout1_Init_0
+    255            {
+    256              GPIO_InitStruct.Pin = DOUT1_Pin;
+   \       0x2C   0x2020             MOVS     R0,#+32
+   \       0x2E   0x9000             STR      R0,[SP, #+0]
+    257              GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x9001             STR      R0,[SP, #+4]
+    258              GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+   \       0x34   0x2000             MOVS     R0,#+0
+   \       0x36   0x9002             STR      R0,[SP, #+8]
+    259              GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+   \       0x38   0x9003             STR      R0,[SP, #+12]
+    260              GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x3A   0x9004             STR      R0,[SP, #+16]
+    261              LL_GPIO_Init(DOUT1_GPIO_Port, &GPIO_InitStruct);
+   \       0x3C   0x4669             MOV      R1,SP
+   \       0x3E   0x0028             MOVS     R0,R5
+   \       0x40   0x....'....        BL       LL_GPIO_Init
+    262            }
+    263          }
+   \                     ??Driver_GPIO_Dout1_Init_0: (+1)
+   \       0x44   0xB007             ADD      SP,SP,#+28
+   \       0x46   0xBD30             POP      {R4,R5,PC}       ;; return
+    264          
+    265          /**
+    266            ********************************************************************************************************************************
+    267            * @brief   Read GPIO input state
+    268            * @details Read GPIO input state of GPIO input number output_num_u8
+    269            * @param   input_no_u8
+    270            * @return  None
+    271            ********************************************************************************************************************************
+    272          */
+
+   \                                 In section .text, align 2, keep-with-next
+    273          uint8_t Gpio_Driver_ReadGpioInputState(uint8_t input_no_u8){
+   \                     Gpio_Driver_ReadGpioInputState: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0001             MOVS     R1,R0
+    274            uint8_t bitstatus = PIN_RESET;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x0002             MOVS     R2,R0
+    275            
+    276            /* Check the parameters */
+    277            assert_param(IS_GPIO_PIN(gpioInputPortsPins[input_no_u8].pin));
+    278          
+    279            if ((gpioInputPortsPins[input_no_u8].gpioPort->IDR & gpioInputPortsPins[input_no_u8].pin) != 0x00u)
+   \        0x8   0x....             LDR      R3,??DataTable13_1
+   \        0xA   0x000C             MOVS     R4,R1
+   \        0xC   0xB2E4             UXTB     R4,R4
+   \        0xE   0x2508             MOVS     R5,#+8
+   \       0x10   0x436C             MULS     R4,R5,R4
+   \       0x12   0x591C             LDR      R4,[R3, R4]
+   \       0x14   0x6924             LDR      R4,[R4, #+16]
+   \       0x16   0x000D             MOVS     R5,R1
+   \       0x18   0xB2ED             UXTB     R5,R5
+   \       0x1A   0x2608             MOVS     R6,#+8
+   \       0x1C   0x4375             MULS     R5,R6,R5
+   \       0x1E   0x195B             ADDS     R3,R3,R5
+   \       0x20   0x889B             LDRH     R3,[R3, #+4]
+   \       0x22   0x401C             ANDS     R4,R4,R3
+   \       0x24   0x2C00             CMP      R4,#+0
+   \       0x26   0xD001             BEQ      ??Gpio_Driver_ReadGpioInputState_0
+    280            {
+    281              bitstatus = (uint8_t)PIN_SET;
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0xE7FF             B        ??Gpio_Driver_ReadGpioInputState_1
+    282            }
+    283            else
+    284            {
+    285              bitstatus = (uint8_t)PIN_RESET;
+    286            }
+    287            return bitstatus;  
+   \                     ??Gpio_Driver_ReadGpioInputState_0: (+1)
+   \                     ??Gpio_Driver_ReadGpioInputState_1: (+1)
+   \       0x2C   0xB2C0             UXTB     R0,R0
+   \       0x2E   0xBD70             POP      {R4-R6,PC}       ;; return
+    288          }
+    289          
+    290          /**
+    291            ********************************************************************************************************************************
+    292            * @brief   Read GPIO output state
+    293            * @details Read GPIO output state of GPIO output number output_num_u8
+    294            * @param   output_num_u8
+    295            * @return  None
+    296            ********************************************************************************************************************************
+    297          */
+
+   \                                 In section .text, align 2, keep-with-next
+    298          uint8_t Driver_Gpio_ReadGpioOutputState(uint8_t output_num_u8){
+   \                     Driver_Gpio_ReadGpioOutputState: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0001             MOVS     R1,R0
+    299            uint8_t current_state_u8;
+    300            uint32_t bit_value_u32;
+    301            bit_value_u32 = (gpioOutputPortsPins[output_num_u8].gpioPort->ODR);
+   \        0x4   0x....             LDR      R0,??DataTable13
+   \        0x6   0x000A             MOVS     R2,R1
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x2308             MOVS     R3,#+8
+   \        0xC   0x435A             MULS     R2,R3,R2
+   \        0xE   0x5882             LDR      R2,[R0, R2]
+   \       0x10   0x6952             LDR      R2,[R2, #+20]
+    302            bit_value_u32 &= (gpioOutputPortsPins[output_num_u8].pin);
+   \       0x12   0x000B             MOVS     R3,R1
+   \       0x14   0xB2DB             UXTB     R3,R3
+   \       0x16   0x2408             MOVS     R4,#+8
+   \       0x18   0x4363             MULS     R3,R4,R3
+   \       0x1A   0x18C0             ADDS     R0,R0,R3
+   \       0x1C   0x8880             LDRH     R0,[R0, #+4]
+   \       0x1E   0x4002             ANDS     R2,R2,R0
+    303            if( bit_value_u32 != 0x00u)
+   \       0x20   0x2A00             CMP      R2,#+0
+   \       0x22   0xD001             BEQ      ??Driver_Gpio_ReadGpioOutputState_0
+    304            {
+    305              current_state_u8 = (uint8_t)PIN_SET;
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0xE000             B        ??Driver_Gpio_ReadGpioOutputState_1
+    306            }
+    307            else
+    308            {
+    309              current_state_u8 = (uint8_t)PIN_RESET;
+   \                     ??Driver_Gpio_ReadGpioOutputState_0: (+1)
+   \       0x28   0x2000             MOVS     R0,#+0
+    310            }
+    311            return(current_state_u8);
+   \                     ??Driver_Gpio_ReadGpioOutputState_1: (+1)
+   \       0x2A   0xB2C0             UXTB     R0,R0
+   \       0x2C   0xBD10             POP      {R4,PC}          ;; return
+    312            
+    313          }
+    314          
+    315          /**
+    316            ********************************************************************************************************************************
+    317            * @brief   Toggle the specified GPIO pin.
+    318            * @details 
+    319            * @param   GPIO_Pin specifies the pin to be toggled.
+    320            * @return  None
+    321            ********************************************************************************************************************************
+    322          */
+
+   \                                 In section .text, align 2, keep-with-next
+    323          void Driver_Gpio_TogglePin(uint8_t output_num_u8)//GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin)
+    324          {
+   \                     Driver_Gpio_TogglePin: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    325            /* Check the parameters */
+    326            assert_param(IS_GPIO_PIN(IS_GPIO_PIN(gpioOutputPortsPins[output_num_u8].pin)));
+    327            if (( (gpioOutputPortsPins[output_num_u8].gpioPort->ODR) & (gpioOutputPortsPins[output_num_u8].pin) ) != 0x00u)
+   \        0x2   0x....             LDR      R1,??DataTable13
+   \        0x4   0x0002             MOVS     R2,R0
+   \        0x6   0xB2D2             UXTB     R2,R2
+   \        0x8   0x2308             MOVS     R3,#+8
+   \        0xA   0x435A             MULS     R2,R3,R2
+   \        0xC   0x588A             LDR      R2,[R1, R2]
+   \        0xE   0x6952             LDR      R2,[R2, #+20]
+   \       0x10   0x0003             MOVS     R3,R0
+   \       0x12   0xB2DB             UXTB     R3,R3
+   \       0x14   0x2408             MOVS     R4,#+8
+   \       0x16   0x4363             MULS     R3,R4,R3
+   \       0x18   0x18CB             ADDS     R3,R1,R3
+   \       0x1A   0x889B             LDRH     R3,[R3, #+4]
+   \       0x1C   0x401A             ANDS     R2,R2,R3
+   \       0x1E   0x2A00             CMP      R2,#+0
+   \       0x20   0xD013             BEQ      ??Driver_Gpio_TogglePin_0
+    328            {
+    329              gpioOutputPortsPins[output_num_u8].gpioPort->BRR |= (uint32_t)gpioOutputPortsPins[output_num_u8].pin;
+   \       0x22   0x0002             MOVS     R2,R0
+   \       0x24   0xB2D2             UXTB     R2,R2
+   \       0x26   0x2308             MOVS     R3,#+8
+   \       0x28   0x435A             MULS     R2,R3,R2
+   \       0x2A   0x588A             LDR      R2,[R1, R2]
+   \       0x2C   0x6A92             LDR      R2,[R2, #+40]
+   \       0x2E   0x0003             MOVS     R3,R0
+   \       0x30   0xB2DB             UXTB     R3,R3
+   \       0x32   0x2408             MOVS     R4,#+8
+   \       0x34   0x4363             MULS     R3,R4,R3
+   \       0x36   0x18CB             ADDS     R3,R1,R3
+   \       0x38   0x889B             LDRH     R3,[R3, #+4]
+   \       0x3A   0x431A             ORRS     R2,R2,R3
+   \       0x3C   0x0003             MOVS     R3,R0
+   \       0x3E   0xB2DB             UXTB     R3,R3
+   \       0x40   0x2408             MOVS     R4,#+8
+   \       0x42   0x4363             MULS     R3,R4,R3
+   \       0x44   0x58C9             LDR      R1,[R1, R3]
+   \       0x46   0x628A             STR      R2,[R1, #+40]
+   \       0x48   0xE012             B        ??Driver_Gpio_TogglePin_1
+    330            } else {
+    331              gpioOutputPortsPins[output_num_u8].gpioPort->BSRR |=  (uint32_t)gpioOutputPortsPins[output_num_u8].pin;
+   \                     ??Driver_Gpio_TogglePin_0: (+1)
+   \       0x4A   0x0002             MOVS     R2,R0
+   \       0x4C   0xB2D2             UXTB     R2,R2
+   \       0x4E   0x2308             MOVS     R3,#+8
+   \       0x50   0x435A             MULS     R2,R3,R2
+   \       0x52   0x588A             LDR      R2,[R1, R2]
+   \       0x54   0x6992             LDR      R2,[R2, #+24]
+   \       0x56   0x0003             MOVS     R3,R0
+   \       0x58   0xB2DB             UXTB     R3,R3
+   \       0x5A   0x2408             MOVS     R4,#+8
+   \       0x5C   0x4363             MULS     R3,R4,R3
+   \       0x5E   0x18CB             ADDS     R3,R1,R3
+   \       0x60   0x889B             LDRH     R3,[R3, #+4]
+   \       0x62   0x431A             ORRS     R2,R2,R3
+   \       0x64   0x0003             MOVS     R3,R0
+   \       0x66   0xB2DB             UXTB     R3,R3
+   \       0x68   0x2408             MOVS     R4,#+8
+   \       0x6A   0x4363             MULS     R3,R4,R3
+   \       0x6C   0x58C9             LDR      R1,[R1, R3]
+   \       0x6E   0x618A             STR      R2,[R1, #+24]
+    332            }
+    333          }
+   \                     ??Driver_Gpio_TogglePin_1: (+1)
+   \       0x70   0xBD10             POP      {R4,PC}          ;; return
+    334          
+    335          /**
+    336            ********************************************************************************************************************************
+    337            * @brief   Set GPIO output state
+    338            * @details Set GPIO output to high or low for the GPIO output number output_num_u8
+    339            * @param   output_num_u8, PinState
+    340            * @return  None
+    341            ********************************************************************************************************************************
+    342          */
+
+   \                                 In section .text, align 2, keep-with-next
+    343          void Driver_Gpio_WriteGpioState(uint8_t output_num_u8, uint8_t PinState){
+   \                     Driver_Gpio_WriteGpioState: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    344            
+    345              /* Check the parameters */
+    346            assert_param(IS_GPIO_PIN(gpioOutputPortsPins[output_num_u8].pin));
+    347            assert_param(IS_GPIO_PIN_ACTION(PinState));
+    348            
+    349            if (PinState != PIN_RESET) // Since high state 
+   \        0x2   0x000A             MOVS     R2,R1
+   \        0x4   0xB2D2             UXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD00D             BEQ      ??Driver_Gpio_WriteGpioState_0
+    350            {
+    351              gpioOutputPortsPins[output_num_u8].gpioPort->BSRR = (uint32_t)gpioOutputPortsPins[output_num_u8].pin;
+   \        0xA   0x....             LDR      R2,??DataTable13
+   \        0xC   0x0003             MOVS     R3,R0
+   \        0xE   0xB2DB             UXTB     R3,R3
+   \       0x10   0x2408             MOVS     R4,#+8
+   \       0x12   0x4363             MULS     R3,R4,R3
+   \       0x14   0x18D3             ADDS     R3,R2,R3
+   \       0x16   0x889B             LDRH     R3,[R3, #+4]
+   \       0x18   0x0004             MOVS     R4,R0
+   \       0x1A   0xB2E4             UXTB     R4,R4
+   \       0x1C   0x2508             MOVS     R5,#+8
+   \       0x1E   0x436C             MULS     R4,R5,R4
+   \       0x20   0x5912             LDR      R2,[R2, R4]
+   \       0x22   0x6193             STR      R3,[R2, #+24]
+   \       0x24   0xE00C             B        ??Driver_Gpio_WriteGpioState_1
+    352            }
+    353            else
+    354            {
+    355              gpioOutputPortsPins[output_num_u8].gpioPort->BRR = (uint32_t)gpioOutputPortsPins[output_num_u8].pin;
+   \                     ??Driver_Gpio_WriteGpioState_0: (+1)
+   \       0x26   0x....             LDR      R2,??DataTable13
+   \       0x28   0x0003             MOVS     R3,R0
+   \       0x2A   0xB2DB             UXTB     R3,R3
+   \       0x2C   0x2408             MOVS     R4,#+8
+   \       0x2E   0x4363             MULS     R3,R4,R3
+   \       0x30   0x18D3             ADDS     R3,R2,R3
+   \       0x32   0x889B             LDRH     R3,[R3, #+4]
+   \       0x34   0x0004             MOVS     R4,R0
+   \       0x36   0xB2E4             UXTB     R4,R4
+   \       0x38   0x2508             MOVS     R5,#+8
+   \       0x3A   0x436C             MULS     R4,R5,R4
+   \       0x3C   0x5912             LDR      R2,[R2, R4]
+   \       0x3E   0x6293             STR      R3,[R2, #+40]
+    356            }
+    357          }
+   \                     ??Driver_Gpio_WriteGpioState_1: (+1)
+   \       0x40   0xBD30             POP      {R4,R5,PC}       ;; return
+    358          
+    359          /**
+    360            ********************************************************************************************************************************
+    361            * @brief   Start PWM output
+    362            * @details Initilize TIM3 and enable PWM ouptut
+    363            * @param   None 
+    364            * @return  None
+    365            ********************************************************************************************************************************
+    366          */
+
+   \                                 In section .text, align 2, keep-with-next
+    367          void Driver_Gpio_StartPwmOut(uint8_t output_num_u8){
+   \                     Driver_Gpio_StartPwmOut: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    368            if(gpioOutputPortsPins[output_num_u8].pin == DOUT1_Pin)
+   \        0x4   0x....             LDR      R0,??DataTable13
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0xB2C9             UXTB     R1,R1
+   \        0xA   0x2208             MOVS     R2,#+8
+   \        0xC   0x4351             MULS     R1,R2,R1
+   \        0xE   0x1840             ADDS     R0,R0,R1
+   \       0x10   0x8880             LDRH     R0,[R0, #+4]
+   \       0x12   0x2820             CMP      R0,#+32
+   \       0x14   0xD101             BNE      ??Driver_Gpio_StartPwmOut_0
+    369            {
+    370              MX_TIM3_Init(); // Initilize the timer for PWM output
+   \       0x16   0x....'....        BL       MX_TIM3_Init
+    371            
+    372            
+    373              
+    374            }
+    375          }
+   \                     ??Driver_Gpio_StartPwmOut_0: (+1)
+   \       0x1A   0xBD10             POP      {R4,PC}          ;; return
+    376          
+    377          /**
+    378            ********************************************************************************************************************************
+    379            * @brief   Stop PWM ouput
+    380            * @details PWM output is disabled
+    381            * @param   None 
+    382            * @return  None
+    383            ********************************************************************************************************************************
+    384          */
+
+   \                                 In section .text, align 2, keep-with-next
+    385          void Driver_Gpio_StopPwmOut(uint8_t output_num_u8){
+   \                     Driver_Gpio_StopPwmOut: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    386            if(gpioOutputPortsPins[output_num_u8].pin == DOUT1_Pin)
+   \        0x2   0x....             LDR      R1,??DataTable13
+   \        0x4   0x0002             MOVS     R2,R0
+   \        0x6   0xB2D2             UXTB     R2,R2
+   \        0x8   0x2308             MOVS     R3,#+8
+   \        0xA   0x435A             MULS     R2,R3,R2
+   \        0xC   0x1889             ADDS     R1,R1,R2
+   \        0xE   0x8889             LDRH     R1,[R1, #+4]
+   \       0x10   0x2920             CMP      R1,#+32
+   \       0x12   0xD105             BNE      ??Driver_Gpio_StopPwmOut_0
+    387            { // Only Dout1 pin support timer for PWM 
+    388              // Main output disable
+    389              TIM3->BDTR |= (uint32_t)((0x1UL << TIM_BDTR_MOE_Pos));
+   \       0x14   0x....             LDR      R1,??DataTable13_2  ;; 0x40000444
+   \       0x16   0x680A             LDR      R2,[R1, #+0]
+   \       0x18   0x2380             MOVS     R3,#+128
+   \       0x1A   0x021B             LSLS     R3,R3,#+8        ;; #+32768
+   \       0x1C   0x4313             ORRS     R3,R3,R2
+   \       0x1E   0x600B             STR      R3,[R1, #+0]
+    390            }
+    391          }
+   \                     ??Driver_Gpio_StopPwmOut_0: (+1)
+   \       0x20   0xBD00             POP      {PC}             ;; return
+    392          
+    393          /**
+    394            ********************************************************************************************************************************
+    395            * @brief   Set PWM ouput polarity
+    396            * @details Set  PWM output poloarity to ACTIVE_LOW or ACTIVE_HIGH
+    397            * @param   polarity_value 
+    398            * @return  None
+    399            ********************************************************************************************************************************
+    400          */
+
+   \                                 In section .text, align 2, keep-with-next
+    401          void Driver_Gpio_SetPwmOutPolarity(uint8_t output_num_u8, uint8_t polarity_value){
+   \                     Driver_Gpio_SetPwmOutPolarity: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    402            if(gpioOutputPortsPins[output_num_u8].pin == DOUT1_Pin)
+   \        0x2   0x....             LDR      R2,??DataTable13
+   \        0x4   0x0003             MOVS     R3,R0
+   \        0x6   0xB2DB             UXTB     R3,R3
+   \        0x8   0x2408             MOVS     R4,#+8
+   \        0xA   0x4363             MULS     R3,R4,R3
+   \        0xC   0x18D2             ADDS     R2,R2,R3
+   \        0xE   0x8892             LDRH     R2,[R2, #+4]
+   \       0x10   0x2A20             CMP      R2,#+32
+   \       0x12   0xD10C             BNE      ??Driver_Gpio_SetPwmOutPolarity_0
+    403            { // Only Dout1 pin support timer for PWM 
+    404              if(polarity_value == ACTIVE_LOW){ // Active Low
+   \       0x14   0x000A             MOVS     R2,R1
+   \       0x16   0xB2D2             UXTB     R2,R2
+   \       0x18   0x2A00             CMP      R2,#+0
+   \       0x1A   0xD105             BNE      ??Driver_Gpio_SetPwmOutPolarity_1
+    405                TIM3->CCER |= TIM_CCER_CC2P; // 1
+   \       0x1C   0x....             LDR      R2,??DataTable13_3  ;; 0x40000420
+   \       0x1E   0x6813             LDR      R3,[R2, #+0]
+   \       0x20   0x2420             MOVS     R4,#+32
+   \       0x22   0x431C             ORRS     R4,R4,R3
+   \       0x24   0x6014             STR      R4,[R2, #+0]
+   \       0x26   0xE002             B        ??Driver_Gpio_SetPwmOutPolarity_0
+    406              } else{ // Active High
+    407                TIM3->CCER |= (0x0UL << TIM_CCER_CC2P_Pos); // 0
+   \                     ??Driver_Gpio_SetPwmOutPolarity_1: (+1)
+   \       0x28   0x....             LDR      R2,??DataTable13_3  ;; 0x40000420
+   \       0x2A   0x6813             LDR      R3,[R2, #+0]
+   \       0x2C   0x6013             STR      R3,[R2, #+0]
+    408              }
+    409            }
+    410          }
+   \                     ??Driver_Gpio_SetPwmOutPolarity_0: (+1)
+   \       0x2E   0xBD10             POP      {R4,PC}          ;; return
+    411          
+    412          /**
+    413            ********************************************************************************************************************************
+    414            * @brief   Set PWM output frequency
+    415            * @details Set PWM output frequency.
+    416            * @param   output_num_u8, pwm_frequency_u16 (in Hz)
+    417            * @return  None
+    418            ********************************************************************************************************************************
+    419          */
+
+   \                                 In section .text, align 2, keep-with-next
+    420          void Driver_Gpio_SetPwmOutPeriod(uint8_t output_num_u8, uint16_t pwm_frequency_u16){
+   \                     Driver_Gpio_SetPwmOutPeriod: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    421            if(gpioOutputPortsPins[output_num_u8].pin == DOUT1_Pin)
+   \        0x6   0x....             LDR      R0,??DataTable13
+   \        0x8   0x0029             MOVS     R1,R5
+   \        0xA   0xB2C9             UXTB     R1,R1
+   \        0xC   0x2208             MOVS     R2,#+8
+   \        0xE   0x4351             MULS     R1,R2,R1
+   \       0x10   0x1840             ADDS     R0,R0,R1
+   \       0x12   0x8880             LDRH     R0,[R0, #+4]
+   \       0x14   0x2820             CMP      R0,#+32
+   \       0x16   0xD119             BNE      ??Driver_Gpio_SetPwmOutPeriod_0
+    422            { // Only Dout1 pin support timer for PWM 
+    423              pwmPeriod_u32 = (uint32_t)((CLOCK_FREQ)* (1/((float)(TIM3_CH1_PWM_OUT_PRESCALER_VALUE+1))));
+   \       0x18   0x....             LDR      R7,??DataTable13_4
+   \       0x1A   0x....             LDR      R0,??DataTable13_5  ;; 0x30d400
+   \       0x1C   0x6038             STR      R0,[R7, #+0]
+    424              pwmPeriod_u32 = (uint32_t)(pwmPeriod_u32 * (1/((float)pwm_frequency_u16)));
+   \       0x1E   0x6838             LDR      R0,[R7, #+0]
+   \       0x20   0x....'....        BL       __aeabi_ui2f
+   \       0x24   0x0001             MOVS     R1,R0
+   \       0x26   0x000C             MOVS     R4,R1
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0xB280             UXTH     R0,R0
+   \       0x2C   0x....'....        BL       __aeabi_ui2f
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x20FE             MOVS     R0,#+254
+   \       0x34   0x0580             LSLS     R0,R0,#+22       ;; #+1065353216
+   \       0x36   0x....'....        BL       __aeabi_fdiv
+   \       0x3A   0x0021             MOVS     R1,R4
+   \       0x3C   0x....'....        BL       __aeabi_fmul
+   \       0x40   0x....'....        BL       __aeabi_f2uiz
+   \       0x44   0x6038             STR      R0,[R7, #+0]
+    425              TIM3->ARR = (uint32_t)pwmPeriod_u32;
+   \       0x46   0x6838             LDR      R0,[R7, #+0]
+   \       0x48   0x....             LDR      R1,??DataTable13_6  ;; 0x4000042c
+   \       0x4A   0x6008             STR      R0,[R1, #+0]
+    426            }
+    427          }
+   \                     ??Driver_Gpio_SetPwmOutPeriod_0: (+1)
+   \       0x4C   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    428          
+    429          /**
+    430            ********************************************************************************************************************************
+    431            * @brief   Set PWM output duty cycle
+    432            * @details Set PWM output duty cycle.
+    433            * @param   output_num_u8, pwm_duty_cycle_u16 (xxxyy = xxx.yy%)
+    434            * @return  None
+    435            ********************************************************************************************************************************
+    436          */
+
+   \                                 In section .text, align 2, keep-with-next
+    437          void Driver_Gpio_SetPwmOutDutyCycle(uint8_t output_num_u8, uint16_t pwm_duty_cycle_u16){
+   \                     Driver_Gpio_SetPwmOutDutyCycle: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    438            if(gpioOutputPortsPins[output_num_u8].pin == DOUT1_Pin)
+   \        0x6   0x....             LDR      R0,??DataTable13
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0xB2C9             UXTB     R1,R1
+   \        0xC   0x2208             MOVS     R2,#+8
+   \        0xE   0x4351             MULS     R1,R2,R1
+   \       0x10   0x1840             ADDS     R0,R0,R1
+   \       0x12   0x8880             LDRH     R0,[R0, #+4]
+   \       0x14   0x2820             CMP      R0,#+32
+   \       0x16   0xD11C             BNE      ??Driver_Gpio_SetPwmOutDutyCycle_0
+    439            { // Only Dout1 pin support timer for PWM 
+    440              //Set Duty Cycle to 0 to disable PWM output. Any value above zero will start the PWM
+    441              float duty_cycle_period_f= 0;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x9000             STR      R0,[SP, #+0]
+    442              duty_cycle_period_f = (float)(pwm_duty_cycle_u16/((float)100));
+   \       0x1C   0x....             LDR      R6,??DataTable13_7  ;; 0x42c80000
+   \       0x1E   0x0028             MOVS     R0,R5
+   \       0x20   0xB280             UXTH     R0,R0
+   \       0x22   0x....'....        BL       __aeabi_ui2f
+   \       0x26   0x0031             MOVS     R1,R6
+   \       0x28   0x....'....        BL       __aeabi_fdiv
+   \       0x2C   0x0007             MOVS     R7,R0
+    443              duty_cycle_period_f = (uint32_t)(pwmPeriod_u32*duty_cycle_period_f/((float)100));
+   \       0x2E   0x....             LDR      R0,??DataTable13_4
+   \       0x30   0x6800             LDR      R0,[R0, #+0]
+   \       0x32   0x....'....        BL       __aeabi_ui2f
+   \       0x36   0x0039             MOVS     R1,R7
+   \       0x38   0x....'....        BL       __aeabi_fmul
+   \       0x3C   0x0031             MOVS     R1,R6
+   \       0x3E   0x....'....        BL       __aeabi_fdiv
+   \       0x42   0x....'....        BL       __aeabi_f2uiz
+   \       0x46   0x....'....        BL       __aeabi_ui2f
+    444              TIM3->CCR2 = (uint32_t)duty_cycle_period_f;
+   \       0x4A   0x....'....        BL       __aeabi_f2uiz
+   \       0x4E   0x....             LDR      R1,??DataTable13_8  ;; 0x40000438
+   \       0x50   0x6008             STR      R0,[R1, #+0]
+    445            }
+    446          }
+   \                     ??Driver_Gpio_SetPwmOutDutyCycle_0: (+1)
+   \       0x52   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \        0x0   0x4002'1034        DC32     0x40021034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \        0x0   0x5000'0400        DC32     0x50000400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0x5000'0800        DC32     0x50000800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0x4002'103C        DC32     0x4002103c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \        0x0   0x4000'0400        DC32     0x40000400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0x....'....        DC32     gpioOutputPortsPins
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \        0x0   0x....'....        DC32     gpioInputPortsPins
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_2:
+   \        0x0   0x4000'0444        DC32     0x40000444
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_3:
+   \        0x0   0x4000'0420        DC32     0x40000420
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_4:
+   \        0x0   0x....'....        DC32     pwmPeriod_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_5:
+   \        0x0   0x0030'D400        DC32     0x30d400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_6:
+   \        0x0   0x4000'042C        DC32     0x4000042c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_7:
+   \        0x0   0x42C8'0000        DC32     0x42c80000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_8:
+   \        0x0   0x4000'0438        DC32     0x40000438
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   Driver_GPIO_Dout1_Init
+        40   -> LL_GPIO_Init
+        40   -> LL_GPIO_ResetOutputPin
+        40   -> memset
+       8   Driver_Gpio_ReadGpioOutputState
+      24   Driver_Gpio_SetPwmOutDutyCycle
+        24   -> __aeabi_f2uiz
+        24   -> __aeabi_fdiv
+        24   -> __aeabi_fmul
+        24   -> __aeabi_ui2f
+      24   Driver_Gpio_SetPwmOutPeriod
+        24   -> __aeabi_f2uiz
+        24   -> __aeabi_fdiv
+        24   -> __aeabi_fmul
+        24   -> __aeabi_ui2f
+       8   Driver_Gpio_SetPwmOutPolarity
+       8   Driver_Gpio_StartPwmOut
+         8   -> MX_TIM3_Init
+       4   Driver_Gpio_StopPwmOut
+       8   Driver_Gpio_TogglePin
+      12   Driver_Gpio_WriteGpioState
+       8   GPIOInit
+         8   -> MX_GPIO_Init
+      16   Gpio_Driver_ReadGpioInputState
+       0   LL_GPIO_ResetOutputPin
+       4   LL_IOP_GRP1_EnableClock
+      40   MX_GPIO_Init
+        40   -> LL_GPIO_Init
+        40   -> LL_GPIO_ResetOutputPin
+        40   -> LL_IOP_GRP1_EnableClock
+        40   -> memset
+     160   MX_TIM3_Init
+       160   -> Error_Handler
+       160   -> HAL_GPIO_Init
+       160   -> HAL_TIMEx_MasterConfigSynchronization
+       160   -> HAL_TIM_Base_Init
+       160   -> HAL_TIM_ConfigClockSource
+       160   -> HAL_TIM_PWM_ConfigChannel
+       160   -> HAL_TIM_PWM_Init
+       160   -> HAL_TIM_PWM_Start
+       160   -> memset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable12
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_2
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+       4  ??DataTable13_5
+       4  ??DataTable13_6
+       4  ??DataTable13_7
+       4  ??DataTable13_8
+       4  ??DataTable9
+       4  ??DataTable9_1
+      72  Driver_GPIO_Dout1_Init
+      46  Driver_Gpio_ReadGpioOutputState
+      84  Driver_Gpio_SetPwmOutDutyCycle
+      78  Driver_Gpio_SetPwmOutPeriod
+      48  Driver_Gpio_SetPwmOutPolarity
+      28  Driver_Gpio_StartPwmOut
+      34  Driver_Gpio_StopPwmOut
+     114  Driver_Gpio_TogglePin
+      66  Driver_Gpio_WriteGpioState
+       8  GPIOInit
+      48  Gpio_Driver_ReadGpioInputState
+       4  LL_GPIO_ResetOutputPin
+      22  LL_IOP_GRP1_EnableClock
+     196  MX_GPIO_Init
+     238  MX_TIM3_Init
+      40  gpioInputPortsPins
+      40  gpioOutputPortsPins
+       4  pwmPeriod_u32
+
+ 
+     4 bytes in section .bss
+    80 bytes in section .data
+ 1'142 bytes in section .text
+ 
+ 1'142 bytes of CODE memory
+    84 bytes of DATA memory
+
+Errors: none
+Warnings: none

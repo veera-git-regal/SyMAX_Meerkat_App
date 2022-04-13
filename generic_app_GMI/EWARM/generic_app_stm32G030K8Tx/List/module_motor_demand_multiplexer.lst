@@ -1,0 +1,1528 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         21/Feb/2022  11:38:33
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_demand_multiplexer.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWA7F9.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_demand_multiplexer.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_motor_demand_multiplexer.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_motor_demand_multiplexer.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_demand_multiplexer.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_motor_demand_multiplexer.c 
+      4          * @author  Justin Moon
+      5          * @brief   Combine multiple motor demand sources into a single motor demand output.
+      6          * @details This module is to be referenced by 'module_motor_com' to send a demand value to the motor control MCU.
+      7          ********************************************************************************************************************************
+      8          */
+      9          
+     10          // Includes -------------------------------------------------------------------
+     11          #include "module_motor_demand_multiplexer.h"
+     12          
+     13          #include "module_motor_com.h"
+     14          #include "driver_usart2.h"
+     15          
+     16          // - Dependent Inclusions (only include modules that exist)
+     17          // - 0-10V Analog Input
+     18          #ifdef MODULE_ANALOG_0_10V_ID
+     19            #include "module_analog_0_10v.h"
+     20          #endif
+     21          // - 4-20mA Analog Input
+     22          #ifdef MODULE_ANALOG_4_20MA_ID
+     23            #include "module_analog_4_20ma.h"
+     24          #endif
+     25          // - Digital Inputs
+     26          #ifdef MODULE_DIGITAL_INPUTS_ID
+     27            #include "module_digital_inputs.h"
+     28          #endif
+     29          // - PWM Input
+     30          #ifdef MODULE_PWM_INPUT_ID
+     31            #include "module_pwm_input.h"
+     32          #endif
+     33          // - Modbus
+     34          #ifdef MODULE_MODBUS_ID
+     35            #include "module_modbus.h"
+     36          #endif
+     37          
+     38          // Content --------------------------------------------------------------------
+     39          // - Function Prototypes
+     40          void MotorDemandMux_AssignModuleMem(void);
+     41          void MotorDemandMux_InitStructPointers(void);
+     42          void MotorDemandMux_InitSystem(void);
+     43          void MotorDemandMux_Update(void);
+     44          uint16_t MotorDemandMux_GetSourceByPriority(void);
+     45          uint16_t MotorDemandMux_GetActiveValue(uint16_t active_demand_source);
+     46          
+     47          // - Constants
+     48          // -- Module States
+     49          enum {
+     50            MEMORY_INIT_MODULE,
+     51            INIT_MODULE,
+     52            RUN_MODULE,
+     53            // Ddditional states to be added here as necessary.
+     54            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     55            KILL_MODULE = KILL_APP
+     56          };
+     57          
+     58          // - External Variables
+     59          extern ProcessInfo processInfoTable[];
+     60          
+     61          // - Global variables specific to this module
+
+   \                                 In section .bss, align 4
+     62          static  Ram_Buf_Handle motorDemandMux_StructMem_u32;
+   \                     motorDemandMux_StructMem_u32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     63          MotorDemandMux_Control motorDemandMux_Control; // Main Structure of Settings and Data
+   \                     motorDemandMux_Control:
+   \        0x0                      DS8 20
+
+   \                                 In section .bss, align 8
+     64          uint64_t motorDemandMux_PollTime_u64 = 0;      // Poll time for the module
+   \                     motorDemandMux_PollTime_u64:
+   \        0x0                      DS8 8
+     65          // - Global variables stored by this module regarding the sxtate of other modules
+
+   \                                 In section .bss, align 2
+     66          uint16_t motorDemandMux_ModbusSpeed = 0;
+   \                     motorDemandMux_ModbusSpeed:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     67          uint16_t motorDemandMux_ModbusDemand = 0;
+   \                     motorDemandMux_ModbusDemand:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     68          uint16_t motorDemandMux_ModbusStart = 0;
+   \                     motorDemandMux_ModbusStart:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     69          uint16_t motorDemandMux_ModbusDirection = 0;
+   \                     motorDemandMux_ModbusDirection:
+   \        0x0                      DS8 2
+     70          
+     71          
+     72          
+     73          // -- Define Pointers that will be used as References to other Modules, where applicable
+     74          // Motor_Com_Control* motorDemandMux_MotorCom_Control_ptr; // REVIEW: Only used to set motor direction
+     75          
+     76          // --- 0-10V Analog Input
+     77          #ifdef MODULE_ANALOG_0_10V_ID
+
+   \                                 In section .bss, align 4
+     78            AnalogVolts_Control *motorDemandMux_analog_0_10v_Control_ptr;
+   \                     motorDemandMux_analog_0_10v_Control_ptr:
+   \        0x0                      DS8 4
+     79          #endif
+     80          // --- 4-20mA Analog Input
+     81          #ifdef MODULE_ANALOG_4_20MA_ID
+
+   \                                 In section .bss, align 4
+     82            Analog_4_20ma_Control *motorDemandMux_analog_4_20ma_Control_ptr;
+   \                     motorDemandMux_analog_4_20ma_Control_ptr:
+   \        0x0                      DS8 4
+     83          #endif
+     84          // --- Digital Inputs
+     85          #ifdef MODULE_DIGITAL_INPUTS_ID
+
+   \                                 In section .bss, align 4
+     86            DigitalInputs_Control *motorDemandMux_digitalInputsControl_ptr;
+   \                     motorDemandMux_digitalInputsControl_ptr:
+   \        0x0                      DS8 4
+     87          #endif
+     88          // --- PWM Input
+     89          #ifdef MODULE_PWM_INPUT_ID
+
+   \                                 In section .bss, align 4
+     90            PwmInput_Control *motorDemandMux_pwmInputControl_ptr;
+   \                     motorDemandMux_pwmInputControl_ptr:
+   \        0x0                      DS8 4
+     91          #endif
+     92          // --- Modbus
+     93          #ifdef MODULE_MODBUS_ID
+
+   \                                 In section .bss, align 4
+     94            Modbus_Control *motorDemandMux_modbusControl_ptr;
+   \                     motorDemandMux_modbusControl_ptr:
+   \        0x0                      DS8 4
+     95          #endif
+     96          
+     97          
+     98          // - external functions
+     99          void MotorCom_UpdateMotorDirection(uint16_t direction); // TODO: Remove this once motor direction is stored in this module
+    100          
+    101          /**
+    102          ********************************************************************************************************************************
+    103          * @brief   State machine for app module
+    104          * @details
+    105          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+    106          * @retval  return_state_u8
+    107          ********************************************************************************************************************************
+    108          */
+
+   \                                 In section .text, align 2, keep-with-next
+    109          uint8_t moduleMotorDemandMultiplexer_u32(uint8_t drv_identifier_u8, uint8_t previous_state_u8, uint8_t next_state_u8,
+    110                                                     uint8_t irq_identifier_u8) 
+    111          {
+   \                     moduleMotorDemandMultiplexer_u32: (+1)
+   \        0x0   0xB5FB             PUSH     {R0,R1,R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x0017             MOVS     R7,R2
+    112             
+    113            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x6   0x2400             MOVS     R4,#+0
+    114            switch (next_state_u8) {
+   \        0x8   0x0038             MOVS     R0,R7
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD008             BEQ      ??moduleMotorDemandMultiplexer_u32_0
+   \       0x10   0x2801             CMP      R0,#+1
+   \       0x12   0xD00A             BEQ      ??moduleMotorDemandMultiplexer_u32_1
+   \       0x14   0x2802             CMP      R0,#+2
+   \       0x16   0xD016             BEQ      ??moduleMotorDemandMultiplexer_u32_2
+   \       0x18   0x28C8             CMP      R0,#+200
+   \       0x1A   0xD02B             BEQ      ??moduleMotorDemandMultiplexer_u32_3
+   \       0x1C   0x28FF             CMP      R0,#+255
+   \       0x1E   0xD02B             BEQ      ??moduleMotorDemandMultiplexer_u32_4
+   \       0x20   0xE03D             B        ??moduleMotorDemandMultiplexer_u32_5
+    115              case MEMORY_INIT_MODULE:
+    116              {
+    117                MotorDemandMux_AssignModuleMem(); // Assign structured memory to Analog 0-10V setting and data 
+   \                     ??moduleMotorDemandMultiplexer_u32_0: (+1)
+   \       0x22   0x....'....        BL       MotorDemandMux_AssignModuleMem
+    118                return_state_u8 = INIT_MODULE;
+   \       0x26   0x2001             MOVS     R0,#+1
+    119                break;
+   \       0x28   0xE03A             B        ??moduleMotorDemandMultiplexer_u32_6
+    120              }
+    121            case INIT_MODULE: {
+    122              // Assign structured memory for module
+    123              //MotorDemandMux_AssignModuleMem();
+    124              MotorDemandMux_InitSystem();
+   \                     ??moduleMotorDemandMultiplexer_u32_1: (+1)
+   \       0x2A   0x....'....        BL       MotorDemandMux_InitSystem
+    125              MotorDemandMux_InitStructPointers();
+   \       0x2E   0x....'....        BL       MotorDemandMux_InitStructPointers
+    126              
+    127              motorDemandMux_PollTime_u64 = getSysCount() + MODULE_MOTOR_DEMAND_MUX_POLL_TIME; // Store time tick value
+   \       0x32   0x....'....        BL       getSysCount
+   \       0x36   0x2200             MOVS     R2,#+0
+   \       0x38   0x3064             ADDS     R0,R0,#+100
+   \       0x3A   0x4151             ADCS     R1,R1,R2
+   \       0x3C   0x....             LDR      R2,??DataTable4
+   \       0x3E   0xC203             STM      R2!,{R0,R1}
+   \       0x40   0x3A08             SUBS     R2,R2,#+8
+    128              return_state_u8 = RUN_MODULE;
+   \       0x42   0x2002             MOVS     R0,#+2
+    129              break;
+   \       0x44   0xE02C             B        ??moduleMotorDemandMultiplexer_u32_6
+    130            }
+    131            case RUN_MODULE: {
+    132              // Process analog input every "AnalogPeriod" mSec
+    133              if (getSysCount() >= motorDemandMux_PollTime_u64) // Time above poll time
+   \                     ??moduleMotorDemandMultiplexer_u32_2: (+1)
+   \       0x46   0x....'....        BL       getSysCount
+   \       0x4A   0x0002             MOVS     R2,R0
+   \       0x4C   0x000B             MOVS     R3,R1
+   \       0x4E   0x....             LDR      R5,??DataTable4
+   \       0x50   0xCD03             LDM      R5!,{R0,R1}
+   \       0x52   0x3D08             SUBS     R5,R5,#+8
+   \       0x54   0x428B             CMP      R3,R1
+   \       0x56   0xD30B             BCC      ??moduleMotorDemandMultiplexer_u32_7
+   \       0x58   0xD801             BHI      ??moduleMotorDemandMultiplexer_u32_8
+   \       0x5A   0x4282             CMP      R2,R0
+   \       0x5C   0xD308             BCC      ??moduleMotorDemandMultiplexer_u32_7
+    134              {
+    135                motorDemandMux_PollTime_u64 = getSysCount() + MODULE_MOTOR_DEMAND_MUX_POLL_TIME; // Next poll time
+   \                     ??moduleMotorDemandMultiplexer_u32_8: (+1)
+   \       0x5E   0x....'....        BL       getSysCount
+   \       0x62   0x2200             MOVS     R2,#+0
+   \       0x64   0x3064             ADDS     R0,R0,#+100
+   \       0x66   0x4151             ADCS     R1,R1,R2
+   \       0x68   0xC503             STM      R5!,{R0,R1}
+   \       0x6A   0x3D08             SUBS     R5,R5,#+8
+    136                // User Code
+    137                // - Update Demand Here
+    138                MotorDemandMux_Update();
+   \       0x6C   0x....'....        BL       MotorDemandMux_Update
+    139              }
+    140              return_state_u8 = RUN_MODULE;
+   \                     ??moduleMotorDemandMultiplexer_u32_7: (+1)
+   \       0x70   0x2002             MOVS     R0,#+2
+    141              break;
+   \       0x72   0xE015             B        ??moduleMotorDemandMultiplexer_u32_6
+    142            }
+    143            case IRQ_MODULE: {
+    144              // If there are more than one interrupts, from different drivers, you can identify each individually by:
+    145              // tableIndex_u8 = getProcessInfoIndex(irq_identifier_u8);
+    146              // Then use processInfoTable[tableIndex_u8] to tailor your response appropriately.
+    147              return_state_u8 = RUN_MODULE;
+   \                     ??moduleMotorDemandMultiplexer_u32_3: (+1)
+   \       0x74   0x2002             MOVS     R0,#+2
+    148              break;
+   \       0x76   0xE013             B        ??moduleMotorDemandMultiplexer_u32_6
+    149            }
+    150            
+    151            case KILL_MODULE: {
+    152              // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    153              uint8_t table_index_u8 = getProcessInfoIndex(drv_identifier_u8);
+   \                     ??moduleMotorDemandMultiplexer_u32_4: (+1)
+   \       0x78   0x0030             MOVS     R0,R6
+   \       0x7A   0xB2C0             UXTB     R0,R0
+   \       0x7C   0x....'....        BL       getProcessInfoIndex
+   \       0x80   0x0001             MOVS     R1,R0
+    154              if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x82   0x0008             MOVS     R0,R1
+   \       0x84   0xB2C0             UXTB     R0,R0
+   \       0x86   0x28FF             CMP      R0,#+255
+   \       0x88   0xD007             BEQ      ??moduleMotorDemandMultiplexer_u32_9
+    155                processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0x8A   0x20FF             MOVS     R0,#+255
+   \       0x8C   0x....             LDR      R2,??DataTable5
+   \       0x8E   0x000B             MOVS     R3,R1
+   \       0x90   0xB2DB             UXTB     R3,R3
+   \       0x92   0x2516             MOVS     R5,#+22
+   \       0x94   0x436B             MULS     R3,R5,R3
+   \       0x96   0x18D2             ADDS     R2,R2,R3
+   \       0x98   0x7290             STRB     R0,[R2, #+10]
+    156              }
+    157              return_state_u8 = INIT_MODULE;
+   \                     ??moduleMotorDemandMultiplexer_u32_9: (+1)
+   \       0x9A   0x2001             MOVS     R0,#+1
+    158              break;
+   \       0x9C   0xE000             B        ??moduleMotorDemandMultiplexer_u32_6
+    159            }
+    160            default:
+    161              return_state_u8 = KILL_MODULE; //10;
+   \                     ??moduleMotorDemandMultiplexer_u32_5: (+1)
+   \       0x9E   0x20FF             MOVS     R0,#+255
+    162              break;
+    163            }
+    164             
+    165            return return_state_u8;
+   \                     ??moduleMotorDemandMultiplexer_u32_6: (+1)
+   \       0xA0   0xB2C0             UXTB     R0,R0
+   \       0xA2   0xBDFE             POP      {R1-R7,PC}       ;; return
+    166          }
+    167            
+    168          /**
+    169          ********************************************************************************************************************************
+    170          * @brief   Assign structured memory
+    171          * @details Assign structured memory for motorDemandMux_Control
+    172          * @param   None 
+    173          * @return  None
+    174          ********************************************************************************************************************************
+    175          */
+
+   \                                 In section .text, align 2, keep-with-next
+    176          void MotorDemandMux_AssignModuleMem(void) {
+   \                     MotorDemandMux_AssignModuleMem: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    177            motorDemandMux_StructMem_u32 =  StructMem_CreateInstance(MODULE_MOTOR_DEMAND_MUX, sizeof(MotorDemandMux_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST); 
+   \        0x2   0x....             LDR      R4,??DataTable5_1
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2114             MOVS     R1,#+20
+   \        0xE   0x200C             MOVS     R0,#+12
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    178            // REVIEW: Above statement uses sizeof(MotorDemandMux_Control), but I believe that to be inaccurate, as that is the size of the object that is 
+    179            // - pointed to by  p_rambuf, not the StructMem object. Fix this, if needed.
+    180            
+    181            (*motorDemandMux_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&motorDemandMux_Control ;    // Map the ADC1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable5_2
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    182            uint8_t module_index_u8 = getProcessInfoIndex(MODULE_MOTOR_DEMAND_MUX);
+   \       0x1C   0x200C             MOVS     R0,#+12
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    183            processInfoTable[module_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)motorDemandMux_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable5
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    184          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    185          
+    186          /**
+    187          ********************************************************************************************************************************
+    188          * @brief   Initialize Pointers to Structures of Other Modules that this Module Depends Upon
+    189          * @details Only Called Once at module Initialization
+    190          * @param   None 
+    191          * @return  None
+    192          ********************************************************************************************************************************
+    193          */
+
+   \                                 In section .text, align 2, keep-with-next
+    194          void MotorDemandMux_InitStructPointers(void) {
+   \                     MotorDemandMux_InitStructPointers: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    195            uint8_t module_index_u8;
+    196            // Initialize pointers to structures of other modules used by this module
+    197            // - Motor COM - REVIEW: Temporarily Added for Access to Motor Direction (which should be handled by this module in the future)
+    198            // TODO: Pointer to MODULE_MOTOR_COM does not work (cyclic dependency, in future motor direction should be held in this module)
+    199            // module_index_u8  = getProcessInfoIndex(MODULE_MOTOR_COM);   //return Process index from processInfo array
+    200            // motorDemandMux_MotorCom_Control_ptr = (Motor_Com_Control*)((*(processInfoTable[module_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory 
+    201            // - Demand Input Sources
+    202          #ifdef MODULE_ANALOG_0_10V_ID
+    203            module_index_u8 = getProcessInfoIndex(MODULE_ANALOG_0_10V);
+   \        0x2   0x2005             MOVS     R0,#+5
+   \        0x4   0x....'....        BL       getProcessInfoIndex
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+    204            motorDemandMux_analog_0_10v_Control_ptr =
+    205              (AnalogVolts_Control *) ((*(processInfoTable[module_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \        0xC   0x....             LDR      R4,??DataTable5
+   \        0xE   0x4668             MOV      R0,SP
+   \       0x10   0x7800             LDRB     R0,[R0, #+0]
+   \       0x12   0x2116             MOVS     R1,#+22
+   \       0x14   0x4348             MULS     R0,R1,R0
+   \       0x16   0x1820             ADDS     R0,R4,R0
+   \       0x18   0x300B             ADDS     R0,R0,#+11
+   \       0x1A   0x....'....        BL       __aeabi_uread4
+   \       0x1E   0x6800             LDR      R0,[R0, #+0]
+   \       0x20   0x....             LDR      R1,??DataTable5_3
+   \       0x22   0x6008             STR      R0,[R1, #+0]
+    206          #endif
+    207          #ifdef MODULE_ANALOG_4_20MA_ID
+    208            module_index_u8 = getProcessInfoIndex(MODULE_ANALOG_4_20MA);
+   \       0x24   0x2006             MOVS     R0,#+6
+   \       0x26   0x....'....        BL       getProcessInfoIndex
+   \       0x2A   0x0006             MOVS     R6,R0
+    209            motorDemandMux_analog_4_20ma_Control_ptr =
+    210              (Analog_4_20ma_Control *) ((*(processInfoTable[module_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0x2C   0x0030             MOVS     R0,R6
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0x2116             MOVS     R1,#+22
+   \       0x32   0x4348             MULS     R0,R1,R0
+   \       0x34   0x1820             ADDS     R0,R4,R0
+   \       0x36   0x300B             ADDS     R0,R0,#+11
+   \       0x38   0x....'....        BL       __aeabi_uread4
+   \       0x3C   0x6800             LDR      R0,[R0, #+0]
+   \       0x3E   0x....             LDR      R1,??DataTable5_4
+   \       0x40   0x6008             STR      R0,[R1, #+0]
+    211          #endif
+    212          #ifdef MODULE_DIGITAL_INPUTS_ID
+    213            module_index_u8 = getProcessInfoIndex(MODULE_DIGITAL_INPUTS);
+   \       0x42   0x2007             MOVS     R0,#+7
+   \       0x44   0x....'....        BL       getProcessInfoIndex
+   \       0x48   0x0005             MOVS     R5,R0
+    214            motorDemandMux_digitalInputsControl_ptr =
+    215              (DigitalInputs_Control *) ((*(processInfoTable[module_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0x4A   0x0028             MOVS     R0,R5
+   \       0x4C   0xB2C0             UXTB     R0,R0
+   \       0x4E   0x2116             MOVS     R1,#+22
+   \       0x50   0x4348             MULS     R0,R1,R0
+   \       0x52   0x1820             ADDS     R0,R4,R0
+   \       0x54   0x300B             ADDS     R0,R0,#+11
+   \       0x56   0x....'....        BL       __aeabi_uread4
+   \       0x5A   0x6800             LDR      R0,[R0, #+0]
+   \       0x5C   0x....             LDR      R1,??DataTable5_5
+   \       0x5E   0x6008             STR      R0,[R1, #+0]
+    216          #endif
+    217          #ifdef MODULE_PWM_INPUT_ID
+    218            module_index_u8 = getProcessInfoIndex(MODULE_PWM_INPUT);
+   \       0x60   0x2008             MOVS     R0,#+8
+   \       0x62   0x....'....        BL       getProcessInfoIndex
+   \       0x66   0x0007             MOVS     R7,R0
+    219            motorDemandMux_pwmInputControl_ptr =
+    220              (PwmInput_Control *) ((*(processInfoTable[module_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0x68   0x0038             MOVS     R0,R7
+   \       0x6A   0xB2C0             UXTB     R0,R0
+   \       0x6C   0x2116             MOVS     R1,#+22
+   \       0x6E   0x4348             MULS     R0,R1,R0
+   \       0x70   0x1820             ADDS     R0,R4,R0
+   \       0x72   0x300B             ADDS     R0,R0,#+11
+   \       0x74   0x....'....        BL       __aeabi_uread4
+   \       0x78   0x6800             LDR      R0,[R0, #+0]
+   \       0x7A   0x....             LDR      R1,??DataTable6
+   \       0x7C   0x6008             STR      R0,[R1, #+0]
+    221          #endif  
+    222          }
+   \       0x7E   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    223          
+    224          /**
+    225          ********************************************************************************************************************************
+    226          * @brief   Initialize RAM Objects Used by This Module
+    227          * @details None
+    228          * @param   None 
+    229          * @return  None
+    230          ********************************************************************************************************************************
+    231          */
+
+   \                                 In section .text, align 2, keep-with-next
+    232          void MotorDemandMux_InitSystem(void) {
+    233            // Init settings
+    234            motorDemandMux_Control.motorDemandMux_Settings.demandSource_u16 = MOTOR_DEMAND_SOURCE_PRIORITY_SYSTEM;
+   \                     MotorDemandMux_InitSystem: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable5_2
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x8001             STRH     R1,[R0, #+0]
+    235            motorDemandMux_Control.motorDemandMux_Settings.control_Mode_u16 = DEMAND_MODE_SPEED; 
+   \        0x6   0x8041             STRH     R1,[R0, #+2]
+    236            motorDemandMux_Control.motorDemandMux_Settings.modbusPriority_u16 = 2;         // Demand priority. 1 being highest
+   \        0x8   0x2202             MOVS     R2,#+2
+   \        0xA   0x8142             STRH     R2,[R0, #+10]
+    237            motorDemandMux_Control.motorDemandMux_Settings.analog0_10vPriority_u16 = 1;   // Demand priority. 1 being highest
+   \        0xC   0x2201             MOVS     R2,#+1
+   \        0xE   0x8082             STRH     R2,[R0, #+4]
+    238            motorDemandMux_Control.motorDemandMux_Settings.digitalInputsPriority_u16 = 3; // Demand priority. 1 being highest
+   \       0x10   0x2203             MOVS     R2,#+3
+   \       0x12   0x8102             STRH     R2,[R0, #+8]
+    239            motorDemandMux_Control.motorDemandMux_Settings.pwmInputPriority_u16 = 4;      // Demand priority. 1 being highest
+   \       0x14   0x2204             MOVS     R2,#+4
+   \       0x16   0x8182             STRH     R2,[R0, #+12]
+    240            motorDemandMux_Control.motorDemandMux_Settings.analog4_20mAPriority_u16 = 5;  // Demand priority. 1 being highest  
+   \       0x18   0x2205             MOVS     R2,#+5
+   \       0x1A   0x80C2             STRH     R2,[R0, #+6]
+    241            motorDemandMux_Control.motorDemandMux_Settings.maxPriority_u16 = 5;            // Demand priority. 1 being highest
+   \       0x1C   0x81C2             STRH     R2,[R0, #+14]
+    242          
+    243            // Init Data
+    244            motorDemandMux_Control.motorDemandMux_Data.demandValue_u16 = 0;  
+   \       0x1E   0x8201             STRH     R1,[R0, #+16]
+    245          }
+   \       0x20   0x4770             BX       LR               ;; return
+    246          
+    247          /**
+    248          ********************************************************************************************************************************
+    249          * @brief   Update the overall output demand stored by this module.
+    250          * @details This function chooses from a variety of demand sources and filters them down to a single demand based on settings.
+    251          * @param   None 
+    252          * @return  None
+    253          ********************************************************************************************************************************
+    254          */
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void MotorDemandMux_Update(void) {
+   \                     MotorDemandMux_Update: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    256            uint16_t active_demand_source_u16 = 0;
+   \        0x2   0x2700             MOVS     R7,#+0
+   \        0x4   0x0038             MOVS     R0,R7
+   \        0x6   0x4669             MOV      R1,SP
+   \        0x8   0x8008             STRH     R0,[R1, #+0]
+    257            uint16_t output_demand_u16 = 0;
+    258            uint16_t demand_source_index_u16 = motorDemandMux_Control.motorDemandMux_Settings.demandSource_u16;
+   \        0xA   0x....             LDR      R4,??DataTable5_2
+   \        0xC   0x8825             LDRH     R5,[R4, #+0]
+    259            
+    260            
+    261            // Determine which demand source that we should look at.
+    262            if (demand_source_index_u16 != MOTOR_DEMAND_SOURCE_PRIORITY_SYSTEM) {
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0xB280             UXTH     R0,R0
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD001             BEQ      ??MotorDemandMux_Update_0
+    263              active_demand_source_u16 = demand_source_index_u16;
+   \       0x16   0x002E             MOVS     R6,R5
+   \       0x18   0xE003             B        ??MotorDemandMux_Update_1
+    264            } else {
+    265              active_demand_source_u16 = MotorDemandMux_GetSourceByPriority();
+   \                     ??MotorDemandMux_Update_0: (+1)
+   \       0x1A   0x....'....        BL       MotorDemandMux_GetSourceByPriority
+   \       0x1E   0x0006             MOVS     R6,R0
+    266              motorDemandMux_Control.motorDemandMux_Data.currentDemandSource_u16 = active_demand_source_u16;
+   \       0x20   0x8266             STRH     R6,[R4, #+18]
+    267            }
+    268            
+    269            // Get Demand from the active source
+    270            output_demand_u16 = MotorDemandMux_GetActiveValue(active_demand_source_u16);
+   \                     ??MotorDemandMux_Update_1: (+1)
+   \       0x22   0x0030             MOVS     R0,R6
+   \       0x24   0xB280             UXTH     R0,R0
+   \       0x26   0x....'....        BL       MotorDemandMux_GetActiveValue
+    271            motorDemandMux_Control.motorDemandMux_Data.demandValue_u16 = output_demand_u16;
+   \       0x2A   0x8220             STRH     R0,[R4, #+16]
+    272          }
+   \       0x2C   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    273          
+    274          extern Usart2_Control* usart2Control_AppLocal;
+    275          
+    276          #define ADC_FAULT_INJECTION 0xAA
+    277          #define REGISTER_FAULT_INJECTION 0xBB
+    278          #define CLOCK_FAULT_INJECTION 0xCC
+    279          #define RAM_FAULT_INJECTION 0xDD
+    280          #define ROM_FAULT_INJECTION 0xEE
+    281          /**
+    282          ********************************************************************************************************************************
+    283          * @brief   Get the Demand Value of a Specified Demand Source.
+    284          * @details This function pulls the values from the structure pointers assigned in MotorDemandMux_InitStructPointers
+    285          * @param   demand_source_id_u16 
+    286          * @return  active_demand_value_u16
+    287          ********************************************************************************************************************************
+    288          */
+    289          
+
+   \                                 In section .text, align 2, keep-with-next
+    290          uint16_t MotorDemandMux_GetActiveValue(uint16_t demand_source_id_u16) {
+   \                     MotorDemandMux_GetActiveValue: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB08C             SUB      SP,SP,#+48
+    291            uint16_t active_demand_value_u16 = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x002E             MOVS     R6,R5
+    292            uint16_t active_demand_source_u16;
+    293            volatile char fault_injected =0;
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x4669             MOV      R1,SP
+   \        0xC   0x7008             STRB     R0,[R1, #+0]
+    294            if (demand_source_id_u16 == MOTOR_DEMAND_SOURCE_PRIORITY_SYSTEM) {
+   \        0xE   0x4668             MOV      R0,SP
+   \       0x10   0x8E00             LDRH     R0,[R0, #+48]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD104             BNE      ??MotorDemandMux_GetActiveValue_0
+    295              active_demand_source_u16 = MotorDemandMux_GetSourceByPriority();
+   \       0x16   0x....'....        BL       MotorDemandMux_GetSourceByPriority
+   \       0x1A   0x4669             MOV      R1,SP
+   \       0x1C   0x8048             STRH     R0,[R1, #+2]
+   \       0x1E   0xE003             B        ??MotorDemandMux_GetActiveValue_1
+    296            } else {
+    297              active_demand_source_u16 = demand_source_id_u16;
+   \                     ??MotorDemandMux_GetActiveValue_0: (+1)
+   \       0x20   0x4668             MOV      R0,SP
+   \       0x22   0x8E00             LDRH     R0,[R0, #+48]
+   \       0x24   0x4669             MOV      R1,SP
+   \       0x26   0x8048             STRH     R0,[R1, #+2]
+    298            }
+    299          #ifdef MODULE_DIGITAL_INPUTS_ID  
+    300            if((*motorDemandMux_digitalInputsControl_ptr).digitalInputs_Data.discretes_u16.is_motorEnabled == FALSE) 
+   \                     ??MotorDemandMux_GetActiveValue_1: (+1)
+   \       0x28   0x2401             MOVS     R4,#+1
+   \       0x2A   0x....             LDR      R0,??DataTable5_5
+   \       0x2C   0x6801             LDR      R1,[R0, #+0]
+   \       0x2E   0x224E             MOVS     R2,#+78
+   \       0x30   0x5A89             LDRH     R1,[R1, R2]
+   \       0x32   0xB289             UXTH     R1,R1
+   \       0x34   0x0849             LSRS     R1,R1,#+1
+   \       0x36   0x4021             ANDS     R1,R1,R4
+   \       0x38   0xB289             UXTH     R1,R1
+   \       0x3A   0x2900             CMP      R1,#+0
+   \       0x3C   0xD101             BNE      ??MotorDemandMux_GetActiveValue_2
+    301            {
+    302              active_demand_value_u16 = 0;
+   \       0x3E   0x002E             MOVS     R6,R5
+   \       0x40   0xE0AD             B        ??MotorDemandMux_GetActiveValue_3
+    303            } else {
+    304          #endif   
+    305              switch (active_demand_source_u16) {
+   \                     ??MotorDemandMux_GetActiveValue_2: (+1)
+   \       0x42   0x4669             MOV      R1,SP
+   \       0x44   0x8849             LDRH     R1,[R1, #+2]
+   \       0x46   0x2901             CMP      R1,#+1
+   \       0x48   0xD008             BEQ      ??MotorDemandMux_GetActiveValue_4
+   \       0x4A   0xD200             BCS      .+4
+   \       0x4C   0xE0A7             B        ??MotorDemandMux_GetActiveValue_5
+   \       0x4E   0x2903             CMP      R1,#+3
+   \       0x50   0xD010             BEQ      ??MotorDemandMux_GetActiveValue_6
+   \       0x52   0xD309             BCC      ??MotorDemandMux_GetActiveValue_7
+   \       0x54   0x2905             CMP      R1,#+5
+   \       0x56   0xD018             BEQ      ??MotorDemandMux_GetActiveValue_8
+   \       0x58   0xD311             BCC      ??MotorDemandMux_GetActiveValue_9
+   \       0x5A   0xE0A0             B        ??MotorDemandMux_GetActiveValue_5
+    306              case MOTOR_DEMAND_SOURCE_ANALOG_0_10V:
+    307          #ifdef MODULE_ANALOG_0_10V_ID
+    308                active_demand_value_u16 = (*motorDemandMux_analog_0_10v_Control_ptr).analogVolts_Data.analogDemandPercent_u16;
+   \                     ??MotorDemandMux_GetActiveValue_4: (+1)
+   \       0x5C   0x....             LDR      R0,??DataTable5_3
+   \       0x5E   0x6800             LDR      R0,[R0, #+0]
+   \       0x60   0x2146             MOVS     R1,#+70
+   \       0x62   0x5A40             LDRH     R0,[R0, R1]
+   \       0x64   0x0006             MOVS     R6,R0
+    309          #endif
+    310                break;
+   \       0x66   0xE09A             B        ??MotorDemandMux_GetActiveValue_3
+    311              case MOTOR_DEMAND_SOURCE_ANALOG_4_20MA:
+    312                {
+    313          #ifdef MODULE_ANALOG_4_20MA_ID
+    314                  active_demand_value_u16 = (*motorDemandMux_analog_4_20ma_Control_ptr).analog_4_20mA_Data.analogDemandPercent_u16;
+   \                     ??MotorDemandMux_GetActiveValue_7: (+1)
+   \       0x68   0x....             LDR      R0,??DataTable5_4
+   \       0x6A   0x6800             LDR      R0,[R0, #+0]
+   \       0x6C   0x214C             MOVS     R1,#+76
+   \       0x6E   0x5A40             LDRH     R0,[R0, R1]
+   \       0x70   0x0006             MOVS     R6,R0
+    315          #endif
+    316                  break;
+   \       0x72   0xE094             B        ??MotorDemandMux_GetActiveValue_3
+    317                }
+    318              case MOTOR_DEMAND_SOURCE_DIGITAL_INPUTS:
+    319                {
+    320          #ifdef MODULE_DIGITAL_INPUTS_ID
+    321                  active_demand_value_u16 = (*motorDemandMux_digitalInputsControl_ptr).digitalInputs_Data.discreteDemandPercent;
+   \                     ??MotorDemandMux_GetActiveValue_6: (+1)
+   \       0x74   0x6800             LDR      R0,[R0, #+0]
+   \       0x76   0x214C             MOVS     R1,#+76
+   \       0x78   0x5A40             LDRH     R0,[R0, R1]
+   \       0x7A   0x0006             MOVS     R6,R0
+    322          #endif
+    323                  break;
+   \       0x7C   0xE08F             B        ??MotorDemandMux_GetActiveValue_3
+    324                }
+    325              case MOTOR_DEMAND_SOURCE_PWM_INPUT:
+    326                {
+    327          #ifdef MODULE_PWM_INPUT_ID
+    328                  active_demand_value_u16 = (uint16_t)(*motorDemandMux_pwmInputControl_ptr).pwmInput_Data.pwmInputDemandPercentage_u16;
+   \                     ??MotorDemandMux_GetActiveValue_9: (+1)
+   \       0x7E   0x....             LDR      R0,??DataTable6
+   \       0x80   0x6800             LDR      R0,[R0, #+0]
+   \       0x82   0x2146             MOVS     R1,#+70
+   \       0x84   0x5A40             LDRH     R0,[R0, R1]
+   \       0x86   0x0006             MOVS     R6,R0
+    329          #endif
+    330                  break;
+   \       0x88   0xE089             B        ??MotorDemandMux_GetActiveValue_3
+    331                }
+    332              case MOTOR_DEMAND_SOURCE_SERIAL_COMMAND:
+    333                {
+    334          #ifdef MODULE_MODBUS_ID
+    335                  if (motorDemandMux_ModbusStart <= 0) {
+   \                     ??MotorDemandMux_GetActiveValue_8: (+1)
+   \       0x8A   0x....             LDR      R0,??DataTable7
+   \       0x8C   0x8800             LDRH     R0,[R0, #+0]
+   \       0x8E   0x2800             CMP      R0,#+0
+   \       0x90   0xD102             BNE      ??MotorDemandMux_GetActiveValue_10
+    336                    active_demand_value_u16 = 0;
+   \       0x92   0x0028             MOVS     R0,R5
+   \       0x94   0x0006             MOVS     R6,R0
+   \       0x96   0xE076             B        ??MotorDemandMux_GetActiveValue_11
+    337                  } 
+    338                  // active demand percent (takes priority over speed)
+    339                  else if (motorDemandMux_ModbusDemand > 0) {
+   \                     ??MotorDemandMux_GetActiveValue_10: (+1)
+   \       0x98   0x....             LDR      R7,??DataTable7_1
+   \       0x9A   0x8838             LDRH     R0,[R7, #+0]
+   \       0x9C   0x2800             CMP      R0,#+0
+   \       0x9E   0xD072             BEQ      ??MotorDemandMux_GetActiveValue_11
+    340                    /************************************************************/
+    341                    uint32_t fault_length;
+    342                    
+    343                    switch(motorDemandMux_ModbusDemand)
+   \       0xA0   0x8838             LDRH     R0,[R7, #+0]
+   \       0xA2   0x28AA             CMP      R0,#+170
+   \       0xA4   0xD008             BEQ      ??MotorDemandMux_GetActiveValue_12
+   \       0xA6   0x28BB             CMP      R0,#+187
+   \       0xA8   0xD018             BEQ      ??MotorDemandMux_GetActiveValue_13
+   \       0xAA   0x28CC             CMP      R0,#+204
+   \       0xAC   0xD028             BEQ      ??MotorDemandMux_GetActiveValue_14
+   \       0xAE   0x28DD             CMP      R0,#+221
+   \       0xB0   0xD038             BEQ      ??MotorDemandMux_GetActiveValue_15
+   \       0xB2   0x28EE             CMP      R0,#+238
+   \       0xB4   0xD048             BEQ      ??MotorDemandMux_GetActiveValue_16
+   \       0xB6   0xE058             B        ??MotorDemandMux_GetActiveValue_17
+    344                    {
+    345                      case ADC_FAULT_INJECTION: // send 31,1,0,0
+    346                        unsigned char adc_fault[]= {0x55, 0x01, 0x1F, 0x0, 0x0,0x0 ,0xCC, 0xCC};//{31,1,0,0};
+                               ^
+Warning[Pe1072]: a declaration cannot have a label
+   \                     ??MotorDemandMux_GetActiveValue_12: (+1)
+   \       0xB8   0xA80A             ADD      R0,SP,#+40
+   \       0xBA   0x....             LDR      R1,??DataTable7_2
+   \       0xBC   0xC90C             LDM      R1!,{R2,R3}
+   \       0xBE   0xC00C             STM      R0!,{R2,R3}
+   \       0xC0   0x3908             SUBS     R1,R1,#+8
+   \       0xC2   0x3808             SUBS     R0,R0,#+8
+    347                        fault_length = sizeof(adc_fault);
+   \       0xC4   0x2008             MOVS     R0,#+8
+   \       0xC6   0x9001             STR      R0,[SP, #+4]
+    348                                         
+    349                         RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, adc_fault, &fault_length);
+   \       0xC8   0xAA01             ADD      R2,SP,#+4
+   \       0xCA   0xA90A             ADD      R1,SP,#+40
+   \       0xCC   0x....             LDR      R0,??DataTable7_3
+   \       0xCE   0x6800             LDR      R0,[R0, #+0]
+   \       0xD0   0x6880             LDR      R0,[R0, #+8]
+   \       0xD2   0x....'....        BL       RingBuf_WriteBlock
+    350                         fault_injected = 1;
+   \       0xD6   0x4668             MOV      R0,SP
+   \       0xD8   0x7004             STRB     R4,[R0, #+0]
+    351                        
+    352                      break;
+   \       0xDA   0xE046             B        ??MotorDemandMux_GetActiveValue_17
+    353                      case REGISTER_FAULT_INJECTION: // send 31,1,1,0
+    354                        unsigned char register_fault[]={0x55, 0x01, 0x1F, 0x0,0x0,0x1 ,0xCC, 0xCC};
+                               ^
+Warning[Pe1072]: a declaration cannot have a label
+   \                     ??MotorDemandMux_GetActiveValue_13: (+1)
+   \       0xDC   0xA808             ADD      R0,SP,#+32
+   \       0xDE   0x....             LDR      R1,??DataTable7_4
+   \       0xE0   0xC90C             LDM      R1!,{R2,R3}
+   \       0xE2   0xC00C             STM      R0!,{R2,R3}
+   \       0xE4   0x3908             SUBS     R1,R1,#+8
+   \       0xE6   0x3808             SUBS     R0,R0,#+8
+    355                        fault_length = sizeof(register_fault);
+   \       0xE8   0x2008             MOVS     R0,#+8
+   \       0xEA   0x9001             STR      R0,[SP, #+4]
+    356                         RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, register_fault, &fault_length);
+   \       0xEC   0xAA01             ADD      R2,SP,#+4
+   \       0xEE   0xA908             ADD      R1,SP,#+32
+   \       0xF0   0x....             LDR      R0,??DataTable7_3
+   \       0xF2   0x6800             LDR      R0,[R0, #+0]
+   \       0xF4   0x6880             LDR      R0,[R0, #+8]
+   \       0xF6   0x....'....        BL       RingBuf_WriteBlock
+    357                         fault_injected = 1;
+   \       0xFA   0x4668             MOV      R0,SP
+   \       0xFC   0x7004             STRB     R4,[R0, #+0]
+    358                      break;
+   \       0xFE   0xE034             B        ??MotorDemandMux_GetActiveValue_17
+    359                      case CLOCK_FAULT_INJECTION: // send 31,1,2,0
+    360                        unsigned char clock_fault[]={0x55, 0x01, 0x1F, 0x0, 0x0,0x2 ,0xCC, 0xCC};;
+                               ^
+Warning[Pe1072]: a declaration cannot have a label
+   \                     ??MotorDemandMux_GetActiveValue_14: (+1)
+   \      0x100   0xA806             ADD      R0,SP,#+24
+   \      0x102   0x....             LDR      R1,??DataTable7_5
+   \      0x104   0xC90C             LDM      R1!,{R2,R3}
+   \      0x106   0xC00C             STM      R0!,{R2,R3}
+   \      0x108   0x3908             SUBS     R1,R1,#+8
+   \      0x10A   0x3808             SUBS     R0,R0,#+8
+    361                        fault_length = sizeof(clock_fault);
+   \      0x10C   0x2008             MOVS     R0,#+8
+   \      0x10E   0x9001             STR      R0,[SP, #+4]
+    362                         RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, clock_fault, &fault_length);
+   \      0x110   0xAA01             ADD      R2,SP,#+4
+   \      0x112   0xA906             ADD      R1,SP,#+24
+   \      0x114   0x....             LDR      R0,??DataTable7_3
+   \      0x116   0x6800             LDR      R0,[R0, #+0]
+   \      0x118   0x6880             LDR      R0,[R0, #+8]
+   \      0x11A   0x....'....        BL       RingBuf_WriteBlock
+    363                         fault_injected = 1;
+   \      0x11E   0x4668             MOV      R0,SP
+   \      0x120   0x7004             STRB     R4,[R0, #+0]
+    364                      break;
+   \      0x122   0xE022             B        ??MotorDemandMux_GetActiveValue_17
+    365                      case RAM_FAULT_INJECTION: // send 31,1,3,0
+    366                        unsigned char RAM_fault[]={0x55, 0x01, 0x1F, 0x0, 0x0,0x3 ,0xCC, 0xCC};;
+                               ^
+Warning[Pe1072]: a declaration cannot have a label
+   \                     ??MotorDemandMux_GetActiveValue_15: (+1)
+   \      0x124   0xA804             ADD      R0,SP,#+16
+   \      0x126   0x....             LDR      R1,??DataTable7_6
+   \      0x128   0xC90C             LDM      R1!,{R2,R3}
+   \      0x12A   0xC00C             STM      R0!,{R2,R3}
+   \      0x12C   0x3908             SUBS     R1,R1,#+8
+   \      0x12E   0x3808             SUBS     R0,R0,#+8
+    367                        fault_length = sizeof(RAM_fault);
+   \      0x130   0x2008             MOVS     R0,#+8
+   \      0x132   0x9001             STR      R0,[SP, #+4]
+    368                         RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, RAM_fault, &fault_length);
+   \      0x134   0xAA01             ADD      R2,SP,#+4
+   \      0x136   0xA904             ADD      R1,SP,#+16
+   \      0x138   0x....             LDR      R0,??DataTable7_3
+   \      0x13A   0x6800             LDR      R0,[R0, #+0]
+   \      0x13C   0x6880             LDR      R0,[R0, #+8]
+   \      0x13E   0x....'....        BL       RingBuf_WriteBlock
+    369                         fault_injected = 1;
+   \      0x142   0x4668             MOV      R0,SP
+   \      0x144   0x7004             STRB     R4,[R0, #+0]
+    370                      break;
+   \      0x146   0xE010             B        ??MotorDemandMux_GetActiveValue_17
+    371                      case ROM_FAULT_INJECTION: // send 31,1,4,0
+    372                        unsigned char ROM_fault[]={0x55, 0x01, 0x1F, 0x0, 0x0,0x4 ,0xCC, 0xCC};;
+                               ^
+Warning[Pe1072]: a declaration cannot have a label
+
+            switch(motorDemandMux_ModbusDemand)
+            ^
+"C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_demand_multiplexer.c",343  Warning[Pe546]: 
+          transfer of control bypasses initialization of:
+            variable "adc_fault" (declared at line 346)
+            variable "register_fault" (declared at line 354)
+            variable "clock_fault" (declared at line 360)
+            variable "RAM_fault" (declared at line 366)
+   \                     ??MotorDemandMux_GetActiveValue_16: (+1)
+   \      0x148   0xA802             ADD      R0,SP,#+8
+   \      0x14A   0x....             LDR      R1,??DataTable7_7
+   \      0x14C   0xC90C             LDM      R1!,{R2,R3}
+   \      0x14E   0xC00C             STM      R0!,{R2,R3}
+   \      0x150   0x3908             SUBS     R1,R1,#+8
+   \      0x152   0x3808             SUBS     R0,R0,#+8
+    373                        fault_length = sizeof(ROM_fault);
+   \      0x154   0x2008             MOVS     R0,#+8
+   \      0x156   0x9001             STR      R0,[SP, #+4]
+    374                         RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, ROM_fault, &fault_length);
+   \      0x158   0xAA01             ADD      R2,SP,#+4
+   \      0x15A   0xA902             ADD      R1,SP,#+8
+   \      0x15C   0x....             LDR      R0,??DataTable7_3
+   \      0x15E   0x6800             LDR      R0,[R0, #+0]
+   \      0x160   0x6880             LDR      R0,[R0, #+8]
+   \      0x162   0x....'....        BL       RingBuf_WriteBlock
+    375                         fault_injected = 1;
+   \      0x166   0x4668             MOV      R0,SP
+   \      0x168   0x7004             STRB     R4,[R0, #+0]
+    376                      break;
+    377                      
+    378                    }
+    379                    
+    380                    /************************************************************/
+    381                    if(fault_injected ==0){
+   \                     ??MotorDemandMux_GetActiveValue_17: (+1)
+   \      0x16A   0x4668             MOV      R0,SP
+   \      0x16C   0x7800             LDRB     R0,[R0, #+0]
+   \      0x16E   0x2800             CMP      R0,#+0
+   \      0x170   0xD107             BNE      ??MotorDemandMux_GetActiveValue_18
+    382                    if ((motorDemandMux_ModbusDemand < 10000)) { // TODO: Magic Number DEMAND_PERCENT_MAX
+   \      0x172   0x....             LDR      R0,??DataTable7_8  ;; 0x2710
+   \      0x174   0x8839             LDRH     R1,[R7, #+0]
+   \      0x176   0x4281             CMP      R1,R0
+   \      0x178   0xDA02             BGE      ??MotorDemandMux_GetActiveValue_19
+    383                      active_demand_value_u16 = motorDemandMux_ModbusDemand ;
+   \      0x17A   0x8838             LDRH     R0,[R7, #+0]
+   \      0x17C   0x0006             MOVS     R6,R0
+   \      0x17E   0xE000             B        ??MotorDemandMux_GetActiveValue_18
+    384                    } else { // limit to 100% demand
+    385                      active_demand_value_u16 = 10000; // TODO: Magic Number
+   \                     ??MotorDemandMux_GetActiveValue_19: (+1)
+   \      0x180   0x0006             MOVS     R6,R0
+    386                    }
+    387                    }
+    388                    motorDemandMux_ModbusDemand = 0;
+   \                     ??MotorDemandMux_GetActiveValue_18: (+1)
+   \      0x182   0x0028             MOVS     R0,R5
+   \      0x184   0x8038             STRH     R0,[R7, #+0]
+    389                   // active demand speed (second priority)
+    390                  } 
+    391                  if (motorDemandMux_ModbusSpeed < 0xFFFF) // Ignore 0xFFFF speed from Modbus since its not valid
+   \                     ??MotorDemandMux_GetActiveValue_11: (+1)
+   \      0x186   0x....             LDR      R0,??DataTable7_9
+   \      0x188   0x8801             LDRH     R1,[R0, #+0]
+   \      0x18A   0x....             LDR      R2,??DataTable7_10  ;; 0xffff
+   \      0x18C   0x4291             CMP      R1,R2
+   \      0x18E   0xD004             BEQ      ??MotorDemandMux_GetActiveValue_20
+    392                  {
+    393                    active_demand_value_u16 = MotorCom_ConvertSpeedToDemandPercentage(motorDemandMux_ModbusSpeed);
+   \      0x190   0x8800             LDRH     R0,[R0, #+0]
+   \      0x192   0x....'....        BL       MotorCom_ConvertSpeedToDemandPercentage
+   \      0x196   0x0006             MOVS     R6,R0
+   \      0x198   0xE000             B        ??MotorDemandMux_GetActiveValue_21
+    394                  } else {
+    395                    active_demand_value_u16 = 0;
+   \                     ??MotorDemandMux_GetActiveValue_20: (+1)
+   \      0x19A   0x002E             MOVS     R6,R5
+    396                  }
+    397          #endif // def MODULE_MODBUS_ID
+    398                  break;
+   \                     ??MotorDemandMux_GetActiveValue_21: (+1)
+   \      0x19C   0xE7FF             B        ??MotorDemandMux_GetActiveValue_3
+    399                }
+    400              default: // No Known demand source
+    401                break;
+    402              }
+    403              
+    404          #ifdef MODULE_DIGITAL_INPUTS_ID // Needed this for the else part of if((*motorDemandMux_digitalInputsControl_ptr).digitalInputs_Data.discretes_u16.is_motorEnabled == FALSE). This makes sure digital inputs module is available 
+    405            //if ( ((*motorDemandMux_digitalInputsControl_ptr).digitalInputs_Data.is_invertDirection == TRUE) && (motorDemandMux_Control.motorDemandMux_Settings.control_Mode_u16 == DEMAND_MODE_SPEED) )
+    406              //{
+    407                //active_demand_value_u16 = active_demand_value_u16 * -1; // Negative speed corresponds to speed in oppsite direction
+    408              //}
+    409            }
+    410          #endif
+    411            return active_demand_value_u16;
+   \                     ??MotorDemandMux_GetActiveValue_5: (+1)
+   \                     ??MotorDemandMux_GetActiveValue_3: (+1)
+   \      0x19E   0x0030             MOVS     R0,R6
+   \      0x1A0   0xB280             UXTH     R0,R0
+   \      0x1A2   0xB00D             ADD      SP,SP,#+52
+   \      0x1A4   0xBDF0             POP      {R4-R7,PC}       ;; return
+    412          }
+    413          
+    414          /**
+    415          ********************************************************************************************************************************
+    416          * @brief   Get the demand source id of the highest priority demand source that is active.
+    417          * @details This is used by 'MotorDemandMux_GetActiveValue' to determine which source to look at.
+    418          * @param   None 
+    419          * @return  demand_source_id_u16
+    420          ********************************************************************************************************************************
+    421          */
+    422          
+
+   \                                 In section .text, align 2, keep-with-next
+    423          uint16_t MotorDemandMux_GetSourceByPriority(void) {
+   \                     MotorDemandMux_GetSourceByPriority: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    424            uint16_t new_demand_u16 = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x0004             MOVS     R4,R0
+    425            uint8_t new_demand_source_u8 = 0;  
+   \        0x6   0x0005             MOVS     R5,R0
+    426            uint16_t demand_source_id_u16 = 0;
+   \        0x8   0x0001             MOVS     R1,R0
+   \        0xA   0x466A             MOV      R2,SP
+   \        0xC   0x8051             STRH     R1,[R2, #+2]
+    427            uint8_t previous_demand_source_u8 = 0;
+   \        0xE   0x0001             MOVS     R1,R0
+   \       0x10   0x466A             MOV      R2,SP
+   \       0x12   0x7011             STRB     R1,[R2, #+0]
+    428            uint16_t previous_demand_u16 = 0;
+   \       0x14   0x4669             MOV      R1,SP
+   \       0x16   0x8088             STRH     R0,[R1, #+4]
+    429            //uint16_t current_demand_u16 = 0;
+    430            //uint8_t current_demand_source_u8 = 0;  
+    431            //uint8_t highest_priority_source_id_u8 = 0; // ID of highest priority
+    432            
+    433            for(uint8_t priority_u8 = motorDemandMux_Control.motorDemandMux_Settings.maxPriority_u16; priority_u8 > 0; priority_u8--)
+   \       0x18   0x....             LDR      R7,??DataTable7_11
+   \       0x1A   0x89FE             LDRH     R6,[R7, #+14]
+   \                     ??MotorDemandMux_GetSourceByPriority_0: (+1)
+   \       0x1C   0x0030             MOVS     R0,R6
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD062             BEQ      ??MotorDemandMux_GetSourceByPriority_1
+    434            { // Loop through lowest (max_Priority_u8) to highest priority (1)
+    435                #ifdef MODULE_MODBUS_ID
+    436                if(motorDemandMux_Control.motorDemandMux_Settings.modbusPriority_u16 == priority_u8)
+   \       0x24   0x8978             LDRH     R0,[R7, #+10]
+   \       0x26   0x0031             MOVS     R1,R6
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0xB289             UXTH     R1,R1
+   \       0x2C   0x4288             CMP      R0,R1
+   \       0x2E   0xD10D             BNE      ??MotorDemandMux_GetSourceByPriority_2
+    437                {
+    438                  //new_demand_u16 = motorDemandMux_ModbusDemand;              // Demand from Modbus
+    439                  if( motorDemandMux_ModbusSpeed == 0)
+   \       0x30   0x....             LDR      R0,??DataTable7_9
+   \       0x32   0x8801             LDRH     R1,[R0, #+0]
+   \       0x34   0x2900             CMP      R1,#+0
+   \       0x36   0xD103             BNE      ??MotorDemandMux_GetSourceByPriority_3
+    440                  {
+    441                    new_demand_u16 = motorDemandMux_ModbusDemand;              // Demand from Modbus
+   \       0x38   0x....             LDR      R0,??DataTable7_1
+   \       0x3A   0x8800             LDRH     R0,[R0, #+0]
+   \       0x3C   0x0004             MOVS     R4,R0
+   \       0x3E   0xE003             B        ??MotorDemandMux_GetSourceByPriority_4
+    442                  }else 
+    443                  {
+    444                    new_demand_u16 = MotorCom_ConvertSpeedToDemandPercentage(motorDemandMux_ModbusSpeed); // Demand from Modbus
+   \                     ??MotorDemandMux_GetSourceByPriority_3: (+1)
+   \       0x40   0x8800             LDRH     R0,[R0, #+0]
+   \       0x42   0x....'....        BL       MotorCom_ConvertSpeedToDemandPercentage
+   \       0x46   0x0004             MOVS     R4,R0
+    445                  }
+    446                  
+    447                  new_demand_source_u8 = MOTOR_DEMAND_SOURCE_SERIAL_COMMAND; // Modbus source          
+   \                     ??MotorDemandMux_GetSourceByPriority_4: (+1)
+   \       0x48   0x2005             MOVS     R0,#+5
+   \       0x4A   0x0005             MOVS     R5,R0
+    448                  //break;
+    449                }
+    450                #endif
+    451              
+    452                #ifdef MODULE_ANALOG_0_10V_ID
+    453                if( motorDemandMux_Control.motorDemandMux_Settings.analog0_10vPriority_u16 == priority_u8)
+   \                     ??MotorDemandMux_GetSourceByPriority_2: (+1)
+   \       0x4C   0x88B8             LDRH     R0,[R7, #+4]
+   \       0x4E   0x0031             MOVS     R1,R6
+   \       0x50   0xB2C9             UXTB     R1,R1
+   \       0x52   0xB289             UXTH     R1,R1
+   \       0x54   0x4288             CMP      R0,R1
+   \       0x56   0xD106             BNE      ??MotorDemandMux_GetSourceByPriority_5
+    454                {
+    455                  new_demand_u16 = (*motorDemandMux_analog_0_10v_Control_ptr).analogVolts_Data.analogDemandPercent_u16; // Demand from analog 0-10V input
+   \       0x58   0x....             LDR      R0,??DataTable7_12
+   \       0x5A   0x6800             LDR      R0,[R0, #+0]
+   \       0x5C   0x2146             MOVS     R1,#+70
+   \       0x5E   0x5A40             LDRH     R0,[R0, R1]
+   \       0x60   0x0004             MOVS     R4,R0
+    456                  new_demand_source_u8 = MOTOR_DEMAND_SOURCE_ANALOG_0_10V;  // Analog 0-10V source          
+   \       0x62   0x2001             MOVS     R0,#+1
+   \       0x64   0x0005             MOVS     R5,R0
+    457                  //break;
+    458                }
+    459                #endif
+    460              
+    461                #ifdef MODULE_DIGITAL_INPUTS_ID
+    462                if( motorDemandMux_Control.motorDemandMux_Settings.digitalInputsPriority_u16 == priority_u8)
+   \                     ??MotorDemandMux_GetSourceByPriority_5: (+1)
+   \       0x66   0x8938             LDRH     R0,[R7, #+8]
+   \       0x68   0x0031             MOVS     R1,R6
+   \       0x6A   0xB2C9             UXTB     R1,R1
+   \       0x6C   0xB289             UXTH     R1,R1
+   \       0x6E   0x4288             CMP      R0,R1
+   \       0x70   0xD106             BNE      ??MotorDemandMux_GetSourceByPriority_6
+    463                {
+    464                  new_demand_u16 = (*motorDemandMux_digitalInputsControl_ptr).digitalInputs_Data.discreteDemandPercent;          // Demand from digital inputs
+   \       0x72   0x....             LDR      R0,??DataTable7_13
+   \       0x74   0x6800             LDR      R0,[R0, #+0]
+   \       0x76   0x214C             MOVS     R1,#+76
+   \       0x78   0x5A40             LDRH     R0,[R0, R1]
+   \       0x7A   0x0004             MOVS     R4,R0
+    465                  new_demand_source_u8 = MOTOR_DEMAND_SOURCE_DIGITAL_INPUTS; // Digital input source
+   \       0x7C   0x2003             MOVS     R0,#+3
+   \       0x7E   0x0005             MOVS     R5,R0
+    466                  //break;
+    467                }
+    468                #endif
+    469              
+    470                #ifdef MODULE_PWM_INPUT_ID
+    471                if( motorDemandMux_Control.motorDemandMux_Settings.pwmInputPriority_u16 == priority_u8)
+   \                     ??MotorDemandMux_GetSourceByPriority_6: (+1)
+   \       0x80   0x89B8             LDRH     R0,[R7, #+12]
+   \       0x82   0x0031             MOVS     R1,R6
+   \       0x84   0xB2C9             UXTB     R1,R1
+   \       0x86   0xB289             UXTH     R1,R1
+   \       0x88   0x4288             CMP      R0,R1
+   \       0x8A   0xD106             BNE      ??MotorDemandMux_GetSourceByPriority_7
+    472                {
+    473                  new_demand_u16 = (uint16_t)(*motorDemandMux_pwmInputControl_ptr).pwmInput_Data.pwmInputDemandPercentage_u16;         // Demand from PWM input
+   \       0x8C   0x....             LDR      R0,??DataTable6
+   \       0x8E   0x6800             LDR      R0,[R0, #+0]
+   \       0x90   0x2146             MOVS     R1,#+70
+   \       0x92   0x5A40             LDRH     R0,[R0, R1]
+   \       0x94   0x0004             MOVS     R4,R0
+    474                  new_demand_source_u8 = MOTOR_DEMAND_SOURCE_PWM_INPUT;     // PWM input source
+   \       0x96   0x2004             MOVS     R0,#+4
+   \       0x98   0x0005             MOVS     R5,R0
+    475                  //break;
+    476                }
+    477                #endif
+    478              
+    479                #ifdef MODULE_ANALOG_4_20MA_ID
+    480                if( motorDemandMux_Control.motorDemandMux_Settings.analog4_20mAPriority_u16 == priority_u8)
+   \                     ??MotorDemandMux_GetSourceByPriority_7: (+1)
+   \       0x9A   0x88F8             LDRH     R0,[R7, #+6]
+   \       0x9C   0x0031             MOVS     R1,R6
+   \       0x9E   0xB2C9             UXTB     R1,R1
+   \       0xA0   0xB289             UXTH     R1,R1
+   \       0xA2   0x4288             CMP      R0,R1
+   \       0xA4   0xD106             BNE      ??MotorDemandMux_GetSourceByPriority_8
+    481                {
+    482                  new_demand_u16 = (*motorDemandMux_analog_4_20ma_Control_ptr).analog_4_20mA_Data.analogDemandPercent_u16;         // Demand from analog 4-20mA
+   \       0xA6   0x....             LDR      R0,??DataTable7_14
+   \       0xA8   0x6800             LDR      R0,[R0, #+0]
+   \       0xAA   0x214C             MOVS     R1,#+76
+   \       0xAC   0x5A40             LDRH     R0,[R0, R1]
+   \       0xAE   0x0004             MOVS     R4,R0
+    483                  new_demand_source_u8 = MOTOR_DEMAND_SOURCE_ANALOG_4_20MA; // Analog 4-20mA source
+   \       0xB0   0x2002             MOVS     R0,#+2
+   \       0xB2   0x0005             MOVS     R5,R0
+    484                  //break;
+    485                }
+    486                #endif
+    487              
+    488              if(new_demand_u16 > 0)
+   \                     ??MotorDemandMux_GetSourceByPriority_8: (+1)
+   \       0xB4   0x0020             MOVS     R0,R4
+   \       0xB6   0xB280             UXTH     R0,R0
+   \       0xB8   0x2800             CMP      R0,#+0
+   \       0xBA   0xD008             BEQ      ??MotorDemandMux_GetSourceByPriority_9
+    489              {
+    490                demand_source_id_u16 = new_demand_source_u8;    
+   \       0xBC   0x0028             MOVS     R0,R5
+   \       0xBE   0xB2C0             UXTB     R0,R0
+   \       0xC0   0x4669             MOV      R1,SP
+   \       0xC2   0x8048             STRH     R0,[R1, #+2]
+    491                previous_demand_u16 = new_demand_u16;
+   \       0xC4   0x4668             MOV      R0,SP
+   \       0xC6   0x8084             STRH     R4,[R0, #+4]
+    492                previous_demand_source_u8 = new_demand_source_u8;
+   \       0xC8   0x4668             MOV      R0,SP
+   \       0xCA   0x7005             STRB     R5,[R0, #+0]
+   \       0xCC   0xE00B             B        ??MotorDemandMux_GetSourceByPriority_10
+    493              } else
+    494              {
+    495                if(previous_demand_u16 != 0)
+   \                     ??MotorDemandMux_GetSourceByPriority_9: (+1)
+   \       0xCE   0x4668             MOV      R0,SP
+   \       0xD0   0x8880             LDRH     R0,[R0, #+4]
+   \       0xD2   0x2800             CMP      R0,#+0
+   \       0xD4   0xD004             BEQ      ??MotorDemandMux_GetSourceByPriority_11
+    496                {
+    497                  demand_source_id_u16 = previous_demand_source_u8;
+   \       0xD6   0x4668             MOV      R0,SP
+   \       0xD8   0x7800             LDRB     R0,[R0, #+0]
+   \       0xDA   0x4669             MOV      R1,SP
+   \       0xDC   0x8048             STRH     R0,[R1, #+2]
+   \       0xDE   0xE002             B        ??MotorDemandMux_GetSourceByPriority_10
+    498                }else
+    499                {
+    500                  demand_source_id_u16 = DEFAULT_MOTOR_DEMAND_SOURCE;
+   \                     ??MotorDemandMux_GetSourceByPriority_11: (+1)
+   \       0xE0   0x2001             MOVS     R0,#+1
+   \       0xE2   0x4669             MOV      R1,SP
+   \       0xE4   0x8048             STRH     R0,[R1, #+2]
+    501                }
+    502              }
+    503              //if(priority_u8 == 1)
+    504              //{
+    505               // highest_priority_source_id_u8 = new_demand_source_u8;
+    506              //}
+    507            }
+   \                     ??MotorDemandMux_GetSourceByPriority_10: (+1)
+   \       0xE6   0x1E76             SUBS     R6,R6,#+1
+   \       0xE8   0xE798             B        ??MotorDemandMux_GetSourceByPriority_0
+    508            return demand_source_id_u16;
+   \                     ??MotorDemandMux_GetSourceByPriority_1: (+1)
+   \       0xEA   0x4668             MOV      R0,SP
+   \       0xEC   0x8840             LDRH     R0,[R0, #+2]
+   \       0xEE   0xBDFE             POP      {R1-R7,PC}       ;; return
+    509          }
+    510          
+    511          /**
+    512          ********************************************************************************************************************************
+    513          * @brief   Get the demand source id of the highest priority demand source that is active.
+    514          * @details This is used by 'MotorDemandMux_GetActiveValue' to determine which source to look at.
+    515          * @param   None 
+    516          * @return  demand_source_id_u16
+    517          ********************************************************************************************************************************
+    518          */
+
+   \                                 In section .text, align 2, keep-with-next
+    519          void MotorDemandMux_ModbusUpdate(uint16_t commanded_speed, uint16_t commanded_demand, uint16_t commanded_start, uint16_t demand_source, uint16_t direction) {
+   \                     MotorDemandMux_ModbusUpdate: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0017             MOVS     R7,R2
+   \        0x6   0x001D             MOVS     R5,R3
+   \        0x8   0x9E06             LDR      R6,[SP, #+24]
+    520            motorDemandMux_ModbusSpeed = commanded_speed;
+   \        0xA   0x....             LDR      R0,??DataTable7_9
+   \        0xC   0x8004             STRH     R4,[R0, #+0]
+    521            motorDemandMux_ModbusDemand = commanded_demand;
+   \        0xE   0x4668             MOV      R0,SP
+   \       0x10   0x8800             LDRH     R0,[R0, #+0]
+   \       0x12   0x....             LDR      R1,??DataTable7_1
+   \       0x14   0x8008             STRH     R0,[R1, #+0]
+    522            motorDemandMux_ModbusStart = commanded_start;
+   \       0x16   0x....             LDR      R0,??DataTable7
+   \       0x18   0x8007             STRH     R7,[R0, #+0]
+    523            if (demand_source < MOTOR_DEMAND_SOURCES_TOTAL) {// todo: magic number - NO_DEMAND_SOURCE
+   \       0x1A   0x0028             MOVS     R0,R5
+   \       0x1C   0xB280             UXTH     R0,R0
+   \       0x1E   0x2806             CMP      R0,#+6
+   \       0x20   0xDA07             BGE      ??MotorDemandMux_ModbusUpdate_0
+    524              if(demand_source != MOTOR_DEMAND_SOURCE_SERIAL_COMMAND)
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0xB280             UXTH     R0,R0
+   \       0x26   0x2805             CMP      R0,#+5
+   \       0x28   0xD001             BEQ      ??MotorDemandMux_ModbusUpdate_1
+    525              { // Only update settings when the source is other then Modbus
+    526                motorDemandMux_Control.motorDemandMux_Settings.demandSource_u16 = demand_source;
+   \       0x2A   0x....             LDR      R0,??DataTable7_11
+   \       0x2C   0x8005             STRH     R5,[R0, #+0]
+    527              }
+    528              motorDemandMux_Control.motorDemandMux_Data.currentDemandSource_u16 = demand_source;
+   \                     ??MotorDemandMux_ModbusUpdate_1: (+1)
+   \       0x2E   0x....             LDR      R0,??DataTable7_11
+   \       0x30   0x8245             STRH     R5,[R0, #+18]
+    529            }
+    530            motorDemandMux_ModbusDirection = direction;
+   \                     ??MotorDemandMux_ModbusUpdate_0: (+1)
+   \       0x32   0x....             LDR      R0,??DataTable7_15
+   \       0x34   0x8006             STRH     R6,[R0, #+0]
+    531            // TODO: Move All Motor Limtis and (non-communication related) Settings from module_motor_com to motor_demand_multiplexer
+    532            //  (*motorDemandMux_MotorCom_Control_ptr).motor_Setting.motor_Direction_u8 = direction ? CW: CCW;
+    533            MotorCom_UpdateMotorDirection(direction);
+   \       0x36   0x0030             MOVS     R0,R6
+   \       0x38   0xB280             UXTH     R0,R0
+   \       0x3A   0x....'....        BL       MotorCom_UpdateMotorDirection
+    534          }
+   \       0x3E   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     motorDemandMux_PollTime_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     motorDemandMux_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     motorDemandMux_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     motorDemandMux_analog_0_10v_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     motorDemandMux_analog_4_20ma_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     motorDemandMux_digitalInputsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     motorDemandMux_pwmInputControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     motorDemandMux_ModbusStart
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x....'....        DC32     motorDemandMux_ModbusDemand
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     usart2Control_AppLocal
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0x0000'2710        DC32     0x2710
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \        0x0   0x....'....        DC32     motorDemandMux_ModbusSpeed
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \        0x0   0x....'....        DC32     motorDemandMux_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \        0x0   0x....'....        DC32     motorDemandMux_analog_0_10v_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \        0x0   0x....'....        DC32     motorDemandMux_digitalInputsControl_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_14:
+   \        0x0   0x....'....        DC32     motorDemandMux_analog_4_20ma_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_15:
+   \        0x0   0x....'....        DC32     motorDemandMux_ModbusDirection
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x55 0x01          DC8 85, 1, 31, 0, 0, 0, 204, 204
+
+   \              0x1F 0x00    
+
+   \              0x00 0x00    
+
+   \              0xCC 0xCC
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x55 0x01          DC8 85, 1, 31, 0, 0, 1, 204, 204
+
+   \              0x1F 0x00    
+
+   \              0x00 0x01    
+
+   \              0xCC 0xCC
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x55 0x01          DC8 85, 1, 31, 0, 0, 2, 204, 204
+
+   \              0x1F 0x00    
+
+   \              0x00 0x02    
+
+   \              0xCC 0xCC
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x55 0x01          DC8 85, 1, 31, 0, 0, 3, 204, 204
+
+   \              0x1F 0x00    
+
+   \              0x00 0x03    
+
+   \              0xCC 0xCC
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x55 0x01          DC8 85, 1, 31, 0, 0, 4, 204, 204
+
+   \              0x1F 0x00    
+
+   \              0x00 0x04    
+
+   \              0xCC 0xCC
+    535          
+    536          // void MotorDemandMux_ModbusConvertSpeedToDemand(uint16_t speed_rpm) {
+    537          
+    538          // }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   MotorDemandMux_AssignModuleMem
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+      72   MotorDemandMux_GetActiveValue
+        72   -> MotorCom_ConvertSpeedToDemandPercentage
+        72   -> MotorDemandMux_GetSourceByPriority
+        72   -> RingBuf_WriteBlock
+      32   MotorDemandMux_GetSourceByPriority
+        32   -> MotorCom_ConvertSpeedToDemandPercentage
+      24   MotorDemandMux_InitStructPointers
+        24   -> getProcessInfoIndex
+        24 __aeabi_uread4
+       0   MotorDemandMux_InitSystem
+      24   MotorDemandMux_ModbusUpdate
+        24   -> MotorCom_UpdateMotorDirection
+      24   MotorDemandMux_Update
+        24   -> MotorDemandMux_GetActiveValue
+        24   -> MotorDemandMux_GetSourceByPriority
+      32   moduleMotorDemandMultiplexer_u32
+        32   -> MotorDemandMux_AssignModuleMem
+        32   -> MotorDemandMux_InitStructPointers
+        32   -> MotorDemandMux_InitSystem
+        32   -> MotorDemandMux_Update
+        32   -> getProcessInfoIndex
+        32   -> getSysCount
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable6
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_14
+       4  ??DataTable7_15
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+       8  ?_0
+       8  ?_1
+       8  ?_2
+       8  ?_3
+       8  ?_4
+      60  MotorDemandMux_AssignModuleMem
+     422  MotorDemandMux_GetActiveValue
+     240  MotorDemandMux_GetSourceByPriority
+     128  MotorDemandMux_InitStructPointers
+      34  MotorDemandMux_InitSystem
+      64  MotorDemandMux_ModbusUpdate
+      46  MotorDemandMux_Update
+     164  moduleMotorDemandMultiplexer_u32
+      20  motorDemandMux_Control
+       2  motorDemandMux_ModbusDemand
+       2  motorDemandMux_ModbusDirection
+       2  motorDemandMux_ModbusSpeed
+       2  motorDemandMux_ModbusStart
+       8  motorDemandMux_PollTime_u64
+       4  motorDemandMux_StructMem_u32
+       4  motorDemandMux_analog_0_10v_Control_ptr
+       4  motorDemandMux_analog_4_20ma_Control_ptr
+       4  motorDemandMux_digitalInputsControl_ptr
+       4  motorDemandMux_modbusControl_ptr
+       4  motorDemandMux_pwmInputControl_ptr
+
+ 
+    60 bytes in section .bss
+    40 bytes in section .rodata
+ 1'254 bytes in section .text
+ 
+ 1'254 bytes of CODE  memory
+    40 bytes of CONST memory
+    60 bytes of DATA  memory
+
+Errors: none
+Warnings: 6

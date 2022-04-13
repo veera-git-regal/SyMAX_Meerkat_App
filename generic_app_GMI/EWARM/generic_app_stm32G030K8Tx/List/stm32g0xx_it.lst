@@ -1,0 +1,499 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:57
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Src\stm32g0xx_it.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWAFB.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Src\stm32g0xx_it.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_it.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_it.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Src\stm32g0xx_it.c
+      1          /* USER CODE BEGIN Header */
+      2          /**
+      3            ******************************************************************************
+      4            * @file    stm32g0xx_it.c
+      5            * @brief   Interrupt Service Routines.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          /* USER CODE END Header */
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "main.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_EXTI_IsActiveRisingFlag_0_31(uint32_t)
+   \                     LL_EXTI_IsActiveRisingFlag_0_31: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x....             LDR      R1,??DataTable4  ;; 0x4002180c
+   \        0x4   0x6809             LDR      R1,[R1, #+0]
+   \        0x6   0x4001             ANDS     R1,R1,R0
+   \        0x8   0x4281             CMP      R1,R0
+   \        0xA   0xD101             BNE      ??LL_EXTI_IsActiveRisingFlag_0_31_0
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0xE000             B        ??LL_EXTI_IsActiveRisingFlag_0_31_1
+   \                     ??LL_EXTI_IsActiveRisingFlag_0_31_0: (+1)
+   \       0x10   0x2000             MOVS     R0,#+0
+   \                     ??LL_EXTI_IsActiveRisingFlag_0_31_1: (+1)
+   \       0x12   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_ClearRisingFlag_0_31(uint32_t)
+   \                     LL_EXTI_ClearRisingFlag_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable4  ;; 0x4002180c
+   \        0x2   0x6008             STR      R0,[R1, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+     23          #include "stm32g0xx_it.h"
+     24          /* Private includes ----------------------------------------------------------*/
+     25          /* USER CODE BEGIN Includes */
+     26          #include "driver_adc1.h" //SPA
+     27          #include "driver_usart2.h" //SPA
+     28          #include "driver_pwm_input.h"
+     29          #include "driver_spi1.h"
+     30          
+     31          /* USER CODE END Includes */
+     32          
+     33          /* Private typedef -----------------------------------------------------------*/
+     34          /* USER CODE BEGIN TD */
+
+   \                                 In section .bss, align 8
+     35          volatile uint64_t tickCounter=0; //SPA
+   \                     tickCounter:
+   \        0x0                      DS8 8
+     36          /* USER CODE END TD */
+     37          
+     38          /* Private define ------------------------------------------------------------*/
+     39          /* USER CODE BEGIN PD */
+     40           
+     41          /* USER CODE END PD */
+     42          
+     43          /* Private macro -------------------------------------------------------------*/
+     44          /* USER CODE BEGIN PM */
+     45          
+     46          /* USER CODE END PM */
+     47          
+     48          /* Private variables ---------------------------------------------------------*/
+     49          /* USER CODE BEGIN PV */
+     50          
+     51          /* USER CODE END PV */
+     52          
+     53          /* Private function prototypes -----------------------------------------------*/
+     54          /* USER CODE BEGIN PFP */
+     55          
+     56          /* USER CODE END PFP */
+     57          
+     58          /* Private user code ---------------------------------------------------------*/
+     59          /* USER CODE BEGIN 0 */
+     60          
+     61          /* USER CODE END 0 */
+     62          
+     63          /* External variables --------------------------------------------------------*/
+     64          extern TIM_HandleTypeDef htim1;  // TODO: Pwm Input: Move if possible to FlexMouse location
+     65          //extern SPI_HandleTypeDef htim2;  // TODO: Pwm Input: Move if possible to FlexMouse location
+     66          /* USER CODE BEGIN EV */
+     67          
+     68          /* USER CODE END EV */
+     69          
+     70          /******************************************************************************/
+     71          /*           Cortex-M0+ Processor Interruption and Exception Handlers          */ 
+     72          /******************************************************************************/
+     73          /**
+     74            * @brief This function handles Non maskable interrupt.
+     75            */
+
+   \                                 In section .text, align 2, keep-with-next
+     76          void NMI_Handler(void)
+     77          {
+     78            /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
+     79          
+     80            /* USER CODE END NonMaskableInt_IRQn 0 */
+     81            /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
+     82          
+     83            /* USER CODE END NonMaskableInt_IRQn 1 */
+     84          }
+   \                     NMI_Handler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+     85          
+     86          /**
+     87            * @brief This function handles Hard fault interrupt.
+     88            */
+
+   \                                 In section .text, align 2, keep-with-next
+     89          void HardFault_Handler(void)
+     90          {
+   \                     HardFault_Handler: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+     91            /* USER CODE BEGIN HardFault_IRQn 0 */
+     92          
+     93            /* USER CODE END HardFault_IRQn 0 */
+     94            while (1)
+   \                     ??HardFault_Handler_0: (+1)
+   \        0x2   0xE7FE             B        ??HardFault_Handler_0
+     95            {
+     96              /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+     97              /* USER CODE END W1_HardFault_IRQn 0 */
+     98            }
+     99          }
+    100          
+    101          /**
+    102            * @brief This function handles System service call via SWI instruction.
+    103            */
+
+   \                                 In section .text, align 2, keep-with-next
+    104          void SVC_Handler(void)
+    105          {
+    106            /* USER CODE BEGIN SVC_IRQn 0 */
+    107          
+    108            /* USER CODE END SVC_IRQn 0 */
+    109            /* USER CODE BEGIN SVC_IRQn 1 */
+    110          
+    111            /* USER CODE END SVC_IRQn 1 */
+    112          }
+   \                     SVC_Handler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    113          
+    114          /**
+    115            * @brief This function handles Pendable request for system service.
+    116            */
+
+   \                                 In section .text, align 2, keep-with-next
+    117          void PendSV_Handler(void)
+    118          {
+    119            /* USER CODE BEGIN PendSV_IRQn 0 */
+    120          
+    121            /* USER CODE END PendSV_IRQn 0 */
+    122            /* USER CODE BEGIN PendSV_IRQn 1 */
+    123          
+    124            /* USER CODE END PendSV_IRQn 1 */
+    125          }
+   \                     PendSV_Handler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    126          
+    127          /**
+    128            * @brief This function handles System tick timer.
+    129            */
+
+   \                                 In section .text, align 2, keep-with-next
+    130          void SysTick_Handler(void)
+    131          {
+   \                     SysTick_Handler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    132            /* USER CODE BEGIN SysTick_IRQn 0 */
+    133          
+    134            /* USER CODE END SysTick_IRQn 0 */
+    135            HAL_IncTick();
+   \        0x2   0x....'....        BL       HAL_IncTick
+    136            tickCounter++;
+   \        0x6   0x....             LDR      R2,??DataTable4_1
+   \        0x8   0xCA03             LDM      R2!,{R0,R1}
+   \        0xA   0x3A08             SUBS     R2,R2,#+8
+   \        0xC   0x2300             MOVS     R3,#+0
+   \        0xE   0x1C40             ADDS     R0,R0,#+1
+   \       0x10   0x4159             ADCS     R1,R1,R3
+   \       0x12   0xC203             STM      R2!,{R0,R1}
+   \       0x14   0x3A08             SUBS     R2,R2,#+8
+    137            /* USER CODE BEGIN SysTick_IRQn 1 */
+    138          
+    139            /* USER CODE END SysTick_IRQn 1 */
+    140          }
+   \       0x16   0xBD01             POP      {R0,PC}          ;; return
+    141          
+    142          /******************************************************************************/
+    143          /* STM32G0xx Peripheral Interrupt Handlers                                    */
+    144          /* Add here the Interrupt Handlers for the used peripherals.                  */
+    145          /* For the available peripheral interrupt handler names,                      */
+    146          /* please refer to the startup file (startup_stm32g0xx.s).                    */
+    147          /******************************************************************************/
+    148          
+    149          /**
+    150            * @brief This function handles DMA1 channel 1 interrupt.
+    151            */
+
+   \                                 In section .text, align 2, keep-with-next
+    152          void EXTI4_15_IRQHandler(void)
+    153          {
+   \                     EXTI4_15_IRQHandler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    154            /* USER CODE BEGIN EXTI4_15_IRQn 0 */
+    155            
+    156            /* USER CODE END EXTI4_15_IRQn 0 */
+    157            if (LL_EXTI_IsActiveRisingFlag_0_31(LL_EXTI_LINE_8) != RESET)
+   \        0x2   0x2480             MOVS     R4,#+128
+   \        0x4   0x0064             LSLS     R4,R4,#+1        ;; #+256
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       LL_EXTI_IsActiveRisingFlag_0_31
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD002             BEQ      ??EXTI4_15_IRQHandler_0
+    158            {
+    159              LL_EXTI_ClearRisingFlag_0_31(LL_EXTI_LINE_8);
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x....'....        BL       LL_EXTI_ClearRisingFlag_0_31
+    160              /* USER CODE BEGIN LL_EXTI_LINE_8_RISING */
+    161          
+    162              /* USER CODE END LL_EXTI_LINE_8_RISING */
+    163            }
+    164            /* USER CODE BEGIN EXTI4_15_IRQn 1 */
+    165          }
+   \                     ??EXTI4_15_IRQHandler_0: (+1)
+   \       0x16   0xBD10             POP      {R4,PC}          ;; return
+    166          
+    167          /**
+    168            * @brief This function handles ADC1 interrupt.
+    169            */
+
+   \                                 In section .text, align 2, keep-with-next
+    170          void ADC1_IRQHandler(void)
+    171          {
+    172            /* USER CODE BEGIN ADC1_IRQn 0 */
+    173          //if(LL_ADC_IsActiveFlag_EOC(ADC1) != 0)
+    174            //{
+    175              /* Clear flag ADC group regular end of unitary conversion */
+    176             // LL_ADC_ClearFlag_EOC(ADC1);
+    177              
+    178              /* Call interruption treatment function */
+    179              //AdcGrpRegularUnitaryConvComplete_Callback();
+    180            //}
+    181            /* USER CODE END ADC1_IRQn 0 */
+    182            /* USER CODE BEGIN ADC1_IRQn 1 */
+    183          
+    184            /* USER CODE END ADC1_IRQn 1 */
+    185          }
+   \                     ADC1_IRQHandler: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    186          
+    187          /**
+    188            * @brief This function handles TIM1 break, update, trigger and commutation interrupts.
+    189            */
+
+   \                                 In section .text, align 2, keep-with-next
+    190          void TIM1_BRK_UP_TRG_COM_IRQHandler(void)
+    191          {
+   \                     TIM1_BRK_UP_TRG_COM_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    192            /* USER CODE BEGIN TIM1_BRK_UP_TRG_COM_IRQn 0 */
+    193          
+    194            /* USER CODE END TIM1_BRK_UP_TRG_COM_IRQn 0 */
+    195            HAL_TIM_IRQHandler(&htim1); // TODO: Pwm Input: Move if possible to FlexMouse location
+   \        0x2   0x....             LDR      R0,??DataTable4_2
+   \        0x4   0x....'....        BL       HAL_TIM_IRQHandler
+    196            /* USER CODE BEGIN TIM1_BRK_UP_TRG_COM_IRQn 1 */
+    197          
+    198          //   /* USER CODE END DMA1_Channel1_IRQn 1 */
+    199          }
+   \        0x8   0xBD01             POP      {R0,PC}          ;; return
+    200          
+    201          /**
+    202            * @brief This function handles TIM1 capture compare interrupt.
+    203            */
+
+   \                                 In section .text, align 2, keep-with-next
+    204          void TIM1_CC_IRQHandler(void)
+    205          {
+   \                     TIM1_CC_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    206            /* USER CODE END TIM1_CC_IRQn 0 */
+    207            HAL_TIM_IRQHandler(&htim1); // TODO: Pwm Input: Move if possible to FlexMouse location
+   \        0x2   0x....             LDR      R0,??DataTable4_2
+   \        0x4   0x....'....        BL       HAL_TIM_IRQHandler
+    208            /* USER CODE BEGIN TIM1_CC_IRQn 1 */
+    209          }
+   \        0x8   0xBD01             POP      {R0,PC}          ;; return
+    210          
+    211          /**
+    212            * @brief This function handles SPI1 global interrupt.
+    213            */
+
+   \                                 In section .text, align 2, keep-with-next
+    214          void SPI1_IRQHandler(void)
+    215          {
+   \                     SPI1_IRQHandler: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    216            SPI1_Interrupt_Handler();
+   \        0x2   0x....'....        BL       SPI1_Interrupt_Handler
+    217          }
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x4002'180C        DC32     0x4002180c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     tickCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x....'....        DC32     htim1
+    218          
+    219          /**
+    220          //  * @brief This function handles USART1 global interrupt / USART1 wake-up interrupt through EXTI line 25.
+    221          //  */
+    222          // void USART1_IRQHandler(void)
+    223          // {
+    224          //  /* USER CODE BEGIN USART1_IRQn 0 */
+    225          //
+    226          //  /* USER CODE END USART1_IRQn 0 */
+    227          //  /* USER CODE BEGIN USART1_IRQn 1 */
+    228          //
+    229          //  /* USER CODE END USART1_IRQn 1 */
+    230          // }
+    231          
+    232          ///**
+    233          //  * @brief This function handles USART2 global interrupt / USART2 wake-up interrupt through EXTI line 26.
+    234          //  */
+    235          //void USART2_IRQHandler(void)
+    236          //{
+    237          //  /* USER CODE BEGIN USART2_IRQn 0 */
+    238          //  /* Check RXNE flag value in ISR register */
+    239          //  if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2))
+    240          //  {
+    241          //    /* RXNE flag will be cleared by reading of RDR register (done in call) */
+    242          //    /* Call function in charge of handling Character reception */
+    243          //    USART_CharReception_Callback();
+    244          //  }
+    245          //  
+    246          //  if (LL_USART_IsEnabledIT_TXE(USART2) && LL_USART_IsActiveFlag_TXE(USART2))
+    247          //  {
+    248          //    /* TXE flag will be automatically cleared when writing new data in TDR register */
+    249          //
+    250          //    /* Call function in charge of handling empty DR => will lead to transmission of next character */
+    251          //    USART_TXEmpty_Callback();
+    252          //  }
+    253          //
+    254          //  if (LL_USART_IsEnabledIT_TC(USART2) && LL_USART_IsActiveFlag_TC(USART2))
+    255          //  {
+    256          //    /* Clear TC flag */
+    257          //    LL_USART_ClearFlag_TC(USART2);
+    258          //    /* Call function in charge of handling end of transmission of sent character
+    259          //       and prepare next charcater transmission */
+    260          //    USART_CharTransmitComplete_Callback();
+    261          //  }
+    262          //  
+    263          //  if (LL_USART_IsEnabledIT_ERROR(USART2) && LL_USART_IsActiveFlag_NE(USART2))
+    264          //  {
+    265          //    /* Call Error function */
+    266          //    Error_Callback();
+    267          //  }
+    268          //  /* USER CODE END USART2_IRQn 0 */
+    269          //  /* USER CODE BEGIN USART2_IRQn 1 */
+    270          //
+    271          //  /* USER CODE END USART2_IRQn 1 */
+    272          //}
+    273          
+    274          /* USER CODE BEGIN 1 */
+    275          
+    276          /* USER CODE END 1 */
+    277          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ADC1_IRQHandler
+       8   EXTI4_15_IRQHandler
+         8   -> LL_EXTI_ClearRisingFlag_0_31
+         8   -> LL_EXTI_IsActiveRisingFlag_0_31
+       4   HardFault_Handler
+       0   LL_EXTI_ClearRisingFlag_0_31
+       4   LL_EXTI_IsActiveRisingFlag_0_31
+       0   NMI_Handler
+       0   PendSV_Handler
+       8   SPI1_IRQHandler
+         8   -> SPI1_Interrupt_Handler
+       0   SVC_Handler
+       8   SysTick_Handler
+         8   -> HAL_IncTick
+       8   TIM1_BRK_UP_TRG_COM_IRQHandler
+         8   -> HAL_TIM_IRQHandler
+       8   TIM1_CC_IRQHandler
+         8   -> HAL_TIM_IRQHandler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       2  ADC1_IRQHandler
+      24  EXTI4_15_IRQHandler
+       4  HardFault_Handler
+       6  LL_EXTI_ClearRisingFlag_0_31
+      20  LL_EXTI_IsActiveRisingFlag_0_31
+       2  NMI_Handler
+       2  PendSV_Handler
+       8  SPI1_IRQHandler
+       2  SVC_Handler
+      24  SysTick_Handler
+      10  TIM1_BRK_UP_TRG_COM_IRQHandler
+      10  TIM1_CC_IRQHandler
+       8  tickCounter
+
+ 
+   8 bytes in section .bss
+ 126 bytes in section .text
+ 
+ 126 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

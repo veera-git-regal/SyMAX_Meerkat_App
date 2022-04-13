@@ -1,0 +1,307 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:42
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_app.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWCE7C.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_app.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_app.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_app.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_app.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_app.c 
+      4          * @author  Pamela Lee
+      5          * @brief   This is a template non-driver app.
+      6          * @details This app does nothing.
+      7          ********************************************************************************************************************************
+      8          */
+      9          
+     10          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     11          #include "module_app.h"
+     12          
+     13          //#include "driver_gpio.h"
+     14          
+     15          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     16          extern ProcessInfo processInfoTable[];
+     17          void AssignModuleMemAppModule(void);
+     18          
+     19          // Global variables specific to this module
+
+   \                                 In section .bss, align 8
+     20          uint64_t module_app_poll_time_u64 =0; // Poll time for the module
+   \                     module_app_poll_time_u64:
+   \        0x0                      DS8 8
+     21          
+     22          enum {
+     23            MEMORY_INIT_MODULE,
+     24            INIT_MODULE,
+     25            RUN_MODULE,
+     26            // Ddditional states to be added here as necessary.
+     27            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     28            KILL_MODULE = KILL_APP
+     29          };
+     30          
+     31          /**
+     32          ********************************************************************************************************************************
+     33          * @brief   State machine for app module
+     34          * @details
+     35          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+     36          * @retval  return_state_u8
+     37          ********************************************************************************************************************************
+     38          */
+
+   \                                 In section .text, align 2, keep-with-next
+     39          uint8_t moduleApp_u32(uint8_t drv_identifier_u8, uint8_t previous_state_u8, uint8_t next_state_u8,
+     40                                uint8_t irq_identifier_u8)
+     41          {
+   \                     moduleApp_u32: (+1)
+   \        0x0   0xB5FB             PUSH     {R0,R1,R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x0017             MOVS     R7,R2
+     42            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x6   0x2400             MOVS     R4,#+0
+     43            switch (next_state_u8)
+   \        0x8   0x0038             MOVS     R0,R7
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD008             BEQ      ??moduleApp_u32_0
+   \       0x10   0x2801             CMP      R0,#+1
+   \       0x12   0xD00A             BEQ      ??moduleApp_u32_1
+   \       0x14   0x2802             CMP      R0,#+2
+   \       0x16   0xD012             BEQ      ??moduleApp_u32_2
+   \       0x18   0x28C8             CMP      R0,#+200
+   \       0x1A   0xD025             BEQ      ??moduleApp_u32_3
+   \       0x1C   0x28FF             CMP      R0,#+255
+   \       0x1E   0xD025             BEQ      ??moduleApp_u32_4
+   \       0x20   0xE037             B        ??moduleApp_u32_5
+     44            {
+     45            case MEMORY_INIT_MODULE:
+     46              {
+     47                AssignModuleMemAppModule(); // Assign structured memory to Analog 0-10V setting and data 
+   \                     ??moduleApp_u32_0: (+1)
+   \       0x22   0x....'....        BL       AssignModuleMemAppModule
+     48                return_state_u8 = INIT_MODULE;
+   \       0x26   0x2001             MOVS     R0,#+1
+     49                break;
+   \       0x28   0xE034             B        ??moduleApp_u32_6
+     50              }
+     51            case INIT_MODULE:
+     52              {     
+     53                // Assign structured memory for module
+     54                //AssignModuleMemAppModule();
+     55                
+     56                module_app_poll_time_u64 = getSysCount() + POLL_TIME; // Store time tick value     
+   \                     ??moduleApp_u32_1: (+1)
+   \       0x2A   0x....'....        BL       getSysCount
+   \       0x2E   0x2200             MOVS     R2,#+0
+   \       0x30   0x30C8             ADDS     R0,R0,#+200
+   \       0x32   0x4151             ADCS     R1,R1,R2
+   \       0x34   0x....             LDR      R2,??DataTable0
+   \       0x36   0xC203             STM      R2!,{R0,R1}
+   \       0x38   0x3A08             SUBS     R2,R2,#+8
+     57                
+     58                // Get structured memory for GPIO module data
+     59                //uint8_t module_drv_Gpio_Index = getProcessInfoIndex(MODULE_GPIO);
+     60                //gpio_LocalControl = (Gpio_Control*)((*(processInfoTable[module_drv_Gpio_Index].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+     61                
+     62                return_state_u8 = RUN_MODULE;
+   \       0x3A   0x2002             MOVS     R0,#+2
+     63                break;
+   \       0x3C   0xE02A             B        ??moduleApp_u32_6
+     64                
+     65              }   
+     66            case RUN_MODULE:                                                             
+     67              {
+     68                // Process analog input every "AnalogPeriod" mSec
+     69                if (getSysCount() >= module_app_poll_time_u64) // Time above poll time
+   \                     ??moduleApp_u32_2: (+1)
+   \       0x3E   0x....'....        BL       getSysCount
+   \       0x42   0x0002             MOVS     R2,R0
+   \       0x44   0x000B             MOVS     R3,R1
+   \       0x46   0x....             LDR      R5,??DataTable0
+   \       0x48   0xCD03             LDM      R5!,{R0,R1}
+   \       0x4A   0x3D08             SUBS     R5,R5,#+8
+   \       0x4C   0x428B             CMP      R3,R1
+   \       0x4E   0xD309             BCC      ??moduleApp_u32_7
+   \       0x50   0xD801             BHI      ??moduleApp_u32_8
+   \       0x52   0x4282             CMP      R2,R0
+   \       0x54   0xD306             BCC      ??moduleApp_u32_7
+     70                {
+     71                  module_app_poll_time_u64 = getSysCount() + POLL_TIME; // Next poll time
+   \                     ??moduleApp_u32_8: (+1)
+   \       0x56   0x....'....        BL       getSysCount
+   \       0x5A   0x2200             MOVS     R2,#+0
+   \       0x5C   0x30C8             ADDS     R0,R0,#+200
+   \       0x5E   0x4151             ADCS     R1,R1,R2
+   \       0x60   0xC503             STM      R5!,{R0,R1}
+   \       0x62   0x3D08             SUBS     R5,R5,#+8
+     72                  // User Code        
+     73                }
+     74                return_state_u8 = RUN_MODULE;
+   \                     ??moduleApp_u32_7: (+1)
+   \       0x64   0x2002             MOVS     R0,#+2
+     75                break;
+   \       0x66   0xE015             B        ??moduleApp_u32_6
+     76              }
+     77            case IRQ_MODULE: 
+     78              {
+     79                // If there are more than one interrupts, from different drivers, you can identify each individually by:
+     80                // tableIndex_u8 = getProcessInfoIndex(irq_identifier_u8);
+     81                // Then use processInfoTable[tableIndex_u8] to tailor your response appropriately.
+     82                return_state_u8 = RUN_MODULE;
+   \                     ??moduleApp_u32_3: (+1)
+   \       0x68   0x2002             MOVS     R0,#+2
+     83                break;
+   \       0x6A   0xE013             B        ??moduleApp_u32_6
+     84              }
+     85              
+     86            case KILL_MODULE: 
+     87              {
+     88                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+     89                uint8_t table_index_u8 = getProcessInfoIndex(drv_identifier_u8);
+   \                     ??moduleApp_u32_4: (+1)
+   \       0x6C   0x0030             MOVS     R0,R6
+   \       0x6E   0xB2C0             UXTB     R0,R0
+   \       0x70   0x....'....        BL       getProcessInfoIndex
+   \       0x74   0x0001             MOVS     R1,R0
+     90                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x76   0x0008             MOVS     R0,R1
+   \       0x78   0xB2C0             UXTB     R0,R0
+   \       0x7A   0x28FF             CMP      R0,#+255
+   \       0x7C   0xD007             BEQ      ??moduleApp_u32_9
+     91                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0x7E   0x20FF             MOVS     R0,#+255
+   \       0x80   0x....             LDR      R2,??DataTable0_1
+   \       0x82   0x000B             MOVS     R3,R1
+   \       0x84   0xB2DB             UXTB     R3,R3
+   \       0x86   0x2516             MOVS     R5,#+22
+   \       0x88   0x436B             MULS     R3,R5,R3
+   \       0x8A   0x18D2             ADDS     R2,R2,R3
+   \       0x8C   0x7290             STRB     R0,[R2, #+10]
+     92                }
+     93                return_state_u8 = INIT_MODULE;
+   \                     ??moduleApp_u32_9: (+1)
+   \       0x8E   0x2001             MOVS     R0,#+1
+     94                break;
+   \       0x90   0xE000             B        ??moduleApp_u32_6
+     95              }
+     96            default:
+     97              {
+     98                return_state_u8 = KILL_MODULE; //10; 
+   \                     ??moduleApp_u32_5: (+1)
+   \       0x92   0x20FF             MOVS     R0,#+255
+     99                break;
+    100              }
+    101            }
+    102            return return_state_u8;
+   \                     ??moduleApp_u32_6: (+1)
+   \       0x94   0xB2C0             UXTB     R0,R0
+   \       0x96   0xBDFE             POP      {R1-R7,PC}       ;; return
+    103          }
+    104          
+    105          /**
+    106          ********************************************************************************************************************************
+    107          * @brief   Assign structured memory
+    108          * @details Assign structured memory for App module
+    109          * @param   None 
+    110          * @return  None
+    111          ********************************************************************************************************************************
+    112          */
+
+   \                                 In section .text, align 2, keep-with-next
+    113          void AssignModuleMemModuleApp(void){   
+    114            //gpio_StructMem_u32 =  StructMem_CreateInstance(MODULE_GPIO, sizeof(Gpio_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+    115            //(*gpio_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&gpio_Control ;    // Map the ADC1 memory into the structured memory
+    116            //uint8_t module_gpio_index_u8 = getProcessInfoIndex(MODULE_GPIO);
+    117            //processInfoTable[module_gpio_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)gpio_StructMem_u32;
+    118          }
+   \                     AssignModuleMemModuleApp: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \        0x0   0x....'....        DC32     module_app_poll_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   AssignModuleMemModuleApp
+      32   moduleApp_u32
+        32   -> AssignModuleMemAppModule
+        32   -> getProcessInfoIndex
+        32   -> getSysCount
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       2  AssignModuleMemModuleApp
+     152  moduleApp_u32
+       8  module_app_poll_time_u64
+
+ 
+   8 bytes in section .bss
+ 162 bytes in section .text
+ 
+ 162 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1082 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         10/Nov/2021  12:35:14
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\FlexMouse\Features\module_flash_blk_setting.c
+#    Command line                 =
+#        -f C:\Users\100001~1\AppData\Local\Temp\EW9F60.tmp
+#        (C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\FlexMouse\Features\module_flash_blk_setting.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_flash_blk_setting.lst
+#    Object file                  =
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_flash_blk_setting.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\FlexMouse\Features\module_flash_blk_setting.c
+      1          /**
+      2          ***************************************************************************************************
+      3          * @file    module_flash_blk_setting.c 
+      4          * @author  Regal Pamela Lee
+      5          * @version V1.0
+      6          * @date    29-Dec-2020
+      7          * @brief   Main function/s of Flash setting in block mode
+      8          * @note   
+      9          ***************************************************************************************************
+     10          */
+     11          
+     12          #include "module_flash_blk_setting.h"
+     13          #include "driver_usart2.h"
+     14          
+     15          
+     16          extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     17          extern ProcessInfo processInfoTable[];
+     18          
+     19          
+
+   \                                 In section .bss, align 4
+     20          Usart2_Control* usart2Control_FlashBlkSetting;
+   \                     usart2Control_FlashBlkSetting:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     21          Flash_Blk_Setting_Control *flash_blk_setting_Control;
+   \                     flash_blk_setting_Control:
+   \        0x0                      DS8 4
+     22          
+     23          enum                                                                            //Default APPs/Driver stage template
+     24          { 
+     25            MEMORY_INIT_MODULE,
+     26            AppInit,
+     27            AppStart,
+     28            //any other stage in here !!!
+     29            blk_setting_burnning,                                 //burnning flash setting in block mode
+     30            blk_setting_Read,
+     31            flash_format_request,                                  //Flash setting block read
+     32          
+     33            //above 200 will be all interrupt for this APP
+     34            AppIrq = 200,
+     35            killApp = 255
+     36          };
+     37          
+     38          /** Setting update to Motor side parameters **/
+
+   \                                 In section .data, align 4
+     39          unsigned char SettingBlk[] = {0x0f,  0x00,  0xff,  0xff,  0xff,  0xff,  0x64,  0x15,  0xd0,  0x07,  0x00,  0x00,  0x3c,  0x06,  0x71,  0x00, 0x10,  0x27,  0x61,  0x08,  0xa9,  0x07,  0x61,  0x08,  0xa9,  0x07,  0x4c,  0x1d,  0xf4,  0x01,  0x64,  0x15,\
+   \                     SettingBlk:
+   \        0x0   0x0F 0x00          DC8 15, 0, 255, 255, 255, 255, 100, 21, 208, 7, 0, 0, 60, 6, 113, 0, 16
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0x64 0x15    
+
+   \              0xD0 0x07    
+
+   \              0x00 0x00    
+
+   \              0x3C 0x06    
+
+   \              0x71 0x00    
+
+   \              0x10
+   \       0x11   0x27 0x61          DC8 39, 97, 8, 169, 7, 97, 8, 169, 7, 76, 29, 244, 1, 100, 21, 0, 0, 38
+
+   \              0x08 0xA9    
+
+   \              0x07 0x61    
+
+   \              0x08 0xA9    
+
+   \              0x07 0x4C    
+
+   \              0x1D 0xF4    
+
+   \              0x01 0x64    
+
+   \              0x15 0x00    
+
+   \              0x00 0x26
+   \       0x23   0x02 0x23          DC8 2, 35, 0, 90, 0, 255, 255, 232, 3, 0, 0, 142, 8, 136, 19, 166, 0
+
+   \              0x00 0x5A    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xE8    
+
+   \              0x03 0x00    
+
+   \              0x00 0x8E    
+
+   \              0x08 0x88    
+
+   \              0x13 0xA6    
+
+   \              0x00
+   \       0x34   0x8E 0x08          DC8 142, 8, 0, 0, 166, 0, 142, 8, 0, 0, 166, 0, 142, 8, 0, 0, 166, 0
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00    
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00    
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00
+   \       0x46   0x8E 0x08          DC8 142, 8, 25, 0, 255, 255, 255, 255, 255, 255, 24, 161, 179, 106, 44
+
+   \              0x19 0x00    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0x18 0xA1    
+
+   \              0xB3 0x6A    
+
+   \              0x2C
+   \       0x55   0x01 0xC4          DC8 1, 196, 9, 75, 0, 255, 255, 255, 255, 4, 0, 232, 3, 6, 0, 208, 7
+
+   \              0x09 0x4B    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0x04    
+
+   \              0x00 0xE8    
+
+   \              0x03 0x06    
+
+   \              0x00 0xD0    
+
+   \              0x07
+   \       0x66   0x10 0x27          DC8 16, 39, 232, 3, 10, 0, 200, 0, 184, 11, 10, 0, 200, 0, 33, 0, 10, 0
+
+   \              0xE8 0x03    
+
+   \              0x0A 0x00    
+
+   \              0xC8 0x00    
+
+   \              0xB8 0x0B    
+
+   \              0x0A 0x00    
+
+   \              0xC8 0x00    
+
+   \              0x21 0x00    
+
+   \              0x0A 0x00
+   \       0x78   0x30 0x75          DC8 48, 117, 255, 255, 255, 255, 255, 255
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF
+     40                                        0x00,  0x00,  0x26,  0x02,  0x23,  0x00,  0x5a,  0x00,  0xff,  0xff,  0xe8,  0x03,  0x00,  0x00,  0x8e,  0x08, 0x88,  0x13,  0xa6,  0x00,  0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,  0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,\
+     41                                        0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,  0x8e,  0x08,  0x19,  0x00,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff, 0x18,  0xa1,  0xb3,  0x6a,  0x2c,  0x01,  0xc4,  0x09,  0x4b,  0x00,  0xff,  0xff,  0xff,  0xff,  0x04,  0x00,\
+     42                                        0xe8,  0x03,  0x06,  0x00,  0xd0,  0x07,  0x10,  0x27,  0xe8,  0x03,  0x0a,  0x00,  0xc8,  0x00,  0xb8,  0x0b, 0x0a,  0x00,  0xc8,  0x00,  0x21,  0x00,  0x0a,  0x00,  0x30,  0x75,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff};
+
+   \                                 In section .data, align 4
+     43          unsigned char SettingBlk63[]= {0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff, 0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0x90,  0x08};
+   \                     SettingBlk63:
+   \        0x0   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \        0xD   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \       0x1A   0xFF 0xFF          DC8 255, 255, 255, 255, 144, 8
+
+   \              0xFF 0xFF    
+
+   \              0x90 0x08
+     44                        
+     45          typedef enum
+     46          { //block setting burnning stateMachine
+     47            start_blk,                                            //start with the last block(block63)
+     48            start_blk_ack,
+     49            current_blk,                                          //loop through all blocks
+     50            end_blk                                               //finalize the last block (block0)
+     51          }settingBlkWrite;
+     52          
+     53          #define flashBlockSize 32
+     54          //#define FLASH_PAGE_SIZE 0x800
+
+   \                                 In section .data, align 2
+     55          uint16_t blkIndex = FLASH_PAGE_SIZE/flashBlockSize;
+   \                     blkIndex:
+   \        0x0   0x0040             DC16 64
+
+   \                                 In section .bss, align 1
+     56          settingBlkWrite settingBlkWriteStateMachine = start_blk;
+   \                     settingBlkWriteStateMachine:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 8
+     57          uint64_t blkAcked = 0;
+   \                     blkAcked:
+   \        0x0                      DS8 8
+     58          /** Setting update to Motor side parameters end**/
+     59          
+     60          //^**Tips: APPs/Drivers adding process example step7 (Add the Additional funtion itself)
+     61          //uint8_t _App_template(uint8_t appID, uint8_t previousStage, uint8_t nextStage, uint8_t interruptIdentfer)  
+
+   \                                 In section .text, align 2, keep-with-next
+     62          uint8_t module_Flash_Blk_Setting_u32(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8,
+     63                                               uint8_t irq_id_u8)
+     64          { 
+   \                     module_Flash_Blk_Setting_u32: (+1)
+   \        0x0   0xB5F3             PUSH     {R0,R1,R4-R7,LR}
+   \        0x2   0xB087             SUB      SP,SP,#+28
+   \        0x4   0x0016             MOVS     R6,R2
+   \        0x6   0x001F             MOVS     R7,R3
+     65            uint8_t     return_state_u8 = MEMORY_INIT_MODULE; 
+   \        0x8   0x2400             MOVS     R4,#+0
+     66            switch (next_state_u8)
+   \        0xA   0x0030             MOVS     R0,R6
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD00E             BEQ      ??module_Flash_Blk_Setting_u32_0
+   \       0x12   0x2801             CMP      R0,#+1
+   \       0x14   0xD00F             BEQ      ??module_Flash_Blk_Setting_u32_1
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD020             BEQ      ??module_Flash_Blk_Setting_u32_2
+   \       0x1A   0x2803             CMP      R0,#+3
+   \       0x1C   0xD021             BEQ      ??module_Flash_Blk_Setting_u32_3
+   \       0x1E   0x2804             CMP      R0,#+4
+   \       0x20   0xD029             BEQ      ??module_Flash_Blk_Setting_u32_4
+   \       0x22   0x2805             CMP      R0,#+5
+   \       0x24   0xD043             BEQ      ??module_Flash_Blk_Setting_u32_5
+   \       0x26   0x28C8             CMP      R0,#+200
+   \       0x28   0xD053             BEQ      ??module_Flash_Blk_Setting_u32_6
+   \       0x2A   0x28FF             CMP      R0,#+255
+   \       0x2C   0xD052             BEQ      ??module_Flash_Blk_Setting_u32_7
+   \       0x2E   0xE054             B        ??module_Flash_Blk_Setting_u32_8
+     67            {
+     68            case MEMORY_INIT_MODULE:
+     69              return_state_u8 = AppInit;
+   \                     ??module_Flash_Blk_Setting_u32_0: (+1)
+   \       0x30   0x2001             MOVS     R0,#+1
+   \       0x32   0x0004             MOVS     R4,R0
+     70              break;
+   \       0x34   0xE053             B        ??module_Flash_Blk_Setting_u32_9
+     71            case AppInit:                                                              //initial stage
+     72              {             
+     73                /*Attach Uart2 structured memory into this App*/
+     74                //uint8_t Usart2index  = getProcessInfoIndex(DRV_USART2); //return Process index from processInfo array          
+     75                uint8_t Usart2index  = getProcessInfoIndex(MODULE_USART2); //return Process index from processInfo array
+   \                     ??module_Flash_Blk_Setting_u32_1: (+1)
+   \       0x36   0x2003             MOVS     R0,#+3
+   \       0x38   0x....'....        BL       getProcessInfoIndex
+   \       0x3C   0x0005             MOVS     R5,R0
+     76                usart2Control_FlashBlkSetting = (Usart2_Control*)((*(processInfoTable[Usart2index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory for USART2
+   \       0x3E   0x....             LDR      R0,??DataTable2
+   \       0x40   0x0029             MOVS     R1,R5
+   \       0x42   0xB2C9             UXTB     R1,R1
+   \       0x44   0x2216             MOVS     R2,#+22
+   \       0x46   0x4351             MULS     R1,R2,R1
+   \       0x48   0x1840             ADDS     R0,R0,R1
+   \       0x4A   0x300B             ADDS     R0,R0,#+11
+   \       0x4C   0x....'....        BL       __aeabi_uread4
+   \       0x50   0x6800             LDR      R0,[R0, #+0]
+   \       0x52   0x....             LDR      R1,??DataTable2_1
+   \       0x54   0x6008             STR      R0,[R1, #+0]
+     77                
+     78                //       tt_DemandTime = getSysCount() + DemandPollPeriod;                          //store time tick value 
+     79                return_state_u8 = AppStart;
+   \       0x56   0x2002             MOVS     R0,#+2
+   \       0x58   0x0004             MOVS     R4,R0
+     80                //      return_state_u8 = blk_setting_Read; 
+     81                break;
+   \       0x5A   0xE040             B        ??module_Flash_Blk_Setting_u32_9
+     82              }       
+     83            case AppStart:
+     84              { 
+     85                
+     86                
+     87                return_state_u8 = AppStart ;
+   \                     ??module_Flash_Blk_Setting_u32_2: (+1)
+   \       0x5C   0x2002             MOVS     R0,#+2
+   \       0x5E   0x0004             MOVS     R4,R0
+     88                break;
+   \       0x60   0xE03D             B        ??module_Flash_Blk_Setting_u32_9
+     89              }
+     90            case blk_setting_burnning:
+     91              {
+     92                if(burnSettings()){ 
+   \                     ??module_Flash_Blk_Setting_u32_3: (+1)
+   \       0x62   0x....'....        BL       burnSettings
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD002             BEQ      ??module_Flash_Blk_Setting_u32_10
+     93                  return_state_u8 = AppStart ;
+   \       0x6A   0x2002             MOVS     R0,#+2
+   \       0x6C   0x0004             MOVS     R4,R0
+   \       0x6E   0xE001             B        ??module_Flash_Blk_Setting_u32_11
+     94                } else {   
+     95                  return_state_u8 = blk_setting_burnning ;
+   \                     ??module_Flash_Blk_Setting_u32_10: (+1)
+   \       0x70   0x2003             MOVS     R0,#+3
+   \       0x72   0x0004             MOVS     R4,R0
+     96                }
+     97                break;
+   \                     ??module_Flash_Blk_Setting_u32_11: (+1)
+   \       0x74   0xE033             B        ??module_Flash_Blk_Setting_u32_9
+     98              }
+     99            case blk_setting_Read:
+    100              {
+    101                uint16_t blkNum = 3;
+   \                     ??module_Flash_Blk_Setting_u32_4: (+1)
+   \       0x76   0x2503             MOVS     R5,#+3
+    102                unsigned char FlashBlkRequest[] = {0x55, 0x02, 0x79, 0x00, 0x00, blkNum >> 8, blkNum, 0xcc, 0xcc};
+   \       0x78   0xA904             ADD      R1,SP,#+16
+   \       0x7A   0x....             LDR      R0,??DataTable2_2
+   \       0x7C   0xC80C             LDM      R0!,{R2,R3}
+   \       0x7E   0xC10C             STM      R1!,{R2,R3}
+   \       0x80   0x6802             LDR      R2,[R0, #0]
+   \       0x82   0x600A             STR      R2,[R1, #0]
+   \       0x84   0x3808             SUBS     R0,R0,#+8
+   \       0x86   0x3908             SUBS     R1,R1,#+8
+   \       0x88   0xA804             ADD      R0,SP,#+16
+   \       0x8A   0x0029             MOVS     R1,R5
+   \       0x8C   0xB289             UXTH     R1,R1
+   \       0x8E   0x0A09             LSRS     R1,R1,#+8
+   \       0x90   0x7141             STRB     R1,[R0, #+5]
+   \       0x92   0x0029             MOVS     R1,R5
+   \       0x94   0x7181             STRB     R1,[R0, #+6]
+    103                unsigned int TxLen = sizeof(FlashBlkRequest);
+   \       0x96   0x2009             MOVS     R0,#+9
+   \       0x98   0x9001             STR      R0,[SP, #+4]
+    104                RingBuf_WriteBlock((*usart2Control_FlashBlkSetting).seqMemTX_u32, FlashBlkRequest, &TxLen);  
+   \       0x9A   0xAA01             ADD      R2,SP,#+4
+   \       0x9C   0xA904             ADD      R1,SP,#+16
+   \       0x9E   0x....             LDR      R0,??DataTable2_1
+   \       0xA0   0x6800             LDR      R0,[R0, #+0]
+   \       0xA2   0x6880             LDR      R0,[R0, #+8]
+   \       0xA4   0x....'....        BL       RingBuf_WriteBlock
+    105                return_state_u8 = AppStart ;
+   \       0xA8   0x2002             MOVS     R0,#+2
+   \       0xAA   0x0004             MOVS     R4,R0
+    106                break;
+   \       0xAC   0xE017             B        ??module_Flash_Blk_Setting_u32_9
+    107              }            
+    108            case flash_format_request:
+    109              { //request flash data format, total number of sector for flash setting and total number of blocks      
+    110                unsigned char blkResetAck[] = {0x55, 0x01, 0x7A, 0x00, 0x00, 0x07, 0xCC, 0xCC}; //
+   \                     ??module_Flash_Blk_Setting_u32_5: (+1)
+   \       0xAE   0xA802             ADD      R0,SP,#+8
+   \       0xB0   0x....             LDR      R1,??DataTable2_3
+   \       0xB2   0xC90C             LDM      R1!,{R2,R3}
+   \       0xB4   0xC00C             STM      R0!,{R2,R3}
+   \       0xB6   0x3908             SUBS     R1,R1,#+8
+   \       0xB8   0x3808             SUBS     R0,R0,#+8
+    111                unsigned int blkSettingLen = sizeof(blkResetAck);  //blkSettingTx);
+   \       0xBA   0x2008             MOVS     R0,#+8
+   \       0xBC   0x9000             STR      R0,[SP, #+0]
+    112                RingBuf_WriteBlock((*usart2Control_FlashBlkSetting).seqMemTX_u32, blkResetAck, &blkSettingLen);    
+   \       0xBE   0x466A             MOV      R2,SP
+   \       0xC0   0xA902             ADD      R1,SP,#+8
+   \       0xC2   0x....             LDR      R0,??DataTable2_1
+   \       0xC4   0x6800             LDR      R0,[R0, #+0]
+   \       0xC6   0x6880             LDR      R0,[R0, #+8]
+   \       0xC8   0x....'....        BL       RingBuf_WriteBlock
+    113                return_state_u8 = AppStart ;
+   \       0xCC   0x2002             MOVS     R0,#+2
+   \       0xCE   0x0004             MOVS     R4,R0
+    114                break;
+   \       0xD0   0xE005             B        ??module_Flash_Blk_Setting_u32_9
+    115              }
+    116            case AppIrq:
+    117              {
+    118                break;
+   \                     ??module_Flash_Blk_Setting_u32_6: (+1)
+   \       0xD2   0xE004             B        ??module_Flash_Blk_Setting_u32_9
+    119              }               
+    120            case killApp:
+    121              {
+    122                return_state_u8 = AppInit;
+   \                     ??module_Flash_Blk_Setting_u32_7: (+1)
+   \       0xD4   0x2001             MOVS     R0,#+1
+   \       0xD6   0x0004             MOVS     R4,R0
+    123                break;
+   \       0xD8   0xE001             B        ??module_Flash_Blk_Setting_u32_9
+    124              }
+    125            default:
+    126              {
+    127                return_state_u8 = killApp;   
+   \                     ??module_Flash_Blk_Setting_u32_8: (+1)
+   \       0xDA   0x20FF             MOVS     R0,#+255
+   \       0xDC   0x0004             MOVS     R4,R0
+    128                break;
+    129              }
+    130            }
+    131            return return_state_u8;
+   \                     ??module_Flash_Blk_Setting_u32_9: (+1)
+   \       0xDE   0x0020             MOVS     R0,R4
+   \       0xE0   0xB2C0             UXTB     R0,R0
+   \       0xE2   0xB009             ADD      SP,SP,#+36
+   \       0xE4   0xBDF0             POP      {R4-R7,PC}       ;; return
+    132          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x55 0x02          DC8 85, 2, 121, 0, 0, 0, 0, 204, 204
+
+   \              0x79 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0xCC    
+
+   \              0xCC
+   \        0x9                      DS8 3
+    133          
+
+   \                                 In section .text, align 2, keep-with-next
+    134          uint8_t burnSettings(void)
+    135          {
+   \                     burnSettings: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+    136            switch(settingBlkWriteStateMachine)
+   \        0x2   0x....             LDR      R4,??DataTable2_4
+   \        0x4   0x7820             LDRB     R0,[R4, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD005             BEQ      ??burnSettings_0
+   \        0xA   0x2802             CMP      R0,#+2
+   \        0xC   0xD023             BEQ      ??burnSettings_1
+   \        0xE   0xD30C             BCC      ??burnSettings_2
+   \       0x10   0x2803             CMP      R0,#+3
+   \       0x12   0xD036             BEQ      ??burnSettings_3
+   \       0x14   0xE048             B        ??burnSettings_4
+    137            {
+    138            case start_blk:
+    139              { //         |- if block number larger than 0x8000 means this is the erase block with CRC, so the normal block of all 0xff can be omitted
+    140                //         V
+    141                flashTxBlk(0x803f, SettingBlk63);                      //send the last block of data will first erase the flash and fill up the last block
+   \                     ??burnSettings_0: (+1)
+   \       0x16   0x....             LDR      R1,??DataTable2_5
+   \       0x18   0x....             LDR      R0,??DataTable2_6  ;; 0x803f
+   \       0x1A   0x....'....        BL       flashTxBlk
+    142                blkIndex = 63;                                                 // put the last block number for not 0xFF of the whole 32 bytes
+   \       0x1E   0x203F             MOVS     R0,#+63
+   \       0x20   0x....             LDR      R1,??DataTable2_7
+   \       0x22   0x8008             STRH     R0,[R1, #+0]
+    143                settingBlkWriteStateMachine = start_blk_ack;
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x7020             STRB     R0,[R4, #+0]
+    144                break;
+   \       0x28   0xE040             B        ??burnSettings_5
+    145              }    
+    146            case start_blk_ack:
+    147              {
+    148                if ( (blkAcked >> blkIndex) &0x01)
+   \                     ??burnSettings_2: (+1)
+   \       0x2A   0x....             LDR      R6,??DataTable2_7
+   \       0x2C   0x....             LDR      R5,??DataTable2_8
+   \       0x2E   0xCD03             LDM      R5!,{R0,R1}
+   \       0x30   0x3D08             SUBS     R5,R5,#+8
+   \       0x32   0x8832             LDRH     R2,[R6, #+0]
+   \       0x34   0x....'....        BL       __aeabi_llsr
+   \       0x38   0x07C0             LSLS     R0,R0,#+31
+   \       0x3A   0xD50B             BPL      ??burnSettings_6
+    149                {
+    150                  blkIndex = 4; 
+   \       0x3C   0x2004             MOVS     R0,#+4
+   \       0x3E   0x8030             STRH     R0,[R6, #+0]
+    151                  blkAcked |= 0x10;
+   \       0x40   0xCD0C             LDM      R5!,{R2,R3}
+   \       0x42   0x3D08             SUBS     R5,R5,#+8
+   \       0x44   0x2010             MOVS     R0,#+16
+   \       0x46   0x2100             MOVS     R1,#+0
+   \       0x48   0x4310             ORRS     R0,R0,R2
+   \       0x4A   0x4319             ORRS     R1,R1,R3
+   \       0x4C   0xC503             STM      R5!,{R0,R1}
+   \       0x4E   0x3D08             SUBS     R5,R5,#+8
+    152                  settingBlkWriteStateMachine = current_blk;
+   \       0x50   0x2002             MOVS     R0,#+2
+   \       0x52   0x7020             STRB     R0,[R4, #+0]
+    153                }
+    154                break;
+   \                     ??burnSettings_6: (+1)
+   \       0x54   0xE02A             B        ??burnSettings_5
+    155              }
+    156            case current_blk:
+    157              {
+    158                if ( (blkAcked >> blkIndex) &0x01)    //check the block relate bit bit0= block0, bit1 = block1 ...... bit 63- block63 acknowledge
+   \                     ??burnSettings_1: (+1)
+   \       0x56   0x....             LDR      R5,??DataTable2_7
+   \       0x58   0x....             LDR      R0,??DataTable2_8
+   \       0x5A   0xC803             LDM      R0,{R0,R1}
+   \       0x5C   0x882A             LDRH     R2,[R5, #+0]
+   \       0x5E   0x....'....        BL       __aeabi_llsr
+   \       0x62   0x07C0             LSLS     R0,R0,#+31
+   \       0x64   0xD50C             BPL      ??burnSettings_7
+    159                {
+    160                  if(blkIndex--){
+   \       0x66   0x8828             LDRH     R0,[R5, #+0]
+   \       0x68   0x1E41             SUBS     R1,R0,#+1
+   \       0x6A   0x8029             STRH     R1,[R5, #+0]
+   \       0x6C   0xB280             UXTH     R0,R0
+   \       0x6E   0x2800             CMP      R0,#+0
+   \       0x70   0xD004             BEQ      ??burnSettings_8
+    161                    flashTxBlk(blkIndex,  SettingBlk);
+   \       0x72   0x....             LDR      R1,??DataTable2_9
+   \       0x74   0x8828             LDRH     R0,[R5, #+0]
+   \       0x76   0x....'....        BL       flashTxBlk
+   \       0x7A   0xE001             B        ??burnSettings_7
+    162                  } else {        
+    163                    settingBlkWriteStateMachine = end_blk;          
+   \                     ??burnSettings_8: (+1)
+   \       0x7C   0x2003             MOVS     R0,#+3
+   \       0x7E   0x7020             STRB     R0,[R4, #+0]
+    164                  }  
+    165                }
+    166                break;
+   \                     ??burnSettings_7: (+1)
+   \       0x80   0xE014             B        ??burnSettings_5
+    167              }
+    168            case end_blk:
+    169              {
+    170                unsigned char blkResetAck[] = {0x55, 0x01, 0x7A, 0x00, 0x00, 0x07, 0xCC, 0xCC}; //block flash reset acknowledgement
+   \                     ??burnSettings_3: (+1)
+   \       0x82   0xA801             ADD      R0,SP,#+4
+   \       0x84   0x....             LDR      R1,??DataTable2_10
+   \       0x86   0xC90C             LDM      R1!,{R2,R3}
+   \       0x88   0xC00C             STM      R0!,{R2,R3}
+   \       0x8A   0x3908             SUBS     R1,R1,#+8
+   \       0x8C   0x3808             SUBS     R0,R0,#+8
+    171                unsigned int blkSettingLen = sizeof(blkResetAck);  //blkSettingTx);
+   \       0x8E   0x2008             MOVS     R0,#+8
+   \       0x90   0x9000             STR      R0,[SP, #+0]
+    172                RingBuf_WriteBlock((*usart2Control_FlashBlkSetting).seqMemTX_u32, blkResetAck, &blkSettingLen);     
+   \       0x92   0x466A             MOV      R2,SP
+   \       0x94   0xA901             ADD      R1,SP,#+4
+   \       0x96   0x....             LDR      R0,??DataTable2_1
+   \       0x98   0x6800             LDR      R0,[R0, #+0]
+   \       0x9A   0x6880             LDR      R0,[R0, #+8]
+   \       0x9C   0x....'....        BL       RingBuf_WriteBlock
+    173                
+    174                settingBlkWriteStateMachine = start_blk; 
+   \       0xA0   0x2000             MOVS     R0,#+0
+   \       0xA2   0x7020             STRB     R0,[R4, #+0]
+    175                return 1;
+   \       0xA4   0x2001             MOVS     R0,#+1
+   \       0xA6   0xE002             B        ??burnSettings_9
+    176                break;
+    177              }   
+    178            default:
+    179              settingBlkWriteStateMachine = start_blk; 
+   \                     ??burnSettings_4: (+1)
+   \       0xA8   0x2000             MOVS     R0,#+0
+   \       0xAA   0x7020             STRB     R0,[R4, #+0]
+    180            }
+    181            return 0;
+   \                     ??burnSettings_5: (+1)
+   \       0xAC   0x2000             MOVS     R0,#+0
+   \                     ??burnSettings_9: (+1)
+   \       0xAE   0xB004             ADD      SP,SP,#+16
+   \       0xB0   0xBD70             POP      {R4-R6,PC}       ;; return
+    182          }
+    183          
+
+   \                                 In section .text, align 2, keep-with-next
+    184          uint8_t flashTxBlk(uint16_t _flashBlkNum, unsigned char* _buf)
+    185          {
+   \                     flashTxBlk: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB08C             SUB      SP,SP,#+48
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    186            uint16_t blkStartAddr = _flashBlkNum*flashBlockSize;
+   \        0x8   0x2520             MOVS     R5,#+32
+   \        0xA   0x4375             MULS     R5,R6,R5
+    187            if ( _flashBlkNum > 0x8000) //if flashBlkNum > 0x8000 mean this is an absolute block number 
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0xB280             UXTH     R0,R0
+   \       0x10   0x....             LDR      R1,??DataTable2_11  ;; 0x8001
+   \       0x12   0x4288             CMP      R0,R1
+   \       0x14   0xDB03             BLT      ??flashTxBlk_0
+    188            {
+    189              blkStartAddr = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x0005             MOVS     R5,R0
+    190              _flashBlkNum &= 0xfff;
+   \       0x1A   0x0536             LSLS     R6,R6,#+20       ;; ZeroExtS R6,R6,#+20,#+20
+   \       0x1C   0x0D36             LSRS     R6,R6,#+20
+    191            }
+    192            uint16_t uwCRCValue = Calculate_CRC(32, _buf + blkStartAddr);          //only flash data CRC, no block pointer.
+   \                     ??flashTxBlk_0: (+1)
+   \       0x1E   0x0028             MOVS     R0,R5
+   \       0x20   0xB280             UXTH     R0,R0
+   \       0x22   0x1821             ADDS     R1,R4,R0
+   \       0x24   0x2020             MOVS     R0,#+32
+   \       0x26   0x....'....        BL       Calculate_CRC
+   \       0x2A   0x0007             MOVS     R7,R0
+    193            unsigned char blkSettingTx[] = {0x55, 0x24, 0x78, 0x00, 0x00, (_flashBlkNum & 0xff00) >> 8, _flashBlkNum & 0xff,\
+    194                                            _buf[ 0 + blkStartAddr],  _buf[1 + blkStartAddr],  _buf[2 + blkStartAddr],  _buf[3 + blkStartAddr],  _buf[4 + blkStartAddr],  _buf[5 + blkStartAddr],  _buf[6 + blkStartAddr],  _buf[7 + blkStartAddr],  _buf[8 + blkStartAddr],  _buf[9 + blkStartAddr],\
+    195                                            _buf[10 + blkStartAddr], _buf[11 + blkStartAddr], _buf[12 + blkStartAddr], _buf[13 + blkStartAddr], _buf[14 + blkStartAddr], _buf[15 + blkStartAddr], _buf[16 + blkStartAddr], _buf[17 + blkStartAddr], _buf[18 + blkStartAddr], _buf[19 + blkStartAddr],\
+    196                                            _buf[20 + blkStartAddr], _buf[21 + blkStartAddr], _buf[22 + blkStartAddr], _buf[23 + blkStartAddr], _buf[24 + blkStartAddr], _buf[25 + blkStartAddr], _buf[26 + blkStartAddr], _buf[27 + blkStartAddr], _buf[28 + blkStartAddr], _buf[29 + blkStartAddr],\
+    197                                            _buf[30 + blkStartAddr], _buf[31 + blkStartAddr],\
+    198                                            (uwCRCValue & 0xff00) >> 8, uwCRCValue & 0xff, 0xCC, 0xCC};
+   \       0x2C   0xA801             ADD      R0,SP,#+4
+   \       0x2E   0x....             LDR      R1,??DataTable2_12
+   \       0x30   0x222C             MOVS     R2,#+44
+   \       0x32   0x....'....        BL       __aeabi_memcpy4
+   \       0x36   0xA801             ADD      R0,SP,#+4
+   \       0x38   0x0031             MOVS     R1,R6
+   \       0x3A   0xB289             UXTH     R1,R1
+   \       0x3C   0x0A09             LSRS     R1,R1,#+8
+   \       0x3E   0x7141             STRB     R1,[R0, #+5]
+   \       0x40   0x0031             MOVS     R1,R6
+   \       0x42   0x7181             STRB     R1,[R0, #+6]
+   \       0x44   0x0029             MOVS     R1,R5
+   \       0x46   0xB289             UXTH     R1,R1
+   \       0x48   0x5C61             LDRB     R1,[R4, R1]
+   \       0x4A   0x71C1             STRB     R1,[R0, #+7]
+   \       0x4C   0x0029             MOVS     R1,R5
+   \       0x4E   0xB289             UXTH     R1,R1
+   \       0x50   0x1861             ADDS     R1,R4,R1
+   \       0x52   0x7849             LDRB     R1,[R1, #+1]
+   \       0x54   0x7201             STRB     R1,[R0, #+8]
+   \       0x56   0x0029             MOVS     R1,R5
+   \       0x58   0xB289             UXTH     R1,R1
+   \       0x5A   0x1861             ADDS     R1,R4,R1
+   \       0x5C   0x7889             LDRB     R1,[R1, #+2]
+   \       0x5E   0x7241             STRB     R1,[R0, #+9]
+   \       0x60   0x0029             MOVS     R1,R5
+   \       0x62   0xB289             UXTH     R1,R1
+   \       0x64   0x1861             ADDS     R1,R4,R1
+   \       0x66   0x78C9             LDRB     R1,[R1, #+3]
+   \       0x68   0x7281             STRB     R1,[R0, #+10]
+   \       0x6A   0x0029             MOVS     R1,R5
+   \       0x6C   0xB289             UXTH     R1,R1
+   \       0x6E   0x1861             ADDS     R1,R4,R1
+   \       0x70   0x7909             LDRB     R1,[R1, #+4]
+   \       0x72   0x72C1             STRB     R1,[R0, #+11]
+   \       0x74   0x0029             MOVS     R1,R5
+   \       0x76   0xB289             UXTH     R1,R1
+   \       0x78   0x1861             ADDS     R1,R4,R1
+   \       0x7A   0x7949             LDRB     R1,[R1, #+5]
+   \       0x7C   0x7301             STRB     R1,[R0, #+12]
+   \       0x7E   0x0029             MOVS     R1,R5
+   \       0x80   0xB289             UXTH     R1,R1
+   \       0x82   0x1861             ADDS     R1,R4,R1
+   \       0x84   0x7989             LDRB     R1,[R1, #+6]
+   \       0x86   0x7341             STRB     R1,[R0, #+13]
+   \       0x88   0x0029             MOVS     R1,R5
+   \       0x8A   0xB289             UXTH     R1,R1
+   \       0x8C   0x1861             ADDS     R1,R4,R1
+   \       0x8E   0x79C9             LDRB     R1,[R1, #+7]
+   \       0x90   0x7381             STRB     R1,[R0, #+14]
+   \       0x92   0x0029             MOVS     R1,R5
+   \       0x94   0xB289             UXTH     R1,R1
+   \       0x96   0x1861             ADDS     R1,R4,R1
+   \       0x98   0x7A09             LDRB     R1,[R1, #+8]
+   \       0x9A   0x73C1             STRB     R1,[R0, #+15]
+   \       0x9C   0x0029             MOVS     R1,R5
+   \       0x9E   0xB289             UXTH     R1,R1
+   \       0xA0   0x1861             ADDS     R1,R4,R1
+   \       0xA2   0x7A49             LDRB     R1,[R1, #+9]
+   \       0xA4   0x7401             STRB     R1,[R0, #+16]
+   \       0xA6   0x0029             MOVS     R1,R5
+   \       0xA8   0xB289             UXTH     R1,R1
+   \       0xAA   0x1861             ADDS     R1,R4,R1
+   \       0xAC   0x7A89             LDRB     R1,[R1, #+10]
+   \       0xAE   0x7441             STRB     R1,[R0, #+17]
+   \       0xB0   0x0029             MOVS     R1,R5
+   \       0xB2   0xB289             UXTH     R1,R1
+   \       0xB4   0x1861             ADDS     R1,R4,R1
+   \       0xB6   0x7AC9             LDRB     R1,[R1, #+11]
+   \       0xB8   0x7481             STRB     R1,[R0, #+18]
+   \       0xBA   0x0029             MOVS     R1,R5
+   \       0xBC   0xB289             UXTH     R1,R1
+   \       0xBE   0x1861             ADDS     R1,R4,R1
+   \       0xC0   0x7B09             LDRB     R1,[R1, #+12]
+   \       0xC2   0x74C1             STRB     R1,[R0, #+19]
+   \       0xC4   0x0029             MOVS     R1,R5
+   \       0xC6   0xB289             UXTH     R1,R1
+   \       0xC8   0x1861             ADDS     R1,R4,R1
+   \       0xCA   0x7B49             LDRB     R1,[R1, #+13]
+   \       0xCC   0x7501             STRB     R1,[R0, #+20]
+   \       0xCE   0x0029             MOVS     R1,R5
+   \       0xD0   0xB289             UXTH     R1,R1
+   \       0xD2   0x1861             ADDS     R1,R4,R1
+   \       0xD4   0x7B89             LDRB     R1,[R1, #+14]
+   \       0xD6   0x7541             STRB     R1,[R0, #+21]
+   \       0xD8   0x0029             MOVS     R1,R5
+   \       0xDA   0xB289             UXTH     R1,R1
+   \       0xDC   0x1861             ADDS     R1,R4,R1
+   \       0xDE   0x7BC9             LDRB     R1,[R1, #+15]
+   \       0xE0   0x7581             STRB     R1,[R0, #+22]
+   \       0xE2   0x0029             MOVS     R1,R5
+   \       0xE4   0xB289             UXTH     R1,R1
+   \       0xE6   0x1861             ADDS     R1,R4,R1
+   \       0xE8   0x7C09             LDRB     R1,[R1, #+16]
+   \       0xEA   0x75C1             STRB     R1,[R0, #+23]
+   \       0xEC   0x0029             MOVS     R1,R5
+   \       0xEE   0xB289             UXTH     R1,R1
+   \       0xF0   0x1861             ADDS     R1,R4,R1
+   \       0xF2   0x7C49             LDRB     R1,[R1, #+17]
+   \       0xF4   0x7601             STRB     R1,[R0, #+24]
+   \       0xF6   0x0029             MOVS     R1,R5
+   \       0xF8   0xB289             UXTH     R1,R1
+   \       0xFA   0x1861             ADDS     R1,R4,R1
+   \       0xFC   0x7C89             LDRB     R1,[R1, #+18]
+   \       0xFE   0x7641             STRB     R1,[R0, #+25]
+   \      0x100   0x0029             MOVS     R1,R5
+   \      0x102   0xB289             UXTH     R1,R1
+   \      0x104   0x1861             ADDS     R1,R4,R1
+   \      0x106   0x7CC9             LDRB     R1,[R1, #+19]
+   \      0x108   0x7681             STRB     R1,[R0, #+26]
+   \      0x10A   0x0029             MOVS     R1,R5
+   \      0x10C   0xB289             UXTH     R1,R1
+   \      0x10E   0x1861             ADDS     R1,R4,R1
+   \      0x110   0x7D09             LDRB     R1,[R1, #+20]
+   \      0x112   0x76C1             STRB     R1,[R0, #+27]
+   \      0x114   0x0029             MOVS     R1,R5
+   \      0x116   0xB289             UXTH     R1,R1
+   \      0x118   0x1861             ADDS     R1,R4,R1
+   \      0x11A   0x7D49             LDRB     R1,[R1, #+21]
+   \      0x11C   0x7701             STRB     R1,[R0, #+28]
+   \      0x11E   0x0029             MOVS     R1,R5
+   \      0x120   0xB289             UXTH     R1,R1
+   \      0x122   0x1861             ADDS     R1,R4,R1
+   \      0x124   0x7D89             LDRB     R1,[R1, #+22]
+   \      0x126   0x7741             STRB     R1,[R0, #+29]
+   \      0x128   0x0029             MOVS     R1,R5
+   \      0x12A   0xB289             UXTH     R1,R1
+   \      0x12C   0x1861             ADDS     R1,R4,R1
+   \      0x12E   0x7DC9             LDRB     R1,[R1, #+23]
+   \      0x130   0x7781             STRB     R1,[R0, #+30]
+   \      0x132   0x0029             MOVS     R1,R5
+   \      0x134   0xB289             UXTH     R1,R1
+   \      0x136   0x1861             ADDS     R1,R4,R1
+   \      0x138   0x7E09             LDRB     R1,[R1, #+24]
+   \      0x13A   0x77C1             STRB     R1,[R0, #+31]
+   \      0x13C   0x0029             MOVS     R1,R5
+   \      0x13E   0xB289             UXTH     R1,R1
+   \      0x140   0x1861             ADDS     R1,R4,R1
+   \      0x142   0x7E49             LDRB     R1,[R1, #+25]
+   \      0x144   0x2220             MOVS     R2,#+32
+   \      0x146   0x5481             STRB     R1,[R0, R2]
+   \      0x148   0x0029             MOVS     R1,R5
+   \      0x14A   0xB289             UXTH     R1,R1
+   \      0x14C   0x1861             ADDS     R1,R4,R1
+   \      0x14E   0x7E89             LDRB     R1,[R1, #+26]
+   \      0x150   0x2221             MOVS     R2,#+33
+   \      0x152   0x5481             STRB     R1,[R0, R2]
+   \      0x154   0x0029             MOVS     R1,R5
+   \      0x156   0xB289             UXTH     R1,R1
+   \      0x158   0x1861             ADDS     R1,R4,R1
+   \      0x15A   0x7EC9             LDRB     R1,[R1, #+27]
+   \      0x15C   0x2222             MOVS     R2,#+34
+   \      0x15E   0x5481             STRB     R1,[R0, R2]
+   \      0x160   0x0029             MOVS     R1,R5
+   \      0x162   0xB289             UXTH     R1,R1
+   \      0x164   0x1861             ADDS     R1,R4,R1
+   \      0x166   0x7F09             LDRB     R1,[R1, #+28]
+   \      0x168   0x2223             MOVS     R2,#+35
+   \      0x16A   0x5481             STRB     R1,[R0, R2]
+   \      0x16C   0x0029             MOVS     R1,R5
+   \      0x16E   0xB289             UXTH     R1,R1
+   \      0x170   0x1861             ADDS     R1,R4,R1
+   \      0x172   0x7F49             LDRB     R1,[R1, #+29]
+   \      0x174   0x2224             MOVS     R2,#+36
+   \      0x176   0x5481             STRB     R1,[R0, R2]
+   \      0x178   0x0029             MOVS     R1,R5
+   \      0x17A   0xB289             UXTH     R1,R1
+   \      0x17C   0x1861             ADDS     R1,R4,R1
+   \      0x17E   0x7F89             LDRB     R1,[R1, #+30]
+   \      0x180   0x2225             MOVS     R2,#+37
+   \      0x182   0x5481             STRB     R1,[R0, R2]
+   \      0x184   0x0029             MOVS     R1,R5
+   \      0x186   0xB289             UXTH     R1,R1
+   \      0x188   0x1861             ADDS     R1,R4,R1
+   \      0x18A   0x7FC9             LDRB     R1,[R1, #+31]
+   \      0x18C   0x2226             MOVS     R2,#+38
+   \      0x18E   0x5481             STRB     R1,[R0, R2]
+   \      0x190   0x0039             MOVS     R1,R7
+   \      0x192   0xB289             UXTH     R1,R1
+   \      0x194   0x0A09             LSRS     R1,R1,#+8
+   \      0x196   0x2227             MOVS     R2,#+39
+   \      0x198   0x5481             STRB     R1,[R0, R2]
+   \      0x19A   0x0039             MOVS     R1,R7
+   \      0x19C   0x2228             MOVS     R2,#+40
+   \      0x19E   0x5481             STRB     R1,[R0, R2]
+    199            
+    200            unsigned int blkSettingLen = sizeof(blkSettingTx);
+   \      0x1A0   0x202B             MOVS     R0,#+43
+   \      0x1A2   0x9000             STR      R0,[SP, #+0]
+    201            RingBuf_WriteBlock((*usart2Control_FlashBlkSetting).seqMemTX_u32, blkSettingTx, &blkSettingLen);
+   \      0x1A4   0x466A             MOV      R2,SP
+   \      0x1A6   0xA901             ADD      R1,SP,#+4
+   \      0x1A8   0x....             LDR      R0,??DataTable2_1
+   \      0x1AA   0x6800             LDR      R0,[R0, #+0]
+   \      0x1AC   0x6880             LDR      R0,[R0, #+8]
+   \      0x1AE   0x....'....        BL       RingBuf_WriteBlock
+    202            
+    203            return 0;
+   \      0x1B2   0x2000             MOVS     R0,#+0
+   \      0x1B4   0xB00D             ADD      SP,SP,#+52
+   \      0x1B6   0xBDF0             POP      {R4-R7,PC}       ;; return
+    204          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x55 0x24          DC8 85, 36, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+   \              0x78 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00
+   \       0x15   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 204
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0x00    
+
+   \              0xCC
+   \       0x2A   0xCC               DC8 204
+   \       0x2B                      DS8 1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     usart2Control_FlashBlkSetting
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \        0x0   0x....'....        DC32     settingBlkWriteStateMachine
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \        0x0   0x....'....        DC32     SettingBlk63
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \        0x0   0x0000'803F        DC32     0x803f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \        0x0   0x....'....        DC32     blkIndex
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_8:
+   \        0x0   0x....'....        DC32     blkAcked
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_9:
+   \        0x0   0x....'....        DC32     SettingBlk
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_10:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_11:
+   \        0x0   0x0000'8001        DC32     0x8001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_12:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x55 0x01          DC8 85, 1, 122, 0, 0, 7, 204, 204
+
+   \              0x7A 0x00    
+
+   \              0x00 0x07    
+
+   \              0xCC 0xCC
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x55 0x01          DC8 85, 1, 122, 0, 0, 7, 204, 204
+
+   \              0x7A 0x00    
+
+   \              0x00 0x07    
+
+   \              0xCC 0xCC
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   burnSettings
+        32   -> RingBuf_WriteBlock
+        32   -> flashTxBlk
+        32 __aeabi_llsr
+      72   flashTxBlk
+        72   -> Calculate_CRC
+        72   -> RingBuf_WriteBlock
+        72   -> __aeabi_memcpy4
+      56   module_Flash_Blk_Setting_u32
+        56   -> RingBuf_WriteBlock
+        56   -> burnSettings
+        56   -> getProcessInfoIndex
+        56 __aeabi_uread4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_12
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+       8  ?_0
+       8  ?_1
+      12  ?_2
+      44  ?_3
+     128  SettingBlk
+      32  SettingBlk63
+       8  blkAcked
+       2  blkIndex
+     178  burnSettings
+     440  flashTxBlk
+       4  flash_blk_setting_Control
+     230  module_Flash_Blk_Setting_u32
+       1  settingBlkWriteStateMachine
+       4  usart2Control_FlashBlkSetting
+
+ 
+  17 bytes in section .bss
+ 162 bytes in section .data
+  72 bytes in section .rodata
+ 900 bytes in section .text
+ 
+ 900 bytes of CODE  memory
+  72 bytes of CONST memory
+ 179 bytes of DATA  memory
+
+Errors: none
+Warnings: none

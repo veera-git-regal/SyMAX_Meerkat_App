@@ -1,0 +1,594 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:52
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWF832.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_hal_dma_ex.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_hal_dma_ex.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_hal_dma_ex.c
+      4            * @author  MCD Application Team
+      5            * @brief   DMA Extension HAL module driver
+      6            *         This file provides firmware functions to manage the following
+      7            *         functionalities of the DMA Extension peripheral:
+      8            *           + Extended features functions
+      9            *
+     10            @verbatim
+     11            ==============================================================================
+     12                                  ##### How to use this driver #####
+     13            ==============================================================================
+     14            [..]
+     15            The DMA Extension HAL driver can be used as follows:
+     16          
+     17             (+) Configure the DMA_MUX Synchronization Block using HAL_DMAEx_ConfigMuxSync function.
+     18             (+) Configure the DMA_MUX Request Generator Block using HAL_DMAEx_ConfigMuxRequestGenerator function.
+     19                 Functions HAL_DMAEx_EnableMuxRequestGenerator and HAL_DMAEx_DisableMuxRequestGenerator can then be used
+     20                 to respectively enable/disable the request generator.
+     21          
+     22             (+) To handle the DMAMUX Interrupts, the function  HAL_DMAEx_MUX_IRQHandler should be called from
+     23                 the DMAMUX IRQ handler i.e DMAMUX1_OVR_IRQHandler.
+     24                 As only one interrupt line is available for all DMAMUX channels and request generators , HAL_DMAEx_MUX_IRQHandler should be
+     25                 called with, as parameter, the appropriate DMA handle as many as used DMAs in the user project
+     26                (exception done if a given DMA is not using the DMAMUX SYNC block neither a request generator)
+     27          
+     28            @endverbatim
+     29            ******************************************************************************
+     30            * @attention
+     31            *
+     32            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics. 
+     33            * All rights reserved.</center></h2>
+     34            *
+     35            * This software component is licensed by ST under BSD 3-Clause license,
+     36            * the "License"; You may not use this file except in compliance with the 
+     37            * License. You may obtain a copy of the License at:
+     38            *                        opensource.org/licenses/BSD-3-Clause
+     39            *
+     40            ******************************************************************************
+     41            */
+     42          
+     43          /* Includes ------------------------------------------------------------------*/
+     44          #include "stm32g0xx_hal.h"
+     45          
+     46          /** @addtogroup STM32G0xx_HAL_Driver
+     47            * @{
+     48            */
+     49          
+     50          /** @defgroup DMAEx DMAEx
+     51            * @brief DMA Extended HAL module driver
+     52            * @{
+     53            */
+     54          
+     55          #ifdef HAL_DMA_MODULE_ENABLED
+     56          
+     57          /* Private typedef -----------------------------------------------------------*/
+     58          /* Private define ------------------------------------------------------------*/
+     59          /* Private macro -------------------------------------------------------------*/
+     60          /* Private variables ---------------------------------------------------------*/
+     61          /* Private Constants ---------------------------------------------------------*/
+     62          /* Private function prototypes -----------------------------------------------*/
+     63          /* Private functions ---------------------------------------------------------*/
+     64          
+     65          
+     66          /** @defgroup DMAEx_Exported_Functions DMAEx Exported Functions
+     67            * @{
+     68            */
+     69          
+     70          /** @defgroup DMAEx_Exported_Functions_Group1 DMAEx Extended features functions
+     71           *  @brief   Extended features functions
+     72           *
+     73          @verbatim
+     74           ===============================================================================
+     75                          #####  Extended features functions  #####
+     76           ===============================================================================
+     77              [..]  This section provides functions allowing to:
+     78          
+     79              (+) Configure the DMA_MUX Synchronization Block using HAL_DMAEx_ConfigMuxSync function.
+     80              (+) Configure the DMA_MUX Request Generator Block using HAL_DMAEx_ConfigMuxRequestGenerator function.
+     81                 Functions HAL_DMAEx_EnableMuxRequestGenerator and HAL_DMAEx_DisableMuxRequestGenerator can then be used
+     82                 to respectively enable/disable the request generator.
+     83          
+     84          @endverbatim
+     85            * @{
+     86            */
+     87          
+     88          /**
+     89            * @brief  Configure the DMAMUX synchronization parameters for a given DMA channel (instance).
+     90            * @param  hdma Pointer to a DMA_HandleTypeDef structure that contains
+     91            *                     the configuration information for the specified DMA channel.
+     92            * @param  pSyncConfig Pointer to HAL_DMA_MuxSyncConfigTypeDef : contains the DMAMUX synchronization parameters
+     93            * @retval HAL status
+     94            */
+
+   \                                 In section .text, align 2, keep-with-next
+     95          HAL_StatusTypeDef HAL_DMAEx_ConfigMuxSync(DMA_HandleTypeDef *hdma, HAL_DMA_MuxSyncConfigTypeDef *pSyncConfig)
+     96          {
+   \                     HAL_DMAEx_ConfigMuxSync: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x0002             MOVS     R2,R0
+     97            /* Check the parameters */
+     98            assert_param(IS_DMA_ALL_INSTANCE(hdma->Instance));
+     99          
+    100            assert_param(IS_DMAMUX_SYNC_SIGNAL_ID(pSyncConfig->SyncSignalID));
+    101          
+    102            assert_param(IS_DMAMUX_SYNC_POLARITY(pSyncConfig-> SyncPolarity));
+    103            assert_param(IS_DMAMUX_SYNC_STATE(pSyncConfig->SyncEnable));
+    104            assert_param(IS_DMAMUX_SYNC_EVENT(pSyncConfig->EventEnable));
+    105            assert_param(IS_DMAMUX_SYNC_REQUEST_NUMBER(pSyncConfig->RequestNumber));
+    106          
+    107            /*Check if the DMA state is ready */
+    108            if (hdma->State == HAL_DMA_STATE_READY)
+   \        0x4   0x2025             MOVS     R0,#+37
+   \        0x6   0x5C10             LDRB     R0,[R2, R0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD121             BNE      ??HAL_DMAEx_ConfigMuxSync_0
+    109            {
+    110              /* Process Locked */
+    111              __HAL_LOCK(hdma);
+   \        0xC   0x2024             MOVS     R0,#+36
+   \        0xE   0x5C10             LDRB     R0,[R2, R0]
+   \       0x10   0x2801             CMP      R0,#+1
+   \       0x12   0xD101             BNE      ??HAL_DMAEx_ConfigMuxSync_1
+   \       0x14   0x2002             MOVS     R0,#+2
+   \       0x16   0xE01C             B        ??HAL_DMAEx_ConfigMuxSync_2
+   \                     ??HAL_DMAEx_ConfigMuxSync_1: (+1)
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0x2324             MOVS     R3,#+36
+   \       0x1C   0x54D0             STRB     R0,[R2, R3]
+    112          
+    113              /* Set the new synchronization parameters (and keep the request ID filled during the Init)*/
+    114              MODIFY_REG(hdma->DMAmuxChannel->CCR, \
+    115                         (~DMAMUX_CxCR_DMAREQ_ID), \
+    116                         ((pSyncConfig->SyncSignalID) << DMAMUX_CxCR_SYNC_ID_Pos) | ((pSyncConfig->RequestNumber - 1U) << DMAMUX_CxCR_NBREQ_Pos) | \
+    117                         pSyncConfig->SyncPolarity | ((uint32_t)pSyncConfig->SyncEnable << DMAMUX_CxCR_SE_Pos) | \
+    118                         ((uint32_t)pSyncConfig->EventEnable << DMAMUX_CxCR_EGE_Pos));
+   \       0x1E   0x6C50             LDR      R0,[R2, #+68]
+   \       0x20   0x6800             LDR      R0,[R0, #+0]
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0x680B             LDR      R3,[R1, #+0]
+   \       0x26   0x061B             LSLS     R3,R3,#+24
+   \       0x28   0x4303             ORRS     R3,R3,R0
+   \       0x2A   0x68C8             LDR      R0,[R1, #+12]
+   \       0x2C   0x1E40             SUBS     R0,R0,#+1
+   \       0x2E   0x04C0             LSLS     R0,R0,#+19
+   \       0x30   0x4318             ORRS     R0,R0,R3
+   \       0x32   0x684B             LDR      R3,[R1, #+4]
+   \       0x34   0x4303             ORRS     R3,R3,R0
+   \       0x36   0x7A08             LDRB     R0,[R1, #+8]
+   \       0x38   0x0400             LSLS     R0,R0,#+16
+   \       0x3A   0x4318             ORRS     R0,R0,R3
+   \       0x3C   0x7A4B             LDRB     R3,[R1, #+9]
+   \       0x3E   0x025B             LSLS     R3,R3,#+9
+   \       0x40   0x4303             ORRS     R3,R3,R0
+   \       0x42   0x6C50             LDR      R0,[R2, #+68]
+   \       0x44   0x6003             STR      R3,[R0, #+0]
+    119          
+    120              /* Process UnLocked */
+    121              __HAL_UNLOCK(hdma);
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x2324             MOVS     R3,#+36
+   \       0x4A   0x54D0             STRB     R0,[R2, R3]
+    122          
+    123              return HAL_OK;
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \       0x4E   0xE000             B        ??HAL_DMAEx_ConfigMuxSync_2
+    124            }
+    125            else
+    126            {
+    127              /*DMA State not Ready*/
+    128              return HAL_ERROR;
+   \                     ??HAL_DMAEx_ConfigMuxSync_0: (+1)
+   \       0x50   0x2001             MOVS     R0,#+1
+   \                     ??HAL_DMAEx_ConfigMuxSync_2: (+1)
+   \       0x52   0xBD00             POP      {PC}             ;; return
+    129            }
+    130          }
+    131          
+    132          /**
+    133            * @brief  Configure the DMAMUX request generator block used by the given DMA channel (instance).
+    134            * @param  hdma Pointer to a DMA_HandleTypeDef structure that contains
+    135            *                     the configuration information for the specified DMA channel.
+    136          * @param  pRequestGeneratorConfig Pointer to HAL_DMA_MuxRequestGeneratorConfigTypeDef :
+    137            *         contains the request generator parameters.
+    138            *
+    139            * @retval HAL status
+    140            */
+
+   \                                 In section .text, align 2, keep-with-next
+    141          HAL_StatusTypeDef HAL_DMAEx_ConfigMuxRequestGenerator(DMA_HandleTypeDef *hdma, HAL_DMA_MuxRequestGeneratorConfigTypeDef *pRequestGeneratorConfig)
+    142          {
+   \                     HAL_DMAEx_ConfigMuxRequestGenerator: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    143            /* Check the parameters */
+    144            assert_param(IS_DMA_ALL_INSTANCE(hdma->Instance));
+    145          
+    146            assert_param(IS_DMAMUX_REQUEST_GEN_SIGNAL_ID(pRequestGeneratorConfig->SignalID));
+    147          
+    148            assert_param(IS_DMAMUX_REQUEST_GEN_POLARITY(pRequestGeneratorConfig->Polarity));
+    149            assert_param(IS_DMAMUX_REQUEST_GEN_REQUEST_NUMBER(pRequestGeneratorConfig->RequestNumber));
+    150          
+    151            /* check if the DMA state is ready
+    152               and DMA is using a DMAMUX request generator block
+    153            */
+    154            if ((hdma->State == HAL_DMA_STATE_READY) && (hdma->DMAmuxRequestGen != 0U))
+   \        0x4   0x2025             MOVS     R0,#+37
+   \        0x6   0x5C10             LDRB     R0,[R2, R0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD119             BNE      ??HAL_DMAEx_ConfigMuxRequestGenerator_0
+   \        0xC   0x6D10             LDR      R0,[R2, #+80]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD016             BEQ      ??HAL_DMAEx_ConfigMuxRequestGenerator_0
+    155            {
+    156              /* Process Locked */
+    157              __HAL_LOCK(hdma);
+   \       0x12   0x2024             MOVS     R0,#+36
+   \       0x14   0x5C10             LDRB     R0,[R2, R0]
+   \       0x16   0x2801             CMP      R0,#+1
+   \       0x18   0xD101             BNE      ??HAL_DMAEx_ConfigMuxRequestGenerator_1
+   \       0x1A   0x2002             MOVS     R0,#+2
+   \       0x1C   0xE011             B        ??HAL_DMAEx_ConfigMuxRequestGenerator_2
+   \                     ??HAL_DMAEx_ConfigMuxRequestGenerator_1: (+1)
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0x2324             MOVS     R3,#+36
+   \       0x22   0x54D0             STRB     R0,[R2, R3]
+    158          
+    159              /* Set the request generator new parameters*/
+    160              hdma->DMAmuxRequestGen->RGCR = pRequestGeneratorConfig->SignalID | \
+    161                                             ((pRequestGeneratorConfig->RequestNumber - 1U) << DMAMUX_RGxCR_GNBREQ_Pos) | \
+    162                                             pRequestGeneratorConfig->Polarity;
+   \       0x24   0x6808             LDR      R0,[R1, #+0]
+   \       0x26   0x688B             LDR      R3,[R1, #+8]
+   \       0x28   0x1E5B             SUBS     R3,R3,#+1
+   \       0x2A   0x04DB             LSLS     R3,R3,#+19
+   \       0x2C   0x4303             ORRS     R3,R3,R0
+   \       0x2E   0x6848             LDR      R0,[R1, #+4]
+   \       0x30   0x4318             ORRS     R0,R0,R3
+   \       0x32   0x6D13             LDR      R3,[R2, #+80]
+   \       0x34   0x6018             STR      R0,[R3, #+0]
+    163              /* Process UnLocked */
+    164              __HAL_UNLOCK(hdma);
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x2324             MOVS     R3,#+36
+   \       0x3A   0x54D0             STRB     R0,[R2, R3]
+    165          
+    166              return HAL_OK;
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0xE000             B        ??HAL_DMAEx_ConfigMuxRequestGenerator_2
+    167            }
+    168            else
+    169            {
+    170              return HAL_ERROR;
+   \                     ??HAL_DMAEx_ConfigMuxRequestGenerator_0: (+1)
+   \       0x40   0x2001             MOVS     R0,#+1
+   \                     ??HAL_DMAEx_ConfigMuxRequestGenerator_2: (+1)
+   \       0x42   0xBD00             POP      {PC}             ;; return
+    171            }
+    172          }
+    173          
+    174          /**
+    175            * @brief  Enable the DMAMUX request generator block used by the given DMA channel (instance).
+    176            * @param  hdma Pointer to a DMA_HandleTypeDef structure that contains
+    177            *                     the configuration information for the specified DMA channel.
+    178            * @retval HAL status
+    179            */
+
+   \                                 In section .text, align 2, keep-with-next
+    180          HAL_StatusTypeDef HAL_DMAEx_EnableMuxRequestGenerator(DMA_HandleTypeDef *hdma)
+    181          {
+   \                     HAL_DMAEx_EnableMuxRequestGenerator: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x0001             MOVS     R1,R0
+    182            /* Check the parameters */
+    183            assert_param(IS_DMA_ALL_INSTANCE(hdma->Instance));
+    184          
+    185            /* check if the DMA state is ready
+    186               and DMA is using a DMAMUX request generator block
+    187            */
+    188            if ((hdma->State != HAL_DMA_STATE_RESET) && (hdma->DMAmuxRequestGen != 0))
+   \        0x4   0x2025             MOVS     R0,#+37
+   \        0x6   0x5C08             LDRB     R0,[R1, R0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD00B             BEQ      ??HAL_DMAEx_EnableMuxRequestGenerator_0
+   \        0xC   0x6D08             LDR      R0,[R1, #+80]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD008             BEQ      ??HAL_DMAEx_EnableMuxRequestGenerator_0
+    189            {
+    190          
+    191              /* Enable the request generator*/
+    192              hdma->DMAmuxRequestGen->RGCR |= DMAMUX_RGxCR_GE;
+   \       0x12   0x6D08             LDR      R0,[R1, #+80]
+   \       0x14   0x6800             LDR      R0,[R0, #+0]
+   \       0x16   0x2280             MOVS     R2,#+128
+   \       0x18   0x0252             LSLS     R2,R2,#+9        ;; #+65536
+   \       0x1A   0x4302             ORRS     R2,R2,R0
+   \       0x1C   0x6D08             LDR      R0,[R1, #+80]
+   \       0x1E   0x6002             STR      R2,[R0, #+0]
+    193          
+    194              return HAL_OK;
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0xE000             B        ??HAL_DMAEx_EnableMuxRequestGenerator_1
+    195            }
+    196            else
+    197            {
+    198              return HAL_ERROR;
+   \                     ??HAL_DMAEx_EnableMuxRequestGenerator_0: (+1)
+   \       0x24   0x2001             MOVS     R0,#+1
+   \                     ??HAL_DMAEx_EnableMuxRequestGenerator_1: (+1)
+   \       0x26   0xBD00             POP      {PC}             ;; return
+    199            }
+    200          }
+    201          
+    202          /**
+    203            * @brief  Disable the DMAMUX request generator block used by the given DMA channel (instance).
+    204            * @param  hdma Pointer to a DMA_HandleTypeDef structure that contains
+    205            *                     the configuration information for the specified DMA channel.
+    206            * @retval HAL status
+    207            */
+
+   \                                 In section .text, align 2, keep-with-next
+    208          HAL_StatusTypeDef HAL_DMAEx_DisableMuxRequestGenerator(DMA_HandleTypeDef *hdma)
+    209          {
+   \                     HAL_DMAEx_DisableMuxRequestGenerator: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x0001             MOVS     R1,R0
+    210            /* Check the parameters */
+    211            assert_param(IS_DMA_ALL_INSTANCE(hdma->Instance));
+    212          
+    213            /* check if the DMA state is ready
+    214               and DMA is using a DMAMUX request generator block
+    215            */
+    216            if ((hdma->State != HAL_DMA_STATE_RESET) && (hdma->DMAmuxRequestGen != 0))
+   \        0x4   0x2025             MOVS     R0,#+37
+   \        0x6   0x5C08             LDRB     R0,[R1, R0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD00A             BEQ      ??HAL_DMAEx_DisableMuxRequestGenerator_0
+   \        0xC   0x6D08             LDR      R0,[R1, #+80]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD007             BEQ      ??HAL_DMAEx_DisableMuxRequestGenerator_0
+    217            {
+    218          
+    219              /* Disable the request generator*/
+    220              hdma->DMAmuxRequestGen->RGCR &= ~DMAMUX_RGxCR_GE;
+   \       0x12   0x6D08             LDR      R0,[R1, #+80]
+   \       0x14   0x6800             LDR      R0,[R0, #+0]
+   \       0x16   0x....             LDR      R2,??DataTable2  ;; 0xfffeffff
+   \       0x18   0x4002             ANDS     R2,R2,R0
+   \       0x1A   0x6D08             LDR      R0,[R1, #+80]
+   \       0x1C   0x6002             STR      R2,[R0, #+0]
+    221          
+    222              return HAL_OK;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0xE000             B        ??HAL_DMAEx_DisableMuxRequestGenerator_1
+    223            }
+    224            else
+    225            {
+    226              return HAL_ERROR;
+   \                     ??HAL_DMAEx_DisableMuxRequestGenerator_0: (+1)
+   \       0x22   0x2001             MOVS     R0,#+1
+   \                     ??HAL_DMAEx_DisableMuxRequestGenerator_1: (+1)
+   \       0x24   0xBD00             POP      {PC}             ;; return
+    227            }
+    228          }
+    229          
+    230          /**
+    231            * @brief  Handles DMAMUX interrupt request.
+    232            * @param  hdma Pointer to a DMA_HandleTypeDef structure that contains
+    233            *               the configuration information for the specified DMA channel.
+    234            * @retval None
+    235            */
+
+   \                                 In section .text, align 2, keep-with-next
+    236          void HAL_DMAEx_MUX_IRQHandler(DMA_HandleTypeDef *hdma)
+    237          {
+   \                     HAL_DMAEx_MUX_IRQHandler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    238            /* Check for DMAMUX Synchronization overrun */
+    239            if ((hdma->DMAmuxChannelStatus->CSR & hdma->DMAmuxChannelStatusMask) != 0U)
+   \        0x4   0x6CA0             LDR      R0,[R4, #+72]
+   \        0x6   0x6800             LDR      R0,[R0, #+0]
+   \        0x8   0x6CE1             LDR      R1,[R4, #+76]
+   \        0xA   0x4001             ANDS     R1,R1,R0
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xD013             BEQ      ??HAL_DMAEx_MUX_IRQHandler_0
+    240            {
+    241              /* Disable the synchro overrun interrupt */
+    242              hdma->DMAmuxChannel->CCR &= ~DMAMUX_CxCR_SOIE;
+   \       0x10   0x6C60             LDR      R0,[R4, #+68]
+   \       0x12   0x6800             LDR      R0,[R0, #+0]
+   \       0x14   0x....             LDR      R1,??DataTable2_1  ;; 0xfffffeff
+   \       0x16   0x4001             ANDS     R1,R1,R0
+   \       0x18   0x6C60             LDR      R0,[R4, #+68]
+   \       0x1A   0x6001             STR      R1,[R0, #+0]
+    243          
+    244              /* Clear the DMAMUX synchro overrun flag */
+    245              hdma->DMAmuxChannelStatus->CFR = hdma->DMAmuxChannelStatusMask;
+   \       0x1C   0x6CE0             LDR      R0,[R4, #+76]
+   \       0x1E   0x6CA1             LDR      R1,[R4, #+72]
+   \       0x20   0x6048             STR      R0,[R1, #+4]
+    246          
+    247              /* Update error code */
+    248              hdma->ErrorCode |= HAL_DMA_ERROR_SYNC;
+   \       0x22   0x6BE0             LDR      R0,[R4, #+60]
+   \       0x24   0x2180             MOVS     R1,#+128
+   \       0x26   0x0089             LSLS     R1,R1,#+2        ;; #+512
+   \       0x28   0x4301             ORRS     R1,R1,R0
+   \       0x2A   0x63E1             STR      R1,[R4, #+60]
+    249          
+    250              if (hdma->XferErrorCallback != NULL)
+   \       0x2C   0x6B60             LDR      R0,[R4, #+52]
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD002             BEQ      ??HAL_DMAEx_MUX_IRQHandler_0
+    251              {
+    252                /* Transfer error callback */
+    253                hdma->XferErrorCallback(hdma);
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x6B61             LDR      R1,[R4, #+52]
+   \       0x36   0x4788             BLX      R1
+    254              }
+    255            }
+    256          
+    257            if (hdma->DMAmuxRequestGen != 0)
+   \                     ??HAL_DMAEx_MUX_IRQHandler_0: (+1)
+   \       0x38   0x6D20             LDR      R0,[R4, #+80]
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD019             BEQ      ??HAL_DMAEx_MUX_IRQHandler_1
+    258            {
+    259              /* if using a DMAMUX request generator block Check for DMAMUX request generator overrun */
+    260              if ((hdma->DMAmuxRequestGenStatus->RGSR & hdma->DMAmuxRequestGenStatusMask) != 0U)
+   \       0x3E   0x6D60             LDR      R0,[R4, #+84]
+   \       0x40   0x6800             LDR      R0,[R0, #+0]
+   \       0x42   0x6DA1             LDR      R1,[R4, #+88]
+   \       0x44   0x4001             ANDS     R1,R1,R0
+   \       0x46   0x2900             CMP      R1,#+0
+   \       0x48   0xD013             BEQ      ??HAL_DMAEx_MUX_IRQHandler_1
+    261              {
+    262                /* Disable the request gen overrun interrupt */
+    263                hdma->DMAmuxRequestGen->RGCR &= ~DMAMUX_RGxCR_OIE;
+   \       0x4A   0x6D20             LDR      R0,[R4, #+80]
+   \       0x4C   0x6800             LDR      R0,[R0, #+0]
+   \       0x4E   0x....             LDR      R1,??DataTable2_1  ;; 0xfffffeff
+   \       0x50   0x4001             ANDS     R1,R1,R0
+   \       0x52   0x6D20             LDR      R0,[R4, #+80]
+   \       0x54   0x6001             STR      R1,[R0, #+0]
+    264          
+    265                /* Clear the DMAMUX request generator overrun flag */
+    266                hdma->DMAmuxRequestGenStatus->RGCFR = hdma->DMAmuxRequestGenStatusMask;
+   \       0x56   0x6DA0             LDR      R0,[R4, #+88]
+   \       0x58   0x6D61             LDR      R1,[R4, #+84]
+   \       0x5A   0x6048             STR      R0,[R1, #+4]
+    267          
+    268                /* Update error code */
+    269                hdma->ErrorCode |= HAL_DMA_ERROR_REQGEN;
+   \       0x5C   0x6BE0             LDR      R0,[R4, #+60]
+   \       0x5E   0x2180             MOVS     R1,#+128
+   \       0x60   0x00C9             LSLS     R1,R1,#+3        ;; #+1024
+   \       0x62   0x4301             ORRS     R1,R1,R0
+   \       0x64   0x63E1             STR      R1,[R4, #+60]
+    270          
+    271                if (hdma->XferErrorCallback != NULL)
+   \       0x66   0x6B60             LDR      R0,[R4, #+52]
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD002             BEQ      ??HAL_DMAEx_MUX_IRQHandler_1
+    272                {
+    273                  /* Transfer error callback */
+    274                  hdma->XferErrorCallback(hdma);
+   \       0x6C   0x0020             MOVS     R0,R4
+   \       0x6E   0x6B61             LDR      R1,[R4, #+52]
+   \       0x70   0x4788             BLX      R1
+    275                }
+    276              }
+    277            }
+    278          }
+   \                     ??HAL_DMAEx_MUX_IRQHandler_1: (+1)
+   \       0x72   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0xFFFE'FFFF        DC32     0xfffeffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0xFFFF'FEFF        DC32     0xfffffeff
+    279          
+    280          /**
+    281            * @}
+    282            */
+    283          
+    284          /**
+    285            * @}
+    286            */
+    287          
+    288          #endif /* HAL_DMA_MODULE_ENABLED */
+    289          /**
+    290            * @}
+    291            */
+    292          
+    293          /**
+    294            * @}
+    295            */
+    296          
+    297          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   HAL_DMAEx_ConfigMuxRequestGenerator
+       4   HAL_DMAEx_ConfigMuxSync
+       4   HAL_DMAEx_DisableMuxRequestGenerator
+       4   HAL_DMAEx_EnableMuxRequestGenerator
+       8   HAL_DMAEx_MUX_IRQHandler
+         8   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      68  HAL_DMAEx_ConfigMuxRequestGenerator
+      84  HAL_DMAEx_ConfigMuxSync
+      38  HAL_DMAEx_DisableMuxRequestGenerator
+      40  HAL_DMAEx_EnableMuxRequestGenerator
+     116  HAL_DMAEx_MUX_IRQHandler
+
+ 
+ 354 bytes in section .text
+ 
+ 354 bytes of CODE memory
+
+Errors: none
+Warnings: none

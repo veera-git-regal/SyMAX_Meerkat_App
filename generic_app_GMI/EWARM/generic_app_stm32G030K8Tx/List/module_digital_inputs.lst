@@ -1,0 +1,1265 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:42
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_digital_inputs.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWCE7D.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_digital_inputs.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_digital_inputs.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_digital_inputs.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  1
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_digital_inputs.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_digital_inputs.c 
+      4          * @author  Satya Akkina
+      5          * @brief   This is a module that handles digital inputs.
+      6          * @details Reads digital inputs from driver module and provides status based on settings and input state.
+      7          ********************************************************************************************************************************
+      8          */
+      9          
+     10          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     11          #include "module_digital_inputs.h"
+     12          
+     13          #include <stdio.h>
+     14          
+     15          #include "macros.h"
+     16          
+     17          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     18          extern Ram_Buf sharedMemArray[TOTAL_NUM_OF_STRUCT_MEM_INSTANCES];
+     19          extern ProcessInfo processInfoTable[];
+
+   \                                 In section .bss, align 4
+     20          static  Ram_Buf_Handle digital_Inputs_StructMem_u32;
+   \                     digital_Inputs_StructMem_u32:
+   \        0x0                      DS8 4
+     21          
+     22          // Local structure pointers
+
+   \                                 In section .bss, align 4
+     23          Gpio_Control* gpio_LocalControl;
+   \                     gpio_LocalControl:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     24          DigitalInputs_Control  digitalInputs_Control;
+   \                     digitalInputs_Control:
+   \        0x0                      DS8 80
+     25          
+     26          // Local Function Definitions
+     27          void AssignModuleMemDigitalInputs(void);
+     28          void FindDiscreteDemandInputs(void);
+     29          void InitDigtialInputSetting(void);
+     30          void UpdateInputState(uint8_t input_no_u8);
+     31          void ProcessDigitalInputs(uint8_t input_no_u8, uint8_t state_value_u8);
+     32          void ProcessDiscreteDemand(void);
+     33          uint8_t GetDebouncedValue(uint8_t input_no_u8, uint8_t current_value_u8);
+     34          
+     35          // Local variables
+
+   \                                 In section .bss, align 8
+     36          uint64_t module_digital_inputs_poll_time_u64 =0; // Poll time for the module
+   \                     module_digital_inputs_poll_time_u64:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     37          uint8_t debouce_count_u8[TOTAL_DIGITAL_INPUTS]; // Stores current debounce count for each input
+   \                     debouce_count_u8:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     38          uint8_t previous_input_state_u8[TOTAL_DIGITAL_INPUTS]; // Store previous state on inputs
+   \                     previous_input_state_u8:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     39          uint8_t discrete_demand_input_nos_u8[MAX_DISCRETE_DEMAND_INPUTS]; // store the digital input no's corresponding to discrete demand inputs
+   \                     discrete_demand_input_nos_u8:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 1
+     40          uint8_t discrete_demand_inputs_count_u8 = 0; // Count of digital inputs set to discrete demand input mode
+   \                     discrete_demand_inputs_count_u8:
+   \        0x0                      DS8 1
+     41          
+     42          enum {
+     43            MEMORY_INIT_MODULE,
+     44            INIT_MODULE,
+     45            RUN_MODULE,
+     46            // Additional states to be added here as necessary.
+     47            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     48            KILL_MODULE = KILL_APP
+     49          };
+     50          
+     51          
+     52          /**
+     53          ********************************************************************************************************************************
+     54          * @brief   State machine for Ditial Inputs module
+     55          * @details
+     56          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+     57          * @retval  return_state_u8
+     58          ********************************************************************************************************************************
+     59          */
+
+   \                                 In section .text, align 2, keep-with-next
+     60          uint8_t module_Digital_Inputs_u32(uint8_t drv_identifier_u8, uint8_t previous_state_u8, uint8_t next_state_u8,
+     61                                            uint8_t irq_identifier_u8)
+     62          {
+   \                     module_Digital_Inputs_u32: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB081             SUB      SP,SP,#+4
+     63            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x0028             MOVS     R0,R5
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+     64            switch (next_state_u8)
+   \        0xC   0x4668             MOV      R0,SP
+   \        0xE   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD008             BEQ      ??module_Digital_Inputs_u32_0
+   \       0x14   0x2801             CMP      R0,#+1
+   \       0x16   0xD00A             BEQ      ??module_Digital_Inputs_u32_1
+   \       0x18   0x2802             CMP      R0,#+2
+   \       0x1A   0xD026             BEQ      ??module_Digital_Inputs_u32_2
+   \       0x1C   0x28C8             CMP      R0,#+200
+   \       0x1E   0xD05B             BEQ      ??module_Digital_Inputs_u32_3
+   \       0x20   0x28FF             CMP      R0,#+255
+   \       0x22   0xD05B             BEQ      ??module_Digital_Inputs_u32_4
+   \       0x24   0xE06D             B        ??module_Digital_Inputs_u32_5
+     65            {
+     66            case MEMORY_INIT_MODULE:
+     67              {
+     68                AssignModuleMemDigitalInputs(); // Assign structured memory
+   \                     ??module_Digital_Inputs_u32_0: (+1)
+   \       0x26   0x....'....        BL       AssignModuleMemDigitalInputs
+     69                return_state_u8 = INIT_MODULE;
+   \       0x2A   0x2001             MOVS     R0,#+1
+     70                break;
+   \       0x2C   0xE06A             B        ??module_Digital_Inputs_u32_6
+     71              }
+     72            case INIT_MODULE:
+     73              {     
+     74                AssignModuleMemDigitalInputs(); // Assign structured memory to DigitalInputs setting and data
+   \                     ??module_Digital_Inputs_u32_1: (+1)
+   \       0x2E   0x....'....        BL       AssignModuleMemDigitalInputs
+     75                
+     76                InitDigtialInputSetting(); // Initilize DigtialInputs settings      
+   \       0x32   0x....'....        BL       InitDigtialInputSetting
+     77                
+     78                // Get structured memory for GPIO module data
+     79                uint8_t module_gpio_index_u8 = getProcessInfoIndex(MODULE_GPIO);
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0x....'....        BL       getProcessInfoIndex
+   \       0x3C   0x0004             MOVS     R4,R0
+     80                gpio_LocalControl = (Gpio_Control*)((*(processInfoTable[module_gpio_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0x3E   0x....             LDR      R0,??DataTable4
+   \       0x40   0x0021             MOVS     R1,R4
+   \       0x42   0xB2C9             UXTB     R1,R1
+   \       0x44   0x2216             MOVS     R2,#+22
+   \       0x46   0x4351             MULS     R1,R2,R1
+   \       0x48   0x1840             ADDS     R0,R0,R1
+   \       0x4A   0x300B             ADDS     R0,R0,#+11
+   \       0x4C   0x....'....        BL       __aeabi_uread4
+   \       0x50   0x6800             LDR      R0,[R0, #+0]
+   \       0x52   0x....             LDR      R1,??DataTable3
+   \       0x54   0x6008             STR      R0,[R1, #+0]
+     81                
+     82                module_digital_inputs_poll_time_u64 = getSysCount() + DIGITAL_INPUT_POLL_TIME; // Digital input poll period // Store time tick value
+   \       0x56   0x....'....        BL       getSysCount
+   \       0x5A   0x2200             MOVS     R2,#+0
+   \       0x5C   0x3032             ADDS     R0,R0,#+50
+   \       0x5E   0x4151             ADCS     R1,R1,R2
+   \       0x60   0x....             LDR      R2,??DataTable3_1
+   \       0x62   0xC203             STM      R2!,{R0,R1}
+   \       0x64   0x3A08             SUBS     R2,R2,#+8
+     83                
+     84                return_state_u8 = RUN_MODULE;
+   \       0x66   0x2002             MOVS     R0,#+2
+     85                break;
+   \       0x68   0xE04C             B        ??module_Digital_Inputs_u32_6
+     86                
+     87              }   
+     88            case RUN_MODULE:                                                             
+     89              {
+     90                // Process digital inputs every "DIGITAL_INPUT_POLL_TIME" mSec
+     91                if (getSysCount() >= module_digital_inputs_poll_time_u64) // Time above poll time
+   \                     ??module_Digital_Inputs_u32_2: (+1)
+   \       0x6A   0x....'....        BL       getSysCount
+   \       0x6E   0x....             LDR      R7,??DataTable3_1
+   \       0x70   0xCF0C             LDM      R7!,{R2,R3}
+   \       0x72   0x3F08             SUBS     R7,R7,#+8
+   \       0x74   0x4299             CMP      R1,R3
+   \       0x76   0xD32D             BCC      ??module_Digital_Inputs_u32_7
+   \       0x78   0xD801             BHI      ??module_Digital_Inputs_u32_8
+   \       0x7A   0x4290             CMP      R0,R2
+   \       0x7C   0xD32A             BCC      ??module_Digital_Inputs_u32_7
+     92                {
+     93                  uint8_t state_value_u8 = BIT_LOW;        
+   \                     ??module_Digital_Inputs_u32_8: (+1)
+   \       0x7E   0x002E             MOVS     R6,R5
+     94                  
+     95                  digitalInputs_Control.digitalInputs_Data.digitalInputStatus_u16 = (*gpio_LocalControl).gpio_Result.gpio_Status_u16 ; // Get input status from driver module
+   \       0x80   0x....             LDR      R4,??DataTable4_1
+   \       0x82   0x....             LDR      R0,??DataTable3
+   \       0x84   0x6800             LDR      R0,[R0, #+0]
+   \       0x86   0x8840             LDRH     R0,[R0, #+2]
+   \       0x88   0x2148             MOVS     R1,#+72
+   \       0x8A   0x5260             STRH     R0,[R4, R1]
+     96                  for (uint8_t input_no_u8 = 0; input_no_u8 < TOTAL_DIGITAL_INPUTS; input_no_u8++)
+   \                     ??module_Digital_Inputs_u32_9: (+1)
+   \       0x8C   0x0028             MOVS     R0,R5
+   \       0x8E   0xB2C0             UXTB     R0,R0
+   \       0x90   0x2805             CMP      R0,#+5
+   \       0x92   0xDA12             BGE      ??module_Digital_Inputs_u32_10
+     97                  { // Update the digital input flags
+     98                    UpdateInputState(input_no_u8);
+   \       0x94   0x0028             MOVS     R0,R5
+   \       0x96   0xB2C0             UXTB     R0,R0
+   \       0x98   0x....'....        BL       UpdateInputState
+     99                    
+    100                    state_value_u8 = (uint8_t)(((digitalInputs_Control.digitalInputs_Data.digitalInputStatusFiltered_u16) >> input_no_u8) & 1 );
+   \       0x9C   0x204A             MOVS     R0,#+74
+   \       0x9E   0x5A20             LDRH     R0,[R4, R0]
+   \       0xA0   0x4128             ASRS     R0,R0,R5
+   \       0xA2   0x0001             MOVS     R1,R0
+   \       0xA4   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0xA6   0x0FC9             LSRS     R1,R1,#+31
+   \       0xA8   0x000E             MOVS     R6,R1
+    101                    ProcessDigitalInputs(input_no_u8, state_value_u8); 
+   \       0xAA   0x0031             MOVS     R1,R6
+   \       0xAC   0xB2C9             UXTB     R1,R1
+   \       0xAE   0x0028             MOVS     R0,R5
+   \       0xB0   0xB2C0             UXTB     R0,R0
+   \       0xB2   0x....'....        BL       ProcessDigitalInputs
+    102                  }
+   \       0xB6   0x1C6D             ADDS     R5,R5,#+1
+   \       0xB8   0xE7E8             B        ??module_Digital_Inputs_u32_9
+    103                  if (discrete_demand_inputs_count_u8 != 0) // One of the input is set for discrete demand inputs
+   \                     ??module_Digital_Inputs_u32_10: (+1)
+   \       0xBA   0x....             LDR      R0,??DataTable4_2
+   \       0xBC   0x7800             LDRB     R0,[R0, #+0]
+   \       0xBE   0x2800             CMP      R0,#+0
+   \       0xC0   0xD001             BEQ      ??module_Digital_Inputs_u32_11
+    104                  {
+    105                    ProcessDiscreteDemand(); // Find the demand
+   \       0xC2   0x....'....        BL       ProcessDiscreteDemand
+    106                  }
+    107                  module_digital_inputs_poll_time_u64 = getSysCount() + DIGITAL_INPUT_POLL_TIME; // Next poll time
+   \                     ??module_Digital_Inputs_u32_11: (+1)
+   \       0xC6   0x....'....        BL       getSysCount
+   \       0xCA   0x2200             MOVS     R2,#+0
+   \       0xCC   0x3032             ADDS     R0,R0,#+50
+   \       0xCE   0x4151             ADCS     R1,R1,R2
+   \       0xD0   0xC703             STM      R7!,{R0,R1}
+   \       0xD2   0x3F08             SUBS     R7,R7,#+8
+    108                }
+    109                return_state_u8 = RUN_MODULE;
+   \                     ??module_Digital_Inputs_u32_7: (+1)
+   \       0xD4   0x2002             MOVS     R0,#+2
+    110                break;
+   \       0xD6   0xE015             B        ??module_Digital_Inputs_u32_6
+    111              }
+    112            case IRQ_MODULE: 
+    113              {
+    114                // If there are more than one interrupts, from different drivers, you can identify each individually by:
+    115                // tableIndex_u8 = getProcessInfoIndex(irq_identifier_u8);
+    116                // Then use processInfoTable[tableIndex_u8] to tailor your response appropriately.
+    117                return_state_u8 = RUN_MODULE;
+   \                     ??module_Digital_Inputs_u32_3: (+1)
+   \       0xD8   0x2002             MOVS     R0,#+2
+    118                break;
+   \       0xDA   0xE013             B        ??module_Digital_Inputs_u32_6
+    119              }
+    120              
+    121            case KILL_MODULE: 
+    122              {
+    123                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    124                uint8_t table_index_u8 = getProcessInfoIndex(drv_identifier_u8);
+   \                     ??module_Digital_Inputs_u32_4: (+1)
+   \       0xDC   0x4668             MOV      R0,SP
+   \       0xDE   0x7900             LDRB     R0,[R0, #+4]
+   \       0xE0   0x....'....        BL       getProcessInfoIndex
+   \       0xE4   0x0001             MOVS     R1,R0
+    125                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0xE6   0x0008             MOVS     R0,R1
+   \       0xE8   0xB2C0             UXTB     R0,R0
+   \       0xEA   0x28FF             CMP      R0,#+255
+   \       0xEC   0xD007             BEQ      ??module_Digital_Inputs_u32_12
+    126                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0xEE   0x20FF             MOVS     R0,#+255
+   \       0xF0   0x....             LDR      R2,??DataTable4
+   \       0xF2   0x000B             MOVS     R3,R1
+   \       0xF4   0xB2DB             UXTB     R3,R3
+   \       0xF6   0x2416             MOVS     R4,#+22
+   \       0xF8   0x4363             MULS     R3,R4,R3
+   \       0xFA   0x18D2             ADDS     R2,R2,R3
+   \       0xFC   0x7290             STRB     R0,[R2, #+10]
+    127                }
+    128                return_state_u8 = INIT_MODULE;
+   \                     ??module_Digital_Inputs_u32_12: (+1)
+   \       0xFE   0x2001             MOVS     R0,#+1
+    129                break;
+   \      0x100   0xE000             B        ??module_Digital_Inputs_u32_6
+    130              }
+    131            default:
+    132              {
+    133                return_state_u8 = KILL_MODULE; //10; 
+   \                     ??module_Digital_Inputs_u32_5: (+1)
+   \      0x102   0x20FF             MOVS     R0,#+255
+    134                break;
+    135              }
+    136            }
+    137            return return_state_u8;
+   \                     ??module_Digital_Inputs_u32_6: (+1)
+   \      0x104   0xB2C0             UXTB     R0,R0
+   \      0x106   0xB005             ADD      SP,SP,#+20
+   \      0x108   0xBDF0             POP      {R4-R7,PC}       ;; return
+    138          } 
+    139          
+    140          /**
+    141          ********************************************************************************************************************************
+    142          * @brief   Assign structured memory
+    143          * @details Assign structured memory for Digital Input control
+    144          * @param   None 
+    145          * @return  None
+    146          ********************************************************************************************************************************
+    147          */
+    148          //
+
+   \                                 In section .text, align 2, keep-with-next
+    149          void AssignModuleMemDigitalInputs(void){   
+   \                     AssignModuleMemDigitalInputs: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    150            digital_Inputs_StructMem_u32 =  StructMem_CreateInstance(MODULE_DIGITAL_INPUTS, sizeof(DigitalInputs_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R4,??DataTable4_3
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2150             MOVS     R1,#+80
+   \        0xE   0x2007             MOVS     R0,#+7
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    151            (*digital_Inputs_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&digitalInputs_Control ;    // Map the ADC1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable4_1
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    152            uint8_t module_digital_inputs_index_u8 = getProcessInfoIndex(MODULE_DIGITAL_INPUTS);
+   \       0x1C   0x2007             MOVS     R0,#+7
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    153            processInfoTable[module_digital_inputs_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)digital_Inputs_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable4
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    154          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    155          
+    156          /**
+    157          ********************************************************************************************************************************
+    158          * @brief   Initilize all digital input settings and live data
+    159          * @details Read settings from the RAM and initilize the settings. This function need run in order to update the input function/mode.
+    160          * @param   None 
+    161          * @retval  None
+    162          ********************************************************************************************************************************
+    163          */
+
+   \                                 In section .text, align 2, keep-with-next
+    164          void InitDigtialInputSetting(void){   
+   \                     InitDigtialInputSetting: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    165            // Init digital input settings
+    166            digitalInputs_Control.digitalInputs_Setting.inputFunction[0]= SET_DIRECTION; // Function of each digital input
+   \        0x2   0x....             LDR      R0,??DataTable4_1
+   \        0x4   0x2103             MOVS     R1,#+3
+   \        0x6   0x8281             STRH     R1,[R0, #+20]
+    167            digitalInputs_Control.digitalInputs_Setting.inputFunction[1]= SET_DEMAND_INPUT_0; // Function of each digital input
+   \        0x8   0x2106             MOVS     R1,#+6
+   \        0xA   0x82C1             STRH     R1,[R0, #+22]
+    168            digitalInputs_Control.digitalInputs_Setting.inputFunction[2]= SET_DEMAND_INPUT_1; // Function of each digital input
+   \        0xC   0x2107             MOVS     R1,#+7
+   \        0xE   0x8301             STRH     R1,[R0, #+24]
+    169            digitalInputs_Control.digitalInputs_Setting.inputFunction[3]= SET_DEMAND_INPUT_2; // Function of each digital input
+   \       0x10   0x2108             MOVS     R1,#+8
+   \       0x12   0x8341             STRH     R1,[R0, #+26]
+    170           // digitalInputs_Control.digitalInputs_Setting.inputFunction[4]= SET_DIRECTION; // Function of each digital input
+    171            digitalInputs_Control.digitalInputs_Setting.debounceCountLimit_u16 = 4; // # of counts digital input should be active high/low to consider it as active high/low
+   \       0x14   0x2104             MOVS     R1,#+4
+   \       0x16   0x8481             STRH     R1,[R0, #+36]
+    172            digitalInputs_Control.digitalInputs_Setting.inputPolarity_u16 = 0;   // Each bit indicates the polarity of the input. 0= Normally Open, 1 = Normally closed. Bit 0 = Digital input 0 polarity.
+   \       0x18   0x2400             MOVS     R4,#+0
+   \       0x1A   0x0021             MOVS     R1,R4
+   \       0x1C   0x8201             STRH     R1,[R0, #+16]
+    173            digitalInputs_Control.digitalInputs_Setting.inputEnable_u16 = 0xFFFF;  // Each bit enables an individual digital input. Bit 0 = Digital input 0 enable. 
+   \       0x1E   0x....             LDR      R1,??DataTable5  ;; 0xffff
+   \       0x20   0x8241             STRH     R1,[R0, #+18]
+    174            
+    175            digitalInputs_Control.digitalInputs_Setting.demandPercent[0] = 0;    // 0%
+   \       0x22   0x0021             MOVS     R1,R4
+   \       0x24   0x8001             STRH     R1,[R0, #+0]
+    176            digitalInputs_Control.digitalInputs_Setting.demandPercent[1] = 4000; // Percentage*100 (ex. 3000 = 30.00%)
+   \       0x26   0x21FA             MOVS     R1,#+250
+   \       0x28   0x0109             LSLS     R1,R1,#+4        ;; #+4000
+   \       0x2A   0x8041             STRH     R1,[R0, #+2]
+    177            digitalInputs_Control.digitalInputs_Setting.demandPercent[2] = 5000; //
+   \       0x2C   0x....             LDR      R1,??DataTable5_1  ;; 0x1388
+   \       0x2E   0x8081             STRH     R1,[R0, #+4]
+    178            digitalInputs_Control.digitalInputs_Setting.demandPercent[3] = 6000; //
+   \       0x30   0x....             LDR      R1,??DataTable6  ;; 0x1770
+   \       0x32   0x80C1             STRH     R1,[R0, #+6]
+    179            digitalInputs_Control.digitalInputs_Setting.demandPercent[4] = 7000; //
+   \       0x34   0x....             LDR      R1,??DataTable6_1  ;; 0x1b58
+   \       0x36   0x8101             STRH     R1,[R0, #+8]
+    180            digitalInputs_Control.digitalInputs_Setting.demandPercent[5] = 8000; //
+   \       0x38   0x21FA             MOVS     R1,#+250
+   \       0x3A   0x0149             LSLS     R1,R1,#+5        ;; #+8000
+   \       0x3C   0x8141             STRH     R1,[R0, #+10]
+    181            digitalInputs_Control.digitalInputs_Setting.demandPercent[6] = 9000; //
+   \       0x3E   0x....             LDR      R1,??DataTable6_2  ;; 0x2328
+   \       0x40   0x8181             STRH     R1,[R0, #+12]
+    182            digitalInputs_Control.digitalInputs_Setting.demandPercent[7] = 10000; //
+   \       0x42   0x....             LDR      R1,??DataTable6_3  ;; 0x2710
+   \       0x44   0x81C1             STRH     R1,[R0, #+14]
+    183            
+    184            // Init metering data
+    185            digitalInputs_Control.digitalInputs_Data.digitalInputStatus_u16 = 0;
+   \       0x46   0x0021             MOVS     R1,R4
+   \       0x48   0x2248             MOVS     R2,#+72
+   \       0x4A   0x5281             STRH     R1,[R0, R2]
+    186            digitalInputs_Control.digitalInputs_Data.digitalInputStatusFiltered_u16 = 0;
+   \       0x4C   0x0021             MOVS     R1,R4
+   \       0x4E   0x224A             MOVS     R2,#+74
+   \       0x50   0x5281             STRH     R1,[R0, R2]
+    187            digitalInputs_Control.digitalInputs_Data.discreteDemandPercent = 0;
+   \       0x52   0x0021             MOVS     R1,R4
+   \       0x54   0x224C             MOVS     R2,#+76
+   \       0x56   0x5281             STRH     R1,[R0, R2]
+    188            digitalInputs_Control.digitalInputs_Data.discretes_u16.is_invertDirection = FALSE;
+   \       0x58   0x0001             MOVS     R1,R0
+   \       0x5A   0x314E             ADDS     R1,R1,#+78
+   \       0x5C   0x224E             MOVS     R2,#+78
+   \       0x5E   0x5A82             LDRH     R2,[R0, R2]
+   \       0x60   0x....             LDR      R3,??DataTable6_4  ;; 0xfffe
+   \       0x62   0x4013             ANDS     R3,R3,R2
+   \       0x64   0x800B             STRH     R3,[R1, #+0]
+    189            uint8_t count_motor_enable_input_u8 = 0;
+   \       0x66   0x0025             MOVS     R5,R4
+    190            for (uint8_t index_u8 = 0; index_u8 < MAX_DIGITAL_INPUTS; index_u8++)
+   \       0x68   0x0022             MOVS     R2,R4
+   \                     ??InitDigtialInputSetting_0: (+1)
+   \       0x6A   0x0013             MOVS     R3,R2
+   \       0x6C   0xB2DB             UXTB     R3,R3
+   \       0x6E   0x2B08             CMP      R3,#+8
+   \       0x70   0xDA15             BGE      ??InitDigtialInputSetting_1
+    191            {
+    192              digitalInputs_Control.digitalInputs_Data.digitalInputsValue[index_u8] = 0;
+   \       0x72   0x0013             MOVS     R3,R2
+   \       0x74   0xB2DB             UXTB     R3,R3
+   \       0x76   0x2604             MOVS     R6,#+4
+   \       0x78   0x4373             MULS     R3,R6,R3
+   \       0x7A   0x18C3             ADDS     R3,R0,R3
+   \       0x7C   0x629C             STR      R4,[R3, #+40]
+    193              discrete_demand_input_nos_u8[index_u8] = 0xFF;
+   \       0x7E   0x23FF             MOVS     R3,#+255
+   \       0x80   0x....             LDR      R6,??DataTable7
+   \       0x82   0x0017             MOVS     R7,R2
+   \       0x84   0xB2FF             UXTB     R7,R7
+   \       0x86   0x55F3             STRB     R3,[R6, R7]
+    194              if(digitalInputs_Control.digitalInputs_Setting.inputFunction[index_u8] == MOTOR_ENABLE)
+   \       0x88   0x0013             MOVS     R3,R2
+   \       0x8A   0xB2DB             UXTB     R3,R3
+   \       0x8C   0x2602             MOVS     R6,#+2
+   \       0x8E   0x4373             MULS     R3,R6,R3
+   \       0x90   0x18C3             ADDS     R3,R0,R3
+   \       0x92   0x8A9B             LDRH     R3,[R3, #+20]
+   \       0x94   0x2B01             CMP      R3,#+1
+   \       0x96   0xD100             BNE      ??InitDigtialInputSetting_2
+    195              {
+    196                count_motor_enable_input_u8++;
+   \       0x98   0x1C6D             ADDS     R5,R5,#+1
+    197              }    
+    198            }
+   \                     ??InitDigtialInputSetting_2: (+1)
+   \       0x9A   0x1C52             ADDS     R2,R2,#+1
+   \       0x9C   0xE7E5             B        ??InitDigtialInputSetting_0
+    199            if(count_motor_enable_input_u8 > 0) // Check if one of the inputs is MOTOR_ENABLE
+   \                     ??InitDigtialInputSetting_1: (+1)
+   \       0x9E   0x002A             MOVS     R2,R5
+   \       0xA0   0xB2D2             UXTB     R2,R2
+   \       0xA2   0x2A00             CMP      R2,#+0
+   \       0xA4   0xD005             BEQ      ??InitDigtialInputSetting_3
+    200            {
+    201              digitalInputs_Control.digitalInputs_Data.discretes_u16.is_motorEnabled = FALSE;
+   \       0xA6   0x224E             MOVS     R2,#+78
+   \       0xA8   0x5A80             LDRH     R0,[R0, R2]
+   \       0xAA   0x....             LDR      R2,??DataTable7_1  ;; 0xfffd
+   \       0xAC   0x4002             ANDS     R2,R2,R0
+   \       0xAE   0x800A             STRH     R2,[R1, #+0]
+   \       0xB0   0xE004             B        ??InitDigtialInputSetting_4
+    202            } else {
+    203              digitalInputs_Control.digitalInputs_Data.discretes_u16.is_motorEnabled = TRUE;
+   \                     ??InitDigtialInputSetting_3: (+1)
+   \       0xB2   0x224E             MOVS     R2,#+78
+   \       0xB4   0x5A80             LDRH     R0,[R0, R2]
+   \       0xB6   0x2202             MOVS     R2,#+2
+   \       0xB8   0x4302             ORRS     R2,R2,R0
+   \       0xBA   0x800A             STRH     R2,[R1, #+0]
+    204            }
+    205            
+    206            // Initilize local variables
+    207            FindDiscreteDemandInputs();  // Find the input that are set for discrete demand
+   \                     ??InitDigtialInputSetting_4: (+1)
+   \       0xBC   0x....'....        BL       FindDiscreteDemandInputs
+    208            
+    209            for (uint8_t index_u8= 0; index_u8 < TOTAL_DIGITAL_INPUTS; index_u8++){ 
+   \       0xC0   0x0020             MOVS     R0,R4
+   \                     ??InitDigtialInputSetting_5: (+1)
+   \       0xC2   0x0001             MOVS     R1,R0
+   \       0xC4   0xB2C9             UXTB     R1,R1
+   \       0xC6   0x2905             CMP      R1,#+5
+   \       0xC8   0xDA0B             BGE      ??InitDigtialInputSetting_6
+    210              previous_input_state_u8[index_u8]=0;
+   \       0xCA   0x0021             MOVS     R1,R4
+   \       0xCC   0x....             LDR      R2,??DataTable7_2
+   \       0xCE   0x0003             MOVS     R3,R0
+   \       0xD0   0xB2DB             UXTB     R3,R3
+   \       0xD2   0x54D1             STRB     R1,[R2, R3]
+    211              debouce_count_u8[index_u8] = 0;
+   \       0xD4   0x0021             MOVS     R1,R4
+   \       0xD6   0x....             LDR      R2,??DataTable7_3
+   \       0xD8   0x0003             MOVS     R3,R0
+   \       0xDA   0xB2DB             UXTB     R3,R3
+   \       0xDC   0x54D1             STRB     R1,[R2, R3]
+    212            }
+   \       0xDE   0x1C40             ADDS     R0,R0,#+1
+   \       0xE0   0xE7EF             B        ??InitDigtialInputSetting_5
+    213          }
+   \                     ??InitDigtialInputSetting_6: (+1)
+   \       0xE2   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    214          
+    215          /**
+    216          ********************************************************************************************************************************
+    217          * @brief   Update digital input flags
+    218          * @details Update digital input flags based on settings (enable and polarity).
+    219          * @param   input_no_u8, Digial input no 
+    220          * @param   state_value_u8, 
+    221          * @retval  None
+    222          ********************************************************************************************************************************
+    223          */
+
+   \                                 In section .text, align 2, keep-with-next
+    224          void UpdateInputState(uint8_t input_no_u8){
+   \                     UpdateInputState: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    225            uint8_t state_value_u8 = BIT_LOW;
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x000A             MOVS     R2,R1
+    226            if(((digitalInputs_Control.digitalInputs_Setting.inputEnable_u16) >> input_no_u8) & 1 == BIT_HI){
+   \        0x6   0x2401             MOVS     R4,#+1
+   \        0x8   0x....             LDR      R3,??DataTable4_1
+   \        0xA   0x8A5D             LDRH     R5,[R3, #+18]
+   \        0xC   0x4105             ASRS     R5,R5,R0
+   \        0xE   0x4025             ANDS     R5,R5,R4
+   \       0x10   0x2D00             CMP      R5,#+0
+   \       0x12   0xD024             BEQ      ??UpdateInputState_0
+    227              state_value_u8 = (uint8_t)(((digitalInputs_Control.digitalInputs_Data.digitalInputStatus_u16) >> input_no_u8) & 1 ); // Get current input state value
+   \       0x14   0x2548             MOVS     R5,#+72
+   \       0x16   0x5B5D             LDRH     R5,[R3, R5]
+   \       0x18   0x4105             ASRS     R5,R5,R0
+   \       0x1A   0x0026             MOVS     R6,R4
+   \       0x1C   0x402E             ANDS     R6,R6,R5
+   \       0x1E   0x0032             MOVS     R2,R6
+    228              //state_value_u8 = GetDebouncedValue(input_no_u8, state_value_u8); // Check for debounce // Debounce is implemented in module_gpio
+    229              if(((digitalInputs_Control.digitalInputs_Setting.inputPolarity_u16) >> input_no_u8) & 1 == BIT_HI) //Invert polarity is enabled
+   \       0x20   0x8A1D             LDRH     R5,[R3, #+16]
+   \       0x22   0x4105             ASRS     R5,R5,R0
+   \       0x24   0x4025             ANDS     R5,R5,R4
+   \       0x26   0x2D00             CMP      R5,#+0
+   \       0x28   0xD007             BEQ      ??UpdateInputState_1
+    230              { 
+    231                // Flip the read state
+    232                if(state_value_u8 == 0){
+   \       0x2A   0x0015             MOVS     R5,R2
+   \       0x2C   0xB2ED             UXTB     R5,R5
+   \       0x2E   0x2D00             CMP      R5,#+0
+   \       0x30   0xD102             BNE      ??UpdateInputState_2
+    233                  state_value_u8 = BIT_HI;
+   \       0x32   0x0021             MOVS     R1,R4
+   \       0x34   0x000A             MOVS     R2,R1
+   \       0x36   0xE000             B        ??UpdateInputState_1
+    234                } else{
+    235                  state_value_u8 = BIT_LOW;
+   \                     ??UpdateInputState_2: (+1)
+   \       0x38   0x000A             MOVS     R2,R1
+    236                }
+    237              }
+    238              // Update filtered digital input state
+    239              if(state_value_u8 == BIT_HI){
+   \                     ??UpdateInputState_1: (+1)
+   \       0x3A   0x0011             MOVS     R1,R2
+   \       0x3C   0xB2C9             UXTB     R1,R1
+   \       0x3E   0x2901             CMP      R1,#+1
+   \       0x40   0xD106             BNE      ??UpdateInputState_3
+    240                BIT_SET(digitalInputs_Control.digitalInputs_Data.digitalInputStatusFiltered_u16, input_no_u8);
+   \       0x42   0x214A             MOVS     R1,#+74
+   \       0x44   0x5A59             LDRH     R1,[R3, R1]
+   \       0x46   0x4084             LSLS     R4,R4,R0
+   \       0x48   0x430C             ORRS     R4,R4,R1
+   \       0x4A   0x214A             MOVS     R1,#+74
+   \       0x4C   0x525C             STRH     R4,[R3, R1]
+   \       0x4E   0xE013             B        ??UpdateInputState_4
+    241              } else{
+    242                BIT_CLEAR(digitalInputs_Control.digitalInputs_Data.digitalInputStatusFiltered_u16, input_no_u8);
+   \                     ??UpdateInputState_3: (+1)
+   \       0x50   0x214A             MOVS     R1,#+74
+   \       0x52   0x5A59             LDRH     R1,[R3, R1]
+   \       0x54   0x4084             LSLS     R4,R4,R0
+   \       0x56   0x43A1             BICS     R1,R1,R4
+   \       0x58   0x244A             MOVS     R4,#+74
+   \       0x5A   0x5319             STRH     R1,[R3, R4]
+   \       0x5C   0xE00C             B        ??UpdateInputState_4
+    243              }
+    244            } else{ // Digital input disabled
+    245              if(((digitalInputs_Control.digitalInputs_Setting.inputPolarity_u16) >> input_no_u8) & 1 == BIT_HI) //Invert Polarity
+   \                     ??UpdateInputState_0: (+1)
+   \       0x5E   0x8A19             LDRH     R1,[R3, #+16]
+   \       0x60   0x4101             ASRS     R1,R1,R0
+   \       0x62   0x4021             ANDS     R1,R1,R4
+   \       0x64   0x2900             CMP      R1,#+0
+   \       0x66   0xD007             BEQ      ??UpdateInputState_4
+    246              {
+    247                state_value_u8 = BIT_HI; // Flip the read state since the polarity bit is Set.
+   \       0x68   0x0021             MOVS     R1,R4
+   \       0x6A   0x000A             MOVS     R2,R1
+    248                BIT_SET(digitalInputs_Control.digitalInputs_Data.digitalInputStatusFiltered_u16, input_no_u8);
+   \       0x6C   0x214A             MOVS     R1,#+74
+   \       0x6E   0x5A59             LDRH     R1,[R3, R1]
+   \       0x70   0x4084             LSLS     R4,R4,R0
+   \       0x72   0x430C             ORRS     R4,R4,R1
+   \       0x74   0x214A             MOVS     R1,#+74
+   \       0x76   0x525C             STRH     R4,[R3, R1]
+    249              }
+    250            }
+    251          }
+   \                     ??UpdateInputState_4: (+1)
+   \       0x78   0xBD70             POP      {R4-R6,PC}       ;; return
+    252          
+    253          /**
+    254          ********************************************************************************************************************************
+    255          * @brief   Read inputs and set response
+    256          * @details Read inputs and input function to sets output appropriatly.
+    257          * @param   input_no_u8, state_value_u8
+    258          * @retval  None
+    259          ********************************************************************************************************************************
+    260          */
+
+   \                                 In section .text, align 2, keep-with-next
+    261          void ProcessDigitalInputs(uint8_t input_no_u8, uint8_t state_value_u8){
+   \                     ProcessDigitalInputs: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    262            
+    263            uint16_t input_function_u16;
+    264            
+    265            input_function_u16 = digitalInputs_Control.digitalInputs_Setting.inputFunction[input_no_u8];
+   \        0x2   0x....             LDR      R2,??DataTable4_1
+   \        0x4   0x0003             MOVS     R3,R0
+   \        0x6   0xB2DB             UXTB     R3,R3
+   \        0x8   0x2402             MOVS     R4,#+2
+   \        0xA   0x4363             MULS     R3,R4,R3
+   \        0xC   0x18D3             ADDS     R3,R2,R3
+   \        0xE   0x8A9B             LDRH     R3,[R3, #+20]
+    266            
+    267            switch(input_function_u16){
+   \       0x10   0x001C             MOVS     R4,R3
+   \       0x12   0xB2A4             UXTH     R4,R4
+   \       0x14   0x1E64             SUBS     R4,R4,#+1
+   \       0x16   0xD00B             BEQ      ??ProcessDigitalInputs_0
+   \       0x18   0x1E64             SUBS     R4,R4,#+1
+   \       0x1A   0xD01E             BEQ      ??ProcessDigitalInputs_1
+   \       0x1C   0x1E64             SUBS     R4,R4,#+1
+   \       0x1E   0xD025             BEQ      ??ProcessDigitalInputs_2
+   \       0x20   0x1E64             SUBS     R4,R4,#+1
+   \       0x22   0xD038             BEQ      ??ProcessDigitalInputs_3
+   \       0x24   0x1E64             SUBS     R4,R4,#+1
+   \       0x26   0xD03F             BEQ      ??ProcessDigitalInputs_4
+   \       0x28   0x1E64             SUBS     R4,R4,#+1
+   \       0x2A   0x2C03             CMP      R4,#+3
+   \       0x2C   0xD945             BLS      ??ProcessDigitalInputs_5
+   \       0x2E   0xE045             B        ??ProcessDigitalInputs_6
+    268            case MOTOR_ENABLE:    // 0
+    269              digitalInputs_Control.digitalInputs_Data.digitalInputsValue[input_no_u8] = state_value_u8;
+   \                     ??ProcessDigitalInputs_0: (+1)
+   \       0x30   0x000C             MOVS     R4,R1
+   \       0x32   0xB2E4             UXTB     R4,R4
+   \       0x34   0x0005             MOVS     R5,R0
+   \       0x36   0xB2ED             UXTB     R5,R5
+   \       0x38   0x2604             MOVS     R6,#+4
+   \       0x3A   0x4375             MULS     R5,R6,R5
+   \       0x3C   0x1955             ADDS     R5,R2,R5
+   \       0x3E   0x62AC             STR      R4,[R5, #+40]
+    270              digitalInputs_Control.digitalInputs_Data.discretes_u16.is_motorEnabled = state_value_u8;
+   \       0x40   0x244E             MOVS     R4,#+78
+   \       0x42   0x5B15             LDRH     R5,[R2, R4]
+   \       0x44   0x....             LDR      R4,??DataTable7_1  ;; 0xfffd
+   \       0x46   0x402C             ANDS     R4,R4,R5
+   \       0x48   0x000D             MOVS     R5,R1
+   \       0x4A   0xB2ED             UXTB     R5,R5
+   \       0x4C   0x006D             LSLS     R5,R5,#+1
+   \       0x4E   0x2602             MOVS     R6,#+2
+   \       0x50   0x4035             ANDS     R5,R5,R6
+   \       0x52   0x4325             ORRS     R5,R5,R4
+   \       0x54   0x244E             MOVS     R4,#+78
+   \       0x56   0x5315             STRH     R5,[R2, R4]
+    271              break;
+   \       0x58   0xE030             B        ??ProcessDigitalInputs_7
+    272              
+    273            case MOTOR_START:     // 1
+    274              digitalInputs_Control.digitalInputs_Data.digitalInputsValue[input_no_u8] = state_value_u8;
+   \                     ??ProcessDigitalInputs_1: (+1)
+   \       0x5A   0x000C             MOVS     R4,R1
+   \       0x5C   0xB2E4             UXTB     R4,R4
+   \       0x5E   0x0005             MOVS     R5,R0
+   \       0x60   0xB2ED             UXTB     R5,R5
+   \       0x62   0x2604             MOVS     R6,#+4
+   \       0x64   0x4375             MULS     R5,R6,R5
+   \       0x66   0x1952             ADDS     R2,R2,R5
+   \       0x68   0x6294             STR      R4,[R2, #+40]
+    275              break;
+   \       0x6A   0xE027             B        ??ProcessDigitalInputs_7
+    276              
+    277            case SET_DIRECTION:   // 2
+    278              digitalInputs_Control.digitalInputs_Data.digitalInputsValue[input_no_u8] = state_value_u8;
+   \                     ??ProcessDigitalInputs_2: (+1)
+   \       0x6C   0x000C             MOVS     R4,R1
+   \       0x6E   0xB2E4             UXTB     R4,R4
+   \       0x70   0x0005             MOVS     R5,R0
+   \       0x72   0xB2ED             UXTB     R5,R5
+   \       0x74   0x2604             MOVS     R6,#+4
+   \       0x76   0x4375             MULS     R5,R6,R5
+   \       0x78   0x1955             ADDS     R5,R2,R5
+   \       0x7A   0x62AC             STR      R4,[R5, #+40]
+    279              digitalInputs_Control.digitalInputs_Data.discretes_u16.is_invertDirection = state_value_u8;
+   \       0x7C   0x244E             MOVS     R4,#+78
+   \       0x7E   0x5B14             LDRH     R4,[R2, R4]
+   \       0x80   0x....             LDR      R5,??DataTable6_4  ;; 0xfffe
+   \       0x82   0x4025             ANDS     R5,R5,R4
+   \       0x84   0x000C             MOVS     R4,R1
+   \       0x86   0xB2E4             UXTB     R4,R4
+   \       0x88   0x0026             MOVS     R6,R4
+   \       0x8A   0x07F6             LSLS     R6,R6,#+31       ;; ZeroExtS R6,R6,#+31,#+31
+   \       0x8C   0x0FF6             LSRS     R6,R6,#+31
+   \       0x8E   0x432E             ORRS     R6,R6,R5
+   \       0x90   0x244E             MOVS     R4,#+78
+   \       0x92   0x5316             STRH     R6,[R2, R4]
+    280              break;
+   \       0x94   0xE012             B        ??ProcessDigitalInputs_7
+    281              
+    282            case FIREMODE_ENABLE: // 3
+    283              digitalInputs_Control.digitalInputs_Data.digitalInputsValue[input_no_u8] = state_value_u8;
+   \                     ??ProcessDigitalInputs_3: (+1)
+   \       0x96   0x000C             MOVS     R4,R1
+   \       0x98   0xB2E4             UXTB     R4,R4
+   \       0x9A   0x0005             MOVS     R5,R0
+   \       0x9C   0xB2ED             UXTB     R5,R5
+   \       0x9E   0x2604             MOVS     R6,#+4
+   \       0xA0   0x4375             MULS     R5,R6,R5
+   \       0xA2   0x1952             ADDS     R2,R2,R5
+   \       0xA4   0x6294             STR      R4,[R2, #+40]
+    284              break;
+   \       0xA6   0xE009             B        ??ProcessDigitalInputs_7
+    285              
+    286            case ALARM_RESET:     // 4
+    287              digitalInputs_Control.digitalInputs_Data.digitalInputsValue[input_no_u8] = state_value_u8;
+   \                     ??ProcessDigitalInputs_4: (+1)
+   \       0xA8   0x000C             MOVS     R4,R1
+   \       0xAA   0xB2E4             UXTB     R4,R4
+   \       0xAC   0x0005             MOVS     R5,R0
+   \       0xAE   0xB2ED             UXTB     R5,R5
+   \       0xB0   0x2604             MOVS     R6,#+4
+   \       0xB2   0x4375             MULS     R5,R6,R5
+   \       0xB4   0x1952             ADDS     R2,R2,R5
+   \       0xB6   0x6294             STR      R4,[R2, #+40]
+    288              break;      
+   \       0xB8   0xE000             B        ??ProcessDigitalInputs_7
+    289              
+    290            case SET_DEMAND_INPUT_0: // 5    
+    291            case SET_DEMAND_INPUT_1: // 6    
+    292            case SET_DEMAND_INPUT_2: // 7
+    293            case SET_DEMAND_INPUT_3: // 8
+    294              break;
+   \                     ??ProcessDigitalInputs_5: (+1)
+   \       0xBA   0xE7FF             B        ??ProcessDigitalInputs_7
+    295              
+    296            default: 
+    297              break;    
+    298            }  
+    299          }
+   \                     ??ProcessDigitalInputs_6: (+1)
+   \                     ??ProcessDigitalInputs_7: (+1)
+   \       0xBC   0xBD70             POP      {R4-R6,PC}       ;; return
+    300          
+    301          /**
+    302          ********************************************************************************************************************************
+    303          * @brief   Find discrete demand inputs
+    304          * @details Find the input no's correspond to the discrete demand inputs and find the number of discrete demand input
+    305          * @param   None 
+    306          * @retval  None
+    307          ********************************************************************************************************************************
+    308          */
+
+   \                                 In section .text, align 2, keep-with-next
+    309          void FindDiscreteDemandInputs(){
+   \                     FindDiscreteDemandInputs: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    310            uint8_t count_u8=0; // Index to store input # which is set at discrete demand input
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x0008             MOVS     R0,R1
+    311            for (uint8_t input_no_u8 = 0; input_no_u8 < TOTAL_DIGITAL_INPUTS; input_no_u8++){
+   \                     ??FindDiscreteDemandInputs_0: (+1)
+   \        0x6   0x000A             MOVS     R2,R1
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x2A05             CMP      R2,#+5
+   \        0xC   0xDA36             BGE      ??FindDiscreteDemandInputs_1
+    312              if(digitalInputs_Control.digitalInputs_Setting.inputFunction[input_no_u8] == SET_DEMAND_INPUT_0) // 3    
+   \        0xE   0x....             LDR      R2,??DataTable7_4
+   \       0x10   0x000B             MOVS     R3,R1
+   \       0x12   0xB2DB             UXTB     R3,R3
+   \       0x14   0x2402             MOVS     R4,#+2
+   \       0x16   0x4363             MULS     R3,R4,R3
+   \       0x18   0x18D3             ADDS     R3,R2,R3
+   \       0x1A   0x8A9B             LDRH     R3,[R3, #+20]
+   \       0x1C   0x2B06             CMP      R3,#+6
+   \       0x1E   0xD104             BNE      ??FindDiscreteDemandInputs_2
+    313              {
+    314                discrete_demand_input_nos_u8[count_u8] =  input_no_u8;
+   \       0x20   0x....             LDR      R3,??DataTable7
+   \       0x22   0x0004             MOVS     R4,R0
+   \       0x24   0xB2E4             UXTB     R4,R4
+   \       0x26   0x5519             STRB     R1,[R3, R4]
+    315                count_u8++;
+   \       0x28   0x1C40             ADDS     R0,R0,#+1
+    316              }
+    317              if(digitalInputs_Control.digitalInputs_Setting.inputFunction[input_no_u8] == SET_DEMAND_INPUT_1) // 4    
+   \                     ??FindDiscreteDemandInputs_2: (+1)
+   \       0x2A   0x000B             MOVS     R3,R1
+   \       0x2C   0xB2DB             UXTB     R3,R3
+   \       0x2E   0x2402             MOVS     R4,#+2
+   \       0x30   0x4363             MULS     R3,R4,R3
+   \       0x32   0x18D3             ADDS     R3,R2,R3
+   \       0x34   0x8A9B             LDRH     R3,[R3, #+20]
+   \       0x36   0x2B07             CMP      R3,#+7
+   \       0x38   0xD104             BNE      ??FindDiscreteDemandInputs_3
+    318              {
+    319                discrete_demand_input_nos_u8[count_u8] =  input_no_u8;
+   \       0x3A   0x....             LDR      R3,??DataTable7
+   \       0x3C   0x0004             MOVS     R4,R0
+   \       0x3E   0xB2E4             UXTB     R4,R4
+   \       0x40   0x5519             STRB     R1,[R3, R4]
+    320                count_u8++;
+   \       0x42   0x1C40             ADDS     R0,R0,#+1
+    321              }
+    322              
+    323              if(digitalInputs_Control.digitalInputs_Setting.inputFunction[input_no_u8] == SET_DEMAND_INPUT_2) // 5    
+   \                     ??FindDiscreteDemandInputs_3: (+1)
+   \       0x44   0x000B             MOVS     R3,R1
+   \       0x46   0xB2DB             UXTB     R3,R3
+   \       0x48   0x2402             MOVS     R4,#+2
+   \       0x4A   0x4363             MULS     R3,R4,R3
+   \       0x4C   0x18D3             ADDS     R3,R2,R3
+   \       0x4E   0x8A9B             LDRH     R3,[R3, #+20]
+   \       0x50   0x2B08             CMP      R3,#+8
+   \       0x52   0xD104             BNE      ??FindDiscreteDemandInputs_4
+    324              {
+    325                discrete_demand_input_nos_u8[count_u8] =  input_no_u8;
+   \       0x54   0x....             LDR      R3,??DataTable7
+   \       0x56   0x0004             MOVS     R4,R0
+   \       0x58   0xB2E4             UXTB     R4,R4
+   \       0x5A   0x5519             STRB     R1,[R3, R4]
+    326                count_u8++;
+   \       0x5C   0x1C40             ADDS     R0,R0,#+1
+    327              }
+    328              
+    329              if(digitalInputs_Control.digitalInputs_Setting.inputFunction[input_no_u8] == SET_DEMAND_INPUT_3) // 6    
+   \                     ??FindDiscreteDemandInputs_4: (+1)
+   \       0x5E   0x000B             MOVS     R3,R1
+   \       0x60   0xB2DB             UXTB     R3,R3
+   \       0x62   0x2402             MOVS     R4,#+2
+   \       0x64   0x4363             MULS     R3,R4,R3
+   \       0x66   0x18D2             ADDS     R2,R2,R3
+   \       0x68   0x8A92             LDRH     R2,[R2, #+20]
+   \       0x6A   0x2A09             CMP      R2,#+9
+   \       0x6C   0xD104             BNE      ??FindDiscreteDemandInputs_5
+    330              {
+    331                discrete_demand_input_nos_u8[count_u8] =  input_no_u8;
+   \       0x6E   0x....             LDR      R2,??DataTable7
+   \       0x70   0x0003             MOVS     R3,R0
+   \       0x72   0xB2DB             UXTB     R3,R3
+   \       0x74   0x54D1             STRB     R1,[R2, R3]
+    332                count_u8++;
+   \       0x76   0x1C40             ADDS     R0,R0,#+1
+    333              }
+    334            }
+   \                     ??FindDiscreteDemandInputs_5: (+1)
+   \       0x78   0x1C49             ADDS     R1,R1,#+1
+   \       0x7A   0xE7C4             B        ??FindDiscreteDemandInputs_0
+    335            discrete_demand_inputs_count_u8 = count_u8;  
+   \                     ??FindDiscreteDemandInputs_1: (+1)
+   \       0x7C   0x....             LDR      R1,??DataTable7_5
+   \       0x7E   0x7008             STRB     R0,[R1, #+0]
+    336          }
+   \       0x80   0xBD10             POP      {R4,PC}          ;; return
+    337          
+    338          /**
+    339          ********************************************************************************************************************************
+    340          * @brief   Find the demand based on input state
+    341          * @details
+    342          * @param   None 
+    343          * @retval  None
+    344          ********************************************************************************************************************************
+    345          */
+
+   \                                 In section .text, align 2, keep-with-next
+    346          void ProcessDiscreteDemand(){
+   \                     ProcessDiscreteDemand: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    347            
+    348            uint8_t count_u8=0; // # of discrete demand inputs
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x0010             MOVS     R0,R2
+    349            uint8_t discrete_demand_input_status_decimal_u8 = 0;
+   \        0x6   0x0011             MOVS     R1,R2
+    350            // Find the decimal equivalent of the digital input state
+    351            for (uint8_t input_no_u8 = 0; input_no_u8 < TOTAL_DIGITAL_INPUTS; input_no_u8++){
+   \                     ??ProcessDiscreteDemand_0: (+1)
+   \        0x8   0x0013             MOVS     R3,R2
+   \        0xA   0xB2DB             UXTB     R3,R3
+   \        0xC   0x2B05             CMP      R3,#+5
+   \        0xE   0xDA13             BGE      ??ProcessDiscreteDemand_1
+    352              if(input_no_u8 == discrete_demand_input_nos_u8[count_u8]){
+   \       0x10   0x0013             MOVS     R3,R2
+   \       0x12   0x....             LDR      R4,??DataTable7
+   \       0x14   0x0005             MOVS     R5,R0
+   \       0x16   0xB2ED             UXTB     R5,R5
+   \       0x18   0x5D64             LDRB     R4,[R4, R5]
+   \       0x1A   0xB2DB             UXTB     R3,R3
+   \       0x1C   0x42A3             CMP      R3,R4
+   \       0x1E   0xD109             BNE      ??ProcessDiscreteDemand_2
+    353                // Convert binary input value to decimal value
+    354                discrete_demand_input_status_decimal_u8 |= (uint8_t)((((digitalInputs_Control.digitalInputs_Data.digitalInputStatusFiltered_u16) >> input_no_u8) & 1) << count_u8);
+   \       0x20   0x000C             MOVS     R4,R1
+   \       0x22   0x....             LDR      R1,??DataTable7_6
+   \       0x24   0x880B             LDRH     R3,[R1, #+0]
+   \       0x26   0x4113             ASRS     R3,R3,R2
+   \       0x28   0x0019             MOVS     R1,R3
+   \       0x2A   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0x2C   0x0FC9             LSRS     R1,R1,#+31
+   \       0x2E   0x4081             LSLS     R1,R1,R0
+   \       0x30   0x4321             ORRS     R1,R1,R4
+    355                count_u8++;  
+   \       0x32   0x1C40             ADDS     R0,R0,#+1
+    356              }
+    357            }
+   \                     ??ProcessDiscreteDemand_2: (+1)
+   \       0x34   0x1C52             ADDS     R2,R2,#+1
+   \       0x36   0xE7E7             B        ??ProcessDiscreteDemand_0
+    358            digitalInputs_Control.digitalInputs_Data.discreteDemandPercent = digitalInputs_Control.digitalInputs_Setting.demandPercent[discrete_demand_input_status_decimal_u8];
+   \                     ??ProcessDiscreteDemand_1: (+1)
+   \       0x38   0x....             LDR      R2,??DataTable7_4
+   \       0x3A   0x000B             MOVS     R3,R1
+   \       0x3C   0xB2DB             UXTB     R3,R3
+   \       0x3E   0x2402             MOVS     R4,#+2
+   \       0x40   0x4363             MULS     R3,R4,R3
+   \       0x42   0x5AD3             LDRH     R3,[R2, R3]
+   \       0x44   0x244C             MOVS     R4,#+76
+   \       0x46   0x5313             STRH     R3,[R2, R4]
+    359          }
+   \       0x48   0xBD30             POP      {R4,R5,PC}       ;; return
+    360          
+    361          /**
+    362          ********************************************************************************************************************************
+    363          * @brief   Debounce Digital Inputs
+    364          * @details Apply debounce to input. If the new value does not stay the same for at least debounceCountLimit_u16, revert to previous know good value
+    365          * @param   input_no_u8, Digial input no
+    366          * @param   current_value_u8, Current value of digital input status
+    367          * @retval  debounced_value_u8
+    368          ********************************************************************************************************************************
+    369          */
+
+   \                                 In section .text, align 2, keep-with-next
+    370          uint8_t GetDebouncedValue(uint8_t input_no_u8, uint8_t current_value_u8){
+   \                     GetDebouncedValue: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    371            uint8_t debounced_value_u8 = previous_input_state_u8[input_no_u8];
+   \        0x4   0x....             LDR      R3,??DataTable7_2
+   \        0x6   0x0010             MOVS     R0,R2
+   \        0x8   0xB2C0             UXTB     R0,R0
+   \        0xA   0x5C18             LDRB     R0,[R3, R0]
+    372            if(previous_input_state_u8[input_no_u8] != current_value_u8) // Input state changed.
+   \        0xC   0x0014             MOVS     R4,R2
+   \        0xE   0xB2E4             UXTB     R4,R4
+   \       0x10   0x5D1C             LDRB     R4,[R3, R4]
+   \       0x12   0x000D             MOVS     R5,R1
+   \       0x14   0xB2ED             UXTB     R5,R5
+   \       0x16   0x42AC             CMP      R4,R5
+   \       0x18   0xD014             BEQ      ??GetDebouncedValue_0
+    373            {
+    374              debouce_count_u8[input_no_u8]++;
+   \       0x1A   0x....             LDR      R4,??DataTable7_3
+   \       0x1C   0x0015             MOVS     R5,R2
+   \       0x1E   0xB2ED             UXTB     R5,R5
+   \       0x20   0x5D65             LDRB     R5,[R4, R5]
+   \       0x22   0x1C6D             ADDS     R5,R5,#+1
+   \       0x24   0x0016             MOVS     R6,R2
+   \       0x26   0xB2F6             UXTB     R6,R6
+   \       0x28   0x55A5             STRB     R5,[R4, R6]
+    375              if(debouce_count_u8[input_no_u8] >= digitalInputs_Control.digitalInputs_Setting.debounceCountLimit_u16)
+   \       0x2A   0x0015             MOVS     R5,R2
+   \       0x2C   0xB2ED             UXTB     R5,R5
+   \       0x2E   0x5D64             LDRB     R4,[R4, R5]
+   \       0x30   0x....             LDR      R5,??DataTable7_4
+   \       0x32   0x8CAD             LDRH     R5,[R5, #+36]
+   \       0x34   0xB2A4             UXTH     R4,R4
+   \       0x36   0x42AC             CMP      R4,R5
+   \       0x38   0xD30D             BCC      ??GetDebouncedValue_1
+    376              { // Debounce count satisified
+    377                previous_input_state_u8[input_no_u8] = current_value_u8;
+   \       0x3A   0x0014             MOVS     R4,R2
+   \       0x3C   0xB2E4             UXTB     R4,R4
+   \       0x3E   0x5519             STRB     R1,[R3, R4]
+    378                debounced_value_u8 = current_value_u8;
+   \       0x40   0x0008             MOVS     R0,R1
+   \       0x42   0xE008             B        ??GetDebouncedValue_1
+    379              }
+    380            } else{ // No change in input state.
+    381              debouce_count_u8[input_no_u8]=0;
+   \                     ??GetDebouncedValue_0: (+1)
+   \       0x44   0x2400             MOVS     R4,#+0
+   \       0x46   0x....             LDR      R5,??DataTable7_3
+   \       0x48   0x0016             MOVS     R6,R2
+   \       0x4A   0xB2F6             UXTB     R6,R6
+   \       0x4C   0x55AC             STRB     R4,[R5, R6]
+    382              debounced_value_u8 = previous_input_state_u8[input_no_u8];
+   \       0x4E   0x0014             MOVS     R4,R2
+   \       0x50   0xB2E4             UXTB     R4,R4
+   \       0x52   0x5D1B             LDRB     R3,[R3, R4]
+   \       0x54   0x0018             MOVS     R0,R3
+    383            } 
+    384            return(debounced_value_u8);
+   \                     ??GetDebouncedValue_1: (+1)
+   \       0x56   0xB2C0             UXTB     R0,R0
+   \       0x58   0xBD70             POP      {R4-R6,PC}       ;; return
+    385          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     gpio_LocalControl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     module_digital_inputs_poll_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     digitalInputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x....'....        DC32     discrete_demand_inputs_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x....'....        DC32     digital_Inputs_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x0000'1388        DC32     0x1388
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x0000'1770        DC32     0x1770
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x0000'1B58        DC32     0x1b58
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x0000'2328        DC32     0x2328
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x0000'2710        DC32     0x2710
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x0000'FFFE        DC32     0xfffe
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     discrete_demand_input_nos_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x0000'FFFD        DC32     0xfffd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x....'....        DC32     previous_input_state_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     debouce_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     digitalInputs_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     discrete_demand_inputs_count_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x....'....        DC32     digitalInputs_Control+0x4A
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   AssignModuleMemDigitalInputs
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+       8   FindDiscreteDemandInputs
+      16   GetDebouncedValue
+      24   InitDigtialInputSetting
+        24   -> FindDiscreteDemandInputs
+      16   ProcessDigitalInputs
+      12   ProcessDiscreteDemand
+      16   UpdateInputState
+      40   module_Digital_Inputs_u32
+        40   -> AssignModuleMemDigitalInputs
+        40   -> InitDigtialInputSetting
+        40   -> ProcessDigitalInputs
+        40   -> ProcessDiscreteDemand
+        40   -> UpdateInputState
+        40   -> getProcessInfoIndex
+        40   -> getSysCount
+        40 __aeabi_uread4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+      60  AssignModuleMemDigitalInputs
+     130  FindDiscreteDemandInputs
+      90  GetDebouncedValue
+     228  InitDigtialInputSetting
+     190  ProcessDigitalInputs
+      74  ProcessDiscreteDemand
+     122  UpdateInputState
+       8  debouce_count_u8
+      80  digitalInputs_Control
+       4  digital_Inputs_StructMem_u32
+       4  discrete_demand_input_nos_u8
+       1  discrete_demand_inputs_count_u8
+       4  gpio_LocalControl
+     266  module_Digital_Inputs_u32
+       8  module_digital_inputs_poll_time_u64
+       8  previous_input_state_u8
+
+ 
+   117 bytes in section .bss
+ 1'240 bytes in section .text
+ 
+ 1'240 bytes of CODE memory
+   117 bytes of DATA memory
+
+Errors: none
+Warnings: none

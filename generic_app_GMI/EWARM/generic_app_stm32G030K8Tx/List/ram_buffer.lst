@@ -1,0 +1,399 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:50
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Memory\ram_buffer.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWEEA5.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Memory\ram_buffer.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\ram_buffer.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\ram_buffer.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Memory\ram_buffer.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    ram_buffer.c 
+      4            * @author  Pamela Lee
+      5            * @brief   This file implements the interface for the RAM buffer data structure.
+      6            * @details This file contains definitions for constants, macros, global variables, and function prototypes required to
+      7            *          implement a single RAM buffer (consequitive RAM area allocation) data structure.
+      8            ********************************************************************************************************************************
+      9            */
+     10          
+     11          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     12          #include "ram_buffer.h"
+     13          
+     14          #include <stdlib.h>
+     15          #include <string.h>
+     16          
+     17          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     18          
+     19          /* Private Function Prototypes -------------------------------------------------------------------------------------------------*/
+     20          static uint8_t *RamBuf_SetPointerToRamBuf(Ram_Buf_Handle this_ram_buf_u32, uint8_t *p_RamBuf_u8);
+     21          static uint8_t RamBuf_GetTotalNumOfElements(Ram_Buf_Handle this_ram_buf_u32);
+     22          static uint8_t RamBuf_SetTotalNumOfElements(Ram_Buf_Handle this_ram_buf_u32, uint32_t totalNumOfElements_u32);
+     23          static uint8_t RamBuf_SetAccessMode(Ram_Buf_Handle this_ram_buf_u32, uint8_t access_mode_u8);
+     24          static uint8_t *RamBuf_SetUserList(Ram_Buf_Handle this_ram_buf_u32, uint8_t *p_user_list_u8);
+     25          static uint8_t RamBuf_SetUserListSize(Ram_Buf_Handle this_ram_buf_u32, uint8_t user_list_size_u8);
+     26          
+     27          /* Public Functions ------------------------------------------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+     28          void RamBuf_Initialize(Ram_Buf_Handle this_ram_buf_u32, uint8_t owner_u8, uint8_t ram_buf_size_u8,
+     29                                    uint8_t access_mode_u8, uint8_t *p_user_list_u8, uint8_t user_list_size_u8) {
+   \                     RamBuf_Initialize: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000F             MOVS     R7,R1
+   \        0x6   0x9E08             LDR      R6,[SP, #+32]
+   \        0x8   0x9D09             LDR      R5,[SP, #+36]
+     30              RamBuf_SetPointerToRamBuf(this_ram_buf_u32, (uint8_t *) malloc(ram_buf_size_u8));
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x7900             LDRB     R0,[R0, #+4]
+   \        0xE   0x....'....        BL       malloc
+   \       0x12   0x0001             MOVS     R1,R0
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x....'....        BL       RamBuf_SetPointerToRamBuf
+     31              RamBuf_SetOwner(this_ram_buf_u32, owner_u8);
+   \       0x1A   0x0039             MOVS     R1,R7
+   \       0x1C   0xB2C9             UXTB     R1,R1
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x....'....        BL       RamBuf_SetOwner
+     32              RamBuf_SetAccessMode(this_ram_buf_u32, access_mode_u8);
+   \       0x24   0x4668             MOV      R0,SP
+   \       0x26   0x7A01             LDRB     R1,[R0, #+8]
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x....'....        BL       RamBuf_SetAccessMode
+     33              RamBuf_SetUserList(this_ram_buf_u32, p_user_list_u8);
+   \       0x2E   0x0031             MOVS     R1,R6
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x....'....        BL       RamBuf_SetUserList
+     34              RamBuf_SetUserListSize(this_ram_buf_u32, user_list_size_u8);
+   \       0x36   0x0029             MOVS     R1,R5
+   \       0x38   0xB2C9             UXTB     R1,R1
+   \       0x3A   0x0020             MOVS     R0,R4
+   \       0x3C   0x....'....        BL       RamBuf_SetUserListSize
+     35              RamBuf_SetTotalNumOfElements(this_ram_buf_u32, ram_buf_size_u8);
+   \       0x40   0x4668             MOV      R0,SP
+   \       0x42   0x7901             LDRB     R1,[R0, #+4]
+   \       0x44   0x0020             MOVS     R0,R4
+   \       0x46   0x....'....        BL       RamBuf_SetTotalNumOfElements
+     36              RamBuf_SetProcessInstanceIndex(this_ram_buf_u32, 255);
+   \       0x4A   0x21FF             MOVS     R1,#+255
+   \       0x4C   0x0020             MOVS     R0,R4
+   \       0x4E   0x....'....        BL       RamBuf_SetProcessInstanceIndex
+     37          }
+   \       0x52   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+     38          
+
+   \                                 In section .text, align 2, keep-with-next
+     39          void RamBuf_Release(Ram_Buf_Handle this_ram_buf_u32) {
+   \                     RamBuf_Release: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     40              RamBuf_SetOwner(this_ram_buf_u32, 255);
+   \        0x4   0x21FF             MOVS     R1,#+255
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       RamBuf_SetOwner
+     41              RamBuf_SetAccessMode(this_ram_buf_u32, 1);
+   \        0xC   0x2101             MOVS     R1,#+1
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       RamBuf_SetAccessMode
+     42              RamBuf_SetUserList(this_ram_buf_u32, NULL);
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x....'....        BL       RamBuf_SetUserList
+     43              RamBuf_SetUserListSize(this_ram_buf_u32, 0);
+   \       0x1C   0x2100             MOVS     R1,#+0
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x....'....        BL       RamBuf_SetUserListSize
+     44              RamBuf_SetTotalNumOfElements(this_ram_buf_u32, 0);
+   \       0x24   0x2100             MOVS     R1,#+0
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0x....'....        BL       RamBuf_SetTotalNumOfElements
+     45              RamBuf_SetProcessInstanceIndex(this_ram_buf_u32, 255);
+   \       0x2C   0x21FF             MOVS     R1,#+255
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0x....'....        BL       RamBuf_SetProcessInstanceIndex
+     46          }
+   \       0x34   0xBD10             POP      {R4,PC}          ;; return
+     47          
+
+   \                                 In section .text, align 2, keep-with-next
+     48          uint8_t RamBuf_GetOwner(Ram_Buf_Handle this_ram_buf_u32) {
+     49              return (*this_ram_buf_u32).owner_u8;
+   \                     RamBuf_GetOwner: (+1)
+   \        0x0   0x7A00             LDRB     R0,[R0, #+8]
+   \        0x2   0x4770             BX       LR               ;; return
+     50          }
+     51          
+
+   \                                 In section .text, align 2, keep-with-next
+     52          uint8_t RamBuf_SetOwner(Ram_Buf_Handle this_ram_buf_u32, uint8_t owner_u8) {
+   \                     RamBuf_SetOwner: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     53              (*this_ram_buf_u32).owner_u8 = owner_u8;
+   \        0x6   0x722C             STRB     R4,[R5, #+8]
+     54              return RamBuf_GetOwner(this_ram_buf_u32) == owner_u8;
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       RamBuf_GetOwner
+   \        0xE   0xB2E4             UXTB     R4,R4
+   \       0x10   0x42A0             CMP      R0,R4
+   \       0x12   0xD101             BNE      ??RamBuf_SetOwner_0
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0xE000             B        ??RamBuf_SetOwner_1
+   \                     ??RamBuf_SetOwner_0: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \                     ??RamBuf_SetOwner_1: (+1)
+   \       0x1A   0xB2C0             UXTB     R0,R0
+   \       0x1C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     55          }
+     56          
+
+   \                                 In section .text, align 2, keep-with-next
+     57          uint8_t RamBuf_GetProcessInstanceIndex(Ram_Buf_Handle this_ram_buf_u32) {
+     58              return (*this_ram_buf_u32).processInstanceIndex_u8;
+   \                     RamBuf_GetProcessInstanceIndex: (+1)
+   \        0x0   0x7C40             LDRB     R0,[R0, #+17]
+   \        0x2   0x4770             BX       LR               ;; return
+     59          }
+     60          
+
+   \                                 In section .text, align 2, keep-with-next
+     61          uint8_t RamBuf_SetProcessInstanceIndex(Ram_Buf_Handle this_ram_buf_u32, uint8_t processInstanceIndex_u8) {
+     62              return (*this_ram_buf_u32).processInstanceIndex_u8 = processInstanceIndex_u8;
+   \                     RamBuf_SetProcessInstanceIndex: (+1)
+   \        0x0   0x7441             STRB     R1,[R0, #+17]
+   \        0x2   0x7C40             LDRB     R0,[R0, #+17]
+   \        0x4   0x4770             BX       LR               ;; return
+     63          }
+     64          
+     65          /* Private Functions -----------------------------------------------------------------------------------------------------------*/
+     66          
+     67          /**
+     68            ********************************************************************************************************************************
+     69            * @brief   Returns 
+     70            * @details 
+     71            * @param   this_ram_buf_u32   The RAM buffer handle referencing the RAM buffer that the function must operate on.
+     72            * @return  Returns 
+     73            ********************************************************************************************************************************
+     74            */
+
+   \                                 In section .text, align 2, keep-with-next
+     75          static uint8_t *RamBuf_SetPointerToRamBuf(Ram_Buf_Handle this_ram_buf_u32, uint8_t *p_ramBuf_u8) {
+     76              return (*this_ram_buf_u32).p_ramBuf_u8 = p_ramBuf_u8;
+   \                     RamBuf_SetPointerToRamBuf: (+1)
+   \        0x0   0x6001             STR      R1,[R0, #+0]
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+     77          }
+     78          
+     79          /**
+     80            ********************************************************************************************************************************
+     81            * @brief   Returns 
+     82            * @details 
+     83            * @param   this_ram_buf_u32   The RAM buffer handle referencing the RAM buffer that the function must operate on.
+     84            * @return  Returns 
+     85            ********************************************************************************************************************************
+     86            */
+
+   \                                 In section .text, align 2, keep-with-next
+     87          static uint8_t RamBuf_GetTotalNumOfElements(Ram_Buf_Handle this_ram_buf_u32) {
+     88              return (*this_ram_buf_u32).totalNumOfElements_u32;
+   \                     RamBuf_GetTotalNumOfElements: (+1)
+   \        0x0   0x6840             LDR      R0,[R0, #+4]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+     89          }
+     90          
+     91          /**
+     92            ********************************************************************************************************************************
+     93            * @brief   Returns 
+     94            * @details 
+     95            * @param   this_ram_buf_u32   The RAM buffer handle referencing the RAM buffer that the function must operate on.
+     96            * @return  Returns 
+     97            ********************************************************************************************************************************
+     98            */
+
+   \                                 In section .text, align 2, keep-with-next
+     99          static uint8_t RamBuf_SetTotalNumOfElements(Ram_Buf_Handle this_ram_buf_u32, uint32_t totalNumOfElements_u32) {
+   \                     RamBuf_SetTotalNumOfElements: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    100              (*this_ram_buf_u32).totalNumOfElements_u32 = totalNumOfElements_u32;
+   \        0x6   0x606C             STR      R4,[R5, #+4]
+    101              return RamBuf_GetTotalNumOfElements(this_ram_buf_u32) == totalNumOfElements_u32;
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       RamBuf_GetTotalNumOfElements
+   \        0xE   0x42A0             CMP      R0,R4
+   \       0x10   0xD101             BNE      ??RamBuf_SetTotalNumOfElements_0
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0xE000             B        ??RamBuf_SetTotalNumOfElements_1
+   \                     ??RamBuf_SetTotalNumOfElements_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \                     ??RamBuf_SetTotalNumOfElements_1: (+1)
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    102          }
+    103          
+    104          /**
+    105            ********************************************************************************************************************************
+    106            * @brief   Returns 
+    107            * @details 
+    108            * @param   this_ram_buf_u32   The RAM buffer handle referencing the RAM buffer that the function must operate on.
+    109            * @return  Returns 
+    110            ********************************************************************************************************************************
+    111            */
+
+   \                                 In section .text, align 2, keep-with-next
+    112          static uint8_t RamBuf_SetAccessMode(Ram_Buf_Handle this_ram_buf_u32, uint8_t access_mode_u8) {
+    113              return (*this_ram_buf_u32).accessMode_u8 = access_mode_u8;
+   \                     RamBuf_SetAccessMode: (+1)
+   \        0x0   0x7241             STRB     R1,[R0, #+9]
+   \        0x2   0x7A40             LDRB     R0,[R0, #+9]
+   \        0x4   0x4770             BX       LR               ;; return
+    114          }
+    115          
+    116          /**
+    117            ********************************************************************************************************************************
+    118            * @brief   Returns 
+    119            * @details 
+    120            * @param   this_ram_buf_u32   The RAM buffer handle referencing the RAM buffer that the function must operate on.
+    121            * @return  Returns 
+    122            ********************************************************************************************************************************
+    123            */
+
+   \                                 In section .text, align 2, keep-with-next
+    124          static uint8_t *RamBuf_SetUserList(Ram_Buf_Handle this_ram_buf_u32, uint8_t *p_user_list_u8) {
+    125              return (*this_ram_buf_u32).p_userList_u8 = p_user_list_u8;
+   \                     RamBuf_SetUserList: (+1)
+   \        0x0   0x60C1             STR      R1,[R0, #+12]
+   \        0x2   0x68C0             LDR      R0,[R0, #+12]
+   \        0x4   0x4770             BX       LR               ;; return
+    126          }
+    127          
+    128          /**
+    129            ********************************************************************************************************************************
+    130            * @brief   Returns 
+    131            * @details 
+    132            * @param   this_ram_buf_u32   The RAM buffer handle referencing the RAM buffer that the function must operate on.
+    133            * @return  Returns 
+    134            ********************************************************************************************************************************
+    135            */
+
+   \                                 In section .text, align 2, keep-with-next
+    136          static uint8_t RamBuf_SetUserListSize(Ram_Buf_Handle this_ram_buf_u32, uint8_t user_list_size_u8) {
+    137              return (*this_ram_buf_u32).userListSize_u8 = user_list_size_u8;
+   \                     RamBuf_SetUserListSize: (+1)
+   \        0x0   0x7401             STRB     R1,[R0, #+16]
+   \        0x2   0x7C00             LDRB     R0,[R0, #+16]
+   \        0x4   0x4770             BX       LR               ;; return
+    138          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   RamBuf_GetOwner
+       0   RamBuf_GetProcessInstanceIndex
+       0   RamBuf_GetTotalNumOfElements
+      32   RamBuf_Initialize
+        32   -> RamBuf_SetAccessMode
+        32   -> RamBuf_SetOwner
+        32   -> RamBuf_SetPointerToRamBuf
+        32   -> RamBuf_SetProcessInstanceIndex
+        32   -> RamBuf_SetTotalNumOfElements
+        32   -> RamBuf_SetUserList
+        32   -> RamBuf_SetUserListSize
+        32   -> malloc
+       8   RamBuf_Release
+         8   -> RamBuf_SetAccessMode
+         8   -> RamBuf_SetOwner
+         8   -> RamBuf_SetProcessInstanceIndex
+         8   -> RamBuf_SetTotalNumOfElements
+         8   -> RamBuf_SetUserList
+         8   -> RamBuf_SetUserListSize
+       0   RamBuf_SetAccessMode
+      16   RamBuf_SetOwner
+        16   -> RamBuf_GetOwner
+       0   RamBuf_SetPointerToRamBuf
+       0   RamBuf_SetProcessInstanceIndex
+      16   RamBuf_SetTotalNumOfElements
+        16   -> RamBuf_GetTotalNumOfElements
+       0   RamBuf_SetUserList
+       0   RamBuf_SetUserListSize
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  RamBuf_GetOwner
+       4  RamBuf_GetProcessInstanceIndex
+       6  RamBuf_GetTotalNumOfElements
+      84  RamBuf_Initialize
+      54  RamBuf_Release
+       6  RamBuf_SetAccessMode
+      30  RamBuf_SetOwner
+       6  RamBuf_SetPointerToRamBuf
+       6  RamBuf_SetProcessInstanceIndex
+      28  RamBuf_SetTotalNumOfElements
+       6  RamBuf_SetUserList
+       6  RamBuf_SetUserListSize
+
+ 
+ 240 bytes in section .text
+ 
+ 240 bytes of CODE memory
+
+Errors: none
+Warnings: none

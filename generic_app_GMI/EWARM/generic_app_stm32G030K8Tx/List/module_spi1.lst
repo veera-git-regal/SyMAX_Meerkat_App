@@ -1,0 +1,713 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:47
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_spi1.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWE5C7.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_spi1.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_spi1.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_spi1.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  1
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_spi1.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_spi1.c 
+      4          * @author  Logan Schaufler
+      5          * @brief   Main driver module for SPI1 Communication.
+      6          * @details This module initializes the SPI1 port and attaches the pre-selected fixed memory allocation to the module.
+      7          To Transmitt data in the RUN_MODULE case: put data into seqMemTX, and call this function:
+      8          *             SPI_ITConfig(spi1, SPI_IT_TXE, ENABLE);
+      9          ********************************************************************************************************************************
+     10          */
+     11          
+     12          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     13          #include "module_spi1.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_SPI_Enable(SPI_TypeDef *)
+   \                     LL_SPI_Enable: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2240             MOVS     R2,#+64
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6002             STR      R2,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_SPI_TransmitData8(SPI_TypeDef *, uint8_t)
+   \                     LL_SPI_TransmitData8: (+1)
+   \        0x0   0x7301             STRB     R1,[R0, #+12]
+   \        0x2   0x4770             BX       LR               ;; return
+     14          //#include "typedef.h"
+     15          //#include "stm32g0xx_ll_spi.h"
+     16          //#include "stm32g0xx_it.h"
+     17          //#include "macros.h"
+     18          
+     19          #include <stdio.h>
+     20          
+     21          /* scheduler handle declaration */
+     22          #include "scheduler.h"
+     23          #include "sequential_memory.h"
+     24          #include "structured_memory.h"
+     25          
+     26          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     27          /* Uarts handle declaration */
+     28          //extern void Delay(__IO uint32_t nTime);
+     29          
+     30          //void SPI1_TransferError_Callback(void);
+     31          //void WaitAndCheckEndOfTransfer(void);
+     32          void assignModuleMem_SPI1(void);
+     33          void SPI1_Init(void);
+     34          void TransferHandler(void);
+     35          void Send_Properly_Decoded_Response(void);
+     36          void Send_Improperly_Decoded_Response(void);
+     37          
+     38          extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     39          extern ProcessInfo processInfoTable[];
+     40          
+
+   \                                 In section .bss, align 4
+     41          SPI1_Control spi1_Control;
+   \                     spi1_Control:
+   \        0x0                      DS8 16
+     42          
+
+   \                                 In section .bss, align 4
+     43          static Ram_Buf_Handle spi1_StructMem_u32;
+   \                     spi1_StructMem_u32:
+   \        0x0                      DS8 4
+     44          
+     45          //spi1_Control* spi1_Module_Control;
+     46          // unsigned char* RxCMD_Usart2 ;
+     47          extern uint8_t spi1_CaptureLen;
+     48          extern uint8_t SPIProtocolState;
+     49          //extern __IO uint8_t indexTx_SPI1;
+     50          
+     51          //extern SPI1_Control *SPI1Control;
+     52          
+     53          enum {
+     54            MEMORY_INIT_MODULE,
+     55            INIT_MODULE,
+     56            RUN_MODULE,
+     57            // additional states to be added here as necessary.
+     58            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     59            KILL_MODULE = KILL_APP
+     60          };
+     61          
+     62          uint8_t  Buffercmp8(uint8_t* pBuffer1, uint8_t* pBuffer2, uint8_t BufferLength);
+     63          
+     64          //SPI_HandleTypeDef hspi1;
+     65          
+     66          /* Buffer used for reception */
+     67          //uint8_t aRxBuffer[sizeof(aTxBuffer)];
+     68          //uint8_t ubNbDataToReceive = sizeof(aTxBuffer);
+     69          //__IO uint8_t ubReceiveIndex = 0;
+     70          
+     71          
+     72          
+
+   \                                 In section .text, align 2, keep-with-next
+     73          uint8_t moduleSPI1_u32(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8, uint8_t irq_id_u8) 
+     74          {
+   \                     moduleSPI1_u32: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB083             SUB      SP,SP,#+12
+     75            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0x7005             STRB     R5,[R0, #+0]
+     76            switch (next_state_u8) {
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x7D00             LDRB     R0,[R0, #+20]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD006             BEQ      ??moduleSPI1_u32_0
+   \       0x12   0x2801             CMP      R0,#+1
+   \       0x14   0xD008             BEQ      ??moduleSPI1_u32_1
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD00D             BEQ      ??moduleSPI1_u32_2
+   \       0x1A   0x28FF             CMP      R0,#+255
+   \       0x1C   0xD033             BEQ      ??moduleSPI1_u32_3
+   \       0x1E   0xE045             B        ??moduleSPI1_u32_4
+     77            case MEMORY_INIT_MODULE:
+     78              {
+     79                assignModuleMem_SPI1(); // Assign structured memory
+   \                     ??moduleSPI1_u32_0: (+1)
+   \       0x20   0x....'....        BL       assignModuleMem_SPI1
+     80                return_state_u8 = INIT_MODULE;
+   \       0x24   0x2001             MOVS     R0,#+1
+     81                break;
+   \       0x26   0xE042             B        ??moduleSPI1_u32_5
+     82              }
+     83            case INIT_MODULE: 
+     84              {
+     85                //assignModuleMem_SPI1();
+     86                SPI1_Init();
+   \                     ??moduleSPI1_u32_1: (+1)
+   \       0x28   0x....'....        BL       SPI1_Init
+     87                LL_SPI_Enable(SPI1);
+   \       0x2C   0x....             LDR      R0,??DataTable3  ;; 0x40013000
+   \       0x2E   0x....'....        BL       LL_SPI_Enable
+     88                
+     89                // Find the structured memory for the UART2 driver module, by searching for the UART2 onwer id.
+     90                //Ram_Buf_Handle this_ram_buf_u32;
+     91                //uint8_t module_SPI1_Index = getProcessInfoIndex(MODULE_SPI);
+     92                //spi1_LocalSPIControl = (SPI1_Control*)((*(processInfoTable[module_SPI1_Index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);
+     93                
+     94                //analog_amps_low_alarm_enable_count_u8 = analog_4_20ma_Control.analog_4_20mA_Setting.analogLowAlarmEnableCount_u8; // delay before analog low voltage alarm can be triggered
+     95                //module_spi1_poll_time_u64 = getSysCount() + analog_4_20ma_Control.analog_4_20mA_Setting.analogPeriod_u16; //AnalogPeriod;    // Store time tick value
+     96                //module_spi1_poll_time_u64 = getSysCount();  
+     97                
+     98                // for (uint8_t struct_mem_index_u8 = 0; struct_mem_index_u8 < TOTAL_NUM_OF_STRUCT_MEM_INSTANCES;
+     99                // struct_mem_index_u8++) {
+    100                //   this_ram_buf_u32 = &sharedMemArray[struct_mem_index_u8];
+    101                //   if (RamBuf_GetOwner(this_ram_buf_u32) == drv_id_u8) {
+    102                //     spi1StructMem = &sharedMemArray[struct_mem_index_u8];
+    103                //   }
+    104                // }
+    105                
+    106                // Attach the structured memory to the process's master shared memory.
+    107                // uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+    108                // if (table_index_u8 != INDEX_NOT_FOUND) {
+    109                //   processInfoTable[table_index_u8].Sched_DrvData.irqState_u8 = DEFAULT_IRQ_STATE;
+    110                //   processInfoTable[table_index_u8].Sched_DrvData.p_masterSharedMem_u32 =
+    111                //     spi1StructMem;
+    112                // }
+    113                
+    114                //Get structured memory for SPI1 data
+    115                // spi1Control = (SPI1_Control*)((*(processInfoTable[table_index_u8].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);
+    116                // spi1_CaptureLen = SPIHeaderLen;                                 //pam bug without this
+    117                return_state_u8 = RUN_MODULE;
+   \       0x32   0x2002             MOVS     R0,#+2
+    118                //test_index++;
+    119                break;
+   \       0x34   0xE03B             B        ??moduleSPI1_u32_5
+    120              }
+    121            case RUN_MODULE: 
+    122              {
+    123                if (0) 
+    124                { // !errorTest: Uart transmit every 1 second
+    125                }
+    126                
+    127                
+    128                static uint64_t last_send_time = 0;
+    129                uint8_t test_buf[] = {0x55,0x00,0x00,0x55,0x00,0x01}; 
+   \                     ??moduleSPI1_u32_2: (+1)
+   \       0x36   0xA801             ADD      R0,SP,#+4
+   \       0x38   0x....             LDR      R1,??DataTable3_1
+   \       0x3A   0xC90C             LDM      R1!,{R2,R3}
+   \       0x3C   0xC00C             STM      R0!,{R2,R3}
+   \       0x3E   0x3908             SUBS     R1,R1,#+8
+   \       0x40   0x3808             SUBS     R0,R0,#+8
+    130                static uint8_t test_index = 0;
+    131                uint64_t current_time = getSysCount();
+   \       0x42   0x....'....        BL       getSysCount
+   \       0x46   0x0006             MOVS     R6,R0
+   \       0x48   0x000F             MOVS     R7,R1
+    132                //if (spi_mode == MASTER_MODE) 
+    133                //{
+    134                if (current_time - last_send_time > 10) {
+   \       0x4A   0x....             LDR      R0,??DataTable3_2
+   \       0x4C   0xC803             LDM      R0,{R0,R1}
+   \       0x4E   0x0032             MOVS     R2,R6
+   \       0x50   0x003B             MOVS     R3,R7
+   \       0x52   0x1A12             SUBS     R2,R2,R0
+   \       0x54   0x418B             SBCS     R3,R3,R1
+   \       0x56   0x2B00             CMP      R3,#+0
+   \       0x58   0xD313             BCC      ??moduleSPI1_u32_6
+   \       0x5A   0xD801             BHI      ??moduleSPI1_u32_7
+   \       0x5C   0x2A0B             CMP      R2,#+11
+   \       0x5E   0xD310             BCC      ??moduleSPI1_u32_6
+    135                  //LL_SPI_Enable(SPI1);
+    136                  //for(uint8_t i = 0; i < (sizeof(test_buf)); i++)
+    137                  //{
+    138                  LL_SPI_TransmitData8(SPI1, test_buf[test_index]);
+   \                     ??moduleSPI1_u32_7: (+1)
+   \       0x60   0x....             LDR      R4,??DataTable3_3
+   \       0x62   0xA801             ADD      R0,SP,#+4
+   \       0x64   0x7821             LDRB     R1,[R4, #+0]
+   \       0x66   0x5C41             LDRB     R1,[R0, R1]
+   \       0x68   0x....             LDR      R0,??DataTable3  ;; 0x40013000
+   \       0x6A   0x....'....        BL       LL_SPI_TransmitData8
+    139                  //LL_SPI_DisableIT_RXNE(SPI1);
+    140                  //if(LL_SPI_IsActiveFlag_TXE(SPI1))
+    141                  //{
+    142                  
+    143                  //  LL_SPI_TransmitData16(SPI1, );
+    144                  //}
+    145                  test_index++;
+   \       0x6E   0x7820             LDRB     R0,[R4, #+0]
+   \       0x70   0x1C40             ADDS     R0,R0,#+1
+   \       0x72   0x7020             STRB     R0,[R4, #+0]
+    146                  if (test_index > 6) test_index = 0;
+   \       0x74   0x7820             LDRB     R0,[R4, #+0]
+   \       0x76   0x2807             CMP      R0,#+7
+   \       0x78   0xDB00             BLT      ??moduleSPI1_u32_8
+   \       0x7A   0x7025             STRB     R5,[R4, #+0]
+    147                  last_send_time = current_time;
+   \                     ??moduleSPI1_u32_8: (+1)
+   \       0x7C   0x....             LDR      R0,??DataTable3_2
+   \       0x7E   0xC0C0             STM      R0!,{R6,R7}
+   \       0x80   0x3808             SUBS     R0,R0,#+8
+    148                  
+    149                  //aRxBuffer[receive_index++] = LL_SPI_ReceiveData8(SPI1);
+    150                  //receive_index = (receive_index + 1) & 0x07;
+    151                  //}
+    152                  //LL_SPI_Disable(SPI1);
+    153                  //last_send_time = current_time;
+    154                }
+    155                //}
+    156                
+    157                
+    158                //WaitAndCheckEndOfTransfer();
+    159                
+    160                /* FUTURE
+    161                // //(*spi1Control).seqMem_RawRx->systemInstanceIndex_u8)
+    162                // //if(RingBuf_GetUsedNumOfElements((Ring_Buf_Handle)((*(*spi1Control).seqMem_RawRx).p_ringBuf_u8)) >= spi1_CaptureLen )
+    163                // if(RingBuf_GetUsedNumOfElements((*spi1Control).seqMem_RawRx) >= spi1_CaptureLen )
+    164                // {
+    165                //   protocolHeaderFetch_spi1();
+    166                // }
+    167                // uint8_t TxLen = SPIHeaderLen;
+    168                // //if((RingBuf_GetUsedNumOfElements((Ring_Buf_Handle)((*(*spi1Control).seqMemTX).p_ringBuf_u8)) >= TxLen) && !indexTx_spi1)
+    169                // if(((RingBuf_GetUsedNumOfElements((*spi1Control).seqMemTX) >= TxLen) && !indexTx_spi1) && (LL_SPI_IsActiveFlag_TXE(spi1)))
+    170                // {
+    171                //   TxProcess_spi1();
+    172                // } 
+    173                */
+    174                //spi1_Control.spi1_result.Rx_buffer = {0,0,0,0,0,0,0,0};
+    175                
+    176                return_state_u8 = RUN_MODULE;
+   \                     ??moduleSPI1_u32_6: (+1)
+   \       0x82   0x2002             MOVS     R0,#+2
+    177                break;
+   \       0x84   0xE013             B        ??moduleSPI1_u32_5
+    178              }
+    179            case KILL_MODULE: 
+    180              {
+    181                // The spi1 driver module must only be executed once.
+    182                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    183                uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+   \                     ??moduleSPI1_u32_3: (+1)
+   \       0x86   0x4668             MOV      R0,SP
+   \       0x88   0x7B00             LDRB     R0,[R0, #+12]
+   \       0x8A   0x....'....        BL       getProcessInfoIndex
+   \       0x8E   0x0001             MOVS     R1,R0
+    184                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x90   0x0008             MOVS     R0,R1
+   \       0x92   0xB2C0             UXTB     R0,R0
+   \       0x94   0x28FF             CMP      R0,#+255
+   \       0x96   0xD007             BEQ      ??moduleSPI1_u32_9
+    185                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0x98   0x20FF             MOVS     R0,#+255
+   \       0x9A   0x....             LDR      R2,??DataTable3_4
+   \       0x9C   0x000B             MOVS     R3,R1
+   \       0x9E   0xB2DB             UXTB     R3,R3
+   \       0xA0   0x2416             MOVS     R4,#+22
+   \       0xA2   0x4363             MULS     R3,R4,R3
+   \       0xA4   0x18D2             ADDS     R2,R2,R3
+   \       0xA6   0x7290             STRB     R0,[R2, #+10]
+    186                }
+    187                return_state_u8 = KILL_MODULE;
+   \                     ??moduleSPI1_u32_9: (+1)
+   \       0xA8   0x20FF             MOVS     R0,#+255
+    188                break;
+   \       0xAA   0xE000             B        ??moduleSPI1_u32_5
+    189              }
+    190            default: 
+    191              {
+    192                return_state_u8 = KILL_MODULE;
+   \                     ??moduleSPI1_u32_4: (+1)
+   \       0xAC   0x20FF             MOVS     R0,#+255
+    193                break;
+    194              }
+    195            }
+    196            return return_state_u8;
+   \                     ??moduleSPI1_u32_5: (+1)
+   \       0xAE   0xB2C0             UXTB     R0,R0
+   \       0xB0   0xB007             ADD      SP,SP,#+28
+   \       0xB2   0xBDF0             POP      {R4-R7,PC}       ;; return
+    197          }
+
+   \                                 In section .bss, align 8
+   \                     `moduleSPI1_u32{1}{2}{5}::last_send_time`:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 1
+   \                     `moduleSPI1_u32{1}{2}{5}::test_index`:
+   \        0x0                      DS8 1
+    198          
+
+   \                                 In section .text, align 2, keep-with-next
+    199          void assignModuleMem_SPI1(void)
+    200          {  
+   \                     assignModuleMem_SPI1: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    201            // spi1SeqMem_RawRx = SeqMem_CreateInstance(MODULE_SPI1, TX_RX_BUF_SIZE, 
+    202            //                             ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for this driver need to be bigger than 1 complete frame 
+    203            // spi1SeqMem_SPIRx = SeqMem_CreateInstance(MODULE_SPI1, TX_RX_BUF_SIZE, 
+    204            //                             ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for final packet receiver buffer 
+    205            // // spi1SeqMemRXG3_u32 = SeqMem_CreateInstance(MODULE_spi1, TX_RX_BUF_SIZE, 
+    206            // //                             ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for final packet receiver buffer 
+    207            // // spi1SeqMemRXG4_u32 = SeqMem_CreateInstance(MODULE_spi1, TX_RX_BUF_SIZE, 
+    208            // //                             ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for final packet receiver buffer 
+    209            // spi1SeqMem_Tx = SeqMem_CreateInstance(MODULE_SPI1, TX_RX_BUF_SIZE +7 , 
+    210            //                             ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for Tx data 
+    211            // spi1StructMem =  StructMem_CreateInstance(MODULE_SPI1, sizeof(spi1_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a structured memory for this driver [should map it back to this driver local struct]
+    212            
+    213            // spi1Control = (spi1_Control*)(*spi1StructMem).p_ramBuf_u8;
+    214            
+    215            // /** assign all the new generated sequential-memory of spi1 to the structured-memory **/
+    216            // spi1Control->seqMemTX = spi1SeqMem_Tx;
+    217            // spi1Control->seqMemTX->is_OverwrittingAllowed_u8 = TRUE; //FALSE;
+    218            // spi1Control->seqMem_SPIRx = spi1SeqMem_SPIRx;
+    219            // // spi1Control->seqMemRXG3_u32 = spi1SeqMemRXG3_u32;
+    220            // // spi1Control->seqMemRXG4_u32 = spi1SeqMemRXG4_u32;
+    221            // spi1Control->seqMem_RawRx = spi1SeqMem_RawRx;
+    222            // spi1Control->errorCode_u8 = 0;
+    223            spi1_StructMem_u32 =  StructMem_CreateInstance(MODULE_SPI, sizeof(SPI1_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R4,??DataTable3_5
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2110             MOVS     R1,#+16
+   \        0xE   0x200A             MOVS     R0,#+10
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    224            (*spi1_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&spi1_Control ;    // Map the SPI1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable3_6
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    225            uint8_t module_spi1_index_u8 = getProcessInfoIndex(MODULE_SPI);
+   \       0x1C   0x200A             MOVS     R0,#+10
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    226            processInfoTable[module_spi1_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)spi1_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable3_4
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    227          
+    228          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    229          
+    230          /**
+    231          * @brief  Function called when Rx buffer is full; interprets received messages
+    232          * @param  None
+    233          * @retval None
+    234          */
+
+   \                                 In section .text, align 2, keep-with-next
+    235          void Decode_SPI_Rx_Buffer(uint8_t *aRxBuffer)
+    236          {
+   \                     Decode_SPI_Rx_Buffer: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    237            //Code to determine first byte of message
+    238            uint8_t spi_msg_sync = aRxBuffer[0];
+   \        0x4   0x7825             LDRB     R5,[R4, #+0]
+    239            uint8_t spi_msg_len = aRxBuffer[1];
+   \        0x6   0x7866             LDRB     R6,[R4, #+1]
+    240            uint8_t spi_msg_cmd = aRxBuffer[2];
+   \        0x8   0x78A7             LDRB     R7,[R4, #+2]
+   \        0xA   0x2208             MOVS     R2,#+8
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x4668             MOV      R0,SP
+   \       0x10   0x....'....        BL       memset
+    241            
+    242            //!FUTURE: IMPLEMENT SCHEMING FOR MESSAGES THAT ARE LONGER THAN 3 BYTES
+    243            
+    244            uint8_t SPI_SlaveTxBuffer[8] = {0,0,0,0,0,0,0,0};  //Initialize null Tx Buffer
+                           ^
+Warning[Pe550]: variable "SPI_SlaveTxBuffer" was set but never used
+    245            
+    246            if (spi_msg_sync == 0x55)  //INDICATES BOARD IS IN SLAVE MODE
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x2855             CMP      R0,#+85
+   \       0x1A   0xD12A             BNE      ??Decode_SPI_Rx_Buffer_0
+    247            {
+    248              //Switch statement for all possible messages that can be received
+    249              switch(spi_msg_cmd)
+   \       0x1C   0x0038             MOVS     R0,R7
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD002             BEQ      ??Decode_SPI_Rx_Buffer_1
+   \       0x24   0x2801             CMP      R0,#+1
+   \       0x26   0xD011             BEQ      ??Decode_SPI_Rx_Buffer_2
+   \       0x28   0xE021             B        ??Decode_SPI_Rx_Buffer_3
+    250              {
+    251              case 0x00:  //Start Motor
+    252                if(spi_msg_len == 0x00)
+   \                     ??Decode_SPI_Rx_Buffer_1: (+1)
+   \       0x2A   0x0030             MOVS     R0,R6
+   \       0x2C   0xB2C0             UXTB     R0,R0
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD109             BNE      ??Decode_SPI_Rx_Buffer_4
+    253                {
+    254                  
+    255                  //DO WHATEVER HAPPENS HERE TO MAKE THE MOTOR START
+    256                  
+    257                  SPI_SlaveTxBuffer[0] = 0xAA;
+   \       0x32   0x4668             MOV      R0,SP
+   \       0x34   0x21AA             MOVS     R1,#+170
+   \       0x36   0x7001             STRB     R1,[R0, #+0]
+    258                  SPI_SlaveTxBuffer[1] = 0x00;
+   \       0x38   0x2100             MOVS     R1,#+0
+   \       0x3A   0x000A             MOVS     R2,R1
+   \       0x3C   0x7042             STRB     R2,[R0, #+1]
+    259                  SPI_SlaveTxBuffer[2] = 0x00;
+   \       0x3E   0x7081             STRB     R1,[R0, #+2]
+    260                  //Send_Properly_Decoded_Response(SPI_SlaveTxBuffer);
+    261                  Send_Properly_Decoded_Response();
+   \       0x40   0x....'....        BL       Send_Properly_Decoded_Response
+   \       0x44   0xE001             B        ??Decode_SPI_Rx_Buffer_5
+    262                }
+    263                else
+    264                {
+    265                  Send_Improperly_Decoded_Response();
+   \                     ??Decode_SPI_Rx_Buffer_4: (+1)
+   \       0x46   0x....'....        BL       Send_Improperly_Decoded_Response
+    266                }
+    267                
+    268                break;
+   \                     ??Decode_SPI_Rx_Buffer_5: (+1)
+   \       0x4A   0xE012             B        ??Decode_SPI_Rx_Buffer_0
+    269                
+    270              case 0x01:  //Stop Motor
+    271                if(spi_msg_len == 0x00)
+   \                     ??Decode_SPI_Rx_Buffer_2: (+1)
+   \       0x4C   0x0030             MOVS     R0,R6
+   \       0x4E   0xB2C0             UXTB     R0,R0
+   \       0x50   0x2800             CMP      R0,#+0
+   \       0x52   0xD109             BNE      ??Decode_SPI_Rx_Buffer_6
+    272                {
+    273                  
+    274                  //DO WHATEVER HAPPENS HERE TO MAKE THE MOTOR STOP
+    275                  
+    276                  SPI_SlaveTxBuffer[0] = 0xAA;
+   \       0x54   0x4668             MOV      R0,SP
+   \       0x56   0x21AA             MOVS     R1,#+170
+   \       0x58   0x7001             STRB     R1,[R0, #+0]
+    277                  SPI_SlaveTxBuffer[1] = 0x00;
+   \       0x5A   0x2100             MOVS     R1,#+0
+   \       0x5C   0x7041             STRB     R1,[R0, #+1]
+    278                  SPI_SlaveTxBuffer[2] = 0x01;
+   \       0x5E   0x2101             MOVS     R1,#+1
+   \       0x60   0x7081             STRB     R1,[R0, #+2]
+    279                  //Send_Properly_Decoded_Response(SPI_SlaveTxBuffer);
+    280                  Send_Properly_Decoded_Response();
+   \       0x62   0x....'....        BL       Send_Properly_Decoded_Response
+   \       0x66   0xE001             B        ??Decode_SPI_Rx_Buffer_7
+    281                }
+    282                else
+    283                {
+    284                  Send_Improperly_Decoded_Response();
+   \                     ??Decode_SPI_Rx_Buffer_6: (+1)
+   \       0x68   0x....'....        BL       Send_Improperly_Decoded_Response
+    285                }
+    286                
+    287                break;
+   \                     ??Decode_SPI_Rx_Buffer_7: (+1)
+   \       0x6C   0xE001             B        ??Decode_SPI_Rx_Buffer_0
+    288                
+    289              default:  //Command is not recognized
+    290                Send_Improperly_Decoded_Response();
+   \                     ??Decode_SPI_Rx_Buffer_3: (+1)
+   \       0x6E   0x....'....        BL       Send_Improperly_Decoded_Response
+    291              }
+    292            }
+    293          }
+   \                     ??Decode_SPI_Rx_Buffer_0: (+1)
+   \       0x72   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    294          
+    295          //Logic, function that states if message has been received and decoded properly
+    296          
+    297          //void Send_Properly_Decoded_Response(uint64_t SPI_SlaveTxBuffer[]) 
+
+   \                                 In section .text, align 2, keep-with-next
+    298          void Send_Properly_Decoded_Response()
+    299          {
+   \                     Send_Properly_Decoded_Response: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    300            //uint8_t SPI_Message_Length = 0x07 & SPI_SlaveTxBuffer[1];    //Determines length of additional bytes in full message to send to master
+    301            
+    302            // for (uint8_t transfer_index = 0; transfer_index < 3 + SPI_Message_Length; transfer_index++)
+    303            // {
+    304            // LL_SPI_TransmitData8(SPI_SlaveTxBuffer[transfer_index]);
+    305            // }
+    306            
+    307            LL_SPI_TransmitData8(SPI1,0xAA); //Temp ACK command
+   \        0x2   0x21AA             MOVS     R1,#+170
+   \        0x4   0x....             LDR      R0,??DataTable3  ;; 0x40013000
+   \        0x6   0x....'....        BL       LL_SPI_TransmitData8
+    308            
+    309            //clear Tx buffer
+    310            // for (uint8_t buffer_clear_index = 0; buffer_clear_index < 3 + SPI_Message_Length; buffer_clear_index++)
+    311            // {
+    312            //   SPI_SlaveTxBuffer[buffer_clear_index] = 0x00;
+    313            // }
+    314          }
+   \        0xA   0xBD01             POP      {R0,PC}          ;; return
+    315          
+    316          //Logic, function that states if message has been received decoded improperly (NAK response, etc.)
+
+   \                                 In section .text, align 2, keep-with-next
+    317          void Send_Improperly_Decoded_Response(void) 
+    318          {
+    319            //LL_SPI_TransmitData8();
+    320          }
+   \                     Send_Improperly_Decoded_Response: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x4001'3000        DC32     0x40013000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     `moduleSPI1_u32{1}{2}{5}::last_send_time`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x....'....        DC32     `moduleSPI1_u32{1}{2}{5}::test_index`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \        0x0   0x....'....        DC32     spi1_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \        0x0   0x....'....        DC32     spi1_Control
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x55 0x00          DC8 85, 0, 0, 85, 0, 1
+
+   \              0x00 0x55    
+
+   \              0x00 0x01
+   \        0x6                      DS8 2
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   Decode_SPI_Rx_Buffer
+        32   -> Send_Improperly_Decoded_Response
+        32   -> Send_Properly_Decoded_Response
+        32   -> memset
+       0   LL_SPI_Enable
+       0   LL_SPI_TransmitData8
+       0   Send_Improperly_Decoded_Response
+       8   Send_Properly_Decoded_Response
+         8   -> LL_SPI_TransmitData8
+      16   assignModuleMem_SPI1
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+      48   moduleSPI1_u32
+        48   -> LL_SPI_Enable
+        48   -> LL_SPI_TransmitData8
+        48   -> SPI1_Init
+        48   -> assignModuleMem_SPI1
+        48   -> getProcessInfoIndex
+        48   -> getSysCount
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       8  ?_0
+     116  Decode_SPI_Rx_Buffer
+      10  LL_SPI_Enable
+       4  LL_SPI_TransmitData8
+       2  Send_Improperly_Decoded_Response
+      12  Send_Properly_Decoded_Response
+      60  assignModuleMem_SPI1
+       8  last_send_time
+     180  moduleSPI1_u32
+      16  spi1_Control
+       4  spi1_StructMem_u32
+       1  test_index
+
+ 
+  29 bytes in section .bss
+   8 bytes in section .rodata
+ 412 bytes in section .text
+ 
+ 412 bytes of CODE  memory
+   8 bytes of CONST memory
+  29 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

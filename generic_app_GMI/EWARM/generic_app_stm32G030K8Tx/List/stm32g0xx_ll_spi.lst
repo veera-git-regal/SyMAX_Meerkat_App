@@ -1,0 +1,999 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:59
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_spi.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW134F.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_spi.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_ll_spi.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_ll_spi.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_spi.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_ll_spi.c
+      4            * @author  MCD Application Team
+      5            * @brief   SPI LL module driver.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          #if defined(USE_FULL_LL_DRIVER)
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "stm32g0xx_ll_spi.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_SPI_IsEnabled(SPI_TypeDef *)
+   \                     LL_SPI_IsEnabled: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x0981             LSRS     R1,R0,#+6
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_SPI_SetCRCPolynomial(SPI_TypeDef *, uint32_t)
+   \                     LL_SPI_SetCRCPolynomial: (+1)
+   \        0x0   0x000A             MOVS     R2,R1
+   \        0x2   0xB292             UXTH     R2,R2
+   \        0x4   0x6102             STR      R2,[R0, #+16]
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_I2S_IsEnabled(SPI_TypeDef *)
+   \                     LL_I2S_IsEnabled: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0A81             LSRS     R1,R0,#+10
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+     23          #include "stm32g0xx_ll_bus.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB1_GRP1_ForceReset(uint32_t)
+   \                     LL_APB1_GRP1_ForceReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable7  ;; 0x4002102c
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB1_GRP1_ReleaseReset(uint32_t)
+   \                     LL_APB1_GRP1_ReleaseReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable7  ;; 0x4002102c
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_ForceReset(uint32_t)
+   \                     LL_APB2_GRP1_ForceReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable7_1  ;; 0x40021030
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_ReleaseReset(uint32_t)
+   \                     LL_APB2_GRP1_ReleaseReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable7_1  ;; 0x40021030
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+     24          #include "stm32g0xx_ll_rcc.h"
+     25          
+     26          #ifdef  USE_FULL_ASSERT
+     27          #include "stm32_assert.h"
+     28          #else
+     29          #define assert_param(expr) ((void)0U)
+     30          #endif
+     31          
+     32          /** @addtogroup STM32G0xx_LL_Driver
+     33            * @{
+     34            */
+     35          
+     36          #if defined (SPI1) || defined (SPI2)
+     37          
+     38          /** @addtogroup SPI_LL
+     39            * @{
+     40            */
+     41          
+     42          /* Private types -------------------------------------------------------------*/
+     43          /* Private variables ---------------------------------------------------------*/
+     44          
+     45          /* Private constants ---------------------------------------------------------*/
+     46          /** @defgroup SPI_LL_Private_Constants SPI Private Constants
+     47            * @{
+     48            */
+     49          /* SPI registers Masks */
+     50          #define SPI_CR1_CLEAR_MASK                 (SPI_CR1_CPHA    | SPI_CR1_CPOL     | SPI_CR1_MSTR   | \
+     51                                                      SPI_CR1_BR      | SPI_CR1_LSBFIRST | SPI_CR1_SSI    | \
+     52                                                      SPI_CR1_SSM     | SPI_CR1_RXONLY   | SPI_CR1_CRCL   | \
+     53                                                      SPI_CR1_CRCNEXT | SPI_CR1_CRCEN    | SPI_CR1_BIDIOE | \
+     54                                                      SPI_CR1_BIDIMODE)
+     55          /**
+     56            * @}
+     57            */
+     58          
+     59          /* Private macros ------------------------------------------------------------*/
+     60          /** @defgroup SPI_LL_Private_Macros SPI Private Macros
+     61            * @{
+     62            */
+     63          #define IS_LL_SPI_TRANSFER_DIRECTION(__VALUE__) (((__VALUE__) == LL_SPI_FULL_DUPLEX)    \
+     64                                                        || ((__VALUE__) == LL_SPI_SIMPLEX_RX)     \
+     65                                                        || ((__VALUE__) == LL_SPI_HALF_DUPLEX_RX) \
+     66                                                        || ((__VALUE__) == LL_SPI_HALF_DUPLEX_TX))
+     67          
+     68          #define IS_LL_SPI_MODE(__VALUE__) (((__VALUE__) == LL_SPI_MODE_MASTER) \
+     69                                          || ((__VALUE__) == LL_SPI_MODE_SLAVE))
+     70          
+     71          #define IS_LL_SPI_DATAWIDTH(__VALUE__) (((__VALUE__) == LL_SPI_DATAWIDTH_4BIT)  \
+     72                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_5BIT)  \
+     73                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_6BIT)  \
+     74                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_7BIT)  \
+     75                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_8BIT)  \
+     76                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_9BIT)  \
+     77                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_10BIT) \
+     78                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_11BIT) \
+     79                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_12BIT) \
+     80                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_13BIT) \
+     81                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_14BIT) \
+     82                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_15BIT) \
+     83                                               || ((__VALUE__) == LL_SPI_DATAWIDTH_16BIT))
+     84          
+     85          #define IS_LL_SPI_POLARITY(__VALUE__) (((__VALUE__) == LL_SPI_POLARITY_LOW) \
+     86                                              || ((__VALUE__) == LL_SPI_POLARITY_HIGH))
+     87          
+     88          #define IS_LL_SPI_PHASE(__VALUE__) (((__VALUE__) == LL_SPI_PHASE_1EDGE) \
+     89                                           || ((__VALUE__) == LL_SPI_PHASE_2EDGE))
+     90          
+     91          #define IS_LL_SPI_NSS(__VALUE__) (((__VALUE__) == LL_SPI_NSS_SOFT) \
+     92                                         || ((__VALUE__) == LL_SPI_NSS_HARD_INPUT) \
+     93                                         || ((__VALUE__) == LL_SPI_NSS_HARD_OUTPUT))
+     94          
+     95          #define IS_LL_SPI_BAUDRATE(__VALUE__) (((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV2)   \
+     96                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV4)   \
+     97                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV8)   \
+     98                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV16)  \
+     99                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV32)  \
+    100                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV64)  \
+    101                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV128) \
+    102                                              || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV256))
+    103          
+    104          #define IS_LL_SPI_BITORDER(__VALUE__) (((__VALUE__) == LL_SPI_LSB_FIRST) \
+    105                                              || ((__VALUE__) == LL_SPI_MSB_FIRST))
+    106          
+    107          #define IS_LL_SPI_CRCCALCULATION(__VALUE__) (((__VALUE__) == LL_SPI_CRCCALCULATION_ENABLE) \
+    108                                                    || ((__VALUE__) == LL_SPI_CRCCALCULATION_DISABLE))
+    109          
+    110          #define IS_LL_SPI_CRC_POLYNOMIAL(__VALUE__) ((__VALUE__) >= 0x1U)
+    111          
+    112          /**
+    113            * @}
+    114            */
+    115          
+    116          /* Private function prototypes -----------------------------------------------*/
+    117          
+    118          /* Exported functions --------------------------------------------------------*/
+    119          /** @addtogroup SPI_LL_Exported_Functions
+    120            * @{
+    121            */
+    122          
+    123          /** @addtogroup SPI_LL_EF_Init
+    124            * @{
+    125            */
+    126          
+    127          /**
+    128            * @brief  De-initialize the SPI registers to their default reset values.
+    129            * @param  SPIx SPI Instance
+    130            * @retval An ErrorStatus enumeration value:
+    131            *          - SUCCESS: SPI registers are de-initialized
+    132            *          - ERROR: SPI registers are not de-initialized
+    133            */
+
+   \                                 In section .text, align 2, keep-with-next
+    134          ErrorStatus LL_SPI_DeInit(SPI_TypeDef *SPIx)
+    135          {
+   \                     LL_SPI_DeInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    136            ErrorStatus status = ERROR;
+   \        0x4   0x2501             MOVS     R5,#+1
+    137          
+    138            /* Check the parameters */
+    139            assert_param(IS_SPI_ALL_INSTANCE(SPIx));
+    140          
+    141          #if defined(SPI1)
+    142            if (SPIx == SPI1)
+   \        0x6   0x....             LDR      R0,??DataTable7_2  ;; 0x40013000
+   \        0x8   0x4284             CMP      R4,R0
+   \        0xA   0xD109             BNE      ??LL_SPI_DeInit_0
+    143            {
+    144              /* Force reset of SPI clock */
+    145              LL_APB2_GRP1_ForceReset(LL_APB2_GRP1_PERIPH_SPI1);
+   \        0xC   0x2680             MOVS     R6,#+128
+   \        0xE   0x0176             LSLS     R6,R6,#+5        ;; #+4096
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x....'....        BL       LL_APB2_GRP1_ForceReset
+    146          
+    147              /* Release reset of SPI clock */
+    148              LL_APB2_GRP1_ReleaseReset(LL_APB2_GRP1_PERIPH_SPI1);
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0x....'....        BL       LL_APB2_GRP1_ReleaseReset
+    149          
+    150              status = SUCCESS;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x0005             MOVS     R5,R0
+    151            }
+    152          #endif /* SPI1 */
+    153          #if defined(SPI2)
+    154            if (SPIx == SPI2)
+   \                     ??LL_SPI_DeInit_0: (+1)
+   \       0x20   0x....             LDR      R0,??DataTable7_3  ;; 0x40003800
+   \       0x22   0x4284             CMP      R4,R0
+   \       0x24   0xD109             BNE      ??LL_SPI_DeInit_1
+    155            {
+    156              /* Force reset of SPI clock */
+    157              LL_APB1_GRP1_ForceReset(LL_APB1_GRP1_PERIPH_SPI2);
+   \       0x26   0x2680             MOVS     R6,#+128
+   \       0x28   0x01F6             LSLS     R6,R6,#+7        ;; #+16384
+   \       0x2A   0x0030             MOVS     R0,R6
+   \       0x2C   0x....'....        BL       LL_APB1_GRP1_ForceReset
+    158          
+    159              /* Release reset of SPI clock */
+    160              LL_APB1_GRP1_ReleaseReset(LL_APB1_GRP1_PERIPH_SPI2);
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0x....'....        BL       LL_APB1_GRP1_ReleaseReset
+    161          
+    162              status = SUCCESS;
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x0005             MOVS     R5,R0
+    163            }
+    164          #endif /* SPI2 */
+    165          
+    166            return status;
+   \                     ??LL_SPI_DeInit_1: (+1)
+   \       0x3A   0x0028             MOVS     R0,R5
+   \       0x3C   0xB2C0             UXTB     R0,R0
+   \       0x3E   0xBD70             POP      {R4-R6,PC}       ;; return
+    167          }
+    168          
+    169          /**
+    170            * @brief  Initialize the SPI registers according to the specified parameters in SPI_InitStruct.
+    171            * @note   As some bits in SPI configuration registers can only be written when the SPI is disabled (SPI_CR1_SPE bit =0),
+    172            *         SPI peripheral should be in disabled state prior calling this function. Otherwise, ERROR result will be returned.
+    173            * @param  SPIx SPI Instance
+    174            * @param  SPI_InitStruct pointer to a @ref LL_SPI_InitTypeDef structure
+    175            * @retval An ErrorStatus enumeration value. (Return always SUCCESS)
+    176            */
+
+   \                                 In section .text, align 2, keep-with-next
+    177          ErrorStatus LL_SPI_Init(SPI_TypeDef *SPIx, LL_SPI_InitTypeDef *SPI_InitStruct)
+    178          {
+   \                     LL_SPI_Init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    179            ErrorStatus status = ERROR;
+   \        0x6   0x2601             MOVS     R6,#+1
+    180          
+    181            /* Check the SPI Instance SPIx*/
+    182            assert_param(IS_SPI_ALL_INSTANCE(SPIx));
+    183          
+    184            /* Check the SPI parameters from SPI_InitStruct*/
+    185            assert_param(IS_LL_SPI_TRANSFER_DIRECTION(SPI_InitStruct->TransferDirection));
+    186            assert_param(IS_LL_SPI_MODE(SPI_InitStruct->Mode));
+    187            assert_param(IS_LL_SPI_DATAWIDTH(SPI_InitStruct->DataWidth));
+    188            assert_param(IS_LL_SPI_POLARITY(SPI_InitStruct->ClockPolarity));
+    189            assert_param(IS_LL_SPI_PHASE(SPI_InitStruct->ClockPhase));
+    190            assert_param(IS_LL_SPI_NSS(SPI_InitStruct->NSS));
+    191            assert_param(IS_LL_SPI_BAUDRATE(SPI_InitStruct->BaudRate));
+    192            assert_param(IS_LL_SPI_BITORDER(SPI_InitStruct->BitOrder));
+    193            assert_param(IS_LL_SPI_CRCCALCULATION(SPI_InitStruct->CRCCalculation));
+    194          
+    195            if (LL_SPI_IsEnabled(SPIx) == 0x00000000U)
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x....'....        BL       LL_SPI_IsEnabled
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD127             BNE      ??LL_SPI_Init_0
+    196            {
+    197              /*---------------------------- SPIx CR1 Configuration ------------------------
+    198               * Configure SPIx CR1 with parameters:
+    199               * - TransferDirection:  SPI_CR1_BIDIMODE, SPI_CR1_BIDIOE and SPI_CR1_RXONLY bits
+    200               * - Master/Slave Mode:  SPI_CR1_MSTR bit
+    201               * - ClockPolarity:      SPI_CR1_CPOL bit
+    202               * - ClockPhase:         SPI_CR1_CPHA bit
+    203               * - NSS management:     SPI_CR1_SSM bit
+    204               * - BaudRate prescaler: SPI_CR1_BR[2:0] bits
+    205               * - BitOrder:           SPI_CR1_LSBFIRST bit
+    206               * - CRCCalculation:     SPI_CR1_CRCEN bit
+    207               */
+    208              MODIFY_REG(SPIx->CR1,
+    209                         SPI_CR1_CLEAR_MASK,
+    210                         SPI_InitStruct->TransferDirection | SPI_InitStruct->Mode |
+    211                         SPI_InitStruct->ClockPolarity | SPI_InitStruct->ClockPhase |
+    212                         SPI_InitStruct->NSS | SPI_InitStruct->BaudRate |
+    213                         SPI_InitStruct->BitOrder | SPI_InitStruct->CRCCalculation);
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x....             LDR      R1,??DataTable7_4  ;; 0xffff0040
+   \       0x16   0x4001             ANDS     R1,R1,R0
+   \       0x18   0x6828             LDR      R0,[R5, #+0]
+   \       0x1A   0x4308             ORRS     R0,R0,R1
+   \       0x1C   0x6869             LDR      R1,[R5, #+4]
+   \       0x1E   0x4301             ORRS     R1,R1,R0
+   \       0x20   0x68E8             LDR      R0,[R5, #+12]
+   \       0x22   0x4308             ORRS     R0,R0,R1
+   \       0x24   0x6929             LDR      R1,[R5, #+16]
+   \       0x26   0x4301             ORRS     R1,R1,R0
+   \       0x28   0x6968             LDR      R0,[R5, #+20]
+   \       0x2A   0x4308             ORRS     R0,R0,R1
+   \       0x2C   0x69A9             LDR      R1,[R5, #+24]
+   \       0x2E   0x4301             ORRS     R1,R1,R0
+   \       0x30   0x69E8             LDR      R0,[R5, #+28]
+   \       0x32   0x4308             ORRS     R0,R0,R1
+   \       0x34   0x6A29             LDR      R1,[R5, #+32]
+   \       0x36   0x4301             ORRS     R1,R1,R0
+   \       0x38   0x6021             STR      R1,[R4, #+0]
+    214          
+    215              /*---------------------------- SPIx CR2 Configuration ------------------------
+    216               * Configure SPIx CR2 with parameters:
+    217               * - DataWidth:          DS[3:0] bits
+    218               * - NSS management:     SSOE bit
+    219               */
+    220              MODIFY_REG(SPIx->CR2,
+    221                         SPI_CR2_DS | SPI_CR2_SSOE,
+    222                         SPI_InitStruct->DataWidth | (SPI_InitStruct->NSS >> 16U));
+   \       0x3A   0x6860             LDR      R0,[R4, #+4]
+   \       0x3C   0x....             LDR      R1,??DataTable7_5  ;; 0xfffff0fb
+   \       0x3E   0x4001             ANDS     R1,R1,R0
+   \       0x40   0x68A8             LDR      R0,[R5, #+8]
+   \       0x42   0x4308             ORRS     R0,R0,R1
+   \       0x44   0x6969             LDR      R1,[R5, #+20]
+   \       0x46   0x0C09             LSRS     R1,R1,#+16
+   \       0x48   0x4301             ORRS     R1,R1,R0
+   \       0x4A   0x6061             STR      R1,[R4, #+4]
+    223          
+    224              /*---------------------------- SPIx CRCPR Configuration ----------------------
+    225               * Configure SPIx CRCPR with parameters:
+    226               * - CRCPoly:            CRCPOLY[15:0] bits
+    227               */
+    228              if (SPI_InitStruct->CRCCalculation == LL_SPI_CRCCALCULATION_ENABLE)
+   \       0x4C   0x6A28             LDR      R0,[R5, #+32]
+   \       0x4E   0x2180             MOVS     R1,#+128
+   \       0x50   0x0189             LSLS     R1,R1,#+6        ;; #+8192
+   \       0x52   0x4288             CMP      R0,R1
+   \       0x54   0xD103             BNE      ??LL_SPI_Init_1
+    229              {
+    230                assert_param(IS_LL_SPI_CRC_POLYNOMIAL(SPI_InitStruct->CRCPoly));
+    231                LL_SPI_SetCRCPolynomial(SPIx, SPI_InitStruct->CRCPoly);
+   \       0x56   0x6A69             LDR      R1,[R5, #+36]
+   \       0x58   0x0020             MOVS     R0,R4
+   \       0x5A   0x....'....        BL       LL_SPI_SetCRCPolynomial
+    232              }
+    233              status = SUCCESS;
+   \                     ??LL_SPI_Init_1: (+1)
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \       0x60   0x0006             MOVS     R6,R0
+    234            }
+    235          
+    236          #if defined (SPI_I2S_SUPPORT)
+    237            /* Activate the SPI mode (Reset I2SMOD bit in I2SCFGR register) */
+    238            CLEAR_BIT(SPIx->I2SCFGR, SPI_I2SCFGR_I2SMOD);
+   \                     ??LL_SPI_Init_0: (+1)
+   \       0x62   0x69E0             LDR      R0,[R4, #+28]
+   \       0x64   0x....             LDR      R1,??DataTable7_6  ;; 0xfffff7ff
+   \       0x66   0x4001             ANDS     R1,R1,R0
+   \       0x68   0x61E1             STR      R1,[R4, #+28]
+    239          #endif /* SPI_I2S_SUPPORT */
+    240            return status;
+   \       0x6A   0x0030             MOVS     R0,R6
+   \       0x6C   0xB2C0             UXTB     R0,R0
+   \       0x6E   0xBD70             POP      {R4-R6,PC}       ;; return
+    241          }
+    242          
+    243          /**
+    244            * @brief  Set each @ref LL_SPI_InitTypeDef field to default value.
+    245            * @param  SPI_InitStruct pointer to a @ref LL_SPI_InitTypeDef structure
+    246            * whose fields will be set to default values.
+    247            * @retval None
+    248            */
+
+   \                                 In section .text, align 2, keep-with-next
+    249          void LL_SPI_StructInit(LL_SPI_InitTypeDef *SPI_InitStruct)
+    250          {
+    251            /* Set SPI_InitStruct fields to default values */
+    252            SPI_InitStruct->TransferDirection = LL_SPI_FULL_DUPLEX;
+   \                     LL_SPI_StructInit: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    253            SPI_InitStruct->Mode              = LL_SPI_MODE_SLAVE;
+   \        0x4   0x6041             STR      R1,[R0, #+4]
+    254            SPI_InitStruct->DataWidth         = LL_SPI_DATAWIDTH_8BIT;
+   \        0x6   0x22E0             MOVS     R2,#+224
+   \        0x8   0x00D2             LSLS     R2,R2,#+3        ;; #+1792
+   \        0xA   0x6082             STR      R2,[R0, #+8]
+    255            SPI_InitStruct->ClockPolarity     = LL_SPI_POLARITY_LOW;
+   \        0xC   0x60C1             STR      R1,[R0, #+12]
+    256            SPI_InitStruct->ClockPhase        = LL_SPI_PHASE_1EDGE;
+   \        0xE   0x6101             STR      R1,[R0, #+16]
+    257            SPI_InitStruct->NSS               = LL_SPI_NSS_HARD_INPUT;
+   \       0x10   0x6141             STR      R1,[R0, #+20]
+    258            SPI_InitStruct->BaudRate          = LL_SPI_BAUDRATEPRESCALER_DIV2;
+   \       0x12   0x6181             STR      R1,[R0, #+24]
+    259            SPI_InitStruct->BitOrder          = LL_SPI_MSB_FIRST;
+   \       0x14   0x61C1             STR      R1,[R0, #+28]
+    260            SPI_InitStruct->CRCCalculation    = LL_SPI_CRCCALCULATION_DISABLE;
+   \       0x16   0x6201             STR      R1,[R0, #+32]
+    261            SPI_InitStruct->CRCPoly           = 7U;
+   \       0x18   0x2107             MOVS     R1,#+7
+   \       0x1A   0x6241             STR      R1,[R0, #+36]
+    262          }
+   \       0x1C   0x4770             BX       LR               ;; return
+    263          
+    264          /**
+    265            * @}
+    266            */
+    267          
+    268          /**
+    269            * @}
+    270            */
+    271          
+    272          /**
+    273            * @}
+    274            */
+    275          
+    276          #if defined(SPI_I2S_SUPPORT)
+    277          /** @addtogroup I2S_LL
+    278            * @{
+    279            */
+    280          
+    281          /* Private types -------------------------------------------------------------*/
+    282          /* Private variables ---------------------------------------------------------*/
+    283          /* Private constants ---------------------------------------------------------*/
+    284          /** @defgroup I2S_LL_Private_Constants I2S Private Constants
+    285            * @{
+    286            */
+    287          /* I2S registers Masks */
+    288          #define I2S_I2SCFGR_CLEAR_MASK             (SPI_I2SCFGR_CHLEN   | SPI_I2SCFGR_DATLEN | \
+    289                                                      SPI_I2SCFGR_CKPOL   | SPI_I2SCFGR_I2SSTD | \
+    290                                                      SPI_I2SCFGR_I2SCFG  | SPI_I2SCFGR_I2SMOD )
+    291          
+    292          #define I2S_I2SPR_CLEAR_MASK               0x0002U
+    293          /**
+    294            * @}
+    295            */
+    296          /* Private macros ------------------------------------------------------------*/
+    297          /** @defgroup I2S_LL_Private_Macros I2S Private Macros
+    298            * @{
+    299            */
+    300          
+    301          #define IS_LL_I2S_DATAFORMAT(__VALUE__)  (((__VALUE__) == LL_I2S_DATAFORMAT_16B)          \
+    302                                                 || ((__VALUE__) == LL_I2S_DATAFORMAT_16B_EXTENDED) \
+    303                                                 || ((__VALUE__) == LL_I2S_DATAFORMAT_24B)          \
+    304                                                 || ((__VALUE__) == LL_I2S_DATAFORMAT_32B))
+    305          
+    306          #define IS_LL_I2S_CPOL(__VALUE__)        (((__VALUE__) == LL_I2S_POLARITY_LOW)  \
+    307                                                 || ((__VALUE__) == LL_I2S_POLARITY_HIGH))
+    308          
+    309          #define IS_LL_I2S_STANDARD(__VALUE__)    (((__VALUE__) == LL_I2S_STANDARD_PHILIPS)   \
+    310                                                 || ((__VALUE__) == LL_I2S_STANDARD_MSB)       \
+    311                                                 || ((__VALUE__) == LL_I2S_STANDARD_LSB)       \
+    312                                                 || ((__VALUE__) == LL_I2S_STANDARD_PCM_SHORT) \
+    313                                                 || ((__VALUE__) == LL_I2S_STANDARD_PCM_LONG))
+    314          
+    315          #define IS_LL_I2S_MODE(__VALUE__)        (((__VALUE__) == LL_I2S_MODE_SLAVE_TX)  \
+    316                                                 || ((__VALUE__) == LL_I2S_MODE_SLAVE_RX)  \
+    317                                                 || ((__VALUE__) == LL_I2S_MODE_MASTER_TX) \
+    318                                                 || ((__VALUE__) == LL_I2S_MODE_MASTER_RX))
+    319          
+    320          #define IS_LL_I2S_MCLK_OUTPUT(__VALUE__) (((__VALUE__) == LL_I2S_MCLK_OUTPUT_ENABLE) \
+    321                                                 || ((__VALUE__) == LL_I2S_MCLK_OUTPUT_DISABLE))
+    322          
+    323          #define IS_LL_I2S_AUDIO_FREQ(__VALUE__) ((((__VALUE__) >= LL_I2S_AUDIOFREQ_8K)    \
+    324                                                 && ((__VALUE__) <= LL_I2S_AUDIOFREQ_192K)) \
+    325                                                 || ((__VALUE__) == LL_I2S_AUDIOFREQ_DEFAULT))
+    326          
+    327          #define IS_LL_I2S_PRESCALER_LINEAR(__VALUE__)  ((__VALUE__) >= 0x2U)
+    328          
+    329          #define IS_LL_I2S_PRESCALER_PARITY(__VALUE__) (((__VALUE__) == LL_I2S_PRESCALER_PARITY_EVEN) \
+    330                                                     || ((__VALUE__) == LL_I2S_PRESCALER_PARITY_ODD))
+    331          /**
+    332            * @}
+    333            */
+    334          
+    335          /* Private function prototypes -----------------------------------------------*/
+    336          
+    337          /* Exported functions --------------------------------------------------------*/
+    338          /** @addtogroup I2S_LL_Exported_Functions
+    339            * @{
+    340            */
+    341          
+    342          /** @addtogroup I2S_LL_EF_Init
+    343            * @{
+    344            */
+    345          
+    346          /**
+    347            * @brief  De-initialize the SPI/I2S registers to their default reset values.
+    348            * @param  SPIx SPI Instance
+    349            * @retval An ErrorStatus enumeration value:
+    350            *          - SUCCESS: SPI registers are de-initialized
+    351            *          - ERROR: SPI registers are not de-initialized
+    352            */
+
+   \                                 In section .text, align 2, keep-with-next
+    353          ErrorStatus LL_I2S_DeInit(SPI_TypeDef *SPIx)
+    354          {
+   \                     LL_I2S_DeInit: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    355            return LL_SPI_DeInit(SPIx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       LL_SPI_DeInit
+   \        0xA   0xBD10             POP      {R4,PC}          ;; return
+    356          }
+    357          
+    358          /**
+    359            * @brief  Initializes the SPI/I2S registers according to the specified parameters in I2S_InitStruct.
+    360            * @note   As some bits in SPI configuration registers can only be written when the SPI is disabled (SPI_CR1_SPE bit =0),
+    361            *         SPI peripheral should be in disabled state prior calling this function. Otherwise, ERROR result will be returned.
+    362            * @param  SPIx SPI Instance
+    363            * @param  I2S_InitStruct pointer to a @ref LL_I2S_InitTypeDef structure
+    364            * @retval An ErrorStatus enumeration value:
+    365            *          - SUCCESS: SPI registers are Initialized
+    366            *          - ERROR: SPI registers are not Initialized
+    367            */
+
+   \                                 In section .text, align 2, keep-with-next
+    368          ErrorStatus LL_I2S_Init(SPI_TypeDef *SPIx, LL_I2S_InitTypeDef *I2S_InitStruct)
+    369          {
+   \                     LL_I2S_Init: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x0007             MOVS     R7,R0
+   \        0x6   0x000E             MOVS     R6,R1
+    370            uint32_t i2sdiv = 2U, i2sodd = 0U, packetlength = 1U;
+   \        0x8   0x2502             MOVS     R5,#+2
+   \        0xA   0x9501             STR      R5,[SP, #+4]
+   \        0xC   0x2400             MOVS     R4,#+0
+   \        0xE   0x9404             STR      R4,[SP, #+16]
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x9005             STR      R0,[SP, #+20]
+    371            uint32_t tmp;
+    372            LL_RCC_ClocksTypeDef rcc_clocks;
+    373            uint32_t sourceclock;
+    374            ErrorStatus status = ERROR;
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0x4669             MOV      R1,SP
+   \       0x18   0x7008             STRB     R0,[R1, #+0]
+    375          
+    376            /* Check the I2S parameters */
+    377            assert_param(IS_I2S_ALL_INSTANCE(SPIx));
+    378            assert_param(IS_LL_I2S_MODE(I2S_InitStruct->Mode));
+    379            assert_param(IS_LL_I2S_STANDARD(I2S_InitStruct->Standard));
+    380            assert_param(IS_LL_I2S_DATAFORMAT(I2S_InitStruct->DataFormat));
+    381            assert_param(IS_LL_I2S_MCLK_OUTPUT(I2S_InitStruct->MCLKOutput));
+    382            assert_param(IS_LL_I2S_AUDIO_FREQ(I2S_InitStruct->AudioFreq));
+    383            assert_param(IS_LL_I2S_CPOL(I2S_InitStruct->ClockPolarity));
+    384          
+    385            if (LL_I2S_IsEnabled(SPIx) == 0x00000000U)
+   \       0x1A   0x0038             MOVS     R0,R7
+   \       0x1C   0x....'....        BL       LL_I2S_IsEnabled
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD152             BNE      ??LL_I2S_Init_0
+    386            {
+    387              /*---------------------------- SPIx I2SCFGR Configuration --------------------
+    388               * Configure SPIx I2SCFGR with parameters:
+    389               * - Mode:          SPI_I2SCFGR_I2SCFG[1:0] bit
+    390               * - Standard:      SPI_I2SCFGR_I2SSTD[1:0] and SPI_I2SCFGR_PCMSYNC bits
+    391               * - DataFormat:    SPI_I2SCFGR_CHLEN and SPI_I2SCFGR_DATLEN bits
+    392               * - ClockPolarity: SPI_I2SCFGR_CKPOL bit
+    393               */
+    394          
+    395              /* Write to SPIx I2SCFGR */
+    396              MODIFY_REG(SPIx->I2SCFGR,
+    397                         I2S_I2SCFGR_CLEAR_MASK,
+    398                         I2S_InitStruct->Mode | I2S_InitStruct->Standard |
+    399                         I2S_InitStruct->DataFormat | I2S_InitStruct->ClockPolarity |
+    400                         SPI_I2SCFGR_I2SMOD);
+   \       0x24   0x69F8             LDR      R0,[R7, #+28]
+   \       0x26   0x....             LDR      R1,??DataTable7_7  ;; 0xfffff4c0
+   \       0x28   0x4001             ANDS     R1,R1,R0
+   \       0x2A   0x6830             LDR      R0,[R6, #+0]
+   \       0x2C   0x4308             ORRS     R0,R0,R1
+   \       0x2E   0x6871             LDR      R1,[R6, #+4]
+   \       0x30   0x4301             ORRS     R1,R1,R0
+   \       0x32   0x68B0             LDR      R0,[R6, #+8]
+   \       0x34   0x4308             ORRS     R0,R0,R1
+   \       0x36   0x6971             LDR      R1,[R6, #+20]
+   \       0x38   0x4301             ORRS     R1,R1,R0
+   \       0x3A   0x2080             MOVS     R0,#+128
+   \       0x3C   0x0100             LSLS     R0,R0,#+4        ;; #+2048
+   \       0x3E   0x4308             ORRS     R0,R0,R1
+   \       0x40   0x61F8             STR      R0,[R7, #+28]
+    401          
+    402              /*---------------------------- SPIx I2SPR Configuration ----------------------
+    403               * Configure SPIx I2SPR with parameters:
+    404               * - MCLKOutput:    SPI_I2SPR_MCKOE bit
+    405               * - AudioFreq:     SPI_I2SPR_I2SDIV[7:0] and SPI_I2SPR_ODD bits
+    406               */
+    407          
+    408              /* If the requested audio frequency is not the default, compute the prescaler (i2sodd, i2sdiv)
+    409               * else, default values are used:  i2sodd = 0U, i2sdiv = 2U.
+    410               */
+    411              if (I2S_InitStruct->AudioFreq != LL_I2S_AUDIOFREQ_DEFAULT)
+   \       0x42   0x6930             LDR      R0,[R6, #+16]
+   \       0x44   0x2802             CMP      R0,#+2
+   \       0x46   0xD030             BEQ      ??LL_I2S_Init_1
+    412              {
+    413                /* Check the frame length (For the Prescaler computing)
+    414                 * Default value: LL_I2S_DATAFORMAT_16B (packetlength = 1U).
+    415                 */
+    416                if (I2S_InitStruct->DataFormat != LL_I2S_DATAFORMAT_16B)
+   \       0x48   0x68B0             LDR      R0,[R6, #+8]
+   \       0x4A   0x2800             CMP      R0,#+0
+   \       0x4C   0xD000             BEQ      ??LL_I2S_Init_2
+    417                {
+    418                  /* Packet length is 32 bits */
+    419                  packetlength = 2U;
+   \       0x4E   0x9505             STR      R5,[SP, #+20]
+    420                }
+    421          
+    422                /* I2S Clock source is System clock: Get System Clock frequency */
+    423                LL_RCC_GetSystemClocksFreq(&rcc_clocks);
+   \                     ??LL_I2S_Init_2: (+1)
+   \       0x50   0xA806             ADD      R0,SP,#+24
+   \       0x52   0x....'....        BL       LL_RCC_GetSystemClocksFreq
+    424          
+    425                /* Get the source clock value: based on System Clock value */
+    426                sourceclock = rcc_clocks.SYSCLK_Frequency;
+   \       0x56   0x9806             LDR      R0,[SP, #+24]
+   \       0x58   0x9002             STR      R0,[SP, #+8]
+    427          
+    428                /* Compute the Real divider depending on the MCLK output state with a floating point */
+    429                if (I2S_InitStruct->MCLKOutput == LL_I2S_MCLK_OUTPUT_ENABLE)
+   \       0x5A   0x68F0             LDR      R0,[R6, #+12]
+   \       0x5C   0x2180             MOVS     R1,#+128
+   \       0x5E   0x0089             LSLS     R1,R1,#+2        ;; #+512
+   \       0x60   0x4288             CMP      R0,R1
+   \       0x62   0xD108             BNE      ??LL_I2S_Init_3
+    430                {
+    431                  /* MCLK output is enabled */
+    432                  tmp = (((((sourceclock / 256U) * 10U) / I2S_InitStruct->AudioFreq)) + 5U);
+   \       0x64   0x9802             LDR      R0,[SP, #+8]
+   \       0x66   0x0A00             LSRS     R0,R0,#+8
+   \       0x68   0x210A             MOVS     R1,#+10
+   \       0x6A   0x4348             MULS     R0,R1,R0
+   \       0x6C   0x6931             LDR      R1,[R6, #+16]
+   \       0x6E   0x....'....        BL       __aeabi_uidiv
+   \       0x72   0x1D40             ADDS     R0,R0,#+5
+   \       0x74   0xE00B             B        ??LL_I2S_Init_4
+    433                }
+    434                else
+    435                {
+    436                  /* MCLK output is disabled */
+    437                  tmp = (((((sourceclock / (32U * packetlength)) * 10U) / I2S_InitStruct->AudioFreq)) + 5U);
+   \                     ??LL_I2S_Init_3: (+1)
+   \       0x76   0x9802             LDR      R0,[SP, #+8]
+   \       0x78   0x9905             LDR      R1,[SP, #+20]
+   \       0x7A   0x2220             MOVS     R2,#+32
+   \       0x7C   0x4351             MULS     R1,R2,R1
+   \       0x7E   0x....'....        BL       __aeabi_uidiv
+   \       0x82   0x210A             MOVS     R1,#+10
+   \       0x84   0x4348             MULS     R0,R1,R0
+   \       0x86   0x6931             LDR      R1,[R6, #+16]
+   \       0x88   0x....'....        BL       __aeabi_uidiv
+   \       0x8C   0x1D40             ADDS     R0,R0,#+5
+    438                }
+    439          
+    440                /* Remove the floating point */
+    441                tmp = tmp / 10U;
+   \                     ??LL_I2S_Init_4: (+1)
+   \       0x8E   0x210A             MOVS     R1,#+10
+   \       0x90   0x....'....        BL       __aeabi_uidiv
+   \       0x94   0x9003             STR      R0,[SP, #+12]
+    442          
+    443                /* Check the parity of the divider */
+    444                i2sodd = (tmp & (uint16_t)0x0001U);
+   \       0x96   0x9903             LDR      R1,[SP, #+12]
+   \       0x98   0x0008             MOVS     R0,R1
+   \       0x9A   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \       0x9C   0x0FC0             LSRS     R0,R0,#+31
+    445          
+    446                /* Compute the i2sdiv prescaler */
+    447                i2sdiv = ((tmp - i2sodd) / 2U);
+   \       0x9E   0x9903             LDR      R1,[SP, #+12]
+   \       0xA0   0x1A09             SUBS     R1,R1,R0
+   \       0xA2   0x0849             LSRS     R1,R1,#+1
+   \       0xA4   0x9101             STR      R1,[SP, #+4]
+    448          
+    449                /* Get the Mask for the Odd bit (SPI_I2SPR[8]) register */
+    450                i2sodd = (i2sodd << 8U);
+   \       0xA6   0x0200             LSLS     R0,R0,#+8
+   \       0xA8   0x9004             STR      R0,[SP, #+16]
+    451              }
+    452          
+    453              /* Test if the divider is 1 or 0 or greater than 0xFF */
+    454              if ((i2sdiv < 2U) || (i2sdiv > 0xFFU))
+   \                     ??LL_I2S_Init_1: (+1)
+   \       0xAA   0x9801             LDR      R0,[SP, #+4]
+   \       0xAC   0x2802             CMP      R0,#+2
+   \       0xAE   0xD302             BCC      ??LL_I2S_Init_5
+   \       0xB0   0x9801             LDR      R0,[SP, #+4]
+   \       0xB2   0x28FF             CMP      R0,#+255
+   \       0xB4   0xD901             BLS      ??LL_I2S_Init_6
+    455              {
+    456                /* Set the default values */
+    457                i2sdiv = 2U;
+   \                     ??LL_I2S_Init_5: (+1)
+   \       0xB6   0x9501             STR      R5,[SP, #+4]
+    458                i2sodd = 0U;
+   \       0xB8   0x9404             STR      R4,[SP, #+16]
+    459              }
+    460          
+    461              /* Write to SPIx I2SPR register the computed value */
+    462              WRITE_REG(SPIx->I2SPR, i2sdiv | i2sodd | I2S_InitStruct->MCLKOutput);
+   \                     ??LL_I2S_Init_6: (+1)
+   \       0xBA   0x9801             LDR      R0,[SP, #+4]
+   \       0xBC   0x9904             LDR      R1,[SP, #+16]
+   \       0xBE   0x4301             ORRS     R1,R1,R0
+   \       0xC0   0x68F0             LDR      R0,[R6, #+12]
+   \       0xC2   0x4308             ORRS     R0,R0,R1
+   \       0xC4   0x6238             STR      R0,[R7, #+32]
+    463          
+    464              status = SUCCESS;
+   \       0xC6   0x4668             MOV      R0,SP
+   \       0xC8   0x7004             STRB     R4,[R0, #+0]
+    465            }
+    466            return status;
+   \                     ??LL_I2S_Init_0: (+1)
+   \       0xCA   0x4668             MOV      R0,SP
+   \       0xCC   0x7800             LDRB     R0,[R0, #+0]
+   \       0xCE   0xB009             ADD      SP,SP,#+36
+   \       0xD0   0xBDF0             POP      {R4-R7,PC}       ;; return
+    467          }
+    468          
+    469          /**
+    470            * @brief  Set each @ref LL_I2S_InitTypeDef field to default value.
+    471            * @param  I2S_InitStruct pointer to a @ref LL_I2S_InitTypeDef structure
+    472            *         whose fields will be set to default values.
+    473            * @retval None
+    474            */
+
+   \                                 In section .text, align 2, keep-with-next
+    475          void LL_I2S_StructInit(LL_I2S_InitTypeDef *I2S_InitStruct)
+    476          {
+    477            /*--------------- Reset I2S init structure parameters values -----------------*/
+    478            I2S_InitStruct->Mode              = LL_I2S_MODE_SLAVE_TX;
+   \                     LL_I2S_StructInit: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    479            I2S_InitStruct->Standard          = LL_I2S_STANDARD_PHILIPS;
+   \        0x4   0x6041             STR      R1,[R0, #+4]
+    480            I2S_InitStruct->DataFormat        = LL_I2S_DATAFORMAT_16B;
+   \        0x6   0x6081             STR      R1,[R0, #+8]
+    481            I2S_InitStruct->MCLKOutput        = LL_I2S_MCLK_OUTPUT_DISABLE;
+   \        0x8   0x60C1             STR      R1,[R0, #+12]
+    482            I2S_InitStruct->AudioFreq         = LL_I2S_AUDIOFREQ_DEFAULT;
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x6102             STR      R2,[R0, #+16]
+    483            I2S_InitStruct->ClockPolarity     = LL_I2S_POLARITY_LOW;
+   \        0xE   0x6141             STR      R1,[R0, #+20]
+    484          }
+   \       0x10   0x4770             BX       LR               ;; return
+    485          
+    486          /**
+    487            * @brief  Set linear and parity prescaler.
+    488            * @note   To calculate value of PrescalerLinear(I2SDIV[7:0] bits) and PrescalerParity(ODD bit)\n
+    489            *         Check Audio frequency table and formulas inside Reference Manual (SPI/I2S).
+    490            * @param  SPIx SPI Instance
+    491            * @param  PrescalerLinear value Min_Data=0x02 and Max_Data=0xFF.
+    492            * @param  PrescalerParity This parameter can be one of the following values:
+    493            *         @arg @ref LL_I2S_PRESCALER_PARITY_EVEN
+    494            *         @arg @ref LL_I2S_PRESCALER_PARITY_ODD
+    495            * @retval None
+    496            */
+
+   \                                 In section .text, align 2, keep-with-next
+    497          void LL_I2S_ConfigPrescaler(SPI_TypeDef *SPIx, uint32_t PrescalerLinear, uint32_t PrescalerParity)
+    498          {
+   \                     LL_I2S_ConfigPrescaler: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+    499            /* Check the I2S parameters */
+    500            assert_param(IS_I2S_ALL_INSTANCE(SPIx));
+    501            assert_param(IS_LL_I2S_PRESCALER_LINEAR(PrescalerLinear));
+    502            assert_param(IS_LL_I2S_PRESCALER_PARITY(PrescalerParity));
+    503          
+    504            /* Write to SPIx I2SPR */
+    505            MODIFY_REG(SPIx->I2SPR, SPI_I2SPR_I2SDIV | SPI_I2SPR_ODD, PrescalerLinear | (PrescalerParity << 8U));
+   \        0x2   0x6A03             LDR      R3,[R0, #+32]
+   \        0x4   0x0A5B             LSRS     R3,R3,#+9
+   \        0x6   0x025B             LSLS     R3,R3,#+9
+   \        0x8   0x0214             LSLS     R4,R2,#+8
+   \        0xA   0x430C             ORRS     R4,R4,R1
+   \        0xC   0x431C             ORRS     R4,R4,R3
+   \        0xE   0x6204             STR      R4,[R0, #+32]
+    506          }
+   \       0x10   0xBC10             POP      {R4}
+   \       0x12   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x4002'102C        DC32     0x4002102c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x4002'1030        DC32     0x40021030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x4001'3000        DC32     0x40013000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x4000'3800        DC32     0x40003800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0xFFFF'0040        DC32     0xffff0040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0xFFFF'F0FB        DC32     0xfffff0fb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0xFFFF'F7FF        DC32     0xfffff7ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0xFFFF'F4C0        DC32     0xfffff4c0
+    507          
+    508          /**
+    509            * @}
+    510            */
+    511          
+    512          /**
+    513            * @}
+    514            */
+    515          
+    516          /**
+    517            * @}
+    518            */
+    519          #endif /* SPI_I2S_SUPPORT */
+    520          
+    521          #endif /* defined (SPI1) || defined (SPI2) */
+    522          
+    523          /**
+    524            * @}
+    525            */
+    526          
+    527          #endif /* USE_FULL_LL_DRIVER */
+    528          
+    529          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LL_APB1_GRP1_ForceReset
+       0   LL_APB1_GRP1_ReleaseReset
+       0   LL_APB2_GRP1_ForceReset
+       0   LL_APB2_GRP1_ReleaseReset
+       4   LL_I2S_ConfigPrescaler
+       8   LL_I2S_DeInit
+         8   -> LL_SPI_DeInit
+      56   LL_I2S_Init
+        56   -> LL_I2S_IsEnabled
+        56   -> LL_RCC_GetSystemClocksFreq
+        56 __aeabi_uidiv
+       0   LL_I2S_IsEnabled
+       0   LL_I2S_StructInit
+      16   LL_SPI_DeInit
+        16   -> LL_APB1_GRP1_ForceReset
+        16   -> LL_APB1_GRP1_ReleaseReset
+        16   -> LL_APB2_GRP1_ForceReset
+        16   -> LL_APB2_GRP1_ReleaseReset
+      16   LL_SPI_Init
+        16   -> LL_SPI_IsEnabled
+        16   -> LL_SPI_SetCRCPolynomial
+       0   LL_SPI_IsEnabled
+       0   LL_SPI_SetCRCPolynomial
+       0   LL_SPI_StructInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+      10  LL_APB1_GRP1_ForceReset
+      10  LL_APB1_GRP1_ReleaseReset
+      10  LL_APB2_GRP1_ForceReset
+      10  LL_APB2_GRP1_ReleaseReset
+      20  LL_I2S_ConfigPrescaler
+      12  LL_I2S_DeInit
+     210  LL_I2S_Init
+      12  LL_I2S_IsEnabled
+      18  LL_I2S_StructInit
+      64  LL_SPI_DeInit
+     112  LL_SPI_Init
+      12  LL_SPI_IsEnabled
+       8  LL_SPI_SetCRCPolynomial
+      30  LL_SPI_StructInit
+
+ 
+ 570 bytes in section .text
+ 
+ 570 bytes of CODE memory
+
+Errors: none
+Warnings: none

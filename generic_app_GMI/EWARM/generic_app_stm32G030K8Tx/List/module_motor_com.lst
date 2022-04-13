@@ -1,0 +1,2338 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         17/Feb/2022  13:48:29
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_com.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW2B6E.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_com.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_motor_com.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_motor_com.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_motor_com.c
+      1          /**
+      2          ***************************************************************************************************
+      3          * @file    module_motor_com.c 
+      4          * @author  Regal Pamela Lee
+      5          * @version V1.0
+      6          * @date    7-Jul-2020
+      7          * @brief   Main function/s of control motor speed by 0 to 10V
+      8          * @note   
+      9          ***************************************************************************************************
+     10          */
+     11          
+     12          // Includes -------------------------------------------------------------------
+     13          #include "module_motor_com.h"
+     14          #include "driver_usart2.h"
+     15          #include "module_usart2.h"
+     16          //#include "module_analog_0_10v.h"
+     17          #include "module_motor_demand_multiplexer.h"
+     18          #include "module_gpio.h"
+     19          #include "module_digital_inputs.h"
+     20          #include "macros.h"
+     21          
+     22          // Content --------------------------------------------------------------------
+     23          // TODO: Move 
+     24          
+     25          // - Function Prototypes
+     26          void init_Motor_Setting(void);
+     27          void assign_Module_Motor_Com_Mem();
+     28          extern uint64_t getSysCount(void);
+     29          void init_Motor_Data(void);
+     30          void send_Periodic_Data_Request(uint8_t);
+     31          
+     32          // - Constants
+     33          #define DemandPollPeriod 100         //time period for checking and sending 0-10V and speed data to motor board
+     34          #define	HarmonicInitialPollPeriod 200		 // time for updating the Harmonic Injection data
+     35          #define TIME_BETWEEN_STAGGERED_HI_TX_BLOCKS 200	// time between staggered blocks of UP messages being transmitted for harmonic injection
+     36          
+     37          // Application Constants
+     38          // #define MIN_COMMANDABLE_SPEED	300  // RPM
+     39          // #define MAX_COMMANDABLE_SPEED	2500 //MAX_APP_SPEED_RPM 
+     40          // #define ADC12B  4096
+     41          // #define motorOnThreadhold       10   // percentage of 0 to 10V for turn on Motor
+     42          // #define motorOffThreadhold       5   // percentage of 0 to 10V for turn on Motor
+     43          // #define MotorMaxLimPercent      90   // Max motor speed in percentage 90%
+     44          #define STARTUP_STATE_DELAY     2000 // Delay before state machine enters "startMotor" state
+     45          //#define SpeedRatePerADCValue   (MAX_COMMANDABLE_SPEED - MIN_COMMANDABLE_SPEED) / ((MotorMaxLimPercent *100) - (MIN_COMMANDABLE_SPEED * 1000))
+     46          
+     47          // -- Module States
+     48          enum                                                                            //Default APPs/Driver stage template
+     49          { 
+     50            MEMORY_INIT_MODULE,
+     51            AppInit,
+     52            AppStart,
+     53            //any other stage in here !!!
+     54            startMotor,
+     55            slowDnMotor2Stop,
+     56            stopMotor,
+     57            waitForIdle,
+     58            WaitReset,
+     59            SpdUpdate,
+     60            HarmonicUpdate,
+     61            
+     62            //above 200 will be all interrupt for this APP
+     63            AppIrq = 200,
+     64            killApp = 255
+     65          };
+     66          
+     67          // - External Variables
+     68          extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     69          extern ProcessInfo processInfoTable[];
+
+   \                                 In section .bss, align 4
+     70          static Ram_Buf_Handle motor_Com_StructMem_u32;
+   \                     motor_Com_StructMem_u32:
+   \        0x0                      DS8 4
+     71          
+     72          extern int16_t  hi_amplitude_s16[8]; 		
+     73          extern uint8_t  hi_angle_multiplier_hi_u8[8];
+     74          extern uint16_t hi_angle_offset_u16[8]; 		
+     75          extern uint8_t  hi_is_phase_inverted_u8[8]; 	
+     76          extern uint16_t hi_min_speed_u16[8]; 		
+     77          extern uint16_t hi_max_speed_u16[8]; 		
+     78          extern uint8_t  hi_is_harmonic_injection_allowed_hi_u8; 
+     79          
+     80          // - Global variables specific to this module
+
+   \                                 In section .bss, align 8
+     81          uint64_t tt_DemandTime;        //time tick storage for 0-10 V 
+   \                     tt_DemandTime:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 8
+     82          uint64_t tt_HarmonicUpdateTime;	// Time to send Harmnic Injection data
+   \                     tt_HarmonicUpdateTime:
+   \        0x0                      DS8 8
+     83          //bool isMotorOn = FALSE;
+
+   \                                 In section .bss, align 8
+     84          uint64_t tt_StopMotorResume;   //time tick storage motor stop resume period 
+   \                     tt_StopMotorResume:
+   \        0x0                      DS8 8
+
+   \                                 In section .data, align 4
+     85          unsigned char readMotorDataCommands[] = {BUS_VOLTS_CMD, MOTOR_STATUS_CMD, MOTOR_DIR_CMD, ELECTRICAL_INFO_CMD, MEASURED_SPEED_CMD, THERMO_MECHANICAL_INFO_CMD,BULK_MONITORING_CMD};
+   \                     readMotorDataCommands:
+   \        0x0   0x40 0x41          DC8 64, 65, 66, 79, 96, 111, 77
+
+   \              0x42 0x4F    
+
+   \              0x60 0x6F    
+
+   \              0x4D
+   \        0x7                      DS8 1
+
+   \                                 In section .data, align 4
+     86          uint16_t readMotorDataTimeInterval_u16[] = {100, 100, 100, 100, 100, 100,100};
+   \                     readMotorDataTimeInterval_u16:
+   \        0x0   0x0064 0x0064      DC16 100, 100, 100, 100, 100, 100, 100
+
+   \               0x0064 0x006
+
+   \              4 0x0064 0x00
+
+   \              64 0x0064
+   \        0xE                      DS8 2
+
+   \                                 In section .bss, align 1
+     87          uint8_t index_read_motor_data_command = 0;
+   \                     index_read_motor_data_command:
+   \        0x0                      DS8 1
+
+   \                                 In section .data, align 1
+     88          uint8_t motor_data_commands_len_u8 = sizeof(readMotorDataTimeInterval_u16)/( sizeof(readMotorDataTimeInterval_u16[0]) );
+   \                     motor_data_commands_len_u8:
+   \        0x0   0x07               DC8 7
+     89          //uint8_t local_motor_dir_u8 = CCW;
+     90          // Harmonic Injection Variables
+     91          /*uint8_t	 hi_enable_u8 = 0;
+     92          int16_t  hi_amplitude_s16[8] 			= {0,0,0,0,0,0,0,0}; 
+     93          uint8_t  hi_angle_multiplier_u8[8] 	    = {0,0,0,0,0,0,0,0};
+     94          uint16_t hi_angle_offset_u16[8] 		= {0,0,0,0,0,0,0,0};
+     95          uint8_t  hi_is_phase_inverted_u8[8] 	= {0,0,0,0,0,0,0,0};
+     96          uint16_t hi_min_speed_u16[8] 			= {0,0,0,0,0,0,0,0};
+     97          uint16_t hi_max_speed_u16[8] 			= {2250, 2250, 2250, 2250, 2250, 2250, 2250, 2250}; 
+     98          */
+     99          // -- Define Pointers that will be used as References to other Modules, where applicable
+
+   \                                 In section .bss, align 4
+    100          Usart2_Control* usart2Control_AppLocal;
+   \                     usart2Control_AppLocal:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    101          Motor_Com_Control motor_Com_Control; // Main Structure of Settings and Data
+   \                     motor_Com_Control:
+   \        0x0                      DS8 52
+
+   \                                 In section .bss, align 4
+    102          MotorDemandMux_Control *motorDemandMuxControl_ptr;
+   \                     motorDemandMuxControl_ptr:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    103          DigitalInputs_Control* digitalInputControl_motorCom_ptr;
+   \                     digitalInputControl_motorCom_ptr:
+   \        0x0                      DS8 4
+    104          
+    105               
+    106          
+    107          /**
+    108          ********************************************************************************************************************************
+    109          * @brief   State machine for Motor Com module
+    110          * @details
+    111          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+    112          * @retval  return_state_u8
+    113          ********************************************************************************************************************************
+    114          */ 
+    115          //^**Tips: APPs/Drivers adding process example step7 (Add the Additional funtion itself)
+
+   \                                 In section .text, align 4, keep-with-next
+    116          uint8_t module_Motor_Com_u32(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8,
+    117                                       uint8_t irq_id_u8)
+    118          { 
+   \                     module_Motor_Com_u32: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB0BB             SUB      SP,SP,#+236
+    119            uint8_t  return_state_u8 = MEMORY_INIT_MODULE; 
+   \        0x4   0x2600             MOVS     R6,#+0
+   \        0x6   0x0037             MOVS     R7,R6
+    120            uint16_t output_demand = 0; 
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0x4669             MOV      R1,SP
+   \        0xC   0x8088             STRH     R0,[R1, #+4]
+    121            static uint8_t blocks_to_transmit_u8 = 0,harmonic_data_cnt=0;
+    122          	  uint8_t index_u8 = 0;
+   \        0xE   0x0034             MOVS     R4,R6
+    123          
+    124            
+    125            switch (next_state_u8)
+   \       0x10   0xA83D             ADD      R0,SP,#+244
+   \       0x12   0x7800             LDRB     R0,[R0, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD01F             BEQ      ??module_Motor_Com_u32_7
+   \       0x18   0x2801             CMP      R0,#+1
+   \       0x1A   0xD022             BEQ      ??module_Motor_Com_u32_8
+   \       0x1C   0x2802             CMP      R0,#+2
+   \       0x1E   0xD06B             BEQ      ??module_Motor_Com_u32_9
+   \       0x20   0x2803             CMP      R0,#+3
+   \       0x22   0xD100             BNE      .+4
+   \       0x24   0xE278             B        ??module_Motor_Com_u32_10
+   \       0x26   0x2804             CMP      R0,#+4
+   \       0x28   0xD100             BNE      .+4
+   \       0x2A   0xE2A1             B        ??module_Motor_Com_u32_11
+   \       0x2C   0x2805             CMP      R0,#+5
+   \       0x2E   0xD100             BNE      .+4
+   \       0x30   0xE2C8             B        ??module_Motor_Com_u32_12
+   \       0x32   0x2806             CMP      R0,#+6
+   \       0x34   0xD100             BNE      .+4
+   \       0x36   0xE325             B        ??module_Motor_Com_u32_13
+   \       0x38   0x2807             CMP      R0,#+7
+   \       0x3A   0xD100             BNE      .+4
+   \       0x3C   0xE33D             B        ??module_Motor_Com_u32_14
+   \       0x3E   0x2808             CMP      R0,#+8
+   \       0x40   0xD100             BNE      .+4
+   \       0x42   0xE0AF             B        ??module_Motor_Com_u32_15
+   \       0x44   0x2809             CMP      R0,#+9
+   \       0x46   0xD100             BNE      .+4
+   \       0x48   0xE0D7             B        ??module_Motor_Com_u32_16
+   \       0x4A   0x28C8             CMP      R0,#+200
+   \       0x4C   0xD100             BNE      .+4
+   \       0x4E   0xE33F             B        ??module_Motor_Com_u32_17
+   \       0x50   0x28FF             CMP      R0,#+255
+   \       0x52   0xD100             BNE      .+4
+   \       0x54   0xE33D             B        ??module_Motor_Com_u32_18
+   \       0x56   0xE33F             B        ??module_Motor_Com_u32_19
+    126            {
+    127            case MEMORY_INIT_MODULE:
+    128              {
+    129                assign_Module_Motor_Com_Mem(); // Assign structured memory to Analog 0-10V setting and data 
+   \                     ??module_Motor_Com_u32_7: (+1)
+   \       0x58   0x....'....        BL       assign_Module_Motor_Com_Mem
+    130                return_state_u8 = AppInit;
+   \       0x5C   0x2001             MOVS     R0,#+1
+   \       0x5E   0x0007             MOVS     R7,R0
+    131                break;
+   \       0x60   0xE33C             B        ??module_Motor_Com_u32_20
+    132              }
+    133            case AppInit:                                                              //initial stage
+    134              {   
+    135                //assign_Module_Motor_Com_Mem(); //Assign structured memory
+    136                init_Motor_Setting(); //initilize motor settings
+   \                     ??module_Motor_Com_u32_8: (+1)
+   \       0x62   0x....'....        BL       init_Motor_Setting
+    137                init_Motor_Data(); // Init live motor data
+   \       0x66   0x....'....        BL       init_Motor_Data
+    138                /*Attach Uart2 structured memory into this App*/         
+    139                uint8_t Usart2index  = getProcessInfoIndex(MODULE_USART2); //return Process index from processInfo array
+   \       0x6A   0x2003             MOVS     R0,#+3
+   \       0x6C   0x....'....        BL       getProcessInfoIndex
+   \       0x70   0x4669             MOV      R1,SP
+   \       0x72   0x7048             STRB     R0,[R1, #+1]
+    140                usart2Control_AppLocal = (Usart2_Control*)((*(processInfoTable[Usart2index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory for USART2
+   \       0x74   0x4DD2             LDR      R5,??module_Motor_Com_u32_0
+   \       0x76   0x4668             MOV      R0,SP
+   \       0x78   0x7840             LDRB     R0,[R0, #+1]
+   \       0x7A   0x2116             MOVS     R1,#+22
+   \       0x7C   0x4348             MULS     R0,R1,R0
+   \       0x7E   0x1828             ADDS     R0,R5,R0
+   \       0x80   0x300B             ADDS     R0,R0,#+11
+   \       0x82   0x....'....        BL       __aeabi_uread4
+   \       0x86   0x6800             LDR      R0,[R0, #+0]
+   \       0x88   0x49CE             LDR      R1,??module_Motor_Com_u32_0+0x4
+   \       0x8A   0x6008             STR      R0,[R1, #+0]
+    141                
+    142                // Attached digital input structure memory
+    143                uint8_t digtial_input_index_u8  = getProcessInfoIndex(MODULE_DIGITAL_INPUTS); //return Process index from processInfo array
+   \       0x8C   0x2007             MOVS     R0,#+7
+   \       0x8E   0x....'....        BL       getProcessInfoIndex
+   \       0x92   0x4669             MOV      R1,SP
+   \       0x94   0x7008             STRB     R0,[R1, #+0]
+    144                digitalInputControl_motorCom_ptr = (DigitalInputs_Control*)((*(processInfoTable[digtial_input_index_u8].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory for USART2
+   \       0x96   0x4668             MOV      R0,SP
+   \       0x98   0x7800             LDRB     R0,[R0, #+0]
+   \       0x9A   0x2116             MOVS     R1,#+22
+   \       0x9C   0x4348             MULS     R0,R1,R0
+   \       0x9E   0x1828             ADDS     R0,R5,R0
+   \       0xA0   0x300B             ADDS     R0,R0,#+11
+   \       0xA2   0x....'....        BL       __aeabi_uread4
+   \       0xA6   0x6800             LDR      R0,[R0, #+0]
+   \       0xA8   0x49C7             LDR      R1,??module_Motor_Com_u32_0+0x8
+   \       0xAA   0x6008             STR      R0,[R1, #+0]
+    145                
+    146                /*Attach Motor Demand Multiplexer module structured memory into this App*/     
+    147                uint8_t module_index = getProcessInfoIndex(MODULE_MOTOR_DEMAND_MUX);   //return Process index from processInfo array
+   \       0xAC   0x200C             MOVS     R0,#+12
+   \       0xAE   0x....'....        BL       getProcessInfoIndex
+   \       0xB2   0x0006             MOVS     R6,R0
+    148                motorDemandMuxControl_ptr = (MotorDemandMux_Control*)((*(processInfoTable[module_index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0xB4   0x0030             MOVS     R0,R6
+   \       0xB6   0xB2C0             UXTB     R0,R0
+   \       0xB8   0x2116             MOVS     R1,#+22
+   \       0xBA   0x4348             MULS     R0,R1,R0
+   \       0xBC   0x1828             ADDS     R0,R5,R0
+   \       0xBE   0x300B             ADDS     R0,R0,#+11
+   \       0xC0   0x....'....        BL       __aeabi_uread4
+   \       0xC4   0x49C1             LDR      R1,??module_Motor_Com_u32_0+0xC
+   \       0xC6   0x6800             LDR      R0,[R0, #+0]
+   \       0xC8   0x6008             STR      R0,[R1, #+0]
+    149                
+    150                output_demand = (*motorDemandMuxControl_ptr).motorDemandMux_Data.demandValue_u16;
+   \       0xCA   0x6808             LDR      R0,[R1, #+0]
+   \       0xCC   0x8A00             LDRH     R0,[R0, #+16]
+   \       0xCE   0x4669             MOV      R1,SP
+   \       0xD0   0x8088             STRH     R0,[R1, #+4]
+    151                
+    152                tt_DemandTime = getSysCount() + DemandPollPeriod;                          //store time tick value 
+   \       0xD2   0x....'....        BL       getSysCount
+   \       0xD6   0x2200             MOVS     R2,#+0
+   \       0xD8   0x3064             ADDS     R0,R0,#+100
+   \       0xDA   0x4151             ADCS     R1,R1,R2
+   \       0xDC   0x4ABC             LDR      R2,??module_Motor_Com_u32_0+0x10
+   \       0xDE   0xC203             STM      R2!,{R0,R1}
+   \       0xE0   0x3A08             SUBS     R2,R2,#+8
+    153                tt_HarmonicUpdateTime = getSysCount() + HarmonicInitialPollPeriod;		// store time tick value for Harmonic message updates
+   \       0xE2   0x....'....        BL       getSysCount
+   \       0xE6   0x2200             MOVS     R2,#+0
+   \       0xE8   0x30C8             ADDS     R0,R0,#+200
+   \       0xEA   0x4151             ADCS     R1,R1,R2
+   \       0xEC   0x4AB9             LDR      R2,??module_Motor_Com_u32_0+0x14
+   \       0xEE   0xC203             STM      R2!,{R0,R1}
+   \       0xF0   0x3A08             SUBS     R2,R2,#+8
+    154                return_state_u8 = AppStart;//startMotor;// stopMotor; 
+   \       0xF2   0x2002             MOVS     R0,#+2
+   \       0xF4   0x0007             MOVS     R7,R0
+    155                break;
+   \       0xF6   0xE2F1             B        ??module_Motor_Com_u32_20
+    156              }       
+    157            case AppStart:
+    158              { 
+    159                if(index_read_motor_data_command < motor_data_commands_len_u8)
+    160                {
+    161               // send_Periodic_Data_Request(index_read_motor_data_command); // Send UP message to get motor data periodically
+    162                }
+    163                
+    164                if (getSysCount() >= tt_DemandTime) 
+   \                     ??module_Motor_Com_u32_9: (+1)
+   \       0xF8   0x....'....        BL       getSysCount
+   \       0xFC   0x4AB4             LDR      R2,??module_Motor_Com_u32_0+0x10
+   \       0xFE   0xCA0C             LDM      R2,{R2,R3}
+   \      0x100   0x4299             CMP      R1,R3
+   \      0x102   0xD34C             BCC      ??module_Motor_Com_u32_21
+   \      0x104   0xD801             BHI      ??module_Motor_Com_u32_22
+   \      0x106   0x4290             CMP      R0,R2
+   \      0x108   0xD349             BCC      ??module_Motor_Com_u32_21
+    165                {
+    166                  motor_Com_Control.motor_Metering_Data.demand_Output_Percent_u16 = (uint16_t)CALCULATE_PERCENT( abs((*usart2Control_AppLocal).motorSpeed_s16) , (motor_Com_Control.motor_Setting.max_Speed_u16))*100; //xxx.yy% = XXXYY format
+   \                     ??module_Motor_Com_u32_22: (+1)
+   \      0x10A   0x4DAE             LDR      R5,??module_Motor_Com_u32_0+0x4
+   \      0x10C   0x6828             LDR      R0,[R5, #+0]
+   \      0x10E   0x211E             MOVS     R1,#+30
+   \      0x110   0x5E40             LDRSH    R0,[R0, R1]
+   \      0x112   0x....'....        BL       abs
+   \      0x116   0x4EB0             LDR      R6,??module_Motor_Com_u32_0+0x18
+   \      0x118   0x2164             MOVS     R1,#+100
+   \      0x11A   0x4348             MULS     R0,R1,R0
+   \      0x11C   0x....'....        BL       __aeabi_i2f
+   \      0x120   0x9000             STR      R0,[SP, #+0]
+   \      0x122   0x8830             LDRH     R0,[R6, #+0]
+   \      0x124   0x....'....        BL       __aeabi_ui2f
+   \      0x128   0x0001             MOVS     R1,R0
+   \      0x12A   0x9800             LDR      R0,[SP, #+0]
+   \      0x12C   0x....'....        BL       __aeabi_fdiv
+   \      0x130   0x....'....        BL       __aeabi_f2iz
+   \      0x134   0x2164             MOVS     R1,#+100
+   \      0x136   0x4348             MULS     R0,R1,R0
+   \      0x138   0x8470             STRH     R0,[R6, #+34]
+    167                  output_demand = (*motorDemandMuxControl_ptr).motorDemandMux_Data.demandValue_u16; // Percent reference demand
+   \      0x13A   0x48A4             LDR      R0,??module_Motor_Com_u32_0+0xC
+   \      0x13C   0x6800             LDR      R0,[R0, #+0]
+   \      0x13E   0x8A00             LDRH     R0,[R0, #+16]
+   \      0x140   0x4669             MOV      R1,SP
+   \      0x142   0x8088             STRH     R0,[R1, #+4]
+    168                  motor_Com_Control.motor_Metering_Data.demand_Reference_Percent_u16 = output_demand;
+   \      0x144   0x4668             MOV      R0,SP
+   \      0x146   0x8880             LDRH     R0,[R0, #+4]
+   \      0x148   0x83B0             STRH     R0,[R6, #+28]
+    169                  (motor_Com_Control.motor_Metering_Data.motor_Status_u16) = (*usart2Control_AppLocal).motorStatus_u16;
+   \      0x14A   0x6828             LDR      R0,[R5, #+0]
+   \      0x14C   0x8C00             LDRH     R0,[R0, #+32]
+   \      0x14E   0x85B0             STRH     R0,[R6, #+44]
+    170                  uint32_t temp_result = (uint32_t)(output_demand * (motor_Com_Control.motor_Setting.max_Speed_u16));
+   \      0x150   0x4668             MOV      R0,SP
+   \      0x152   0x8885             LDRH     R5,[R0, #+4]
+   \      0x154   0x8830             LDRH     R0,[R6, #+0]
+   \      0x156   0x4345             MULS     R5,R0,R5
+    171                  motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16 = (uint16_t)(temp_result/(float)10000); //Convert Speed ref % to RPM
+   \      0x158   0x0028             MOVS     R0,R5
+   \      0x15A   0x....'....        BL       __aeabi_ui2f
+   \      0x15E   0x49C9             LDR      R1,??module_Motor_Com_u32_1  ;; 0x461c4000
+   \      0x160   0x....'....        BL       __aeabi_fdiv
+   \      0x164   0x....'....        BL       __aeabi_f2iz
+   \      0x168   0x83F0             STRH     R0,[R6, #+30]
+    172                  
+    173                  if ( (!motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On) ) {
+   \      0x16A   0x2032             MOVS     R0,#+50
+   \      0x16C   0x5C30             LDRB     R0,[R6, R0]
+   \      0x16E   0x0001             MOVS     R1,R0
+   \      0x170   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \      0x172   0x0FC9             LSRS     R1,R1,#+31
+   \      0x174   0x2900             CMP      R1,#+0
+   \      0x176   0xD106             BNE      ??module_Motor_Com_u32_23
+    174                //    if(getSysCount() >= tt_DemandTime + STARTUP_STATE_DELAY)
+    175                //    { // Ensures digital inputs states are updated before starting the motor
+    176                      if(motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16 >= motor_Com_Control.motor_Setting.min_Speed_u16) //Demand > min speed
+   \      0x178   0x8BF0             LDRH     R0,[R6, #+30]
+   \      0x17A   0x8871             LDRH     R1,[R6, #+2]
+   \      0x17C   0x4288             CMP      R0,R1
+   \      0x17E   0xD30B             BCC      ??module_Motor_Com_u32_24
+    177                      {
+    178                        return_state_u8 = startMotor;
+   \      0x180   0x2003             MOVS     R0,#+3
+   \      0x182   0x0007             MOVS     R7,R0
+    179                        break;
+   \      0x184   0xE2AA             B        ??module_Motor_Com_u32_20
+    180                      }
+    181               //     }
+    182                  }else{
+    183                    if(motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16 < (motor_Com_Control.motor_Setting.min_Speed_u16 - motor_Com_Control.motor_Setting.hysteresis_Speed_u16)) //Demand > min speed
+   \                     ??module_Motor_Com_u32_23: (+1)
+   \      0x186   0x8BF0             LDRH     R0,[R6, #+30]
+   \      0x188   0x8871             LDRH     R1,[R6, #+2]
+   \      0x18A   0x88B2             LDRH     R2,[R6, #+4]
+   \      0x18C   0x1A89             SUBS     R1,R1,R2
+   \      0x18E   0x4288             CMP      R0,R1
+   \      0x190   0xDA02             BGE      ??module_Motor_Com_u32_24
+    184                    {             
+    185                      return_state_u8 = slowDnMotor2Stop;
+   \      0x192   0x2004             MOVS     R0,#+4
+   \      0x194   0x0007             MOVS     R7,R0
+    186                      break;
+   \      0x196   0xE2A1             B        ??module_Motor_Com_u32_20
+    187                    }
+    188                  }
+    189                     // change state machine to update Harmonic messages
+    190          	/*  if (getSysCount() >= tt_HarmonicUpdateTime) {
+    191          		return_state_u8 = HarmonicUpdate;
+    192          		break;
+    193          	  }*/
+    194                  //if (getSysCount() >= tt_HarmonicUpdateTime) {
+    195          		//return_state_u8 = HarmonicUpdate;
+    196                    //index_read_motor_data_command=4;//4;
+    197                    //send_Periodic_Data_Request(index_read_motor_data_command); // Send UP message to get motor data periodically
+    198          //tt_HarmonicUpdateTime = getSysCount() + TIME_BETWEEN_STAGGERED_HI_TX_BLOCKS;
+    199          
+    200          		//break;
+    201          //	  }
+    202                  
+    203                  return_state_u8 = SpdUpdate;
+   \                     ??module_Motor_Com_u32_24: (+1)
+   \      0x198   0x2008             MOVS     R0,#+8
+   \      0x19A   0x0007             MOVS     R7,R0
+    204                  break;             
+   \      0x19C   0xE29E             B        ??module_Motor_Com_u32_20
+    205                } 
+    206          		  
+    207                return_state_u8 = AppStart;
+   \                     ??module_Motor_Com_u32_21: (+1)
+   \      0x19E   0x2002             MOVS     R0,#+2
+   \      0x1A0   0x0007             MOVS     R7,R0
+    208                break;
+   \      0x1A2   0xE29B             B        ??module_Motor_Com_u32_20
+    209              }
+    210            case SpdUpdate:
+    211              {
+    212                // Send update speed command to motor control
+    213                unsigned char speedTx[] = {0x55, 0x03, 0x21, 0x00, 0x00, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \                     ??module_Motor_Com_u32_15: (+1)
+   \      0x1A4   0xA81F             ADD      R0,SP,#+124
+   \      0x1A6   0x49CD             LDR      R1,??module_Motor_Com_u32_2
+   \      0x1A8   0xC92C             LDM      R1!,{R2,R3,R5}
+   \      0x1AA   0xC02C             STM      R0!,{R2,R3,R5}
+   \      0x1AC   0x390C             SUBS     R1,R1,#+12
+   \      0x1AE   0x380C             SUBS     R0,R0,#+12
+    214                
+    215                unsigned int speedLen = sizeof(speedTx);
+   \      0x1B0   0x200A             MOVS     R0,#+10
+   \      0x1B2   0x900B             STR      R0,[SP, #+44]
+    216                speedTx[5] = (unsigned char) (((uint16_t) (motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16) & 0xff00) >> 8);
+   \      0x1B4   0xA91F             ADD      R1,SP,#+124
+   \      0x1B6   0x4888             LDR      R0,??module_Motor_Com_u32_0+0x18
+   \      0x1B8   0x8BC2             LDRH     R2,[R0, #+30]
+   \      0x1BA   0xB292             UXTH     R2,R2
+   \      0x1BC   0x0A12             LSRS     R2,R2,#+8
+   \      0x1BE   0x714A             STRB     R2,[R1, #+5]
+    217                speedTx[6] = (unsigned char) (motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16) & 0xff;
+   \      0x1C0   0x8BC2             LDRH     R2,[R0, #+30]
+   \      0x1C2   0x718A             STRB     R2,[R1, #+6]
+    218                speedTx[7] = (unsigned char) (motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16);
+   \      0x1C4   0x8DC2             LDRH     R2,[R0, #+46]
+   \      0x1C6   0x71CA             STRB     R2,[R1, #+7]
+    219                
+    220                if(motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On)
+   \      0x1C8   0x2132             MOVS     R1,#+50
+   \      0x1CA   0x5C40             LDRB     R0,[R0, R1]
+   \      0x1CC   0x0001             MOVS     R1,R0
+   \      0x1CE   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \      0x1D0   0x0FC9             LSRS     R1,R1,#+31
+   \      0x1D2   0x2900             CMP      R1,#+0
+   \      0x1D4   0xD006             BEQ      ??module_Motor_Com_u32_25
+    221                {
+    222                  RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, speedTx, &speedLen);
+   \      0x1D6   0xAA0B             ADD      R2,SP,#+44
+   \      0x1D8   0xA91F             ADD      R1,SP,#+124
+   \      0x1DA   0x487A             LDR      R0,??module_Motor_Com_u32_0+0x4
+   \      0x1DC   0x6800             LDR      R0,[R0, #+0]
+   \      0x1DE   0x6880             LDR      R0,[R0, #+8]
+   \      0x1E0   0x....'....        BL       RingBuf_WriteBlock
+    223                }
+    224                
+    225                tt_DemandTime = getSysCount() + DemandPollPeriod;                          //update next time tick value 
+   \                     ??module_Motor_Com_u32_25: (+1)
+   \      0x1E4   0x....'....        BL       getSysCount
+   \      0x1E8   0x2200             MOVS     R2,#+0
+   \      0x1EA   0x3064             ADDS     R0,R0,#+100
+   \      0x1EC   0x4151             ADCS     R1,R1,R2
+   \      0x1EE   0x4A78             LDR      R2,??module_Motor_Com_u32_0+0x10
+   \      0x1F0   0xC203             STM      R2!,{R0,R1}
+   \      0x1F2   0x3A08             SUBS     R2,R2,#+8
+    226          	  
+    227                return_state_u8 = AppStart;
+   \      0x1F4   0x2002             MOVS     R0,#+2
+   \      0x1F6   0x0007             MOVS     R7,R0
+    228                break;
+   \      0x1F8   0xE270             B        ??module_Motor_Com_u32_20
+    229              }
+    230            case HarmonicUpdate:
+    231          	{
+    232          
+    233          	  if(blocks_to_transmit_u8 == 0)
+   \                     ??module_Motor_Com_u32_16: (+1)
+   \      0x1FA   0x48C5             LDR      R0,??module_Motor_Com_u32_3
+   \      0x1FC   0x7800             LDRB     R0,[R0, #+0]
+   \      0x1FE   0x2800             CMP      R0,#+0
+   \      0x200   0xD000             BEQ      .+4
+   \      0x202   0xE087             B        ??module_Motor_Com_u32_26
+    234          	  {
+    235          		
+    236                      // Update Harmonic Injection and send to motor control
+    237          		// Enable/Disable
+    238                      if(harmonic_data_cnt==0)
+   \      0x204   0x48C3             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x206   0x7800             LDRB     R0,[R0, #+0]
+   \      0x208   0x2800             CMP      R0,#+0
+   \      0x20A   0xD119             BNE      ??module_Motor_Com_u32_27
+    239                      {
+    240          		unsigned char harmonicEnableTx[8] = {0x55, 0x01, 0x30, 0x00, 0x00, 0xff, 0xCC, 0xCC};
+   \      0x20C   0xA80C             ADD      R0,SP,#+48
+   \      0x20E   0x49D5             LDR      R1,??module_Motor_Com_u32_4
+   \      0x210   0xC90C             LDM      R1!,{R2,R3}
+   \      0x212   0xC00C             STM      R0!,{R2,R3}
+   \      0x214   0x3908             SUBS     R1,R1,#+8
+   \      0x216   0x3808             SUBS     R0,R0,#+8
+    241          		unsigned int harmonicEnableTxLen = 8;//sizeof(harmonicEnableTx);
+   \      0x218   0x2008             MOVS     R0,#+8
+   \      0x21A   0x9003             STR      R0,[SP, #+12]
+    242                        harmonicEnableTx[5] = (unsigned char) (hi_is_harmonic_injection_allowed_hi_u8);
+   \      0x21C   0x48D2             LDR      R0,??module_Motor_Com_u32_4+0x4
+   \      0x21E   0x7800             LDRB     R0,[R0, #+0]
+   \      0x220   0xA90C             ADD      R1,SP,#+48
+   \      0x222   0x7148             STRB     R0,[R1, #+5]
+    243          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicEnableTx, &harmonicEnableTxLen);
+   \      0x224   0xAA03             ADD      R2,SP,#+12
+   \      0x226   0xA90C             ADD      R1,SP,#+48
+   \      0x228   0x4866             LDR      R0,??module_Motor_Com_u32_0+0x4
+   \      0x22A   0x6800             LDR      R0,[R0, #+0]
+   \      0x22C   0x6880             LDR      R0,[R0, #+8]
+   \      0x22E   0x....'....        BL       RingBuf_WriteBlock
+    244                          harmonic_data_cnt++;
+   \      0x232   0x48B8             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x234   0x7801             LDRB     R1,[R0, #+0]
+   \      0x236   0x1C49             ADDS     R1,R1,#+1
+   \      0x238   0x7001             STRB     R1,[R0, #+0]
+    245                          return_state_u8 = AppStart;
+   \      0x23A   0x2002             MOVS     R0,#+2
+   \      0x23C   0x0007             MOVS     R7,R0
+    246                          break;
+   \      0x23E   0xE24D             B        ??module_Motor_Com_u32_20
+    247                      }
+    248                        
+    249                      
+    250                      if(harmonic_data_cnt==1)
+   \                     ??module_Motor_Com_u32_27: (+1)
+   \      0x240   0x48B4             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x242   0x7800             LDRB     R0,[R0, #+0]
+   \      0x244   0x2801             CMP      R0,#+1
+   \      0x246   0xD131             BNE      ??module_Motor_Com_u32_28
+    251                      {
+    252          		// Amplitudes
+    253          		unsigned char harmonicAmplitudessTx[23] = {0x55, 0x10, 0x31, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+    254                                                                   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \      0x248   0xA834             ADD      R0,SP,#+208
+   \      0x24A   0x49C8             LDR      R1,??module_Motor_Com_u32_4+0x8
+   \      0x24C   0x2218             MOVS     R2,#+24
+   \      0x24E   0x....'....        BL       __aeabi_memcpy4
+    255          		unsigned int harmonicAmplitudesTxLen = 23;//sizeof(harmonicAmplitudessTx);
+   \      0x252   0x2017             MOVS     R0,#+23
+   \      0x254   0x900A             STR      R0,[SP, #+40]
+    256          		unsigned char har_amp_index=5;
+   \      0x256   0x2505             MOVS     R5,#+5
+    257                          
+    258                          for(index_u8 = 0; index_u8 < 8; index_u8++) {
+   \      0x258   0x0034             MOVS     R4,R6
+   \                     ??module_Motor_Com_u32_29: (+1)
+   \      0x25A   0x0020             MOVS     R0,R4
+   \      0x25C   0xB2C0             UXTB     R0,R0
+   \      0x25E   0x2808             CMP      R0,#+8
+   \      0x260   0xDA16             BGE      ??module_Motor_Com_u32_30
+    259                            
+    260          		  harmonicAmplitudessTx[har_amp_index] = (unsigned char) (((hi_amplitude_s16[index_u8]) & 0xff00) >> 8);
+   \      0x262   0x48D5             LDR      R0,??module_Motor_Com_u32_5
+   \      0x264   0xA934             ADD      R1,SP,#+208
+   \      0x266   0x0022             MOVS     R2,R4
+   \      0x268   0xB2D2             UXTB     R2,R2
+   \      0x26A   0x2302             MOVS     R3,#+2
+   \      0x26C   0x435A             MULS     R2,R3,R2
+   \      0x26E   0x5E82             LDRSH    R2,[R0, R2]
+   \      0x270   0x1212             ASRS     R2,R2,#+8
+   \      0x272   0x002B             MOVS     R3,R5
+   \      0x274   0xB2DB             UXTB     R3,R3
+   \      0x276   0x54CA             STRB     R2,[R1, R3]
+    261                            har_amp_index++;
+   \      0x278   0x1C6D             ADDS     R5,R5,#+1
+    262          		  harmonicAmplitudessTx[har_amp_index] = (unsigned char) (((hi_amplitude_s16[index_u8]) & 0x00ff) >> 0);
+   \      0x27A   0x0022             MOVS     R2,R4
+   \      0x27C   0xB2D2             UXTB     R2,R2
+   \      0x27E   0x2302             MOVS     R3,#+2
+   \      0x280   0x435A             MULS     R2,R3,R2
+   \      0x282   0x5A80             LDRH     R0,[R0, R2]
+   \      0x284   0x002A             MOVS     R2,R5
+   \      0x286   0xB2D2             UXTB     R2,R2
+   \      0x288   0x5488             STRB     R0,[R1, R2]
+    263                            har_amp_index++;
+   \      0x28A   0x1C6D             ADDS     R5,R5,#+1
+    264          		}	
+   \      0x28C   0x1C64             ADDS     R4,R4,#+1
+   \      0x28E   0xE7E4             B        ??module_Motor_Com_u32_29
+    265                          
+    266                                         
+    267          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicAmplitudessTx, &harmonicAmplitudesTxLen);
+   \                     ??module_Motor_Com_u32_30: (+1)
+   \      0x290   0xAA0A             ADD      R2,SP,#+40
+   \      0x292   0xA934             ADD      R1,SP,#+208
+   \      0x294   0x484B             LDR      R0,??module_Motor_Com_u32_0+0x4
+   \      0x296   0x6800             LDR      R0,[R0, #+0]
+   \      0x298   0x6880             LDR      R0,[R0, #+8]
+   \      0x29A   0x....'....        BL       RingBuf_WriteBlock
+    268          		harmonic_data_cnt++;
+   \      0x29E   0x489D             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x2A0   0x7801             LDRB     R1,[R0, #+0]
+   \      0x2A2   0x1C49             ADDS     R1,R1,#+1
+   \      0x2A4   0x7001             STRB     R1,[R0, #+0]
+    269                      return_state_u8 = AppStart;
+   \      0x2A6   0x2002             MOVS     R0,#+2
+   \      0x2A8   0x0007             MOVS     R7,R0
+    270                          break;
+   \      0x2AA   0xE217             B        ??module_Motor_Com_u32_20
+    271                    }
+    272                      
+    273          		// Angle Multipliers
+    274                      if(harmonic_data_cnt==2){
+   \                     ??module_Motor_Com_u32_28: (+1)
+   \      0x2AC   0x4D99             LDR      R5,??module_Motor_Com_u32_3+0x4
+   \      0x2AE   0x7828             LDRB     R0,[R5, #+0]
+   \      0x2B0   0x2802             CMP      R0,#+2
+   \      0x2B2   0xD12F             BNE      ??module_Motor_Com_u32_26
+    275          		unsigned char harmonicMultipliersTx[15] = {0x55, 0x08, 0x32, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
+    276                                                                   0xff, 0xff, 0xCC, 0xCC};
+   \      0x2B4   0xA81B             ADD      R0,SP,#+108
+   \      0x2B6   0x49C1             LDR      R1,??module_Motor_Com_u32_5+0x4
+   \      0x2B8   0x2210             MOVS     R2,#+16
+   \      0x2BA   0x....'....        BL       __aeabi_memcpy4
+    277          		unsigned int harmonicMultipliersTxLen = 15;//sizeof(harmonicMultipliersTx);
+   \      0x2BE   0x200F             MOVS     R0,#+15
+   \      0x2C0   0x9009             STR      R0,[SP, #+36]
+    278          		for(index_u8 = 0; index_u8 < 8; index_u8++) {
+   \      0x2C2   0x0034             MOVS     R4,R6
+   \                     ??module_Motor_Com_u32_31: (+1)
+   \      0x2C4   0x0020             MOVS     R0,R4
+   \      0x2C6   0xB2C0             UXTB     R0,R0
+   \      0x2C8   0x2808             CMP      R0,#+8
+   \      0x2CA   0xDA0A             BGE      ??module_Motor_Com_u32_32
+    279          		  harmonicMultipliersTx[5+index_u8] = (unsigned char) (hi_angle_multiplier_hi_u8[index_u8]);
+   \      0x2CC   0x48BC             LDR      R0,??module_Motor_Com_u32_5+0x8
+   \      0x2CE   0x0021             MOVS     R1,R4
+   \      0x2D0   0xB2C9             UXTB     R1,R1
+   \      0x2D2   0x5C40             LDRB     R0,[R0, R1]
+   \      0x2D4   0xA91B             ADD      R1,SP,#+108
+   \      0x2D6   0x0022             MOVS     R2,R4
+   \      0x2D8   0xB2D2             UXTB     R2,R2
+   \      0x2DA   0x1889             ADDS     R1,R1,R2
+   \      0x2DC   0x7148             STRB     R0,[R1, #+5]
+    280          		}
+   \      0x2DE   0x1C64             ADDS     R4,R4,#+1
+   \      0x2E0   0xE7F0             B        ??module_Motor_Com_u32_31
+    281          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicMultipliersTx, &harmonicMultipliersTxLen);
+   \                     ??module_Motor_Com_u32_32: (+1)
+   \      0x2E2   0xAA09             ADD      R2,SP,#+36
+   \      0x2E4   0xA91B             ADD      R1,SP,#+108
+   \      0x2E6   0x4837             LDR      R0,??module_Motor_Com_u32_0+0x4
+   \      0x2E8   0x6800             LDR      R0,[R0, #+0]
+   \      0x2EA   0x6880             LDR      R0,[R0, #+8]
+   \      0x2EC   0x....'....        BL       RingBuf_WriteBlock
+    282          	  
+    283          		blocks_to_transmit_u8++;	// increment counter to next transmit block
+   \      0x2F0   0x4887             LDR      R0,??module_Motor_Com_u32_3
+   \      0x2F2   0x7801             LDRB     R1,[R0, #+0]
+   \      0x2F4   0x1C49             ADDS     R1,R1,#+1
+   \      0x2F6   0x7001             STRB     R1,[R0, #+0]
+    284          		tt_HarmonicUpdateTime = getSysCount() + TIME_BETWEEN_STAGGERED_HI_TX_BLOCKS;
+   \      0x2F8   0x....'....        BL       getSysCount
+   \      0x2FC   0x2200             MOVS     R2,#+0
+   \      0x2FE   0x30C8             ADDS     R0,R0,#+200
+   \      0x300   0x4151             ADCS     R1,R1,R2
+   \      0x302   0x4A34             LDR      R2,??module_Motor_Com_u32_0+0x14
+   \      0x304   0xC203             STM      R2!,{R0,R1}
+   \      0x306   0x3A08             SUBS     R2,R2,#+8
+    285                	return_state_u8 = AppStart;  // revert back to AppStart state
+   \      0x308   0x2002             MOVS     R0,#+2
+   \      0x30A   0x0007             MOVS     R7,R0
+    286                          harmonic_data_cnt++;
+   \      0x30C   0x7828             LDRB     R0,[R5, #+0]
+   \      0x30E   0x1C40             ADDS     R0,R0,#+1
+   \      0x310   0x7028             STRB     R0,[R5, #+0]
+    287                      
+    288          	  	break;	 
+   \      0x312   0xE1E3             B        ??module_Motor_Com_u32_20
+    289                    }
+    290          	  }
+    291          	  
+    292          	  if(blocks_to_transmit_u8 == 1)
+   \                     ??module_Motor_Com_u32_26: (+1)
+   \      0x314   0x487E             LDR      R0,??module_Motor_Com_u32_3
+   \      0x316   0x7800             LDRB     R0,[R0, #+0]
+   \      0x318   0x2801             CMP      R0,#+1
+   \      0x31A   0xD178             BNE      ??module_Motor_Com_u32_33
+    293          	  {
+    294                      if(harmonic_data_cnt==3)
+   \      0x31C   0x487D             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x31E   0x7800             LDRB     R0,[R0, #+0]
+   \      0x320   0x2803             CMP      R0,#+3
+   \      0x322   0xD132             BNE      ??module_Motor_Com_u32_34
+    295                      {
+    296          		// Angle Offsets
+    297          		unsigned char harmonicOffsetsTx[23] = {0x55, 0x10, 0x33, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 
+    298                                                              0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \      0x324   0xA82E             ADD      R0,SP,#+184
+   \      0x326   0x49D0             LDR      R1,??module_Motor_Com_u32_6
+   \      0x328   0x2218             MOVS     R2,#+24
+   \      0x32A   0x....'....        BL       __aeabi_memcpy4
+    299          		unsigned int harmonicOffsetsTxLen = 23;// sizeof(harmonicOffsetsTx);
+   \      0x32E   0x2017             MOVS     R0,#+23
+   \      0x330   0x9008             STR      R0,[SP, #+32]
+    300                          unsigned char har_offset_index=5;
+   \      0x332   0x2505             MOVS     R5,#+5
+    301                          
+    302          		for(index_u8 = 0; index_u8 < 8; index_u8++)
+   \      0x334   0x0034             MOVS     R4,R6
+   \                     ??module_Motor_Com_u32_35: (+1)
+   \      0x336   0x0020             MOVS     R0,R4
+   \      0x338   0xB2C0             UXTB     R0,R0
+   \      0x33A   0x2808             CMP      R0,#+8
+   \      0x33C   0xDA17             BGE      ??module_Motor_Com_u32_36
+    303                          {
+    304          		  harmonicOffsetsTx[har_offset_index] = (unsigned char) (((hi_angle_offset_u16[index_u8]) & 0xff00) >> 8);
+   \      0x33E   0x48CB             LDR      R0,??module_Motor_Com_u32_6+0x4
+   \      0x340   0xA92E             ADD      R1,SP,#+184
+   \      0x342   0x0022             MOVS     R2,R4
+   \      0x344   0xB2D2             UXTB     R2,R2
+   \      0x346   0x2302             MOVS     R3,#+2
+   \      0x348   0x435A             MULS     R2,R3,R2
+   \      0x34A   0x5A82             LDRH     R2,[R0, R2]
+   \      0x34C   0xB292             UXTH     R2,R2
+   \      0x34E   0x0A12             LSRS     R2,R2,#+8
+   \      0x350   0x002B             MOVS     R3,R5
+   \      0x352   0xB2DB             UXTB     R3,R3
+   \      0x354   0x54CA             STRB     R2,[R1, R3]
+    305          		 har_offset_index++;
+   \      0x356   0x1C6D             ADDS     R5,R5,#+1
+    306                            harmonicOffsetsTx[har_offset_index] = (unsigned char) (((hi_angle_offset_u16[index_u8]) & 0x00ff) >> 0);
+   \      0x358   0x0022             MOVS     R2,R4
+   \      0x35A   0xB2D2             UXTB     R2,R2
+   \      0x35C   0x2302             MOVS     R3,#+2
+   \      0x35E   0x435A             MULS     R2,R3,R2
+   \      0x360   0x5A80             LDRH     R0,[R0, R2]
+   \      0x362   0x002A             MOVS     R2,R5
+   \      0x364   0xB2D2             UXTB     R2,R2
+   \      0x366   0x5488             STRB     R0,[R1, R2]
+    307          		har_offset_index++;
+   \      0x368   0x1C6D             ADDS     R5,R5,#+1
+    308                          }	  
+   \      0x36A   0x1C64             ADDS     R4,R4,#+1
+   \      0x36C   0xE7E3             B        ??module_Motor_Com_u32_35
+    309          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicOffsetsTx, &harmonicOffsetsTxLen);
+   \                     ??module_Motor_Com_u32_36: (+1)
+   \      0x36E   0xAA08             ADD      R2,SP,#+32
+   \      0x370   0xA92E             ADD      R1,SP,#+184
+   \      0x372   0x4814             LDR      R0,??module_Motor_Com_u32_0+0x4
+   \      0x374   0x6800             LDR      R0,[R0, #+0]
+   \      0x376   0x6880             LDR      R0,[R0, #+8]
+   \      0x378   0x....'....        BL       RingBuf_WriteBlock
+    310                          harmonic_data_cnt++;
+   \      0x37C   0x4865             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x37E   0x7801             LDRB     R1,[R0, #+0]
+   \      0x380   0x1C49             ADDS     R1,R1,#+1
+   \      0x382   0x7001             STRB     R1,[R0, #+0]
+    311                          return_state_u8 = AppStart;
+   \      0x384   0x2002             MOVS     R0,#+2
+   \      0x386   0x0007             MOVS     R7,R0
+    312          	         break;
+   \      0x388   0xE1A8             B        ??module_Motor_Com_u32_20
+    313                      }
+    314          		// Inversions
+    315                      if(harmonic_data_cnt==4)
+   \                     ??module_Motor_Com_u32_34: (+1)
+   \      0x38A   0x4D62             LDR      R5,??module_Motor_Com_u32_3+0x4
+   \      0x38C   0x7828             LDRB     R0,[R5, #+0]
+   \      0x38E   0x2804             CMP      R0,#+4
+   \      0x390   0xD12E             BNE      ??module_Motor_Com_u32_37
+    316                      {
+    317          		unsigned char harmonicInversionsTx[15] = {0x55, 0x08, 0x34, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 
+    318                                                                  0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \      0x392   0xA817             ADD      R0,SP,#+92
+   \      0x394   0x....             LDR      R1,??DataTable0
+   \      0x396   0x2210             MOVS     R2,#+16
+   \      0x398   0x....'....        BL       __aeabi_memcpy4
+    319          		unsigned int harmonicInversionsTxLen = 15;//sizeof(harmonicInversionsTx);
+   \      0x39C   0x200F             MOVS     R0,#+15
+   \      0x39E   0x9007             STR      R0,[SP, #+28]
+    320          		for(index_u8 = 0; index_u8 < 8; index_u8++) {
+   \      0x3A0   0x0034             MOVS     R4,R6
+   \                     ??module_Motor_Com_u32_38: (+1)
+   \      0x3A2   0x0020             MOVS     R0,R4
+   \      0x3A4   0xB2C0             UXTB     R0,R0
+   \      0x3A6   0x2808             CMP      R0,#+8
+   \      0x3A8   0xDA18             BGE      ??module_Motor_Com_u32_39
+    321          		  harmonicInversionsTx[5+index_u8] = (unsigned char) (hi_is_phase_inverted_u8[index_u8]);
+   \      0x3AA   0x....             LDR      R0,??DataTable0_1
+   \      0x3AC   0x0021             MOVS     R1,R4
+   \      0x3AE   0xB2C9             UXTB     R1,R1
+   \      0x3B0   0x5C40             LDRB     R0,[R0, R1]
+   \      0x3B2   0xA917             ADD      R1,SP,#+92
+   \      0x3B4   0x0022             MOVS     R2,R4
+   \      0x3B6   0xB2D2             UXTB     R2,R2
+   \      0x3B8   0x1889             ADDS     R1,R1,R2
+   \      0x3BA   0x7148             STRB     R0,[R1, #+5]
+    322          		}
+   \      0x3BC   0x1C64             ADDS     R4,R4,#+1
+   \      0x3BE   0xE7F0             B        ??module_Motor_Com_u32_38
+   \                     ??module_Motor_Com_u32_0:
+   \      0x3C0   0x....'....        DC32     processInfoTable
+   \      0x3C4   0x....'....        DC32     usart2Control_AppLocal
+   \      0x3C8   0x....'....        DC32     digitalInputControl_motorCom_ptr
+   \      0x3CC   0x....'....        DC32     motorDemandMuxControl_ptr
+   \      0x3D0   0x....'....        DC32     tt_DemandTime
+   \      0x3D4   0x....'....        DC32     tt_HarmonicUpdateTime
+   \      0x3D8   0x....'....        DC32     motor_Com_Control
+    323          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicInversionsTx, &harmonicInversionsTxLen);
+   \                     ??module_Motor_Com_u32_39: (+1)
+   \      0x3DC   0xAA07             ADD      R2,SP,#+28
+   \      0x3DE   0xA917             ADD      R1,SP,#+92
+   \      0x3E0   0x....             LDR      R0,??DataTable0_2
+   \      0x3E2   0x6800             LDR      R0,[R0, #+0]
+   \      0x3E4   0x6880             LDR      R0,[R0, #+8]
+   \      0x3E6   0x....'....        BL       RingBuf_WriteBlock
+    324                          harmonic_data_cnt++;
+   \      0x3EA   0x7828             LDRB     R0,[R5, #+0]
+   \      0x3EC   0x1C40             ADDS     R0,R0,#+1
+   \      0x3EE   0x7028             STRB     R0,[R5, #+0]
+    325          		
+    326                      }
+    327          		blocks_to_transmit_u8++;	// increment couner to next transmit block
+   \                     ??module_Motor_Com_u32_37: (+1)
+   \      0x3F0   0x4847             LDR      R0,??module_Motor_Com_u32_3
+   \      0x3F2   0x7801             LDRB     R1,[R0, #+0]
+   \      0x3F4   0x1C49             ADDS     R1,R1,#+1
+   \      0x3F6   0x7001             STRB     R1,[R0, #+0]
+    328          		//blocks_to_transmit_u8 = 0;
+    329          		tt_HarmonicUpdateTime = getSysCount() + TIME_BETWEEN_STAGGERED_HI_TX_BLOCKS;
+   \      0x3F8   0x....'....        BL       getSysCount
+   \      0x3FC   0x2200             MOVS     R2,#+0
+   \      0x3FE   0x30C8             ADDS     R0,R0,#+200
+   \      0x400   0x4151             ADCS     R1,R1,R2
+   \      0x402   0x....             LDR      R2,??DataTable0_3
+   \      0x404   0xC203             STM      R2!,{R0,R1}
+   \      0x406   0x3A08             SUBS     R2,R2,#+8
+    330                	return_state_u8 = AppStart;  // revert back to AppStart state
+   \      0x408   0x2002             MOVS     R0,#+2
+   \      0x40A   0x0007             MOVS     R7,R0
+    331          	  	break;	 
+   \      0x40C   0xE166             B        ??module_Motor_Com_u32_20
+    332          	  }
+    333            
+    334          	  if(blocks_to_transmit_u8 == 2)
+   \                     ??module_Motor_Com_u32_33: (+1)
+   \      0x40E   0x4840             LDR      R0,??module_Motor_Com_u32_3
+   \      0x410   0x7800             LDRB     R0,[R0, #+0]
+   \      0x412   0x2802             CMP      R0,#+2
+   \      0x414   0xD170             BNE      ??module_Motor_Com_u32_40
+    335          	  {
+    336                      if(harmonic_data_cnt==5)
+   \      0x416   0x483F             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x418   0x7800             LDRB     R0,[R0, #+0]
+   \      0x41A   0x2805             CMP      R0,#+5
+   \      0x41C   0xD134             BNE      ??module_Motor_Com_u32_41
+    337                      {
+    338          		// Minimum Speeds
+    339          		unsigned char harmonicMinSpeedsTx[23] = {0x55, 0x10, 0x35, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 
+    340                                                                 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \      0x41E   0xA828             ADD      R0,SP,#+160
+   \      0x420   0x....             LDR      R1,??DataTable0_4
+   \      0x422   0x2218             MOVS     R2,#+24
+   \      0x424   0x....'....        BL       __aeabi_memcpy4
+    341          		unsigned int harmonicMinSpeedsTxLen = 23;//sizeof(harmonicMinSpeedsTx);
+   \      0x428   0x2017             MOVS     R0,#+23
+   \      0x42A   0x9006             STR      R0,[SP, #+24]
+    342          		unsigned char harmonic_minspeed_index=5;
+   \      0x42C   0x2505             MOVS     R5,#+5
+    343                          for(index_u8 = 0; index_u8 < 8; index_u8++) {
+   \      0x42E   0x0034             MOVS     R4,R6
+   \                     ??module_Motor_Com_u32_42: (+1)
+   \      0x430   0x0020             MOVS     R0,R4
+   \      0x432   0xB2C0             UXTB     R0,R0
+   \      0x434   0x2808             CMP      R0,#+8
+   \      0x436   0xDA17             BGE      ??module_Motor_Com_u32_43
+    344          		  harmonicMinSpeedsTx[harmonic_minspeed_index] = (unsigned char) (((hi_min_speed_u16[index_u8]) & 0xff00) >> 8);
+   \      0x438   0x....             LDR      R0,??DataTable1
+   \      0x43A   0xA928             ADD      R1,SP,#+160
+   \      0x43C   0x0022             MOVS     R2,R4
+   \      0x43E   0xB2D2             UXTB     R2,R2
+   \      0x440   0x2302             MOVS     R3,#+2
+   \      0x442   0x435A             MULS     R2,R3,R2
+   \      0x444   0x5A82             LDRH     R2,[R0, R2]
+   \      0x446   0xB292             UXTH     R2,R2
+   \      0x448   0x0A12             LSRS     R2,R2,#+8
+   \      0x44A   0x002B             MOVS     R3,R5
+   \      0x44C   0xB2DB             UXTB     R3,R3
+   \      0x44E   0x54CA             STRB     R2,[R1, R3]
+    345          		  harmonic_minspeed_index++;
+   \      0x450   0x1C6D             ADDS     R5,R5,#+1
+    346                            harmonicMinSpeedsTx[harmonic_minspeed_index] = (unsigned char) (((hi_min_speed_u16[index_u8]) & 0x00ff) >> 0);
+   \      0x452   0x0022             MOVS     R2,R4
+   \      0x454   0xB2D2             UXTB     R2,R2
+   \      0x456   0x2302             MOVS     R3,#+2
+   \      0x458   0x435A             MULS     R2,R3,R2
+   \      0x45A   0x5A80             LDRH     R0,[R0, R2]
+   \      0x45C   0x002A             MOVS     R2,R5
+   \      0x45E   0xB2D2             UXTB     R2,R2
+   \      0x460   0x5488             STRB     R0,[R1, R2]
+    347          		  harmonic_minspeed_index++;
+   \      0x462   0x1C6D             ADDS     R5,R5,#+1
+    348                          }	  
+   \      0x464   0x1C64             ADDS     R4,R4,#+1
+   \      0x466   0xE7E3             B        ??module_Motor_Com_u32_42
+    349          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicMinSpeedsTx, &harmonicMinSpeedsTxLen);
+   \                     ??module_Motor_Com_u32_43: (+1)
+   \      0x468   0xAA06             ADD      R2,SP,#+24
+   \      0x46A   0xA928             ADD      R1,SP,#+160
+   \      0x46C   0x....             LDR      R0,??DataTable0_2
+   \      0x46E   0x6800             LDR      R0,[R0, #+0]
+   \      0x470   0x6880             LDR      R0,[R0, #+8]
+   \      0x472   0x....'....        BL       RingBuf_WriteBlock
+    350          	        harmonic_data_cnt++;
+   \      0x476   0x4827             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x478   0x7801             LDRB     R1,[R0, #+0]
+   \      0x47A   0x1C49             ADDS     R1,R1,#+1
+   \      0x47C   0x7001             STRB     R1,[R0, #+0]
+    351                          return_state_u8 = AppStart;
+   \      0x47E   0x2002             MOVS     R0,#+2
+   \      0x480   0x0007             MOVS     R7,R0
+    352                          break;
+   \      0x482   0xE12B             B        ??module_Motor_Com_u32_20
+   \                     ??module_Motor_Com_u32_1:
+   \      0x484   0x461C'4000        DC32     0x461c4000
+    353                      }
+    354          		if(harmonic_data_cnt==6)
+   \                     ??module_Motor_Com_u32_41: (+1)
+   \      0x488   0x4822             LDR      R0,??module_Motor_Com_u32_3+0x4
+   \      0x48A   0x7800             LDRB     R0,[R0, #+0]
+   \      0x48C   0x2806             CMP      R0,#+6
+   \      0x48E   0xD131             BNE      ??module_Motor_Com_u32_44
+    355                          {
+    356                      // Maximum Speeds
+    357          		unsigned char harmonicMaxSpeedsTx[23] = {0x55, 0x10, 0x36, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 
+    358                                                                 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \      0x490   0xA822             ADD      R0,SP,#+136
+   \      0x492   0x....             LDR      R1,??DataTable2
+   \      0x494   0x2218             MOVS     R2,#+24
+   \      0x496   0x....'....        BL       __aeabi_memcpy4
+    359          		unsigned int harmonicMaxSpeedsTxLen = 23;//sizeof(harmonicMaxSpeedsTx);
+   \      0x49A   0x2017             MOVS     R0,#+23
+   \      0x49C   0x9005             STR      R0,[SP, #+20]
+    360                          unsigned char harmonic_maxspeed_index=5;
+   \      0x49E   0x2505             MOVS     R5,#+5
+    361          		
+    362                          for(index_u8 = 0; index_u8 < 8; index_u8++) {
+   \      0x4A0   0x0030             MOVS     R0,R6
+   \      0x4A2   0x0004             MOVS     R4,R0
+   \                     ??module_Motor_Com_u32_45: (+1)
+   \      0x4A4   0x0020             MOVS     R0,R4
+   \      0x4A6   0xB2C0             UXTB     R0,R0
+   \      0x4A8   0x2808             CMP      R0,#+8
+   \      0x4AA   0xDA19             BGE      ??module_Motor_Com_u32_46
+    363          		  harmonicMaxSpeedsTx[harmonic_maxspeed_index] = (unsigned char) (((hi_max_speed_u16[index_u8]) & 0xff00) >> 8);
+   \      0x4AC   0x....             LDR      R0,??DataTable3
+   \      0x4AE   0xA922             ADD      R1,SP,#+136
+   \      0x4B0   0x0022             MOVS     R2,R4
+   \      0x4B2   0xB2D2             UXTB     R2,R2
+   \      0x4B4   0x2302             MOVS     R3,#+2
+   \      0x4B6   0x435A             MULS     R2,R3,R2
+   \      0x4B8   0x5A82             LDRH     R2,[R0, R2]
+   \      0x4BA   0xB292             UXTH     R2,R2
+   \      0x4BC   0x0A12             LSRS     R2,R2,#+8
+   \      0x4BE   0x002B             MOVS     R3,R5
+   \      0x4C0   0xB2DB             UXTB     R3,R3
+   \      0x4C2   0x54CA             STRB     R2,[R1, R3]
+    364          		  harmonic_maxspeed_index++;
+   \      0x4C4   0x1C6D             ADDS     R5,R5,#+1
+    365                            harmonicMaxSpeedsTx[harmonic_maxspeed_index] = (unsigned char) (((hi_max_speed_u16[index_u8]) & 0x00ff) >> 0);
+   \      0x4C6   0x0022             MOVS     R2,R4
+   \      0x4C8   0xB2D2             UXTB     R2,R2
+   \      0x4CA   0x2302             MOVS     R3,#+2
+   \      0x4CC   0x435A             MULS     R2,R3,R2
+   \      0x4CE   0x5A80             LDRH     R0,[R0, R2]
+   \      0x4D0   0x002A             MOVS     R2,R5
+   \      0x4D2   0xB2D2             UXTB     R2,R2
+   \      0x4D4   0x5488             STRB     R0,[R1, R2]
+    366          		 harmonic_maxspeed_index++;
+   \      0x4D6   0x1C6D             ADDS     R5,R5,#+1
+    367                          }	  
+   \      0x4D8   0x1C64             ADDS     R4,R4,#+1
+   \      0x4DA   0xE7E3             B        ??module_Motor_Com_u32_45
+   \                     ??module_Motor_Com_u32_2:
+   \      0x4DC   0x....'....        DC32     ?_0
+    368          		RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, harmonicMaxSpeedsTx, &harmonicMaxSpeedsTxLen);
+   \                     ??module_Motor_Com_u32_46: (+1)
+   \      0x4E0   0xAA05             ADD      R2,SP,#+20
+   \      0x4E2   0xA922             ADD      R1,SP,#+136
+   \      0x4E4   0x....             LDR      R0,??DataTable0_2
+   \      0x4E6   0x6800             LDR      R0,[R0, #+0]
+   \      0x4E8   0x6880             LDR      R0,[R0, #+8]
+   \      0x4EA   0x....'....        BL       RingBuf_WriteBlock
+    369          		harmonic_data_cnt=0;
+   \      0x4EE   0x0030             MOVS     R0,R6
+   \      0x4F0   0x4908             LDR      R1,??module_Motor_Com_u32_3+0x4
+   \      0x4F2   0x7008             STRB     R0,[R1, #+0]
+    370                          }
+    371          		blocks_to_transmit_u8 = 0;	// reset block counter back to beginning
+   \                     ??module_Motor_Com_u32_44: (+1)
+   \      0x4F4   0x4806             LDR      R0,??module_Motor_Com_u32_3
+   \      0x4F6   0x7006             STRB     R6,[R0, #+0]
+    372          	  }
+    373          	  
+    374          	  tt_HarmonicUpdateTime = getSysCount() + TIME_BETWEEN_STAGGERED_HI_TX_BLOCKS;      
+   \                     ??module_Motor_Com_u32_40: (+1)
+   \      0x4F8   0x....'....        BL       getSysCount
+   \      0x4FC   0x2200             MOVS     R2,#+0
+   \      0x4FE   0x30C8             ADDS     R0,R0,#+200
+   \      0x500   0x4151             ADCS     R1,R1,R2
+   \      0x502   0x....             LDR      R2,??DataTable0_3
+   \      0x504   0xC203             STM      R2!,{R0,R1}
+   \      0x506   0x3A08             SUBS     R2,R2,#+8
+    375                   
+    376                    return_state_u8 = AppStart;  // revert back to AppStart state
+   \      0x508   0x2002             MOVS     R0,#+2
+   \      0x50A   0x0007             MOVS     R7,R0
+    377          	  break;  
+   \      0x50C   0xE0E6             B        ??module_Motor_Com_u32_20
+   \      0x50E   0xBF00             Nop
+   \                     ??module_Motor_Com_u32_3:
+   \      0x510   0x....'....        DC32     `module_Motor_Com_u32::blocks_to_transmit_u8`
+   \      0x514   0x....'....        DC32     `module_Motor_Com_u32::harmonic_data_cnt`
+    378          	}
+    379            case startMotor:
+    380              { // To start motor send SetSpeed command
+    381                // No longer need to send start command to start motor  
+    382                
+    383                // Set direction of rotation based on digital inputs
+    384                // - TODO: Replace this section with MotorDemandMux_GetDirection()
+    385                if((*digitalInputControl_motorCom_ptr).digitalInputs_Data.discretes_u16.is_invertDirection)
+   \                     ??module_Motor_Com_u32_10: (+1)
+   \      0x518   0x2001             MOVS     R0,#+1
+   \      0x51A   0x....             LDR      R1,??DataTable4
+   \      0x51C   0x6809             LDR      R1,[R1, #+0]
+   \      0x51E   0x224E             MOVS     R2,#+78
+   \      0x520   0x5A89             LDRH     R1,[R1, R2]
+   \      0x522   0x4001             ANDS     R1,R1,R0
+   \      0x524   0xB289             UXTH     R1,R1
+   \      0x526   0x2900             CMP      R1,#+0
+   \      0x528   0xD009             BEQ      ??module_Motor_Com_u32_47
+    386                {
+    387                  if(motor_Com_Control.motor_Setting.motor_Direction_u16 == CCW) 
+   \      0x52A   0x....             LDR      R1,??DataTable5
+   \      0x52C   0x8A0A             LDRH     R2,[R1, #+16]
+   \      0x52E   0x2A09             CMP      R2,#+9
+   \      0x530   0xD102             BNE      ??module_Motor_Com_u32_48
+    388                  {
+    389                    motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16= CW;
+   \      0x532   0x2206             MOVS     R2,#+6
+   \      0x534   0x85CA             STRH     R2,[R1, #+46]
+   \      0x536   0xE005             B        ??module_Motor_Com_u32_49
+    390                  } else
+    391                  {
+    392                    motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16 = CCW;
+   \                     ??module_Motor_Com_u32_48: (+1)
+   \      0x538   0x2209             MOVS     R2,#+9
+   \      0x53A   0x85CA             STRH     R2,[R1, #+46]
+   \      0x53C   0xE002             B        ??module_Motor_Com_u32_49
+    393                  }
+    394                } else
+    395                {
+    396                  motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16 = motor_Com_Control.motor_Setting.motor_Direction_u16;
+   \                     ??module_Motor_Com_u32_47: (+1)
+   \      0x53E   0x....             LDR      R1,??DataTable5
+   \      0x540   0x8A0A             LDRH     R2,[R1, #+16]
+   \      0x542   0x85CA             STRH     R2,[R1, #+46]
+    397                }
+    398                
+    399                motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On = TRUE;
+   \                     ??module_Motor_Com_u32_49: (+1)
+   \      0x544   0x....             LDR      R1,??DataTable5
+   \      0x546   0x8E4A             LDRH     R2,[R1, #+50]
+   \      0x548   0x4310             ORRS     R0,R0,R2
+   \      0x54A   0x8648             STRH     R0,[R1, #+50]
+    400                return_state_u8 = AppStart;
+   \      0x54C   0x2002             MOVS     R0,#+2
+   \      0x54E   0x0007             MOVS     R7,R0
+    401                //send_Periodic_Data_Request(); // Send UP message to get motor data periodically
+    402                tt_DemandTime = getSysCount() + DemandPollPeriod; // REVIEW: Keeps frames from getting sandwiched together, not necessary in this case
+   \      0x550   0x....'....        BL       getSysCount
+   \      0x554   0x2200             MOVS     R2,#+0
+   \      0x556   0x3064             ADDS     R0,R0,#+100
+   \      0x558   0x4151             ADCS     R1,R1,R2
+   \      0x55A   0x....             LDR      R2,??DataTable4_1
+   \      0x55C   0xC203             STM      R2!,{R0,R1}
+   \      0x55E   0x3A08             SUBS     R2,R2,#+8
+    403                break;
+   \      0x560   0xE0BC             B        ??module_Motor_Com_u32_20
+   \      0x562   0xBF00             Nop
+   \                     ??module_Motor_Com_u32_4:
+   \      0x564   0x....'....        DC32     ?_1
+   \      0x568   0x....'....        DC32     hi_is_harmonic_injection_allowed_hi_u8
+   \      0x56C   0x....'....        DC32     ?_2
+    404              }
+    405            case slowDnMotor2Stop:
+    406              { // Slow down the motor to stop
+    407                //LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_6); //SPA
+    408                unsigned char speedTx[] = {0x55, 0x03, 0x21, 0x00, 0x00, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \                     ??module_Motor_Com_u32_11: (+1)
+   \      0x570   0xA814             ADD      R0,SP,#+80
+   \      0x572   0x....             LDR      R1,??DataTable4_2
+   \      0x574   0xC92C             LDM      R1!,{R2,R3,R5}
+   \      0x576   0xC02C             STM      R0!,{R2,R3,R5}
+   \      0x578   0x390C             SUBS     R1,R1,#+12
+   \      0x57A   0x380C             SUBS     R0,R0,#+12
+    409                unsigned int speedLen = sizeof(speedTx);
+   \      0x57C   0x200A             MOVS     R0,#+10
+   \      0x57E   0x9004             STR      R0,[SP, #+16]
+    410                //put 200 rpm lower speed 
+    411                speedTx[5] = (unsigned char) (((uint16_t)(motor_Com_Control.motor_Setting.min_Speed_u16) & 0xff00) >> 8);
+   \      0x580   0xA914             ADD      R1,SP,#+80
+   \      0x582   0x....             LDR      R0,??DataTable5
+   \      0x584   0x8842             LDRH     R2,[R0, #+2]
+   \      0x586   0xB292             UXTH     R2,R2
+   \      0x588   0x0A12             LSRS     R2,R2,#+8
+   \      0x58A   0x714A             STRB     R2,[R1, #+5]
+    412                speedTx[6] = (unsigned char) (motor_Com_Control.motor_Setting.min_Speed_u16) & 0xff;  
+   \      0x58C   0x8842             LDRH     R2,[R0, #+2]
+   \      0x58E   0x718A             STRB     R2,[R1, #+6]
+    413                speedTx[7] = (unsigned char) (motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16);
+   \      0x590   0x8DC2             LDRH     R2,[R0, #+46]
+   \      0x592   0x71CA             STRB     R2,[R1, #+7]
+    414                
+    415                if(motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On)
+   \      0x594   0x2132             MOVS     R1,#+50
+   \      0x596   0x5C40             LDRB     R0,[R0, R1]
+   \      0x598   0x0001             MOVS     R1,R0
+   \      0x59A   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \      0x59C   0x0FC9             LSRS     R1,R1,#+31
+   \      0x59E   0x2900             CMP      R1,#+0
+   \      0x5A0   0xD006             BEQ      ??module_Motor_Com_u32_50
+    416                {
+    417                  RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, speedTx, &speedLen);
+   \      0x5A2   0xAA04             ADD      R2,SP,#+16
+   \      0x5A4   0xA914             ADD      R1,SP,#+80
+   \      0x5A6   0x....             LDR      R0,??DataTable0_2
+   \      0x5A8   0x6800             LDR      R0,[R0, #+0]
+   \      0x5AA   0x6880             LDR      R0,[R0, #+8]
+   \      0x5AC   0x....'....        BL       RingBuf_WriteBlock
+    418                }
+    419                return_state_u8 = stopMotor;
+   \                     ??module_Motor_Com_u32_50: (+1)
+   \      0x5B0   0x2005             MOVS     R0,#+5
+   \      0x5B2   0x0007             MOVS     R7,R0
+    420                break;
+   \      0x5B4   0xE092             B        ??module_Motor_Com_u32_20
+   \      0x5B6   0xBF00             Nop
+   \                     ??module_Motor_Com_u32_5:
+   \      0x5B8   0x....'....        DC32     hi_amplitude_s16
+   \      0x5BC   0x....'....        DC32     ?_3
+   \      0x5C0   0x....'....        DC32     hi_angle_multiplier_hi_u8
+    421              }       
+    422            case stopMotor: 
+    423              {   
+    424                unsigned int speedLen;
+    425                if(!(motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On) || (motor_Com_Control.motor_Metering_Data.motor_Status_u16 != 0)) //motor is off already or any fault happen
+   \                     ??module_Motor_Com_u32_12: (+1)
+   \      0x5C4   0x....             LDR      R1,??DataTable5
+   \      0x5C6   0x2032             MOVS     R0,#+50
+   \      0x5C8   0x5C08             LDRB     R0,[R1, R0]
+   \      0x5CA   0x0002             MOVS     R2,R0
+   \      0x5CC   0x07D2             LSLS     R2,R2,#+31       ;; ZeroExtS R2,R2,#+31,#+31
+   \      0x5CE   0x0FD2             LSRS     R2,R2,#+31
+   \      0x5D0   0x2A00             CMP      R2,#+0
+   \      0x5D2   0xD002             BEQ      ??module_Motor_Com_u32_51
+   \      0x5D4   0x8D88             LDRH     R0,[R1, #+44]
+   \      0x5D6   0x2800             CMP      R0,#+0
+   \      0x5D8   0xD01E             BEQ      ??module_Motor_Com_u32_52
+    426                { // in unknow situation
+    427                  //LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_6); //SPA
+    428                  unsigned char speedTx[] = {0x55, 0x03, 0x21, 0x00, 0x00, 0x00, 0x00, 0xff, 0xCC, 0xCC}; // Send speed set point of "0"
+   \                     ??module_Motor_Com_u32_51: (+1)
+   \      0x5DA   0xA811             ADD      R0,SP,#+68
+   \      0x5DC   0x....             LDR      R2,??DataTable6
+   \      0x5DE   0xCA68             LDM      R2!,{R3,R5,R6}
+   \      0x5E0   0xC068             STM      R0!,{R3,R5,R6}
+   \      0x5E2   0x3A0C             SUBS     R2,R2,#+12
+   \      0x5E4   0x380C             SUBS     R0,R0,#+12
+    429                  speedLen = sizeof(speedTx);
+   \      0x5E6   0x200A             MOVS     R0,#+10
+   \      0x5E8   0x9002             STR      R0,[SP, #+8]
+    430                  speedTx[7] = (unsigned char) (motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16);
+   \      0x5EA   0x8DC8             LDRH     R0,[R1, #+46]
+   \      0x5EC   0xA911             ADD      R1,SP,#+68
+   \      0x5EE   0x71C8             STRB     R0,[R1, #+7]
+    431                  RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, speedTx, &speedLen);
+   \      0x5F0   0xAA02             ADD      R2,SP,#+8
+   \      0x5F2   0xA911             ADD      R1,SP,#+68
+   \      0x5F4   0x....             LDR      R0,??DataTable0_2
+   \      0x5F6   0x6800             LDR      R0,[R0, #+0]
+   \      0x5F8   0x6880             LDR      R0,[R0, #+8]
+   \      0x5FA   0x....'....        BL       RingBuf_WriteBlock
+    432                  //unsigned char speedTx1[] = {0x55, 0x00, 0x01, 0x00, 0x00, 0xCC, 0xCC};
+    433                  //speedLen = sizeof(speedTx1);
+    434                  //RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, speedTx1, &speedLen); //send stop command  
+    435                  tt_StopMotorResume = getSysCount() + MotorStopResumePeriodMax;                 //set wait time delay to max
+   \      0x5FE   0x....'....        BL       getSysCount
+   \      0x602   0x22FA             MOVS     R2,#+250
+   \      0x604   0x00D2             LSLS     R2,R2,#+3        ;; #+2000
+   \      0x606   0x2300             MOVS     R3,#+0
+   \      0x608   0x1812             ADDS     R2,R2,R0
+   \      0x60A   0x414B             ADCS     R3,R3,R1
+   \      0x60C   0x....             LDR      R0,??DataTable6_1
+   \      0x60E   0xC00C             STM      R0!,{R2,R3}
+   \      0x610   0x3808             SUBS     R0,R0,#+8
+    436                  return_state_u8 = waitForIdle;
+   \      0x612   0x2006             MOVS     R0,#+6
+   \      0x614   0x0007             MOVS     R7,R0
+    437                  break;
+   \      0x616   0xE061             B        ??module_Motor_Com_u32_20
+    438                }
+    439                else
+    440                { // Ramp down speed to stop the motor
+    441                  if((*usart2Control_AppLocal).motorSpeed_s16 <= ((motor_Com_Control.motor_Setting.min_Speed_u16) + 10) )   //keep track of slow down
+   \                     ??module_Motor_Com_u32_52: (+1)
+   \      0x618   0x....             LDR      R0,??DataTable0_2
+   \      0x61A   0x884A             LDRH     R2,[R1, #+2]
+   \      0x61C   0x320A             ADDS     R2,R2,#+10
+   \      0x61E   0x6803             LDR      R3,[R0, #+0]
+   \      0x620   0x251E             MOVS     R5,#+30
+   \      0x622   0x5F5B             LDRSH    R3,[R3, R5]
+   \      0x624   0x429A             CMP      R2,R3
+   \      0x626   0xDB23             BLT      ??module_Motor_Com_u32_53
+    442                  { //issue final stop command and set time delay
+    443                    //unsigned char speedTx1[] = {0x55, 0x00, 0x01, 0x00, 0x00, 0xCC, 0xCC}; // Send speed of "0" instead
+    444                    unsigned char speedTx1[] = {0x55, 0x03, 0x21, 0x00, 0x00, 0x00, 0x00, 0xff, 0xCC, 0xCC}; // Send speed set point of "0"
+   \      0x628   0xAB0E             ADD      R3,SP,#+56
+   \      0x62A   0x....             LDR      R2,??DataTable6_2
+   \      0x62C   0xCA60             LDM      R2!,{R5,R6}
+   \      0x62E   0xC360             STM      R3!,{R5,R6}
+   \      0x630   0x6815             LDR      R5,[R2, #0]
+   \      0x632   0x601D             STR      R5,[R3, #0]
+   \      0x634   0x3A08             SUBS     R2,R2,#+8
+   \      0x636   0x3B08             SUBS     R3,R3,#+8
+    445                    speedLen = sizeof(speedTx1);
+   \      0x638   0x220A             MOVS     R2,#+10
+   \      0x63A   0x9202             STR      R2,[SP, #+8]
+    446                    speedTx1[7] = (unsigned char) (motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16);
+   \      0x63C   0x8DC9             LDRH     R1,[R1, #+46]
+   \      0x63E   0xAA0E             ADD      R2,SP,#+56
+   \      0x640   0x71D1             STRB     R1,[R2, #+7]
+    447                    RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, speedTx1, &speedLen);
+   \      0x642   0xAA02             ADD      R2,SP,#+8
+   \      0x644   0xA90E             ADD      R1,SP,#+56
+   \      0x646   0x6800             LDR      R0,[R0, #+0]
+   \      0x648   0x6880             LDR      R0,[R0, #+8]
+   \      0x64A   0x....'....        BL       RingBuf_WriteBlock
+    448                    //RBWriteBlk((*usart2Control_AppLocal).TxPipe->SystemIndex, speedTx1, &speedLen);  //send stop command 
+    449                    tt_StopMotorResume = getSysCount() + MotorStopResumePeriod;                 //set normal wait time delay
+   \      0x64E   0x....'....        BL       getSysCount
+   \      0x652   0x22FA             MOVS     R2,#+250
+   \      0x654   0x0092             LSLS     R2,R2,#+2        ;; #+1000
+   \      0x656   0x2300             MOVS     R3,#+0
+   \      0x658   0x1812             ADDS     R2,R2,R0
+   \      0x65A   0x414B             ADCS     R3,R3,R1
+   \      0x65C   0x....             LDR      R0,??DataTable6_1
+   \      0x65E   0xC00C             STM      R0!,{R2,R3}
+   \      0x660   0x3808             SUBS     R0,R0,#+8
+    450                    
+    451                    return_state_u8 = waitForIdle;
+   \      0x662   0x2006             MOVS     R0,#+6
+   \      0x664   0x0007             MOVS     R7,R0
+    452                    break;
+   \      0x666   0xE039             B        ??module_Motor_Com_u32_20
+   \                     ??module_Motor_Com_u32_6:
+   \      0x668   0x....'....        DC32     ?_4
+   \      0x66C   0x....'....        DC32     hi_angle_offset_u16
+    453                  }
+    454                  else
+    455                  {
+    456                    //if user turn back on before motor speed drop below abs min rpm
+    457                    if(motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16 >= motor_Com_Control.motor_Setting.min_Speed_u16)
+   \                     ??module_Motor_Com_u32_53: (+1)
+   \      0x670   0x8BC8             LDRH     R0,[R1, #+30]
+   \      0x672   0x8849             LDRH     R1,[R1, #+2]
+   \      0x674   0x4288             CMP      R0,R1
+   \      0x676   0xD302             BCC      ??module_Motor_Com_u32_54
+    458                    {
+    459                      //LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_6); //SPA
+    460                      return_state_u8 = SpdUpdate;
+   \      0x678   0x2008             MOVS     R0,#+8
+   \      0x67A   0x0007             MOVS     R7,R0
+    461                      break; 
+   \      0x67C   0xE02E             B        ??module_Motor_Com_u32_20
+    462                    }            
+    463                  }
+    464                }
+    465                
+    466                return_state_u8 = stopMotor; 
+   \                     ??module_Motor_Com_u32_54: (+1)
+   \      0x67E   0x2005             MOVS     R0,#+5
+   \      0x680   0x0007             MOVS     R7,R0
+    467                break;
+   \      0x682   0xE02B             B        ??module_Motor_Com_u32_20
+    468              }
+    469            case waitForIdle:
+    470              {
+    471                if(getSysCount() >= tt_StopMotorResume)  //wait for the motor stop period before restart                        
+   \                     ??module_Motor_Com_u32_13: (+1)
+   \      0x684   0x....'....        BL       getSysCount
+   \      0x688   0x0002             MOVS     R2,R0
+   \      0x68A   0x000B             MOVS     R3,R1
+   \      0x68C   0x....             LDR      R5,??DataTable6_1
+   \      0x68E   0xCD03             LDM      R5!,{R0,R1}
+   \      0x690   0x3D08             SUBS     R5,R5,#+8
+   \      0x692   0x428B             CMP      R3,R1
+   \      0x694   0xD30E             BCC      ??module_Motor_Com_u32_55
+   \      0x696   0xD801             BHI      ??module_Motor_Com_u32_56
+   \      0x698   0x4282             CMP      R2,R0
+   \      0x69A   0xD30B             BCC      ??module_Motor_Com_u32_55
+    472                {
+    473                  // No longer need fault ack message
+    474                  //unsigned char speedTx[] = {0x55, 0x00, 0x03, 0x00, 0x00, 0xCC, 0xCC}; //Send faluty ack
+    475                  //unsigned int speedLen = sizeof(speedTx);
+    476                  //RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, speedTx, &speedLen);
+    477                  tt_StopMotorResume = 0;
+   \                     ??module_Motor_Com_u32_56: (+1)
+   \      0x69C   0x2000             MOVS     R0,#+0
+   \      0x69E   0x2100             MOVS     R1,#+0
+   \      0x6A0   0xC503             STM      R5!,{R0,R1}
+   \      0x6A2   0x3D08             SUBS     R5,R5,#+8
+    478                  motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On = FALSE;
+   \      0x6A4   0x....             LDR      R0,??DataTable5
+   \      0x6A6   0x8E41             LDRH     R1,[R0, #+50]
+   \      0x6A8   0x....             LDR      R2,??DataTable6_3  ;; 0xfffe
+   \      0x6AA   0x400A             ANDS     R2,R2,R1
+   \      0x6AC   0x8642             STRH     R2,[R0, #+50]
+    479                  
+    480                  return_state_u8 = WaitReset;       
+   \      0x6AE   0x2007             MOVS     R0,#+7
+   \      0x6B0   0x0007             MOVS     R7,R0
+    481                  break;
+   \      0x6B2   0xE013             B        ??module_Motor_Com_u32_20
+    482                } 
+    483                return_state_u8 = waitForIdle;
+   \                     ??module_Motor_Com_u32_55: (+1)
+   \      0x6B4   0x2006             MOVS     R0,#+6
+   \      0x6B6   0x0007             MOVS     R7,R0
+    484                break;  
+   \      0x6B8   0xE010             B        ??module_Motor_Com_u32_20
+    485              }
+    486            case WaitReset:
+    487              { 
+    488                //output_demand = (*motorDemandMuxControl_ptr).motorDemandMux_Data.demandValue_u16;
+    489                //(motor_Com_Control.motor_Metering_Data.motor_Status_u16) = (*usart2Control_AppLocal).motorStatus_u16;
+    490                //uint32_t temp_result = (uint32_t)(output_demand * (motor_Com_Control.motor_Setting.max_Speed_u16));
+    491                //motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16 = (uint16_t)(temp_result/(float)10000); //Convert Speed ref % to RPM
+    492                
+    493                if( (motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16) < (motor_Com_Control.motor_Setting.min_Speed_u16))
+   \                     ??module_Motor_Com_u32_14: (+1)
+   \      0x6BA   0x....             LDR      R0,??DataTable5
+   \      0x6BC   0x8BC1             LDRH     R1,[R0, #+30]
+   \      0x6BE   0x8840             LDRH     R0,[R0, #+2]
+   \      0x6C0   0x4281             CMP      R1,R0
+   \      0x6C2   0xD202             BCS      ??module_Motor_Com_u32_57
+    494                {
+    495                  //LL_GPIO_ResetOutputPin(GPIOC, LED_ONBOARD_Pin); //on board LED output //SPA REVIEW we cant use this function here
+    496                  return_state_u8 = AppStart;
+   \      0x6C4   0x2002             MOVS     R0,#+2
+   \      0x6C6   0x0007             MOVS     R7,R0
+    497                  break;
+   \      0x6C8   0xE008             B        ??module_Motor_Com_u32_20
+    498                }
+    499                return_state_u8 = WaitReset;
+   \                     ??module_Motor_Com_u32_57: (+1)
+   \      0x6CA   0x2007             MOVS     R0,#+7
+   \      0x6CC   0x0007             MOVS     R7,R0
+    500                break;
+   \      0x6CE   0xE005             B        ??module_Motor_Com_u32_20
+    501              }
+    502            case AppIrq:
+    503              {
+    504                break;
+   \                     ??module_Motor_Com_u32_17: (+1)
+   \      0x6D0   0xE004             B        ??module_Motor_Com_u32_20
+    505              }               
+    506            case killApp:
+    507              {
+    508                return_state_u8 = AppInit;
+   \                     ??module_Motor_Com_u32_18: (+1)
+   \      0x6D2   0x2001             MOVS     R0,#+1
+   \      0x6D4   0x0007             MOVS     R7,R0
+    509                break;
+   \      0x6D6   0xE001             B        ??module_Motor_Com_u32_20
+    510              }
+    511            default:
+    512              {
+    513                return_state_u8 = killApp;   
+   \                     ??module_Motor_Com_u32_19: (+1)
+   \      0x6D8   0x20FF             MOVS     R0,#+255
+   \      0x6DA   0x0007             MOVS     R7,R0
+    514                break;
+    515              }
+    516            }
+    517            return return_state_u8;
+   \                     ??module_Motor_Com_u32_20: (+1)
+   \      0x6DC   0x0038             MOVS     R0,R7
+   \      0x6DE   0xB2C0             UXTB     R0,R0
+   \      0x6E0   0xB03F             ADD      SP,SP,#+252
+   \      0x6E2   0xBDF0             POP      {R4-R7,PC}       ;; return
+    518          }
+
+   \                                 In section .bss, align 1
+   \                     `module_Motor_Com_u32::blocks_to_transmit_u8`:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+   \                     `module_Motor_Com_u32::harmonic_data_cnt`:
+   \        0x0                      DS8 1
+    519          
+    520          /**
+    521          ********************************************************************************************************************************
+    522          * @brief   Assign structured memory
+    523          * @details Assign structured memory for motor_Com_Control
+    524          * @param   None 
+    525          * @return  None
+    526          ********************************************************************************************************************************
+    527          */
+
+   \                                 In section .text, align 2, keep-with-next
+    528          void assign_Module_Motor_Com_Mem(){  
+   \                     assign_Module_Motor_Com_Mem: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    529            motor_Com_StructMem_u32 =  StructMem_CreateInstance(MODULE_MOTOR_COM, sizeof(Motor_Com_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a structured memory for this driver [should map it back to this driver local struct]
+   \        0x2   0x....             LDR      R4,??DataTable6_4
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2134             MOVS     R1,#+52
+   \        0xE   0x200D             MOVS     R0,#+13
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    530            (*motor_Com_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&motor_Com_Control ;    // Map the motor_Com_Control memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable5
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    531            uint8_t module_motor_com_index_u8 = getProcessInfoIndex(MODULE_MOTOR_COM);
+   \       0x1C   0x200D             MOVS     R0,#+13
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    532            processInfoTable[module_motor_com_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)motor_Com_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable6_5
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    533          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    534          
+    535          /**
+    536          ********************************************************************************************************************************
+    537          * @brief   Initilize all settings
+    538          * @details Read settings from the RAM and initilize the settings.
+    539          * @param   None 
+    540          * @retval  None
+    541          ********************************************************************************************************************************
+    542          */
+
+   \                                 In section .text, align 2, keep-with-next
+    543          void init_Motor_Setting(){
+    544            motor_Com_Control.motor_Setting.control_Mode_u16 = 0;      //00 = Speed 01 = torque;
+   \                     init_Motor_Setting: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable5
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x8181             STRH     R1,[R0, #+12]
+    545            motor_Com_Control.motor_Setting.comm_Address_u16 = 55;     //address for univeral protocol
+   \        0x6   0x2237             MOVS     R2,#+55
+   \        0x8   0x81C2             STRH     R2,[R0, #+14]
+    546          #if HARDWARE_VERSION == HARDWARE_VERSION_BULLRUNNER
+    547            motor_Com_Control.motor_Setting.max_Speed_u16 = 9800;      //Maximum allowed speed in RPM 0dp
+    548            motor_Com_Control.motor_Setting.min_Speed_u16 = 1000;       //minumum speed in RPM 0dp
+    549            motor_Com_Control.motor_Setting.hysteresis_Speed_u16 = 0; //hysteresis speed in RPM 0dp  
+    550            motor_Com_Control.motor_Setting.max_Torque_u16 = 10;        //Maximum allowed torque
+    551            motor_Com_Control.motor_Setting.min_Torque_u16 = 0;       //Minmium torque Nm 
+    552          #elif HARDWARE_VERSION == HARDWARE_VERSION_1p3KW
+    553            motor_Com_Control.motor_Setting.max_Speed_u16 = 1800;      //Maximum allowed speed in RPM 0dp
+    554            motor_Com_Control.motor_Setting.min_Speed_u16 = 300;       //minumum speed in RPM 0dp
+    555            motor_Com_Control.motor_Setting.hysteresis_Speed_u16 = 0; //hysteresis speed in RPM 0dp  
+    556            motor_Com_Control.motor_Setting.max_Torque_u16 = 10;        //Maximum allowed torque
+    557            motor_Com_Control.motor_Setting.min_Torque_u16 = 0;       //Minmium torque Nm
+    558            motor_Com_Control.motor_Setting.motor_Direction_u16 = CCW;  // Default motor direction
+    559            motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16 = motor_Com_Control.motor_Setting.motor_Direction_u16;
+    560          #else // if HARDWARE_VERSION == HARDWARE_VERSION_4KW
+    561            motor_Com_Control.motor_Setting.max_Speed_u16 = 1800;      //Maximum allowed speed in RPM 0dp
+   \        0xA   0x22E1             MOVS     R2,#+225
+   \        0xC   0x00D2             LSLS     R2,R2,#+3        ;; #+1800
+   \        0xE   0x8002             STRH     R2,[R0, #+0]
+    562            motor_Com_Control.motor_Setting.min_Speed_u16 = 300;       //minumum speed in RPM 0dp
+   \       0x10   0x2296             MOVS     R2,#+150
+   \       0x12   0x0052             LSLS     R2,R2,#+1        ;; #+300
+   \       0x14   0x8042             STRH     R2,[R0, #+2]
+    563            motor_Com_Control.motor_Setting.hysteresis_Speed_u16 = 0; //hysteresis speed in RPM 0dp  
+   \       0x16   0x8081             STRH     R1,[R0, #+4]
+    564            motor_Com_Control.motor_Setting.max_Torque_u16 = 0;        //Maximum allowed torque
+   \       0x18   0x80C1             STRH     R1,[R0, #+6]
+    565            motor_Com_Control.motor_Setting.min_Torque_u16 = 10;       //Minmium torque Nm
+   \       0x1A   0x210A             MOVS     R1,#+10
+   \       0x1C   0x8101             STRH     R1,[R0, #+8]
+    566            // Changed default dircion to clockwise
+    567            motor_Com_Control.motor_Setting.motor_Direction_u16 = CCW;  // Default motor direction
+   \       0x1E   0x2109             MOVS     R1,#+9
+   \       0x20   0x8201             STRH     R1,[R0, #+16]
+    568            motor_Com_Control.motor_Metering_Data.motor_Actual_Direction_u16 = motor_Com_Control.motor_Setting.motor_Direction_u16;  
+   \       0x22   0x8A01             LDRH     R1,[R0, #+16]
+   \       0x24   0x85C1             STRH     R1,[R0, #+46]
+    569          #endif
+    570          }
+   \       0x26   0x4770             BX       LR               ;; return
+    571          
+    572          /**
+    573          ********************************************************************************************************************************
+    574          * @brief   Initilize all live data
+    575          * @details 
+    576          * @param   None 
+    577          * @retval  None
+    578          ********************************************************************************************************************************
+    579          */
+
+   \                                 In section .text, align 2, keep-with-next
+    580          void init_Motor_Data()
+    581          {
+    582            motor_Com_Control.motor_Metering_Data.demand_Output_Percent_u16=0;
+   \                     init_Motor_Data: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x....             LDR      R0,??DataTable5
+   \        0x4   0x000A             MOVS     R2,R1
+   \        0x6   0x8442             STRH     R2,[R0, #+34]
+    583            motor_Com_Control.motor_Metering_Data.demand_Output_Speed_u16 = 0;
+   \        0x8   0x000A             MOVS     R2,R1
+   \        0xA   0x8482             STRH     R2,[R0, #+36]
+    584            motor_Com_Control.motor_Metering_Data.demand_Output_Torque_u16 = 0;
+   \        0xC   0x000A             MOVS     R2,R1
+   \        0xE   0x84C2             STRH     R2,[R0, #+38]
+    585            motor_Com_Control.motor_Metering_Data.demand_Reference_Percent_u16 = 0;
+   \       0x10   0x000A             MOVS     R2,R1
+   \       0x12   0x8382             STRH     R2,[R0, #+28]
+    586            motor_Com_Control.motor_Metering_Data.demand_Reference_Speed_u16 = 0;
+   \       0x14   0x000A             MOVS     R2,R1
+   \       0x16   0x83C2             STRH     R2,[R0, #+30]
+    587            motor_Com_Control.motor_Metering_Data.demand_Reference_Torque_u16 = 0;
+   \       0x18   0x000A             MOVS     R2,R1
+   \       0x1A   0x8402             STRH     R2,[R0, #+32]
+    588            motor_Com_Control.motor_Metering_Data.motor_alarms_u32 = 0;
+   \       0x1C   0x6141             STR      R1,[R0, #+20]
+    589            motor_Com_Control.motor_Metering_Data.motor_Status_u16 = 0;
+   \       0x1E   0x8581             STRH     R1,[R0, #+44]
+    590            motor_Com_Control.motor_Metering_Data.discretes_u16.is_Motor_On = FALSE;
+   \       0x20   0x8E41             LDRH     R1,[R0, #+50]
+   \       0x22   0x....             LDR      R2,??DataTable6_3  ;; 0xfffe
+   \       0x24   0x400A             ANDS     R2,R2,R1
+   \       0x26   0x8642             STRH     R2,[R0, #+50]
+    591          }
+   \       0x28   0x4770             BX       LR               ;; return
+    592          
+    593          /**
+    594          ********************************************************************************************************************************
+    595          * @brief   Initilize all digital input settings and live data
+    596          * @details Read settings from the RAM and initilize the settings. This function need run in order to update the input function/mode.
+    597          * @param   (uint16_t)demand_percent_f in xxxyy formare which is equal to xxx.yy%
+    598          * @retval  None
+    599          ********************************************************************************************************************************
+    600          */
+
+   \                                 In section .text, align 2, keep-with-next
+    601          uint16_t MotorCom_ConvertSpeedToDemandPercentage(uint16_t speed_rpm) {
+   \                     MotorCom_ConvertSpeedToDemandPercentage: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    602            uint16_t min_speed = motor_Com_Control.motor_Setting.min_Speed_u16;
+   \        0x4   0x....             LDR      R0,??DataTable5
+   \        0x6   0x8845             LDRH     R5,[R0, #+2]
+    603            uint16_t max_speed = motor_Com_Control.motor_Setting.max_Speed_u16;
+   \        0x8   0x8806             LDRH     R6,[R0, #+0]
+    604            //uint16_t out_speed = 0;
+    605            if (speed_rpm <= 0) {
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0xB280             UXTH     R0,R0
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD101             BNE      ??MotorCom_ConvertSpeedToDemandPercentage_0
+    606              return 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xE022             B        ??MotorCom_ConvertSpeedToDemandPercentage_1
+    607            } else if (speed_rpm < min_speed) {
+   \                     ??MotorCom_ConvertSpeedToDemandPercentage_0: (+1)
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x0029             MOVS     R1,R5
+   \       0x1A   0xB280             UXTH     R0,R0
+   \       0x1C   0xB289             UXTH     R1,R1
+   \       0x1E   0x4288             CMP      R0,R1
+   \       0x20   0xD201             BCS      ??MotorCom_ConvertSpeedToDemandPercentage_2
+    608              return 1; // TODO: magic number 1=min demand percentage
+   \       0x22   0x2001             MOVS     R0,#+1
+   \       0x24   0xE01A             B        ??MotorCom_ConvertSpeedToDemandPercentage_1
+    609            } else if (speed_rpm > max_speed) {
+   \                     ??MotorCom_ConvertSpeedToDemandPercentage_2: (+1)
+   \       0x26   0x0030             MOVS     R0,R6
+   \       0x28   0x0021             MOVS     R1,R4
+   \       0x2A   0xB280             UXTH     R0,R0
+   \       0x2C   0xB289             UXTH     R1,R1
+   \       0x2E   0x4288             CMP      R0,R1
+   \       0x30   0xD201             BCS      ??MotorCom_ConvertSpeedToDemandPercentage_3
+    610              return 10000; // TODO: magic number 10000=max demand percentage
+   \       0x32   0x....             LDR      R0,??DataTable6_6  ;; 0x2710
+   \       0x34   0xE012             B        ??MotorCom_ConvertSpeedToDemandPercentage_1
+    611            } else {
+    612              //uint16_t speed_shifted = speed_rpm - min_speed;
+    613              //uint16_t speed_range = max_speed - min_speed;
+    614              //float demand_percent_f = (speed_shifted/(float)speed_range)*10000; // TODO magic number 10000=max demand percentage
+    615              float demand_percent_f = (speed_rpm/(float)max_speed)*10000; // TODO magic number 10000=max demand percentage
+   \                     ??MotorCom_ConvertSpeedToDemandPercentage_3: (+1)
+   \       0x36   0x0020             MOVS     R0,R4
+   \       0x38   0xB280             UXTH     R0,R0
+   \       0x3A   0x....'....        BL       __aeabi_ui2f
+   \       0x3E   0x0007             MOVS     R7,R0
+   \       0x40   0x0030             MOVS     R0,R6
+   \       0x42   0xB280             UXTH     R0,R0
+   \       0x44   0x....'....        BL       __aeabi_ui2f
+   \       0x48   0x0001             MOVS     R1,R0
+   \       0x4A   0x0038             MOVS     R0,R7
+   \       0x4C   0x....'....        BL       __aeabi_fdiv
+   \       0x50   0x....             LDR      R1,??DataTable6_7  ;; 0x461c4000
+   \       0x52   0x....'....        BL       __aeabi_fmul
+    616              return ((uint16_t)demand_percent_f); 
+   \       0x56   0x....'....        BL       __aeabi_f2iz
+   \       0x5A   0xB280             UXTH     R0,R0
+   \                     ??MotorCom_ConvertSpeedToDemandPercentage_1: (+1)
+   \       0x5C   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    617            }
+    618            
+    619            
+    620            // if (demand_percentage > 0) {
+    621            //   float speed_calc_f = ((float)(demand_percentage)/10000) * (max_speed - min_speed);
+    622            //   out_speed = min_speed + (demand_percentage/10000)/()
+    623            // } // else {}
+    624            // return out_speed;
+    625          }
+    626          
+    627          
+    628          /**
+    629          ********************************************************************************************************************************
+    630          * @brief   Send Universal Protocol messages to read motor data periodically
+    631          * @details readMotorDataCommands and readMotorDataTimeInterval_u16 contains the commands and the time interval(mSec)
+    632          * @param   None
+    633          * @retval  None
+    634          ********************************************************************************************************************************
+    635          */
+
+   \                                 In section .text, align 2, keep-with-next
+    636          void send_Periodic_Data_Request(uint8_t cmd_index_u8)
+    637          {
+   \                     send_Periodic_Data_Request: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0004             MOVS     R4,R0
+    638            
+    639            unsigned char readMotorDataCmdTx[] = {0x55, 0x02, 0x40, 0x00, 0x00, 0xff, 0xff, 0xCC, 0xCC}; // Send speed set point of "0"
+   \        0x6   0xA801             ADD      R0,SP,#+4
+   \        0x8   0x....             LDR      R1,??DataTable6_8
+   \        0xA   0xC92C             LDM      R1!,{R2,R3,R5}
+   \        0xC   0xC02C             STM      R0!,{R2,R3,R5}
+   \        0xE   0x390C             SUBS     R1,R1,#+12
+   \       0x10   0x380C             SUBS     R0,R0,#+12
+    640            unsigned int read_motor_data_cmd_len_u8 = sizeof(readMotorDataCmdTx);
+   \       0x12   0x2009             MOVS     R0,#+9
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+    641          
+    642            //uint8_t motor_data_commands_len_u8 = sizeof(readMotorDataTimeInterval_u16);
+    643            //for(uint8_t index_u8 = 0; index_u8 < motor_data_commands_len_u8; index_u8++)
+    644            //{
+    645            readMotorDataCmdTx[2] = (unsigned char) ((uint8_t)readMotorDataCommands[cmd_index_u8]);
+   \       0x16   0xA801             ADD      R0,SP,#+4
+   \       0x18   0x....             LDR      R1,??DataTable6_9
+   \       0x1A   0x0022             MOVS     R2,R4
+   \       0x1C   0xB2D2             UXTB     R2,R2
+   \       0x1E   0x5C89             LDRB     R1,[R1, R2]
+   \       0x20   0x7081             STRB     R1,[R0, #+2]
+    646            readMotorDataCmdTx[5] = (unsigned char) (readMotorDataTimeInterval_u16[cmd_index_u8]>>8);
+   \       0x22   0x....             LDR      R1,??DataTable6_10
+   \       0x24   0x0022             MOVS     R2,R4
+   \       0x26   0xB2D2             UXTB     R2,R2
+   \       0x28   0x2302             MOVS     R3,#+2
+   \       0x2A   0x435A             MULS     R2,R3,R2
+   \       0x2C   0x5A8A             LDRH     R2,[R1, R2]
+   \       0x2E   0xB292             UXTH     R2,R2
+   \       0x30   0x0A12             LSRS     R2,R2,#+8
+   \       0x32   0x7142             STRB     R2,[R0, #+5]
+    647            readMotorDataCmdTx[6] = (unsigned char) readMotorDataTimeInterval_u16[cmd_index_u8];
+   \       0x34   0x0022             MOVS     R2,R4
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x2302             MOVS     R3,#+2
+   \       0x3A   0x435A             MULS     R2,R3,R2
+   \       0x3C   0x5A89             LDRH     R1,[R1, R2]
+   \       0x3E   0x7181             STRB     R1,[R0, #+6]
+    648            RingBuf_WriteBlock((*usart2Control_AppLocal).seqMemTX_u32, readMotorDataCmdTx, &read_motor_data_cmd_len_u8);
+   \       0x40   0x466A             MOV      R2,SP
+   \       0x42   0xA901             ADD      R1,SP,#+4
+   \       0x44   0x....             LDR      R0,??DataTable6_11
+   \       0x46   0x6800             LDR      R0,[R0, #+0]
+   \       0x48   0x6880             LDR      R0,[R0, #+8]
+   \       0x4A   0x....'....        BL       RingBuf_WriteBlock
+    649            //} 
+    650            index_read_motor_data_command++;
+   \       0x4E   0x....             LDR      R0,??DataTable6_12
+   \       0x50   0x7801             LDRB     R1,[R0, #+0]
+   \       0x52   0x1C49             ADDS     R1,R1,#+1
+   \       0x54   0x7001             STRB     R1,[R0, #+0]
+    651            if(index_read_motor_data_command>=7){index_read_motor_data_command=0;}
+   \       0x56   0x7801             LDRB     R1,[R0, #+0]
+   \       0x58   0x2907             CMP      R1,#+7
+   \       0x5A   0xDB01             BLT      ??send_Periodic_Data_Request_0
+   \       0x5C   0x2100             MOVS     R1,#+0
+   \       0x5E   0x7001             STRB     R1,[R0, #+0]
+    652          }
+   \                     ??send_Periodic_Data_Request_0: (+1)
+   \       0x60   0xB005             ADD      SP,SP,#+20
+   \       0x62   0xBD30             POP      {R4,R5,PC}       ;; return
+    653          
+    654          // uint16_t MotorCom_GetMaxSpeed(void) {
+    655          //   uint16_t speed_value = motor_Com_Control.motor_Setting.max_Speed_u16;
+    656          // }
+    657          // uint16_t MotorCom_GetMinSpeed(void) {
+    658          //   uint16_t speed_value = motor_Com_Control.motor_Setting.min_Speed_u16;
+    659          // }
+    660          
+    661          /**
+    662          ********************************************************************************************************************************
+    663          * @brief   Allow an external module to update the stored motor direction
+    664          * @details - Input Parameter - Direction: 0=CCW, 1 = CW
+    665          * @param   None
+    666          * @retval  None
+    667          ********************************************************************************************************************************
+    668          */
+    669          
+
+   \                                 In section .text, align 2, keep-with-next
+    670          void MotorCom_UpdateMotorDirection(uint16_t direction) {
+   \                     MotorCom_UpdateMotorDirection: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    671            motor_Com_Control.motor_Setting.motor_Direction_u16 = direction ? CCW: CW;
+   \        0x2   0x0001             MOVS     R1,R0
+   \        0x4   0xB289             UXTH     R1,R1
+   \        0x6   0x2900             CMP      R1,#+0
+   \        0x8   0xD001             BEQ      ??MotorCom_UpdateMotorDirection_0
+   \        0xA   0x2109             MOVS     R1,#+9
+   \        0xC   0xE000             B        ??MotorCom_UpdateMotorDirection_1
+   \                     ??MotorCom_UpdateMotorDirection_0: (+1)
+   \        0xE   0x2106             MOVS     R1,#+6
+   \                     ??MotorCom_UpdateMotorDirection_1: (+1)
+   \       0x10   0x....             LDR      R2,??DataTable6_13
+   \       0x12   0x8211             STRH     R1,[R2, #+16]
+    672          }
+   \       0x14   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \        0x0   0x....'....        DC32     hi_is_phase_inverted_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_2:
+   \        0x0   0x....'....        DC32     usart2Control_AppLocal
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_3:
+   \        0x0   0x....'....        DC32     tt_HarmonicUpdateTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_4:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     hi_min_speed_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     hi_max_speed_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     digitalInputControl_motorCom_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     tt_DemandTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     motor_Com_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     tt_StopMotorResume
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x0000'FFFE        DC32     0xfffe
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     motor_Com_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x0000'2710        DC32     0x2710
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \        0x0   0x461C'4000        DC32     0x461c4000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \        0x0   0x....'....        DC32     readMotorDataCommands
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \        0x0   0x....'....        DC32     readMotorDataTimeInterval_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \        0x0   0x....'....        DC32     usart2Control_AppLocal
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \        0x0   0x....'....        DC32     index_read_motor_data_command
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \        0x0   0x....'....        DC32     motor_Com_Control
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x55 0x03          DC8 85, 3, 33, 0, 0, 255, 255, 255, 204, 204
+
+   \              0x21 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xCC 0xCC
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x55 0x01          DC8 85, 1, 48, 0, 0, 255, 204, 204
+
+   \              0x30 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xCC 0xCC
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x55 0x10          DC8 85, 16, 49, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0x31 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \        0xF   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 204, 204
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xCC 0xCC
+   \       0x17                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x55 0x08          DC8 85, 8, 50, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 204, 204
+
+   \              0x32 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xCC    
+
+   \              0xCC
+   \        0xF                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x55 0x10          DC8 85, 16, 51, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0x33 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \        0xF   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 204, 204
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xCC 0xCC
+   \       0x17                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x55 0x08          DC8 85, 8, 52, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 204, 204
+
+   \              0x34 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xCC    
+
+   \              0xCC
+   \        0xF                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x55 0x10          DC8 85, 16, 53, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0x35 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \        0xF   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 204, 204
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xCC 0xCC
+   \       0x17                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x55 0x10          DC8 85, 16, 54, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0x36 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \        0xF   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 204, 204
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xCC 0xCC
+   \       0x17                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x55 0x03          DC8 85, 3, 33, 0, 0, 255, 255, 255, 204, 204
+
+   \              0x21 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xCC 0xCC
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x55 0x03          DC8 85, 3, 33, 0, 0, 0, 0, 255, 204, 204
+
+   \              0x21 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xCC 0xCC
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x55 0x03          DC8 85, 3, 33, 0, 0, 0, 0, 255, 204, 204
+
+   \              0x21 0x00    
+
+   \              0x00 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xCC 0xCC
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x55 0x02          DC8 85, 2, 64, 0, 0, 255, 255, 204, 204
+
+   \              0x40 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xCC    
+
+   \              0xCC
+   \        0x9                      DS8 3
+    673          
+    674          /**
+    675          ********************************************************************************************************************************
+    676          * @brief   Get the harmonic injection parameters as provided by MODBUS.
+    677          * @details This is used by module_motor_com to update messages sent to drive board with harmonic injection data.
+    678          * @param   None 
+    679          * @return  None
+    680          ********************************************************************************************************************************
+    681          */
+    682          #if 0
+    683          void HarmonicInjection_ModbusUpdate(uint8_t  enable_u8, 
+    684          							   int16_t  *amplitudes_s16, 
+    685          							   uint8_t  *angle_multipliers_u8, 
+    686          							   uint16_t *angle_offsets_u16, 
+    687          							   uint8_t  *is_inverted_u8, 
+    688          							   uint16_t *min_speed_u16, 
+    689          							   uint16_t *max_speed_u16)
+    690          {  
+    691            uint8_t index_u8 = 0;
+    692            
+    693            hi_enable_u8 = enable_u8;
+    694            for(index_u8 = 0; index_u8 < 8; index_u8++) {
+    695            	hi_amplitude_s16[index_u8] 			= amplitudes_s16[index_u8]; 
+    696            	hi_angle_multiplier_u8[index_u8]    = angle_multipliers_u8[index_u8];
+    697            	hi_angle_offset_u16[index_u8] 		= angle_offsets_u16[index_u8];
+    698            	hi_is_phase_inverted_u8[index_u8] 	= is_inverted_u8[index_u8];
+    699            	hi_min_speed_u16[index_u8] 			= min_speed_u16[index_u8];
+    700            	hi_max_speed_u16[index_u8] 			= max_speed_u16[index_u8]; 
+    701            }
+    702          }
+    703          
+    704          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   MotorCom_ConvertSpeedToDemandPercentage
+        24   -> __aeabi_f2iz
+        24   -> __aeabi_fdiv
+        24   -> __aeabi_fmul
+        24   -> __aeabi_ui2f
+       4   MotorCom_UpdateMotorDirection
+      16   assign_Module_Motor_Com_Mem
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+       0   init_Motor_Data
+       0   init_Motor_Setting
+     272   module_Motor_Com_u32
+       272   -> RingBuf_WriteBlock
+       272   -> __aeabi_f2iz
+       272   -> __aeabi_fdiv
+       272   -> __aeabi_i2f
+       272   -> __aeabi_memcpy4
+       272   -> __aeabi_ui2f
+       272   -> abs
+       272   -> assign_Module_Motor_Com_Mem
+       272   -> getProcessInfoIndex
+       272   -> getSysCount
+       272   -> init_Motor_Data
+       272   -> init_Motor_Setting
+       272 __aeabi_uread4
+      32   send_Periodic_Data_Request
+        32   -> RingBuf_WriteBlock
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       4  ??DataTable0_2
+       4  ??DataTable0_3
+       4  ??DataTable0_4
+       4  ??DataTable1
+       4  ??DataTable2
+       4  ??DataTable3
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable5
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      12  ?_0
+       8  ?_1
+      12  ?_10
+      12  ?_11
+      24  ?_2
+      16  ?_3
+      24  ?_4
+      16  ?_5
+      24  ?_6
+      24  ?_7
+      12  ?_8
+      12  ?_9
+      94  MotorCom_ConvertSpeedToDemandPercentage
+      22  MotorCom_UpdateMotorDirection
+      60  assign_Module_Motor_Com_Mem
+       1  blocks_to_transmit_u8
+       4  digitalInputControl_motorCom_ptr
+       1  harmonic_data_cnt
+       1  index_read_motor_data_command
+      42  init_Motor_Data
+      40  init_Motor_Setting
+   1'764  module_Motor_Com_u32
+       4  motorDemandMuxControl_ptr
+      52  motor_Com_Control
+       4  motor_Com_StructMem_u32
+       1  motor_data_commands_len_u8
+       8  readMotorDataCommands
+      16  readMotorDataTimeInterval_u16
+     100  send_Periodic_Data_Request
+       8  tt_DemandTime
+       8  tt_HarmonicUpdateTime
+       8  tt_StopMotorResume
+       4  usart2Control_AppLocal
+
+ 
+    95 bytes in section .bss
+    25 bytes in section .data
+   196 bytes in section .rodata
+ 2'226 bytes in section .text
+ 
+ 2'226 bytes of CODE  memory
+   196 bytes of CONST memory
+   120 bytes of DATA  memory
+
+Errors: none
+Warnings: none

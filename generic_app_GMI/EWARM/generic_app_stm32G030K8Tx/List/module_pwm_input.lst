@@ -1,0 +1,2353 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:47
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_pwm_input.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWE5C6.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_pwm_input.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_pwm_input.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_pwm_input.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_pwm_input.c
+      1          /**
+      2          *************************************************************************************
+      3          * @file    module_pwm_input.c 
+      4          * @author  Regal, Logan Schaufler
+      5          * @version V1.0
+      6          * @date    23-Nov-2020
+      7          * @brief   module for PWM input
+      8          * @note    Provide structures to access PWM setting and duty cycle, demand
+      9          *************************************************************************************
+     10          */
+     11          
+     12          // Includes -------------------------------------------------------------------
+     13          #include "module_pwm_input.h"
+     14          #include "driver_pwm_input.h" // PWM Input
+     15          #include "module_gpio.h"
+     16          #include "macros.h"
+     17          
+     18          // Content --------------------------------------------------------------------
+     19          // Function Prototypes
+     20          void AssignPWMInputModuleMem(void);
+     21          void Init_PWM_Input_Setting(void);
+     22          void Init_PWM_Input_Data(void);
+     23          void CheckDutyCycle(void);
+     24          uint16_t GetPWMDemand(void);
+     25          void SetDemandToZero(void);
+     26          void UpdateModuleRuntimeData(void);
+     27          void CheckDigitalInputDebounce(void);
+     28          
+     29          // Constants
+     30          #define PWM_IN_NUM 3 // pwm input number defined under gpioInputPortsPins in drivers_gpio.c
+     31          #define MAX_HARDWARE_PWM_IN_DUTY_CYCLE 10000  // 100.00%
+     32          
+     33          // Module States
+     34          enum {
+     35            MEMORY_INIT_MODULE,
+     36            INIT_MODULE,
+     37            RUN_MODULE,
+     38            // Ddditional states to be added here as necessary.
+     39            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     40            KILL_MODULE = KILL_APP
+     41          };
+     42          
+     43          // External Variables
+     44          extern Ram_Buf sharedMemArray[TOTAL_NUM_OF_STRUCT_MEM_INSTANCES];
+     45          extern ProcessInfo processInfoTable[];
+     46          
+     47          // Global variables specific to this module
+
+   \                                 In section .bss, align 4
+     48          static  Ram_Buf_Handle pwm_input_StructMem_u32;
+   \                     pwm_input_StructMem_u32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 8
+     49          uint64_t pwm_input_time_u64; // Delay time between init and run module
+   \                     pwm_input_time_u64:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 2
+     50          uint16_t pwm_input_duty_cycle_percentage_tmp_u16 = 0;   // Temporary storage for duty cycle conversion value
+   \                     pwm_input_duty_cycle_percentage_tmp_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     51          uint16_t pwm_input_frequency_tmp_u16 = 0;     // Temporary storage for pwm frequency
+   \                     pwm_input_frequency_tmp_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     52          uint16_t pwm_input_low_alarm_enable_count_u16 = 0;  // Time when analog module init is complete
+   \                     pwm_input_low_alarm_enable_count_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     53          uint16_t is_pwm_input_above_low_threshold = FALSE; // Time when analog module init is complete
+   \                     is_pwm_input_above_low_threshold:
+   \        0x0                      DS8 2
+     54          //uint8_t digital_input_debounce_count_u8 = 4; // Digitial input stage change should be at least this count before updating the current state
+
+   \                                 In section .bss, align 8
+     55          uint64_t tt_PWMInputDelayTime; // Delay time between init and run module
+   \                     tt_PWMInputDelayTime:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 2
+     56          uint16_t digital_input_current_bit_low_debounce_count_u16 = 0; // Current debounce count when input is low
+   \                     digital_input_current_bit_low_debounce_count_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     57          uint16_t digital_input_current_bit_hi_debounce_count_u16 = 0;  // Current debounce count when input is hi
+   \                     digital_input_current_bit_hi_debounce_count_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     58          uint16_t pwm_input_duty_cycle_decreasing_debounce_count_u16 = 0;
+   \                     pwm_input_duty_cycle_decreasing_debounce_count_u16:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 2
+     59          uint16_t pwm_input_duty_cycle_increasing_debounce_count_u16 = 0;
+   \                     pwm_input_duty_cycle_increasing_debounce_count_u16:
+   \        0x0                      DS8 2
+     60          
+
+   \                                 In section .bss, align 4
+     61          PwmInput_Control pwmInput_Control;
+   \                     pwmInput_Control:
+   \        0x0                      DS8 80
+     62          
+     63          // Define Pointers that will be used as References to other Modules, where applicable
+
+   \                                 In section .bss, align 4
+     64          Gpio_Control* gpio_PWMInputLocalControl;
+   \                     gpio_PWMInputLocalControl:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     65          TIM1_Control*  tim1_LocalControl;
+   \                     tim1_LocalControl:
+   \        0x0                      DS8 4
+     66          
+     67          /**
+     68          ********************************************************************************************************************************
+     69          * @brief   State machine for Digital PWM Module
+     70          * @details
+     71          * @retval  return_state_u8
+     72          ********************************************************************************************************************************
+     73          */
+
+   \                                 In section .text, align 2, keep-with-next
+     74          uint8_t modulePWM_Input_u32(uint8_t drv_identifier_u8, uint8_t previous_state_u8, uint8_t next_state_u8,
+     75                                      uint8_t irq_identifier_u8)
+     76          {
+   \                     modulePWM_Input_u32: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB083             SUB      SP,SP,#+12
+     77            //local variables  
+     78            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4669             MOV      R1,SP
+   \        0x8   0x7208             STRB     R0,[R1, #+8]
+     79            
+     80            switch (next_state_u8)
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x7D00             LDRB     R0,[R0, #+20]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD00A             BEQ      ??modulePWM_Input_u32_0
+   \       0x12   0x2801             CMP      R0,#+1
+   \       0x14   0xD00C             BEQ      ??modulePWM_Input_u32_1
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD03C             BEQ      ??modulePWM_Input_u32_2
+   \       0x1A   0x28C8             CMP      R0,#+200
+   \       0x1C   0xD100             BNE      .+4
+   \       0x1E   0xE082             B        ??modulePWM_Input_u32_3
+   \       0x20   0x28FF             CMP      R0,#+255
+   \       0x22   0xD100             BNE      .+4
+   \       0x24   0xE081             B        ??modulePWM_Input_u32_4
+   \       0x26   0xE093             B        ??modulePWM_Input_u32_5
+     81            {
+     82            case MEMORY_INIT_MODULE:
+     83              {
+     84                AssignPWMInputModuleMem(); // Assign structured memory 
+   \                     ??modulePWM_Input_u32_0: (+1)
+   \       0x28   0x....'....        BL       AssignPWMInputModuleMem
+     85                return_state_u8 = INIT_MODULE;
+   \       0x2C   0x2001             MOVS     R0,#+1
+     86                break;
+   \       0x2E   0xE090             B        ??modulePWM_Input_u32_6
+     87              }
+     88            case INIT_MODULE:
+     89              {     
+     90                //AssignPWMInputModuleMem(); // Assign structured memory to PWM setting and data      
+     91                Init_PWM_Input_Setting();  // Initilize PWM Input settings        
+   \                     ??modulePWM_Input_u32_1: (+1)
+   \       0x30   0x....'....        BL       Init_PWM_Input_Setting
+     92                Init_PWM_Input_Data();     // Init PWM input live data
+   \       0x34   0x....'....        BL       Init_PWM_Input_Data
+     93                
+     94                // Get structured memory for TIM1 data
+     95                uint8_t module_TIM1_Index = getProcessInfoIndex(MODULE_TIM1);
+   \       0x38   0x2002             MOVS     R0,#+2
+   \       0x3A   0x....'....        BL       getProcessInfoIndex
+   \       0x3E   0x0006             MOVS     R6,R0
+     96                tim1_LocalControl = (TIM1_Control*)((*(processInfoTable[module_TIM1_Index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0x40   0x....             LDR      R4,??DataTable3
+   \       0x42   0x0030             MOVS     R0,R6
+   \       0x44   0xB2C0             UXTB     R0,R0
+   \       0x46   0x2116             MOVS     R1,#+22
+   \       0x48   0x4348             MULS     R0,R1,R0
+   \       0x4A   0x1820             ADDS     R0,R4,R0
+   \       0x4C   0x300B             ADDS     R0,R0,#+11
+   \       0x4E   0x....'....        BL       __aeabi_uread4
+   \       0x52   0x6800             LDR      R0,[R0, #+0]
+   \       0x54   0x....             LDR      R1,??DataTable2
+   \       0x56   0x6008             STR      R0,[R1, #+0]
+     97                
+     98                // Get structured memory for GPIO module data
+     99                uint8_t module_gpio_index_u8 = getProcessInfoIndex(MODULE_GPIO);
+   \       0x58   0x2001             MOVS     R0,#+1
+   \       0x5A   0x....'....        BL       getProcessInfoIndex
+   \       0x5E   0x0005             MOVS     R5,R0
+    100                gpio_PWMInputLocalControl = (Gpio_Control*)((*(processInfoTable[module_gpio_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+   \       0x60   0x0028             MOVS     R0,R5
+   \       0x62   0xB2C0             UXTB     R0,R0
+   \       0x64   0x2116             MOVS     R1,#+22
+   \       0x66   0x4348             MULS     R0,R1,R0
+   \       0x68   0x1820             ADDS     R0,R4,R0
+   \       0x6A   0x300B             ADDS     R0,R0,#+11
+   \       0x6C   0x....'....        BL       __aeabi_uread4
+   \       0x70   0x6800             LDR      R0,[R0, #+0]
+   \       0x72   0x....             LDR      R1,??DataTable2_1
+   \       0x74   0x6008             STR      R0,[R1, #+0]
+    101                
+    102                pwm_input_low_alarm_enable_count_u16 = pwmInput_Control.pwmInput_Settings.pwmLowAlarmEnableCount_u16; // delay before low duty cycle alarm can be triggered
+   \       0x76   0x....             LDR      R4,??DataTable3_1
+   \       0x78   0x8CE0             LDRH     R0,[R4, #+38]
+   \       0x7A   0x....             LDR      R1,??DataTable2_2
+   \       0x7C   0x8008             STRH     R0,[R1, #+0]
+    103                
+    104                pwm_input_time_u64 = getSysCount() + pwmInput_Control.pwmInput_Settings.pwmPeriod_u16;   // Store next poll time value for the module
+   \       0x7E   0x....'....        BL       getSysCount
+   \       0x82   0x8A62             LDRH     R2,[R4, #+18]
+   \       0x84   0x2300             MOVS     R3,#+0
+   \       0x86   0x1812             ADDS     R2,R2,R0
+   \       0x88   0x414B             ADCS     R3,R3,R1
+   \       0x8A   0x....             LDR      R0,??DataTable3_2
+   \       0x8C   0xC00C             STM      R0!,{R2,R3}
+   \       0x8E   0x3808             SUBS     R0,R0,#+8
+    105                return_state_u8 = RUN_MODULE;
+   \       0x90   0x2002             MOVS     R0,#+2
+    106                break;
+   \       0x92   0xE05E             B        ??modulePWM_Input_u32_6
+    107              }   
+    108            case RUN_MODULE:                                                             
+    109              {
+    110                // Process analog input every "AnalogPeriod" mSec
+    111                if (getSysCount() >= pwm_input_time_u64) 
+   \                     ??modulePWM_Input_u32_2: (+1)
+   \       0x94   0x....'....        BL       getSysCount
+   \       0x98   0x....             LDR      R2,??DataTable3_2
+   \       0x9A   0xCA0C             LDM      R2,{R2,R3}
+   \       0x9C   0x4299             CMP      R1,R3
+   \       0x9E   0xD340             BCC      ??modulePWM_Input_u32_7
+   \       0xA0   0xD801             BHI      ??modulePWM_Input_u32_8
+   \       0xA2   0x4290             CMP      R0,R2
+   \       0xA4   0xD33D             BCC      ??modulePWM_Input_u32_7
+    112                { 
+    113                  if(pwmInput_Control.pwmInput_Settings.inputMode_u16 == PWM_IN_DIGITAL_MODE)
+   \                     ??modulePWM_Input_u32_8: (+1)
+   \       0xA6   0x....             LDR      R4,??DataTable3_1
+   \       0xA8   0x8BE0             LDRH     R0,[R4, #+30]
+   \       0xAA   0x2802             CMP      R0,#+2
+   \       0xAC   0xD104             BNE      ??modulePWM_Input_u32_9
+    114                  {
+    115                    // Process PWM input as Digital input
+    116                    CheckDigitalInputDebounce(); // Check for debounce and update is_digitalInputON state
+   \       0xAE   0x....'....        BL       CheckDigitalInputDebounce
+    117                    
+    118                    // Set PWM related parameters to defaults since the input is digital input
+    119                    SetDemandToZero();
+   \       0xB2   0x....'....        BL       SetDemandToZero
+   \       0xB6   0xE034             B        ??modulePWM_Input_u32_7
+    120                  }else 
+    121                  {
+    122                    UpdateModuleRuntimeData(); // Update tick time data, module memory inherited from driver memory  
+   \                     ??modulePWM_Input_u32_9: (+1)
+   \       0xB8   0x....'....        BL       UpdateModuleRuntimeData
+    123                    CheckDutyCycle(); // Process the pwm duty cycle and frequency
+   \       0xBC   0x....'....        BL       CheckDutyCycle
+    124                    // Check if Loss of pwm. If enabled and loss of analog, demand is "0"
+    125          		  //if ((pwmInput_Control.pwmInput_Data.is_pwmDutyCycleLow == TRUE) && (pwmInput_Control.pwmInput_Data.is_pwmFrequencyLow == TRUE) && (pwmInput_Control.pwmInput_Settings.is_pwmFailSafeEnable == FALSE) && (pwmInput_Control.pwmInput_Settings.is_pwmLowEnable == TRUE))
+    126                    if (((pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmDutyCycleLow == TRUE) || (pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow == TRUE)) && (pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmFailSafeEnable == FALSE) && (pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmLowEnable == TRUE))
+   \       0xC0   0x204C             MOVS     R0,#+76
+   \       0xC2   0x5C20             LDRB     R0,[R4, R0]
+   \       0xC4   0x2106             MOVS     R1,#+6
+   \       0xC6   0x4001             ANDS     R1,R1,R0
+   \       0xC8   0x2900             CMP      R1,#+0
+   \       0xCA   0xD008             BEQ      ??modulePWM_Input_u32_10
+   \       0xCC   0x202A             MOVS     R0,#+42
+   \       0xCE   0x5C20             LDRB     R0,[R4, R0]
+   \       0xD0   0x2105             MOVS     R1,#+5
+   \       0xD2   0x4001             ANDS     R1,R1,R0
+   \       0xD4   0x2904             CMP      R1,#+4
+   \       0xD6   0xD102             BNE      ??modulePWM_Input_u32_10
+    127                    {
+    128                      SetDemandToZero();
+   \       0xD8   0x....'....        BL       SetDemandToZero
+   \       0xDC   0xE021             B        ??modulePWM_Input_u32_7
+    129                    } else
+    130                    { // No loss of pwm input is detected or loss of pwm input is not enabled; normal operation
+    131                      pwmInput_Control.pwmInput_Data.pwmInputDemand_u16 = GetPWMDemand();       // Convert duty cycle into demand
+   \                     ??modulePWM_Input_u32_10: (+1)
+   \       0xDE   0x....'....        BL       GetPWMDemand
+   \       0xE2   0x2142             MOVS     R1,#+66
+   \       0xE4   0x5260             STRH     R0,[R4, R1]
+    132                      
+    133                      //float temporary_pwm_input_value = 0;
+    134                      //temporary_pwm_input_value = pwmInput_Control.pwmInput_Data.pwmInputDemand_u16;
+    135                      
+    136                      // Module Return Values when a demand exists
+    137                      pwmInput_Control.pwmInput_Data.pwmInputDemandPercentage_u16 = DECIMAL_RIGHT_SHIFT_U16(CALCULATE_PERCENT(pwmInput_Control.pwmInput_Data.pwmInputDemand_u16, 65536),2);
+   \       0xE6   0x2042             MOVS     R0,#+66
+   \       0xE8   0x5A21             LDRH     R1,[R4, R0]
+   \       0xEA   0x2064             MOVS     R0,#+100
+   \       0xEC   0x4348             MULS     R0,R1,R0
+   \       0xEE   0x....'....        BL       __aeabi_i2f
+   \       0xF2   0x218F             MOVS     R1,#+143
+   \       0xF4   0x05C9             LSLS     R1,R1,#+23       ;; #+1199570944
+   \       0xF6   0x....'....        BL       __aeabi_fdiv
+   \       0xFA   0x2600             MOVS     R6,#+0
+   \       0xFC   0x....             LDR      R7,??DataTable3_3  ;; 0x40240000
+   \       0xFE   0x....'....        BL       __aeabi_f2d
+   \      0x102   0x9000             STR      R0,[SP, #+0]
+   \      0x104   0x9101             STR      R1,[SP, #+4]
+   \      0x106   0x0030             MOVS     R0,R6
+   \      0x108   0x0039             MOVS     R1,R7
+   \      0x10A   0x0032             MOVS     R2,R6
+   \      0x10C   0x003B             MOVS     R3,R7
+   \      0x10E   0x....'....        BL       __aeabi_dmul
+   \      0x112   0x9A00             LDR      R2,[SP, #+0]
+   \      0x114   0x9B01             LDR      R3,[SP, #+4]
+   \      0x116   0x....'....        BL       __aeabi_dmul
+   \      0x11A   0x....'....        BL       __aeabi_d2iz
+   \      0x11E   0x2146             MOVS     R1,#+70
+   \      0x120   0x5260             STRH     R0,[R4, R1]
+    138                      //pwmInput_Control.pwmInput_Data.pwmInputDemandPercentage_u16 = pwmInput_Control.pwmInput_Data.pwmInputDemand_u16; //(uint16_t)(temporary_pwm_input_value * 100);  // Module's converted TIM1 duty cycle to PWM Demand, scheduler pings this; scaled 0 to 10000
+    139                    }
+    140                  }
+    141                }     
+    142                return_state_u8 = RUN_MODULE;
+   \                     ??modulePWM_Input_u32_7: (+1)
+   \      0x122   0x2002             MOVS     R0,#+2
+    143                break;
+   \      0x124   0xE015             B        ??modulePWM_Input_u32_6
+    144              }
+    145            case IRQ_MODULE: 
+    146              {
+    147                // If there are more than one interrupts, from different drivers, you can identify each individually by:
+    148                return_state_u8 = RUN_MODULE;
+   \                     ??modulePWM_Input_u32_3: (+1)
+   \      0x126   0x2002             MOVS     R0,#+2
+    149                break;
+   \      0x128   0xE013             B        ??modulePWM_Input_u32_6
+    150              }
+    151              
+    152            case KILL_MODULE: 
+    153              {
+    154                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    155                uint8_t table_index_u8 = getProcessInfoIndex(drv_identifier_u8);
+   \                     ??modulePWM_Input_u32_4: (+1)
+   \      0x12A   0x4668             MOV      R0,SP
+   \      0x12C   0x7B00             LDRB     R0,[R0, #+12]
+   \      0x12E   0x....'....        BL       getProcessInfoIndex
+   \      0x132   0x0001             MOVS     R1,R0
+    156                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \      0x134   0x0008             MOVS     R0,R1
+   \      0x136   0xB2C0             UXTB     R0,R0
+   \      0x138   0x28FF             CMP      R0,#+255
+   \      0x13A   0xD007             BEQ      ??modulePWM_Input_u32_11
+    157                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \      0x13C   0x20FF             MOVS     R0,#+255
+   \      0x13E   0x....             LDR      R2,??DataTable3
+   \      0x140   0x000B             MOVS     R3,R1
+   \      0x142   0xB2DB             UXTB     R3,R3
+   \      0x144   0x2416             MOVS     R4,#+22
+   \      0x146   0x4363             MULS     R3,R4,R3
+   \      0x148   0x18D2             ADDS     R2,R2,R3
+   \      0x14A   0x7290             STRB     R0,[R2, #+10]
+    158                }
+    159                return_state_u8 = INIT_MODULE;
+   \                     ??modulePWM_Input_u32_11: (+1)
+   \      0x14C   0x2001             MOVS     R0,#+1
+    160                break;
+   \      0x14E   0xE000             B        ??modulePWM_Input_u32_6
+    161              }
+    162            default:
+    163              {
+    164                return_state_u8 = KILL_MODULE; //10; 
+   \                     ??modulePWM_Input_u32_5: (+1)
+   \      0x150   0x20FF             MOVS     R0,#+255
+    165                break;
+    166              }
+    167            }
+    168            return return_state_u8;
+   \                     ??modulePWM_Input_u32_6: (+1)
+   \      0x152   0xB2C0             UXTB     R0,R0
+   \      0x154   0xB007             ADD      SP,SP,#+28
+   \      0x156   0xBDF0             POP      {R4-R7,PC}       ;; return
+    169          } 
+    170          
+    171          /**
+    172          ********************************************************************************************************************************
+    173          * @brief   Assign structured memory
+    174          * @details Assign structured memory for Digital PWM control
+    175          * @retval  None
+    176          ********************************************************************************************************************************
+    177          */
+    178          //
+
+   \                                 In section .text, align 2, keep-with-next
+    179          void AssignPWMInputModuleMem(void){   
+   \                     AssignPWMInputModuleMem: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    180            pwm_input_StructMem_u32 =  StructMem_CreateInstance(MODULE_PWM_INPUT, sizeof(PwmInput_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R4,??DataTable3_4
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2150             MOVS     R1,#+80
+   \        0xE   0x2008             MOVS     R0,#+8
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    181            (*pwm_input_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&pwmInput_Control ;    // Map the TIM1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable3_1
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    182            uint8_t Module_Digital_Pwm_Index = getProcessInfoIndex(MODULE_PWM_INPUT);
+   \       0x1C   0x2008             MOVS     R0,#+8
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    183            processInfoTable[Module_Digital_Pwm_Index].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)pwm_input_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable3
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    184          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    185          
+    186          /**
+    187          ********************************************************************************************************************************
+    188          * @brief   Initilize all pwm settings and live data
+    189          * @details Read settings from the RAM and initilize the settings
+    190          * @retval  None
+    191          ********************************************************************************************************************************
+    192          */
+
+   \                                 In section .text, align 2, keep-with-next
+    193          void Init_PWM_Input_Setting(void){  
+   \                     Init_PWM_Input_Setting: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+    194            
+    195            // Initialize Module Settings  
+    196            pwmInput_Control.pwmInput_Settings.onDutyCycle_u16 = 800;//3;      // Demand duty cycle to turn on and begin operation
+   \        0x2   0x....             LDR      R0,??DataTable3_1
+   \        0x4   0x21C8             MOVS     R1,#+200
+   \        0x6   0x0089             LSLS     R1,R1,#+2        ;; #+800
+   \        0x8   0x8481             STRH     R1,[R0, #+36]
+    197            //pwmInput_Control.pwmInput_Settings.lowEndOffDutyCycle_u16 = 5;   // Demand duty cycle to turn off and stop operation; acts as Hysteresis
+    198            pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16 = 9500;        // Maximum acceptable duty cycle (in %) corresponding to max demand
+   \        0xA   0x....             LDR      R1,??DataTable3_5  ;; 0x251c
+   \        0xC   0x8101             STRH     R1,[R0, #+8]
+    199            pwmInput_Control.pwmInput_Settings.minDutyCycle_u16 = 1000;         // Minimum acceptable duty cycle (in %)            spec 5
+   \        0xE   0x21FA             MOVS     R1,#+250
+   \       0x10   0x0089             LSLS     R1,R1,#+2        ;; #+1000
+   \       0x12   0x8141             STRH     R1,[R0, #+10]
+    200            pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16 = 50;//100;  // Hys duty cycle at the top end of demand
+   \       0x14   0x2132             MOVS     R1,#+50
+   \       0x16   0x8401             STRH     R1,[R0, #+32]
+    201            pwmInput_Control.pwmInput_Settings.minDemand_u16 = 21845;//500;              // Min allowed demand                       spec 6
+   \       0x18   0x....             LDR      R2,??DataTable3_6  ;; 0x5555
+   \       0x1A   0x8182             STRH     R2,[R0, #+12]
+    202            pwmInput_Control.pwmInput_Settings.maxDemand_u16 = 0xFFFF;//10000;            // Maximum allowed demand                   spec 6
+   \       0x1C   0x....             LDR      R2,??DataTable3_7  ;; 0xffff
+   \       0x1E   0x81C2             STRH     R2,[R0, #+14]
+    203            //  pwmInput_Control.pwmInput_Settings.is_enableDigitalPWM = FALSE;  // If '1' enable pwm input for demand       spec 1
+    204            pwmInput_Control.pwmInput_Settings.maxPWMFrequency_u16 = 1010;       // Max readable PWM frequency, ignores duty cycle for anything past this   spec 3
+   \       0x20   0x....             LDR      R2,??DataTable3_8  ;; 0x3f2
+   \       0x22   0x8082             STRH     R2,[R0, #+4]
+    205            pwmInput_Control.pwmInput_Settings.minPWMFrequency_u16 = 45;         // Max readable PWM frequency, ignores duty cycle for anything past this   spec 3
+   \       0x24   0x222D             MOVS     R2,#+45
+   \       0x26   0x80C2             STRH     R2,[R0, #+6]
+    206            pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM =TRUE;//FALSE;      // If '1' and is_enableDigitalPWM is '1', 0% = Max demand and 100%= 0 Demand   spec 4
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0x322A             ADDS     R2,R2,#+42
+   \       0x2C   0x8D43             LDRH     R3,[R0, #+42]
+   \       0x2E   0x2402             MOVS     R4,#+2
+   \       0x30   0x431C             ORRS     R4,R4,R3
+   \       0x32   0x8014             STRH     R4,[R2, #+0]
+    207            pwmInput_Control.pwmInput_Settings.pwmPeriod_u16 = 50;  // Time until calculated demand is transmitted to the main app (in ms)   spec 9
+   \       0x34   0x8241             STRH     R1,[R0, #+18]
+    208            pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmLowEnable = TRUE;           // Enable loss of digital input   spec 12
+   \       0x36   0x2104             MOVS     R1,#+4
+   \       0x38   0x8D43             LDRH     R3,[R0, #+42]
+   \       0x3A   0x000C             MOVS     R4,R1
+   \       0x3C   0x431C             ORRS     R4,R4,R3
+   \       0x3E   0x8014             STRH     R4,[R2, #+0]
+    209            pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmFailSafeEnable = TRUE;//FALSE;     // If "1" Switch to fail safe demand when loss of pwm is detected  spec 12
+   \       0x40   0x2301             MOVS     R3,#+1
+   \       0x42   0x8D44             LDRH     R4,[R0, #+42]
+   \       0x44   0x431C             ORRS     R4,R4,R3
+   \       0x46   0x8014             STRH     R4,[R2, #+0]
+    210            pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable = FALSE;//TRUE;
+   \       0x48   0x8D44             LDRH     R4,[R0, #+42]
+   \       0x4A   0x....             LDR      R5,??DataTable4  ;; 0xfff7
+   \       0x4C   0x4025             ANDS     R5,R5,R4
+   \       0x4E   0x8015             STRH     R5,[R2, #+0]
+    211            pwmInput_Control.pwmInput_Settings.pwmLowDutyCycle_u16 = 500;       // Frequency below which the bPWM_Loss_Enable is set     spec 13
+   \       0x50   0x22FA             MOVS     R2,#+250
+   \       0x52   0x0052             LSLS     R2,R2,#+1        ;; #+500
+   \       0x54   0x8382             STRH     R2,[R0, #+28]
+    212            pwmInput_Control.pwmInput_Settings.failSafeDemand_u16 = 0x7FFF;// 50;          // Fail safe demand when loss of pwm input is detected (0x7FFF taken from 0-10V module) spec 14
+   \       0x56   0x....             LDR      R2,??DataTable4_1  ;; 0x7fff
+   \       0x58   0x82C2             STRH     R2,[R0, #+22]
+    213            pwmInput_Control.pwmInput_Settings.pwmLowAlarmEnableCount_u16 = 100;  // pwmPeriod*count delay before loss of pwm input frequency alarm is detected in mSec.
+   \       0x5A   0x2264             MOVS     R2,#+100
+   \       0x5C   0x84C2             STRH     R2,[R0, #+38]
+    214            pwmInput_Control.pwmInput_Settings.inputMode_u16 = PWM_IN_PWM_MODE;   //PWM_IN_DIGITAL_MODE or PWM_IN_PWM_MODE
+   \       0x5E   0x83C3             STRH     R3,[R0, #+30]
+    215            pwmInput_Control.pwmInput_Settings.minDemandHysteresis_u16 = 10;
+   \       0x60   0x220A             MOVS     R2,#+10
+   \       0x62   0x0013             MOVS     R3,R2
+   \       0x64   0x8303             STRH     R3,[R0, #+24]
+    216            pwmInput_Control.pwmInput_Settings.offDutyCycle_u16 = 600;
+   \       0x66   0x2396             MOVS     R3,#+150
+   \       0x68   0x009B             LSLS     R3,R3,#+2        ;; #+600
+   \       0x6A   0x8443             STRH     R3,[R0, #+34]
+    217            pwmInput_Control.pwmInput_Settings.minTurnOnDutyCycle_u16 = 10;//800;         // Minimum duty cycle module takes to turn on and begin operation
+   \       0x6C   0x8342             STRH     R2,[R0, #+26]
+    218            
+    219            pwmInput_Control.pwmInput_Settings.dutyCyleCalibratonFactor_f = 0; //0.0055; // Calibration factor to correct duty cycle error
+   \       0x6E   0x2200             MOVS     R2,#+0
+   \       0x70   0x6002             STR      R2,[R0, #+0]
+    220            pwmInput_Control.pwmInput_Settings.pwmInputDebounceCount_u16 = 4;     // Minimum counts required to verified valied duty cycle
+   \       0x72   0x8501             STRH     R1,[R0, #+40]
+    221          }
+   \       0x74   0xBC30             POP      {R4,R5}
+   \       0x76   0x4770             BX       LR               ;; return
+    222          
+
+   \                                 In section .text, align 2, keep-with-next
+    223          void Init_PWM_Input_Data(void)
+    224          {
+   \                     Init_PWM_Input_Data: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    225            // Initialize Live Module Data
+    226            pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f = 0;    // Measured duty cycle(from driver) averaged over 4 values
+   \        0x2   0x....             LDR      R4,??DataTable3_1
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x62E0             STR      R0,[R4, #+44]
+    227            // pwmInput_Control.pwmInput_Data.dutyCycleScaled_f = 0;        // PWM scalled 0 to 100%
+    228            pwmInput_Control.pwmInput_Data.inheritedPWMInputFrequency_u16 = 0; // PWM Demand scalled 0 to 100%
+   \        0x8   0x2600             MOVS     R6,#+0
+   \        0xA   0x2144             MOVS     R1,#+68
+   \        0xC   0x5266             STRH     R6,[R4, R1]
+    229            pwmInput_Control.pwmInput_Data.increasingIntercept_f = 0;    // Intercept used to calculate demand when analog is increasing
+   \        0xE   0x0027             MOVS     R7,R4
+   \       0x10   0x3730             ADDS     R7,R7,#+48
+   \       0x12   0x6038             STR      R0,[R7, #+0]
+    230            pwmInput_Control.pwmInput_Data.decreasingIntercept_f = 0;    // Intercept used to calcualte demand when analog is decreasing
+   \       0x14   0x0025             MOVS     R5,R4
+   \       0x16   0x3534             ADDS     R5,R5,#+52
+   \       0x18   0x6028             STR      R0,[R5, #+0]
+    231            pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16 = 0;   // Previous duty cycle sample
+   \       0x1A   0x2048             MOVS     R0,#+72
+   \       0x1C   0x5226             STRH     R6,[R4, R0]
+    232            pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmDutyCycleLow = FALSE;         // Set to "1" if loss of analog is detected
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x304C             ADDS     R0,R0,#+76
+   \       0x22   0x214C             MOVS     R1,#+76
+   \       0x24   0x5A61             LDRH     R1,[R4, R1]
+   \       0x26   0x....             LDR      R2,??DataTable4_2  ;; 0xfffd
+   \       0x28   0x400A             ANDS     R2,R2,R1
+   \       0x2A   0x8002             STRH     R2,[R0, #+0]
+    233            pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow = FALSE;         // Set to "1" if loss of pwm input frequency is low
+   \       0x2C   0x214C             MOVS     R1,#+76
+   \       0x2E   0x5A61             LDRH     R1,[R4, R1]
+   \       0x30   0x....             LDR      R2,??DataTable4_3  ;; 0xfffb
+   \       0x32   0x400A             ANDS     R2,R2,R1
+   \       0x34   0x8002             STRH     R2,[R0, #+0]
+    234            pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;                // Set to "1" if demand goes from 0 to above min demand.
+   \       0x36   0x214C             MOVS     R1,#+76
+   \       0x38   0x5A61             LDRH     R1,[R4, R1]
+   \       0x3A   0x....             LDR      R2,??DataTable4  ;; 0xfff7
+   \       0x3C   0x400A             ANDS     R2,R2,R1
+   \       0x3E   0x8002             STRH     R2,[R0, #+0]
+    235            pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;   // Set to "1" if lower end hysteresis need to be enabled
+   \       0x40   0x214C             MOVS     R1,#+76
+   \       0x42   0x5A61             LDRH     R1,[R4, R1]
+   \       0x44   0x....             LDR      R2,??DataTable4_4  ;; 0xffef
+   \       0x46   0x400A             ANDS     R2,R2,R1
+   \       0x48   0x8002             STRH     R2,[R0, #+0]
+    236            pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = FALSE;   // Set to "1" if upper end hysteresis need to be enabled
+   \       0x4A   0x214C             MOVS     R1,#+76
+   \       0x4C   0x5A61             LDRH     R1,[R4, R1]
+   \       0x4E   0x....             LDR      R2,??DataTable4_5  ;; 0xffdf
+   \       0x50   0x400A             ANDS     R2,R2,R1
+   \       0x52   0x8002             STRH     R2,[R0, #+0]
+    237            pwmInput_Control.pwmInput_Data.discretes_u16.is_digitalInputON = FALSE;  
+   \       0x54   0x214C             MOVS     R1,#+76
+   \       0x56   0x5A61             LDRH     R1,[R4, R1]
+   \       0x58   0x....             LDR      R2,??DataTable4_6  ;; 0xffbf
+   \       0x5A   0x400A             ANDS     R2,R2,R1
+   \       0x5C   0x8002             STRH     R2,[R0, #+0]
+    238            pwmInput_Control.pwmInput_Data.discretes_u16.is_TurnOnDutyCycleOccured = FALSE;  // Detemines if Turn On Duty Cycle scenario has been satisfied
+   \       0x5E   0x214C             MOVS     R1,#+76
+   \       0x60   0x5A61             LDRH     R1,[R4, R1]
+   \       0x62   0x....             LDR      R2,??DataTable4_7  ;; 0xff7f
+   \       0x64   0x400A             ANDS     R2,R2,R1
+   \       0x66   0x8002             STRH     R2,[R0, #+0]
+    239            // pwmInput_Control.pwmInput_Data.has_NormalPWMOperationBegan = FALSE;    // Determines when normal duty cycle has occurred; enables hysteresis
+    240            pwmInput_Control.pwmInput_Data.discretes_u16.is_LossDutyCycleBeenExceeded = FALSE;
+   \       0x68   0x214C             MOVS     R1,#+76
+   \       0x6A   0x5A61             LDRH     R1,[R4, R1]
+   \       0x6C   0x....             LDR      R2,??DataTable4_8  ;; 0xfeff
+   \       0x6E   0x400A             ANDS     R2,R2,R1
+   \       0x70   0x8002             STRH     R2,[R0, #+0]
+    241            pwmInput_Control.pwmInput_Data.pwmInputDemandPercentage_u16 = 0;
+   \       0x72   0x2046             MOVS     R0,#+70
+   \       0x74   0x5226             STRH     R6,[R4, R0]
+    242            
+    243            pwm_input_low_alarm_enable_count_u16 = pwmInput_Control.pwmInput_Settings.pwmLowAlarmEnableCount_u16;
+   \       0x76   0x8CE0             LDRH     R0,[R4, #+38]
+   \       0x78   0x....             LDR      R1,??DataTable4_9
+   \       0x7A   0x8008             STRH     R0,[R1, #+0]
+    244            
+    245            if(pwmInput_Control.pwmInput_Settings.inputMode_u16 == PWM_IN_DIGITAL_MODE)
+   \       0x7C   0x8BE0             LDRH     R0,[R4, #+30]
+   \       0x7E   0x2802             CMP      R0,#+2
+   \       0x80   0xD102             BNE      ??Init_PWM_Input_Data_0
+    246            {
+    247              // Init input as a digital input
+    248              PWMInput_GPIO_DigitalInput_Init();
+   \       0x82   0x....'....        BL       PWMInput_GPIO_DigitalInput_Init
+   \       0x86   0xE003             B        ??Init_PWM_Input_Data_1
+    249            }else
+    250            {
+    251              // Init input as an PWM input
+    252              PWMInput_GPIO_PwmInput_Init();
+   \                     ??Init_PWM_Input_Data_0: (+1)
+   \       0x88   0x....'....        BL       PWMInput_GPIO_PwmInput_Init
+    253              PWMInputTimerInit();
+   \       0x8C   0x....'....        BL       PWMInputTimerInit
+    254            }
+    255            
+    256            // Local Variables for Slope and Intercept Calculations
+    257            uint16_t demand_range = 0;
+   \                     ??Init_PWM_Input_Data_1: (+1)
+   \       0x90   0x4668             MOV      R0,SP
+   \       0x92   0x8086             STRH     R6,[R0, #+4]
+    258            uint16_t pwm_range = 0;
+   \       0x94   0x4668             MOV      R0,SP
+   \       0x96   0x8006             STRH     R6,[R0, #+0]
+    259            
+    260            // Decreasing Slope and Intercept Calculations
+    261            demand_range = pwmInput_Control.pwmInput_Settings.maxDemand_u16 - pwmInput_Control.pwmInput_Settings.minDemand_u16;
+   \       0x98   0x89E0             LDRH     R0,[R4, #+14]
+   \       0x9A   0x89A1             LDRH     R1,[R4, #+12]
+   \       0x9C   0x1A40             SUBS     R0,R0,R1
+   \       0x9E   0x4669             MOV      R1,SP
+   \       0xA0   0x8088             STRH     R0,[R1, #+4]
+    262            pwm_range = (pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16) - (pwmInput_Control.pwmInput_Settings.minDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16);                                                                 
+   \       0xA2   0x8920             LDRH     R0,[R4, #+8]
+   \       0xA4   0x8C21             LDRH     R1,[R4, #+32]
+   \       0xA6   0x1A40             SUBS     R0,R0,R1
+   \       0xA8   0x8961             LDRH     R1,[R4, #+10]
+   \       0xAA   0x1A40             SUBS     R0,R0,R1
+   \       0xAC   0x8C21             LDRH     R1,[R4, #+32]
+   \       0xAE   0x1846             ADDS     R6,R0,R1
+    263            pwmInput_Control.pwmInput_Data.decreasingSlope_f = (float)(demand_range / ((float)pwm_range));                                                                                                                                                                                                                           // Slope used to calculate demand when analog is decreasing
+   \       0xB0   0x4668             MOV      R0,SP
+   \       0xB2   0x8880             LDRH     R0,[R0, #+4]
+   \       0xB4   0x....'....        BL       __aeabi_ui2f
+   \       0xB8   0x9000             STR      R0,[SP, #+0]
+   \       0xBA   0x0030             MOVS     R0,R6
+   \       0xBC   0xB280             UXTH     R0,R0
+   \       0xBE   0x....'....        BL       __aeabi_ui2f
+   \       0xC2   0x0001             MOVS     R1,R0
+   \       0xC4   0x9800             LDR      R0,[SP, #+0]
+   \       0xC6   0x....'....        BL       __aeabi_fdiv
+   \       0xCA   0x63A0             STR      R0,[R4, #+56]
+    264            pwmInput_Control.pwmInput_Data.decreasingIntercept_f = (float)(pwmInput_Control.pwmInput_Settings.minDemand_u16 - (float)((pwmInput_Control.pwmInput_Data.decreasingSlope_f) * (pwmInput_Control.pwmInput_Settings.minDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16))); // Intercept used to calcualte demand when analog is decreasing
+   \       0xCC   0x89A0             LDRH     R0,[R4, #+12]
+   \       0xCE   0x....'....        BL       __aeabi_ui2f
+   \       0xD2   0x9000             STR      R0,[SP, #+0]
+   \       0xD4   0x8960             LDRH     R0,[R4, #+10]
+   \       0xD6   0x8C21             LDRH     R1,[R4, #+32]
+   \       0xD8   0x1A40             SUBS     R0,R0,R1
+   \       0xDA   0x....'....        BL       __aeabi_i2f
+   \       0xDE   0x6BA1             LDR      R1,[R4, #+56]
+   \       0xE0   0x....'....        BL       __aeabi_fmul
+   \       0xE4   0x0001             MOVS     R1,R0
+   \       0xE6   0x9800             LDR      R0,[SP, #+0]
+   \       0xE8   0x....'....        BL       __aeabi_fsub
+   \       0xEC   0x6028             STR      R0,[R5, #+0]
+    265            
+    266            // Increasing Slope and Intercept Calculations
+    267            demand_range = pwmInput_Control.pwmInput_Settings.maxDemand_u16 - pwmInput_Control.pwmInput_Settings.minDemand_u16;
+   \       0xEE   0x89E0             LDRH     R0,[R4, #+14]
+   \       0xF0   0x89A1             LDRH     R1,[R4, #+12]
+   \       0xF2   0x1A40             SUBS     R0,R0,R1
+   \       0xF4   0x4669             MOV      R1,SP
+   \       0xF6   0x8088             STRH     R0,[R1, #+4]
+    268            pwm_range = pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.minDutyCycle_u16; 
+   \       0xF8   0x8920             LDRH     R0,[R4, #+8]
+   \       0xFA   0x8961             LDRH     R1,[R4, #+10]
+   \       0xFC   0x1A45             SUBS     R5,R0,R1
+    269            pwmInput_Control.pwmInput_Data.increasingSlope_f = (float)(demand_range / ((float)pwm_range));  // Slope used to calculate demand when analog is increasing
+   \       0xFE   0x4668             MOV      R0,SP
+   \      0x100   0x8880             LDRH     R0,[R0, #+4]
+   \      0x102   0x....'....        BL       __aeabi_ui2f
+   \      0x106   0x9000             STR      R0,[SP, #+0]
+   \      0x108   0x0028             MOVS     R0,R5
+   \      0x10A   0xB280             UXTH     R0,R0
+   \      0x10C   0x....'....        BL       __aeabi_ui2f
+   \      0x110   0x0001             MOVS     R1,R0
+   \      0x112   0x9800             LDR      R0,[SP, #+0]
+   \      0x114   0x....'....        BL       __aeabi_fdiv
+   \      0x118   0x63E0             STR      R0,[R4, #+60]
+    270            pwmInput_Control.pwmInput_Data.increasingIntercept_f = (float)(pwmInput_Control.pwmInput_Settings.minDemand_u16 - (float)((pwmInput_Control.pwmInput_Data.increasingSlope_f) * (pwmInput_Control.pwmInput_Settings.minDutyCycle_u16))); // Interecept used to calculate demand when analog is increasing
+   \      0x11A   0x89A0             LDRH     R0,[R4, #+12]
+   \      0x11C   0x....'....        BL       __aeabi_ui2f
+   \      0x120   0x9000             STR      R0,[SP, #+0]
+   \      0x122   0x8960             LDRH     R0,[R4, #+10]
+   \      0x124   0x....'....        BL       __aeabi_ui2f
+   \      0x128   0x0001             MOVS     R1,R0
+   \      0x12A   0x6BE0             LDR      R0,[R4, #+60]
+   \      0x12C   0x....'....        BL       __aeabi_fmul
+   \      0x130   0x0001             MOVS     R1,R0
+   \      0x132   0x9800             LDR      R0,[SP, #+0]
+   \      0x134   0x....'....        BL       __aeabi_fsub
+   \      0x138   0x6038             STR      R0,[R7, #+0]
+    271          }
+   \      0x13A   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    272          
+    273          /**
+    274          ********************************************************************************************************************************
+    275          * @brief   Check if PWM is increasing or decresing
+    276          * @details Scenarios to update Duty Cycle. Check for Loss of Input.
+    277          * @retval  None
+    278          ********************************************************************************************************************************
+    279          */
+    280          /**
+    281          ********************************************************************************************************************************
+    282          * @brief   Check if PWM is increasing or decresing
+    283          * @details Check for hysteresis, turn ON/OFF and calculate demand 
+    284          * @param   None 
+    285          * @return  None
+    286          ********************************************************************************************************************************
+    287          */
+
+   \                                 In section .text, align 2, keep-with-next
+    288          void CheckDutyCycle(void)
+    289          {
+   \                     CheckDutyCycle: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    290            //Check if Turn On Duty Cycle has been achieved, needs to occur for normal operation to begin; Only executed once
+    291            if (pwmInput_Control.pwmInput_Data.discretes_u16.is_TurnOnDutyCycleOccured == FALSE)
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x....             LDR      R1,??DataTable4_10
+   \        0x6   0x224C             MOVS     R2,#+76
+   \        0x8   0x5A8A             LDRH     R2,[R1, R2]
+   \        0xA   0xB292             UXTH     R2,R2
+   \        0xC   0x09D2             LSRS     R2,R2,#+7
+   \        0xE   0x4002             ANDS     R2,R2,R0
+   \       0x10   0xB292             UXTH     R2,R2
+   \       0x12   0x2A00             CMP      R2,#+0
+   \       0x14   0xD105             BNE      ??CheckDutyCycle_0
+    292            {
+    293             /* if (pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == FALSE && pwm_input_duty_cycle_percentage_tmp_u16 >= pwmInput_Control.pwmInput_Settings.minTurnOnDutyCycle_u16)
+    294              {
+    295                pwmInput_Control.pwmInput_Data.discretes_u16.is_TurnOnDutyCycleOccured = TRUE;
+    296              } else if(pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == TRUE)
+    297              {
+    298                pwmInput_Control.pwmInput_Data.discretes_u16.is_TurnOnDutyCycleOccured = TRUE;
+    299              }*/
+    300              pwmInput_Control.pwmInput_Data.discretes_u16.is_TurnOnDutyCycleOccured = TRUE;
+   \       0x16   0x224C             MOVS     R2,#+76
+   \       0x18   0x5A8A             LDRH     R2,[R1, R2]
+   \       0x1A   0x2380             MOVS     R3,#+128
+   \       0x1C   0x4313             ORRS     R3,R3,R2
+   \       0x1E   0x224C             MOVS     R2,#+76
+   \       0x20   0x528B             STRH     R3,[R1, R2]
+    301            }
+    302            
+    303            //Check to see if loss duty cycle has been exceeded yet, needed to enable fail safe mode; Only executed once
+    304            if (pwmInput_Control.pwmInput_Data.discretes_u16.is_LossDutyCycleBeenExceeded == FALSE)  
+   \                     ??CheckDutyCycle_0: (+1)
+   \       0x22   0x224C             MOVS     R2,#+76
+   \       0x24   0x5A8A             LDRH     R2,[R1, R2]
+   \       0x26   0xB292             UXTH     R2,R2
+   \       0x28   0x0A12             LSRS     R2,R2,#+8
+   \       0x2A   0x4002             ANDS     R2,R2,R0
+   \       0x2C   0xB292             UXTH     R2,R2
+   \       0x2E   0x2A00             CMP      R2,#+0
+   \       0x30   0xD10B             BNE      ??CheckDutyCycle_1
+    305            {
+    306              if (pwm_input_duty_cycle_percentage_tmp_u16 > pwmInput_Control.pwmInput_Settings.pwmLowDutyCycle_u16)
+   \       0x32   0x8B8A             LDRH     R2,[R1, #+28]
+   \       0x34   0x....             LDR      R3,??DataTable4_11
+   \       0x36   0x881B             LDRH     R3,[R3, #+0]
+   \       0x38   0x429A             CMP      R2,R3
+   \       0x3A   0xD206             BCS      ??CheckDutyCycle_1
+    307              {
+    308                pwmInput_Control.pwmInput_Data.discretes_u16.is_LossDutyCycleBeenExceeded = TRUE;
+   \       0x3C   0x224C             MOVS     R2,#+76
+   \       0x3E   0x5A8A             LDRH     R2,[R1, R2]
+   \       0x40   0x2380             MOVS     R3,#+128
+   \       0x42   0x005B             LSLS     R3,R3,#+1        ;; #+256
+   \       0x44   0x4313             ORRS     R3,R3,R2
+   \       0x46   0x224C             MOVS     R2,#+76
+   \       0x48   0x528B             STRH     R3,[R1, R2]
+    309              }
+    310            }
+    311            
+    312            //Check if Duty cycle is decreasing/increasing
+    313            //Duty cycle is decreasing
+    314            if (pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16 > pwm_input_duty_cycle_percentage_tmp_u16)
+   \                     ??CheckDutyCycle_1: (+1)
+   \       0x4A   0x....             LDR      R2,??DataTable4_11
+   \       0x4C   0x8813             LDRH     R3,[R2, #+0]
+   \       0x4E   0x2448             MOVS     R4,#+72
+   \       0x50   0x5B0C             LDRH     R4,[R1, R4]
+   \       0x52   0x42A3             CMP      R3,R4
+   \       0x54   0xD207             BCS      ??CheckDutyCycle_2
+    315            { // Dutycycle is decreasing
+    316              pwm_input_duty_cycle_decreasing_debounce_count_u16++;
+   \       0x56   0x....             LDR      R3,??DataTable4_12
+   \       0x58   0x881C             LDRH     R4,[R3, #+0]
+   \       0x5A   0x1C64             ADDS     R4,R4,#+1
+   \       0x5C   0x801C             STRH     R4,[R3, #+0]
+    317              pwm_input_duty_cycle_increasing_debounce_count_u16 = 0;
+   \       0x5E   0x2300             MOVS     R3,#+0
+   \       0x60   0x....             LDR      R4,??DataTable4_13
+   \       0x62   0x8023             STRH     R3,[R4, #+0]
+   \       0x64   0xE00B             B        ??CheckDutyCycle_3
+    318            } else if(pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16 <= pwm_input_duty_cycle_percentage_tmp_u16)
+   \                     ??CheckDutyCycle_2: (+1)
+   \       0x66   0x8813             LDRH     R3,[R2, #+0]
+   \       0x68   0x2448             MOVS     R4,#+72
+   \       0x6A   0x5B0C             LDRH     R4,[R1, R4]
+   \       0x6C   0x42A3             CMP      R3,R4
+   \       0x6E   0xD306             BCC      ??CheckDutyCycle_3
+    319            { // Dutycycle is increasing
+    320              pwm_input_duty_cycle_decreasing_debounce_count_u16 = 0;
+   \       0x70   0x2300             MOVS     R3,#+0
+   \       0x72   0x....             LDR      R4,??DataTable4_12
+   \       0x74   0x8023             STRH     R3,[R4, #+0]
+    321              pwm_input_duty_cycle_increasing_debounce_count_u16++;    
+   \       0x76   0x....             LDR      R3,??DataTable4_13
+   \       0x78   0x881C             LDRH     R4,[R3, #+0]
+   \       0x7A   0x1C64             ADDS     R4,R4,#+1
+   \       0x7C   0x801C             STRH     R4,[R3, #+0]
+    322            }
+    323            
+    324            if( (pwm_input_duty_cycle_decreasing_debounce_count_u16 > pwmInput_Control.pwmInput_Settings.pwmInputDebounceCount_u16) || (pwm_input_duty_cycle_increasing_debounce_count_u16 > pwmInput_Control.pwmInput_Settings.pwmInputDebounceCount_u16) )
+   \                     ??CheckDutyCycle_3: (+1)
+   \       0x7E   0x....             LDR      R3,??DataTable4_12
+   \       0x80   0x8D0C             LDRH     R4,[R1, #+40]
+   \       0x82   0x881D             LDRH     R5,[R3, #+0]
+   \       0x84   0x42AC             CMP      R4,R5
+   \       0x86   0xD304             BCC      ??CheckDutyCycle_4
+   \       0x88   0x8D0C             LDRH     R4,[R1, #+40]
+   \       0x8A   0x....             LDR      R5,??DataTable4_13
+   \       0x8C   0x882D             LDRH     R5,[R5, #+0]
+   \       0x8E   0x42AC             CMP      R4,R5
+   \       0x90   0xD212             BCS      ??CheckDutyCycle_5
+    325            { // Debounce count satisfied
+    326              pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16 = pwm_input_duty_cycle_percentage_tmp_u16; //pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f; 
+   \                     ??CheckDutyCycle_4: (+1)
+   \       0x92   0x8814             LDRH     R4,[R2, #+0]
+   \       0x94   0x2548             MOVS     R5,#+72
+   \       0x96   0x534C             STRH     R4,[R1, R5]
+    327              //pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f = pwm_input_duty_cycle_percentage_tmp_u16; 
+    328              if(pwm_input_duty_cycle_decreasing_debounce_count_u16 > pwmInput_Control.pwmInput_Settings.pwmInputDebounceCount_u16)
+   \       0x98   0x8D0C             LDRH     R4,[R1, #+40]
+   \       0x9A   0x881B             LDRH     R3,[R3, #+0]
+   \       0x9C   0x429C             CMP      R4,R3
+   \       0x9E   0xD205             BCS      ??CheckDutyCycle_6
+    329              {
+    330                pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM = TRUE;
+   \       0xA0   0x234C             MOVS     R3,#+76
+   \       0xA2   0x5ACB             LDRH     R3,[R1, R3]
+   \       0xA4   0x4303             ORRS     R3,R3,R0
+   \       0xA6   0x244C             MOVS     R4,#+76
+   \       0xA8   0x530B             STRH     R3,[R1, R4]
+   \       0xAA   0xE005             B        ??CheckDutyCycle_5
+    331              }else
+    332              {
+    333                pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM = FALSE;
+   \                     ??CheckDutyCycle_6: (+1)
+   \       0xAC   0x234C             MOVS     R3,#+76
+   \       0xAE   0x5ACB             LDRH     R3,[R1, R3]
+   \       0xB0   0x....             LDR      R4,??DataTable4_14  ;; 0xfffe
+   \       0xB2   0x401C             ANDS     R4,R4,R3
+   \       0xB4   0x234C             MOVS     R3,#+76
+   \       0xB6   0x52CC             STRH     R4,[R1, R3]
+    334              }    
+    335            }
+    336          
+    337            // Delay low pwm detection. Needed on power up 
+    338            if (pwm_input_low_alarm_enable_count_u16 == 0)
+   \                     ??CheckDutyCycle_5: (+1)
+   \       0xB8   0x....             LDR      R3,??DataTable4_9
+   \       0xBA   0x881B             LDRH     R3,[R3, #+0]
+   \       0xBC   0x2B00             CMP      R3,#+0
+   \       0xBE   0xD125             BNE      ??CheckDutyCycle_7
+    339            {
+    340              // Check if loss of digital pwm
+    341              //if (pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f < pwmInput_Control.pwmInput_Settings.pwmLowDutyCycle_u16)
+    342              if (pwm_input_duty_cycle_percentage_tmp_u16 < pwmInput_Control.pwmInput_Settings.pwmLowDutyCycle_u16)  
+   \       0xC0   0x8812             LDRH     R2,[R2, #+0]
+   \       0xC2   0x8B8B             LDRH     R3,[R1, #+28]
+   \       0xC4   0x429A             CMP      R2,R3
+   \       0xC6   0xD206             BCS      ??CheckDutyCycle_8
+    343              {
+    344                pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmDutyCycleLow = TRUE;
+   \       0xC8   0x204C             MOVS     R0,#+76
+   \       0xCA   0x5A08             LDRH     R0,[R1, R0]
+   \       0xCC   0x2202             MOVS     R2,#+2
+   \       0xCE   0x4302             ORRS     R2,R2,R0
+   \       0xD0   0x204C             MOVS     R0,#+76
+   \       0xD2   0x520A             STRH     R2,[R1, R0]
+   \       0xD4   0xE007             B        ??CheckDutyCycle_9
+    345              } else 
+    346              {
+    347                is_pwm_input_above_low_threshold = TRUE;
+   \                     ??CheckDutyCycle_8: (+1)
+   \       0xD6   0x....             LDR      R2,??DataTable4_15
+   \       0xD8   0x8010             STRH     R0,[R2, #+0]
+    348                pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmDutyCycleLow = FALSE;
+   \       0xDA   0x204C             MOVS     R0,#+76
+   \       0xDC   0x5A08             LDRH     R0,[R1, R0]
+   \       0xDE   0x....             LDR      R2,??DataTable4_2  ;; 0xfffd
+   \       0xE0   0x4002             ANDS     R2,R2,R0
+   \       0xE2   0x204C             MOVS     R0,#+76
+   \       0xE4   0x520A             STRH     R2,[R1, R0]
+    349              }
+    350              
+    351              //if (pwmInput_Control.pwmInput_Data.inheritedPWMInputFrequency_u16 < pwmInput_Control.pwmInput_Settings.minPWMFrequency_u16)
+    352              if (pwm_input_frequency_tmp_u16 < pwmInput_Control.pwmInput_Settings.minPWMFrequency_u16)  
+   \                     ??CheckDutyCycle_9: (+1)
+   \       0xE6   0x....             LDR      R0,??DataTable4_16
+   \       0xE8   0x8800             LDRH     R0,[R0, #+0]
+   \       0xEA   0x88CA             LDRH     R2,[R1, #+6]
+   \       0xEC   0x4290             CMP      R0,R2
+   \       0xEE   0xD206             BCS      ??CheckDutyCycle_10
+    353              {
+    354                pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow = TRUE;
+   \       0xF0   0x204C             MOVS     R0,#+76
+   \       0xF2   0x5A08             LDRH     R0,[R1, R0]
+   \       0xF4   0x2204             MOVS     R2,#+4
+   \       0xF6   0x4302             ORRS     R2,R2,R0
+   \       0xF8   0x204C             MOVS     R0,#+76
+   \       0xFA   0x520A             STRH     R2,[R1, R0]
+   \       0xFC   0xE00E             B        ??CheckDutyCycle_11
+    355              } else
+    356              {
+    357                pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow = FALSE;
+   \                     ??CheckDutyCycle_10: (+1)
+   \       0xFE   0x204C             MOVS     R0,#+76
+   \      0x100   0x5A08             LDRH     R0,[R1, R0]
+   \      0x102   0x....             LDR      R2,??DataTable4_3  ;; 0xfffb
+   \      0x104   0x4002             ANDS     R2,R2,R0
+   \      0x106   0x204C             MOVS     R0,#+76
+   \      0x108   0x520A             STRH     R2,[R1, R0]
+   \      0x10A   0xE007             B        ??CheckDutyCycle_11
+    358              }
+    359            } else
+    360            {
+    361              is_pwm_input_above_low_threshold = TRUE;
+   \                     ??CheckDutyCycle_7: (+1)
+   \      0x10C   0x....             LDR      R2,??DataTable4_15
+   \      0x10E   0x8010             STRH     R0,[R2, #+0]
+    362              pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmDutyCycleLow = FALSE;
+   \      0x110   0x204C             MOVS     R0,#+76
+   \      0x112   0x5A08             LDRH     R0,[R1, R0]
+   \      0x114   0x....             LDR      R2,??DataTable4_2  ;; 0xfffd
+   \      0x116   0x4002             ANDS     R2,R2,R0
+   \      0x118   0x204C             MOVS     R0,#+76
+   \      0x11A   0x520A             STRH     R2,[R1, R0]
+    363            }
+    364          }
+   \                     ??CheckDutyCycle_11: (+1)
+   \      0x11C   0xBD30             POP      {R4,R5,PC}       ;; return
+    365          
+    366          /**
+    367          ********************************************************************************************************************************
+    368          * @brief   Convert PWM Duty Cycle to Demand ( min_Demand_u16 to max_Demand_u16)
+    369          * @details Check for hysteresis, turn ON/OFF and calculate demand 
+    370          * @param   None 
+    371          * @return  None
+    372          ********************************************************************************************************************************
+    373          */
+
+   \                                 In section .text, align 4, keep-with-next
+    374          uint16_t GetPWMDemand(void){
+   \                     GetPWMDemand: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    375            //local variables for demand calculations
+    376            uint32_t pwm_input_demand_u32 = 0;
+   \        0x2   0x2400             MOVS     R4,#+0
+   \        0x4   0x0025             MOVS     R5,R4
+    377            float slope_f;
+    378            float intercept_u16;
+    379            uint16_t pwm_input_duty_cycle_u16 = 0; 
+   \        0x6   0x0020             MOVS     R0,R4
+    380            uint16_t pwm_input_frequency_stable_tmp_u16 = 0;
+   \        0x8   0x0021             MOVS     R1,R4
+    381            
+    382            pwm_input_duty_cycle_u16 = pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16;
+   \        0xA   0x4ECD             LDR      R6,??GetPWMDemand_0
+   \        0xC   0x2248             MOVS     R2,#+72
+   \        0xE   0x5AB7             LDRH     R7,[R6, R2]
+    383            pwm_input_frequency_stable_tmp_u16 = pwmInput_Control.pwmInput_Data.inheritedPWMInputFrequency_u16;
+   \       0x10   0x2244             MOVS     R2,#+68
+   \       0x12   0x5AB2             LDRH     R2,[R6, R2]
+   \       0x14   0x466B             MOV      R3,SP
+   \       0x16   0x811A             STRH     R2,[R3, #+8]
+    384            
+    385            //Mode 1 of 3: PWM Mode not selected
+    386            if(pwmInput_Control.pwmInput_Settings.inputMode_u16 != PWM_IN_PWM_MODE)
+   \       0x18   0x8BF2             LDRH     R2,[R6, #+30]
+   \       0x1A   0x2A01             CMP      R2,#+1
+   \       0x1C   0xD007             BEQ      ??GetPWMDemand_1
+    387            {
+    388              pwm_input_demand_u32 = 0;
+   \       0x1E   0x0025             MOVS     R5,R4
+    389              pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;
+   \       0x20   0x204C             MOVS     R0,#+76
+   \       0x22   0x5A30             LDRH     R0,[R6, R0]
+   \       0x24   0x....             LDR      R1,??DataTable5  ;; 0xfff7
+   \       0x26   0x4001             ANDS     R1,R1,R0
+   \       0x28   0x204C             MOVS     R0,#+76
+   \       0x2A   0x5231             STRH     R1,[R6, R0]
+   \       0x2C   0xE163             B        ??GetPWMDemand_2
+    390            } else if ((pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmLowEnable == TRUE) && (pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmFailSafeEnable == TRUE ) && (pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmDutyCycleLow == TRUE) && pwmInput_Control.pwmInput_Data.discretes_u16.is_LossDutyCycleBeenExceeded == TRUE)
+   \                     ??GetPWMDemand_1: (+1)
+   \       0x2E   0x202A             MOVS     R0,#+42
+   \       0x30   0x5C30             LDRB     R0,[R6, R0]
+   \       0x32   0x2105             MOVS     R1,#+5
+   \       0x34   0x4001             ANDS     R1,R1,R0
+   \       0x36   0x2905             CMP      R1,#+5
+   \       0x38   0xD12E             BNE      ??GetPWMDemand_3
+   \       0x3A   0x2081             MOVS     R0,#+129
+   \       0x3C   0x0040             LSLS     R0,R0,#+1        ;; #+258
+   \       0x3E   0x214C             MOVS     R1,#+76
+   \       0x40   0x5A71             LDRH     R1,[R6, R1]
+   \       0x42   0x4001             ANDS     R1,R1,R0
+   \       0x44   0xB289             UXTH     R1,R1
+   \       0x46   0x4281             CMP      R1,R0
+   \       0x48   0xD126             BNE      ??GetPWMDemand_3
+    391            { //Mode 2 of 3: Fail Safe Mode Engaged
+    392              // Check if Loss of PWM Input
+    393              if((pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn == FALSE) && (is_pwm_input_above_low_threshold == FALSE)) //demand has never gone above min demand. 
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0x214C             MOVS     R1,#+76
+   \       0x4E   0x5A71             LDRH     R1,[R6, R1]
+   \       0x50   0xB289             UXTH     R1,R1
+   \       0x52   0x08C9             LSRS     R1,R1,#+3
+   \       0x54   0x0002             MOVS     R2,R0
+   \       0x56   0x400A             ANDS     R2,R2,R1
+   \       0x58   0xB292             UXTH     R2,R2
+   \       0x5A   0x2A00             CMP      R2,#+0
+   \       0x5C   0xD105             BNE      ??GetPWMDemand_4
+   \       0x5E   0x....             LDR      R1,??DataTable5_1
+   \       0x60   0x8809             LDRH     R1,[R1, #+0]
+   \       0x62   0x2900             CMP      R1,#+0
+   \       0x64   0xD101             BNE      ??GetPWMDemand_4
+    394              { // pwm never crossed turned ON duty cycle
+    395                pwm_input_demand_u32 = 0;
+   \       0x66   0x0025             MOVS     R5,R4
+   \       0x68   0xE145             B        ??GetPWMDemand_2
+    396              } else if ((is_pwm_input_above_low_threshold == TRUE) &&(pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn == TRUE))
+   \                     ??GetPWMDemand_4: (+1)
+   \       0x6A   0x....             LDR      R1,??DataTable5_1
+   \       0x6C   0x8809             LDRH     R1,[R1, #+0]
+   \       0x6E   0x2901             CMP      R1,#+1
+   \       0x70   0xD110             BNE      ??GetPWMDemand_5
+   \       0x72   0x214C             MOVS     R1,#+76
+   \       0x74   0x5A71             LDRH     R1,[R6, R1]
+   \       0x76   0xB289             UXTH     R1,R1
+   \       0x78   0x08C9             LSRS     R1,R1,#+3
+   \       0x7A   0x4008             ANDS     R0,R0,R1
+   \       0x7C   0xB280             UXTH     R0,R0
+   \       0x7E   0x2800             CMP      R0,#+0
+   \       0x80   0xD008             BEQ      ??GetPWMDemand_5
+    397              {
+    398                // Use fail safe demand if loss of pwm detected
+    399                pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.failSafeDemand_u16; 
+   \       0x82   0x8AF0             LDRH     R0,[R6, #+22]
+   \       0x84   0x0005             MOVS     R5,R0
+    400                pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = FALSE;
+   \       0x86   0x204C             MOVS     R0,#+76
+   \       0x88   0x5A30             LDRH     R0,[R6, R0]
+   \       0x8A   0x....             LDR      R1,??DataTable5_2  ;; 0xffdf
+   \       0x8C   0x4001             ANDS     R1,R1,R0
+   \       0x8E   0x204C             MOVS     R0,#+76
+   \       0x90   0x5231             STRH     R1,[R6, R0]
+   \       0x92   0xE130             B        ??GetPWMDemand_2
+    401              }else{
+    402                pwm_input_demand_u32 = 0;
+   \                     ??GetPWMDemand_5: (+1)
+   \       0x94   0x0025             MOVS     R5,R4
+   \       0x96   0xE12E             B        ??GetPWMDemand_2
+    403              }
+    404            } else 
+    405            { //Mode 3 of 3: Normal Operation Engaged
+    406              // Check if Turn On Duty Cycle has occured
+    407              if (pwmInput_Control.pwmInput_Data.discretes_u16.is_TurnOnDutyCycleOccured == TRUE)
+   \                     ??GetPWMDemand_3: (+1)
+   \       0x98   0x2001             MOVS     R0,#+1
+   \       0x9A   0x214C             MOVS     R1,#+76
+   \       0x9C   0x5A71             LDRH     R1,[R6, R1]
+   \       0x9E   0xB289             UXTH     R1,R1
+   \       0xA0   0x09C9             LSRS     R1,R1,#+7
+   \       0xA2   0x0002             MOVS     R2,R0
+   \       0xA4   0x400A             ANDS     R2,R2,R1
+   \       0xA6   0xB292             UXTH     R2,R2
+   \       0xA8   0x2A00             CMP      R2,#+0
+   \       0xAA   0xD100             BNE      .+4
+   \       0xAC   0xE123             B        ??GetPWMDemand_2
+    408              {
+    409                // Check if inverted demand is enabled, adjusts calculations accordingly
+    410               /* if(pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == TRUE) 
+    411                {
+    412                  pwm_input_duty_cycle_u16 = MAX_HARDWARE_PWM_IN_DUTY_CYCLE - pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16;
+    413                  if (pwm_input_duty_cycle_u16 < 0)
+    414                  {
+    415                    pwm_input_duty_cycle_u16 = 0;
+    416                  }
+    417                }*/
+    418                
+    419                // Check if increasing or decreasing slope
+    420                // Slope used when pwm duty cycle is increasing
+    421                if(pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM == FALSE)
+   \       0xAE   0x214C             MOVS     R1,#+76
+   \       0xB0   0x5A71             LDRH     R1,[R6, R1]
+   \       0xB2   0x0002             MOVS     R2,R0
+   \       0xB4   0x400A             ANDS     R2,R2,R1
+   \       0xB6   0xB292             UXTH     R2,R2
+   \       0xB8   0x2A00             CMP      R2,#+0
+   \       0xBA   0xD104             BNE      ??GetPWMDemand_6
+    422                { 
+    423                  slope_f = pwmInput_Control.pwmInput_Data.increasingSlope_f;
+   \       0xBC   0x6BF1             LDR      R1,[R6, #+60]
+   \       0xBE   0x9101             STR      R1,[SP, #+4]
+    424                  intercept_u16 = pwmInput_Control.pwmInput_Data.increasingIntercept_f;
+   \       0xC0   0x6B31             LDR      R1,[R6, #+48]
+   \       0xC2   0x9100             STR      R1,[SP, #+0]
+   \       0xC4   0xE003             B        ??GetPWMDemand_7
+    425                } else 
+    426                {// Slope used when pwm duty cycle is decreasing
+    427                  slope_f = pwmInput_Control.pwmInput_Data.decreasingSlope_f;
+   \                     ??GetPWMDemand_6: (+1)
+   \       0xC6   0x6BB1             LDR      R1,[R6, #+56]
+   \       0xC8   0x9101             STR      R1,[SP, #+4]
+    428                  intercept_u16 = pwmInput_Control.pwmInput_Data.decreasingIntercept_f;
+   \       0xCA   0x6B71             LDR      R1,[R6, #+52]
+   \       0xCC   0x9100             STR      R1,[SP, #+0]
+    429                }
+    430                
+    431                if( (pwm_input_frequency_stable_tmp_u16 >= pwmInput_Control.pwmInput_Settings.minPWMFrequency_u16) && (pwm_input_frequency_stable_tmp_u16 <= pwmInput_Control.pwmInput_Settings.maxPWMFrequency_u16) )
+   \                     ??GetPWMDemand_7: (+1)
+   \       0xCE   0x4669             MOV      R1,SP
+   \       0xD0   0x8909             LDRH     R1,[R1, #+8]
+   \       0xD2   0x88F2             LDRH     R2,[R6, #+6]
+   \       0xD4   0x4291             CMP      R1,R2
+   \       0xD6   0xD200             BCS      .+4
+   \       0xD8   0xE106             B        ??GetPWMDemand_8
+   \       0xDA   0x88B1             LDRH     R1,[R6, #+4]
+   \       0xDC   0x466A             MOV      R2,SP
+   \       0xDE   0x8912             LDRH     R2,[R2, #+8]
+   \       0xE0   0x4291             CMP      R1,R2
+   \       0xE2   0xD200             BCS      .+4
+   \       0xE4   0xE100             B        ??GetPWMDemand_8
+    432                {  
+    433                  //Duty Cycle is in normal operation zone
+    434                  pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow = FALSE;
+   \       0xE6   0x0031             MOVS     R1,R6
+   \       0xE8   0x314C             ADDS     R1,R1,#+76
+   \       0xEA   0x224C             MOVS     R2,#+76
+   \       0xEC   0x5AB2             LDRH     R2,[R6, R2]
+   \       0xEE   0x....             LDR      R3,??DataTable6  ;; 0xfffb
+   \       0xF0   0x4013             ANDS     R3,R3,R2
+   \       0xF2   0x800B             STRH     R3,[R1, #+0]
+    435                  
+    436                  if ( (pwm_input_duty_cycle_u16 >= pwmInput_Control.pwmInput_Settings.offDutyCycle_u16) && (pwm_input_duty_cycle_u16 < (pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16)) )
+   \       0xF4   0x003A             MOVS     R2,R7
+   \       0xF6   0x8C73             LDRH     R3,[R6, #+34]
+   \       0xF8   0xB292             UXTH     R2,R2
+   \       0xFA   0x429A             CMP      R2,R3
+   \       0xFC   0xD200             BCS      .+4
+   \       0xFE   0xE090             B        ??GetPWMDemand_9
+   \      0x100   0x003B             MOVS     R3,R7
+   \      0x102   0xB29B             UXTH     R3,R3
+   \      0x104   0x469C             MOV      R12,R3
+   \      0x106   0x8933             LDRH     R3,[R6, #+8]
+   \      0x108   0x8C32             LDRH     R2,[R6, #+32]
+   \      0x10A   0x1A9A             SUBS     R2,R3,R2
+   \      0x10C   0x4663             MOV      R3,R12
+   \      0x10E   0x4293             CMP      R3,R2
+   \      0x110   0xDB00             BLT      .+4
+   \      0x112   0xE086             B        ??GetPWMDemand_9
+    437                  {         
+    438                    // Duty Cycle when above ON duty cycle for first time and meeting frequency criteria
+    439                    //pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = TRUE;
+    440                    pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = FALSE;
+   \      0x114   0x224C             MOVS     R2,#+76
+   \      0x116   0x5AB2             LDRH     R2,[R6, R2]
+   \      0x118   0x....             LDR      R3,??DataTable5_2  ;; 0xffdf
+   \      0x11A   0x4013             ANDS     R3,R3,R2
+   \      0x11C   0x800B             STRH     R3,[R1, #+0]
+    441                    
+    442                    if (pwm_input_duty_cycle_u16 >= pwmInput_Control.pwmInput_Settings.onDutyCycle_u16)
+   \      0x11E   0x003A             MOVS     R2,R7
+   \      0x120   0x8CB3             LDRH     R3,[R6, #+36]
+   \      0x122   0xB292             UXTH     R2,R2
+   \      0x124   0x429A             CMP      R2,R3
+   \      0x126   0xD354             BCC      ??GetPWMDemand_10
+    443                    {
+    444                      if (pwm_input_duty_cycle_u16 >= pwmInput_Control.pwmInput_Settings.minDutyCycle_u16)
+   \      0x128   0x003A             MOVS     R2,R7
+   \      0x12A   0x8973             LDRH     R3,[R6, #+10]
+   \      0x12C   0xB292             UXTH     R2,R2
+   \      0x12E   0x429A             CMP      R2,R3
+   \      0x130   0xD315             BCC      ??GetPWMDemand_11
+    445                      {
+    446                        pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = TRUE;
+   \      0x132   0x204C             MOVS     R0,#+76
+   \      0x134   0x5A30             LDRH     R0,[R6, R0]
+   \      0x136   0x2210             MOVS     R2,#+16
+   \      0x138   0x4302             ORRS     R2,R2,R0
+   \      0x13A   0x800A             STRH     R2,[R1, #+0]
+    447                        pwm_input_demand_u32 = (uint16_t)((float)(slope_f * pwm_input_duty_cycle_u16) + intercept_u16);
+   \      0x13C   0x0038             MOVS     R0,R7
+   \      0x13E   0xB280             UXTH     R0,R0
+   \      0x140   0x....'....        BL       __aeabi_ui2f
+   \      0x144   0x0001             MOVS     R1,R0
+   \      0x146   0x9801             LDR      R0,[SP, #+4]
+   \      0x148   0x....'....        BL       __aeabi_fmul
+   \      0x14C   0x0001             MOVS     R1,R0
+   \      0x14E   0x9800             LDR      R0,[SP, #+0]
+   \      0x150   0x....'....        BL       __aeabi_fadd
+   \      0x154   0x....'....        BL       __aeabi_f2iz
+   \      0x158   0xB280             UXTH     R0,R0
+   \      0x15A   0x0005             MOVS     R5,R0
+   \      0x15C   0xE0BE             B        ??GetPWMDemand_12
+    448                      } else if(pwm_input_duty_cycle_u16 < pwmInput_Control.pwmInput_Settings.minDutyCycle_u16)
+   \                     ??GetPWMDemand_11: (+1)
+   \      0x15E   0x003A             MOVS     R2,R7
+   \      0x160   0x8973             LDRH     R3,[R6, #+10]
+   \      0x162   0xB292             UXTH     R2,R2
+   \      0x164   0x429A             CMP      R2,R3
+   \      0x166   0xD300             BCC      .+4
+   \      0x168   0xE0B8             B        ??GetPWMDemand_12
+    449                      {
+    450                        // Lower end hysteresis handler with MinDemandEnable
+    451                        if ((pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable == TRUE) )//{&& (pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable == TRUE))
+   \      0x16A   0x8D72             LDRH     R2,[R6, #+42]
+   \      0x16C   0xB292             UXTH     R2,R2
+   \      0x16E   0x08D2             LSRS     R2,R2,#+3
+   \      0x170   0x0003             MOVS     R3,R0
+   \      0x172   0x4013             ANDS     R3,R3,R2
+   \      0x174   0xB29B             UXTH     R3,R3
+   \      0x176   0x2B00             CMP      R3,#+0
+   \      0x178   0xD002             BEQ      ??GetPWMDemand_13
+    452                        {
+    453                          pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.minDemand_u16;
+   \      0x17A   0x89B0             LDRH     R0,[R6, #+12]
+   \      0x17C   0x0005             MOVS     R5,R0
+   \      0x17E   0xE0AD             B        ??GetPWMDemand_12
+    454                        } else if (pwm_input_duty_cycle_u16 >= pwmInput_Control.pwmInput_Settings.minDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16 && pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable == TRUE)
+   \                     ??GetPWMDemand_13: (+1)
+   \      0x180   0x003B             MOVS     R3,R7
+   \      0x182   0xB29B             UXTH     R3,R3
+   \      0x184   0x469C             MOV      R12,R3
+   \      0x186   0x8973             LDRH     R3,[R6, #+10]
+   \      0x188   0x8C32             LDRH     R2,[R6, #+32]
+   \      0x18A   0x1A9A             SUBS     R2,R3,R2
+   \      0x18C   0x4663             MOV      R3,R12
+   \      0x18E   0x4293             CMP      R3,R2
+   \      0x190   0xDB18             BLT      ??GetPWMDemand_14
+   \      0x192   0x224C             MOVS     R2,#+76
+   \      0x194   0x5AB2             LDRH     R2,[R6, R2]
+   \      0x196   0xB292             UXTH     R2,R2
+   \      0x198   0x0912             LSRS     R2,R2,#+4
+   \      0x19A   0x4010             ANDS     R0,R0,R2
+   \      0x19C   0xB280             UXTH     R0,R0
+   \      0x19E   0x2800             CMP      R0,#+0
+   \      0x1A0   0xD010             BEQ      ??GetPWMDemand_14
+    455                        { // Lower end hysteresis handler without MinDemandEnable
+    456                          pwm_input_demand_u32 = (uint16_t)((float)(slope_f * pwm_input_duty_cycle_u16) + intercept_u16);
+   \      0x1A2   0x0038             MOVS     R0,R7
+   \      0x1A4   0xB280             UXTH     R0,R0
+   \      0x1A6   0x....'....        BL       __aeabi_ui2f
+   \      0x1AA   0x0001             MOVS     R1,R0
+   \      0x1AC   0x9801             LDR      R0,[SP, #+4]
+   \      0x1AE   0x....'....        BL       __aeabi_fmul
+   \      0x1B2   0x0001             MOVS     R1,R0
+   \      0x1B4   0x9800             LDR      R0,[SP, #+0]
+   \      0x1B6   0x....'....        BL       __aeabi_fadd
+   \      0x1BA   0x....'....        BL       __aeabi_f2iz
+   \      0x1BE   0xB280             UXTH     R0,R0
+   \      0x1C0   0x0005             MOVS     R5,R0
+   \      0x1C2   0xE08B             B        ??GetPWMDemand_12
+    457                        } else
+    458                        {
+    459                          // Inverted Demand Handler without Hysteresis
+    460                          /*if ((pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == TRUE) && (pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable == TRUE))
+    461                          {
+    462                            pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.maxDemand_u16;
+    463                          } else
+    464                          {*/
+    465                            pwm_input_demand_u32 = 0;
+   \                     ??GetPWMDemand_14: (+1)
+   \      0x1C4   0x0025             MOVS     R5,R4
+    466                            pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;
+   \      0x1C6   0x204C             MOVS     R0,#+76
+   \      0x1C8   0x5A30             LDRH     R0,[R6, R0]
+   \      0x1CA   0x....             LDR      R2,??DataTable8  ;; 0xffef
+   \      0x1CC   0x4002             ANDS     R2,R2,R0
+   \      0x1CE   0x800A             STRH     R2,[R1, #+0]
+   \      0x1D0   0xE084             B        ??GetPWMDemand_12
+    467                        //  }
+    468                          
+    469                        }
+    470                      }
+    471                    }else if (pwm_input_duty_cycle_u16 >= pwmInput_Control.pwmInput_Settings.offDutyCycle_u16) {
+   \                     ??GetPWMDemand_10: (+1)
+   \      0x1D2   0x003A             MOVS     R2,R7
+   \      0x1D4   0x8C73             LDRH     R3,[R6, #+34]
+   \      0x1D6   0xB292             UXTH     R2,R2
+   \      0x1D8   0x429A             CMP      R2,R3
+   \      0x1DA   0xD319             BCC      ??GetPWMDemand_15
+    472                  
+    473                    if((pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable) == TRUE && ( pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable == TRUE)){
+   \      0x1DC   0x8D72             LDRH     R2,[R6, #+42]
+   \      0x1DE   0xB292             UXTH     R2,R2
+   \      0x1E0   0x08D2             LSRS     R2,R2,#+3
+   \      0x1E2   0x0003             MOVS     R3,R0
+   \      0x1E4   0x4013             ANDS     R3,R3,R2
+   \      0x1E6   0xB29B             UXTH     R3,R3
+   \      0x1E8   0x2B00             CMP      R3,#+0
+   \      0x1EA   0xD00A             BEQ      ??GetPWMDemand_16
+   \      0x1EC   0x224C             MOVS     R2,#+76
+   \      0x1EE   0x5AB2             LDRH     R2,[R6, R2]
+   \      0x1F0   0xB292             UXTH     R2,R2
+   \      0x1F2   0x0912             LSRS     R2,R2,#+4
+   \      0x1F4   0x4010             ANDS     R0,R0,R2
+   \      0x1F6   0xB280             UXTH     R0,R0
+   \      0x1F8   0x2800             CMP      R0,#+0
+   \      0x1FA   0xD002             BEQ      ??GetPWMDemand_16
+    474                      
+    475                       pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.minDemand_u16;
+   \      0x1FC   0x89B0             LDRH     R0,[R6, #+12]
+   \      0x1FE   0x0005             MOVS     R5,R0
+   \      0x200   0xE06C             B        ??GetPWMDemand_12
+    476                     
+    477                    }else{
+    478                      pwm_input_demand_u32 = 0;
+   \                     ??GetPWMDemand_16: (+1)
+   \      0x202   0x0025             MOVS     R5,R4
+    479                      pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;
+   \      0x204   0x204C             MOVS     R0,#+76
+   \      0x206   0x5A30             LDRH     R0,[R6, R0]
+   \      0x208   0x....             LDR      R2,??DataTable5  ;; 0xfff7
+   \      0x20A   0x4002             ANDS     R2,R2,R0
+   \      0x20C   0x800A             STRH     R2,[R1, #+0]
+   \      0x20E   0xE065             B        ??GetPWMDemand_12
+    480                    }
+    481                  } else if (pwm_input_duty_cycle_u16 < pwmInput_Control.pwmInput_Settings.onDutyCycle_u16)
+   \                     ??GetPWMDemand_15: (+1)
+   \      0x210   0x0038             MOVS     R0,R7
+   \      0x212   0x8CB1             LDRH     R1,[R6, #+36]
+   \      0x214   0xB280             UXTH     R0,R0
+   \      0x216   0x4288             CMP      R0,R1
+   \      0x218   0xD201             BCS      ??GetPWMDemand_17
+    482                    { // Turn On Duty Cycle never satisfied
+    483                      pwm_input_demand_u32 = 0;
+   \      0x21A   0x0025             MOVS     R5,R4
+   \      0x21C   0xE05E             B        ??GetPWMDemand_12
+    484                    } else
+    485                    {
+    486                      pwm_input_demand_u32 = 0;
+   \                     ??GetPWMDemand_17: (+1)
+   \      0x21E   0x0025             MOVS     R5,R4
+   \      0x220   0xE05C             B        ??GetPWMDemand_12
+    487                    }
+    488                    //   pwmInput_Control.pwmInput_Data.has_NormalPWMOperationBegan = TRUE;
+    489                    //   pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn == TRUE;
+    490                    //   pwm_input_demand_u32 = (float)((float)(slope_f * pwm_input_duty_cycle_u16) + intercept_u16);
+    491                  } else if (pwm_input_duty_cycle_u16 >= (pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16 - pwmInput_Control.pwmInput_Settings.dutyCycleHysteresis_u16)) 
+   \                     ??GetPWMDemand_9: (+1)
+   \      0x222   0x003B             MOVS     R3,R7
+   \      0x224   0xB29B             UXTH     R3,R3
+   \      0x226   0x469C             MOV      R12,R3
+   \      0x228   0x8933             LDRH     R3,[R6, #+8]
+   \      0x22A   0x8C32             LDRH     R2,[R6, #+32]
+   \      0x22C   0x1A9A             SUBS     R2,R3,R2
+   \      0x22E   0x4663             MOV      R3,R12
+   \      0x230   0x4293             CMP      R3,R2
+   \      0x232   0xDB48             BLT      ??GetPWMDemand_18
+    492                  { // Upper End Hysteresis Operation
+    493                    if (pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable == TRUE)
+   \      0x234   0x224C             MOVS     R2,#+76
+   \      0x236   0x5AB2             LDRH     R2,[R6, R2]
+   \      0x238   0xB292             UXTH     R2,R2
+   \      0x23A   0x0952             LSRS     R2,R2,#+5
+   \      0x23C   0x0003             MOVS     R3,R0
+   \      0x23E   0x4013             ANDS     R3,R3,R2
+   \      0x240   0xB29B             UXTH     R3,R3
+   \      0x242   0x2B00             CMP      R3,#+0
+   \      0x244   0xD018             BEQ      ??GetPWMDemand_19
+    494                    {
+    495                      // Default to Max Demand with Upper Hysteresis enabled
+    496                      if (pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM == TRUE)
+   \      0x246   0x214C             MOVS     R1,#+76
+   \      0x248   0x5A71             LDRH     R1,[R6, R1]
+   \      0x24A   0x4008             ANDS     R0,R0,R1
+   \      0x24C   0xB280             UXTH     R0,R0
+   \      0x24E   0x2800             CMP      R0,#+0
+   \      0x250   0xD002             BEQ      ??GetPWMDemand_20
+    497                      {
+    498                        pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.maxDemand_u16;
+   \      0x252   0x89F0             LDRH     R0,[R6, #+14]
+   \      0x254   0x0005             MOVS     R5,R0
+   \      0x256   0xE041             B        ??GetPWMDemand_12
+    499                      } else
+    500                      { // Calculated demand with Upper Hysteresis enabled
+    501                        pwm_input_demand_u32 = (uint32_t)((float)(slope_f * pwm_input_duty_cycle_u16) + intercept_u16);
+   \                     ??GetPWMDemand_20: (+1)
+   \      0x258   0x0038             MOVS     R0,R7
+   \      0x25A   0xB280             UXTH     R0,R0
+   \      0x25C   0x....'....        BL       __aeabi_ui2f
+   \      0x260   0x0001             MOVS     R1,R0
+   \      0x262   0x9801             LDR      R0,[SP, #+4]
+   \      0x264   0x....'....        BL       __aeabi_fmul
+   \      0x268   0x0001             MOVS     R1,R0
+   \      0x26A   0x9800             LDR      R0,[SP, #+0]
+   \      0x26C   0x....'....        BL       __aeabi_fadd
+   \      0x270   0x....'....        BL       __aeabi_f2uiz
+   \      0x274   0x0005             MOVS     R5,R0
+   \      0x276   0xE031             B        ??GetPWMDemand_12
+    502                      }  
+    503                    } else if (pwm_input_duty_cycle_u16 <= pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16)
+   \                     ??GetPWMDemand_19: (+1)
+   \      0x278   0x8930             LDRH     R0,[R6, #+8]
+   \      0x27A   0x003A             MOVS     R2,R7
+   \      0x27C   0xB292             UXTH     R2,R2
+   \      0x27E   0x4290             CMP      R0,R2
+   \      0x280   0xD314             BCC      ??GetPWMDemand_21
+    504                    { // Demand is less than maxDutyCycle and is calculated
+    505                      pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = TRUE;
+   \      0x282   0x204C             MOVS     R0,#+76
+   \      0x284   0x5A30             LDRH     R0,[R6, R0]
+   \      0x286   0x2220             MOVS     R2,#+32
+   \      0x288   0x4302             ORRS     R2,R2,R0
+   \      0x28A   0x800A             STRH     R2,[R1, #+0]
+    506                      pwm_input_demand_u32 = (uint32_t)((float)(slope_f * pwm_input_duty_cycle_u16) + intercept_u16);
+   \      0x28C   0x0038             MOVS     R0,R7
+   \      0x28E   0xB280             UXTH     R0,R0
+   \      0x290   0x....'....        BL       __aeabi_ui2f
+   \      0x294   0x0001             MOVS     R1,R0
+   \      0x296   0x9801             LDR      R0,[SP, #+4]
+   \      0x298   0x....'....        BL       __aeabi_fmul
+   \      0x29C   0x0001             MOVS     R1,R0
+   \      0x29E   0x9800             LDR      R0,[SP, #+0]
+   \      0x2A0   0x....'....        BL       __aeabi_fadd
+   \      0x2A4   0x....'....        BL       __aeabi_f2uiz
+   \      0x2A8   0x0005             MOVS     R5,R0
+   \      0x2AA   0xE017             B        ??GetPWMDemand_12
+    507                    } else if (pwm_input_duty_cycle_u16 > pwmInput_Control.pwmInput_Settings.maxDutyCycle_u16)
+   \                     ??GetPWMDemand_21: (+1)
+   \      0x2AC   0x8930             LDRH     R0,[R6, #+8]
+   \      0x2AE   0x003A             MOVS     R2,R7
+   \      0x2B0   0xB292             UXTH     R2,R2
+   \      0x2B2   0x4290             CMP      R0,R2
+   \      0x2B4   0xD212             BCS      ??GetPWMDemand_12
+    508                    { // Scale back demand to maxDutyCycle
+    509                      pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = TRUE;
+   \      0x2B6   0x204C             MOVS     R0,#+76
+   \      0x2B8   0x5A30             LDRH     R0,[R6, R0]
+   \      0x2BA   0x2220             MOVS     R2,#+32
+   \      0x2BC   0x4302             ORRS     R2,R2,R0
+   \      0x2BE   0x800A             STRH     R2,[R1, #+0]
+    510                      pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.maxDemand_u16;
+   \      0x2C0   0x89F0             LDRH     R0,[R6, #+14]
+   \      0x2C2   0x0005             MOVS     R5,R0
+   \      0x2C4   0xE00A             B        ??GetPWMDemand_12
+    511                    }
+    512                  }/*else if (pwm_input_demand_u32 < pwmInput_Control.pwmInput_Settings.minDemand_u16)
+    513                  { // Demand is less than minDemand
+    514                    if (pwm_input_demand_u32 < (pwmInput_Control.pwmInput_Settings.minDemand_u16 - pwmInput_Control.pwmInput_Settings.minDemandHysteresis_u16))
+    515                    {
+    516                      if (pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM == TRUE && pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == FALSE)
+    517                      {
+    518                        // Scale up demand to minDemand with inverted demand
+    519                        if(pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable == TRUE)
+    520                        {
+    521                          pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.minDemand_u16;
+    522                        }
+    523                      } else if (pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM == TRUE && pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == TRUE)
+    524                      {
+    525                        // Scale up demand to minDeman without inverted demand
+    526                        if(pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable == TRUE)
+    527                        {
+    528                          pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.minDemand_u16;
+    529                        } else
+    530                        {
+    531                          pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;
+    532                          pwm_input_demand_u32 = 0;
+    533                        }
+    534                      } else if (pwmInput_Control.pwmInput_Data.discretes_u16.is_decreasingPWM == FALSE && pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == TRUE)
+    535                      {
+    536                        // Scale demand with inverted demand to minDemand
+    537                        if(pwmInput_Control.pwmInput_Settings.flags_u16.is_pwmMinDemandEnable == TRUE)
+    538                        {
+    539                          pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.minDemand_u16;
+    540                        } else
+    541                        {
+    542                          pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;
+    543                          pwm_input_demand_u32 = 0;
+    544                        }
+    545                      } else
+    546                      {
+    547                        pwm_input_demand_u32 = 0;
+    548                      }          
+    549                    }
+    550                  } */else
+    551                  {
+    552                    pwm_input_demand_u32 = 0;
+   \                     ??GetPWMDemand_18: (+1)
+   \      0x2C6   0x0025             MOVS     R5,R4
+    553                    pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;
+   \      0x2C8   0x204C             MOVS     R0,#+76
+   \      0x2CA   0x5A30             LDRH     R0,[R6, R0]
+   \      0x2CC   0x....             LDR      R2,??DataTable5  ;; 0xfff7
+   \      0x2CE   0x4002             ANDS     R2,R2,R0
+   \      0x2D0   0x800A             STRH     R2,[R1, #+0]
+    554                    pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = TRUE;
+   \      0x2D2   0x204C             MOVS     R0,#+76
+   \      0x2D4   0x5A30             LDRH     R0,[R6, R0]
+   \      0x2D6   0x2210             MOVS     R2,#+16
+   \      0x2D8   0x4302             ORRS     R2,R2,R0
+   \      0x2DA   0x800A             STRH     R2,[R1, #+0]
+    555                  }
+    556                  // Scale back demand to max demand; used in case of a bug in code occuring
+    557                  if (pwm_input_demand_u32 > pwmInput_Control.pwmInput_Settings.maxDemand_u16)
+   \                     ??GetPWMDemand_12: (+1)
+   \      0x2DC   0x89F0             LDRH     R0,[R6, #+14]
+   \      0x2DE   0x42A8             CMP      R0,R5
+   \      0x2E0   0xD209             BCS      ??GetPWMDemand_2
+    558                  {
+    559                    pwm_input_demand_u32 = pwmInput_Control.pwmInput_Settings.maxDemand_u16;
+   \      0x2E2   0x89F0             LDRH     R0,[R6, #+14]
+   \      0x2E4   0x0005             MOVS     R5,R0
+   \      0x2E6   0xE006             B        ??GetPWMDemand_2
+    560                  }
+    561                } else
+    562                {
+    563                  pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow = TRUE;   
+   \                     ??GetPWMDemand_8: (+1)
+   \      0x2E8   0x204C             MOVS     R0,#+76
+   \      0x2EA   0x5A30             LDRH     R0,[R6, R0]
+   \      0x2EC   0x2104             MOVS     R1,#+4
+   \      0x2EE   0x4301             ORRS     R1,R1,R0
+   \      0x2F0   0x204C             MOVS     R0,#+76
+   \      0x2F2   0x5231             STRH     R1,[R6, R0]
+    564                  pwm_input_demand_u32 = 0;
+   \      0x2F4   0x0025             MOVS     R5,R4
+    565                }
+    566              }
+    567            } 
+    568            // In case of negative demand calculated, demand is scaled to zero
+    569            if (pwm_input_demand_u32 < 0)
+                                            ^
+Warning[Pe186]: pointless comparison of unsigned integer with zero
+    570            {
+    571              pwm_input_demand_u32 = 0;
+    572            }
+    573            
+    574            // Calculation for determining if Demand is on
+    575           // if (pwm_input_demand_u32 != 0)
+    576           // {
+    577           //   pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = TRUE;
+    578           // } else
+    579          //  {
+    580           //   pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;
+    581          //  }
+    582            
+    583            if (pwm_input_demand_u32 < pwmInput_Control.pwmInput_Settings.minDemand_u16)
+   \                     ??GetPWMDemand_2: (+1)
+   \      0x2F6   0x89B0             LDRH     R0,[R6, #+12]
+   \      0x2F8   0x4285             CMP      R5,R0
+   \      0x2FA   0xD212             BCS      ??GetPWMDemand_22
+    584              {
+    585                // Check if low end demand hysteresis
+    586                if (pwm_input_demand_u32 < (pwmInput_Control.pwmInput_Settings.minDemand_u16 - pwmInput_Control.pwmInput_Settings.minDemandHysteresis_u16))
+   \      0x2FC   0x89B0             LDRH     R0,[R6, #+12]
+   \      0x2FE   0x8B31             LDRH     R1,[R6, #+24]
+   \      0x300   0x1A40             SUBS     R0,R0,R1
+   \      0x302   0x4285             CMP      R5,R0
+   \      0x304   0xD219             BCS      ??GetPWMDemand_23
+    587                {
+    588                  pwm_input_demand_u32 = 0;
+   \      0x306   0x0025             MOVS     R5,R4
+    589                  pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;
+   \      0x308   0x0030             MOVS     R0,R6
+   \      0x30A   0x304C             ADDS     R0,R0,#+76
+   \      0x30C   0x214C             MOVS     R1,#+76
+   \      0x30E   0x5A71             LDRH     R1,[R6, R1]
+   \      0x310   0x....             LDR      R2,??DataTable5  ;; 0xfff7
+   \      0x312   0x400A             ANDS     R2,R2,R1
+   \      0x314   0x8002             STRH     R2,[R0, #+0]
+    590                  pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;
+   \      0x316   0x214C             MOVS     R1,#+76
+   \      0x318   0x5A71             LDRH     R1,[R6, R1]
+   \      0x31A   0x....             LDR      R2,??DataTable8  ;; 0xffef
+   \      0x31C   0x400A             ANDS     R2,R2,R1
+   \      0x31E   0x8002             STRH     R2,[R0, #+0]
+   \      0x320   0xE00B             B        ??GetPWMDemand_23
+    591                }
+    592              } else {
+    593                pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = TRUE; // Demand greater than min demand.  
+   \                     ??GetPWMDemand_22: (+1)
+   \      0x322   0x0030             MOVS     R0,R6
+   \      0x324   0x304C             ADDS     R0,R0,#+76
+   \      0x326   0x214C             MOVS     R1,#+76
+   \      0x328   0x5A71             LDRH     R1,[R6, R1]
+   \      0x32A   0x2208             MOVS     R2,#+8
+   \      0x32C   0x430A             ORRS     R2,R2,R1
+   \      0x32E   0x8002             STRH     R2,[R0, #+0]
+    594                pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = TRUE; // Enable Hysteresis
+   \      0x330   0x214C             MOVS     R1,#+76
+   \      0x332   0x5A71             LDRH     R1,[R6, R1]
+   \      0x334   0x2210             MOVS     R2,#+16
+   \      0x336   0x430A             ORRS     R2,R2,R1
+   \      0x338   0x8002             STRH     R2,[R0, #+0]
+    595              }
+    596            
+    597            //pwmInput_Control.pwmInput_Data.pwmInputDemand_u16 = pwm_input_demand_u32;
+    598            return (pwm_input_demand_u32);  
+   \                     ??GetPWMDemand_23: (+1)
+   \      0x33A   0x0028             MOVS     R0,R5
+   \      0x33C   0xB280             UXTH     R0,R0
+   \      0x33E   0xBDFE             POP      {R1-R7,PC}       ;; return
+   \                     ??GetPWMDemand_0:
+   \      0x340   0x....'....        DC32     pwmInput_Control
+    599          }
+    600          
+    601          /**
+    602          ********************************************************************************************************************************
+    603          * @brief   Set module demand to zero
+    604          * @details Clear all local live data
+    605          * @param   None 
+    606          * @return  None
+    607          ********************************************************************************************************************************
+    608          */
+
+   \                                 In section .text, align 2, keep-with-next
+    609          void SetDemandToZero(void)
+    610          { 
+   \                     SetDemandToZero: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    611            if (pwmInput_Control.pwmInput_Data.discretes_u16.is_pwmFrequencyLow == TRUE)
+   \        0x2   0x....             LDR      R0,??DataTable8_1
+   \        0x4   0x214C             MOVS     R1,#+76
+   \        0x6   0x5A41             LDRH     R1,[R0, R1]
+   \        0x8   0xB289             UXTH     R1,R1
+   \        0xA   0x0889             LSRS     R1,R1,#+2
+   \        0xC   0x000A             MOVS     R2,R1
+   \        0xE   0x07D2             LSLS     R2,R2,#+31       ;; ZeroExtS R2,R2,#+31,#+31
+   \       0x10   0x0FD2             LSRS     R2,R2,#+31
+   \       0x12   0x2A00             CMP      R2,#+0
+   \       0x14   0xD01D             BEQ      ??SetDemandToZero_0
+    612            {
+    613               //pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f = 0;   // Measured duty cycle
+    614               pwmInput_Control.pwmInput_Data.inheritedPWMInputFrequency_u16 = 0; // Measured frequency
+   \       0x16   0x2100             MOVS     R1,#+0
+   \       0x18   0x000A             MOVS     R2,R1
+   \       0x1A   0x2344             MOVS     R3,#+68
+   \       0x1C   0x52C2             STRH     R2,[R0, R3]
+    615               pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;                // Set to "1" if demand goes from 0 to above min demand.
+   \       0x1E   0x0002             MOVS     R2,R0
+   \       0x20   0x324C             ADDS     R2,R2,#+76
+   \       0x22   0x234C             MOVS     R3,#+76
+   \       0x24   0x5AC3             LDRH     R3,[R0, R3]
+   \       0x26   0x....             LDR      R4,??DataTable8_2  ;; 0xfff7
+   \       0x28   0x401C             ANDS     R4,R4,R3
+   \       0x2A   0x8014             STRH     R4,[R2, #+0]
+    616               pwmInput_Control.pwmInput_Data.pwmInputDemandPercentage_u16 = 0;
+   \       0x2C   0x000B             MOVS     R3,R1
+   \       0x2E   0x2446             MOVS     R4,#+70
+   \       0x30   0x5303             STRH     R3,[R0, R4]
+    617               pwmInput_Control.pwmInput_Data.pwmInputDemand_u16 = 0;
+   \       0x32   0x000B             MOVS     R3,R1
+   \       0x34   0x2442             MOVS     R4,#+66
+   \       0x36   0x5303             STRH     R3,[R0, R4]
+    618               pwmInput_Control.pwmInput_Data.pwmStableDutyCycle_u16 = 0;  // Measured duty cycle
+   \       0x38   0x2348             MOVS     R3,#+72
+   \       0x3A   0x52C1             STRH     R1,[R0, R3]
+    619               pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;
+   \       0x3C   0x214C             MOVS     R1,#+76
+   \       0x3E   0x5A41             LDRH     R1,[R0, R1]
+   \       0x40   0x....             LDR      R3,??DataTable8  ;; 0xffef
+   \       0x42   0x400B             ANDS     R3,R3,R1
+   \       0x44   0x8013             STRH     R3,[R2, #+0]
+    620               pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = FALSE;
+   \       0x46   0x214C             MOVS     R1,#+76
+   \       0x48   0x5A40             LDRH     R0,[R0, R1]
+   \       0x4A   0x....             LDR      R1,??DataTable8_3  ;; 0xffdf
+   \       0x4C   0x4001             ANDS     R1,R1,R0
+   \       0x4E   0x8011             STRH     R1,[R2, #+0]
+   \       0x50   0xE016             B        ??SetDemandToZero_1
+    621            } else
+    622            {
+    623              pwmInput_Control.pwmInput_Data.discretes_u16.is_demandOn = FALSE;                 // Set to "1" if demand goes from 0 to above min demand.
+   \                     ??SetDemandToZero_0: (+1)
+   \       0x52   0x0001             MOVS     R1,R0
+   \       0x54   0x314C             ADDS     R1,R1,#+76
+   \       0x56   0x224C             MOVS     R2,#+76
+   \       0x58   0x5A82             LDRH     R2,[R0, R2]
+   \       0x5A   0x....             LDR      R3,??DataTable8_2  ;; 0xfff7
+   \       0x5C   0x4013             ANDS     R3,R3,R2
+   \       0x5E   0x800B             STRH     R3,[R1, #+0]
+    624              pwmInput_Control.pwmInput_Data.pwmInputDemandPercentage_u16 = 0;
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0x0013             MOVS     R3,R2
+   \       0x64   0x2446             MOVS     R4,#+70
+   \       0x66   0x5303             STRH     R3,[R0, R4]
+    625              pwmInput_Control.pwmInput_Data.pwmInputDemand_u16 = 0;
+   \       0x68   0x2342             MOVS     R3,#+66
+   \       0x6A   0x52C2             STRH     R2,[R0, R3]
+    626              pwmInput_Control.pwmInput_Data.discretes_u16.is_lowerHysteresisEnable = FALSE;
+   \       0x6C   0x224C             MOVS     R2,#+76
+   \       0x6E   0x5A82             LDRH     R2,[R0, R2]
+   \       0x70   0x....             LDR      R3,??DataTable8  ;; 0xffef
+   \       0x72   0x4013             ANDS     R3,R3,R2
+   \       0x74   0x800B             STRH     R3,[R1, #+0]
+    627              pwmInput_Control.pwmInput_Data.discretes_u16.is_upperHysteresisEnable = FALSE;
+   \       0x76   0x224C             MOVS     R2,#+76
+   \       0x78   0x5A80             LDRH     R0,[R0, R2]
+   \       0x7A   0x....             LDR      R2,??DataTable8_3  ;; 0xffdf
+   \       0x7C   0x4002             ANDS     R2,R2,R0
+   \       0x7E   0x800A             STRH     R2,[R1, #+0]
+    628            }
+    629          }
+   \                     ??SetDemandToZero_1: (+1)
+   \       0x80   0xBD10             POP      {R4,PC}          ;; return
+    630          
+    631          /**             
+    632          ********************************************************************************************************************************
+    633          * @brief   Get data from PWM input driver.
+    634          * @details Get duty cycle and frequency from tim1_Control
+    635          * @param   None 
+    636          * @return  None
+    637          ********************************************************************************************************************************
+    638          */
+
+   \                                 In section .text, align 2, keep-with-next
+    639          void UpdateModuleRuntimeData(void)
+    640          {   
+   \                     UpdateModuleRuntimeData: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    641            pwm_input_time_u64 = getSysCount() + pwmInput_Control.pwmInput_Settings.pwmPeriod_u16; // Update time tick value
+   \        0x2   0x....'....        BL       getSysCount
+   \        0x6   0x0002             MOVS     R2,R0
+   \        0x8   0x000B             MOVS     R3,R1
+   \        0xA   0x....             LDR      R4,??DataTable8_1
+   \        0xC   0x8A60             LDRH     R0,[R4, #+18]
+   \        0xE   0x2100             MOVS     R1,#+0
+   \       0x10   0x1880             ADDS     R0,R0,R2
+   \       0x12   0x4159             ADCS     R1,R1,R3
+   \       0x14   0x....             LDR      R2,??DataTable8_4
+   \       0x16   0xC203             STM      R2!,{R0,R1}
+   \       0x18   0x3A08             SUBS     R2,R2,#+8
+    642            if(pwm_input_low_alarm_enable_count_u16 > 0)
+   \       0x1A   0x....             LDR      R0,??DataTable8_5
+   \       0x1C   0x8801             LDRH     R1,[R0, #+0]
+   \       0x1E   0x2900             CMP      R1,#+0
+   \       0x20   0xD002             BEQ      ??UpdateModuleRuntimeData_0
+    643            { // Wait time count to check pwm input low
+    644              pwm_input_low_alarm_enable_count_u16--;
+   \       0x22   0x8801             LDRH     R1,[R0, #+0]
+   \       0x24   0x1E49             SUBS     R1,R1,#+1
+   \       0x26   0x8001             STRH     R1,[R0, #+0]
+    645            }
+    646            pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f  = ((*tim1_LocalControl).tim1_ResultAvg.PWMInputDutyCycleAverageCalc_f); // represented in xxxyy format which is xxx.yy%
+   \                     ??UpdateModuleRuntimeData_0: (+1)
+   \       0x28   0x0026             MOVS     R6,R4
+   \       0x2A   0x362C             ADDS     R6,R6,#+44
+   \       0x2C   0x....             LDR      R5,??DataTable8_6
+   \       0x2E   0x6828             LDR      R0,[R5, #+0]
+   \       0x30   0x6800             LDR      R0,[R0, #+0]
+   \       0x32   0x6030             STR      R0,[R6, #+0]
+    647            pwmInput_Control.pwmInput_Data.inheritedPWMInputFrequency_u16 = ((*tim1_LocalControl).tim1_ResultAvg.PWMInputFrequencyAverageCalc_u16);
+   \       0x34   0x6828             LDR      R0,[R5, #+0]
+   \       0x36   0x8880             LDRH     R0,[R0, #+4]
+   \       0x38   0x2144             MOVS     R1,#+68
+   \       0x3A   0x5260             STRH     R0,[R4, R1]
+    648            pwmInput_Control.pwmInput_Data.pwmErrorCode_u16 = (*tim1_LocalControl).tim1_ResultAvg.errorCode_u8; // Get any error codes
+   \       0x3C   0x6828             LDR      R0,[R5, #+0]
+   \       0x3E   0x7980             LDRB     R0,[R0, #+6]
+   \       0x40   0x214A             MOVS     R1,#+74
+   \       0x42   0x5260             STRH     R0,[R4, R1]
+    649            
+    650            pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f += (float)(pwmInput_Control.pwmInput_Settings.dutyCyleCalibratonFactor_f * pwmInput_Control.pwmInput_Data.inheritedPWMInputFrequency_u16); // Calibrate duty cycle
+   \       0x44   0x2044             MOVS     R0,#+68
+   \       0x46   0x5A20             LDRH     R0,[R4, R0]
+   \       0x48   0x....'....        BL       __aeabi_ui2f
+   \       0x4C   0x6821             LDR      R1,[R4, #+0]
+   \       0x4E   0x....'....        BL       __aeabi_fmul
+   \       0x52   0x6AE1             LDR      R1,[R4, #+44]
+   \       0x54   0x....'....        BL       __aeabi_fadd
+   \       0x58   0x6030             STR      R0,[R6, #+0]
+    651            
+    652            if(pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f > 100)
+   \       0x5A   0x6AE0             LDR      R0,[R4, #+44]
+   \       0x5C   0x....             LDR      R1,??DataTable8_7  ;; 0x42c80001
+   \       0x5E   0x....'....        BL       __aeabi_cfrcmple
+   \       0x62   0xD801             BHI      ??UpdateModuleRuntimeData_1
+    653            {
+    654              pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f = 100;
+   \       0x64   0x....             LDR      R0,??DataTable8_8  ;; 0x42c80000
+   \       0x66   0x6030             STR      R0,[R6, #+0]
+    655            }
+    656            pwm_input_duty_cycle_percentage_tmp_u16 = (uint16_t)(pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f * 100); //((*tim1_LocalControl).tim1_ResultAvg.PWMInputDutyCycleAverageCalc_f);
+   \                     ??UpdateModuleRuntimeData_1: (+1)
+   \       0x68   0x....             LDR      R6,??DataTable8_9
+   \       0x6A   0x6AE1             LDR      R1,[R4, #+44]
+   \       0x6C   0x....             LDR      R0,??DataTable8_8  ;; 0x42c80000
+   \       0x6E   0x....'....        BL       __aeabi_fmul
+   \       0x72   0x....'....        BL       __aeabi_f2iz
+   \       0x76   0x8030             STRH     R0,[R6, #+0]
+    657          
+    658            if(pwmInput_Control.pwmInput_Settings.flags_u16.is_invertDigitalPWM == TRUE) 
+   \       0x78   0x8D60             LDRH     R0,[R4, #+42]
+   \       0x7A   0xB280             UXTH     R0,R0
+   \       0x7C   0x0840             LSRS     R0,R0,#+1
+   \       0x7E   0x0001             MOVS     R1,R0
+   \       0x80   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0x82   0x0FC9             LSRS     R1,R1,#+31
+   \       0x84   0x2900             CMP      R1,#+0
+   \       0x86   0xD003             BEQ      ??UpdateModuleRuntimeData_2
+    659            {
+    660              pwm_input_duty_cycle_percentage_tmp_u16 = 10000-pwm_input_duty_cycle_percentage_tmp_u16;//(uint16_t)(pwmInput_Control.pwmInput_Data.inheritedPwmInputDutyCycle_f * 100); //((*tim1_LocalControl).tim1_ResultAvg.PWMInputDutyCycleAverageCalc_f);
+   \       0x88   0x....             LDR      R0,??DataTable8_10  ;; 0x2710
+   \       0x8A   0x8831             LDRH     R1,[R6, #+0]
+   \       0x8C   0x1A40             SUBS     R0,R0,R1
+   \       0x8E   0x8030             STRH     R0,[R6, #+0]
+    661            }
+    662            pwm_input_frequency_tmp_u16 = ((*tim1_LocalControl).tim1_ResultAvg.PWMInputFrequencyAverageCalc_u16);  
+   \                     ??UpdateModuleRuntimeData_2: (+1)
+   \       0x90   0x6828             LDR      R0,[R5, #+0]
+   \       0x92   0x8880             LDRH     R0,[R0, #+4]
+   \       0x94   0x....             LDR      R1,??DataTable8_11
+   \       0x96   0x8008             STRH     R0,[R1, #+0]
+    663          }
+   \       0x98   0xBD70             POP      {R4-R6,PC}       ;; return
+    664          
+    665          /**
+    666          ********************************************************************************************************************************
+    667          * @brief   Apply debounce to pwm input duty cycle.
+    668          * @details Uses pwmInputDebounceCount_u8 count for debounce
+    669          * @param   None 
+    670          * @return  None
+    671          ********************************************************************************************************************************
+    672          */
+
+   \                                 In section .text, align 2, keep-with-next
+    673          void CheckDigitalInputDebounce()
+    674          {
+   \                     CheckDigitalInputDebounce: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    675            uint16_t input_status_u16 = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x0001             MOVS     R1,R0
+    676            input_status_u16 = (uint8_t)GET_BIT((*gpio_PWMInputLocalControl).gpio_Result.gpio_Status_u16, PWM_IN_NUM);
+   \        0x6   0x2201             MOVS     R2,#+1
+   \        0x8   0x....             LDR      R3,??DataTable8_12
+   \        0xA   0x681B             LDR      R3,[R3, #+0]
+   \        0xC   0x885B             LDRH     R3,[R3, #+2]
+   \        0xE   0x10DC             ASRS     R4,R3,#+3
+   \       0x10   0x0013             MOVS     R3,R2
+   \       0x12   0x4023             ANDS     R3,R3,R4
+   \       0x14   0xB2DB             UXTB     R3,R3
+    677            if(input_status_u16 != pwmInput_Control.pwmInput_Data.discretes_u16.is_digitalInputON)
+   \       0x16   0x....             LDR      R4,??DataTable8_1
+   \       0x18   0x001D             MOVS     R5,R3
+   \       0x1A   0x264C             MOVS     R6,#+76
+   \       0x1C   0x5BA6             LDRH     R6,[R4, R6]
+   \       0x1E   0xB2B6             UXTH     R6,R6
+   \       0x20   0x09B6             LSRS     R6,R6,#+6
+   \       0x22   0x4032             ANDS     R2,R2,R6
+   \       0x24   0xB2AD             UXTH     R5,R5
+   \       0x26   0xB292             UXTH     R2,R2
+   \       0x28   0x4295             CMP      R5,R2
+   \       0x2A   0xD026             BEQ      ??CheckDigitalInputDebounce_0
+    678            {
+    679              if(input_status_u16 == BIT_HI)
+   \       0x2C   0x0019             MOVS     R1,R3
+   \       0x2E   0xB289             UXTH     R1,R1
+   \       0x30   0x2901             CMP      R1,#+1
+   \       0x32   0xD111             BNE      ??CheckDigitalInputDebounce_1
+    680              {
+    681                digital_input_current_bit_low_debounce_count_u16 = 0;
+   \       0x34   0x....             LDR      R1,??DataTable8_13
+   \       0x36   0x8008             STRH     R0,[R1, #+0]
+    682                digital_input_current_bit_hi_debounce_count_u16++;
+   \       0x38   0x....             LDR      R1,??DataTable8_14
+   \       0x3A   0x880A             LDRH     R2,[R1, #+0]
+   \       0x3C   0x1C52             ADDS     R2,R2,#+1
+   \       0x3E   0x800A             STRH     R2,[R1, #+0]
+    683                if(digital_input_current_bit_hi_debounce_count_u16 > pwmInput_Control.pwmInput_Settings.pwmInputDebounceCount_u16)
+   \       0x40   0x8D22             LDRH     R2,[R4, #+40]
+   \       0x42   0x880D             LDRH     R5,[R1, #+0]
+   \       0x44   0x42AA             CMP      R2,R5
+   \       0x46   0xD218             BCS      ??CheckDigitalInputDebounce_0
+    684                {
+    685                  pwmInput_Control.pwmInput_Data.discretes_u16.is_digitalInputON = BIT_HI;
+   \       0x48   0x224C             MOVS     R2,#+76
+   \       0x4A   0x5AA2             LDRH     R2,[R4, R2]
+   \       0x4C   0x2540             MOVS     R5,#+64
+   \       0x4E   0x4315             ORRS     R5,R5,R2
+   \       0x50   0x224C             MOVS     R2,#+76
+   \       0x52   0x52A5             STRH     R5,[R4, R2]
+    686                  digital_input_current_bit_hi_debounce_count_u16 = 0;
+   \       0x54   0x8008             STRH     R0,[R1, #+0]
+   \       0x56   0xE010             B        ??CheckDigitalInputDebounce_0
+    687                }      
+    688              }else { // input_status_u8 == BIT_LOW
+    689                digital_input_current_bit_hi_debounce_count_u16 = 0;
+   \                     ??CheckDigitalInputDebounce_1: (+1)
+   \       0x58   0x....             LDR      R1,??DataTable8_14
+   \       0x5A   0x8008             STRH     R0,[R1, #+0]
+    690                digital_input_current_bit_low_debounce_count_u16++;
+   \       0x5C   0x....             LDR      R1,??DataTable8_13
+   \       0x5E   0x880A             LDRH     R2,[R1, #+0]
+   \       0x60   0x1C52             ADDS     R2,R2,#+1
+   \       0x62   0x800A             STRH     R2,[R1, #+0]
+    691                if(digital_input_current_bit_low_debounce_count_u16 > pwmInput_Control.pwmInput_Settings.pwmInputDebounceCount_u16)
+   \       0x64   0x8D22             LDRH     R2,[R4, #+40]
+   \       0x66   0x880D             LDRH     R5,[R1, #+0]
+   \       0x68   0x42AA             CMP      R2,R5
+   \       0x6A   0xD206             BCS      ??CheckDigitalInputDebounce_0
+    692                {
+    693                  pwmInput_Control.pwmInput_Data.discretes_u16.is_digitalInputON = BIT_LOW;
+   \       0x6C   0x224C             MOVS     R2,#+76
+   \       0x6E   0x5AA2             LDRH     R2,[R4, R2]
+   \       0x70   0x....             LDR      R5,??DataTable8_15  ;; 0xffbf
+   \       0x72   0x4015             ANDS     R5,R5,R2
+   \       0x74   0x224C             MOVS     R2,#+76
+   \       0x76   0x52A5             STRH     R5,[R4, R2]
+    694                  digital_input_current_bit_low_debounce_count_u16 = 0;
+   \       0x78   0x8008             STRH     R0,[R1, #+0]
+    695                }       
+    696              }
+    697            }  
+    698          }
+   \                     ??CheckDigitalInputDebounce_0: (+1)
+   \       0x7A   0xBD70             POP      {R4-R6,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     tim1_LocalControl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     gpio_PWMInputLocalControl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x....'....        DC32     pwm_input_low_alarm_enable_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     pwmInput_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     pwm_input_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x4024'0000        DC32     0x40240000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x....'....        DC32     pwm_input_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \        0x0   0x0000'251C        DC32     0x251c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \        0x0   0x0000'5555        DC32     0x5555
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_7:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_8:
+   \        0x0   0x0000'03F2        DC32     0x3f2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x0000'FFF7        DC32     0xfff7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x0000'7FFF        DC32     0x7fff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x0000'FFFD        DC32     0xfffd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x0000'FFFB        DC32     0xfffb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x0000'FFEF        DC32     0xffef
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x0000'FFDF        DC32     0xffdf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x0000'FFBF        DC32     0xffbf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x0000'FF7F        DC32     0xff7f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0x0000'FEFF        DC32     0xfeff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \        0x0   0x....'....        DC32     pwm_input_low_alarm_enable_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \        0x0   0x....'....        DC32     pwmInput_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \        0x0   0x....'....        DC32     pwm_input_duty_cycle_percentage_tmp_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_12:
+   \        0x0   0x....'....        DC32     pwm_input_duty_cycle_decreasing_debounce_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_13:
+   \        0x0   0x....'....        DC32     pwm_input_duty_cycle_increasing_debounce_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_14:
+   \        0x0   0x0000'FFFE        DC32     0xfffe
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_15:
+   \        0x0   0x....'....        DC32     is_pwm_input_above_low_threshold
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_16:
+   \        0x0   0x....'....        DC32     pwm_input_frequency_tmp_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x0000'FFF7        DC32     0xfff7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     is_pwm_input_above_low_threshold
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x0000'FFDF        DC32     0xffdf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x0000'FFFB        DC32     0xfffb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x0000'FFEF        DC32     0xffef
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x....'....        DC32     pwmInput_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x0000'FFF7        DC32     0xfff7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x0000'FFDF        DC32     0xffdf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0x....'....        DC32     pwm_input_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x....'....        DC32     pwm_input_low_alarm_enable_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \        0x0   0x....'....        DC32     tim1_LocalControl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \        0x0   0x42C8'0001        DC32     0x42c80001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \        0x0   0x42C8'0000        DC32     0x42c80000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_9:
+   \        0x0   0x....'....        DC32     pwm_input_duty_cycle_percentage_tmp_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_10:
+   \        0x0   0x0000'2710        DC32     0x2710
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_11:
+   \        0x0   0x....'....        DC32     pwm_input_frequency_tmp_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_12:
+   \        0x0   0x....'....        DC32     gpio_PWMInputLocalControl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_13:
+   \        0x0   0x....'....        DC32     digital_input_current_bit_low_debounce_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_14:
+   \        0x0   0x....'....        DC32     digital_input_current_bit_hi_debounce_count_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_15:
+   \        0x0   0x0000'FFBF        DC32     0xffbf
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   AssignPWMInputModuleMem
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+      16   CheckDigitalInputDebounce
+      12   CheckDutyCycle
+      32   GetPWMDemand
+        32   -> __aeabi_f2iz
+        32   -> __aeabi_f2uiz
+        32   -> __aeabi_fadd
+        32   -> __aeabi_fmul
+        32   -> __aeabi_ui2f
+      32   Init_PWM_Input_Data
+        32   -> PWMInputTimerInit
+        32   -> PWMInput_GPIO_DigitalInput_Init
+        32   -> PWMInput_GPIO_PwmInput_Init
+        32   -> __aeabi_fdiv
+        32   -> __aeabi_fmul
+        32   -> __aeabi_fsub
+        32   -> __aeabi_i2f
+        32   -> __aeabi_ui2f
+       8   Init_PWM_Input_Setting
+       8   SetDemandToZero
+      16   UpdateModuleRuntimeData
+        16   -> __aeabi_f2iz
+        16   -> __aeabi_fadd
+        16   -> __aeabi_fmul
+        16   -> __aeabi_ui2f
+        16   -> getSysCount
+        16 __aeabi_cfrcmple
+      48   modulePWM_Input_u32
+        48   -> AssignPWMInputModuleMem
+        48   -> CheckDigitalInputDebounce
+        48   -> CheckDutyCycle
+        48   -> GetPWMDemand
+        48   -> Init_PWM_Input_Data
+        48   -> Init_PWM_Input_Setting
+        48   -> SetDemandToZero
+        48   -> UpdateModuleRuntimeData
+        48   -> __aeabi_d2iz
+        48   -> __aeabi_dmul
+        48   -> __aeabi_f2d
+        48   -> __aeabi_fdiv
+        48   -> __aeabi_i2f
+        48   -> getProcessInfoIndex
+        48   -> getSysCount
+        48 __aeabi_uread4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_12
+       4  ??DataTable4_13
+       4  ??DataTable4_14
+       4  ??DataTable4_15
+       4  ??DataTable4_16
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable6
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_10
+       4  ??DataTable8_11
+       4  ??DataTable8_12
+       4  ??DataTable8_13
+       4  ??DataTable8_14
+       4  ??DataTable8_15
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       4  ??DataTable8_9
+      60  AssignPWMInputModuleMem
+     124  CheckDigitalInputDebounce
+     286  CheckDutyCycle
+     836  GetPWMDemand
+     316  Init_PWM_Input_Data
+     120  Init_PWM_Input_Setting
+     130  SetDemandToZero
+     154  UpdateModuleRuntimeData
+       2  digital_input_current_bit_hi_debounce_count_u16
+       2  digital_input_current_bit_low_debounce_count_u16
+       4  gpio_PWMInputLocalControl
+       2  is_pwm_input_above_low_threshold
+     344  modulePWM_Input_u32
+      80  pwmInput_Control
+       4  pwm_input_StructMem_u32
+       2  pwm_input_duty_cycle_decreasing_debounce_count_u16
+       2  pwm_input_duty_cycle_increasing_debounce_count_u16
+       2  pwm_input_duty_cycle_percentage_tmp_u16
+       2  pwm_input_frequency_tmp_u16
+       2  pwm_input_low_alarm_enable_count_u16
+       8  pwm_input_time_u64
+       4  tim1_LocalControl
+       8  tt_PWMInputDelayTime
+
+ 
+   124 bytes in section .bss
+ 2'566 bytes in section .text
+ 
+ 2'566 bytes of CODE memory
+   124 bytes of DATA memory
+
+Errors: none
+Warnings: 1

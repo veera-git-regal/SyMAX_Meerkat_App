@@ -1,0 +1,966 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:59
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_usart.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW1360.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_usart.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_ll_usart.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_ll_usart.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_usart.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_ll_usart.c
+      4            * @author  MCD Application Team
+      5            * @brief   USART LL module driver.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          #if defined(USE_FULL_LL_DRIVER)
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "stm32g0xx_ll_usart.h"
+
+   \                                 In section .rodata, align 4
+   \   static __absolute uint32_t const USART_PRESCALER_TAB[12]
+   \                     USART_PRESCALER_TAB:
+   \        0x0   0x0000'0001        DC32 1, 2, 4, 6, 8, 10, 12, 16, 32, 64, 128, 256
+
+   \              0x0000'0002  
+
+   \              0x0000'0004  
+
+   \              0x0000'0006  
+
+   \              0x0000'0008  
+
+   \              0x0000'000A  
+
+   \              0x0000'000C  
+
+   \              0x0000'0010  
+
+   \              0x0000'0020  
+
+   \              0x0000'0040  
+
+   \              0x0000'0080  
+
+   \              0x0000'0100
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsEnabled(USART_TypeDef *)
+   \                     LL_USART_IsEnabled: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x6   0x0FC0             LSRS     R0,R0,#+31
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_SetPrescaler(USART_TypeDef *, uint32_t)
+   \                     LL_USART_SetPrescaler: (+1)
+   \        0x0   0x6AC2             LDR      R2,[R0, #+44]
+   \        0x2   0x230F             MOVS     R3,#+15
+   \        0x4   0x439A             BICS     R2,R2,R3
+   \        0x6   0x000B             MOVS     R3,R1
+   \        0x8   0xB29B             UXTH     R3,R3
+   \        0xA   0x431A             ORRS     R2,R2,R3
+   \        0xC   0x62C2             STR      R2,[R0, #+44]
+   \        0xE   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_DisableSCLKOutput(USART_TypeDef *)
+   \                     LL_USART_DisableSCLKOutput: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x....             LDR      R2,??DataTable11  ;; 0xfffff7ff
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x6042             STR      R2,[R0, #+4]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_SetStopBitsLength(USART_TypeDef *, uint32_t)
+   \                     LL_USART_SetStopBitsLength: (+1)
+   \        0x0   0x6842             LDR      R2,[R0, #+4]
+   \        0x2   0x....             LDR      R3,??DataTable11_1  ;; 0xffffcfff
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x6043             STR      R3,[R0, #+4]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_SetHWFlowCtrl(USART_TypeDef *, uint32_t)
+   \                     LL_USART_SetHWFlowCtrl: (+1)
+   \        0x0   0x6882             LDR      R2,[R0, #+8]
+   \        0x2   0x....             LDR      R3,??DataTable11_2  ;; 0xfffffcff
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x6083             STR      R3,[R0, #+8]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_SetBaudRate(USART_TypeDef *, uint32_t, uint32_t, uint32_t, uint32_t)
+   \                     LL_USART_SetBaudRate: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000F             MOVS     R7,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x9E08             LDR      R6,[SP, #+32]
+   \        0xA   0x2D0C             CMP      R5,#+12
+   \        0xC   0xD232             BCS      ??LL_USART_SetBaudRate_0
+   \        0xE   0x9802             LDR      R0,[SP, #+8]
+   \       0x10   0x2180             MOVS     R1,#+128
+   \       0x12   0x0209             LSLS     R1,R1,#+8        ;; #+32768
+   \       0x14   0x4288             CMP      R0,R1
+   \       0x16   0xD11D             BNE      ??LL_USART_SetBaudRate_1
+   \       0x18   0x0038             MOVS     R0,R7
+   \       0x1A   0x....             LDR      R1,??DataTable11_3
+   \       0x1C   0x002A             MOVS     R2,R5
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x2304             MOVS     R3,#+4
+   \       0x22   0x435A             MULS     R2,R3,R2
+   \       0x24   0x5889             LDR      R1,[R1, R2]
+   \       0x26   0x....'....        BL       __aeabi_uidiv
+   \       0x2A   0x2102             MOVS     R1,#+2
+   \       0x2C   0x4348             MULS     R0,R1,R0
+   \       0x2E   0x0871             LSRS     R1,R6,#+1
+   \       0x30   0x1840             ADDS     R0,R0,R1
+   \       0x32   0x0031             MOVS     R1,R6
+   \       0x34   0x....'....        BL       __aeabi_uidiv
+   \       0x38   0xB280             UXTH     R0,R0
+   \       0x3A   0x9000             STR      R0,[SP, #+0]
+   \       0x3C   0x9900             LDR      R1,[SP, #+0]
+   \       0x3E   0x....             LDR      R0,??DataTable11_4  ;; 0xfff0
+   \       0x40   0x4008             ANDS     R0,R0,R1
+   \       0x42   0x9900             LDR      R1,[SP, #+0]
+   \       0x44   0x0849             LSRS     R1,R1,#+1
+   \       0x46   0x0749             LSLS     R1,R1,#+29       ;; ZeroExtS R1,R1,#+29,#+29
+   \       0x48   0x0F49             LSRS     R1,R1,#+29
+   \       0x4A   0x4308             ORRS     R0,R0,R1
+   \       0x4C   0x9001             STR      R0,[SP, #+4]
+   \       0x4E   0x9801             LDR      R0,[SP, #+4]
+   \       0x50   0x60E0             STR      R0,[R4, #+12]
+   \       0x52   0xE00F             B        ??LL_USART_SetBaudRate_0
+   \                     ??LL_USART_SetBaudRate_1: (+1)
+   \       0x54   0x0038             MOVS     R0,R7
+   \       0x56   0x....             LDR      R1,??DataTable11_3
+   \       0x58   0x002A             MOVS     R2,R5
+   \       0x5A   0xB2D2             UXTB     R2,R2
+   \       0x5C   0x2304             MOVS     R3,#+4
+   \       0x5E   0x435A             MULS     R2,R3,R2
+   \       0x60   0x5889             LDR      R1,[R1, R2]
+   \       0x62   0x....'....        BL       __aeabi_uidiv
+   \       0x66   0x0871             LSRS     R1,R6,#+1
+   \       0x68   0x1840             ADDS     R0,R0,R1
+   \       0x6A   0x0031             MOVS     R1,R6
+   \       0x6C   0x....'....        BL       __aeabi_uidiv
+   \       0x70   0xB280             UXTH     R0,R0
+   \       0x72   0x60E0             STR      R0,[R4, #+12]
+   \                     ??LL_USART_SetBaudRate_0: (+1)
+   \       0x74   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+     23          #include "stm32g0xx_ll_rcc.h"
+     24          #include "stm32g0xx_ll_bus.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB1_GRP1_ForceReset(uint32_t)
+   \                     LL_APB1_GRP1_ForceReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable11_5  ;; 0x4002102c
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB1_GRP1_ReleaseReset(uint32_t)
+   \                     LL_APB1_GRP1_ReleaseReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable11_5  ;; 0x4002102c
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_ForceReset(uint32_t)
+   \                     LL_APB2_GRP1_ForceReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable11_6  ;; 0x40021030
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_ReleaseReset(uint32_t)
+   \                     LL_APB2_GRP1_ReleaseReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable11_6  ;; 0x40021030
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+     25          #ifdef USE_FULL_ASSERT
+     26          #include "stm32_assert.h"
+     27          #else
+     28          #define assert_param(expr) ((void)0U)
+     29          #endif /* USE_FULL_ASSERT */
+     30          
+     31          /** @addtogroup STM32G0xx_LL_Driver
+     32            * @{
+     33            */
+     34          
+     35          #if defined (USART1) || defined (USART2) || defined (USART3) || defined (USART4)
+     36          
+     37          /** @addtogroup USART_LL
+     38            * @{
+     39            */
+     40          
+     41          /* Private types -------------------------------------------------------------*/
+     42          /* Private variables ---------------------------------------------------------*/
+     43          /* Private constants ---------------------------------------------------------*/
+     44          /* Private macros ------------------------------------------------------------*/
+     45          /** @addtogroup USART_LL_Private_Macros
+     46            * @{
+     47            */
+     48          
+     49          #define IS_LL_USART_PRESCALER(__VALUE__)  (((__VALUE__) == LL_USART_PRESCALER_DIV1) \
+     50                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV2) \
+     51                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV4) \
+     52                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV6) \
+     53                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV8) \
+     54                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV10) \
+     55                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV12) \
+     56                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV16) \
+     57                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV32) \
+     58                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV64) \
+     59                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV128) \
+     60                                                     || ((__VALUE__) == LL_USART_PRESCALER_DIV256))
+     61          
+     62          /* __BAUDRATE__ The maximum Baud Rate is derived from the maximum clock available
+     63           *              divided by the smallest oversampling used on the USART (i.e. 8)    */
+     64          #define IS_LL_USART_BAUDRATE(__BAUDRATE__) ((__BAUDRATE__) <= 8000000U)
+     65          
+     66          /* __VALUE__ In case of oversampling by 16 and 8, BRR content must be greater than or equal to 16d. */
+     67          #define IS_LL_USART_BRR_MIN(__VALUE__) ((__VALUE__) >= 16U)
+     68          
+     69          /* __VALUE__ BRR content must be lower than or equal to 0xFFFF. */
+     70          #define IS_LL_USART_BRR_MAX(__VALUE__) ((__VALUE__) <= 0x0000FFFFU)
+     71          
+     72          #define IS_LL_USART_DIRECTION(__VALUE__) (((__VALUE__) == LL_USART_DIRECTION_NONE) \
+     73                                                    || ((__VALUE__) == LL_USART_DIRECTION_RX) \
+     74                                                    || ((__VALUE__) == LL_USART_DIRECTION_TX) \
+     75                                                    || ((__VALUE__) == LL_USART_DIRECTION_TX_RX))
+     76          
+     77          #define IS_LL_USART_PARITY(__VALUE__) (((__VALUE__) == LL_USART_PARITY_NONE) \
+     78                                                 || ((__VALUE__) == LL_USART_PARITY_EVEN) \
+     79                                                 || ((__VALUE__) == LL_USART_PARITY_ODD))
+     80          
+     81          #define IS_LL_USART_DATAWIDTH(__VALUE__) (((__VALUE__) == LL_USART_DATAWIDTH_7B) \
+     82                                                    || ((__VALUE__) == LL_USART_DATAWIDTH_8B) \
+     83                                                    || ((__VALUE__) == LL_USART_DATAWIDTH_9B))
+     84          
+     85          #define IS_LL_USART_OVERSAMPLING(__VALUE__) (((__VALUE__) == LL_USART_OVERSAMPLING_16) \
+     86                                                       || ((__VALUE__) == LL_USART_OVERSAMPLING_8))
+     87          
+     88          #define IS_LL_USART_LASTBITCLKOUTPUT(__VALUE__) (((__VALUE__) == LL_USART_LASTCLKPULSE_NO_OUTPUT) \
+     89                                                           || ((__VALUE__) == LL_USART_LASTCLKPULSE_OUTPUT))
+     90          
+     91          #define IS_LL_USART_CLOCKPHASE(__VALUE__) (((__VALUE__) == LL_USART_PHASE_1EDGE) \
+     92                                                     || ((__VALUE__) == LL_USART_PHASE_2EDGE))
+     93          
+     94          #define IS_LL_USART_CLOCKPOLARITY(__VALUE__) (((__VALUE__) == LL_USART_POLARITY_LOW) \
+     95                                                        || ((__VALUE__) == LL_USART_POLARITY_HIGH))
+     96          
+     97          #define IS_LL_USART_CLOCKOUTPUT(__VALUE__) (((__VALUE__) == LL_USART_CLOCK_DISABLE) \
+     98                                                      || ((__VALUE__) == LL_USART_CLOCK_ENABLE))
+     99          
+    100          #define IS_LL_USART_STOPBITS(__VALUE__) (((__VALUE__) == LL_USART_STOPBITS_0_5) \
+    101                                                   || ((__VALUE__) == LL_USART_STOPBITS_1) \
+    102                                                   || ((__VALUE__) == LL_USART_STOPBITS_1_5) \
+    103                                                   || ((__VALUE__) == LL_USART_STOPBITS_2))
+    104          
+    105          #define IS_LL_USART_HWCONTROL(__VALUE__) (((__VALUE__) == LL_USART_HWCONTROL_NONE) \
+    106                                                    || ((__VALUE__) == LL_USART_HWCONTROL_RTS) \
+    107                                                    || ((__VALUE__) == LL_USART_HWCONTROL_CTS) \
+    108                                                    || ((__VALUE__) == LL_USART_HWCONTROL_RTS_CTS))
+    109          
+    110          /**
+    111            * @}
+    112            */
+    113          
+    114          /* Private function prototypes -----------------------------------------------*/
+    115          
+    116          /* Exported functions --------------------------------------------------------*/
+    117          /** @addtogroup USART_LL_Exported_Functions
+    118            * @{
+    119            */
+    120          
+    121          /** @addtogroup USART_LL_EF_Init
+    122            * @{
+    123            */
+    124          
+    125          /**
+    126            * @brief  De-initialize USART registers (Registers restored to their default values).
+    127            * @param  USARTx USART Instance
+    128            * @retval An ErrorStatus enumeration value:
+    129            *          - SUCCESS: USART registers are de-initialized
+    130            *          - ERROR: USART registers are not de-initialized
+    131            */
+
+   \                                 In section .text, align 2, keep-with-next
+    132          ErrorStatus LL_USART_DeInit(USART_TypeDef *USARTx)
+    133          {
+   \                     LL_USART_DeInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    134            ErrorStatus status = SUCCESS;
+   \        0x4   0x2500             MOVS     R5,#+0
+    135          
+    136            /* Check the parameters */
+    137            assert_param(IS_UART_INSTANCE(USARTx));
+    138          
+    139            if (USARTx == USART1)
+   \        0x6   0x....             LDR      R0,??DataTable11_7  ;; 0x40013800
+   \        0x8   0x4284             CMP      R4,R0
+   \        0xA   0xD108             BNE      ??LL_USART_DeInit_0
+    140            {
+    141              /* Force reset of USART clock */
+    142              LL_APB2_GRP1_ForceReset(LL_APB2_GRP1_PERIPH_USART1);
+   \        0xC   0x2680             MOVS     R6,#+128
+   \        0xE   0x01F6             LSLS     R6,R6,#+7        ;; #+16384
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x....'....        BL       LL_APB2_GRP1_ForceReset
+    143          
+    144              /* Release reset of USART clock */
+    145              LL_APB2_GRP1_ReleaseReset(LL_APB2_GRP1_PERIPH_USART1);
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0x....'....        BL       LL_APB2_GRP1_ReleaseReset
+   \       0x1C   0xE00D             B        ??LL_USART_DeInit_1
+    146            }
+    147            else if (USARTx == USART2)
+   \                     ??LL_USART_DeInit_0: (+1)
+   \       0x1E   0x....             LDR      R0,??DataTable11_8  ;; 0x40004400
+   \       0x20   0x4284             CMP      R4,R0
+   \       0x22   0xD108             BNE      ??LL_USART_DeInit_2
+    148            {
+    149              /* Force reset of USART clock */
+    150              LL_APB1_GRP1_ForceReset(LL_APB1_GRP1_PERIPH_USART2);
+   \       0x24   0x2680             MOVS     R6,#+128
+   \       0x26   0x02B6             LSLS     R6,R6,#+10       ;; #+131072
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0x....'....        BL       LL_APB1_GRP1_ForceReset
+    151          
+    152              /* Release reset of USART clock */
+    153              LL_APB1_GRP1_ReleaseReset(LL_APB1_GRP1_PERIPH_USART2);
+   \       0x2E   0x0030             MOVS     R0,R6
+   \       0x30   0x....'....        BL       LL_APB1_GRP1_ReleaseReset
+   \       0x34   0xE001             B        ??LL_USART_DeInit_1
+    154            }
+    155          #if defined(USART3)
+    156            else if (USARTx == USART3)
+    157            {
+    158              /* Force reset of USART clock */
+    159              LL_APB1_GRP1_ForceReset(LL_APB1_GRP1_PERIPH_USART3);
+    160          
+    161              /* Release reset of USART clock */
+    162              LL_APB1_GRP1_ReleaseReset(LL_APB1_GRP1_PERIPH_USART3);
+    163            }
+    164          #endif /* USART3 */
+    165          #if defined(USART4)
+    166            else if (USARTx == USART4)
+    167            {
+    168              /* Force reset of USART clock */
+    169              LL_APB1_GRP1_ForceReset(LL_APB1_GRP1_PERIPH_USART4);
+    170          
+    171              /* Release reset of USART clock */
+    172              LL_APB1_GRP1_ReleaseReset(LL_APB1_GRP1_PERIPH_USART4);
+    173            }
+    174          #endif /* USART4 */
+    175            else
+    176            {
+    177              status = ERROR;
+   \                     ??LL_USART_DeInit_2: (+1)
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0x0005             MOVS     R5,R0
+    178            }
+    179          
+    180            return (status);
+   \                     ??LL_USART_DeInit_1: (+1)
+   \       0x3A   0x0028             MOVS     R0,R5
+   \       0x3C   0xB2C0             UXTB     R0,R0
+   \       0x3E   0xBD70             POP      {R4-R6,PC}       ;; return
+    181          }
+    182          
+    183          /**
+    184            * @brief  Initialize USART registers according to the specified
+    185            *         parameters in USART_InitStruct.
+    186            * @note   As some bits in USART configuration registers can only be written when the USART is disabled (USART_CR1_UE bit =0),
+    187            *         USART Peripheral should be in disabled state prior calling this function. Otherwise, ERROR result will be returned.
+    188            * @note   Baud rate value stored in USART_InitStruct BaudRate field, should be valid (different from 0).
+    189            * @param  USARTx USART Instance
+    190            * @param  USART_InitStruct pointer to a LL_USART_InitTypeDef structure
+    191            *         that contains the configuration information for the specified USART peripheral.
+    192            * @retval An ErrorStatus enumeration value:
+    193            *          - SUCCESS: USART registers are initialized according to USART_InitStruct content
+    194            *          - ERROR: Problem occurred during USART Registers initialization
+    195            */
+
+   \                                 In section .text, align 2, keep-with-next
+    196          ErrorStatus LL_USART_Init(USART_TypeDef *USARTx, LL_USART_InitTypeDef *USART_InitStruct)
+    197          {
+   \                     LL_USART_Init: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000C             MOVS     R4,R1
+    198            ErrorStatus status = ERROR;
+   \        0x8   0x2701             MOVS     R7,#+1
+    199            uint32_t periphclk = LL_RCC_PERIPH_FREQUENCY_NO;
+   \        0xA   0x2500             MOVS     R5,#+0
+   \        0xC   0x9501             STR      R5,[SP, #+4]
+    200          #if !defined(RCC_CCIPR_USART3SEL)&&!defined(RCC_CCIPR_USART4SEL)||!defined(RCC_CCIPR_USART2SEL)
+    201            LL_RCC_ClocksTypeDef RCC_Clocks;
+    202          #endif /* !RCC_CCIPR_USART3SEL && !RCC_CCIPR_USART4SEL || !RCC_CCIPR_USART2SEL */
+    203          
+    204            /* Check the parameters */
+    205            assert_param(IS_UART_INSTANCE(USARTx));
+    206            assert_param(IS_LL_USART_PRESCALER(USART_InitStruct->PrescalerValue));
+    207            assert_param(IS_LL_USART_BAUDRATE(USART_InitStruct->BaudRate));
+    208            assert_param(IS_LL_USART_DATAWIDTH(USART_InitStruct->DataWidth));
+    209            assert_param(IS_LL_USART_STOPBITS(USART_InitStruct->StopBits));
+    210            assert_param(IS_LL_USART_PARITY(USART_InitStruct->Parity));
+    211            assert_param(IS_LL_USART_DIRECTION(USART_InitStruct->TransferDirection));
+    212            assert_param(IS_LL_USART_HWCONTROL(USART_InitStruct->HardwareFlowControl));
+    213            assert_param(IS_LL_USART_OVERSAMPLING(USART_InitStruct->OverSampling));
+    214          
+    215            /* USART needs to be in disabled state, in order to be able to configure some bits in
+    216               CRx registers */
+    217            if (LL_USART_IsEnabled(USARTx) == 0U)
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x....'....        BL       LL_USART_IsEnabled
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD136             BNE      ??LL_USART_Init_0
+    218            {
+    219              /*---------------------------- USART CR1 Configuration ---------------------
+    220               * Configure USARTx CR1 (USART Word Length, Parity, Mode and Oversampling bits) with parameters:
+    221               * - DataWidth:          USART_CR1_M bits according to USART_InitStruct->DataWidth value
+    222               * - Parity:             USART_CR1_PCE, USART_CR1_PS bits according to USART_InitStruct->Parity value
+    223               * - TransferDirection:  USART_CR1_TE, USART_CR1_RE bits according to USART_InitStruct->TransferDirection value
+    224               * - Oversampling:       USART_CR1_OVER8 bit according to USART_InitStruct->OverSampling value.
+    225               */
+    226              MODIFY_REG(USARTx->CR1,
+    227                         (USART_CR1_M | USART_CR1_PCE | USART_CR1_PS |
+    228                          USART_CR1_TE | USART_CR1_RE | USART_CR1_OVER8),
+    229                         (USART_InitStruct->DataWidth | USART_InitStruct->Parity |
+    230                          USART_InitStruct->TransferDirection | USART_InitStruct->OverSampling));
+   \       0x18   0x6830             LDR      R0,[R6, #+0]
+   \       0x1A   0x....             LDR      R1,??DataTable11_9  ;; 0xefff69f3
+   \       0x1C   0x4001             ANDS     R1,R1,R0
+   \       0x1E   0x68A0             LDR      R0,[R4, #+8]
+   \       0x20   0x4308             ORRS     R0,R0,R1
+   \       0x22   0x6921             LDR      R1,[R4, #+16]
+   \       0x24   0x4301             ORRS     R1,R1,R0
+   \       0x26   0x6960             LDR      R0,[R4, #+20]
+   \       0x28   0x4308             ORRS     R0,R0,R1
+   \       0x2A   0x69E1             LDR      R1,[R4, #+28]
+   \       0x2C   0x4301             ORRS     R1,R1,R0
+   \       0x2E   0x6031             STR      R1,[R6, #+0]
+    231          
+    232              /*---------------------------- USART CR2 Configuration ---------------------
+    233               * Configure USARTx CR2 (Stop bits) with parameters:
+    234               * - Stop Bits:          USART_CR2_STOP bits according to USART_InitStruct->StopBits value.
+    235               * - CLKEN, CPOL, CPHA and LBCL bits are to be configured using LL_USART_ClockInit().
+    236               */
+    237              LL_USART_SetStopBitsLength(USARTx, USART_InitStruct->StopBits);
+   \       0x30   0x68E1             LDR      R1,[R4, #+12]
+   \       0x32   0x0030             MOVS     R0,R6
+   \       0x34   0x....'....        BL       LL_USART_SetStopBitsLength
+    238          
+    239              /*---------------------------- USART CR3 Configuration ---------------------
+    240               * Configure USARTx CR3 (Hardware Flow Control) with parameters:
+    241               * - HardwareFlowControl: USART_CR3_RTSE, USART_CR3_CTSE bits according to USART_InitStruct->HardwareFlowControl value.
+    242               */
+    243              LL_USART_SetHWFlowCtrl(USARTx, USART_InitStruct->HardwareFlowControl);
+   \       0x38   0x69A1             LDR      R1,[R4, #+24]
+   \       0x3A   0x0030             MOVS     R0,R6
+   \       0x3C   0x....'....        BL       LL_USART_SetHWFlowCtrl
+    244          
+    245              /*---------------------------- USART BRR Configuration ---------------------
+    246               * Retrieve Clock frequency used for USART Peripheral
+    247               */
+    248              if (USARTx == USART1)
+   \       0x40   0x....             LDR      R0,??DataTable11_7  ;; 0x40013800
+   \       0x42   0x4286             CMP      R6,R0
+   \       0x44   0xD104             BNE      ??LL_USART_Init_1
+    249              {
+    250                periphclk = LL_RCC_GetUSARTClockFreq(LL_RCC_USART1_CLKSOURCE);
+   \       0x46   0x2003             MOVS     R0,#+3
+   \       0x48   0x....'....        BL       LL_RCC_GetUSARTClockFreq
+   \       0x4C   0x9001             STR      R0,[SP, #+4]
+   \       0x4E   0xE007             B        ??LL_USART_Init_2
+    251              }
+    252              else if (USARTx == USART2)
+   \                     ??LL_USART_Init_1: (+1)
+   \       0x50   0x....             LDR      R0,??DataTable11_8  ;; 0x40004400
+   \       0x52   0x4286             CMP      R6,R0
+   \       0x54   0xD104             BNE      ??LL_USART_Init_2
+    253              {
+    254          #if defined(RCC_CCIPR_USART2SEL)
+    255                periphclk = LL_RCC_GetUSARTClockFreq(LL_RCC_USART2_CLKSOURCE);
+    256          #else
+    257                /* USART2 clock is PCLK */
+    258                LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
+   \       0x56   0xA802             ADD      R0,SP,#+8
+   \       0x58   0x....'....        BL       LL_RCC_GetSystemClocksFreq
+    259                periphclk = RCC_Clocks.PCLK1_Frequency;
+   \       0x5C   0x9804             LDR      R0,[SP, #+16]
+   \       0x5E   0x9001             STR      R0,[SP, #+4]
+    260          #endif /* RCC_CCIPR_USART2SEL */
+    261              }
+    262          #if defined(USART3)
+    263              else if (USARTx == USART3)
+    264              {
+    265          #if defined(RCC_CCIPR_USART3SEL)
+    266                periphclk = LL_RCC_GetUSARTClockFreq(LL_RCC_USART3_CLKSOURCE);
+    267          #else
+    268                /* USART3 clock is PCLK */
+    269                LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
+    270                periphclk = RCC_Clocks.PCLK1_Frequency;
+    271          #endif /* RCC_CCIPR_USART3SEL */
+    272              }
+    273          #endif /* USART3 */
+    274          #if defined(USART4)
+    275              else if (USARTx == USART4)
+    276              {
+    277          #if defined(RCC_CCIPR_USART4SEL)
+    278                periphclk = LL_RCC_GetUSARTClockFreq(LL_RCC_USART4_CLKSOURCE);
+    279          #else
+    280                /* USART4 clock is PCLK1 */
+    281                LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
+    282                periphclk = RCC_Clocks.PCLK1_Frequency;
+    283          #endif /* RCC_CCIPR_USART4SEL */
+    284              }
+    285          #endif /* USART4 */
+    286              else
+    287              {
+    288                /* Nothing to do, as error code is already assigned to ERROR value */
+    289              }
+    290          
+    291              /* Configure the USART Baud Rate :
+    292                 - prescaler value is required
+    293                 - valid baud rate value (different from 0) is required
+    294                 - Peripheral clock as returned by RCC service, should be valid (different from 0).
+    295              */
+    296              if ((periphclk != LL_RCC_PERIPH_FREQUENCY_NO)
+    297                  && (USART_InitStruct->BaudRate != 0U))
+   \                     ??LL_USART_Init_2: (+1)
+   \       0x60   0x9801             LDR      R0,[SP, #+4]
+   \       0x62   0x2800             CMP      R0,#+0
+   \       0x64   0xD00B             BEQ      ??LL_USART_Init_3
+   \       0x66   0x6860             LDR      R0,[R4, #+4]
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD008             BEQ      ??LL_USART_Init_3
+    298              {
+    299                status = SUCCESS;
+   \       0x6C   0x002F             MOVS     R7,R5
+    300                LL_USART_SetBaudRate(USARTx,
+    301                                     periphclk,
+    302                                     USART_InitStruct->PrescalerValue,
+    303                                     USART_InitStruct->OverSampling,
+    304                                     USART_InitStruct->BaudRate);
+   \       0x6E   0x6860             LDR      R0,[R4, #+4]
+   \       0x70   0x9000             STR      R0,[SP, #+0]
+   \       0x72   0x69E3             LDR      R3,[R4, #+28]
+   \       0x74   0x6822             LDR      R2,[R4, #+0]
+   \       0x76   0x9901             LDR      R1,[SP, #+4]
+   \       0x78   0x0030             MOVS     R0,R6
+   \       0x7A   0x....'....        BL       LL_USART_SetBaudRate
+    305          
+    306                /* Check BRR is greater than or equal to 16d */
+    307                assert_param(IS_LL_USART_BRR_MIN(USARTx->BRR));
+    308          
+    309                /* Check BRR is lower than or equal to 0xFFFF */
+    310                assert_param(IS_LL_USART_BRR_MAX(USARTx->BRR));
+    311              }
+    312          
+    313              /*---------------------------- USART PRESC Configuration -----------------------
+    314               * Configure USARTx PRESC (Prescaler) with parameters:
+    315               * - PrescalerValue: USART_PRESC_PRESCALER bits according to USART_InitStruct->PrescalerValue value.
+    316               */
+    317              LL_USART_SetPrescaler(USARTx, USART_InitStruct->PrescalerValue);
+   \                     ??LL_USART_Init_3: (+1)
+   \       0x7E   0x6821             LDR      R1,[R4, #+0]
+   \       0x80   0x0030             MOVS     R0,R6
+   \       0x82   0x....'....        BL       LL_USART_SetPrescaler
+    318            }
+    319            /* Endif (=> USART not in Disabled state => return ERROR) */
+    320          
+    321            return (status);
+   \                     ??LL_USART_Init_0: (+1)
+   \       0x86   0x0038             MOVS     R0,R7
+   \       0x88   0xB2C0             UXTB     R0,R0
+   \       0x8A   0xB005             ADD      SP,SP,#+20
+   \       0x8C   0xBDF0             POP      {R4-R7,PC}       ;; return
+    322          }
+    323          
+    324          /**
+    325            * @brief Set each @ref LL_USART_InitTypeDef field to default value.
+    326            * @param USART_InitStruct pointer to a @ref LL_USART_InitTypeDef structure
+    327            *                         whose fields will be set to default values.
+    328            * @retval None
+    329            */
+    330          
+
+   \                                 In section .text, align 2, keep-with-next
+    331          void LL_USART_StructInit(LL_USART_InitTypeDef *USART_InitStruct)
+    332          {
+    333            /* Set USART_InitStruct fields to default values */
+    334            USART_InitStruct->PrescalerValue      = LL_USART_PRESCALER_DIV1;
+   \                     LL_USART_StructInit: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    335            USART_InitStruct->BaudRate            = 9600U;
+   \        0x4   0x2296             MOVS     R2,#+150
+   \        0x6   0x0192             LSLS     R2,R2,#+6        ;; #+9600
+   \        0x8   0x6042             STR      R2,[R0, #+4]
+    336            USART_InitStruct->DataWidth           = LL_USART_DATAWIDTH_8B;
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+    337            USART_InitStruct->StopBits            = LL_USART_STOPBITS_1;
+   \        0xC   0x60C1             STR      R1,[R0, #+12]
+    338            USART_InitStruct->Parity              = LL_USART_PARITY_NONE ;
+   \        0xE   0x6101             STR      R1,[R0, #+16]
+    339            USART_InitStruct->TransferDirection   = LL_USART_DIRECTION_TX_RX;
+   \       0x10   0x220C             MOVS     R2,#+12
+   \       0x12   0x6142             STR      R2,[R0, #+20]
+    340            USART_InitStruct->HardwareFlowControl = LL_USART_HWCONTROL_NONE;
+   \       0x14   0x6181             STR      R1,[R0, #+24]
+    341            USART_InitStruct->OverSampling        = LL_USART_OVERSAMPLING_16;
+   \       0x16   0x61C1             STR      R1,[R0, #+28]
+    342          }
+   \       0x18   0x4770             BX       LR               ;; return
+    343          
+    344          /**
+    345            * @brief  Initialize USART Clock related settings according to the
+    346            *         specified parameters in the USART_ClockInitStruct.
+    347            * @note   As some bits in USART configuration registers can only be written when the USART is disabled (USART_CR1_UE bit =0),
+    348            *         USART Peripheral should be in disabled state prior calling this function. Otherwise, ERROR result will be returned.
+    349            * @param  USARTx USART Instance
+    350            * @param  USART_ClockInitStruct pointer to a @ref LL_USART_ClockInitTypeDef structure
+    351            *         that contains the Clock configuration information for the specified USART peripheral.
+    352            * @retval An ErrorStatus enumeration value:
+    353            *          - SUCCESS: USART registers related to Clock settings are initialized according to USART_ClockInitStruct content
+    354            *          - ERROR: Problem occurred during USART Registers initialization
+    355            */
+
+   \                                 In section .text, align 2, keep-with-next
+    356          ErrorStatus LL_USART_ClockInit(USART_TypeDef *USARTx, LL_USART_ClockInitTypeDef *USART_ClockInitStruct)
+    357          {
+   \                     LL_USART_ClockInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    358            ErrorStatus status = SUCCESS;
+   \        0x6   0x2600             MOVS     R6,#+0
+    359          
+    360            /* Check USART Instance and Clock signal output parameters */
+    361            assert_param(IS_UART_INSTANCE(USARTx));
+    362            assert_param(IS_LL_USART_CLOCKOUTPUT(USART_ClockInitStruct->ClockOutput));
+    363          
+    364            /* USART needs to be in disabled state, in order to be able to configure some bits in
+    365               CRx registers */
+    366            if (LL_USART_IsEnabled(USARTx) == 0U)
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       LL_USART_IsEnabled
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD114             BNE      ??LL_USART_ClockInit_0
+    367            {
+    368              /*---------------------------- USART CR2 Configuration -----------------------*/
+    369              /* If Clock signal has to be output */
+    370              if (USART_ClockInitStruct->ClockOutput == LL_USART_CLOCK_DISABLE)
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD103             BNE      ??LL_USART_ClockInit_1
+    371              {
+    372                /* Deactivate Clock signal delivery :
+    373                 * - Disable Clock Output:        USART_CR2_CLKEN cleared
+    374                 */
+    375                LL_USART_DisableSCLKOutput(USARTx);
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x....'....        BL       LL_USART_DisableSCLKOutput
+   \       0x1E   0xE00F             B        ??LL_USART_ClockInit_2
+    376              }
+    377              else
+    378              {
+    379                /* Ensure USART instance is USART capable */
+    380                assert_param(IS_USART_INSTANCE(USARTx));
+    381          
+    382                /* Check clock related parameters */
+    383                assert_param(IS_LL_USART_CLOCKPOLARITY(USART_ClockInitStruct->ClockPolarity));
+    384                assert_param(IS_LL_USART_CLOCKPHASE(USART_ClockInitStruct->ClockPhase));
+    385                assert_param(IS_LL_USART_LASTBITCLKOUTPUT(USART_ClockInitStruct->LastBitClockPulse));
+    386          
+    387                /*---------------------------- USART CR2 Configuration -----------------------
+    388                 * Configure USARTx CR2 (Clock signal related bits) with parameters:
+    389                 * - Enable Clock Output:         USART_CR2_CLKEN set
+    390                 * - Clock Polarity:              USART_CR2_CPOL bit according to USART_ClockInitStruct->ClockPolarity value
+    391                 * - Clock Phase:                 USART_CR2_CPHA bit according to USART_ClockInitStruct->ClockPhase value
+    392                 * - Last Bit Clock Pulse Output: USART_CR2_LBCL bit according to USART_ClockInitStruct->LastBitClockPulse value.
+    393                 */
+    394                MODIFY_REG(USARTx->CR2,
+    395                           USART_CR2_CLKEN | USART_CR2_CPHA | USART_CR2_CPOL | USART_CR2_LBCL,
+    396                           USART_CR2_CLKEN | USART_ClockInitStruct->ClockPolarity |
+    397                           USART_ClockInitStruct->ClockPhase | USART_ClockInitStruct->LastBitClockPulse);
+   \                     ??LL_USART_ClockInit_1: (+1)
+   \       0x20   0x6868             LDR      R0,[R5, #+4]
+   \       0x22   0x....             LDR      R1,??DataTable11_10  ;; 0xfffff0ff
+   \       0x24   0x4001             ANDS     R1,R1,R0
+   \       0x26   0x6860             LDR      R0,[R4, #+4]
+   \       0x28   0x4308             ORRS     R0,R0,R1
+   \       0x2A   0x68A1             LDR      R1,[R4, #+8]
+   \       0x2C   0x4301             ORRS     R1,R1,R0
+   \       0x2E   0x68E0             LDR      R0,[R4, #+12]
+   \       0x30   0x4308             ORRS     R0,R0,R1
+   \       0x32   0x2180             MOVS     R1,#+128
+   \       0x34   0x0109             LSLS     R1,R1,#+4        ;; #+2048
+   \       0x36   0x4301             ORRS     R1,R1,R0
+   \       0x38   0x6069             STR      R1,[R5, #+4]
+   \       0x3A   0xE001             B        ??LL_USART_ClockInit_2
+    398              }
+    399            }
+    400            /* Else (USART not in Disabled state => return ERROR */
+    401            else
+    402            {
+    403              status = ERROR;
+   \                     ??LL_USART_ClockInit_0: (+1)
+   \       0x3C   0x2001             MOVS     R0,#+1
+   \       0x3E   0x0006             MOVS     R6,R0
+    404            }
+    405          
+    406            return (status);
+   \                     ??LL_USART_ClockInit_2: (+1)
+   \       0x40   0x0030             MOVS     R0,R6
+   \       0x42   0xB2C0             UXTB     R0,R0
+   \       0x44   0xBD70             POP      {R4-R6,PC}       ;; return
+    407          }
+    408          
+    409          /**
+    410            * @brief Set each field of a @ref LL_USART_ClockInitTypeDef type structure to default value.
+    411            * @param USART_ClockInitStruct pointer to a @ref LL_USART_ClockInitTypeDef structure
+    412            *                              whose fields will be set to default values.
+    413            * @retval None
+    414            */
+
+   \                                 In section .text, align 2, keep-with-next
+    415          void LL_USART_ClockStructInit(LL_USART_ClockInitTypeDef *USART_ClockInitStruct)
+    416          {
+    417            /* Set LL_USART_ClockInitStruct fields with default values */
+    418            USART_ClockInitStruct->ClockOutput       = LL_USART_CLOCK_DISABLE;
+   \                     LL_USART_ClockStructInit: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    419            USART_ClockInitStruct->ClockPolarity     = LL_USART_POLARITY_LOW;            /* Not relevant when ClockOutput = LL_USART_CLOCK_DISABLE */
+   \        0x4   0x6041             STR      R1,[R0, #+4]
+    420            USART_ClockInitStruct->ClockPhase        = LL_USART_PHASE_1EDGE;             /* Not relevant when ClockOutput = LL_USART_CLOCK_DISABLE */
+   \        0x6   0x6081             STR      R1,[R0, #+8]
+    421            USART_ClockInitStruct->LastBitClockPulse = LL_USART_LASTCLKPULSE_NO_OUTPUT;  /* Not relevant when ClockOutput = LL_USART_CLOCK_DISABLE */
+   \        0x8   0x60C1             STR      R1,[R0, #+12]
+    422          }
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0xFFFF'F7FF        DC32     0xfffff7ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0xFFFF'CFFF        DC32     0xffffcfff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0xFFFF'FCFF        DC32     0xfffffcff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x....'....        DC32     USART_PRESCALER_TAB
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x0000'FFF0        DC32     0xfff0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_5:
+   \        0x0   0x4002'102C        DC32     0x4002102c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_6:
+   \        0x0   0x4002'1030        DC32     0x40021030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_7:
+   \        0x0   0x4001'3800        DC32     0x40013800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_8:
+   \        0x0   0x4000'4400        DC32     0x40004400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_9:
+   \        0x0   0xEFFF'69F3        DC32     0xefff69f3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_10:
+   \        0x0   0xFFFF'F0FF        DC32     0xfffff0ff
+    423          
+    424          /**
+    425            * @}
+    426            */
+    427          
+    428          /**
+    429            * @}
+    430            */
+    431          
+    432          /**
+    433            * @}
+    434            */
+    435          
+    436          #endif /* USART1 || USART2 || USART3 || USART4 */
+    437          
+    438          /**
+    439            * @}
+    440            */
+    441          
+    442          #endif /* USE_FULL_LL_DRIVER */
+    443          
+    444          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+    445          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LL_APB1_GRP1_ForceReset
+       0   LL_APB1_GRP1_ReleaseReset
+       0   LL_APB2_GRP1_ForceReset
+       0   LL_APB2_GRP1_ReleaseReset
+      16   LL_USART_ClockInit
+        16   -> LL_USART_DisableSCLKOutput
+        16   -> LL_USART_IsEnabled
+       0   LL_USART_ClockStructInit
+      16   LL_USART_DeInit
+        16   -> LL_APB1_GRP1_ForceReset
+        16   -> LL_APB1_GRP1_ReleaseReset
+        16   -> LL_APB2_GRP1_ForceReset
+        16   -> LL_APB2_GRP1_ReleaseReset
+       0   LL_USART_DisableSCLKOutput
+      40   LL_USART_Init
+        40   -> LL_RCC_GetSystemClocksFreq
+        40   -> LL_RCC_GetUSARTClockFreq
+        40   -> LL_USART_IsEnabled
+        40   -> LL_USART_SetBaudRate
+        40   -> LL_USART_SetHWFlowCtrl
+        40   -> LL_USART_SetPrescaler
+        40   -> LL_USART_SetStopBitsLength
+       0   LL_USART_IsEnabled
+      32   LL_USART_SetBaudRate
+        32 __aeabi_uidiv
+       0   LL_USART_SetHWFlowCtrl
+       0   LL_USART_SetPrescaler
+       0   LL_USART_SetStopBitsLength
+       0   LL_USART_StructInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_10
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+       4  ??DataTable11_7
+       4  ??DataTable11_8
+       4  ??DataTable11_9
+      10  LL_APB1_GRP1_ForceReset
+      10  LL_APB1_GRP1_ReleaseReset
+      10  LL_APB2_GRP1_ForceReset
+      10  LL_APB2_GRP1_ReleaseReset
+      70  LL_USART_ClockInit
+      12  LL_USART_ClockStructInit
+      64  LL_USART_DeInit
+      10  LL_USART_DisableSCLKOutput
+     142  LL_USART_Init
+      10  LL_USART_IsEnabled
+     118  LL_USART_SetBaudRate
+      12  LL_USART_SetHWFlowCtrl
+      16  LL_USART_SetPrescaler
+      12  LL_USART_SetStopBitsLength
+      26  LL_USART_StructInit
+      48  USART_PRESCALER_TAB
+
+ 
+  48 bytes in section .rodata
+ 576 bytes in section .text
+ 
+ 576 bytes of CODE  memory
+  48 bytes of CONST memory
+
+Errors: none
+Warnings: none

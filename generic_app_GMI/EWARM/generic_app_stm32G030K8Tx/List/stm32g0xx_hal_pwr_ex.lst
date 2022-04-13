@@ -1,0 +1,1310 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:55
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWE4.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_hal_pwr_ex.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_hal_pwr_ex.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_hal_pwr_ex.c
+      4            * @author  MCD Application Team
+      5            * @brief   Extended PWR HAL module driver.
+      6            *          This file provides firmware functions to manage the following
+      7            *          functionalities of the Power Controller (PWR) peripheral:
+      8            *           + Extended Initialization and de-initialization functions
+      9            *           + Extended Peripheral Control functions
+     10            *
+     11            ******************************************************************************
+     12            * @attention
+     13            *
+     14            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics. 
+     15            * All rights reserved.</center></h2>
+     16            *
+     17            * This software component is licensed by ST under BSD 3-Clause license,
+     18            * the "License"; You may not use this file except in compliance with the 
+     19            * License. You may obtain a copy of the License at:
+     20            *                        opensource.org/licenses/BSD-3-Clause
+     21            *
+     22            ******************************************************************************
+     23            */
+     24          
+     25          /* Includes ------------------------------------------------------------------*/
+     26          #include "stm32g0xx_hal.h"
+     27          
+     28          /** @addtogroup STM32G0xx_HAL_Driver
+     29            * @{
+     30            */
+     31          
+     32          /** @addtogroup PWREx
+     33            * @{
+     34            */
+     35          
+     36          #ifdef HAL_PWR_MODULE_ENABLED
+     37          
+     38          /* Private typedef -----------------------------------------------------------*/
+     39          /* Private define ------------------------------------------------------------*/
+     40          /** @defgroup PWR_Extended_Private_Defines PWR Extended Private Defines
+     41            * @{
+     42            */
+     43          
+     44          /** @defgroup PWREx_TimeOut_Value  PWREx Flag Setting Time Out Value
+     45            * @{
+     46            */
+     47          #define PWR_REGLPF_SETTING_DELAY_6_US       6u  /*!< REGLPF should rise in about 5 us plus
+     48                                                               2 APB clock. Taking in account max Sysclk at
+     49                                                               2 MHz, and rounded to upper value */
+     50          
+     51          #define PWR_VOSF_SETTING_DELAY_6_US         6u  /*!< VOSF should rise in about 5 us plus
+     52                                                               2 APB clock. Taking in account max Sysclk at
+     53                                                               16 MHz, and rounded to upper value */
+     54          /**
+     55            * @}
+     56            */
+     57          
+     58          /** @defgroup PWREx_Gpio_Pin_Number  PWREx Gpio Pin Number
+     59            * @{
+     60            */
+     61          #define PWR_GPIO_PIN_NB                     16u  /*!< Number of gpio pin in bank */
+     62          /**
+     63            * @}
+     64            */
+     65          
+     66          /**
+     67            * @}
+     68            */
+     69          
+     70          /* Private macro -------------------------------------------------------------*/
+     71          /* Private variables ---------------------------------------------------------*/
+     72          /* Private function prototypes -----------------------------------------------*/
+     73          /* Exported functions --------------------------------------------------------*/
+     74          /** @addtogroup PWREx_Exported_Functions PWR Extended Exported Functions
+     75            * @{
+     76            */
+     77          
+     78          /** @addtogroup PWREx_Exported_Functions_Group1 Extended Peripheral Control functions
+     79            *  @brief   Extended Peripheral Control functions
+     80            *
+     81          @verbatim
+     82           ===============================================================================
+     83            ##### Extended Peripheral Initialization and de-initialization functions #####
+     84           ===============================================================================
+     85              [..]
+     86          
+     87          @endverbatim
+     88            * @{
+     89            */
+     90          
+     91          /**
+     92            * @brief  Enable battery charging.
+     93            * @note   When VDD is present, charge the external battery on VBAT thru an
+     94            *         internal resistor.
+     95            * @param  ResistorSelection specifies the resistor impedance.
+     96            *         This parameter can be one of the following values:
+     97            *           @arg @ref PWR_BATTERY_CHARGING_RESISTOR_5     5 kOhms resistor
+     98            *           @arg @ref PWR_BATTERY_CHARGING_RESISTOR_1_5 1.5 kOhms resistor
+     99            * @retval None
+    100            */
+
+   \                                 In section .text, align 2, keep-with-next
+    101          void HAL_PWREx_EnableBatteryCharging(uint32_t ResistorSelection)
+    102          {
+   \                     HAL_PWREx_EnableBatteryCharging: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+    103            uint32_t tmpreg;
+    104            assert_param(IS_PWR_BATTERY_RESISTOR_SELECT(ResistorSelection));
+    105          
+    106            /* Specify resistor selection and enable battery charging */
+    107            tmpreg = (PWR->CR4 & ~PWR_CR4_VBRS);
+   \        0x2   0x....             LDR      R2,??DataTable7  ;; 0x4000700c
+   \        0x4   0x6813             LDR      R3,[R2, #+0]
+   \        0x6   0x....             LDR      R1,??DataTable14  ;; 0xfffffdff
+   \        0x8   0x4019             ANDS     R1,R1,R3
+    108            PWR->CR4 = (tmpreg | ResistorSelection | PWR_CR4_VBE);
+   \        0xA   0x0003             MOVS     R3,R0
+   \        0xC   0x430B             ORRS     R3,R3,R1
+   \        0xE   0x2480             MOVS     R4,#+128
+   \       0x10   0x0064             LSLS     R4,R4,#+1        ;; #+256
+   \       0x12   0x431C             ORRS     R4,R4,R3
+   \       0x14   0x6014             STR      R4,[R2, #+0]
+    109          }
+   \       0x16   0xBC10             POP      {R4}
+   \       0x18   0x4770             BX       LR               ;; return
+    110          
+    111          
+    112          /**
+    113            * @brief Disable battery charging.
+    114            * @retval None
+    115            */
+
+   \                                 In section .text, align 2, keep-with-next
+    116          void HAL_PWREx_DisableBatteryCharging(void)
+    117          {
+    118            CLEAR_BIT(PWR->CR4, PWR_CR4_VBE);
+   \                     HAL_PWREx_DisableBatteryCharging: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable7  ;; 0x4000700c
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x....             LDR      R2,??DataTable14_1  ;; 0xfffffeff
+   \        0x6   0x400A             ANDS     R2,R2,R1
+   \        0x8   0x6002             STR      R2,[R0, #+0]
+    119          }
+   \        0xA   0x4770             BX       LR               ;; return
+    120          
+    121          #if defined(PWR_CR3_ENB_ULP)
+    122          /**
+    123            * @brief  Enable POR Monitor sampling mode.
+    124            * @note   When entering ultra low power modes (standby, shutdown) this feature
+    125            *         can be enabled to reduce further consumption: Power On Reset monitor
+    126            *         is then set in sampling mode, and no more in always on mode.
+    127            * @retval None
+    128            */
+    129          void HAL_PWREx_EnablePORMonitorSampling(void)
+    130          {
+    131            PWR->CR3 |= PWR_CR3_ENB_ULP;
+    132          }
+    133          
+    134          
+    135          /**
+    136            * @brief  Disable POR Monitor sampling mode.
+    137            * @retval None
+    138            */
+    139          void HAL_PWREx_DisablePORMonitorSampling(void)
+    140          {
+    141            PWR->CR3 &= ~PWR_CR3_ENB_ULP;
+    142          }
+    143          #endif
+    144          
+    145          
+    146          /**
+    147            * @brief  Enable Internal Wake-up Line.
+    148            * @retval None
+    149            */
+
+   \                                 In section .text, align 2, keep-with-next
+    150          void HAL_PWREx_EnableInternalWakeUpLine(void)
+    151          {
+    152            SET_BIT(PWR->CR3, PWR_CR3_EIWUL);
+   \                     HAL_PWREx_EnableInternalWakeUpLine: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable11  ;; 0x40007008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x2280             MOVS     R2,#+128
+   \        0x6   0x0212             LSLS     R2,R2,#+8        ;; #+32768
+   \        0x8   0x430A             ORRS     R2,R2,R1
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+    153          }
+   \        0xC   0x4770             BX       LR               ;; return
+    154          
+    155          
+    156          /**
+    157            * @brief  Disable Internal Wake-up Line.
+    158            * @retval None
+    159            */
+
+   \                                 In section .text, align 2, keep-with-next
+    160          void HAL_PWREx_DisableInternalWakeUpLine(void)
+    161          {
+    162            CLEAR_BIT(PWR->CR3, PWR_CR3_EIWUL);
+   \                     HAL_PWREx_DisableInternalWakeUpLine: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable11  ;; 0x40007008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x....             LDR      R2,??DataTable14_2  ;; 0xffff7fff
+   \        0x6   0x400A             ANDS     R2,R2,R1
+   \        0x8   0x6002             STR      R2,[R0, #+0]
+    163          }
+   \        0xA   0x4770             BX       LR               ;; return
+    164          
+    165          
+    166          /**
+    167            * @brief  Enable GPIO pull-up state in Standby and Shutdown modes.
+    168            * @note   Set the relevant PUy bit of PWR_PUCRx register to configure the I/O in
+    169            *         pull-up state in Standby and Shutdown modes.
+    170            * @note   This state is effective in Standby and Shutdown modes only if APC bit
+    171            *         is set through HAL_PWREx_EnablePullUpPullDownConfig() API.
+    172            * @note   The configuration is lost when exiting the Shutdown mode due to the
+    173            *         power-on reset, maintained when exiting the Standby mode.
+    174            * @note   To avoid any conflict at Standby and Shutdown modes exits, the corresponding
+    175            *         PDy bit of PWR_PDCRx register is cleared unless it is reserved.
+    176            * @param  GPIO Specify the IO port. This parameter can be PWR_GPIO_A, ..., PWR_GPIO_F
+    177            *         to select the GPIO peripheral.
+    178            * @param  GPIONumber Specify the I/O pins numbers.
+    179            *         This parameter can be one of the following values:
+    180            *         PWR_GPIO_BIT_0, ..., PWR_GPIO_BIT_15 (except for ports where less
+    181            *         I/O pins are available) or the logical OR of several of them to set
+    182            *         several bits for a given port in a single API call.
+    183            * @retval HAL Status
+    184            */
+
+   \                                 In section .text, align 2, keep-with-next
+    185          HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber)
+    186          {
+   \                     HAL_PWREx_EnableGPIOPullUp: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    187            HAL_StatusTypeDef status = HAL_OK;
+   \        0x4   0x2000             MOVS     R0,#+0
+    188          
+    189            assert_param(IS_PWR_GPIO(GPIO));
+    190            assert_param(IS_PWR_GPIO_BIT_NUMBER(GPIONumber));
+    191          
+    192            switch (GPIO)
+   \        0x6   0x0013             MOVS     R3,R2
+   \        0x8   0x2B00             CMP      R3,#+0
+   \        0xA   0xD008             BEQ      ??HAL_PWREx_EnableGPIOPullUp_0
+   \        0xC   0x2B01             CMP      R3,#+1
+   \        0xE   0xD013             BEQ      ??HAL_PWREx_EnableGPIOPullUp_1
+   \       0x10   0x2B02             CMP      R3,#+2
+   \       0x12   0xD01A             BEQ      ??HAL_PWREx_EnableGPIOPullUp_2
+   \       0x14   0x2B03             CMP      R3,#+3
+   \       0x16   0xD021             BEQ      ??HAL_PWREx_EnableGPIOPullUp_3
+   \       0x18   0x2B05             CMP      R3,#+5
+   \       0x1A   0xD028             BEQ      ??HAL_PWREx_EnableGPIOPullUp_4
+   \       0x1C   0xE030             B        ??HAL_PWREx_EnableGPIOPullUp_5
+    193            {
+    194              case PWR_GPIO_A:
+    195                 SET_BIT(PWR->PUCRA, (GPIONumber & ~PWR_GPIO_BIT_14));
+   \                     ??HAL_PWREx_EnableGPIOPullUp_0: (+1)
+   \       0x1E   0x....             LDR      R3,??DataTable12  ;; 0x40007020
+   \       0x20   0x681C             LDR      R4,[R3, #+0]
+   \       0x22   0x....             LDR      R5,??DataTable12_1  ;; 0xffffbfff
+   \       0x24   0x400D             ANDS     R5,R5,R1
+   \       0x26   0x4325             ORRS     R5,R5,R4
+   \       0x28   0x601D             STR      R5,[R3, #+0]
+    196                 CLEAR_BIT(PWR->PDCRA, (GPIONumber & ~PWR_GPIO_BIT_13));
+   \       0x2A   0x....             LDR      R3,??DataTable12_2  ;; 0x40007024
+   \       0x2C   0x681C             LDR      R4,[R3, #+0]
+   \       0x2E   0x....             LDR      R5,??DataTable12_3  ;; 0xffffdfff
+   \       0x30   0x400D             ANDS     R5,R5,R1
+   \       0x32   0x43AC             BICS     R4,R4,R5
+   \       0x34   0x601C             STR      R4,[R3, #+0]
+    197                 break;
+   \       0x36   0xE025             B        ??HAL_PWREx_EnableGPIOPullUp_6
+    198          
+    199              case PWR_GPIO_B:
+    200                 SET_BIT(PWR->PUCRB, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullUp_1: (+1)
+   \       0x38   0x....             LDR      R3,??DataTable12_4  ;; 0x40007028
+   \       0x3A   0x681C             LDR      R4,[R3, #+0]
+   \       0x3C   0x430C             ORRS     R4,R4,R1
+   \       0x3E   0x601C             STR      R4,[R3, #+0]
+    201                 CLEAR_BIT(PWR->PDCRB, GPIONumber);
+   \       0x40   0x....             LDR      R3,??DataTable13  ;; 0x4000702c
+   \       0x42   0x681C             LDR      R4,[R3, #+0]
+   \       0x44   0x438C             BICS     R4,R4,R1
+   \       0x46   0x601C             STR      R4,[R3, #+0]
+    202                 break;
+   \       0x48   0xE01C             B        ??HAL_PWREx_EnableGPIOPullUp_6
+    203          
+    204              case PWR_GPIO_C:
+    205                 SET_BIT(PWR->PUCRC, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullUp_2: (+1)
+   \       0x4A   0x....             LDR      R3,??DataTable14_3  ;; 0x40007030
+   \       0x4C   0x681C             LDR      R4,[R3, #+0]
+   \       0x4E   0x430C             ORRS     R4,R4,R1
+   \       0x50   0x601C             STR      R4,[R3, #+0]
+    206                 CLEAR_BIT(PWR->PDCRC, GPIONumber);
+   \       0x52   0x....             LDR      R3,??DataTable14_4  ;; 0x40007034
+   \       0x54   0x681C             LDR      R4,[R3, #+0]
+   \       0x56   0x438C             BICS     R4,R4,R1
+   \       0x58   0x601C             STR      R4,[R3, #+0]
+    207                 break;
+   \       0x5A   0xE013             B        ??HAL_PWREx_EnableGPIOPullUp_6
+    208          
+    209              case PWR_GPIO_D:
+    210                 SET_BIT(PWR->PUCRD, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullUp_3: (+1)
+   \       0x5C   0x....             LDR      R3,??DataTable14_5  ;; 0x40007038
+   \       0x5E   0x681C             LDR      R4,[R3, #+0]
+   \       0x60   0x430C             ORRS     R4,R4,R1
+   \       0x62   0x601C             STR      R4,[R3, #+0]
+    211                 CLEAR_BIT(PWR->PDCRD, GPIONumber);
+   \       0x64   0x....             LDR      R3,??DataTable14_6  ;; 0x4000703c
+   \       0x66   0x681C             LDR      R4,[R3, #+0]
+   \       0x68   0x438C             BICS     R4,R4,R1
+   \       0x6A   0x601C             STR      R4,[R3, #+0]
+    212                 break;
+   \       0x6C   0xE00A             B        ??HAL_PWREx_EnableGPIOPullUp_6
+    213          
+    214              case PWR_GPIO_F:
+    215                 SET_BIT(PWR->PUCRF, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullUp_4: (+1)
+   \       0x6E   0x....             LDR      R3,??DataTable14_7  ;; 0x40007048
+   \       0x70   0x681C             LDR      R4,[R3, #+0]
+   \       0x72   0x430C             ORRS     R4,R4,R1
+   \       0x74   0x601C             STR      R4,[R3, #+0]
+    216                 CLEAR_BIT(PWR->PDCRF, GPIONumber);
+   \       0x76   0x....             LDR      R3,??DataTable15  ;; 0x4000704c
+   \       0x78   0x681C             LDR      R4,[R3, #+0]
+   \       0x7A   0x438C             BICS     R4,R4,R1
+   \       0x7C   0x601C             STR      R4,[R3, #+0]
+    217                 break;
+   \       0x7E   0xE001             B        ??HAL_PWREx_EnableGPIOPullUp_6
+    218          
+    219              default:
+    220                status = HAL_ERROR;
+   \                     ??HAL_PWREx_EnableGPIOPullUp_5: (+1)
+   \       0x80   0x2301             MOVS     R3,#+1
+   \       0x82   0x0018             MOVS     R0,R3
+    221                break;
+    222            }
+    223          
+    224            return status;
+   \                     ??HAL_PWREx_EnableGPIOPullUp_6: (+1)
+   \       0x84   0xB2C0             UXTB     R0,R0
+   \       0x86   0xBD30             POP      {R4,R5,PC}       ;; return
+    225          }
+    226          
+    227          
+    228          /**
+    229            * @brief  Disable GPIO pull-up state in Standby mode and Shutdown modes.
+    230            * @note   Reset the relevant PUy bit of PWR_PUCRx register used to configure the I/O
+    231            *         in pull-up state in Standby and Shutdown modes.
+    232            * @param  GPIO Specifies the IO port. This parameter can be PWR_GPIO_A, ..., PWR_GPIO_F
+    233            *         to select the GPIO peripheral.
+    234            * @param  GPIONumber Specify the I/O pins numbers.
+    235            *         This parameter can be one of the following values:
+    236            *         PWR_GPIO_BIT_0, ..., PWR_GPIO_BIT_15 (except for ports where less
+    237            *         I/O pins are available) or the logical OR of several of them to reset
+    238            *         several bits for a given port in a single API call.
+    239            * @retval HAL Status
+    240            */
+
+   \                                 In section .text, align 2, keep-with-next
+    241          HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullUp(uint32_t GPIO, uint32_t GPIONumber)
+    242          {
+   \                     HAL_PWREx_DisableGPIOPullUp: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    243            HAL_StatusTypeDef status = HAL_OK;
+   \        0x4   0x2000             MOVS     R0,#+0
+    244          
+    245            assert_param(IS_PWR_GPIO(GPIO));
+    246            assert_param(IS_PWR_GPIO_BIT_NUMBER(GPIONumber));
+    247          
+    248            switch (GPIO)
+   \        0x6   0x0013             MOVS     R3,R2
+   \        0x8   0x2B00             CMP      R3,#+0
+   \        0xA   0xD008             BEQ      ??HAL_PWREx_DisableGPIOPullUp_0
+   \        0xC   0x2B01             CMP      R3,#+1
+   \        0xE   0xD00D             BEQ      ??HAL_PWREx_DisableGPIOPullUp_1
+   \       0x10   0x2B02             CMP      R3,#+2
+   \       0x12   0xD010             BEQ      ??HAL_PWREx_DisableGPIOPullUp_2
+   \       0x14   0x2B03             CMP      R3,#+3
+   \       0x16   0xD013             BEQ      ??HAL_PWREx_DisableGPIOPullUp_3
+   \       0x18   0x2B05             CMP      R3,#+5
+   \       0x1A   0xD016             BEQ      ??HAL_PWREx_DisableGPIOPullUp_4
+   \       0x1C   0xE01A             B        ??HAL_PWREx_DisableGPIOPullUp_5
+    249            {
+    250              case PWR_GPIO_A:
+    251                CLEAR_BIT(PWR->PUCRA, (GPIONumber & ~PWR_GPIO_BIT_14));
+   \                     ??HAL_PWREx_DisableGPIOPullUp_0: (+1)
+   \       0x1E   0x....             LDR      R3,??DataTable12  ;; 0x40007020
+   \       0x20   0x681C             LDR      R4,[R3, #+0]
+   \       0x22   0x....             LDR      R5,??DataTable12_1  ;; 0xffffbfff
+   \       0x24   0x400D             ANDS     R5,R5,R1
+   \       0x26   0x43AC             BICS     R4,R4,R5
+   \       0x28   0x601C             STR      R4,[R3, #+0]
+    252                break;
+   \       0x2A   0xE015             B        ??HAL_PWREx_DisableGPIOPullUp_6
+    253          
+    254              case PWR_GPIO_B:
+    255                CLEAR_BIT(PWR->PUCRB, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullUp_1: (+1)
+   \       0x2C   0x....             LDR      R3,??DataTable12_4  ;; 0x40007028
+   \       0x2E   0x681C             LDR      R4,[R3, #+0]
+   \       0x30   0x438C             BICS     R4,R4,R1
+   \       0x32   0x601C             STR      R4,[R3, #+0]
+    256                break;
+   \       0x34   0xE010             B        ??HAL_PWREx_DisableGPIOPullUp_6
+    257          
+    258              case PWR_GPIO_C:
+    259                CLEAR_BIT(PWR->PUCRC, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullUp_2: (+1)
+   \       0x36   0x....             LDR      R3,??DataTable14_3  ;; 0x40007030
+   \       0x38   0x681C             LDR      R4,[R3, #+0]
+   \       0x3A   0x438C             BICS     R4,R4,R1
+   \       0x3C   0x601C             STR      R4,[R3, #+0]
+    260                break;
+   \       0x3E   0xE00B             B        ??HAL_PWREx_DisableGPIOPullUp_6
+    261          
+    262              case PWR_GPIO_D:
+    263                CLEAR_BIT(PWR->PUCRD, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullUp_3: (+1)
+   \       0x40   0x....             LDR      R3,??DataTable14_5  ;; 0x40007038
+   \       0x42   0x681C             LDR      R4,[R3, #+0]
+   \       0x44   0x438C             BICS     R4,R4,R1
+   \       0x46   0x601C             STR      R4,[R3, #+0]
+    264                break;
+   \       0x48   0xE006             B        ??HAL_PWREx_DisableGPIOPullUp_6
+    265          
+    266              case PWR_GPIO_F:
+    267                CLEAR_BIT(PWR->PUCRF, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullUp_4: (+1)
+   \       0x4A   0x....             LDR      R3,??DataTable14_7  ;; 0x40007048
+   \       0x4C   0x681C             LDR      R4,[R3, #+0]
+   \       0x4E   0x438C             BICS     R4,R4,R1
+   \       0x50   0x601C             STR      R4,[R3, #+0]
+    268                break;
+   \       0x52   0xE001             B        ??HAL_PWREx_DisableGPIOPullUp_6
+    269          
+    270              default:
+    271                 status = HAL_ERROR;
+   \                     ??HAL_PWREx_DisableGPIOPullUp_5: (+1)
+   \       0x54   0x2301             MOVS     R3,#+1
+   \       0x56   0x0018             MOVS     R0,R3
+    272                 break;
+    273            }
+    274          
+    275            return status;
+   \                     ??HAL_PWREx_DisableGPIOPullUp_6: (+1)
+   \       0x58   0xB2C0             UXTB     R0,R0
+   \       0x5A   0xBD30             POP      {R4,R5,PC}       ;; return
+    276          }
+    277          
+    278          
+    279          /**
+    280            * @brief  Enable GPIO pull-down state in Standby and Shutdown modes.
+    281            * @note   Set the relevant PDy bit of PWR_PDCRx register to configure the I/O in
+    282            *         pull-down state in Standby and Shutdown modes.
+    283            * @note   This state is effective in Standby and Shutdown modes only if APC bit
+    284            *         is set through HAL_PWREx_EnablePullUpPullDownConfig() API.
+    285            * @note   The configuration is lost when exiting the Shutdown mode due to the
+    286            *         power-on reset, maintained when exiting the Standby mode.
+    287            * @note   To avoid any conflict at Standby and Shutdown modes exits, the corresponding
+    288            *         PUy bit of PWR_PUCRx register is cleared unless it is reserved.
+    289            * @param  GPIO Specify the IO port. This parameter can be PWR_GPIO_A..PWR_GPIO_F
+    290            *         to select the GPIO peripheral.
+    291            * @param  GPIONumber Specify the I/O pins numbers.
+    292            *         This parameter can be one of the following values:
+    293            *         PWR_GPIO_BIT_0, ..., PWR_GPIO_BIT_15 (except for ports where less
+    294            *         I/O pins are available) or the logical OR of several of them to set
+    295            *         several bits for a given port in a single API call.
+    296            * @retval HAL Status
+    297            */
+
+   \                                 In section .text, align 2, keep-with-next
+    298          HAL_StatusTypeDef HAL_PWREx_EnableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber)
+    299          {
+   \                     HAL_PWREx_EnableGPIOPullDown: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    300            HAL_StatusTypeDef status = HAL_OK;
+   \        0x4   0x2000             MOVS     R0,#+0
+    301          
+    302            assert_param(IS_PWR_GPIO(GPIO));
+    303            assert_param(IS_PWR_GPIO_BIT_NUMBER(GPIONumber));
+    304          
+    305            switch (GPIO)
+   \        0x6   0x0013             MOVS     R3,R2
+   \        0x8   0x2B00             CMP      R3,#+0
+   \        0xA   0xD008             BEQ      ??HAL_PWREx_EnableGPIOPullDown_0
+   \        0xC   0x2B01             CMP      R3,#+1
+   \        0xE   0xD013             BEQ      ??HAL_PWREx_EnableGPIOPullDown_1
+   \       0x10   0x2B02             CMP      R3,#+2
+   \       0x12   0xD01A             BEQ      ??HAL_PWREx_EnableGPIOPullDown_2
+   \       0x14   0x2B03             CMP      R3,#+3
+   \       0x16   0xD021             BEQ      ??HAL_PWREx_EnableGPIOPullDown_3
+   \       0x18   0x2B05             CMP      R3,#+5
+   \       0x1A   0xD028             BEQ      ??HAL_PWREx_EnableGPIOPullDown_4
+   \       0x1C   0xE030             B        ??HAL_PWREx_EnableGPIOPullDown_5
+    306            {
+    307              case PWR_GPIO_A:
+    308                 SET_BIT(PWR->PDCRA, (GPIONumber & ~PWR_GPIO_BIT_13));
+   \                     ??HAL_PWREx_EnableGPIOPullDown_0: (+1)
+   \       0x1E   0x....             LDR      R3,??DataTable12_2  ;; 0x40007024
+   \       0x20   0x681C             LDR      R4,[R3, #+0]
+   \       0x22   0x....             LDR      R5,??DataTable12_3  ;; 0xffffdfff
+   \       0x24   0x400D             ANDS     R5,R5,R1
+   \       0x26   0x4325             ORRS     R5,R5,R4
+   \       0x28   0x601D             STR      R5,[R3, #+0]
+    309                 CLEAR_BIT(PWR->PUCRA, (GPIONumber & ~PWR_GPIO_BIT_14));
+   \       0x2A   0x....             LDR      R3,??DataTable12  ;; 0x40007020
+   \       0x2C   0x681C             LDR      R4,[R3, #+0]
+   \       0x2E   0x....             LDR      R5,??DataTable12_1  ;; 0xffffbfff
+   \       0x30   0x400D             ANDS     R5,R5,R1
+   \       0x32   0x43AC             BICS     R4,R4,R5
+   \       0x34   0x601C             STR      R4,[R3, #+0]
+    310                 break;
+   \       0x36   0xE025             B        ??HAL_PWREx_EnableGPIOPullDown_6
+    311          
+    312              case PWR_GPIO_B:
+    313                 SET_BIT(PWR->PDCRB, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullDown_1: (+1)
+   \       0x38   0x....             LDR      R3,??DataTable13  ;; 0x4000702c
+   \       0x3A   0x681C             LDR      R4,[R3, #+0]
+   \       0x3C   0x430C             ORRS     R4,R4,R1
+   \       0x3E   0x601C             STR      R4,[R3, #+0]
+    314                 CLEAR_BIT(PWR->PUCRB, GPIONumber);
+   \       0x40   0x....             LDR      R3,??DataTable12_4  ;; 0x40007028
+   \       0x42   0x681C             LDR      R4,[R3, #+0]
+   \       0x44   0x438C             BICS     R4,R4,R1
+   \       0x46   0x601C             STR      R4,[R3, #+0]
+    315                 break;
+   \       0x48   0xE01C             B        ??HAL_PWREx_EnableGPIOPullDown_6
+    316          
+    317              case PWR_GPIO_C:
+    318                 SET_BIT(PWR->PDCRC, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullDown_2: (+1)
+   \       0x4A   0x....             LDR      R3,??DataTable14_4  ;; 0x40007034
+   \       0x4C   0x681C             LDR      R4,[R3, #+0]
+   \       0x4E   0x430C             ORRS     R4,R4,R1
+   \       0x50   0x601C             STR      R4,[R3, #+0]
+    319                 CLEAR_BIT(PWR->PUCRC, GPIONumber);
+   \       0x52   0x....             LDR      R3,??DataTable14_3  ;; 0x40007030
+   \       0x54   0x681C             LDR      R4,[R3, #+0]
+   \       0x56   0x438C             BICS     R4,R4,R1
+   \       0x58   0x601C             STR      R4,[R3, #+0]
+    320                 break;
+   \       0x5A   0xE013             B        ??HAL_PWREx_EnableGPIOPullDown_6
+    321          
+    322              case PWR_GPIO_D:
+    323                 SET_BIT(PWR->PDCRD, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullDown_3: (+1)
+   \       0x5C   0x....             LDR      R3,??DataTable14_6  ;; 0x4000703c
+   \       0x5E   0x681C             LDR      R4,[R3, #+0]
+   \       0x60   0x430C             ORRS     R4,R4,R1
+   \       0x62   0x601C             STR      R4,[R3, #+0]
+    324                 CLEAR_BIT(PWR->PUCRD, GPIONumber);
+   \       0x64   0x....             LDR      R3,??DataTable14_5  ;; 0x40007038
+   \       0x66   0x681C             LDR      R4,[R3, #+0]
+   \       0x68   0x438C             BICS     R4,R4,R1
+   \       0x6A   0x601C             STR      R4,[R3, #+0]
+    325                 break;
+   \       0x6C   0xE00A             B        ??HAL_PWREx_EnableGPIOPullDown_6
+    326          
+    327              case PWR_GPIO_F:
+    328                 SET_BIT(PWR->PDCRF, GPIONumber);
+   \                     ??HAL_PWREx_EnableGPIOPullDown_4: (+1)
+   \       0x6E   0x....             LDR      R3,??DataTable15  ;; 0x4000704c
+   \       0x70   0x681C             LDR      R4,[R3, #+0]
+   \       0x72   0x430C             ORRS     R4,R4,R1
+   \       0x74   0x601C             STR      R4,[R3, #+0]
+    329                 CLEAR_BIT(PWR->PUCRF, GPIONumber);
+   \       0x76   0x....             LDR      R3,??DataTable14_7  ;; 0x40007048
+   \       0x78   0x681C             LDR      R4,[R3, #+0]
+   \       0x7A   0x438C             BICS     R4,R4,R1
+   \       0x7C   0x601C             STR      R4,[R3, #+0]
+    330                 break;
+   \       0x7E   0xE001             B        ??HAL_PWREx_EnableGPIOPullDown_6
+    331          
+    332              default:
+    333                status = HAL_ERROR;
+   \                     ??HAL_PWREx_EnableGPIOPullDown_5: (+1)
+   \       0x80   0x2301             MOVS     R3,#+1
+   \       0x82   0x0018             MOVS     R0,R3
+    334                break;
+    335            }
+    336          
+    337            return status;
+   \                     ??HAL_PWREx_EnableGPIOPullDown_6: (+1)
+   \       0x84   0xB2C0             UXTB     R0,R0
+   \       0x86   0xBD30             POP      {R4,R5,PC}       ;; return
+    338          }
+    339          
+    340          
+    341          /**
+    342            * @brief  Disable GPIO pull-down state in Standby and Shutdown modes.
+    343            * @note   Reset the relevant PDy bit of PWR_PDCRx register used to configure the I/O
+    344            *         in pull-down state in Standby and Shutdown modes.
+    345            * @param  GPIO Specifies the IO port. This parameter can be PWR_GPIO_A..PWR_GPIO_F
+    346            *         to select the GPIO peripheral.
+    347            * @param  GPIONumber Specify the I/O pins numbers.
+    348            *         This parameter can be one of the following values:
+    349            *         PWR_GPIO_BIT_0, ..., PWR_GPIO_BIT_15 (except for ports where less
+    350            *         I/O pins are available) or the logical OR of several of them to reset
+    351            *         several bits for a given port in a single API call.
+    352            * @retval HAL Status
+    353            */
+
+   \                                 In section .text, align 2, keep-with-next
+    354          HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber)
+    355          {
+   \                     HAL_PWREx_DisableGPIOPullDown: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+    356            HAL_StatusTypeDef status = HAL_OK;
+   \        0x4   0x2000             MOVS     R0,#+0
+    357          
+    358            assert_param(IS_PWR_GPIO(GPIO));
+    359            assert_param(IS_PWR_GPIO_BIT_NUMBER(GPIONumber));
+    360          
+    361            switch (GPIO)
+   \        0x6   0x0013             MOVS     R3,R2
+   \        0x8   0x2B00             CMP      R3,#+0
+   \        0xA   0xD008             BEQ      ??HAL_PWREx_DisableGPIOPullDown_0
+   \        0xC   0x2B01             CMP      R3,#+1
+   \        0xE   0xD00D             BEQ      ??HAL_PWREx_DisableGPIOPullDown_1
+   \       0x10   0x2B02             CMP      R3,#+2
+   \       0x12   0xD010             BEQ      ??HAL_PWREx_DisableGPIOPullDown_2
+   \       0x14   0x2B03             CMP      R3,#+3
+   \       0x16   0xD013             BEQ      ??HAL_PWREx_DisableGPIOPullDown_3
+   \       0x18   0x2B05             CMP      R3,#+5
+   \       0x1A   0xD016             BEQ      ??HAL_PWREx_DisableGPIOPullDown_4
+   \       0x1C   0xE01A             B        ??HAL_PWREx_DisableGPIOPullDown_5
+    362            {
+    363              case PWR_GPIO_A:
+    364                CLEAR_BIT(PWR->PDCRA, (GPIONumber & ~PWR_GPIO_BIT_13));
+   \                     ??HAL_PWREx_DisableGPIOPullDown_0: (+1)
+   \       0x1E   0x....             LDR      R3,??DataTable12_2  ;; 0x40007024
+   \       0x20   0x681C             LDR      R4,[R3, #+0]
+   \       0x22   0x....             LDR      R5,??DataTable12_3  ;; 0xffffdfff
+   \       0x24   0x400D             ANDS     R5,R5,R1
+   \       0x26   0x43AC             BICS     R4,R4,R5
+   \       0x28   0x601C             STR      R4,[R3, #+0]
+    365                break;
+   \       0x2A   0xE015             B        ??HAL_PWREx_DisableGPIOPullDown_6
+    366          
+    367              case PWR_GPIO_B:
+    368                CLEAR_BIT(PWR->PDCRB, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullDown_1: (+1)
+   \       0x2C   0x....             LDR      R3,??DataTable13  ;; 0x4000702c
+   \       0x2E   0x681C             LDR      R4,[R3, #+0]
+   \       0x30   0x438C             BICS     R4,R4,R1
+   \       0x32   0x601C             STR      R4,[R3, #+0]
+    369                break;
+   \       0x34   0xE010             B        ??HAL_PWREx_DisableGPIOPullDown_6
+    370          
+    371              case PWR_GPIO_C:
+    372                CLEAR_BIT(PWR->PDCRC, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullDown_2: (+1)
+   \       0x36   0x....             LDR      R3,??DataTable14_4  ;; 0x40007034
+   \       0x38   0x681C             LDR      R4,[R3, #+0]
+   \       0x3A   0x438C             BICS     R4,R4,R1
+   \       0x3C   0x601C             STR      R4,[R3, #+0]
+    373                break;
+   \       0x3E   0xE00B             B        ??HAL_PWREx_DisableGPIOPullDown_6
+    374          
+    375              case PWR_GPIO_D:
+    376                CLEAR_BIT(PWR->PDCRD, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullDown_3: (+1)
+   \       0x40   0x....             LDR      R3,??DataTable14_6  ;; 0x4000703c
+   \       0x42   0x681C             LDR      R4,[R3, #+0]
+   \       0x44   0x438C             BICS     R4,R4,R1
+   \       0x46   0x601C             STR      R4,[R3, #+0]
+    377                break;
+   \       0x48   0xE006             B        ??HAL_PWREx_DisableGPIOPullDown_6
+    378          
+    379              case PWR_GPIO_F:
+    380                CLEAR_BIT(PWR->PDCRF, GPIONumber);
+   \                     ??HAL_PWREx_DisableGPIOPullDown_4: (+1)
+   \       0x4A   0x....             LDR      R3,??DataTable15  ;; 0x4000704c
+   \       0x4C   0x681C             LDR      R4,[R3, #+0]
+   \       0x4E   0x438C             BICS     R4,R4,R1
+   \       0x50   0x601C             STR      R4,[R3, #+0]
+    381                break;
+   \       0x52   0xE001             B        ??HAL_PWREx_DisableGPIOPullDown_6
+    382          
+    383              default:
+    384                status = HAL_ERROR;
+   \                     ??HAL_PWREx_DisableGPIOPullDown_5: (+1)
+   \       0x54   0x2301             MOVS     R3,#+1
+   \       0x56   0x0018             MOVS     R0,R3
+    385                break;
+    386            }
+    387          
+    388            return status;
+   \                     ??HAL_PWREx_DisableGPIOPullDown_6: (+1)
+   \       0x58   0xB2C0             UXTB     R0,R0
+   \       0x5A   0xBD30             POP      {R4,R5,PC}       ;; return
+    389          }
+    390          
+    391          
+    392          /**
+    393            * @brief  Enable pull-up and pull-down configuration.
+    394            * @note   When APC bit is set, the I/O pull-up and pull-down configurations defined in
+    395            *         PWR_PUCRx and PWR_PDCRx registers are applied in Standby and Shutdown modes.
+    396            * @note   Pull-up set by PUy bit of PWR_PUCRx register is not activated if the corresponding
+    397            *         PDy bit of PWR_PDCRx register is also set (pull-down configuration priority is higher).
+    398            *         HAL_PWREx_EnableGPIOPullUp() and HAL_PWREx_EnableGPIOPullDown() APIs ensure there
+    399            *         is no conflict when setting PUy or PDy bit.
+    400            * @retval None
+    401            */
+
+   \                                 In section .text, align 2, keep-with-next
+    402          void HAL_PWREx_EnablePullUpPullDownConfig(void)
+    403          {
+    404            SET_BIT(PWR->CR3, PWR_CR3_APC);
+   \                     HAL_PWREx_EnablePullUpPullDownConfig: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable11  ;; 0x40007008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x2280             MOVS     R2,#+128
+   \        0x6   0x00D2             LSLS     R2,R2,#+3        ;; #+1024
+   \        0x8   0x430A             ORRS     R2,R2,R1
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+    405          }
+   \        0xC   0x4770             BX       LR               ;; return
+    406          
+    407          /**
+    408            * @brief  Disable pull-up and pull-down configuration.
+    409            * @note   When APC bit is cleared, the I/O pull-up and pull-down configurations defined in
+    410            *         PWR_PUCRx and PWR_PDCRx registers are not applied in Standby and Shutdown modes.
+    411            * @retval None
+    412            */
+
+   \                                 In section .text, align 2, keep-with-next
+    413          void HAL_PWREx_DisablePullUpPullDownConfig(void)
+    414          {
+    415            CLEAR_BIT(PWR->CR3, PWR_CR3_APC);
+   \                     HAL_PWREx_DisablePullUpPullDownConfig: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable11  ;; 0x40007008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x....             LDR      R2,??DataTable15_1  ;; 0xfffffbff
+   \        0x6   0x400A             ANDS     R2,R2,R1
+   \        0x8   0x6002             STR      R2,[R0, #+0]
+    416          }
+   \        0xA   0x4770             BX       LR               ;; return
+    417          
+    418          #if defined(PWR_CR3_RRS)
+    419          /**
+    420            * @brief Enable SRAM content retention in Standby mode.
+    421            * @note  When RRS bit is set, SRAM is powered by the low-power regulator in
+    422            *         Standby mode and its content is kept.
+    423            * @retval None
+    424            */
+    425          void HAL_PWREx_EnableSRAMRetention(void)
+    426          {
+    427            SET_BIT(PWR->CR3, PWR_CR3_RRS);
+    428          }
+    429          
+    430          
+    431          /**
+    432            * @brief Disable SRAM content retention in Standby mode.
+    433            * @note  When RRS bit is reset, SRAM is powered off in Standby mode
+    434            *        and its content is lost.
+    435            * @retval None
+    436            */
+    437          void HAL_PWREx_DisableSRAMRetention(void)
+    438          {
+    439            CLEAR_BIT(PWR->CR3, PWR_CR3_RRS);
+    440          }
+    441          #endif
+    442          
+    443          /**
+    444            * @brief  Enable Flash Power Down.
+    445            * @note   This API allows to enable flash power down capabilities in low power
+    446            *         run, low power sleep and stop modes.
+    447            * @param  PowerMode this can be a combination of following values:
+    448            *           @arg @ref PWR_FLASHPD_LPRUN
+    449            *           @arg @ref PWR_FLASHPD_LPSLEEP
+    450            *           @arg @ref PWR_FLASHPD_STOP
+    451            * @retval None
+    452            */
+
+   \                                 In section .text, align 2, keep-with-next
+    453          void HAL_PWREx_EnableFlashPowerDown(uint32_t PowerMode)
+    454          {
+    455            assert_param(IS_PWR_FLASH_POWERDOWN(PowerMode));
+    456          
+    457            PWR->CR1 |= PowerMode;
+   \                     HAL_PWREx_EnableFlashPowerDown: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable15_2  ;; 0x40007000
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+    458          }
+   \        0x8   0x4770             BX       LR               ;; return
+    459          
+    460          
+    461          /**
+    462            * @brief  Disable Flash Power Down.
+    463            * @note   This API allows to disable flash power down capabilities in low power
+    464            *         run, low power sleep and stop modes.
+    465            * @param  PowerMode this can be a combination of following values:
+    466            *           @arg @ref PWR_FLASHPD_LPRUN
+    467            *           @arg @ref PWR_FLASHPD_LPSLEEP
+    468            *           @arg @ref PWR_FLASHPD_STOP
+    469            * @retval None
+    470            */
+
+   \                                 In section .text, align 2, keep-with-next
+    471          void HAL_PWREx_DisableFlashPowerDown(uint32_t PowerMode)
+    472          {
+    473            assert_param(IS_PWR_FLASH_POWERDOWN(PowerMode));
+    474          
+    475            PWR->CR1 &= ~PowerMode;
+   \                     HAL_PWREx_DisableFlashPowerDown: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable15_2  ;; 0x40007000
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+    476          }
+   \        0x8   0x4770             BX       LR               ;; return
+    477          
+    478          
+    479          /**
+    480            * @brief   Return Voltage Scaling Range.
+    481            * @retval  VOS bit field : PWR_REGULATOR_VOLTAGE_RANGE1 or PWR_REGULATOR_VOLTAGE_RANGE2
+    482            */
+
+   \                                 In section .text, align 2, keep-with-next
+    483          uint32_t HAL_PWREx_GetVoltageRange(void)
+    484          {
+    485            return (PWR->CR1 & PWR_CR1_VOS);
+   \                     HAL_PWREx_GetVoltageRange: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable15_2  ;; 0x40007000
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x20C0             MOVS     R0,#+192
+   \        0x6   0x00C0             LSLS     R0,R0,#+3        ;; #+1536
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+    486          }
+    487          
+    488          
+    489          /**
+    490            * @brief Configure the main regulator output voltage.
+    491            * @param  VoltageScaling specifies the regulator output voltage to achieve
+    492            *         a tradeoff between performance and power consumption.
+    493            *         This parameter can be one of the following values:
+    494            *          @arg @ref PWR_REGULATOR_VOLTAGE_SCALE1 Regulator voltage output range 1 mode,
+    495            *                                                typical output voltage at 1.2 V,
+    496            *                                                system frequency up to 64 MHz.
+    497            *          @arg @ref PWR_REGULATOR_VOLTAGE_SCALE2 Regulator voltage output range 2 mode,
+    498            *                                                typical output voltage at 1.0 V,
+    499            *                                                system frequency up to 16 MHz.
+    500            * @note  When moving from Range 1 to Range 2, the system frequency must be decreased to
+    501            *        a value below 16 MHz before calling HAL_PWREx_ControlVoltageScaling() API.
+    502            *        When moving from Range 2 to Range 1, the system frequency can be increased to
+    503            *        a value up to 64 MHz after calling HAL_PWREx_ControlVoltageScaling() API.
+    504            * @note  When moving from Range 2 to Range 1, the API waits for VOSF flag to be
+    505            *        cleared before returning the status. If the flag is not cleared within
+    506            *        6 microseconds, HAL_TIMEOUT status is reported.
+    507            * @retval HAL Status
+    508            */
+
+   \                                 In section .text, align 2, keep-with-next
+    509          HAL_StatusTypeDef HAL_PWREx_ControlVoltageScaling(uint32_t VoltageScaling)
+    510          {
+   \                     HAL_PWREx_ControlVoltageScaling: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    511            uint32_t wait_loop_index;
+    512          
+    513            assert_param(IS_PWR_VOLTAGE_SCALING_RANGE(VoltageScaling));
+    514          
+    515            /* Modify voltage scaling range */
+    516            MODIFY_REG(PWR->CR1, PWR_CR1_VOS, VoltageScaling);
+   \        0x4   0x....             LDR      R0,??DataTable15_2  ;; 0x40007000
+   \        0x6   0x6801             LDR      R1,[R0, #+0]
+   \        0x8   0x....             LDR      R2,??DataTable15_3  ;; 0xfffff9ff
+   \        0xA   0x400A             ANDS     R2,R2,R1
+   \        0xC   0x4322             ORRS     R2,R2,R4
+   \        0xE   0x6002             STR      R2,[R0, #+0]
+    517          
+    518            /* In case of Range 1 selected, we need to ensure that main regulator reaches new value */
+    519            if(VoltageScaling == PWR_REGULATOR_VOLTAGE_SCALE1)
+   \       0x10   0x2080             MOVS     R0,#+128
+   \       0x12   0x0080             LSLS     R0,R0,#+2        ;; #+512
+   \       0x14   0x4284             CMP      R4,R0
+   \       0x16   0xD112             BNE      ??HAL_PWREx_ControlVoltageScaling_0
+    520            {
+    521              /* Set timeout value */
+    522              wait_loop_index = ((PWR_VOSF_SETTING_DELAY_6_US * SystemCoreClock ) / 1000000U) + 1U;
+   \       0x18   0x....             LDR      R0,??DataTable15_4
+   \       0x1A   0x6800             LDR      R0,[R0, #+0]
+   \       0x1C   0x2106             MOVS     R1,#+6
+   \       0x1E   0x4348             MULS     R0,R1,R0
+   \       0x20   0x....             LDR      R1,??DataTable15_5  ;; 0xf4240
+   \       0x22   0x....'....        BL       __aeabi_uidiv
+   \       0x26   0x1C40             ADDS     R0,R0,#+1
+   \       0x28   0x0005             MOVS     R5,R0
+    523          
+    524              /* Wait until VOSF is reset */
+    525              while(HAL_IS_BIT_SET(PWR->SR2, PWR_SR2_VOSF))
+   \                     ??HAL_PWREx_ControlVoltageScaling_1: (+1)
+   \       0x2A   0x....             LDR      R0,??DataTable15_6  ;; 0x40007014
+   \       0x2C   0x6800             LDR      R0,[R0, #+0]
+   \       0x2E   0x0540             LSLS     R0,R0,#+21
+   \       0x30   0xD505             BPL      ??HAL_PWREx_ControlVoltageScaling_0
+    526              {
+    527                if(wait_loop_index != 0U)
+   \       0x32   0x2D00             CMP      R5,#+0
+   \       0x34   0xD001             BEQ      ??HAL_PWREx_ControlVoltageScaling_2
+    528                {
+    529                  wait_loop_index--;
+   \       0x36   0x1E6D             SUBS     R5,R5,#+1
+   \       0x38   0xE7F7             B        ??HAL_PWREx_ControlVoltageScaling_1
+    530                }
+    531                else
+    532                {
+    533                  return HAL_TIMEOUT;
+   \                     ??HAL_PWREx_ControlVoltageScaling_2: (+1)
+   \       0x3A   0x2003             MOVS     R0,#+3
+   \       0x3C   0xE000             B        ??HAL_PWREx_ControlVoltageScaling_3
+    534                }
+    535              }
+    536            }
+    537          
+    538            return HAL_OK;
+   \                     ??HAL_PWREx_ControlVoltageScaling_0: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??HAL_PWREx_ControlVoltageScaling_3: (+1)
+   \       0x40   0xBD30             POP      {R4,R5,PC}       ;; return
+    539          }
+    540          
+    541          
+    542          
+    543          /**
+    544            * @brief Enter Low-power Run mode
+    545            * @note  System clock frequency has to be decreased below 2 MHz before entering
+    546            *        low power run mode
+    547            * @note  In Low-power Run mode, all I/O pins keep the same state as in Run mode.
+    548            * @retval None
+    549            */
+
+   \                                 In section .text, align 2, keep-with-next
+    550          void HAL_PWREx_EnableLowPowerRunMode(void)
+    551          {
+    552            /* Set Regulator parameter */
+    553            SET_BIT(PWR->CR1, PWR_CR1_LPR);
+   \                     HAL_PWREx_EnableLowPowerRunMode: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable15_2  ;; 0x40007000
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x2280             MOVS     R2,#+128
+   \        0x6   0x01D2             LSLS     R2,R2,#+7        ;; #+16384
+   \        0x8   0x430A             ORRS     R2,R2,R1
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+    554          }
+   \        0xC   0x4770             BX       LR               ;; return
+    555          
+    556          
+    557          /**
+    558            * @brief Exit Low-power Run mode.
+    559            * @note  Before HAL_PWREx_DisableLowPowerRunMode() completion, the function checks that
+    560            *        REGLPF has been properly reset (otherwise, HAL_PWREx_DisableLowPowerRunMode
+    561            *        returns HAL_TIMEOUT status). The system clock frequency can then be
+    562            *        increased above 2 MHz.
+    563            * @retval HAL Status
+    564            */
+
+   \                                 In section .text, align 2, keep-with-next
+    565          HAL_StatusTypeDef HAL_PWREx_DisableLowPowerRunMode(void)
+    566          {
+   \                     HAL_PWREx_DisableLowPowerRunMode: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    567            uint32_t wait_loop_index = ((PWR_REGLPF_SETTING_DELAY_6_US * SystemCoreClock ) / 1000000U) + 1U;
+   \        0x2   0x....             LDR      R0,??DataTable15_4
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0x2106             MOVS     R1,#+6
+   \        0x8   0x4348             MULS     R0,R1,R0
+   \        0xA   0x....             LDR      R1,??DataTable15_5  ;; 0xf4240
+   \        0xC   0x....'....        BL       __aeabi_uidiv
+   \       0x10   0x0001             MOVS     R1,R0
+   \       0x12   0x1C49             ADDS     R1,R1,#+1
+    568          
+    569            /* Clear LPR bit */
+    570            CLEAR_BIT(PWR->CR1, PWR_CR1_LPR);
+   \       0x14   0x....             LDR      R0,??DataTable15_2  ;; 0x40007000
+   \       0x16   0x6802             LDR      R2,[R0, #+0]
+   \       0x18   0x....             LDR      R3,??DataTable15_7  ;; 0xffffbfff
+   \       0x1A   0x4013             ANDS     R3,R3,R2
+   \       0x1C   0x6003             STR      R3,[R0, #+0]
+    571          
+    572            /* Wait until REGLPF is reset */
+    573            while(HAL_IS_BIT_SET(PWR->SR2, PWR_SR2_REGLPF))
+   \                     ??HAL_PWREx_DisableLowPowerRunMode_0: (+1)
+   \       0x1E   0x....             LDR      R0,??DataTable15_6  ;; 0x40007014
+   \       0x20   0x6800             LDR      R0,[R0, #+0]
+   \       0x22   0x0580             LSLS     R0,R0,#+22
+   \       0x24   0xD505             BPL      ??HAL_PWREx_DisableLowPowerRunMode_1
+    574            {
+    575              if(wait_loop_index != 0U)
+   \       0x26   0x2900             CMP      R1,#+0
+   \       0x28   0xD001             BEQ      ??HAL_PWREx_DisableLowPowerRunMode_2
+    576              {
+    577                wait_loop_index--;
+   \       0x2A   0x1E49             SUBS     R1,R1,#+1
+   \       0x2C   0xE7F7             B        ??HAL_PWREx_DisableLowPowerRunMode_0
+    578              }
+    579              else
+    580              {
+    581                return HAL_TIMEOUT;
+   \                     ??HAL_PWREx_DisableLowPowerRunMode_2: (+1)
+   \       0x2E   0x2003             MOVS     R0,#+3
+   \       0x30   0xE000             B        ??HAL_PWREx_DisableLowPowerRunMode_3
+    582              }
+    583            }
+    584          
+    585            return HAL_OK;
+   \                     ??HAL_PWREx_DisableLowPowerRunMode_1: (+1)
+   \       0x32   0x2000             MOVS     R0,#+0
+   \                     ??HAL_PWREx_DisableLowPowerRunMode_3: (+1)
+   \       0x34   0xBD00             POP      {PC}             ;; return
+    586          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x4000'700C        DC32     0x4000700c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0x4000'7008        DC32     0x40007008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \        0x0   0x4000'7020        DC32     0x40007020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \        0x0   0xFFFF'BFFF        DC32     0xffffbfff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_2:
+   \        0x0   0x4000'7024        DC32     0x40007024
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_3:
+   \        0x0   0xFFFF'DFFF        DC32     0xffffdfff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_4:
+   \        0x0   0x4000'7028        DC32     0x40007028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0x4000'702C        DC32     0x4000702c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0xFFFF'FDFF        DC32     0xfffffdff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0xFFFF'FEFF        DC32     0xfffffeff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \        0x0   0xFFFF'7FFF        DC32     0xffff7fff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \        0x0   0x4000'7030        DC32     0x40007030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \        0x0   0x4000'7034        DC32     0x40007034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \        0x0   0x4000'7038        DC32     0x40007038
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \        0x0   0x4000'703C        DC32     0x4000703c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \        0x0   0x4000'7048        DC32     0x40007048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15:
+   \        0x0   0x4000'704C        DC32     0x4000704c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_1:
+   \        0x0   0xFFFF'FBFF        DC32     0xfffffbff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_2:
+   \        0x0   0x4000'7000        DC32     0x40007000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_3:
+   \        0x0   0xFFFF'F9FF        DC32     0xfffff9ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_4:
+   \        0x0   0x....'....        DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_5:
+   \        0x0   0x000F'4240        DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_6:
+   \        0x0   0x4000'7014        DC32     0x40007014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_7:
+   \        0x0   0xFFFF'BFFF        DC32     0xffffbfff
+    587          
+    588          
+    589          #if defined(PWR_SHDW_SUPPORT)
+    590          /**
+    591            * @brief  Enter Shutdown mode.
+    592            * @note   In Shutdown mode, the PLL, the HSI, the LSI and the HSE oscillators are switched
+    593            *         off. The voltage regulator is disabled and Vcore domain is powered off.
+    594            *         SRAM and registers contents are lost except for registers in the Backup domain.
+    595            *         The BOR is not available.
+    596            * @note   The I/Os can be configured either with a pull-up or pull-down or can
+    597            *         be kept in analog state.
+    598            *         HAL_PWREx_EnableGPIOPullUp() and HAL_PWREx_EnableGPIOPullDown()
+    599            *         respectively enable Pull Up and PullDown state.
+    600            *         HAL_PWREx_DisableGPIOPullUp() & HAL_PWREx_DisableGPIOPullDown()
+    601            *         disable the same. These states are effective in Standby mode only if
+    602            *         APC bit is set through HAL_PWREx_EnablePullUpPullDownConfig() API.
+    603            * @retval None
+    604          
+    605            * @retval None
+    606            */
+    607          void HAL_PWREx_EnterSHUTDOWNMode(void)
+    608          {
+    609            /* Set Shutdown mode */
+    610            MODIFY_REG(PWR->CR1, PWR_CR1_LPMS, PWR_LOWPOWERMODE_SHUTDOWN);
+    611          
+    612            /* Set SLEEPDEEP bit of Cortex System Control Register */
+    613            SET_BIT(SCB->SCR, ((uint32_t)SCB_SCR_SLEEPDEEP_Msk));
+    614          
+    615            /* This option is used to ensure that store operations are completed */
+    616          #if defined ( __CC_ARM)
+    617            __force_stores();
+    618          #endif
+    619          
+    620            /* Request Wait For Interrupt */
+    621            __WFI();
+    622          }
+    623          #endif
+    624          
+    625          /**
+    626            * @}
+    627            */
+    628          
+    629          /**
+    630            * @}
+    631            */
+    632          
+    633          #endif /* HAL_PWR_MODULE_ENABLED */
+    634          /**
+    635            * @}
+    636            */
+    637          
+    638          /**
+    639            * @}
+    640            */
+    641          
+    642          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      12   HAL_PWREx_ControlVoltageScaling
+        12 __aeabi_uidiv
+       0   HAL_PWREx_DisableBatteryCharging
+       0   HAL_PWREx_DisableFlashPowerDown
+      12   HAL_PWREx_DisableGPIOPullDown
+      12   HAL_PWREx_DisableGPIOPullUp
+       0   HAL_PWREx_DisableInternalWakeUpLine
+       4   HAL_PWREx_DisableLowPowerRunMode
+         4 __aeabi_uidiv
+       0   HAL_PWREx_DisablePullUpPullDownConfig
+       4   HAL_PWREx_EnableBatteryCharging
+       0   HAL_PWREx_EnableFlashPowerDown
+      12   HAL_PWREx_EnableGPIOPullDown
+      12   HAL_PWREx_EnableGPIOPullUp
+       0   HAL_PWREx_EnableInternalWakeUpLine
+       0   HAL_PWREx_EnableLowPowerRunMode
+       0   HAL_PWREx_EnablePullUpPullDownConfig
+       0   HAL_PWREx_GetVoltageRange
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable12
+       4  ??DataTable12_1
+       4  ??DataTable12_2
+       4  ??DataTable12_3
+       4  ??DataTable12_4
+       4  ??DataTable13
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_2
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+       4  ??DataTable15_5
+       4  ??DataTable15_6
+       4  ??DataTable15_7
+       4  ??DataTable7
+      66  HAL_PWREx_ControlVoltageScaling
+      12  HAL_PWREx_DisableBatteryCharging
+      10  HAL_PWREx_DisableFlashPowerDown
+      92  HAL_PWREx_DisableGPIOPullDown
+      92  HAL_PWREx_DisableGPIOPullUp
+      12  HAL_PWREx_DisableInternalWakeUpLine
+      54  HAL_PWREx_DisableLowPowerRunMode
+      12  HAL_PWREx_DisablePullUpPullDownConfig
+      26  HAL_PWREx_EnableBatteryCharging
+      10  HAL_PWREx_EnableFlashPowerDown
+     136  HAL_PWREx_EnableGPIOPullDown
+     136  HAL_PWREx_EnableGPIOPullUp
+      14  HAL_PWREx_EnableInternalWakeUpLine
+      14  HAL_PWREx_EnableLowPowerRunMode
+      14  HAL_PWREx_EnablePullUpPullDownConfig
+      12  HAL_PWREx_GetVoltageRange
+
+ 
+ 808 bytes in section .text
+ 
+ 808 bytes of CODE memory
+
+Errors: none
+Warnings: none

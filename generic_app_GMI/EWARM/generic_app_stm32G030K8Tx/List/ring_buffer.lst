@@ -1,0 +1,1386 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:50
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Memory\ring_buffer.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWEEB6.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Memory\ring_buffer.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\ring_buffer.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\ring_buffer.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Memory\ring_buffer.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    ring_buffer.c
+      4            * @author  Pamela Lee
+      5            * @brief   This file implements the interface for the ring buffer data structure.
+      6            * @details This file contains function definitions implementing a ring buffer (first in first out queue) data structure.
+      7            *          The ring buffer is a fixed size structure that can be initialized with size ranging from 2 to (2^32)-1 bytes.
+      8            *          New data is entered at the location where the ring buffer head pointer indicates.
+      9            *          Stored data is accessed at the location that the ring buffer tail pointer indicates.
+     10            ********************************************************************************************************************************
+     11            */
+     12          
+     13          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     14          #include "ring_buffer.h"
+     15          
+     16          /* Private Function Prototypes -------------------------------------------------------------------------------------------------*/
+     17          static uint8_t RingBuf_GetValueOfHead(Ring_Buf_Handle this_ring_buf_u32);
+     18          static uint8_t RingBuf_SetValueOfHead(Ring_Buf_Handle this_ring_buf_u32, uint8_t head_s32);
+     19          static uint8_t RingBuf_GetValueOfTail(Ring_Buf_Handle this_ring_buf_u32);
+     20          static uint8_t RingBuf_SetValueOfTail(Ring_Buf_Handle this_ring_buf_u32, uint8_t tail_s32);
+     21          static uint8_t RingBuf_IncHead(Ring_Buf_Handle this_ring_buf_u32);
+     22          static uint8_t RingBuf_IncTail(Ring_Buf_Handle this_ring_buf_u32);
+     23          static uint8_t *RingBuf_GetPhysicalAddressOfHeadPlusOffset(Ring_Buf_Handle this_ring_buf_u32, uint32_t offset_u32);
+     24          static uint8_t RingBuf_IsEmpty(Ring_Buf_Handle this_ring_buf_u32);
+     25          static uint8_t RingBuf_IsFull(Ring_Buf_Handle this_ring_buf_u32);
+     26          static int32_t RingBuf_CalculateAvailableSpace(Ring_Buf_Handle this_ring_buf_u32);
+     27          static uint8_t *RingBuf_SetPointerToRingBuf(Ring_Buf_Handle this_ring_buf_u32, uint8_t *p_ringBuf_u8);
+     28          static uint8_t RingBuf_SetUsedNumOfElements(Ring_Buf_Handle this_ring_buf_u32, uint32_t usedNumOfElements_s32);
+     29          static uint8_t RingBuf_GetTotalNumOfElements(Ring_Buf_Handle this_ring_buf_u32);
+     30          static uint8_t RingBuf_SetTotalNumOfElements(Ring_Buf_Handle this_ring_buf_u32, uint32_t totalNumOfElements_u32);
+     31          static uint8_t RingBuf_GetIsOverwrittingAllowed(Ring_Buf_Handle this_ring_buf_u32);
+     32          static uint8_t RingBuf_SetIsOverwrittingAllowed(Ring_Buf_Handle this_ring_buf_u32, uint8_t is_OverwrittingAllowed_u8);
+     33          static uint8_t RingBuf_SetAccessMode(Ring_Buf_Handle this_ring_buf_u32, uint8_t access_mode_u8);
+     34          static uint8_t *RingBuf_SetUserList(Ring_Buf_Handle this_ring_buf_u32, uint8_t *p_user_list_u8);
+     35          static uint8_t RingBuf_SetUserListSize(Ring_Buf_Handle this_ring_buf_u32, uint8_t user_list_size_u8);
+     36          
+     37          /* Public Functions ------------------------------------------------------------------------------------------------------------*/
+
+   \                                 In section .text, align 2, keep-with-next
+     38          void RingBuf_Initialize(Ring_Buf_Handle this_ring_buf_u32, uint8_t owner_u8, uint8_t ring_buf_size_u8,
+     39                                     uint8_t access_mode_u8, uint8_t *p_user_list_u8, uint8_t user_list_size_u8) {
+   \                     RingBuf_Initialize: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000F             MOVS     R7,R1
+   \        0x6   0x9E08             LDR      R6,[SP, #+32]
+   \        0x8   0x9D09             LDR      R5,[SP, #+36]
+     40              RingBuf_SetPointerToRingBuf(this_ring_buf_u32, (uint8_t *) malloc(ring_buf_size_u8));
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x7900             LDRB     R0,[R0, #+4]
+   \        0xE   0x....'....        BL       malloc
+   \       0x12   0x0001             MOVS     R1,R0
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x....'....        BL       RingBuf_SetPointerToRingBuf
+     41              RingBuf_SetValueOfHead(this_ring_buf_u32, 0);
+   \       0x1A   0x2100             MOVS     R1,#+0
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x....'....        BL       RingBuf_SetValueOfHead
+     42              RingBuf_SetValueOfTail(this_ring_buf_u32, 0);
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       RingBuf_SetValueOfTail
+     43              RingBuf_SetUsedNumOfElements(this_ring_buf_u32, 0);
+   \       0x2A   0x2100             MOVS     R1,#+0
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0x....'....        BL       RingBuf_SetUsedNumOfElements
+     44              RingBuf_SetTotalNumOfElements(this_ring_buf_u32, ring_buf_size_u8);
+   \       0x32   0x4668             MOV      R0,SP
+   \       0x34   0x7901             LDRB     R1,[R0, #+4]
+   \       0x36   0x0020             MOVS     R0,R4
+   \       0x38   0x....'....        BL       RingBuf_SetTotalNumOfElements
+     45              RingBuf_SetIsOverwrittingAllowed(this_ring_buf_u32, TRUE);
+   \       0x3C   0x2101             MOVS     R1,#+1
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x....'....        BL       RingBuf_SetIsOverwrittingAllowed
+     46              RingBuf_SetOwner(this_ring_buf_u32, owner_u8);
+   \       0x44   0x0039             MOVS     R1,R7
+   \       0x46   0xB2C9             UXTB     R1,R1
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0x....'....        BL       RingBuf_SetOwner
+     47              RingBuf_SetAccessMode(this_ring_buf_u32, access_mode_u8);
+   \       0x4E   0x4668             MOV      R0,SP
+   \       0x50   0x7A01             LDRB     R1,[R0, #+8]
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0x....'....        BL       RingBuf_SetAccessMode
+     48              RingBuf_SetUserList(this_ring_buf_u32, p_user_list_u8);
+   \       0x58   0x0031             MOVS     R1,R6
+   \       0x5A   0x0020             MOVS     R0,R4
+   \       0x5C   0x....'....        BL       RingBuf_SetUserList
+     49              RingBuf_SetUserListSize(this_ring_buf_u32, user_list_size_u8);
+   \       0x60   0x0029             MOVS     R1,R5
+   \       0x62   0xB2C9             UXTB     R1,R1
+   \       0x64   0x0020             MOVS     R0,R4
+   \       0x66   0x....'....        BL       RingBuf_SetUserListSize
+     50              RingBuf_SetProcessInstanceIndex(this_ring_buf_u32, NONE_AVAILABLE);
+   \       0x6A   0x21FF             MOVS     R1,#+255
+   \       0x6C   0x0020             MOVS     R0,R4
+   \       0x6E   0x....'....        BL       RingBuf_SetProcessInstanceIndex
+     51              RingBuf_SetSystemInstanceIndex(this_ring_buf_u32, NONE_AVAILABLE);
+   \       0x72   0x21FF             MOVS     R1,#+255
+   \       0x74   0x0020             MOVS     R0,R4
+   \       0x76   0x....'....        BL       RingBuf_SetSystemInstanceIndex
+     52          }
+   \       0x7A   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+     53          
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void RingBuf_ClearContents(Ring_Buf_Handle this_ring_buf_u32) {
+   \                     RingBuf_ClearContents: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     55              RingBuf_SetValueOfHead(this_ring_buf_u32, 0);
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       RingBuf_SetValueOfHead
+     56              RingBuf_SetValueOfTail(this_ring_buf_u32, 0);
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       RingBuf_SetValueOfTail
+     57              RingBuf_SetUsedNumOfElements(this_ring_buf_u32, 0);
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x....'....        BL       RingBuf_SetUsedNumOfElements
+     58          }
+   \       0x1C   0xBD10             POP      {R4,PC}          ;; return
+     59          
+
+   \                                 In section .text, align 2, keep-with-next
+     60          uint8_t RingBuf_WriteCharacter(Ring_Buf_Handle this_ring_buf_u32, uint8_t c[]) {
+   \                     RingBuf_WriteCharacter: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000E             MOVS     R6,R1
+     61              uint8_t *TailPtr = RingBuf_GetPointerToRingBuf(this_ring_buf_u32) + RingBuf_GetValueOfTail(this_ring_buf_u32);
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \        0xC   0x0005             MOVS     R5,R0
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x14   0x182D             ADDS     R5,R5,R0
+     62              if (RingBuf_IsFull(this_ring_buf_u32) && !RingBuf_GetIsOverwrittingAllowed(this_ring_buf_u32)) {
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x....'....        BL       RingBuf_IsFull
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD006             BEQ      ??RingBuf_WriteCharacter_0
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x....'....        BL       RingBuf_GetIsOverwrittingAllowed
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD101             BNE      ??RingBuf_WriteCharacter_0
+     63                  return FALSE;
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0xE00D             B        ??RingBuf_WriteCharacter_1
+     64              }
+     65              *TailPtr = c[0];
+   \                     ??RingBuf_WriteCharacter_0: (+1)
+   \       0x2E   0x7830             LDRB     R0,[R6, #+0]
+   \       0x30   0x7028             STRB     R0,[R5, #+0]
+     66              RingBuf_SetUsedNumOfElements(this_ring_buf_u32, RingBuf_GetUsedNumOfElements(this_ring_buf_u32) + 1);
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x38   0xB2C0             UXTB     R0,R0
+   \       0x3A   0x1C40             ADDS     R0,R0,#+1
+   \       0x3C   0x0001             MOVS     R1,R0
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x....'....        BL       RingBuf_SetUsedNumOfElements
+     67              return RingBuf_IncTail(this_ring_buf_u32);
+   \       0x44   0x0020             MOVS     R0,R4
+   \       0x46   0x....'....        BL       RingBuf_IncTail
+   \                     ??RingBuf_WriteCharacter_1: (+1)
+   \       0x4A   0xBD70             POP      {R4-R6,PC}       ;; return
+     68          }
+     69          
+
+   \                                 In section .text, align 2, keep-with-next
+     70          uint8_t RingBuf_WriteBlock(Ring_Buf_Handle this_ring_buf_u32, uint8_t c[], uint32_t *length) {
+   \                     RingBuf_WriteBlock: (+1)
+   \        0x0   0xB5F7             PUSH     {R0-R2,R4-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000F             MOVS     R7,R1
+     71              uint8_t *TailPtr;
+     72              for (uint32_t i = 0; i < *length; i++) {
+   \        0x6   0x2500             MOVS     R5,#+0
+   \                     ??RingBuf_WriteBlock_0: (+1)
+   \        0x8   0x9802             LDR      R0,[SP, #+8]
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0x4285             CMP      R5,R0
+   \        0xE   0xD225             BCS      ??RingBuf_WriteBlock_1
+     73                  if (RingBuf_IsFull(this_ring_buf_u32) && !RingBuf_GetIsOverwrittingAllowed(this_ring_buf_u32)) {
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x....'....        BL       RingBuf_IsFull
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD006             BEQ      ??RingBuf_WriteBlock_2
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0x....'....        BL       RingBuf_GetIsOverwrittingAllowed
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD101             BNE      ??RingBuf_WriteBlock_2
+     74                      return FALSE;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xE01A             B        ??RingBuf_WriteBlock_3
+     75                  }
+     76                  TailPtr = RingBuf_GetPointerToRingBuf(this_ring_buf_u32) + RingBuf_GetValueOfTail(this_ring_buf_u32);
+   \                     ??RingBuf_WriteBlock_2: (+1)
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \       0x2E   0x0006             MOVS     R6,R0
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x36   0x1830             ADDS     R0,R6,R0
+   \       0x38   0x9000             STR      R0,[SP, #+0]
+     77                  *TailPtr = c[i];
+   \       0x3A   0x5D78             LDRB     R0,[R7, R5]
+   \       0x3C   0x9900             LDR      R1,[SP, #+0]
+   \       0x3E   0x7008             STRB     R0,[R1, #+0]
+     78                  RingBuf_SetUsedNumOfElements(this_ring_buf_u32, RingBuf_GetUsedNumOfElements(this_ring_buf_u32) + 1);
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x46   0xB2C0             UXTB     R0,R0
+   \       0x48   0x1C40             ADDS     R0,R0,#+1
+   \       0x4A   0x0001             MOVS     R1,R0
+   \       0x4C   0x0020             MOVS     R0,R4
+   \       0x4E   0x....'....        BL       RingBuf_SetUsedNumOfElements
+     79                  RingBuf_IncTail(this_ring_buf_u32);
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0x....'....        BL       RingBuf_IncTail
+     80              }
+   \       0x58   0x1C6D             ADDS     R5,R5,#+1
+   \       0x5A   0xE7D5             B        ??RingBuf_WriteBlock_0
+     81              return TRUE;
+   \                     ??RingBuf_WriteBlock_1: (+1)
+   \       0x5C   0x2001             MOVS     R0,#+1
+   \                     ??RingBuf_WriteBlock_3: (+1)
+   \       0x5E   0xBDFE             POP      {R1-R7,PC}       ;; return
+     82          }
+     83          
+
+   \                                 In section .text, align 2, keep-with-next
+     84          uint8_t RingBuf_ReadBlock(Ring_Buf_Handle this_ring_buf_u32, uint8_t c[], uint32_t *length) {
+   \                     RingBuf_ReadBlock: (+1)
+   \        0x0   0xB5F4             PUSH     {R2,R4-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     85              uint32_t i = 0;
+   \        0x6   0x2500             MOVS     R5,#+0
+     86              for (; i < *length; i++) {
+   \                     ??RingBuf_ReadBlock_0: (+1)
+   \        0x8   0x9800             LDR      R0,[SP, #+0]
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0x4285             CMP      R5,R0
+   \        0xE   0xD221             BCS      ??RingBuf_ReadBlock_1
+     87                  if (!RingBuf_IsEmpty(this_ring_buf_u32)) {
+   \       0x10   0x0038             MOVS     R0,R7
+   \       0x12   0x....'....        BL       RingBuf_IsEmpty
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD118             BNE      ??RingBuf_ReadBlock_2
+     88                      *(c++) = *(RingBuf_GetPointerToRingBuf(this_ring_buf_u32) + RingBuf_GetValueOfHead(this_ring_buf_u32));
+   \       0x1A   0x0038             MOVS     R0,R7
+   \       0x1C   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \       0x20   0x0006             MOVS     R6,R0
+   \       0x22   0x0038             MOVS     R0,R7
+   \       0x24   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x28   0xB2C0             UXTB     R0,R0
+   \       0x2A   0x5C30             LDRB     R0,[R6, R0]
+   \       0x2C   0x7020             STRB     R0,[R4, #+0]
+   \       0x2E   0x1C64             ADDS     R4,R4,#+1
+     89                      RingBuf_SetUsedNumOfElements(this_ring_buf_u32,
+     90                                                         RingBuf_GetUsedNumOfElements(this_ring_buf_u32) - 1);
+   \       0x30   0x0038             MOVS     R0,R7
+   \       0x32   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x36   0xB2C0             UXTB     R0,R0
+   \       0x38   0x1E40             SUBS     R0,R0,#+1
+   \       0x3A   0x0001             MOVS     R1,R0
+   \       0x3C   0x0038             MOVS     R0,R7
+   \       0x3E   0x....'....        BL       RingBuf_SetUsedNumOfElements
+     91                      RingBuf_IncHead(this_ring_buf_u32);
+   \       0x42   0x0038             MOVS     R0,R7
+   \       0x44   0x....'....        BL       RingBuf_IncHead
+     92                  } else {
+   \       0x48   0x1C6D             ADDS     R5,R5,#+1
+   \       0x4A   0xE7DD             B        ??RingBuf_ReadBlock_0
+     93                      *length = i;
+   \                     ??RingBuf_ReadBlock_2: (+1)
+   \       0x4C   0x9800             LDR      R0,[SP, #+0]
+   \       0x4E   0x6005             STR      R5,[R0, #+0]
+     94                      return FALSE;
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0xE002             B        ??RingBuf_ReadBlock_3
+     95                  }
+     96              }
+     97              *length = i;
+   \                     ??RingBuf_ReadBlock_1: (+1)
+   \       0x54   0x9800             LDR      R0,[SP, #+0]
+   \       0x56   0x6005             STR      R5,[R0, #+0]
+     98              return TRUE;
+   \       0x58   0x2001             MOVS     R0,#+1
+   \                     ??RingBuf_ReadBlock_3: (+1)
+   \       0x5A   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     99          }
+    100          
+
+   \                                 In section .text, align 2, keep-with-next
+    101          uint8_t RingBuf_Observe(Ring_Buf_Handle this_ring_buf_u32, uint8_t c[], uint32_t offset_u32, uint32_t *length) {
+   \                     RingBuf_Observe: (+1)
+   \        0x0   0xB5F7             PUSH     {R0-R2,R4-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x001F             MOVS     R7,R3
+    102              uint8_t *ptr;
+    103              RingBuf_CalculateAvailableSpace(this_ring_buf_u32);
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0x....'....        BL       RingBuf_CalculateAvailableSpace
+    104              if (RingBuf_GetUsedNumOfElements(this_ring_buf_u32) <= offset_u32) {
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x14   0x9902             LDR      R1,[SP, #+8]
+   \       0x16   0x4281             CMP      R1,R0
+   \       0x18   0xD303             BCC      ??RingBuf_Observe_0
+    105                  *length = OFFSET_ERROR;
+   \       0x1A   0x....             LDR      R0,??DataTable2  ;; 0xffff
+   \       0x1C   0x6038             STR      R0,[R7, #+0]
+    106                  return FALSE;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0xE016             B        ??RingBuf_Observe_1
+    107              }
+    108              uint32_t i = 0;
+   \                     ??RingBuf_Observe_0: (+1)
+   \       0x22   0x2500             MOVS     R5,#+0
+    109              for (; i < *length; i++) {
+   \                     ??RingBuf_Observe_2: (+1)
+   \       0x24   0x6838             LDR      R0,[R7, #+0]
+   \       0x26   0x4285             CMP      R5,R0
+   \       0x28   0xD210             BCS      ??RingBuf_Observe_3
+    110                  if ((ptr = RingBuf_GetPhysicalAddressOfHeadPlusOffset(this_ring_buf_u32, offset_u32 + i)) != 0) {
+   \       0x2A   0x9802             LDR      R0,[SP, #+8]
+   \       0x2C   0x1941             ADDS     R1,R0,R5
+   \       0x2E   0x0030             MOVS     R0,R6
+   \       0x30   0x....'....        BL       RingBuf_GetPhysicalAddressOfHeadPlusOffset
+   \       0x34   0x9000             STR      R0,[SP, #+0]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD005             BEQ      ??RingBuf_Observe_4
+    111                      *(c++) = *ptr;
+   \       0x3A   0x9800             LDR      R0,[SP, #+0]
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0x7020             STRB     R0,[R4, #+0]
+   \       0x40   0x1C64             ADDS     R4,R4,#+1
+    112                  } else {
+   \       0x42   0x1C6D             ADDS     R5,R5,#+1
+   \       0x44   0xE7EE             B        ??RingBuf_Observe_2
+    113                      *length = i;
+   \                     ??RingBuf_Observe_4: (+1)
+   \       0x46   0x603D             STR      R5,[R7, #+0]
+    114                      return FALSE;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0xE001             B        ??RingBuf_Observe_1
+    115                  }
+    116              }
+    117              *length = i;
+   \                     ??RingBuf_Observe_3: (+1)
+   \       0x4C   0x603D             STR      R5,[R7, #+0]
+    118              return TRUE;
+   \       0x4E   0x2001             MOVS     R0,#+1
+   \                     ??RingBuf_Observe_1: (+1)
+   \       0x50   0xBDFE             POP      {R1-R7,PC}       ;; return
+    119          }
+    120          
+
+   \                                 In section .text, align 2, keep-with-next
+    121          uint32_t RingBuf_Search(Ring_Buf_Handle this_ring_buf_u32, uint8_t c, uint32_t offset_u32) {
+   \                     RingBuf_Search: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000E             MOVS     R6,R1
+   \        0x6   0x0017             MOVS     R7,R2
+    122              uint8_t *ptr;
+    123              RingBuf_CalculateAvailableSpace(this_ring_buf_u32);
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x....'....        BL       RingBuf_CalculateAvailableSpace
+    124              if (RingBuf_GetUsedNumOfElements(this_ring_buf_u32) <= offset_u32) {
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x14   0x4287             CMP      R7,R0
+   \       0x16   0xD301             BCC      ??RingBuf_Search_0
+    125                  return OFFSET_ERROR;
+   \       0x18   0x....             LDR      R0,??DataTable2  ;; 0xffff
+   \       0x1A   0xE01B             B        ??RingBuf_Search_1
+    126              }
+    127              uint8_t i = 0;
+   \                     ??RingBuf_Search_0: (+1)
+   \       0x1C   0x2500             MOVS     R5,#+0
+    128              for (; i < RingBuf_GetUsedNumOfElements(this_ring_buf_u32); i++) {
+   \                     ??RingBuf_Search_2: (+1)
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x24   0x0029             MOVS     R1,R5
+   \       0x26   0xB2C9             UXTB     R1,R1
+   \       0x28   0x4281             CMP      R1,R0
+   \       0x2A   0xD211             BCS      ??RingBuf_Search_3
+    129                  ptr = RingBuf_GetPhysicalAddressOfHeadPlusOffset(this_ring_buf_u32, offset_u32 + i);
+   \       0x2C   0x0028             MOVS     R0,R5
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0x1839             ADDS     R1,R7,R0
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x....'....        BL       RingBuf_GetPhysicalAddressOfHeadPlusOffset
+   \       0x38   0x9000             STR      R0,[SP, #+0]
+    130                  if (*ptr == c) {
+   \       0x3A   0x9800             LDR      R0,[SP, #+0]
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0x0031             MOVS     R1,R6
+   \       0x40   0xB2C9             UXTB     R1,R1
+   \       0x42   0x4288             CMP      R0,R1
+   \       0x44   0xD102             BNE      ??RingBuf_Search_4
+    131                      return i;
+   \       0x46   0xB2ED             UXTB     R5,R5
+   \       0x48   0x0028             MOVS     R0,R5
+   \       0x4A   0xE003             B        ??RingBuf_Search_1
+    132                  }
+    133              }
+   \                     ??RingBuf_Search_4: (+1)
+   \       0x4C   0x1C6D             ADDS     R5,R5,#+1
+   \       0x4E   0xE7E6             B        ??RingBuf_Search_2
+    134              return NOT_FOUND;
+   \                     ??RingBuf_Search_3: (+1)
+   \       0x50   0x20F0             MOVS     R0,#+240
+   \       0x52   0x0200             LSLS     R0,R0,#+8        ;; #+61440
+   \                     ??RingBuf_Search_1: (+1)
+   \       0x54   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    135          }
+    136          
+
+   \                                 In section .text, align 2, keep-with-next
+    137          uint8_t *RingBuf_GetPointerToRingBuf(Ring_Buf_Handle this_ring_buf_u32) {
+    138              return (*this_ring_buf_u32).p_ringBuf_u8;
+   \                     RingBuf_GetPointerToRingBuf: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR               ;; return
+    139          }
+    140          
+
+   \                                 In section .text, align 2, keep-with-next
+    141          uint8_t RingBuf_GetUsedNumOfElements(Ring_Buf_Handle this_ring_buf_u32) {
+    142              return (*this_ring_buf_u32).usedNumOfElements_s32;
+   \                     RingBuf_GetUsedNumOfElements: (+1)
+   \        0x0   0x68C0             LDR      R0,[R0, #+12]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+    143          }
+    144          
+
+   \                                 In section .text, align 2, keep-with-next
+    145          uint8_t RingBuf_GetOwner(Ring_Buf_Handle this_ring_buf_u32) {
+    146              return (*this_ring_buf_u32).owner_u8;
+   \                     RingBuf_GetOwner: (+1)
+   \        0x0   0x7D40             LDRB     R0,[R0, #+21]
+   \        0x2   0x4770             BX       LR               ;; return
+    147          }
+    148          
+
+   \                                 In section .text, align 2, keep-with-next
+    149          uint8_t RingBuf_SetOwner(Ring_Buf_Handle this_ring_buf_u32, uint8_t owner_u8) {
+   \                     RingBuf_SetOwner: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    150              (*this_ring_buf_u32).owner_u8 = owner_u8;
+   \        0x6   0x756C             STRB     R4,[R5, #+21]
+    151              return RingBuf_GetOwner(this_ring_buf_u32) == owner_u8;
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       RingBuf_GetOwner
+   \        0xE   0xB2E4             UXTB     R4,R4
+   \       0x10   0x42A0             CMP      R0,R4
+   \       0x12   0xD101             BNE      ??RingBuf_SetOwner_0
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0xE000             B        ??RingBuf_SetOwner_1
+   \                     ??RingBuf_SetOwner_0: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \                     ??RingBuf_SetOwner_1: (+1)
+   \       0x1A   0xB2C0             UXTB     R0,R0
+   \       0x1C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    152          }
+    153          
+
+   \                                 In section .text, align 2, keep-with-next
+    154          uint8_t RingBuf_SetProcessInstanceIndex(Ring_Buf_Handle this_ring_buf_u32, uint8_t processInstanceIndex_u8) {
+    155              return (*this_ring_buf_u32).processInstanceIndex_u8 = processInstanceIndex_u8;
+   \                     RingBuf_SetProcessInstanceIndex: (+1)
+   \        0x0   0x7741             STRB     R1,[R0, #+29]
+   \        0x2   0x7F40             LDRB     R0,[R0, #+29]
+   \        0x4   0x4770             BX       LR               ;; return
+    156          }
+    157          
+
+   \                                 In section .text, align 2, keep-with-next
+    158          uint8_t RingBuf_GetProcessInstanceIndex(Ring_Buf_Handle this_ring_buf_u32) {
+    159              return (*this_ring_buf_u32).processInstanceIndex_u8;
+   \                     RingBuf_GetProcessInstanceIndex: (+1)
+   \        0x0   0x7F40             LDRB     R0,[R0, #+29]
+   \        0x2   0x4770             BX       LR               ;; return
+    160          }
+    161          
+
+   \                                 In section .text, align 2, keep-with-next
+    162          uint8_t RingBuf_SetSystemInstanceIndex(Ring_Buf_Handle this_ring_buf_u32, uint8_t systemInstanceIndex_u8) {
+    163              return (*this_ring_buf_u32).systemInstanceIndex_u8 = systemInstanceIndex_u8;
+   \                     RingBuf_SetSystemInstanceIndex: (+1)
+   \        0x0   0x7781             STRB     R1,[R0, #+30]
+   \        0x2   0x7F80             LDRB     R0,[R0, #+30]
+   \        0x4   0x4770             BX       LR               ;; return
+    164          }
+    165          
+    166          /* Private Functions -----------------------------------------------------------------------------------------------------------*/
+    167          /**
+    168            ********************************************************************************************************************************
+    169            * @brief   Private observer function for obtaining a copy of the value of head_s32. 
+    170            * @details 
+    171            * @param   *this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    172            * @return  Returns 
+    173            ********************************************************************************************************************************
+    174            */
+
+   \                                 In section .text, align 2, keep-with-next
+    175          static uint8_t RingBuf_GetValueOfHead(Ring_Buf_Handle this_ring_buf_u32) {
+    176              return (*this_ring_buf_u32).head_s32;
+   \                     RingBuf_GetValueOfHead: (+1)
+   \        0x0   0x6840             LDR      R0,[R0, #+4]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+    177          }
+    178          
+    179          /**
+    180            ********************************************************************************************************************************
+    181            * @brief   Private function for updating the value of head_s32.
+    182            * @details 
+    183            * @param   *this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    184            * @return  Returns 
+    185            ********************************************************************************************************************************
+    186            */
+
+   \                                 In section .text, align 2, keep-with-next
+    187          static uint8_t RingBuf_SetValueOfHead(Ring_Buf_Handle this_ring_buf_u32, uint8_t head_s32) {
+    188              return (*this_ring_buf_u32).head_s32 = head_s32;
+   \                     RingBuf_SetValueOfHead: (+1)
+   \        0x0   0xB2C9             UXTB     R1,R1
+   \        0x2   0x6041             STR      R1,[R0, #+4]
+   \        0x4   0x6840             LDR      R0,[R0, #+4]
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x4770             BX       LR               ;; return
+    189          }
+    190          
+    191          /**
+    192            ********************************************************************************************************************************
+    193            * @brief   Private observer function for obtaining a copy of the value of tail_s32.  
+    194            * @details 
+    195            * @param   *this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    196            * @return  Returns 
+    197            ********************************************************************************************************************************
+    198            */
+
+   \                                 In section .text, align 2, keep-with-next
+    199          static uint8_t RingBuf_GetValueOfTail(Ring_Buf_Handle this_ring_buf_u32) {
+    200              return (*this_ring_buf_u32).tail_s32;
+   \                     RingBuf_GetValueOfTail: (+1)
+   \        0x0   0x6880             LDR      R0,[R0, #+8]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+    201          }
+    202          
+    203          /**
+    204            ********************************************************************************************************************************
+    205            * @brief   Private function for updating the value of tail_s32. 
+    206            * @details 
+    207            * @param   *this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    208            * @return  Returns 
+    209            ********************************************************************************************************************************
+    210            */
+
+   \                                 In section .text, align 2, keep-with-next
+    211          static uint8_t RingBuf_SetValueOfTail(Ring_Buf_Handle this_ring_buf_u32, uint8_t tail_s32) {
+    212              return (*this_ring_buf_u32).tail_s32 = tail_s32;
+   \                     RingBuf_SetValueOfTail: (+1)
+   \        0x0   0xB2C9             UXTB     R1,R1
+   \        0x2   0x6081             STR      R1,[R0, #+8]
+   \        0x4   0x6880             LDR      R0,[R0, #+8]
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x4770             BX       LR               ;; return
+    213          }
+    214          
+    215          /**
+    216            ********************************************************************************************************************************
+    217            * @brief   Private function for incrementing head_s32 by 1.
+    218            * @details This function takes care of incrementing the pointer to the head of the ring buffer by 1 taking into consideration
+    219            *             the linear implementation in physical memory.
+    220            * @param   this_ring_buf_u32	The index that the kernel uses to uniquely track of this instance (systemInstanceIndex_u8).
+    221            * @return  Returns TRUE if the operation was successful, FALSE otherwise.
+    222            ********************************************************************************************************************************
+    223            */
+
+   \                                 In section .text, align 2, keep-with-next
+    224          static uint8_t RingBuf_IncHead(Ring_Buf_Handle this_ring_buf_u32) {
+   \                     RingBuf_IncHead: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    225              if (RingBuf_IsEmpty(this_ring_buf_u32)) {
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       RingBuf_IsEmpty
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD001             BEQ      ??RingBuf_IncHead_0
+    226                  return FALSE;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xE019             B        ??RingBuf_IncHead_1
+    227              } else {
+    228                  if (RingBuf_GetTotalNumOfElements(this_ring_buf_u32) - RingBuf_GetValueOfHead(this_ring_buf_u32) <= 1) {
+   \                     ??RingBuf_IncHead_0: (+1)
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x18   0x0005             MOVS     R5,R0
+   \       0x1A   0xB2ED             UXTB     R5,R5
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x22   0x1A28             SUBS     R0,R5,R0
+   \       0x24   0x2802             CMP      R0,#+2
+   \       0x26   0xDA04             BGE      ??RingBuf_IncHead_2
+    229                      RingBuf_SetValueOfHead(this_ring_buf_u32, 0);
+   \       0x28   0x2100             MOVS     R1,#+0
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0x....'....        BL       RingBuf_SetValueOfHead
+   \       0x30   0xE008             B        ??RingBuf_IncHead_3
+    230                  } else {
+    231                      RingBuf_SetValueOfHead(this_ring_buf_u32, RingBuf_GetValueOfHead(this_ring_buf_u32) + 1);
+   \                     ??RingBuf_IncHead_2: (+1)
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x38   0x0001             MOVS     R1,R0
+   \       0x3A   0x1C49             ADDS     R1,R1,#+1
+   \       0x3C   0xB2C9             UXTB     R1,R1
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x....'....        BL       RingBuf_SetValueOfHead
+    232                  }
+    233              }
+    234              return TRUE;
+   \                     ??RingBuf_IncHead_3: (+1)
+   \       0x44   0x2001             MOVS     R0,#+1
+   \                     ??RingBuf_IncHead_1: (+1)
+   \       0x46   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    235          }
+    236          
+    237          /**
+    238            ********************************************************************************************************************************
+    239            * @brief   Private function for incrementing tail_s32 by 1.
+    240            * @details This function takes care of incrementing the pointer to the head of the ring buffer by 1 taking into consideration
+    241            *             the linear implementation in physical memory.
+    242            * @param   this_ring_buf_u32	The index that the kernel uses to uniquely track of this instance (systemInstanceIndex_u8).
+    243            * @return  Returns TRUE if the operation was successful, FALSE otherwise.
+    244            ********************************************************************************************************************************
+    245            */
+
+   \                                 In section .text, align 2, keep-with-next
+    246          static uint8_t RingBuf_IncTail(Ring_Buf_Handle this_ring_buf_u32) {
+   \                     RingBuf_IncTail: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    247              if (RingBuf_IsFull(this_ring_buf_u32)) {
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       RingBuf_IsFull
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD024             BEQ      ??RingBuf_IncTail_0
+    248                  if (RingBuf_GetIsOverwrittingAllowed(this_ring_buf_u32)) {
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       RingBuf_GetIsOverwrittingAllowed
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD01D             BEQ      ??RingBuf_IncTail_1
+    249                      RingBuf_IncHead(this_ring_buf_u32);
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x....'....        BL       RingBuf_IncHead
+    250                      if (RingBuf_GetTotalNumOfElements(this_ring_buf_u32) - RingBuf_GetValueOfTail(this_ring_buf_u32) <=
+    251                          1) {
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x24   0x0005             MOVS     R5,R0
+   \       0x26   0xB2ED             UXTB     R5,R5
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x2E   0x1A28             SUBS     R0,R5,R0
+   \       0x30   0x2802             CMP      R0,#+2
+   \       0x32   0xDA04             BGE      ??RingBuf_IncTail_2
+    252                          RingBuf_SetValueOfTail(this_ring_buf_u32, 0);
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0x0020             MOVS     R0,R4
+   \       0x38   0x....'....        BL       RingBuf_SetValueOfTail
+   \       0x3C   0xE008             B        ??RingBuf_IncTail_3
+    253                      } else {
+    254                          RingBuf_SetValueOfTail(this_ring_buf_u32, RingBuf_GetValueOfTail(this_ring_buf_u32) + 1);
+   \                     ??RingBuf_IncTail_2: (+1)
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x44   0x0001             MOVS     R1,R0
+   \       0x46   0x1C49             ADDS     R1,R1,#+1
+   \       0x48   0xB2C9             UXTB     R1,R1
+   \       0x4A   0x0020             MOVS     R0,R4
+   \       0x4C   0x....'....        BL       RingBuf_SetValueOfTail
+    255                      }
+    256                      return TRUE;
+   \                     ??RingBuf_IncTail_3: (+1)
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0xE01B             B        ??RingBuf_IncTail_4
+    257                  }
+    258                  return FALSE;
+   \                     ??RingBuf_IncTail_1: (+1)
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0xE019             B        ??RingBuf_IncTail_4
+    259              } else {
+    260                  if (RingBuf_GetTotalNumOfElements(this_ring_buf_u32) - RingBuf_GetValueOfTail(this_ring_buf_u32) <= 1) {
+   \                     ??RingBuf_IncTail_0: (+1)
+   \       0x58   0x0020             MOVS     R0,R4
+   \       0x5A   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x5E   0x0005             MOVS     R5,R0
+   \       0x60   0xB2ED             UXTB     R5,R5
+   \       0x62   0x0020             MOVS     R0,R4
+   \       0x64   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x68   0x1A28             SUBS     R0,R5,R0
+   \       0x6A   0x2802             CMP      R0,#+2
+   \       0x6C   0xDA04             BGE      ??RingBuf_IncTail_5
+    261                      RingBuf_SetValueOfTail(this_ring_buf_u32, 0);
+   \       0x6E   0x2100             MOVS     R1,#+0
+   \       0x70   0x0020             MOVS     R0,R4
+   \       0x72   0x....'....        BL       RingBuf_SetValueOfTail
+   \       0x76   0xE008             B        ??RingBuf_IncTail_6
+    262                  } else {
+    263                      RingBuf_SetValueOfTail(this_ring_buf_u32, RingBuf_GetValueOfTail(this_ring_buf_u32) + 1);
+   \                     ??RingBuf_IncTail_5: (+1)
+   \       0x78   0x0020             MOVS     R0,R4
+   \       0x7A   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x7E   0x1C40             ADDS     R0,R0,#+1
+   \       0x80   0x0001             MOVS     R1,R0
+   \       0x82   0xB2C9             UXTB     R1,R1
+   \       0x84   0x0020             MOVS     R0,R4
+   \       0x86   0x....'....        BL       RingBuf_SetValueOfTail
+    264                  }
+    265                  return TRUE;
+   \                     ??RingBuf_IncTail_6: (+1)
+   \       0x8A   0x2001             MOVS     R0,#+1
+   \                     ??RingBuf_IncTail_4: (+1)
+   \       0x8C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    266              }
+    267          }
+    268          
+    269          /**
+    270            ********************************************************************************************************************************
+    271            * @brief   Private function for obtaining a copy of the physial address of a particular offset relative to head_s32.
+    272            * @details This function takes care of offsets that would return addresses outside of the buffer's address range allocation.
+    273            * @param   this_ring_buf_u32	The index that the kernel uses to uniquely track of this instance (systemInstanceIndex_u8).
+    274            * @param   offset_u32	            This value specifies the distance to be added to the head_s32 physical address location.
+    275            * @return  Returns the physial address location corresponding this ring buffer instance's head_s32 address plus an offset.
+    276            ********************************************************************************************************************************
+    277            */
+
+   \                                 In section .text, align 2, keep-with-next
+    278          static uint8_t *RingBuf_GetPhysicalAddressOfHeadPlusOffset(Ring_Buf_Handle this_ring_buf_u32, uint32_t offset_u32) {
+   \                     RingBuf_GetPhysicalAddressOfHeadPlusOffset: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000F             MOVS     R7,R1
+    279              int32_t diff;
+    280              RingBuf_CalculateAvailableSpace(this_ring_buf_u32);
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       RingBuf_CalculateAvailableSpace
+    281              if ((RingBuf_IsEmpty(this_ring_buf_u32)) || (RingBuf_GetUsedNumOfElements(this_ring_buf_u32) < offset_u32)) {
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x....'....        BL       RingBuf_IsEmpty
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD104             BNE      ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_0
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x1C   0x42B8             CMP      R0,R7
+   \       0x1E   0xD201             BCS      ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_1
+    282                  return 0;
+   \                     ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_0: (+1)
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0xE033             B        ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_2
+    283              } else if (RingBuf_CalculateAvailableSpace(this_ring_buf_u32) > 0) {
+   \                     ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_1: (+1)
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       RingBuf_CalculateAvailableSpace
+   \       0x2A   0x2801             CMP      R0,#+1
+   \       0x2C   0xDB10             BLT      ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_3
+    284                  if (RingBuf_GetUsedNumOfElements(this_ring_buf_u32) > offset_u32) {
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x34   0x4287             CMP      R7,R0
+   \       0x36   0xD209             BCS      ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_4
+    285                      return (RingBuf_GetPointerToRingBuf(this_ring_buf_u32) + RingBuf_GetValueOfHead(this_ring_buf_u32) +
+    286                              offset_u32);
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \       0x3E   0x0005             MOVS     R5,R0
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x46   0x1828             ADDS     R0,R5,R0
+   \       0x48   0x19C0             ADDS     R0,R0,R7
+   \       0x4A   0xE01F             B        ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_2
+    287                  } else {
+    288                      return 0;
+   \                     ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_4: (+1)
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \       0x4E   0xE01D             B        ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_2
+    289                  }
+    290              } else {
+    291                  if ((diff = RingBuf_GetTotalNumOfElements(this_ring_buf_u32) -
+    292                              (RingBuf_GetValueOfHead(this_ring_buf_u32) + offset_u32)) <= 0) {
+   \                     ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_3: (+1)
+   \       0x50   0x0020             MOVS     R0,R4
+   \       0x52   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x56   0x0005             MOVS     R5,R0
+   \       0x58   0xB2ED             UXTB     R5,R5
+   \       0x5A   0x0020             MOVS     R0,R4
+   \       0x5C   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x60   0x1A28             SUBS     R0,R5,R0
+   \       0x62   0x1BC5             SUBS     R5,R0,R7
+   \       0x64   0x2D01             CMP      R5,#+1
+   \       0x66   0xDA08             BGE      ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_5
+    293                      return (RingBuf_GetPointerToRingBuf(this_ring_buf_u32) + abs(diff));
+   \       0x68   0x0020             MOVS     R0,R4
+   \       0x6A   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \       0x6E   0x0006             MOVS     R6,R0
+   \       0x70   0x0028             MOVS     R0,R5
+   \       0x72   0x....'....        BL       abs
+   \       0x76   0x1830             ADDS     R0,R6,R0
+   \       0x78   0xE008             B        ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_2
+    294                  } else {
+    295                      return (RingBuf_GetPointerToRingBuf(this_ring_buf_u32) + RingBuf_GetValueOfHead(this_ring_buf_u32) +
+    296                              offset_u32);
+   \                     ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_5: (+1)
+   \       0x7A   0x0020             MOVS     R0,R4
+   \       0x7C   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \       0x80   0x0006             MOVS     R6,R0
+   \       0x82   0x0020             MOVS     R0,R4
+   \       0x84   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x88   0x1830             ADDS     R0,R6,R0
+   \       0x8A   0x19C0             ADDS     R0,R0,R7
+   \                     ??RingBuf_GetPhysicalAddressOfHeadPlusOffset_2: (+1)
+   \       0x8C   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    297                  }
+    298              }
+    299          }
+    300          
+    301          /**
+    302            ********************************************************************************************************************************
+    303            * @brief   Returns TRUE if there are no used elements in the ring buffer instance, falses otherwise.
+    304            * @details 
+    305            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    306            * @return  eturns TRUE if there are no used elements in the ring buffer instance, falses otherwise.
+    307            ********************************************************************************************************************************
+    308            */
+
+   \                                 In section .text, align 2, keep-with-next
+    309          static uint8_t RingBuf_IsEmpty(Ring_Buf_Handle this_ring_buf_u32) {
+   \                     RingBuf_IsEmpty: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    310              return RingBuf_GetValueOfHead(this_ring_buf_u32) == RingBuf_GetValueOfTail(this_ring_buf_u32);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       RingBuf_GetValueOfHead
+   \        0xA   0x0005             MOVS     R5,R0
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x12   0xB2ED             UXTB     R5,R5
+   \       0x14   0x4285             CMP      R5,R0
+   \       0x16   0xD101             BNE      ??RingBuf_IsEmpty_0
+   \       0x18   0x2001             MOVS     R0,#+1
+   \       0x1A   0xE000             B        ??RingBuf_IsEmpty_1
+   \                     ??RingBuf_IsEmpty_0: (+1)
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \                     ??RingBuf_IsEmpty_1: (+1)
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    311          }
+    312          
+    313          /**
+    314            ********************************************************************************************************************************
+    315            * @brief   Returns TRUE if the number of used elements is equal to the total number of elements in the ring buffer instance.
+    316            * @details 
+    317            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on. 
+    318            * @return  Returns TRUE if the number of used elements is equal to the total number of elements in the ring buffer instance.
+    319            ********************************************************************************************************************************
+    320            */
+
+   \                                 In section .text, align 2, keep-with-next
+    321          static uint8_t RingBuf_IsFull(Ring_Buf_Handle this_ring_buf_u32) {
+   \                     RingBuf_IsFull: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    322              return (RingBuf_GetValueOfTail(this_ring_buf_u32) - RingBuf_GetValueOfHead(this_ring_buf_u32) ==
+    323                      (RingBuf_GetTotalNumOfElements(this_ring_buf_u32) - 1)) ||
+    324                     (RingBuf_GetValueOfTail(this_ring_buf_u32) - RingBuf_GetValueOfHead(this_ring_buf_u32) == -1);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       RingBuf_GetValueOfTail
+   \        0xA   0x0005             MOVS     R5,R0
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x12   0xB2ED             UXTB     R5,R5
+   \       0x14   0xB2C0             UXTB     R0,R0
+   \       0x16   0x1A2D             SUBS     R5,R5,R0
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x1E   0x1E40             SUBS     R0,R0,#+1
+   \       0x20   0x4285             CMP      R5,R0
+   \       0x22   0xD00C             BEQ      ??RingBuf_IsFull_0
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       RingBuf_GetValueOfTail
+   \       0x2A   0x0005             MOVS     R5,R0
+   \       0x2C   0xB2ED             UXTB     R5,R5
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x34   0x1A28             SUBS     R0,R5,R0
+   \       0x36   0x2100             MOVS     R1,#+0
+   \       0x38   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x3A   0x4288             CMP      R0,R1
+   \       0x3C   0xD101             BNE      ??RingBuf_IsFull_1
+   \                     ??RingBuf_IsFull_0: (+1)
+   \       0x3E   0x2001             MOVS     R0,#+1
+   \       0x40   0xE000             B        ??RingBuf_IsFull_2
+   \                     ??RingBuf_IsFull_1: (+1)
+   \       0x42   0x2000             MOVS     R0,#+0
+   \                     ??RingBuf_IsFull_2: (+1)
+   \       0x44   0xB2C0             UXTB     R0,R0
+   \       0x46   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    325          }
+    326          
+    327          /**
+    328            ********************************************************************************************************************************
+    329            * @brief   Returns the number of unused elements in the ring buffer instance.
+    330            * @details Returns the number of unused elements in the ring buffer accounting for cases where the head is in equal to, in front
+    331            *                                 of, or behind the tail. Automatically updates usedNumOfElements_s32 when called.
+    332            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    333            * @return  Returns the number of unused elements in the ring buffer instance.
+    334            ********************************************************************************************************************************
+    335            */
+
+   \                                 In section .text, align 2, keep-with-next
+    336          static int32_t RingBuf_CalculateAvailableSpace(Ring_Buf_Handle this_ring_buf_u32) {
+   \                     RingBuf_CalculateAvailableSpace: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    337              int32_t head_minus_tail = 0;
+   \        0x4   0x2600             MOVS     R6,#+0
+    338              if ((head_minus_tail = RingBuf_GetValueOfTail(this_ring_buf_u32) - RingBuf_GetValueOfHead(this_ring_buf_u32)) >
+    339                  0) {
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       RingBuf_GetValueOfTail
+   \        0xC   0x0005             MOVS     R5,R0
+   \        0xE   0xB2ED             UXTB     R5,R5
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x....'....        BL       RingBuf_GetValueOfHead
+   \       0x16   0x1A2D             SUBS     R5,R5,R0
+   \       0x18   0x2D01             CMP      R5,#+1
+   \       0x1A   0xDB0B             BLT      ??RingBuf_CalculateAvailableSpace_0
+    340                  RingBuf_SetUsedNumOfElements(this_ring_buf_u32, abs(head_minus_tail));
+   \       0x1C   0x0028             MOVS     R0,R5
+   \       0x1E   0x....'....        BL       abs
+   \       0x22   0x0001             MOVS     R1,R0
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       RingBuf_SetUsedNumOfElements
+    341                  return RingBuf_GetTotalNumOfElements(this_ring_buf_u32) - head_minus_tail;
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x30   0x1B40             SUBS     R0,R0,R5
+   \       0x32   0xE00C             B        ??RingBuf_CalculateAvailableSpace_1
+    342              } else {
+    343                  RingBuf_SetUsedNumOfElements(this_ring_buf_u32,
+    344                                                     RingBuf_GetTotalNumOfElements(this_ring_buf_u32) - abs(head_minus_tail));
+   \                     ??RingBuf_CalculateAvailableSpace_0: (+1)
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \       0x3A   0x0006             MOVS     R6,R0
+   \       0x3C   0x0028             MOVS     R0,R5
+   \       0x3E   0x....'....        BL       abs
+   \       0x42   0xB2F6             UXTB     R6,R6
+   \       0x44   0x1A31             SUBS     R1,R6,R0
+   \       0x46   0x0020             MOVS     R0,R4
+   \       0x48   0x....'....        BL       RingBuf_SetUsedNumOfElements
+    345                  return head_minus_tail;
+   \       0x4C   0x0028             MOVS     R0,R5
+   \                     ??RingBuf_CalculateAvailableSpace_1: (+1)
+   \       0x4E   0xBD70             POP      {R4-R6,PC}       ;; return
+    346              }
+    347          }
+    348          
+    349          /**
+    350            ********************************************************************************************************************************
+    351            * @brief   Returns 
+    352            * @details 
+    353            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    354            * @param   p_ringBuf_u8        A pointer to the memory location where thie ring buffer instance stores it's values.
+    355            * @return  Returns 
+    356            ********************************************************************************************************************************
+    357            */
+
+   \                                 In section .text, align 2, keep-with-next
+    358          static uint8_t *RingBuf_SetPointerToRingBuf(Ring_Buf_Handle this_ring_buf_u32, uint8_t *p_ringBuf_u8) {
+    359              return (*this_ring_buf_u32).p_ringBuf_u8 = p_ringBuf_u8;
+   \                     RingBuf_SetPointerToRingBuf: (+1)
+   \        0x0   0x6001             STR      R1,[R0, #+0]
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x4770             BX       LR               ;; return
+    360          }
+    361          
+    362          /**
+    363            ********************************************************************************************************************************
+    364            * @brief   Returns 
+    365            * @details 
+    366            * @param   this_ring_buf_u32       The ring buffer handle referencing the ring buffer that the function must operate on.
+    367            * @param   usedNumOfElements_s32   TODO: This function should not be accessible from outside the source file.
+    368            * @return  Returns 
+    369            ********************************************************************************************************************************
+    370            */
+
+   \                                 In section .text, align 2, keep-with-next
+    371          static uint8_t RingBuf_SetUsedNumOfElements(Ring_Buf_Handle this_ring_buf_u32, uint32_t usedNumOfElements_s32) {
+    372              return (*this_ring_buf_u32).usedNumOfElements_s32 = usedNumOfElements_s32;
+   \                     RingBuf_SetUsedNumOfElements: (+1)
+   \        0x0   0x60C1             STR      R1,[R0, #+12]
+   \        0x2   0x68C0             LDR      R0,[R0, #+12]
+   \        0x4   0xB2C0             UXTB     R0,R0
+   \        0x6   0x4770             BX       LR               ;; return
+    373          }
+    374          
+    375          /**
+    376            ********************************************************************************************************************************
+    377            * @brief   Returns 
+    378            * @details 
+    379            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    380            * @return  Returns 
+    381            ********************************************************************************************************************************
+    382            */
+
+   \                                 In section .text, align 2, keep-with-next
+    383          static uint8_t RingBuf_GetTotalNumOfElements(Ring_Buf_Handle this_ring_buf_u32) {
+    384              return (*this_ring_buf_u32).totalNumOfElements_u32;
+   \                     RingBuf_GetTotalNumOfElements: (+1)
+   \        0x0   0x6900             LDR      R0,[R0, #+16]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+    385          }
+    386          
+    387          /**
+    388            ********************************************************************************************************************************
+    389            * @brief   Returns 
+    390            * @details 
+    391            * @param   this_ring_buf_u32       The ring buffer handle referencing the ring buffer that the function must operate on.
+    392            * @param   totalNumOfElements_u32  TODO: This function should not be accessible from outside the source file.
+    393            * @return  Returns 
+    394            ********************************************************************************************************************************
+    395            */
+
+   \                                 In section .text, align 2, keep-with-next
+    396          static uint8_t RingBuf_SetTotalNumOfElements(Ring_Buf_Handle this_ring_buf_u32, uint32_t totalNumOfElements_u32) {
+   \                     RingBuf_SetTotalNumOfElements: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    397              (*this_ring_buf_u32).totalNumOfElements_u32 = totalNumOfElements_u32;
+   \        0x6   0x612C             STR      R4,[R5, #+16]
+    398              return RingBuf_GetTotalNumOfElements(this_ring_buf_u32) == totalNumOfElements_u32;
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       RingBuf_GetTotalNumOfElements
+   \        0xE   0x42A0             CMP      R0,R4
+   \       0x10   0xD101             BNE      ??RingBuf_SetTotalNumOfElements_0
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0xE000             B        ??RingBuf_SetTotalNumOfElements_1
+   \                     ??RingBuf_SetTotalNumOfElements_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \                     ??RingBuf_SetTotalNumOfElements_1: (+1)
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    399          }
+    400          
+    401          /**
+    402            ********************************************************************************************************************************
+    403            * @brief   Returns 
+    404            * @details 
+    405            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    406            * @return  Returns 
+    407            ********************************************************************************************************************************
+    408            */
+
+   \                                 In section .text, align 2, keep-with-next
+    409          static uint8_t RingBuf_GetIsOverwrittingAllowed(Ring_Buf_Handle this_ring_buf_u32) {
+    410              return (*this_ring_buf_u32).is_OverwrittingAllowed_u8;
+   \                     RingBuf_GetIsOverwrittingAllowed: (+1)
+   \        0x0   0x7D00             LDRB     R0,[R0, #+20]
+   \        0x2   0x4770             BX       LR               ;; return
+    411          }
+    412          
+    413          /**
+    414            ********************************************************************************************************************************
+    415            * @brief   Returns 
+    416            * @details 
+    417            * @param   this_ring_buf_u32       The ring buffer handle referencing the ring buffer that the function must operate on.
+    418            * @param   is_OverwrittingAllowed_u8  Flag for tracking whether it is allowed for a full ring buffer to be overwritten.
+    419            * @return  Returns 
+    420            ********************************************************************************************************************************
+    421            */
+
+   \                                 In section .text, align 2, keep-with-next
+    422          static uint8_t RingBuf_SetIsOverwrittingAllowed(Ring_Buf_Handle this_ring_buf_u32, uint8_t is_OverwrittingAllowed_u8) {
+    423              return (*this_ring_buf_u32).is_OverwrittingAllowed_u8 = is_OverwrittingAllowed_u8;
+   \                     RingBuf_SetIsOverwrittingAllowed: (+1)
+   \        0x0   0x7501             STRB     R1,[R0, #+20]
+   \        0x2   0x7D00             LDRB     R0,[R0, #+20]
+   \        0x4   0x4770             BX       LR               ;; return
+    424          }
+    425          
+    426          /**
+    427            ********************************************************************************************************************************
+    428            * @brief   Returns 
+    429            * @details 
+    430            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    431            * @param   access_mode_u8         This flag tracks whether the ring buffer instance is read-only, write-only, or broadcasted.
+    432            * @return  Returns 
+    433            ********************************************************************************************************************************
+    434            */
+
+   \                                 In section .text, align 2, keep-with-next
+    435          static uint8_t RingBuf_SetAccessMode(Ring_Buf_Handle this_ring_buf_u32, uint8_t access_mode_u8) {
+    436              return (*this_ring_buf_u32).accessMode_u8 = access_mode_u8;
+   \                     RingBuf_SetAccessMode: (+1)
+   \        0x0   0x7581             STRB     R1,[R0, #+22]
+   \        0x2   0x7D80             LDRB     R0,[R0, #+22]
+   \        0x4   0x4770             BX       LR               ;; return
+    437          }
+    438          
+    439          /**
+    440            ********************************************************************************************************************************
+    441            * @brief   Returns 
+    442            * @details 
+    443            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    444            * @param   p_user_list_u8         A pointer to the memory location that stores the list of processes that use this ring buffer
+    445            *                                     instance.
+    446            * @return  Returns 
+    447            ********************************************************************************************************************************
+    448            */
+
+   \                                 In section .text, align 2, keep-with-next
+    449          static uint8_t *RingBuf_SetUserList(Ring_Buf_Handle this_ring_buf_u32, uint8_t *p_user_list_u8) {
+    450              return (*this_ring_buf_u32).p_userList_u8 = p_user_list_u8;
+   \                     RingBuf_SetUserList: (+1)
+   \        0x0   0x6181             STR      R1,[R0, #+24]
+   \        0x2   0x6980             LDR      R0,[R0, #+24]
+   \        0x4   0x4770             BX       LR               ;; return
+    451          }
+    452          
+    453          /**
+    454            ********************************************************************************************************************************
+    455            * @brief   Returns 
+    456            * @details 
+    457            * @param   this_ring_buf_u32   The ring buffer handle referencing the ring buffer that the function must operate on.
+    458            * @param   user_list_size_u8      TODO: This function should not be accessible ALONE from outside the source file.
+    459            * @return  Returns 
+    460            ********************************************************************************************************************************
+    461            */
+
+   \                                 In section .text, align 2, keep-with-next
+    462          static uint8_t RingBuf_SetUserListSize(Ring_Buf_Handle this_ring_buf_u32, uint8_t user_list_size_u8) {
+    463              return (*this_ring_buf_u32).userListSize_u8 = user_list_size_u8;
+   \                     RingBuf_SetUserListSize: (+1)
+   \        0x0   0x7701             STRB     R1,[R0, #+28]
+   \        0x2   0x7F00             LDRB     R0,[R0, #+28]
+   \        0x4   0x4770             BX       LR               ;; return
+    464          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   RingBuf_CalculateAvailableSpace
+        16   -> RingBuf_GetTotalNumOfElements
+        16   -> RingBuf_GetValueOfHead
+        16   -> RingBuf_GetValueOfTail
+        16   -> RingBuf_SetUsedNumOfElements
+        16   -> abs
+       8   RingBuf_ClearContents
+         8   -> RingBuf_SetUsedNumOfElements
+         8   -> RingBuf_SetValueOfHead
+         8   -> RingBuf_SetValueOfTail
+       0   RingBuf_GetIsOverwrittingAllowed
+       0   RingBuf_GetOwner
+      24   RingBuf_GetPhysicalAddressOfHeadPlusOffset
+        24   -> RingBuf_CalculateAvailableSpace
+        24   -> RingBuf_GetPointerToRingBuf
+        24   -> RingBuf_GetTotalNumOfElements
+        24   -> RingBuf_GetUsedNumOfElements
+        24   -> RingBuf_GetValueOfHead
+        24   -> RingBuf_IsEmpty
+        24   -> abs
+       0   RingBuf_GetPointerToRingBuf
+       0   RingBuf_GetProcessInstanceIndex
+       0   RingBuf_GetTotalNumOfElements
+       0   RingBuf_GetUsedNumOfElements
+       0   RingBuf_GetValueOfHead
+       0   RingBuf_GetValueOfTail
+      16   RingBuf_IncHead
+        16   -> RingBuf_GetTotalNumOfElements
+        16   -> RingBuf_GetValueOfHead
+        16   -> RingBuf_IsEmpty
+        16   -> RingBuf_SetValueOfHead
+      16   RingBuf_IncTail
+        16   -> RingBuf_GetIsOverwrittingAllowed
+        16   -> RingBuf_GetTotalNumOfElements
+        16   -> RingBuf_GetValueOfTail
+        16   -> RingBuf_IncHead
+        16   -> RingBuf_IsFull
+        16   -> RingBuf_SetValueOfTail
+      32   RingBuf_Initialize
+        32   -> RingBuf_SetAccessMode
+        32   -> RingBuf_SetIsOverwrittingAllowed
+        32   -> RingBuf_SetOwner
+        32   -> RingBuf_SetPointerToRingBuf
+        32   -> RingBuf_SetProcessInstanceIndex
+        32   -> RingBuf_SetSystemInstanceIndex
+        32   -> RingBuf_SetTotalNumOfElements
+        32   -> RingBuf_SetUsedNumOfElements
+        32   -> RingBuf_SetUserList
+        32   -> RingBuf_SetUserListSize
+        32   -> RingBuf_SetValueOfHead
+        32   -> RingBuf_SetValueOfTail
+        32   -> malloc
+      16   RingBuf_IsEmpty
+        16   -> RingBuf_GetValueOfHead
+        16   -> RingBuf_GetValueOfTail
+      16   RingBuf_IsFull
+        16   -> RingBuf_GetTotalNumOfElements
+        16   -> RingBuf_GetValueOfHead
+        16   -> RingBuf_GetValueOfTail
+      32   RingBuf_Observe
+        32   -> RingBuf_CalculateAvailableSpace
+        32   -> RingBuf_GetPhysicalAddressOfHeadPlusOffset
+        32   -> RingBuf_GetUsedNumOfElements
+      24   RingBuf_ReadBlock
+        24   -> RingBuf_GetPointerToRingBuf
+        24   -> RingBuf_GetUsedNumOfElements
+        24   -> RingBuf_GetValueOfHead
+        24   -> RingBuf_IncHead
+        24   -> RingBuf_IsEmpty
+        24   -> RingBuf_SetUsedNumOfElements
+      24   RingBuf_Search
+        24   -> RingBuf_CalculateAvailableSpace
+        24   -> RingBuf_GetPhysicalAddressOfHeadPlusOffset
+        24   -> RingBuf_GetUsedNumOfElements
+       0   RingBuf_SetAccessMode
+       0   RingBuf_SetIsOverwrittingAllowed
+      16   RingBuf_SetOwner
+        16   -> RingBuf_GetOwner
+       0   RingBuf_SetPointerToRingBuf
+       0   RingBuf_SetProcessInstanceIndex
+       0   RingBuf_SetSystemInstanceIndex
+      16   RingBuf_SetTotalNumOfElements
+        16   -> RingBuf_GetTotalNumOfElements
+       0   RingBuf_SetUsedNumOfElements
+       0   RingBuf_SetUserList
+       0   RingBuf_SetUserListSize
+       0   RingBuf_SetValueOfHead
+       0   RingBuf_SetValueOfTail
+      32   RingBuf_WriteBlock
+        32   -> RingBuf_GetIsOverwrittingAllowed
+        32   -> RingBuf_GetPointerToRingBuf
+        32   -> RingBuf_GetUsedNumOfElements
+        32   -> RingBuf_GetValueOfTail
+        32   -> RingBuf_IncTail
+        32   -> RingBuf_IsFull
+        32   -> RingBuf_SetUsedNumOfElements
+      16   RingBuf_WriteCharacter
+        16   -> RingBuf_GetIsOverwrittingAllowed
+        16   -> RingBuf_GetPointerToRingBuf
+        16   -> RingBuf_GetUsedNumOfElements
+        16   -> RingBuf_GetValueOfTail
+        16   -> RingBuf_IncTail
+        16   -> RingBuf_IsFull
+        16   -> RingBuf_SetUsedNumOfElements
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+      80  RingBuf_CalculateAvailableSpace
+      30  RingBuf_ClearContents
+       4  RingBuf_GetIsOverwrittingAllowed
+       4  RingBuf_GetOwner
+     142  RingBuf_GetPhysicalAddressOfHeadPlusOffset
+       4  RingBuf_GetPointerToRingBuf
+       4  RingBuf_GetProcessInstanceIndex
+       6  RingBuf_GetTotalNumOfElements
+       6  RingBuf_GetUsedNumOfElements
+       6  RingBuf_GetValueOfHead
+       6  RingBuf_GetValueOfTail
+      72  RingBuf_IncHead
+     142  RingBuf_IncTail
+     124  RingBuf_Initialize
+      34  RingBuf_IsEmpty
+      72  RingBuf_IsFull
+      82  RingBuf_Observe
+      92  RingBuf_ReadBlock
+      86  RingBuf_Search
+       6  RingBuf_SetAccessMode
+       6  RingBuf_SetIsOverwrittingAllowed
+      30  RingBuf_SetOwner
+       6  RingBuf_SetPointerToRingBuf
+       6  RingBuf_SetProcessInstanceIndex
+       6  RingBuf_SetSystemInstanceIndex
+      28  RingBuf_SetTotalNumOfElements
+       8  RingBuf_SetUsedNumOfElements
+       6  RingBuf_SetUserList
+       6  RingBuf_SetUserListSize
+      10  RingBuf_SetValueOfHead
+      10  RingBuf_SetValueOfTail
+      96  RingBuf_WriteBlock
+      76  RingBuf_WriteCharacter
+
+ 
+ 1'300 bytes in section .text
+ 
+ 1'300 bytes of CODE memory
+
+Errors: none
+Warnings: none

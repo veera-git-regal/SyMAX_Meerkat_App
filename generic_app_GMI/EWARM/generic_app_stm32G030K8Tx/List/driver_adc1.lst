@@ -1,0 +1,2044 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:39
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_adc1.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWC1D0.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_adc1.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\driver_adc1.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\driver_adc1.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  1
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_adc1.c
+      1          /**
+      2            *************************************************************************************
+      3            * @file    D_ADC1.c 
+      4            * @author  Regal Pamela Lee
+      5            * @version V1.0
+      6            * @date    18-Jun-2020
+      7            * @brief   Main Driver function/s for ADC1 hardware
+      8            * @note    read ADC1 continuously conversion so the sampling clock is slow
+      9            *************************************************************************************
+     10            */
+     11          #include "driver_adc1.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_DMA_GetRegAddr(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_DMA_GetRegAddr: (+1)
+   \        0x0   0x3040             ADDS     R0,R0,#+64
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_SetCommonPathInternalCh(ADC_Common_TypeDef *, uint32_t)
+   \                     LL_ADC_SetCommonPathInternalCh: (+1)
+   \        0x0   0x6802             LDR      R2,[R0, #+0]
+   \        0x2   0x....             LDR      R3,??DataTable22  ;; 0xfe3fffff
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x6003             STR      R3,[R0, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_SetTriggerFrequencyMode(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_SetTriggerFrequencyMode: (+1)
+   \        0x0   0x6902             LDR      R2,[R0, #+16]
+   \        0x2   0x....             LDR      R3,??DataTable22_1  ;; 0xdfffffff
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x6103             STR      R3,[R0, #+16]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_SetSamplingTimeCommonChannels(ADC_TypeDef *, uint32_t, uint32_t)
+   \                     LL_ADC_SetSamplingTimeCommonChannels: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x2304             MOVS     R3,#+4
+   \        0x4   0x6944             LDR      R4,[R0, #+20]
+   \        0x6   0x2507             MOVS     R5,#+7
+   \        0x8   0x000E             MOVS     R6,R1
+   \        0xA   0x401E             ANDS     R6,R6,R3
+   \        0xC   0x40B5             LSLS     R5,R5,R6
+   \        0xE   0x43AC             BICS     R4,R4,R5
+   \       0x10   0x000D             MOVS     R5,R1
+   \       0x12   0x402B             ANDS     R3,R3,R5
+   \       0x14   0x0015             MOVS     R5,R2
+   \       0x16   0x409D             LSLS     R5,R5,R3
+   \       0x18   0x4325             ORRS     R5,R5,R4
+   \       0x1A   0x6145             STR      R5,[R0, #+20]
+   \       0x1C   0xBC70             POP      {R4-R6}
+   \       0x1E   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_SetSequencerConfigurable(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_REG_SetSequencerConfigurable: (+1)
+   \        0x0   0x68C2             LDR      R2,[R0, #+12]
+   \        0x2   0x....             LDR      R3,??DataTable24  ;; 0xffdfffff
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x60C3             STR      R3,[R0, #+12]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_SetSequencerRanks(ADC_TypeDef *, uint32_t, uint32_t)
+   \                     LL_ADC_REG_SetSequencerRanks: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+   \        0x2   0x241F             MOVS     R4,#+31
+   \        0x4   0x250F             MOVS     R5,#+15
+   \        0x6   0x6A86             LDR      R6,[R0, #+40]
+   \        0x8   0x000F             MOVS     R7,R1
+   \        0xA   0x4027             ANDS     R7,R7,R4
+   \        0xC   0x002B             MOVS     R3,R5
+   \        0xE   0x40BB             LSLS     R3,R3,R7
+   \       0x10   0x439E             BICS     R6,R6,R3
+   \       0x12   0x0E93             LSRS     R3,R2,#+26
+   \       0x14   0x401D             ANDS     R5,R5,R3
+   \       0x16   0x000B             MOVS     R3,R1
+   \       0x18   0x401C             ANDS     R4,R4,R3
+   \       0x1A   0x40A5             LSLS     R5,R5,R4
+   \       0x1C   0x4335             ORRS     R5,R5,R6
+   \       0x1E   0x6285             STR      R5,[R0, #+40]
+   \       0x20   0xBCF0             POP      {R4-R7}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_SetDMATransfer(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_REG_SetDMATransfer: (+1)
+   \        0x0   0x68C2             LDR      R2,[R0, #+12]
+   \        0x2   0x2303             MOVS     R3,#+3
+   \        0x4   0x439A             BICS     R2,R2,R3
+   \        0x6   0x430A             ORRS     R2,R2,R1
+   \        0x8   0x60C2             STR      R2,[R0, #+12]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_REG_GetDMATransfer(ADC_TypeDef *)
+   \                     LL_ADC_REG_GetDMATransfer: (+1)
+   \        0x0   0x68C0             LDR      R0,[R0, #+12]
+   \        0x2   0x0780             LSLS     R0,R0,#+30       ;; ZeroExtS R0,R0,#+30,#+30
+   \        0x4   0x0F80             LSRS     R0,R0,#+30
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_SetChannelSamplingTime(ADC_TypeDef *, uint32_t, uint32_t)
+   \                     LL_ADC_SetChannelSamplingTime: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x6943             LDR      R3,[R0, #+20]
+   \        0x4   0x020C             LSLS     R4,R1,#+8
+   \        0x6   0x43A3             BICS     R3,R3,R4
+   \        0x8   0x020C             LSLS     R4,R1,#+8
+   \        0xA   0x4014             ANDS     R4,R4,R2
+   \        0xC   0x....             LDR      R5,??DataTable25  ;; 0x7ffff00
+   \        0xE   0x4025             ANDS     R5,R5,R4
+   \       0x10   0x431D             ORRS     R5,R5,R3
+   \       0x12   0x6145             STR      R5,[R0, #+20]
+   \       0x14   0xBC30             POP      {R4,R5}
+   \       0x16   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_SetOverSamplingScope(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_SetOverSamplingScope: (+1)
+   \        0x0   0x6902             LDR      R2,[R0, #+16]
+   \        0x2   0x2301             MOVS     R3,#+1
+   \        0x4   0x439A             BICS     R2,R2,R3
+   \        0x6   0x430A             ORRS     R2,R2,R1
+   \        0x8   0x6102             STR      R2,[R0, #+16]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_EnableInternalRegulator(ADC_TypeDef *)
+   \                     LL_ADC_EnableInternalRegulator: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable25_1  ;; 0x7fffffe8
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x2180             MOVS     R1,#+128
+   \        0x8   0x0549             LSLS     R1,R1,#+21       ;; #+268435456
+   \        0xA   0x4311             ORRS     R1,R1,R2
+   \        0xC   0x6081             STR      R1,[R0, #+8]
+   \        0xE   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_Enable(ADC_TypeDef *)
+   \                     LL_ADC_Enable: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable25_1  ;; 0x7fffffe8
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x2101             MOVS     R1,#+1
+   \        0x8   0x4311             ORRS     R1,R1,R2
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_IsEnabled(ADC_TypeDef *)
+   \                     LL_ADC_IsEnabled: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x6   0x0FC0             LSRS     R0,R0,#+31
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_StartCalibration(ADC_TypeDef *)
+   \                     LL_ADC_StartCalibration: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable25_1  ;; 0x7fffffe8
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x2180             MOVS     R1,#+128
+   \        0x8   0x0609             LSLS     R1,R1,#+24       ;; #-2147483648
+   \        0xA   0x4311             ORRS     R1,R1,R2
+   \        0xC   0x6081             STR      R1,[R0, #+8]
+   \        0xE   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_IsCalibrationOnGoing(ADC_TypeDef *)
+   \                     LL_ADC_IsCalibrationOnGoing: (+1)
+   \        0x0   0x6880             LDR      R0,[R0, #+8]
+   \        0x2   0x0FC0             LSRS     R0,R0,#+31
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_StartConversion(ADC_TypeDef *)
+   \                     LL_ADC_REG_StartConversion: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable25_1  ;; 0x7fffffe8
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x2104             MOVS     R1,#+4
+   \        0x8   0x4311             ORRS     R1,R1,R2
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_IsActiveFlag_ADRDY(ADC_TypeDef *)
+   \                     LL_ADC_IsActiveFlag_ADRDY: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x6   0x0FC0             LSRS     R0,R0,#+31
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_EnableIT_EOC(ADC_TypeDef *)
+   \                     LL_ADC_EnableIT_EOC: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x2204             MOVS     R2,#+4
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6042             STR      R2,[R0, #+4]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_DisableIT_EOC(ADC_TypeDef *)
+   \                     LL_ADC_DisableIT_EOC: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x2204             MOVS     R2,#+4
+   \        0x4   0x4391             BICS     R1,R1,R2
+   \        0x6   0x6041             STR      R1,[R0, #+4]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_DisableIT_EOS(ADC_TypeDef *)
+   \                     LL_ADC_DisableIT_EOS: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x2208             MOVS     R2,#+8
+   \        0x4   0x4391             BICS     R1,R1,R2
+   \        0x6   0x6041             STR      R1,[R0, #+4]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_EnableClock(uint32_t)
+   \                     LL_APB2_GRP1_EnableClock: (+1)
+   \        0x0   0xB081             SUB      SP,SP,#+4
+   \        0x2   0x....             LDR      R1,??DataTable25_2  ;; 0x40021040
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x4302             ORRS     R2,R2,R0
+   \        0x8   0x600A             STR      R2,[R1, #+0]
+   \        0xA   0x6809             LDR      R1,[R1, #+0]
+   \        0xC   0x4001             ANDS     R1,R1,R0
+   \        0xE   0x9100             STR      R1,[SP, #+0]
+   \       0x10   0x9900             LDR      R1,[SP, #+0]
+   \       0x12   0xB001             ADD      SP,SP,#+4
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_IOP_GRP1_EnableClock(uint32_t)
+   \                     LL_IOP_GRP1_EnableClock: (+1)
+   \        0x0   0xB081             SUB      SP,SP,#+4
+   \        0x2   0x....             LDR      R1,??DataTable25_3  ;; 0x40021034
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x4302             ORRS     R2,R2,R0
+   \        0x8   0x600A             STR      R2,[R1, #+0]
+   \        0xA   0x6809             LDR      R1,[R1, #+0]
+   \        0xC   0x4001             ANDS     R1,R1,R0
+   \        0xE   0x9100             STR      R1,[SP, #+0]
+   \       0x10   0x9900             LDR      R1,[SP, #+0]
+   \       0x12   0xB001             ADD      SP,SP,#+4
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMAMUX_SetRequestID(struct <unnamed>#22 *, uint32_t, uint32_t)
+   \                     LL_DMAMUX_SetRequestID: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x....             LDR      R3,??DataTable25_4  ;; 0x40020800
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x434C             MULS     R4,R1,R4
+   \        0x8   0x591C             LDR      R4,[R3, R4]
+   \        0xA   0x25FF             MOVS     R5,#+255
+   \        0xC   0x43AC             BICS     R4,R4,R5
+   \        0xE   0x4314             ORRS     R4,R4,R2
+   \       0x10   0x2504             MOVS     R5,#+4
+   \       0x12   0x434D             MULS     R5,R1,R5
+   \       0x14   0x515C             STR      R4,[R3, R5]
+   \       0x16   0xBC30             POP      {R4,R5}
+   \       0x18   0x4770             BX       LR               ;; return
+
+   \                                 In section .rodata, align 4
+   \   static __absolute uint8_t const CHANNEL_OFFSET_TAB[5]
+   \                     CHANNEL_OFFSET_TAB:
+   \        0x0   0x08 0x1C          DC8 8, 28, 48, 68, 88
+
+   \              0x30 0x44    
+
+   \              0x58
+   \        0x5                      DS8 3
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_EnableChannel(DMA_TypeDef *, uint32_t)
+   \                     LL_DMA_EnableChannel: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0x....             LDR      R4,??DataTable25_5
+   \        0x6   0x1863             ADDS     R3,R4,R1
+   \        0x8   0x1E5B             SUBS     R3,R3,#+1
+   \        0xA   0x781B             LDRB     R3,[R3, #+0]
+   \        0xC   0x18D3             ADDS     R3,R2,R3
+   \        0xE   0x1864             ADDS     R4,R4,R1
+   \       0x10   0x1E64             SUBS     R4,R4,#+1
+   \       0x12   0x7824             LDRB     R4,[R4, #+0]
+   \       0x14   0x1914             ADDS     R4,R2,R4
+   \       0x16   0x6824             LDR      R4,[R4, #+0]
+   \       0x18   0x2501             MOVS     R5,#+1
+   \       0x1A   0x4325             ORRS     R5,R5,R4
+   \       0x1C   0x601D             STR      R5,[R3, #+0]
+   \       0x1E   0xBC30             POP      {R4,R5}
+   \       0x20   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetDataTransferDirection(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetDataTransferDirection: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x....             LDR      R6,??DataTable25_6  ;; 0xffffbfef
+   \       0x1A   0x402E             ANDS     R6,R6,R5
+   \       0x1C   0x4316             ORRS     R6,R6,R2
+   \       0x1E   0x6026             STR      R6,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetMode(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetMode: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x2620             MOVS     R6,#+32
+   \       0x1A   0x43B5             BICS     R5,R5,R6
+   \       0x1C   0x4315             ORRS     R5,R5,R2
+   \       0x1E   0x6025             STR      R5,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetPeriphIncMode(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetPeriphIncMode: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x2640             MOVS     R6,#+64
+   \       0x1A   0x43B5             BICS     R5,R5,R6
+   \       0x1C   0x4315             ORRS     R5,R5,R2
+   \       0x1E   0x6025             STR      R5,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetMemoryIncMode(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetMemoryIncMode: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x2680             MOVS     R6,#+128
+   \       0x1A   0x43B5             BICS     R5,R5,R6
+   \       0x1C   0x4315             ORRS     R5,R5,R2
+   \       0x1E   0x6025             STR      R5,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetPeriphSize(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetPeriphSize: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x....             LDR      R6,??DataTable27  ;; 0xfffffcff
+   \       0x1A   0x402E             ANDS     R6,R6,R5
+   \       0x1C   0x4316             ORRS     R6,R6,R2
+   \       0x1E   0x6026             STR      R6,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetMemorySize(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetMemorySize: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x....             LDR      R6,??DataTable27_1  ;; 0xfffff3ff
+   \       0x1A   0x402E             ANDS     R6,R6,R5
+   \       0x1C   0x4316             ORRS     R6,R6,R2
+   \       0x1E   0x6026             STR      R6,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetChannelPriorityLevel(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetChannelPriorityLevel: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x682D             LDR      R5,[R5, #+0]
+   \       0x18   0x....             LDR      R6,??DataTable27_2  ;; 0xffffcfff
+   \       0x1A   0x402E             ANDS     R6,R6,R5
+   \       0x1C   0x4316             ORRS     R6,R6,R2
+   \       0x1E   0x6026             STR      R6,[R4, #+0]
+   \       0x20   0xBC70             POP      {R4-R6}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetDataLength(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetDataLength: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0003             MOVS     R3,R0
+   \        0x4   0x....             LDR      R5,??DataTable25_5
+   \        0x6   0x186C             ADDS     R4,R5,R1
+   \        0x8   0x1E64             SUBS     R4,R4,#+1
+   \        0xA   0x7824             LDRB     R4,[R4, #+0]
+   \        0xC   0x191C             ADDS     R4,R3,R4
+   \        0xE   0x186D             ADDS     R5,R5,R1
+   \       0x10   0x1E6D             SUBS     R5,R5,#+1
+   \       0x12   0x782D             LDRB     R5,[R5, #+0]
+   \       0x14   0x195D             ADDS     R5,R3,R5
+   \       0x16   0x686D             LDR      R5,[R5, #+4]
+   \       0x18   0x0C2D             LSRS     R5,R5,#+16
+   \       0x1A   0x042D             LSLS     R5,R5,#+16
+   \       0x1C   0x4315             ORRS     R5,R5,R2
+   \       0x1E   0x6065             STR      R5,[R4, #+4]
+   \       0x20   0xBC30             POP      {R4,R5}
+   \       0x22   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_ConfigAddresses(DMA_TypeDef *, uint32_t, uint32_t, uint32_t, uint32_t)
+   \                     LL_DMA_ConfigAddresses: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0x9C05             LDR      R4,[SP, #+20]
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x2C10             CMP      R4,#+16
+   \        0x8   0xD10B             BNE      ??LL_DMA_ConfigAddresses_0
+   \        0xA   0x....             LDR      R6,??DataTable25_5
+   \        0xC   0x1877             ADDS     R7,R6,R1
+   \        0xE   0x1E7F             SUBS     R7,R7,#+1
+   \       0x10   0x783F             LDRB     R7,[R7, #+0]
+   \       0x12   0x19EF             ADDS     R7,R5,R7
+   \       0x14   0x60FA             STR      R2,[R7, #+12]
+   \       0x16   0x1876             ADDS     R6,R6,R1
+   \       0x18   0x1E76             SUBS     R6,R6,#+1
+   \       0x1A   0x7836             LDRB     R6,[R6, #+0]
+   \       0x1C   0x19AE             ADDS     R6,R5,R6
+   \       0x1E   0x60B3             STR      R3,[R6, #+8]
+   \       0x20   0xE00A             B        ??LL_DMA_ConfigAddresses_1
+   \                     ??LL_DMA_ConfigAddresses_0: (+1)
+   \       0x22   0x....             LDR      R6,??DataTable25_5
+   \       0x24   0x1877             ADDS     R7,R6,R1
+   \       0x26   0x1E7F             SUBS     R7,R7,#+1
+   \       0x28   0x783F             LDRB     R7,[R7, #+0]
+   \       0x2A   0x19EF             ADDS     R7,R5,R7
+   \       0x2C   0x60BA             STR      R2,[R7, #+8]
+   \       0x2E   0x1876             ADDS     R6,R6,R1
+   \       0x30   0x1E76             SUBS     R6,R6,#+1
+   \       0x32   0x7836             LDRB     R6,[R6, #+0]
+   \       0x34   0x19AE             ADDS     R6,R5,R6
+   \       0x36   0x60F3             STR      R3,[R6, #+12]
+   \                     ??LL_DMA_ConfigAddresses_1: (+1)
+   \       0x38   0xBDF0             POP      {R4-R7,PC}       ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_SetPeriphRequest(DMA_TypeDef *, uint32_t, uint32_t)
+   \                     LL_DMA_SetPeriphRequest: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x....             LDR      R3,??DataTable30  ;; 0x400207fc
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x434C             MULS     R4,R1,R4
+   \        0x8   0x18E4             ADDS     R4,R4,R3
+   \        0xA   0x6824             LDR      R4,[R4, #+0]
+   \        0xC   0x25FF             MOVS     R5,#+255
+   \        0xE   0x43AC             BICS     R4,R4,R5
+   \       0x10   0x4314             ORRS     R4,R4,R2
+   \       0x12   0x2504             MOVS     R5,#+4
+   \       0x14   0x434D             MULS     R5,R1,R5
+   \       0x16   0x18EB             ADDS     R3,R5,R3
+   \       0x18   0x601C             STR      R4,[R3, #+0]
+   \       0x1A   0xBC30             POP      {R4,R5}
+   \       0x1C   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_DMA_IsActiveFlag_TC1(DMA_TypeDef *)
+   \                     LL_DMA_IsActiveFlag_TC1: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x0841             LSRS     R1,R0,#+1
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_DMA_IsActiveFlag_HT1(DMA_TypeDef *)
+   \                     LL_DMA_IsActiveFlag_HT1: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x0881             LSRS     R1,R0,#+2
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_DMA_IsActiveFlag_TE1(DMA_TypeDef *)
+   \                     LL_DMA_IsActiveFlag_TE1: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x08C1             LSRS     R1,R0,#+3
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_ClearFlag_TC1(DMA_TypeDef *)
+   \                     LL_DMA_ClearFlag_TC1: (+1)
+   \        0x0   0x2102             MOVS     R1,#+2
+   \        0x2   0x6041             STR      R1,[R0, #+4]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_ClearFlag_HT1(DMA_TypeDef *)
+   \                     LL_DMA_ClearFlag_HT1: (+1)
+   \        0x0   0x2104             MOVS     R1,#+4
+   \        0x2   0x6041             STR      R1,[R0, #+4]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_ClearFlag_TE1(DMA_TypeDef *)
+   \                     LL_DMA_ClearFlag_TE1: (+1)
+   \        0x0   0x2108             MOVS     R1,#+8
+   \        0x2   0x6041             STR      R1,[R0, #+4]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_EnableIT_TC(DMA_TypeDef *, uint32_t)
+   \                     LL_DMA_EnableIT_TC: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0x....             LDR      R4,??DataTable25_5
+   \        0x6   0x1863             ADDS     R3,R4,R1
+   \        0x8   0x1E5B             SUBS     R3,R3,#+1
+   \        0xA   0x781B             LDRB     R3,[R3, #+0]
+   \        0xC   0x18D3             ADDS     R3,R2,R3
+   \        0xE   0x1864             ADDS     R4,R4,R1
+   \       0x10   0x1E64             SUBS     R4,R4,#+1
+   \       0x12   0x7824             LDRB     R4,[R4, #+0]
+   \       0x14   0x1914             ADDS     R4,R2,R4
+   \       0x16   0x6824             LDR      R4,[R4, #+0]
+   \       0x18   0x2502             MOVS     R5,#+2
+   \       0x1A   0x4325             ORRS     R5,R5,R4
+   \       0x1C   0x601D             STR      R5,[R3, #+0]
+   \       0x1E   0xBC30             POP      {R4,R5}
+   \       0x20   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_EnableIT_HT(DMA_TypeDef *, uint32_t)
+   \                     LL_DMA_EnableIT_HT: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0x....             LDR      R4,??DataTable25_5
+   \        0x6   0x1863             ADDS     R3,R4,R1
+   \        0x8   0x1E5B             SUBS     R3,R3,#+1
+   \        0xA   0x781B             LDRB     R3,[R3, #+0]
+   \        0xC   0x18D3             ADDS     R3,R2,R3
+   \        0xE   0x1864             ADDS     R4,R4,R1
+   \       0x10   0x1E64             SUBS     R4,R4,#+1
+   \       0x12   0x7824             LDRB     R4,[R4, #+0]
+   \       0x14   0x1914             ADDS     R4,R2,R4
+   \       0x16   0x6824             LDR      R4,[R4, #+0]
+   \       0x18   0x2504             MOVS     R5,#+4
+   \       0x1A   0x4325             ORRS     R5,R5,R4
+   \       0x1C   0x601D             STR      R5,[R3, #+0]
+   \       0x1E   0xBC30             POP      {R4,R5}
+   \       0x20   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_DMA_EnableIT_TE(DMA_TypeDef *, uint32_t)
+   \                     LL_DMA_EnableIT_TE: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0x....             LDR      R4,??DataTable25_5
+   \        0x6   0x1863             ADDS     R3,R4,R1
+   \        0x8   0x1E5B             SUBS     R3,R3,#+1
+   \        0xA   0x781B             LDRB     R3,[R3, #+0]
+   \        0xC   0x18D3             ADDS     R3,R2,R3
+   \        0xE   0x1864             ADDS     R4,R4,R1
+   \       0x10   0x1E64             SUBS     R4,R4,#+1
+   \       0x12   0x7824             LDRB     R4,[R4, #+0]
+   \       0x14   0x1914             ADDS     R4,R2,R4
+   \       0x16   0x6824             LDR      R4,[R4, #+0]
+   \       0x18   0x2508             MOVS     R5,#+8
+   \       0x1A   0x4325             ORRS     R5,R5,R4
+   \       0x1C   0x601D             STR      R5,[R3, #+0]
+   \       0x1E   0xBC30             POP      {R4,R5}
+   \       0x20   0x4770             BX       LR               ;; return
+     12          #include "main.h"
+     13          #include "stdio.h" //SPA
+     14          
+     15          void MX_ADC1_Init(void); 
+     16          
+     17          //static Ram_Buf_Handle adc1_Control_StructMem_u32;
+
+   \                                 In section .bss, align 4
+     18          ADC1_Control adc1_Control; 
+   \                     adc1_Control:
+   \        0x0                      DS8 16
+     19          
+     20          extern uint64_t irqRequestReg_u64;
+     21          extern ProcessInfo processInfoTable[];
+     22          
+
+   \                                 In section .bss, align 1
+     23          uint8_t ADC1_Digital_filter_index = 0; //
+   \                     ADC1_Digital_filter_index:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+     24          uint16_t ADC1Filter_Ch1[AVERAGING_BUF_SIZE]; // = {0,0,0,0}; //0-10V input
+   \                     ADC1Filter_Ch1:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     25          uint16_t ADC1Filter_Ch2[AVERAGING_BUF_SIZE]; // = {0,0,0,0}; //4-20mA input
+   \                     ADC1Filter_Ch2:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     26          uint16_t ADC1Filter_Ch_Temp[AVERAGING_BUF_SIZE]; // = {0,0,0,0};
+   \                     ADC1Filter_Ch_Temp:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 8
+     27          uint64_t adc1_Result_Sum_u64[3] = {0,0,0};
+   \                     adc1_Result_Sum_u64:
+   \        0x0                      DS8 24
+     28          
+     29          /* Exported types ------------------------------------------------------------*/
+     30          /* Exported constants --------------------------------------------------------*/
+     31              
+     32          /**
+     33          * @brief ADC1 Initialization Function
+     34          * @param None
+     35          * @retval None
+     36          */
+
+   \                                 In section .text, align 2, keep-with-next
+     37          void MX_ADC1_Init(void)
+     38          {
+   \                     MX_ADC1_Init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB090             SUB      SP,SP,#+64
+   \        0x4   0x2218             MOVS     R2,#+24
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0xA80A             ADD      R0,SP,#+40
+   \        0xA   0x....'....        BL       memset
+   \        0xE   0x2210             MOVS     R2,#+16
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0xA806             ADD      R0,SP,#+24
+   \       0x14   0x....'....        BL       memset
+   \       0x18   0x2218             MOVS     R2,#+24
+   \       0x1A   0x2100             MOVS     R1,#+0
+   \       0x1C   0x4668             MOV      R0,SP
+   \       0x1E   0x....'....        BL       memset
+     39            
+     40              /* USER CODE BEGIN ADC1_Init 0 */
+     41          
+     42            /* USER CODE END ADC1_Init 0 */
+     43          
+     44            LL_ADC_REG_InitTypeDef ADC_REG_InitStruct = {0};
+     45            LL_ADC_InitTypeDef ADC_InitStruct = {0};
+     46          
+     47            LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+     48          
+     49            /* Peripheral clock enable */
+     50            LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC);
+   \       0x22   0x2080             MOVS     R0,#+128
+   \       0x24   0x0340             LSLS     R0,R0,#+13       ;; #+1048576
+   \       0x26   0x....'....        BL       LL_APB2_GRP1_EnableClock
+     51            
+     52            LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+   \       0x2A   0x2001             MOVS     R0,#+1
+   \       0x2C   0x....'....        BL       LL_IOP_GRP1_EnableClock
+     53            /**ADC1 GPIO Configuration  
+     54            PA0   ------> ADC1_IN0
+     55            PA1   ------> ADC1_IN1 
+     56            */
+     57            GPIO_InitStruct.Pin = ANALOG_0_10V_Pin;
+   \       0x30   0x2401             MOVS     R4,#+1
+   \       0x32   0x9400             STR      R4,[SP, #+0]
+     58            GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+   \       0x34   0x2603             MOVS     R6,#+3
+   \       0x36   0x9601             STR      R6,[SP, #+4]
+     59            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x38   0x2500             MOVS     R5,#+0
+   \       0x3A   0x9504             STR      R5,[SP, #+16]
+     60            LL_GPIO_Init(ANALOG_0_10V_GPIO_Port, &GPIO_InitStruct);
+   \       0x3C   0x27A0             MOVS     R7,#+160
+   \       0x3E   0x05FF             LSLS     R7,R7,#+23       ;; #+1342177280
+   \       0x40   0x4669             MOV      R1,SP
+   \       0x42   0x0038             MOVS     R0,R7
+   \       0x44   0x....'....        BL       LL_GPIO_Init
+     61          
+     62            GPIO_InitStruct.Pin = ANALOG_4_20MA_Pin;
+   \       0x48   0x9400             STR      R4,[SP, #+0]
+     63            GPIO_InitStruct.Mode = LL_GPIO_MODE_ANALOG;
+   \       0x4A   0x9601             STR      R6,[SP, #+4]
+     64            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x4C   0x9504             STR      R5,[SP, #+16]
+     65            LL_GPIO_Init(ANALOG_4_20MA_GPIO_Port, &GPIO_InitStruct);
+   \       0x4E   0x4669             MOV      R1,SP
+   \       0x50   0x0038             MOVS     R0,R7
+   \       0x52   0x....'....        BL       LL_GPIO_Init
+     66          
+     67            /* ADC1 DMA Init */
+     68            
+     69            /* ADC1 Init */
+     70            LL_DMA_SetPeriphRequest(DMA1, LL_DMA_CHANNEL_1, LL_DMAMUX_REQ_ADC1);
+   \       0x56   0x....             LDR      R4,??DataTable31  ;; 0x40020000
+   \       0x58   0x2205             MOVS     R2,#+5
+   \       0x5A   0x2101             MOVS     R1,#+1
+   \       0x5C   0x0020             MOVS     R0,R4
+   \       0x5E   0x....'....        BL       LL_DMA_SetPeriphRequest
+     71          
+     72            LL_DMA_SetDataTransferDirection(DMA1, LL_DMA_CHANNEL_1, LL_DMA_DIRECTION_PERIPH_TO_MEMORY);
+   \       0x62   0x2200             MOVS     R2,#+0
+   \       0x64   0x2101             MOVS     R1,#+1
+   \       0x66   0x0020             MOVS     R0,R4
+   \       0x68   0x....'....        BL       LL_DMA_SetDataTransferDirection
+     73          
+     74            LL_DMA_SetChannelPriorityLevel(DMA1, LL_DMA_CHANNEL_1, LL_DMA_PRIORITY_LOW);
+   \       0x6C   0x2200             MOVS     R2,#+0
+   \       0x6E   0x2101             MOVS     R1,#+1
+   \       0x70   0x0020             MOVS     R0,R4
+   \       0x72   0x....'....        BL       LL_DMA_SetChannelPriorityLevel
+     75          
+     76            LL_DMA_SetMode(DMA1, LL_DMA_CHANNEL_1, LL_DMA_MODE_CIRCULAR);
+   \       0x76   0x2220             MOVS     R2,#+32
+   \       0x78   0x2101             MOVS     R1,#+1
+   \       0x7A   0x0020             MOVS     R0,R4
+   \       0x7C   0x....'....        BL       LL_DMA_SetMode
+     77          
+     78            LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_CHANNEL_1, LL_DMA_PERIPH_NOINCREMENT);
+   \       0x80   0x2200             MOVS     R2,#+0
+   \       0x82   0x2101             MOVS     R1,#+1
+   \       0x84   0x0020             MOVS     R0,R4
+   \       0x86   0x....'....        BL       LL_DMA_SetPeriphIncMode
+     79          
+     80            LL_DMA_SetMemoryIncMode(DMA1, LL_DMA_CHANNEL_1, LL_DMA_MEMORY_INCREMENT);
+   \       0x8A   0x2280             MOVS     R2,#+128
+   \       0x8C   0x2101             MOVS     R1,#+1
+   \       0x8E   0x0020             MOVS     R0,R4
+   \       0x90   0x....'....        BL       LL_DMA_SetMemoryIncMode
+     81          
+     82            LL_DMA_SetPeriphSize(DMA1, LL_DMA_CHANNEL_1, LL_DMA_PDATAALIGN_HALFWORD);
+   \       0x94   0x2280             MOVS     R2,#+128
+   \       0x96   0x0052             LSLS     R2,R2,#+1        ;; #+256
+   \       0x98   0x2101             MOVS     R1,#+1
+   \       0x9A   0x0020             MOVS     R0,R4
+   \       0x9C   0x....'....        BL       LL_DMA_SetPeriphSize
+     83          
+     84            LL_DMA_SetMemorySize(DMA1, LL_DMA_CHANNEL_1, LL_DMA_MDATAALIGN_HALFWORD);
+   \       0xA0   0x2280             MOVS     R2,#+128
+   \       0xA2   0x00D2             LSLS     R2,R2,#+3        ;; #+1024
+   \       0xA4   0x2101             MOVS     R1,#+1
+   \       0xA6   0x0020             MOVS     R0,R4
+   \       0xA8   0x....'....        BL       LL_DMA_SetMemorySize
+     85            
+     86            //LL_DMA_SetMemoryAddress(DMA1, LL_DMA_CHANNEL_1, (uint32_t)&adc1Result); //SPA
+     87           // LL_ADC_REG_SetDMATransfer(ADC1, LL_ADC_REG_DMA_TRANSFER_UNLIMITED); //SPA
+     88          
+     89            /* ADC1 interrupt Init */
+     90            //NVIC_SetPriority(ADC1_IRQn, 2);
+     91            //NVIC_EnableIRQ(ADC1_IRQn);
+     92          
+     93            /* USER CODE BEGIN ADC1_Init 1 */
+     94          
+     95            /* USER CODE END ADC1_Init 1 */
+     96            /** Configure Regular Channel 
+     97            */
+     98            LL_ADC_SetCommonPathInternalCh(__LL_ADC_COMMON_INSTANCE(ADC1), LL_ADC_CHANNEL_TEMPSENSOR
+     99                                        );
+   \       0xAC   0x....             LDR      R7,??DataTable31_1  ;; 0xb0001000
+   \       0xAE   0x0039             MOVS     R1,R7
+   \       0xB0   0x....             LDR      R0,??DataTable31_2  ;; 0x40012708
+   \       0xB2   0x....'....        BL       LL_ADC_SetCommonPathInternalCh
+    100            /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion) 
+    101            */
+    102            ADC_REG_InitStruct.TriggerSource = LL_ADC_REG_TRIG_SOFTWARE;
+   \       0xB6   0x950A             STR      R5,[SP, #+40]
+    103            ADC_REG_InitStruct.SequencerLength = LL_ADC_REG_SEQ_SCAN_ENABLE_3RANKS;
+   \       0xB8   0x20F0             MOVS     R0,#+240
+   \       0xBA   0x0200             LSLS     R0,R0,#+8        ;; #+61440
+   \       0xBC   0x900B             STR      R0,[SP, #+44]
+    104            ADC_REG_InitStruct.SequencerDiscont = LL_ADC_REG_SEQ_DISCONT_DISABLE;
+   \       0xBE   0x950C             STR      R5,[SP, #+48]
+    105            ADC_REG_InitStruct.ContinuousMode = LL_ADC_REG_CONV_CONTINUOUS;
+   \       0xC0   0x2080             MOVS     R0,#+128
+   \       0xC2   0x0180             LSLS     R0,R0,#+6        ;; #+8192
+   \       0xC4   0x900D             STR      R0,[SP, #+52]
+    106            ADC_REG_InitStruct.DMATransfer = LL_ADC_REG_DMA_TRANSFER_UNLIMITED; // LL_ADC_REG_DMA_TRANSFER_LIMITED;
+   \       0xC6   0x960E             STR      R6,[SP, #+56]
+    107            ADC_REG_InitStruct.Overrun = LL_ADC_REG_OVR_DATA_PRESERVED;
+   \       0xC8   0x950F             STR      R5,[SP, #+60]
+    108            LL_ADC_REG_Init(ADC1, &ADC_REG_InitStruct);
+   \       0xCA   0x....             LDR      R4,??DataTable31_3  ;; 0x40012400
+   \       0xCC   0xA90A             ADD      R1,SP,#+40
+   \       0xCE   0x0020             MOVS     R0,R4
+   \       0xD0   0x....'....        BL       LL_ADC_REG_Init
+    109            LL_ADC_SetOverSamplingScope(ADC1, LL_ADC_OVS_DISABLE);
+   \       0xD4   0x2100             MOVS     R1,#+0
+   \       0xD6   0x0020             MOVS     R0,R4
+   \       0xD8   0x....'....        BL       LL_ADC_SetOverSamplingScope
+    110            LL_ADC_SetTriggerFrequencyMode(ADC1, LL_ADC_CLOCK_FREQ_MODE_LOW);
+   \       0xDC   0x2180             MOVS     R1,#+128
+   \       0xDE   0x0489             LSLS     R1,R1,#+18       ;; #+33554432
+   \       0xE0   0x0020             MOVS     R0,R4
+   \       0xE2   0x....'....        BL       LL_ADC_SetTriggerFrequencyMode
+    111            LL_ADC_REG_SetSequencerConfigurable(ADC1, LL_ADC_REG_SEQ_CONFIGURABLE);
+   \       0xE6   0x2180             MOVS     R1,#+128
+   \       0xE8   0x0389             LSLS     R1,R1,#+14       ;; #+2097152
+   \       0xEA   0x0020             MOVS     R0,R4
+   \       0xEC   0x....'....        BL       LL_ADC_REG_SetSequencerConfigurable
+    112            LL_ADC_SetSamplingTimeCommonChannels(ADC1, LL_ADC_SAMPLINGTIME_COMMON_1, LL_ADC_SAMPLINGTIME_160CYCLES_5);
+   \       0xF0   0x2207             MOVS     R2,#+7
+   \       0xF2   0x2100             MOVS     R1,#+0
+   \       0xF4   0x0020             MOVS     R0,R4
+   \       0xF6   0x....'....        BL       LL_ADC_SetSamplingTimeCommonChannels
+    113            LL_ADC_SetSamplingTimeCommonChannels(ADC1, LL_ADC_SAMPLINGTIME_COMMON_2, LL_ADC_SAMPLINGTIME_160CYCLES_5);
+   \       0xFA   0x2207             MOVS     R2,#+7
+   \       0xFC   0x....             LDR      R1,??DataTable31_4  ;; 0x7ffff04
+   \       0xFE   0x0020             MOVS     R0,R4
+   \      0x100   0x....'....        BL       LL_ADC_SetSamplingTimeCommonChannels
+    114            LL_ADC_DisableIT_EOC(ADC1);
+   \      0x104   0x0020             MOVS     R0,R4
+   \      0x106   0x....'....        BL       LL_ADC_DisableIT_EOC
+    115            LL_ADC_DisableIT_EOS(ADC1);
+   \      0x10A   0x0020             MOVS     R0,R4
+   \      0x10C   0x....'....        BL       LL_ADC_DisableIT_EOS
+    116            ADC_InitStruct.Clock = LL_ADC_CLOCK_SYNC_PCLK_DIV4;
+   \      0x110   0x2080             MOVS     R0,#+128
+   \      0x112   0x0600             LSLS     R0,R0,#+24       ;; #-2147483648
+   \      0x114   0x9006             STR      R0,[SP, #+24]
+    117            ADC_InitStruct.Resolution = LL_ADC_RESOLUTION_12B;
+   \      0x116   0x9507             STR      R5,[SP, #+28]
+    118            ADC_InitStruct.DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
+   \      0x118   0x9508             STR      R5,[SP, #+32]
+    119            ADC_InitStruct.LowPowerMode = LL_ADC_LP_MODE_NONE;
+   \      0x11A   0x9509             STR      R5,[SP, #+36]
+    120            LL_ADC_Init(ADC1, &ADC_InitStruct);
+   \      0x11C   0xA906             ADD      R1,SP,#+24
+   \      0x11E   0x0020             MOVS     R0,R4
+   \      0x120   0x....'....        BL       LL_ADC_Init
+    121            /** Configure Regular Channel 
+    122            */
+    123            LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_0);
+   \      0x124   0x2201             MOVS     R2,#+1
+   \      0x126   0x2100             MOVS     R1,#+0
+   \      0x128   0x0020             MOVS     R0,R4
+   \      0x12A   0x....'....        BL       LL_ADC_REG_SetSequencerRanks
+    124            LL_ADC_SetChannelSamplingTime(ADC1, LL_ADC_CHANNEL_0, LL_ADC_SAMPLINGTIME_COMMON_1);
+   \      0x12E   0x2200             MOVS     R2,#+0
+   \      0x130   0x2101             MOVS     R1,#+1
+   \      0x132   0x0020             MOVS     R0,R4
+   \      0x134   0x....'....        BL       LL_ADC_SetChannelSamplingTime
+    125            /** Configure Regular Channel 
+    126            */
+    127            LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_2, LL_ADC_CHANNEL_1);
+   \      0x138   0x....             LDR      R5,??DataTable32  ;; 0x4000002
+   \      0x13A   0x002A             MOVS     R2,R5
+   \      0x13C   0x2104             MOVS     R1,#+4
+   \      0x13E   0x0020             MOVS     R0,R4
+   \      0x140   0x....'....        BL       LL_ADC_REG_SetSequencerRanks
+    128            LL_ADC_SetChannelSamplingTime(ADC1, LL_ADC_CHANNEL_1, LL_ADC_SAMPLINGTIME_COMMON_1);
+   \      0x144   0x2200             MOVS     R2,#+0
+   \      0x146   0x0029             MOVS     R1,R5
+   \      0x148   0x0020             MOVS     R0,R4
+   \      0x14A   0x....'....        BL       LL_ADC_SetChannelSamplingTime
+    129            /** Configure Regular Channel 
+    130            */
+    131            LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_3, LL_ADC_CHANNEL_TEMPSENSOR);
+   \      0x14E   0x003A             MOVS     R2,R7
+   \      0x150   0x2108             MOVS     R1,#+8
+   \      0x152   0x0020             MOVS     R0,R4
+   \      0x154   0x....'....        BL       LL_ADC_REG_SetSequencerRanks
+    132            LL_ADC_SetChannelSamplingTime(ADC1, LL_ADC_CHANNEL_TEMPSENSOR, LL_ADC_SAMPLINGTIME_COMMON_1);
+   \      0x158   0x2200             MOVS     R2,#+0
+   \      0x15A   0x0039             MOVS     R1,R7
+   \      0x15C   0x0020             MOVS     R0,R4
+   \      0x15E   0x....'....        BL       LL_ADC_SetChannelSamplingTime
+    133            /* USER CODE BEGIN ADC1_Init 2 */
+    134          
+    135            /* USER CODE END ADC1_Init 2 */
+    136          
+    137              
+    138            // USER CODE BEGIN ADC1_Init 2 
+    139            
+    140            //## Configuration of ADC interruptions ####################################
+    141            // Enable interruption ADC group regular end of unitary conversion 
+    142            LL_ADC_EnableIT_EOC(ADC1);
+   \      0x162   0x0020             MOVS     R0,R4
+   \      0x164   0x....'....        BL       LL_ADC_EnableIT_EOC
+    143            // USER CODE END ADC1_Init 2 
+    144          }
+   \      0x168   0xB011             ADD      SP,SP,#+68
+   \      0x16A   0xBDF0             POP      {R4-R7,PC}       ;; return
+    145          
+
+   \                                 In section .text, align 2, keep-with-next
+    146          void adc1_Init(){
+   \                     adc1_Init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    147            MX_ADC1_Init();  
+   \        0x2   0x....'....        BL       MX_ADC1_Init
+    148          }
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+    149          
+
+   \                                 In section .text, align 2, keep-with-next
+    150          void configDma(void)
+    151          {
+   \                     configDma: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    152          	// Select ADC as DMA transfer request.
+    153          	LL_DMAMUX_SetRequestID(DMAMUX1, LL_DMAMUX_CHANNEL_1, LL_DMAMUX_REQ_ADC1);
+   \        0x2   0x2205             MOVS     R2,#+5
+   \        0x4   0x2101             MOVS     R1,#+1
+   \        0x6   0x....             LDR      R0,??DataTable32_1  ;; 0x40020800
+   \        0x8   0x....'....        BL       LL_DMAMUX_SetRequestID
+    154           
+    155          	// DMA transfer addresses and size.
+    156          	LL_DMA_ConfigAddresses(DMA1, LL_DMA_CHANNEL_1,
+    157          	                       LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),
+    158          	                       (uint32_t)&(adc1_Control.adc1_Result),
+    159          	                       LL_DMA_DIRECTION_PERIPH_TO_MEMORY);
+   \        0xC   0x2100             MOVS     R1,#+0
+   \        0xE   0x....             LDR      R0,??DataTable31_3  ;; 0x40012400
+   \       0x10   0x....'....        BL       LL_ADC_DMA_GetRegAddr
+   \       0x14   0x0002             MOVS     R2,R0
+   \       0x16   0x....             LDR      R4,??DataTable31  ;; 0x40020000
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x9000             STR      R0,[SP, #+0]
+   \       0x1C   0x....             LDR      R3,??DataTable32_2
+   \       0x1E   0x2101             MOVS     R1,#+1
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x....'....        BL       LL_DMA_ConfigAddresses
+    160          	LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_1, NUM_OF_ADC1_CH);
+   \       0x26   0x2203             MOVS     R2,#+3
+   \       0x28   0x2101             MOVS     R1,#+1
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0x....'....        BL       LL_DMA_SetDataLength
+    161           
+    162          	LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_1); // Enable transfer complete interrupt.
+   \       0x30   0x2101             MOVS     R1,#+1
+   \       0x32   0x0020             MOVS     R0,R4
+   \       0x34   0x....'....        BL       LL_DMA_EnableIT_TC
+    163          	LL_DMA_EnableIT_HT(DMA1, LL_DMA_CHANNEL_1); // Enable half transfer interrupt.
+   \       0x38   0x2101             MOVS     R1,#+1
+   \       0x3A   0x0020             MOVS     R0,R4
+   \       0x3C   0x....'....        BL       LL_DMA_EnableIT_HT
+    164          	LL_DMA_EnableIT_TE(DMA1, LL_DMA_CHANNEL_1); // Enable transfer error interrupt.
+   \       0x40   0x2101             MOVS     R1,#+1
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x....'....        BL       LL_DMA_EnableIT_TE
+    165           
+    166          	// Enable
+    167          	LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_1);
+   \       0x48   0x2101             MOVS     R1,#+1
+   \       0x4A   0x0020             MOVS     R0,R4
+   \       0x4C   0x....'....        BL       LL_DMA_EnableChannel
+    168          }
+   \       0x50   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    169          
+    170          /**
+    171            * @brief  Perform ADC activation procedure to make it ready to convert
+    172            *         (ADC instance: ADC1).
+    173            * @note   Operations:
+    174            *         - ADC instance
+    175            *           - Run ADC self calibration
+    176            *           - Enable ADC
+    177            *         - ADC group regular
+    178            *           none: ADC conversion start-stop to be performed
+    179            *                 after this function
+    180            *         - ADC group injected
+    181            *           Feature not available                                  (feature not available on this STM32 serie)
+    182            * @param  None
+    183            * @retval None
+    184            */
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void activate_ADC(void)
+    186          {
+   \                     activate_ADC: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    187            __IO uint32_t wait_loop_index = 0U;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+    188            __IO uint32_t backup_setting_adc_dma_transfer = 0U;
+   \        0x6   0x9001             STR      R0,[SP, #+4]
+    189            #if (USE_TIMEOUT == 1)
+    190            uint32_t Timeout = 0U; /* Variable used for timeout management */
+    191            #endif /* USE_TIMEOUT */
+    192            
+    193            /*## Operation on ADC hierarchical scope: ADC instance #####################*/
+    194            
+    195            /* Note: Hardware constraint (refer to description of the functions         */
+    196            /*       below):                                                            */
+    197            /*       On this STM32 serie, setting of these features is conditioned to   */
+    198            /*       ADC state:                                                         */
+    199            /*       ADC must be disabled.                                              */
+    200            /* Note: In this example, all these checks are not necessary but are        */
+    201            /*       implemented anyway to show the best practice usages                */
+    202            /*       corresponding to reference manual procedure.                       */
+    203            /*       Software can be optimized by removing some of these checks, if     */
+    204            /*       they are not relevant considering previous settings and actions    */
+    205            /*       in user application.                                               */
+    206            if (LL_ADC_IsEnabled(ADC1) == 0)
+   \        0x8   0x....             LDR      R4,??DataTable31_3  ;; 0x40012400
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x....'....        BL       LL_ADC_IsEnabled
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD13F             BNE      ??activate_ADC_0
+    207            {
+    208              /* Enable ADC internal voltage regulator */
+    209              LL_ADC_EnableInternalRegulator(ADC1);
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x....'....        BL       LL_ADC_EnableInternalRegulator
+    210              
+    211              /* Delay for ADC internal voltage regulator stabilization.                */
+    212              /* Compute number of CPU cycles to wait for, from delay in us.            */
+    213              /* Note: Variable divided by 2 to compensate partially                    */
+    214              /*       CPU processing cycles (depends on compilation optimization).     */
+    215              /* Note: If system core clock frequency is below 200kHz, wait time        */
+    216              /*       is only a few CPU processing cycles.                             */
+    217              wait_loop_index = ((LL_ADC_DELAY_INTERNAL_REGUL_STAB_US * (SystemCoreClock / (100000 * 2))) / 10);
+   \       0x1A   0x....             LDR      R0,??DataTable32_3
+   \       0x1C   0x6800             LDR      R0,[R0, #+0]
+   \       0x1E   0x....             LDR      R1,??DataTable32_4  ;; 0x30d40
+   \       0x20   0x....'....        BL       __aeabi_uidiv
+   \       0x24   0x2114             MOVS     R1,#+20
+   \       0x26   0x4348             MULS     R0,R1,R0
+   \       0x28   0x210A             MOVS     R1,#+10
+   \       0x2A   0x....'....        BL       __aeabi_uidiv
+   \       0x2E   0x9000             STR      R0,[SP, #+0]
+    218              while(wait_loop_index != 0)
+   \                     ??activate_ADC_1: (+1)
+   \       0x30   0x9800             LDR      R0,[SP, #+0]
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD003             BEQ      ??activate_ADC_2
+    219              {
+    220                wait_loop_index--;
+   \       0x36   0x9800             LDR      R0,[SP, #+0]
+   \       0x38   0x1E40             SUBS     R0,R0,#+1
+   \       0x3A   0x9000             STR      R0,[SP, #+0]
+   \       0x3C   0xE7F8             B        ??activate_ADC_1
+    221              }
+    222              
+    223              /* Disable ADC DMA transfer request during calibration */
+    224              /* Note: Specificity of this STM32 serie: Calibration factor is           */
+    225              /*       available in data register and also transfered by DMA.           */
+    226              /*       To not insert ADC calibration factor among ADC conversion data   */
+    227              /*       in DMA destination address, DMA transfer must be disabled during */
+    228              /*       calibration.                                                     */
+    229              backup_setting_adc_dma_transfer = LL_ADC_REG_GetDMATransfer(ADC1);
+   \                     ??activate_ADC_2: (+1)
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x....'....        BL       LL_ADC_REG_GetDMATransfer
+   \       0x44   0x9001             STR      R0,[SP, #+4]
+    230              LL_ADC_REG_SetDMATransfer(ADC1, LL_ADC_REG_DMA_TRANSFER_NONE);
+   \       0x46   0x2100             MOVS     R1,#+0
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0x....'....        BL       LL_ADC_REG_SetDMATransfer
+    231              //LL_ADC_REG_SetDMATransfer(ADC1, LL_ADC_REG_DMA_TRANSFER_UNLIMITED); //SPA
+    232              /* Run ADC self calibration */
+    233              LL_ADC_StartCalibration(ADC1);
+   \       0x4E   0x0020             MOVS     R0,R4
+   \       0x50   0x....'....        BL       LL_ADC_StartCalibration
+    234              
+    235              /* Poll for ADC effectively calibrated */
+    236              #if (USE_TIMEOUT == 1)
+    237              Timeout = ADC_CALIBRATION_TIMEOUT_MS;
+    238              #endif /* USE_TIMEOUT */
+    239              
+    240              while (LL_ADC_IsCalibrationOnGoing(ADC1) != 0)
+   \                     ??activate_ADC_3: (+1)
+   \       0x54   0x0020             MOVS     R0,R4
+   \       0x56   0x....'....        BL       LL_ADC_IsCalibrationOnGoing
+   \       0x5A   0x2800             CMP      R0,#+0
+   \       0x5C   0xD1FA             BNE      ??activate_ADC_3
+    241              {
+    242              #if (USE_TIMEOUT == 1)
+    243                /* Check Systick counter flag to decrement the time-out value */
+    244                if (LL_SYSTICK_IsActiveCounterFlag())
+    245                {
+    246                  if(Timeout-- == 0)
+    247                  {
+    248                  /* Time-out occurred. Set LED to blinking mode */
+    249                  LED_Blinking(LED_BLINK_ERROR);
+    250                  }
+    251                }
+    252              #endif /* USE_TIMEOUT */
+    253              }
+    254              
+    255              /* Delay between ADC end of calibration and ADC enable.                   */
+    256              /* Note: Variable divided by 2 to compensate partially                    */
+    257              /*       CPU processing cycles (depends on compilation optimization).     */
+    258              wait_loop_index = (ADC_DELAY_CALIB_ENABLE_CPU_CYCLES >> 1);
+   \       0x5E   0x2020             MOVS     R0,#+32
+   \       0x60   0x9000             STR      R0,[SP, #+0]
+    259              while(wait_loop_index != 0)
+   \                     ??activate_ADC_4: (+1)
+   \       0x62   0x9800             LDR      R0,[SP, #+0]
+   \       0x64   0x2800             CMP      R0,#+0
+   \       0x66   0xD003             BEQ      ??activate_ADC_5
+    260              {
+    261                wait_loop_index--;
+   \       0x68   0x9800             LDR      R0,[SP, #+0]
+   \       0x6A   0x1E40             SUBS     R0,R0,#+1
+   \       0x6C   0x9000             STR      R0,[SP, #+0]
+   \       0x6E   0xE7F8             B        ??activate_ADC_4
+    262              }
+    263              
+    264              /* Restore ADC DMA transfer request after calibration */
+    265              LL_ADC_REG_SetDMATransfer(ADC1, backup_setting_adc_dma_transfer);
+   \                     ??activate_ADC_5: (+1)
+   \       0x70   0x9901             LDR      R1,[SP, #+4]
+   \       0x72   0x0020             MOVS     R0,R4
+   \       0x74   0x....'....        BL       LL_ADC_REG_SetDMATransfer
+    266              //LL_ADC_REG_SetDMATransfer(ADC1, LL_ADC_REG_DMA_TRANSFER_UNLIMITED); //SPA
+    267              
+    268              /* Enable ADC */
+    269              LL_ADC_Enable(ADC1);
+   \       0x78   0x0020             MOVS     R0,R4
+   \       0x7A   0x....'....        BL       LL_ADC_Enable
+    270              
+    271              ADC->CCR |= LL_ADC_PATH_INTERNAL_TEMPSENSOR; // Enable Temperature Sensor 
+   \       0x7E   0x....             LDR      R0,??DataTable31_2  ;; 0x40012708
+   \       0x80   0x6801             LDR      R1,[R0, #+0]
+   \       0x82   0x2280             MOVS     R2,#+128
+   \       0x84   0x0412             LSLS     R2,R2,#+16       ;; #+8388608
+   \       0x86   0x430A             ORRS     R2,R2,R1
+   \       0x88   0x6002             STR      R2,[R0, #+0]
+    272              
+    273              /* Poll for ADC ready to convert */
+    274              #if (USE_TIMEOUT == 1)
+    275              Timeout = ADC_ENABLE_TIMEOUT_MS;
+    276              #endif /* USE_TIMEOUT */
+    277              
+    278              while (LL_ADC_IsActiveFlag_ADRDY(ADC1) == 0)
+   \                     ??activate_ADC_6: (+1)
+   \       0x8A   0x0020             MOVS     R0,R4
+   \       0x8C   0x....'....        BL       LL_ADC_IsActiveFlag_ADRDY
+   \       0x90   0x2800             CMP      R0,#+0
+   \       0x92   0xD0FA             BEQ      ??activate_ADC_6
+    279              {
+    280              #if (USE_TIMEOUT == 1)
+    281                /* Check Systick counter flag to decrement the time-out value */
+    282                if (LL_SYSTICK_IsActiveCounterFlag())
+    283                {
+    284                  if(Timeout-- == 0)
+    285                  {
+    286                  /* Time-out occurred. Set LED to blinking mode */
+    287            //      LED_Blinking(LED_BLINK_ERROR);
+    288                  }
+    289                }
+    290              #endif /* USE_TIMEOUT */
+    291              }
+    292              
+    293              /* Note: ADC flag ADRDY is not cleared here to be able to check ADC       */
+    294              /*       status afterwards.                                               */
+    295              /*       This flag should be cleared at ADC Deactivation, before a new    */
+    296              /*       ADC activation, using function "LL_ADC_ClearFlag_ADRDY()".       */
+    297            }
+    298            
+    299            /*## Operation on ADC hierarchical scope: ADC group regular ################*/
+    300            /* Note: No operation on ADC group regular performed here.                  */
+    301            /*       ADC group regular conversions to be performed after this function  */
+    302            /*       using function:                                                    */
+    303            /*       "LL_ADC_REG_StartConversion();"                                    */
+    304            
+    305            /*## Operation on ADC hierarchical scope: ADC group injected ###############*/
+    306            /* Note: Feature not available on this STM32 serie */ 
+    307            
+    308          }
+   \                     ??activate_ADC_0: (+1)
+   \       0x94   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+    309          
+
+   \                                 In section .bss, align 1
+    310          uint8_t avg_exponent_u8 = 0;
+   \                     avg_exponent_u8:
+   \        0x0                      DS8 1
+
+   \                                 In section .text, align 2, keep-with-next
+    311          void CalculatueExponentAdc1()
+    312          {
+   \                     CalculatueExponentAdc1: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    313            uint8_t result_u8 = AVERAGING_BUF_SIZE;
+   \        0x2   0x2004             MOVS     R0,#+4
+    314            do{
+    315              avg_exponent_u8++;
+   \                     ??CalculatueExponentAdc1_0: (+1)
+   \        0x4   0x....             LDR      R4,??DataTable32_5
+   \        0x6   0x7821             LDRB     R1,[R4, #+0]
+   \        0x8   0x1C49             ADDS     R1,R1,#+1
+   \        0xA   0x7021             STRB     R1,[R4, #+0]
+    316              result_u8 =(uint8_t)(result_u8/2);
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2102             MOVS     R1,#+2
+   \       0x10   0x....'....        BL       __aeabi_idiv
+    317            }while(result_u8);
+   \       0x14   0x0001             MOVS     R1,R0
+   \       0x16   0xB2C9             UXTB     R1,R1
+   \       0x18   0x2900             CMP      R1,#+0
+   \       0x1A   0xD1F3             BNE      ??CalculatueExponentAdc1_0
+    318            avg_exponent_u8--;
+   \       0x1C   0x7821             LDRB     R1,[R4, #+0]
+   \       0x1E   0x1E49             SUBS     R1,R1,#+1
+   \       0x20   0x7021             STRB     R1,[R4, #+0]
+    319            
+    320          }
+   \       0x22   0xBD10             POP      {R4,PC}          ;; return
+    321          
+
+   \                                 In section .text, align 2, keep-with-next
+    322          void start_ADC1_Conversion(){
+   \                     start_ADC1_Conversion: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    323            CalculatueExponentAdc1();
+   \        0x2   0x....'....        BL       CalculatueExponentAdc1
+    324            
+    325            LL_ADC_REG_StartConversion(ADC1);
+   \        0x6   0x....             LDR      R0,??DataTable31_3  ;; 0x40012400
+   \        0x8   0x....'....        BL       LL_ADC_REG_StartConversion
+    326            
+    327          }
+   \        0xC   0xBD01             POP      {R0,PC}          ;; return
+    328          
+    329          /*  
+    330          */
+    331          
+    332          /**
+    333            ********************************************************************************************************************************
+    334            * @brief   Calculate intenal micro temperature in deg C
+    335            * @details
+    336            * @param   temperature_adc_u16. Measured temperature by ADC
+    337            * @retval  temperature_degc_s16
+    338            * @note   Calculation formula:
+    339            *           Temperature = ((TS_ADC_DATA - TS_CAL1)
+    340            *                           * (TS_CAL2_TEMP - TS_CAL1_TEMP))
+    341            *                         / (TS_CAL2 - TS_CAL1) + TS_CAL1_TEMP
+    342            *           with TS_ADC_DATA = temperature sensor raw data measured by ADC
+    343            *                Avg_Slope = (TS_CAL2 - TS_CAL1)
+    344            *                            / (TS_CAL2_TEMP - TS_CAL1_TEMP)
+    345            *                TS_CAL1   = equivalent TS_ADC_DATA at temperature
+    346            *                            TEMP_DEGC_CAL1 (calibrated in factory)
+    347            *                TS_CAL2   = equivalent TS_ADC_DATA at temperature
+    348            *                            TEMP_DEGC_CAL2 (calibrated in factory)
+    349            ********************************************************************************************************************************
+    350          */
+
+   \                                 In section .text, align 2, keep-with-next
+    351          int16_t ADC1_GetTemperature(uint16_t temperature_adc_u16)
+    352          {
+   \                     ADC1_GetTemperature: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    353            int16_t temperature_degc_s16=0;         
+   \        0x4   0x2500             MOVS     R5,#+0
+    354            temperature_degc_s16 = (((( ((int16_t)((temperature_adc_u16 \
+    355                 * (ADC_REFERENCE_VOLTAGE_MV))/ TEMPSENSOR_CAL_VREFANALOG)                   \
+    356                  - (int16_t) *TEMPSENSOR_CAL1_ADDR)                                         \
+    357               ) * (int16_t)(TEMPSENSOR_CAL2_TEMP - TEMPSENSOR_CAL1_TEMP)                    \
+    358              ) / (int16_t)((int16_t)*TEMPSENSOR_CAL2_ADDR - (int32_t)*TEMPSENSOR_CAL1_ADDR) \
+    359             ) + TEMPSENSOR_CAL1_TEMP                                                        \
+    360            );
+   \        0x6   0x....             LDR      R6,??DataTable32_6  ;; 0x1fff75a8
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0xB280             UXTH     R0,R0
+   \        0xC   0x....'....        BL       __aeabi_ui2f
+   \       0x10   0x....             LDR      R1,??DataTable32_7  ;; 0x454e4000
+   \       0x12   0x....'....        BL       __aeabi_fmul
+   \       0x16   0x....             LDR      R1,??DataTable32_8  ;; 0x453b8000
+   \       0x18   0x....'....        BL       __aeabi_fdiv
+   \       0x1C   0x....'....        BL       __aeabi_f2iz
+   \       0x20   0xB200             SXTH     R0,R0
+   \       0x22   0x8831             LDRH     R1,[R6, #+0]
+   \       0x24   0xB209             SXTH     R1,R1
+   \       0x26   0x1A40             SUBS     R0,R0,R1
+   \       0x28   0x2164             MOVS     R1,#+100
+   \       0x2A   0x4348             MULS     R0,R1,R0
+   \       0x2C   0x....             LDR      R1,??DataTable32_9  ;; 0x1fff75ca
+   \       0x2E   0x8809             LDRH     R1,[R1, #+0]
+   \       0x30   0x8832             LDRH     R2,[R6, #+0]
+   \       0x32   0x1A89             SUBS     R1,R1,R2
+   \       0x34   0xB209             SXTH     R1,R1
+   \       0x36   0x....'....        BL       __aeabi_idiv
+   \       0x3A   0x301E             ADDS     R0,R0,#+30
+    361              
+    362            //temperature_degc_s32 = __LL_ADC_CALC_TEMPERATURE(ADC_REFERENCE_VOLTAGE_MV, temperature_adc_u16, LL_ADC_RESOLUTION_12B);
+    363            return(temperature_degc_s16);
+   \       0x3C   0xB200             SXTH     R0,R0
+   \       0x3E   0xBD70             POP      {R4-R6,PC}       ;; return
+    364          }
+    365          /**
+    366            * @brief  DMA1 IRQ handler
+    367            * @note   This function is executed when the DMA complets
+    368            *         transfer for data from ADC1 to adc1_Control and calculate average
+    369            * @retval None
+    370            */
+    371          
+
+   \                                 In section .text, align 2, keep-with-next
+    372          void DMA1_Channel1_IRQHandler(void)
+    373          //void AdcGrpRegularUnitaryConvComplete_Callback(void)
+    374          {
+   \                     DMA1_Channel1_IRQHandler: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    375            /* Retrieve ADC conversion data */
+    376            /* (data maximum amplitude corresponds to ADC resolution: 12 bits) */
+    377            /* four data sample will pass into a average filter for smooth out the input 0 to 10V */
+    378            //printf("%d",7);
+    379            
+    380            /* Clear ADC End of Conversion Sequence flag. */
+    381            //LL_ADC_ClearFlag_EOS(ADC1);
+    382            //LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_1, NUM_OF_ADC1_CH);
+    383           
+    384            /* Start conversion. */
+    385            //LL_ADC_REG_StartConversion(ADC1);
+    386           
+    387            /* Wait for completion. */
+    388            //while (!LL_ADC_IsActiveFlag_EOS(ADC1))
+    389            //  ;
+    390           
+    391            
+    392            if(LL_DMA_IsActiveFlag_TC1(DMA1) == 1){ //Check if transfer is complete
+   \        0x2   0x....             LDR      R0,??DataTable32_10  ;; 0x40020000
+   \        0x4   0x....'....        BL       LL_DMA_IsActiveFlag_TC1
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD17A             BNE      ??DMA1_Channel1_IRQHandler_0
+    393              if( ADC1_Digital_filter_index > (AVERAGING_BUF_SIZE - 1))
+   \        0xC   0x....             LDR      R0,??DataTable32_11
+   \        0xE   0x7801             LDRB     R1,[R0, #+0]
+   \       0x10   0x2904             CMP      R1,#+4
+   \       0x12   0xDB5D             BLT      ??DMA1_Channel1_IRQHandler_1
+    394              {
+    395                ADC1_Digital_filter_index = 0;
+   \       0x14   0x2600             MOVS     R6,#+0
+   \       0x16   0x7006             STRB     R6,[R0, #+0]
+    396                for (uint8_t index_u8 = 0; index_u8 < AVERAGING_BUF_SIZE; index_u8++)
+   \       0x18   0x0034             MOVS     R4,R6
+   \                     ??DMA1_Channel1_IRQHandler_2: (+1)
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0xB2C0             UXTB     R0,R0
+   \       0x1E   0x2804             CMP      R0,#+4
+   \       0x20   0xDA31             BGE      ??DMA1_Channel1_IRQHandler_3
+    397                {
+    398                  adc1_Result_Sum_u64[0] += ADC1Filter_Ch1[index_u8];
+   \       0x22   0x....             LDR      R5,??DataTable32_12
+   \       0x24   0xCD0C             LDM      R5!,{R2,R3}
+   \       0x26   0x3D08             SUBS     R5,R5,#+8
+   \       0x28   0x....             LDR      R0,??DataTable32_13
+   \       0x2A   0x0021             MOVS     R1,R4
+   \       0x2C   0xB2C9             UXTB     R1,R1
+   \       0x2E   0x2702             MOVS     R7,#+2
+   \       0x30   0x4379             MULS     R1,R7,R1
+   \       0x32   0x5A40             LDRH     R0,[R0, R1]
+   \       0x34   0x2100             MOVS     R1,#+0
+   \       0x36   0x1880             ADDS     R0,R0,R2
+   \       0x38   0x4159             ADCS     R1,R1,R3
+   \       0x3A   0xC503             STM      R5!,{R0,R1}
+   \       0x3C   0x3D08             SUBS     R5,R5,#+8
+    399                  adc1_Result_Sum_u64[1] += ADC1Filter_Ch2[index_u8];
+   \       0x3E   0x0028             MOVS     R0,R5
+   \       0x40   0x3008             ADDS     R0,R0,#+8
+   \       0x42   0xC80C             LDM      R0!,{R2,R3}
+   \       0x44   0x3808             SUBS     R0,R0,#+8
+   \       0x46   0x....             LDR      R0,??DataTable32_14
+   \       0x48   0x0021             MOVS     R1,R4
+   \       0x4A   0xB2C9             UXTB     R1,R1
+   \       0x4C   0x2702             MOVS     R7,#+2
+   \       0x4E   0x4379             MULS     R1,R7,R1
+   \       0x50   0x5A40             LDRH     R0,[R0, R1]
+   \       0x52   0x2100             MOVS     R1,#+0
+   \       0x54   0x1880             ADDS     R0,R0,R2
+   \       0x56   0x4159             ADCS     R1,R1,R3
+   \       0x58   0x002A             MOVS     R2,R5
+   \       0x5A   0x3208             ADDS     R2,R2,#+8
+   \       0x5C   0xC203             STM      R2!,{R0,R1}
+   \       0x5E   0x3A08             SUBS     R2,R2,#+8
+    400                  adc1_Result_Sum_u64[2] += ADC1Filter_Ch_Temp[index_u8];
+   \       0x60   0x0028             MOVS     R0,R5
+   \       0x62   0x3010             ADDS     R0,R0,#+16
+   \       0x64   0xC80C             LDM      R0!,{R2,R3}
+   \       0x66   0x3808             SUBS     R0,R0,#+8
+   \       0x68   0x....             LDR      R0,??DataTable32_15
+   \       0x6A   0x0021             MOVS     R1,R4
+   \       0x6C   0xB2C9             UXTB     R1,R1
+   \       0x6E   0x2702             MOVS     R7,#+2
+   \       0x70   0x4379             MULS     R1,R7,R1
+   \       0x72   0x5A40             LDRH     R0,[R0, R1]
+   \       0x74   0x2100             MOVS     R1,#+0
+   \       0x76   0x1880             ADDS     R0,R0,R2
+   \       0x78   0x4159             ADCS     R1,R1,R3
+   \       0x7A   0x002A             MOVS     R2,R5
+   \       0x7C   0x3210             ADDS     R2,R2,#+16
+   \       0x7E   0xC203             STM      R2!,{R0,R1}
+   \       0x80   0x3A08             SUBS     R2,R2,#+8
+    401                }  
+   \       0x82   0x1C64             ADDS     R4,R4,#+1
+   \       0x84   0xE7C9             B        ??DMA1_Channel1_IRQHandler_2
+    402                                     
+    403                adc1_Control.adc1_ResultAvg.adc1_0_10V_Avg_u16 = (uint16_t)(adc1_Result_Sum_u64[0] >> avg_exponent_u8 );
+   \                     ??DMA1_Channel1_IRQHandler_3: (+1)
+   \       0x86   0x....             LDR      R5,??DataTable32_2
+   \       0x88   0x....             LDR      R7,??DataTable32_5
+   \       0x8A   0x....             LDR      R4,??DataTable32_12
+   \       0x8C   0xCC03             LDM      R4!,{R0,R1}
+   \       0x8E   0x3C08             SUBS     R4,R4,#+8
+   \       0x90   0x783A             LDRB     R2,[R7, #+0]
+   \       0x92   0x....'....        BL       __aeabi_llsr
+   \       0x96   0x80E8             STRH     R0,[R5, #+6]
+    404                adc1_Control.adc1_ResultAvg.adc1_4_20mA_Avg_u16 = (uint16_t)(adc1_Result_Sum_u64[0] >> avg_exponent_u8 );
+   \       0x98   0xCC03             LDM      R4!,{R0,R1}
+   \       0x9A   0x3C08             SUBS     R4,R4,#+8
+   \       0x9C   0x783A             LDRB     R2,[R7, #+0]
+   \       0x9E   0x....'....        BL       __aeabi_llsr
+   \       0xA2   0x8128             STRH     R0,[R5, #+8]
+    405                adc1_Control.adc1_ResultAvg.adc1_Temp_Avg_u16 = (uint16_t)(adc1_Result_Sum_u64[2] >> avg_exponent_u8); // SPA REVIEW. Not working as expected.
+   \       0xA4   0x0020             MOVS     R0,R4
+   \       0xA6   0x3010             ADDS     R0,R0,#+16
+   \       0xA8   0xC803             LDM      R0,{R0,R1}
+   \       0xAA   0x783A             LDRB     R2,[R7, #+0]
+   \       0xAC   0x....'....        BL       __aeabi_llsr
+   \       0xB0   0x8168             STRH     R0,[R5, #+10]
+    406                
+    407                // Clear sum
+    408                for (uint8_t index_u8 = 0; index_u8 < AVERAGING_BUF_SIZE; index_u8++)
+   \                     ??DMA1_Channel1_IRQHandler_4: (+1)
+   \       0xB2   0x0030             MOVS     R0,R6
+   \       0xB4   0xB2C0             UXTB     R0,R0
+   \       0xB6   0x2804             CMP      R0,#+4
+   \       0xB8   0xDA20             BGE      ??DMA1_Channel1_IRQHandler_5
+    409                {
+    410                  adc1_Result_Sum_u64[index_u8] = 0;
+   \       0xBA   0x2000             MOVS     R0,#+0
+   \       0xBC   0x2100             MOVS     R1,#+0
+   \       0xBE   0x0032             MOVS     R2,R6
+   \       0xC0   0xB2D2             UXTB     R2,R2
+   \       0xC2   0x2308             MOVS     R3,#+8
+   \       0xC4   0x435A             MULS     R2,R3,R2
+   \       0xC6   0x18A2             ADDS     R2,R4,R2
+   \       0xC8   0xC203             STM      R2!,{R0,R1}
+   \       0xCA   0x3A08             SUBS     R2,R2,#+8
+    411                }
+   \       0xCC   0x1C76             ADDS     R6,R6,#+1
+   \       0xCE   0xE7F0             B        ??DMA1_Channel1_IRQHandler_4
+    412              } else {
+    413                ADC1Filter_Ch1[ADC1_Digital_filter_index] = adc1_Control.adc1_Result.adc1_0_10V_Result_u16;//LL_ADC_REG_ReadConversionData12(ADC1);
+   \                     ??DMA1_Channel1_IRQHandler_1: (+1)
+   \       0xD0   0x....             LDR      R1,??DataTable32_2
+   \       0xD2   0x880A             LDRH     R2,[R1, #+0]
+   \       0xD4   0x....             LDR      R3,??DataTable32_13
+   \       0xD6   0x7804             LDRB     R4,[R0, #+0]
+   \       0xD8   0x2502             MOVS     R5,#+2
+   \       0xDA   0x436C             MULS     R4,R5,R4
+   \       0xDC   0x531A             STRH     R2,[R3, R4]
+    414                ADC1Filter_Ch2[ADC1_Digital_filter_index] = adc1_Control.adc1_Result.adc1_4_20mA_Result_u16;
+   \       0xDE   0x884A             LDRH     R2,[R1, #+2]
+   \       0xE0   0x....             LDR      R3,??DataTable32_14
+   \       0xE2   0x7804             LDRB     R4,[R0, #+0]
+   \       0xE4   0x2502             MOVS     R5,#+2
+   \       0xE6   0x436C             MULS     R4,R5,R4
+   \       0xE8   0x531A             STRH     R2,[R3, R4]
+    415                ADC1Filter_Ch_Temp[ADC1_Digital_filter_index] = adc1_Control.adc1_Result.adc1_Temp_Result_u16;
+   \       0xEA   0x8889             LDRH     R1,[R1, #+4]
+   \       0xEC   0x....             LDR      R2,??DataTable32_15
+   \       0xEE   0x7803             LDRB     R3,[R0, #+0]
+   \       0xF0   0x2402             MOVS     R4,#+2
+   \       0xF2   0x4363             MULS     R3,R4,R3
+   \       0xF4   0x52D1             STRH     R1,[R2, R3]
+    416                ADC1_Digital_filter_index++;
+   \       0xF6   0x7801             LDRB     R1,[R0, #+0]
+   \       0xF8   0x1C49             ADDS     R1,R1,#+1
+   \       0xFA   0x7001             STRB     R1,[R0, #+0]
+    417              }
+    418              
+    419              /*ADC1Filter_Ch1[ADC1_Digital_filter_index & 0x03] = adc1_Control.adc1_Result.adc1_0_10V_Result_u16;//LL_ADC_REG_ReadConversionData12(ADC1);
+    420              ADC1Filter_Ch2[ADC1_Digital_filter_index & 0x03] = adc1_Control.adc1_Result.adc1_4_20mA_Result_u16;
+    421              ADC1Filter_Ch_Temp[ADC1_Digital_filter_index & 0x03] = adc1_Control.adc1_Result.adc1_Temp_Result_u16;
+    422              if( ADC1_Digital_filter_index & 0x3 == 0x3)
+    423              {
+    424                adc1_Control.adc1_ResultAvg.adc1_0_10V_Avg_u16 = (ADC1Filter_Ch1[0] + ADC1Filter_Ch1[1] + ADC1Filter_Ch1[2] + ADC1Filter_Ch1[3]) >> 2;
+    425                adc1_Control.adc1_ResultAvg.adc1_4_20mA_Avg_u16 = (ADC1Filter_Ch2[0] + ADC1Filter_Ch2[1] + ADC1Filter_Ch2[2] + ADC1Filter_Ch2[3]) >> 2;
+    426                adc1_Control.adc1_ResultAvg.adc1_Temp_Avg_u16 = (ADC1Filter_Ch_Temp[0] + ADC1Filter_Ch_Temp[1] + ADC1Filter_Ch_Temp[2] + ADC1Filter_Ch_Temp[3]) >> 2;
+    427              }
+    428              ADC1_Digital_filter_index++;*/
+    429              //printf("%d\n",adc1Result_Avg.ADC1_0_10V_Avg_u16);
+    430              //printf("%d\n",adc1Result_Avg.ADC1_4_20mA_Avg_u16);
+    431              //printf("%d\n",adc1Result_Avg.ADC1_Temp_Avg_u16);
+    432              LL_DMA_ClearFlag_TC1(DMA1); //Clear transfer complete flag for DMA to get next set of data
+   \                     ??DMA1_Channel1_IRQHandler_5: (+1)
+   \       0xFC   0x....             LDR      R0,??DataTable32_10  ;; 0x40020000
+   \       0xFE   0x....'....        BL       LL_DMA_ClearFlag_TC1
+    433            }
+    434            /* Check whether DMA transfer complete caused the DMA interruption */
+    435            if(LL_DMA_IsActiveFlag_TC1(DMA1) == 1)
+   \                     ??DMA1_Channel1_IRQHandler_0: (+1)
+   \      0x102   0x....             LDR      R4,??DataTable32_10  ;; 0x40020000
+   \      0x104   0x0020             MOVS     R0,R4
+   \      0x106   0x....'....        BL       LL_DMA_IsActiveFlag_TC1
+   \      0x10A   0x2801             CMP      R0,#+1
+   \      0x10C   0xD102             BNE      ??DMA1_Channel1_IRQHandler_6
+    436            {
+    437              /* Clear flag DMA transfer complete */
+    438              LL_DMA_ClearFlag_TC1(DMA1);
+   \      0x10E   0x0020             MOVS     R0,R4
+   \      0x110   0x....'....        BL       LL_DMA_ClearFlag_TC1
+    439              
+    440              /* Call interruption treatment function */
+    441            }
+    442            
+    443            /* Check whether DMA half transfer caused the DMA interruption */
+    444            if(LL_DMA_IsActiveFlag_HT1(DMA1) == 1)
+   \                     ??DMA1_Channel1_IRQHandler_6: (+1)
+   \      0x114   0x0020             MOVS     R0,R4
+   \      0x116   0x....'....        BL       LL_DMA_IsActiveFlag_HT1
+   \      0x11A   0x2801             CMP      R0,#+1
+   \      0x11C   0xD102             BNE      ??DMA1_Channel1_IRQHandler_7
+    445            {
+    446              /* Clear flag DMA half transfer */
+    447              LL_DMA_ClearFlag_HT1(DMA1);
+   \      0x11E   0x0020             MOVS     R0,R4
+   \      0x120   0x....'....        BL       LL_DMA_ClearFlag_HT1
+    448              
+    449              /* Call interruption treatment function */
+    450            }
+    451            
+    452            /* Note: If DMA half transfer is not used, possibility to replace        */
+    453            /*       management of DMA half transfer and transfer complete flags by  */
+    454            /*       DMA global interrupt flag:                                      */
+    455            /* Clear flag DMA global interrupt */
+    456            /* (global interrupt flag: half transfer and transfer complete flags) */
+    457            // LL_DMA_ClearFlag_GI1(DMA1);
+    458            
+    459            /* Check whether DMA transfer error caused the DMA interruption */
+    460            if(LL_DMA_IsActiveFlag_TE1(DMA1) == 1)
+   \                     ??DMA1_Channel1_IRQHandler_7: (+1)
+   \      0x124   0x0020             MOVS     R0,R4
+   \      0x126   0x....'....        BL       LL_DMA_IsActiveFlag_TE1
+   \      0x12A   0x2801             CMP      R0,#+1
+   \      0x12C   0xD102             BNE      ??DMA1_Channel1_IRQHandler_8
+    461            {
+    462              /* Clear flag DMA transfer error */
+    463              LL_DMA_ClearFlag_TE1(DMA1);
+   \      0x12E   0x0020             MOVS     R0,R4
+   \      0x130   0x....'....        BL       LL_DMA_ClearFlag_TE1
+    464            }
+    465          }
+   \                     ??DMA1_Channel1_IRQHandler_8: (+1)
+   \      0x134   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22:
+   \        0x0   0xFE3F'FFFF        DC32     0xfe3fffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_1:
+   \        0x0   0xDFFF'FFFF        DC32     0xdfffffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24:
+   \        0x0   0xFFDF'FFFF        DC32     0xffdfffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25:
+   \        0x0   0x07FF'FF00        DC32     0x7ffff00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_1:
+   \        0x0   0x7FFF'FFE8        DC32     0x7fffffe8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_2:
+   \        0x0   0x4002'1040        DC32     0x40021040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_3:
+   \        0x0   0x4002'1034        DC32     0x40021034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_4:
+   \        0x0   0x4002'0800        DC32     0x40020800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_5:
+   \        0x0   0x....'....        DC32     CHANNEL_OFFSET_TAB
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_6:
+   \        0x0   0xFFFF'BFEF        DC32     0xffffbfef
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable27:
+   \        0x0   0xFFFF'FCFF        DC32     0xfffffcff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable27_1:
+   \        0x0   0xFFFF'F3FF        DC32     0xfffff3ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable27_2:
+   \        0x0   0xFFFF'CFFF        DC32     0xffffcfff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable30:
+   \        0x0   0x4002'07FC        DC32     0x400207fc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31:
+   \        0x0   0x4002'0000        DC32     0x40020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_1:
+   \        0x0   0xB000'1000        DC32     0xb0001000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_2:
+   \        0x0   0x4001'2708        DC32     0x40012708
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_3:
+   \        0x0   0x4001'2400        DC32     0x40012400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_4:
+   \        0x0   0x07FF'FF04        DC32     0x7ffff04
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32:
+   \        0x0   0x0400'0002        DC32     0x4000002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_1:
+   \        0x0   0x4002'0800        DC32     0x40020800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_2:
+   \        0x0   0x....'....        DC32     adc1_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_3:
+   \        0x0   0x....'....        DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_4:
+   \        0x0   0x0003'0D40        DC32     0x30d40
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_5:
+   \        0x0   0x....'....        DC32     avg_exponent_u8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_6:
+   \        0x0   0x1FFF'75A8        DC32     0x1fff75a8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_7:
+   \        0x0   0x454E'4000        DC32     0x454e4000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_8:
+   \        0x0   0x453B'8000        DC32     0x453b8000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_9:
+   \        0x0   0x1FFF'75CA        DC32     0x1fff75ca
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_10:
+   \        0x0   0x4002'0000        DC32     0x40020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_11:
+   \        0x0   0x....'....        DC32     ADC1_Digital_filter_index
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_12:
+   \        0x0   0x....'....        DC32     adc1_Result_Sum_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_13:
+   \        0x0   0x....'....        DC32     ADC1Filter_Ch1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_14:
+   \        0x0   0x....'....        DC32     ADC1Filter_Ch2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable32_15:
+   \        0x0   0x....'....        DC32     ADC1Filter_Ch_Temp
+    466          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   ADC1_GetTemperature
+        16   -> __aeabi_f2iz
+        16   -> __aeabi_fdiv
+        16   -> __aeabi_fmul
+        16   -> __aeabi_ui2f
+        16 __aeabi_idiv
+       8   CalculatueExponentAdc1
+         8 __aeabi_idiv
+      24   DMA1_Channel1_IRQHandler
+        24   -> LL_DMA_ClearFlag_HT1
+        24   -> LL_DMA_ClearFlag_TC1
+        24   -> LL_DMA_ClearFlag_TE1
+        24   -> LL_DMA_IsActiveFlag_HT1
+        24   -> LL_DMA_IsActiveFlag_TC1
+        24   -> LL_DMA_IsActiveFlag_TE1
+        24 __aeabi_llsr
+       0   LL_ADC_DMA_GetRegAddr
+       0   LL_ADC_DisableIT_EOC
+       0   LL_ADC_DisableIT_EOS
+       0   LL_ADC_Enable
+       0   LL_ADC_EnableIT_EOC
+       0   LL_ADC_EnableInternalRegulator
+       0   LL_ADC_IsActiveFlag_ADRDY
+       0   LL_ADC_IsCalibrationOnGoing
+       0   LL_ADC_IsEnabled
+       0   LL_ADC_REG_GetDMATransfer
+       0   LL_ADC_REG_SetDMATransfer
+       0   LL_ADC_REG_SetSequencerConfigurable
+      16   LL_ADC_REG_SetSequencerRanks
+       0   LL_ADC_REG_StartConversion
+       8   LL_ADC_SetChannelSamplingTime
+       0   LL_ADC_SetCommonPathInternalCh
+       0   LL_ADC_SetOverSamplingScope
+      12   LL_ADC_SetSamplingTimeCommonChannels
+       0   LL_ADC_SetTriggerFrequencyMode
+       0   LL_ADC_StartCalibration
+       4   LL_APB2_GRP1_EnableClock
+       8   LL_DMAMUX_SetRequestID
+       0   LL_DMA_ClearFlag_HT1
+       0   LL_DMA_ClearFlag_TC1
+       0   LL_DMA_ClearFlag_TE1
+      20   LL_DMA_ConfigAddresses
+       8   LL_DMA_EnableChannel
+       8   LL_DMA_EnableIT_HT
+       8   LL_DMA_EnableIT_TC
+       8   LL_DMA_EnableIT_TE
+       0   LL_DMA_IsActiveFlag_HT1
+       0   LL_DMA_IsActiveFlag_TC1
+       0   LL_DMA_IsActiveFlag_TE1
+      12   LL_DMA_SetChannelPriorityLevel
+       8   LL_DMA_SetDataLength
+      12   LL_DMA_SetDataTransferDirection
+      12   LL_DMA_SetMemoryIncMode
+      12   LL_DMA_SetMemorySize
+      12   LL_DMA_SetMode
+      12   LL_DMA_SetPeriphIncMode
+       8   LL_DMA_SetPeriphRequest
+      12   LL_DMA_SetPeriphSize
+       4   LL_IOP_GRP1_EnableClock
+      88   MX_ADC1_Init
+        88   -> LL_ADC_DisableIT_EOC
+        88   -> LL_ADC_DisableIT_EOS
+        88   -> LL_ADC_EnableIT_EOC
+        88   -> LL_ADC_Init
+        88   -> LL_ADC_REG_Init
+        88   -> LL_ADC_REG_SetSequencerConfigurable
+        88   -> LL_ADC_REG_SetSequencerRanks
+        88   -> LL_ADC_SetChannelSamplingTime
+        88   -> LL_ADC_SetCommonPathInternalCh
+        88   -> LL_ADC_SetOverSamplingScope
+        88   -> LL_ADC_SetSamplingTimeCommonChannels
+        88   -> LL_ADC_SetTriggerFrequencyMode
+        88   -> LL_APB2_GRP1_EnableClock
+        88   -> LL_DMA_SetChannelPriorityLevel
+        88   -> LL_DMA_SetDataTransferDirection
+        88   -> LL_DMA_SetMemoryIncMode
+        88   -> LL_DMA_SetMemorySize
+        88   -> LL_DMA_SetMode
+        88   -> LL_DMA_SetPeriphIncMode
+        88   -> LL_DMA_SetPeriphRequest
+        88   -> LL_DMA_SetPeriphSize
+        88   -> LL_GPIO_Init
+        88   -> LL_IOP_GRP1_EnableClock
+        88   -> memset
+      16   activate_ADC
+        16   -> LL_ADC_Enable
+        16   -> LL_ADC_EnableInternalRegulator
+        16   -> LL_ADC_IsActiveFlag_ADRDY
+        16   -> LL_ADC_IsCalibrationOnGoing
+        16   -> LL_ADC_IsEnabled
+        16   -> LL_ADC_REG_GetDMATransfer
+        16   -> LL_ADC_REG_SetDMATransfer
+        16   -> LL_ADC_StartCalibration
+        16 __aeabi_uidiv
+       8   adc1_Init
+         8   -> MX_ADC1_Init
+      16   configDma
+        16   -> LL_ADC_DMA_GetRegAddr
+        16   -> LL_DMAMUX_SetRequestID
+        16   -> LL_DMA_ConfigAddresses
+        16   -> LL_DMA_EnableChannel
+        16   -> LL_DMA_EnableIT_HT
+        16   -> LL_DMA_EnableIT_TC
+        16   -> LL_DMA_EnableIT_TE
+        16   -> LL_DMA_SetDataLength
+       8   start_ADC1_Conversion
+         8   -> CalculatueExponentAdc1
+         8   -> LL_ADC_REG_StartConversion
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable24
+       4  ??DataTable25
+       4  ??DataTable25_1
+       4  ??DataTable25_2
+       4  ??DataTable25_3
+       4  ??DataTable25_4
+       4  ??DataTable25_5
+       4  ??DataTable25_6
+       4  ??DataTable27
+       4  ??DataTable27_1
+       4  ??DataTable27_2
+       4  ??DataTable30
+       4  ??DataTable31
+       4  ??DataTable31_1
+       4  ??DataTable31_2
+       4  ??DataTable31_3
+       4  ??DataTable31_4
+       4  ??DataTable32
+       4  ??DataTable32_1
+       4  ??DataTable32_10
+       4  ??DataTable32_11
+       4  ??DataTable32_12
+       4  ??DataTable32_13
+       4  ??DataTable32_14
+       4  ??DataTable32_15
+       4  ??DataTable32_2
+       4  ??DataTable32_3
+       4  ??DataTable32_4
+       4  ??DataTable32_5
+       4  ??DataTable32_6
+       4  ??DataTable32_7
+       4  ??DataTable32_8
+       4  ??DataTable32_9
+       8  ADC1Filter_Ch1
+       8  ADC1Filter_Ch2
+       8  ADC1Filter_Ch_Temp
+       1  ADC1_Digital_filter_index
+      64  ADC1_GetTemperature
+       8  CHANNEL_OFFSET_TAB
+      36  CalculatueExponentAdc1
+     310  DMA1_Channel1_IRQHandler
+       4  LL_ADC_DMA_GetRegAddr
+      10  LL_ADC_DisableIT_EOC
+      10  LL_ADC_DisableIT_EOS
+      14  LL_ADC_Enable
+      10  LL_ADC_EnableIT_EOC
+      16  LL_ADC_EnableInternalRegulator
+      10  LL_ADC_IsActiveFlag_ADRDY
+       6  LL_ADC_IsCalibrationOnGoing
+      10  LL_ADC_IsEnabled
+       8  LL_ADC_REG_GetDMATransfer
+      12  LL_ADC_REG_SetDMATransfer
+      12  LL_ADC_REG_SetSequencerConfigurable
+      36  LL_ADC_REG_SetSequencerRanks
+      14  LL_ADC_REG_StartConversion
+      24  LL_ADC_SetChannelSamplingTime
+      12  LL_ADC_SetCommonPathInternalCh
+      12  LL_ADC_SetOverSamplingScope
+      32  LL_ADC_SetSamplingTimeCommonChannels
+      12  LL_ADC_SetTriggerFrequencyMode
+      16  LL_ADC_StartCalibration
+      22  LL_APB2_GRP1_EnableClock
+      26  LL_DMAMUX_SetRequestID
+       6  LL_DMA_ClearFlag_HT1
+       6  LL_DMA_ClearFlag_TC1
+       6  LL_DMA_ClearFlag_TE1
+      58  LL_DMA_ConfigAddresses
+      34  LL_DMA_EnableChannel
+      34  LL_DMA_EnableIT_HT
+      34  LL_DMA_EnableIT_TC
+      34  LL_DMA_EnableIT_TE
+      12  LL_DMA_IsActiveFlag_HT1
+      12  LL_DMA_IsActiveFlag_TC1
+      12  LL_DMA_IsActiveFlag_TE1
+      36  LL_DMA_SetChannelPriorityLevel
+      36  LL_DMA_SetDataLength
+      36  LL_DMA_SetDataTransferDirection
+      36  LL_DMA_SetMemoryIncMode
+      36  LL_DMA_SetMemorySize
+      36  LL_DMA_SetMode
+      36  LL_DMA_SetPeriphIncMode
+      30  LL_DMA_SetPeriphRequest
+      36  LL_DMA_SetPeriphSize
+      22  LL_IOP_GRP1_EnableClock
+     364  MX_ADC1_Init
+     150  activate_ADC
+      16  adc1_Control
+       8  adc1_Init
+      24  adc1_Result_Sum_u64
+       1  avg_exponent_u8
+      82  configDma
+      14  start_ADC1_Conversion
+
+ 
+    66 bytes in section .bss
+     8 bytes in section .rodata
+ 2'084 bytes in section .text
+ 
+ 2'084 bytes of CODE  memory
+     8 bytes of CONST memory
+    66 bytes of DATA  memory
+
+Errors: none
+Warnings: none

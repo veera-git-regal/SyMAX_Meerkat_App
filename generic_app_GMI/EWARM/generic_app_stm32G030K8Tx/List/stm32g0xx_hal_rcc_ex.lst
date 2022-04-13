@@ -1,0 +1,1856 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:54
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWF5.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_hal_rcc_ex.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_hal_rcc_ex.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_hal_rcc_ex.c
+      4            * @author  MCD Application Team
+      5            * @brief   Extended RCC HAL module driver.
+      6            *          This file provides firmware functions to manage the following
+      7            *          functionalities RCC extended peripheral:
+      8            *           + Extended Peripheral Control functions
+      9            *           + Extended Clock management functions
+     10            *
+     11            ******************************************************************************
+     12            * @attention
+     13            *
+     14            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics. 
+     15            * All rights reserved.</center></h2>
+     16            *
+     17            * This software component is licensed by ST under BSD 3-Clause license,
+     18            * the "License"; You may not use this file except in compliance with the 
+     19            * License. You may obtain a copy of the License at:
+     20            *                        opensource.org/licenses/BSD-3-Clause
+     21            *
+     22            ******************************************************************************
+     23            */
+     24          
+     25          /* Includes ------------------------------------------------------------------*/
+     26          #include "stm32g0xx_hal.h"
+     27          
+     28          /** @addtogroup STM32G0xx_HAL_Driver
+     29            * @{
+     30            */
+     31          
+     32          /** @defgroup RCCEx RCCEx
+     33            * @brief RCC Extended HAL module driver
+     34            * @{
+     35            */
+     36          
+     37          #ifdef HAL_RCC_MODULE_ENABLED
+     38          
+     39          /* Private typedef -----------------------------------------------------------*/
+     40          /* Private defines -----------------------------------------------------------*/
+     41          /** @defgroup RCCEx_Private_Constants RCCEx Private Constants
+     42           * @{
+     43           */
+     44          #define PLL_TIMEOUT_VALUE        100U /* 100 ms (minimum Tick + 1)  */
+     45          
+     46          #define LSCO_CLK_ENABLE()     __HAL_RCC_GPIOA_CLK_ENABLE()
+     47          #define LSCO_GPIO_PORT        GPIOA
+     48          #define LSCO_PIN              GPIO_PIN_2
+     49          /**
+     50            * @}
+     51            */
+     52          
+     53          /* Private macros ------------------------------------------------------------*/
+     54          /* Private variables ---------------------------------------------------------*/
+     55          /* Private function prototypes -----------------------------------------------*/
+     56          /* Exported functions --------------------------------------------------------*/
+     57          
+     58          /** @defgroup RCCEx_Exported_Functions RCCEx Exported Functions
+     59            * @{
+     60            */
+     61          
+     62          /** @defgroup RCCEx_Exported_Functions_Group1 Extended Peripheral Control functions
+     63           *  @brief  Extended Peripheral Control functions
+     64           *
+     65          @verbatim
+     66           ===============================================================================
+     67                          ##### Extended Peripheral Control functions  #####
+     68           ===============================================================================
+     69              [..]
+     70              This subsection provides a set of functions allowing to control the RCC Clocks
+     71              frequencies.
+     72              [..]
+     73              (@) Important note: Care must be taken when @ref HAL_RCCEx_PeriphCLKConfig() is used to
+     74                  select the RTC clock source; in this case the Backup domain will be reset in
+     75                  order to modify the RTC Clock source, as consequence RTC registers (including
+     76                  the backup registers) and RCC_BDCR register are set to their reset values.
+     77          
+     78          @endverbatim
+     79            * @{
+     80            */
+     81          /**
+     82            * @brief  Initialize the RCC extended peripherals clocks according to the specified
+     83            *         parameters in the @ref RCC_PeriphCLKInitTypeDef.
+     84            * @param  PeriphClkInit  pointer to a @ref RCC_PeriphCLKInitTypeDef structure that
+     85            *         contains a field PeriphClockSelection which can be a combination of the following values:
+     86            *            @arg @ref RCC_PERIPHCLK_RTC  RTC peripheral clock
+     87            *            @arg @ref RCC_PERIPHCLK_ADC    ADC peripheral clock
+     88            *            @arg @ref RCC_PERIPHCLK_I2C1   I2C1 peripheral clock
+     89            *            @arg @ref RCC_PERIPHCLK_I2S1   I2S1 peripheral clock
+     90            *            @arg @ref RCC_PERIPHCLK_USART1 USART1 peripheral clock
+     91            *            @arg @ref RCC_PERIPHCLK_CEC     CEC peripheral clock     (1)
+     92            *            @arg @ref RCC_PERIPHCLK_LPTIM1  LPTIM1 peripheral clock  (1)
+     93            *            @arg @ref RCC_PERIPHCLK_LPTIM2  LPTIM2 peripheral clock  (1)
+     94            *            @arg @ref RCC_PERIPHCLK_LPUART1 LPUART1 peripheral clock (1)
+     95            *            @arg @ref RCC_PERIPHCLK_RNG     RNG peripheral clock     (1)
+     96            *            @arg @ref RCC_PERIPHCLK_TIM1    TIM1 peripheral clock    (1)(2)
+     97            *            @arg @ref RCC_PERIPHCLK_TIM15   TIM15 peripheral clock   (1)(2)
+     98            *            @arg @ref RCC_PERIPHCLK_USART2  USART2 peripheral clock     (2)
+     99            *
+    100            * @note   (1) Peripherals are not available on all devices
+    101            * @note   (2) Peripherals clock selection is not available on all devices
+    102            * @note   Care must be taken when @ref HAL_RCCEx_PeriphCLKConfig() is used to select
+    103            *         the RTC clock source: in this case the access to Backup domain is enabled.
+    104            *
+    105            * @retval HAL status
+    106            */
+
+   \                                 In section .text, align 2, keep-with-next
+    107          HAL_StatusTypeDef HAL_RCCEx_PeriphCLKConfig(RCC_PeriphCLKInitTypeDef  *PeriphClkInit)
+    108          {
+   \                     HAL_RCCEx_PeriphCLKConfig: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0004             MOVS     R4,R0
+    109            uint32_t tmpregister;
+    110            uint32_t tickstart;
+    111            HAL_StatusTypeDef ret    = HAL_OK;   /* Intermediate status */
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x0007             MOVS     R7,R0
+    112            HAL_StatusTypeDef status = HAL_OK;   /* Final status */
+   \        0xA   0x0001             MOVS     R1,R0
+   \        0xC   0x466A             MOV      R2,SP
+   \        0xE   0x7011             STRB     R1,[R2, #+0]
+    113          
+    114            /* Check the parameters */
+    115            assert_param(IS_RCC_PERIPHCLOCK(PeriphClkInit->PeriphClockSelection));
+    116          
+    117            /*-------------------------- RTC clock source configuration ----------------------*/
+    118            if ((PeriphClkInit->PeriphClockSelection & RCC_PERIPHCLK_RTC) == RCC_PERIPHCLK_RTC)
+   \       0x10   0x6821             LDR      R1,[R4, #+0]
+   \       0x12   0x0389             LSLS     R1,R1,#+14
+   \       0x14   0xD570             BPL      ??HAL_RCCEx_PeriphCLKConfig_0
+    119            {
+    120              FlagStatus       pwrclkchanged = RESET;
+   \       0x16   0x4669             MOV      R1,SP
+   \       0x18   0x7048             STRB     R0,[R1, #+1]
+    121          
+    122              /* Check for RTC Parameters used to output RTCCLK */
+    123              assert_param(IS_RCC_RTCCLKSOURCE(PeriphClkInit->RTCClockSelection));
+    124          
+    125              /* Enable Power Clock */
+    126              if (__HAL_RCC_PWR_IS_CLK_DISABLED())
+   \       0x1A   0x2080             MOVS     R0,#+128
+   \       0x1C   0x0540             LSLS     R0,R0,#+21       ;; #+268435456
+   \       0x1E   0x....             LDR      R5,??DataTable1  ;; 0x4002103c
+   \       0x20   0x6829             LDR      R1,[R5, #+0]
+   \       0x22   0x4001             ANDS     R1,R1,R0
+   \       0x24   0x2900             CMP      R1,#+0
+   \       0x26   0xD109             BNE      ??HAL_RCCEx_PeriphCLKConfig_1
+    127              {
+    128                __HAL_RCC_PWR_CLK_ENABLE();
+   \       0x28   0x6829             LDR      R1,[R5, #+0]
+   \       0x2A   0x4301             ORRS     R1,R1,R0
+   \       0x2C   0x6029             STR      R1,[R5, #+0]
+   \       0x2E   0x6829             LDR      R1,[R5, #+0]
+   \       0x30   0x4008             ANDS     R0,R0,R1
+   \       0x32   0x9003             STR      R0,[SP, #+12]
+   \       0x34   0x9803             LDR      R0,[SP, #+12]
+    129                pwrclkchanged = SET;
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0x4669             MOV      R1,SP
+   \       0x3A   0x7048             STRB     R0,[R1, #+1]
+    130              }
+    131          
+    132              /* Enable write access to Backup domain */
+    133              SET_BIT(PWR->CR1, PWR_CR1_DBP);
+   \                     ??HAL_RCCEx_PeriphCLKConfig_1: (+1)
+   \       0x3C   0x....             LDR      R6,??DataTable1_1  ;; 0x40007000
+   \       0x3E   0x6830             LDR      R0,[R6, #+0]
+   \       0x40   0x2180             MOVS     R1,#+128
+   \       0x42   0x0049             LSLS     R1,R1,#+1        ;; #+256
+   \       0x44   0x4301             ORRS     R1,R1,R0
+   \       0x46   0x6031             STR      R1,[R6, #+0]
+    134          
+    135              /* Wait for Backup domain Write protection disable */
+    136              tickstart = HAL_GetTick();
+   \       0x48   0x....'....        BL       HAL_GetTick
+   \       0x4C   0x9002             STR      R0,[SP, #+8]
+    137          
+    138              while ((PWR->CR1 & PWR_CR1_DBP) == 0U)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_2: (+1)
+   \       0x4E   0x6830             LDR      R0,[R6, #+0]
+   \       0x50   0x05C0             LSLS     R0,R0,#+23
+   \       0x52   0xD407             BMI      ??HAL_RCCEx_PeriphCLKConfig_3
+    139              {
+    140                if ((HAL_GetTick() - tickstart) > RCC_DBP_TIMEOUT_VALUE)
+   \       0x54   0x....'....        BL       HAL_GetTick
+   \       0x58   0x9902             LDR      R1,[SP, #+8]
+   \       0x5A   0x1A40             SUBS     R0,R0,R1
+   \       0x5C   0x2803             CMP      R0,#+3
+   \       0x5E   0xD3F6             BCC      ??HAL_RCCEx_PeriphCLKConfig_2
+    141                {
+    142                  ret = HAL_TIMEOUT;
+   \       0x60   0x2003             MOVS     R0,#+3
+   \       0x62   0x0007             MOVS     R7,R0
+    143                  break;
+    144                }
+    145              }
+    146          
+    147              if (ret == HAL_OK)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_3: (+1)
+   \       0x64   0x0038             MOVS     R0,R7
+   \       0x66   0xB2C0             UXTB     R0,R0
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD13B             BNE      ??HAL_RCCEx_PeriphCLKConfig_4
+    148              {
+    149                /* Reset the Backup domain only if the RTC Clock source selection is modified from default */
+    150                tmpregister = READ_BIT(RCC->BDCR, RCC_BDCR_RTCSEL);
+   \       0x6C   0x....             LDR      R6,??DataTable1_2  ;; 0x4002105c
+   \       0x6E   0x6830             LDR      R0,[R6, #+0]
+   \       0x70   0x21C0             MOVS     R1,#+192
+   \       0x72   0x0089             LSLS     R1,R1,#+2        ;; #+768
+   \       0x74   0x4001             ANDS     R1,R1,R0
+   \       0x76   0x9101             STR      R1,[SP, #+4]
+    151          
+    152                /* Reset the Backup domain only if the RTC Clock source selection is modified */
+    153                if ((tmpregister != RCC_RTCCLKSOURCE_NONE) && (tmpregister != PeriphClkInit->RTCClockSelection))
+   \       0x78   0x9801             LDR      R0,[SP, #+4]
+   \       0x7A   0x2800             CMP      R0,#+0
+   \       0x7C   0xD012             BEQ      ??HAL_RCCEx_PeriphCLKConfig_5
+   \       0x7E   0x9801             LDR      R0,[SP, #+4]
+   \       0x80   0x6961             LDR      R1,[R4, #+20]
+   \       0x82   0x4288             CMP      R0,R1
+   \       0x84   0xD00E             BEQ      ??HAL_RCCEx_PeriphCLKConfig_5
+    154                {
+    155                  /* Store the content of BDCR register before the reset of Backup Domain */
+    156                  tmpregister = READ_BIT(RCC->BDCR, ~(RCC_BDCR_RTCSEL));
+   \       0x86   0x6830             LDR      R0,[R6, #+0]
+   \       0x88   0x....             LDR      R1,??DataTable1_3  ;; 0xfffffcff
+   \       0x8A   0x4001             ANDS     R1,R1,R0
+   \       0x8C   0x9101             STR      R1,[SP, #+4]
+    157                  /* RTC Clock selection can be changed only if the Backup Domain is reset */
+    158                  __HAL_RCC_BACKUPRESET_FORCE();
+   \       0x8E   0x6830             LDR      R0,[R6, #+0]
+   \       0x90   0x2180             MOVS     R1,#+128
+   \       0x92   0x0249             LSLS     R1,R1,#+9        ;; #+65536
+   \       0x94   0x4301             ORRS     R1,R1,R0
+   \       0x96   0x6031             STR      R1,[R6, #+0]
+    159                  __HAL_RCC_BACKUPRESET_RELEASE();
+   \       0x98   0x6830             LDR      R0,[R6, #+0]
+   \       0x9A   0x....             LDR      R1,??DataTable1_4  ;; 0xfffeffff
+   \       0x9C   0x4001             ANDS     R1,R1,R0
+   \       0x9E   0x6031             STR      R1,[R6, #+0]
+    160                  /* Restore the Content of BDCR register */
+    161                  RCC->BDCR = tmpregister;
+   \       0xA0   0x9801             LDR      R0,[SP, #+4]
+   \       0xA2   0x6030             STR      R0,[R6, #+0]
+    162                }
+    163          
+    164                /* Wait for LSE reactivation if LSE was enable prior to Backup Domain reset */
+    165                if (HAL_IS_BIT_SET(tmpregister, RCC_BDCR_LSEON))
+   \                     ??HAL_RCCEx_PeriphCLKConfig_5: (+1)
+   \       0xA4   0x9801             LDR      R0,[SP, #+4]
+   \       0xA6   0x07C0             LSLS     R0,R0,#+31
+   \       0xA8   0xD50E             BPL      ??HAL_RCCEx_PeriphCLKConfig_6
+    166                {
+    167                  /* Get Start Tick*/
+    168                  tickstart = HAL_GetTick();
+   \       0xAA   0x....'....        BL       HAL_GetTick
+   \       0xAE   0x9002             STR      R0,[SP, #+8]
+    169          
+    170                  /* Wait till LSE is ready */
+    171                  while (READ_BIT(RCC->BDCR, RCC_BDCR_LSERDY) == 0U)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_7: (+1)
+   \       0xB0   0x6830             LDR      R0,[R6, #+0]
+   \       0xB2   0x0780             LSLS     R0,R0,#+30
+   \       0xB4   0xD408             BMI      ??HAL_RCCEx_PeriphCLKConfig_6
+    172                  {
+    173                    if ((HAL_GetTick() - tickstart) > RCC_LSE_TIMEOUT_VALUE)
+   \       0xB6   0x....'....        BL       HAL_GetTick
+   \       0xBA   0x9902             LDR      R1,[SP, #+8]
+   \       0xBC   0x1A40             SUBS     R0,R0,R1
+   \       0xBE   0x....             LDR      R1,??DataTable1_5  ;; 0x1389
+   \       0xC0   0x4288             CMP      R0,R1
+   \       0xC2   0xD3F5             BCC      ??HAL_RCCEx_PeriphCLKConfig_7
+    174                    {
+    175                      ret = HAL_TIMEOUT;
+   \       0xC4   0x2003             MOVS     R0,#+3
+   \       0xC6   0x0007             MOVS     R7,R0
+    176                      break;
+    177                    }
+    178                  }
+    179                }
+    180          
+    181                if (ret == HAL_OK)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_6: (+1)
+   \       0xC8   0x0038             MOVS     R0,R7
+   \       0xCA   0xB2C0             UXTB     R0,R0
+   \       0xCC   0x2800             CMP      R0,#+0
+   \       0xCE   0xD106             BNE      ??HAL_RCCEx_PeriphCLKConfig_8
+    182                {
+    183                  /* Apply new RTC clock source selection */
+    184                  __HAL_RCC_RTC_CONFIG(PeriphClkInit->RTCClockSelection);
+   \       0xD0   0x6830             LDR      R0,[R6, #+0]
+   \       0xD2   0x....             LDR      R1,??DataTable1_3  ;; 0xfffffcff
+   \       0xD4   0x4001             ANDS     R1,R1,R0
+   \       0xD6   0x6960             LDR      R0,[R4, #+20]
+   \       0xD8   0x4308             ORRS     R0,R0,R1
+   \       0xDA   0x6030             STR      R0,[R6, #+0]
+   \       0xDC   0xE004             B        ??HAL_RCCEx_PeriphCLKConfig_9
+    185                }
+    186                else
+    187                {
+    188                  /* set overall return value */
+    189                  status = ret;
+   \                     ??HAL_RCCEx_PeriphCLKConfig_8: (+1)
+   \       0xDE   0x4668             MOV      R0,SP
+   \       0xE0   0x7007             STRB     R7,[R0, #+0]
+   \       0xE2   0xE001             B        ??HAL_RCCEx_PeriphCLKConfig_9
+    190                }
+    191              }
+    192              else
+    193              {
+    194                /* set overall return value */
+    195                status = ret;
+   \                     ??HAL_RCCEx_PeriphCLKConfig_4: (+1)
+   \       0xE4   0x4668             MOV      R0,SP
+   \       0xE6   0x7007             STRB     R7,[R0, #+0]
+    196              }
+    197          
+    198              /* Restore clock configuration if changed */
+    199              if (pwrclkchanged == SET)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_9: (+1)
+   \       0xE8   0x4668             MOV      R0,SP
+   \       0xEA   0x7840             LDRB     R0,[R0, #+1]
+   \       0xEC   0x2801             CMP      R0,#+1
+   \       0xEE   0xD103             BNE      ??HAL_RCCEx_PeriphCLKConfig_0
+    200              {
+    201                __HAL_RCC_PWR_CLK_DISABLE();
+   \       0xF0   0x6828             LDR      R0,[R5, #+0]
+   \       0xF2   0x....             LDR      R1,??DataTable1_6  ;; 0xefffffff
+   \       0xF4   0x4001             ANDS     R1,R1,R0
+   \       0xF6   0x6029             STR      R1,[R5, #+0]
+    202              }
+    203            }
+    204          
+    205            /*-------------------------- USART1 clock source configuration -------------------*/
+    206            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_USART1) == RCC_PERIPHCLK_USART1)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_0: (+1)
+   \       0xF8   0x7820             LDRB     R0,[R4, #+0]
+   \       0xFA   0x07C0             LSLS     R0,R0,#+31
+   \       0xFC   0xD506             BPL      ??HAL_RCCEx_PeriphCLKConfig_10
+    207            {
+    208              /* Check the parameters */
+    209              assert_param(IS_RCC_USART1CLKSOURCE(PeriphClkInit->Usart1ClockSelection));
+    210          
+    211              /* Configure the USART1 clock source */
+    212              __HAL_RCC_USART1_CONFIG(PeriphClkInit->Usart1ClockSelection);
+   \       0xFE   0x....             LDR      R0,??DataTable1_7  ;; 0x40021054
+   \      0x100   0x6801             LDR      R1,[R0, #+0]
+   \      0x102   0x2203             MOVS     R2,#+3
+   \      0x104   0x4391             BICS     R1,R1,R2
+   \      0x106   0x6862             LDR      R2,[R4, #+4]
+   \      0x108   0x430A             ORRS     R2,R2,R1
+   \      0x10A   0x6002             STR      R2,[R0, #+0]
+    213            }
+    214          
+    215          #if defined(RCC_CCIPR_USART2SEL)
+    216            /*-------------------------- USART2 clock source configuration -------------------*/
+    217            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_USART2) == RCC_PERIPHCLK_USART2)
+    218            {
+    219              /* Check the parameters */
+    220              assert_param(IS_RCC_USART2CLKSOURCE(PeriphClkInit->Usart2ClockSelection));
+    221          
+    222              /* Configure the USART2 clock source */
+    223              __HAL_RCC_USART2_CONFIG(PeriphClkInit->Usart2ClockSelection);
+    224            }
+    225          #endif /* RCC_CCIPR_USART2SEL */
+    226          
+    227          #if defined(RCC_CCIPR_LPUART1SEL)
+    228            /*-------------------------- LPUART1 clock source configuration ------------------*/
+    229            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_LPUART1) == RCC_PERIPHCLK_LPUART1)
+    230            {
+    231              /* Check the parameters */
+    232              assert_param(IS_RCC_LPUART1CLKSOURCE(PeriphClkInit->Lpuart1ClockSelection));
+    233          
+    234              /* Configure the LPUAR1 clock source */
+    235              __HAL_RCC_LPUART1_CONFIG(PeriphClkInit->Lpuart1ClockSelection);
+    236            }
+    237          #endif /* RCC_CCIPR_LPUART1SEL */
+    238          
+    239          #if defined(RCC_CCIPR_LPTIM1SEL)
+    240            /*-------------------------- LPTIM1 clock source configuration -------------------*/
+    241            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_LPTIM1) == (RCC_PERIPHCLK_LPTIM1))
+    242            {
+    243              assert_param(IS_RCC_LPTIM1CLKSOURCE(PeriphClkInit->Lptim1ClockSelection));
+    244              __HAL_RCC_LPTIM1_CONFIG(PeriphClkInit->Lptim1ClockSelection);
+    245            }
+    246          #endif /* RCC_CCIPR_LPTIM1SEL */
+    247          
+    248          #if defined(RCC_CCIPR_LPTIM2SEL)
+    249            /*-------------------------- LPTIM2 clock source configuration -------------------*/
+    250            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_LPTIM2) == (RCC_PERIPHCLK_LPTIM2))
+    251            {
+    252              assert_param(IS_RCC_LPTIM2CLKSOURCE(PeriphClkInit->Lptim2ClockSelection));
+    253              __HAL_RCC_LPTIM2_CONFIG(PeriphClkInit->Lptim2ClockSelection);
+    254            }
+    255          #endif /* RCC_CCIPR_LPTIM2SEL */
+    256          
+    257            /*-------------------------- I2C1 clock source configuration ---------------------*/
+    258            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_I2C1) == RCC_PERIPHCLK_I2C1)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_10: (+1)
+   \      0x10C   0x7820             LDRB     R0,[R4, #+0]
+   \      0x10E   0x0640             LSLS     R0,R0,#+25
+   \      0x110   0xD506             BPL      ??HAL_RCCEx_PeriphCLKConfig_11
+    259            {
+    260              /* Check the parameters */
+    261              assert_param(IS_RCC_I2C1CLKSOURCE(PeriphClkInit->I2c1ClockSelection));
+    262          
+    263              /* Configure the I2C1 clock source */
+    264              __HAL_RCC_I2C1_CONFIG(PeriphClkInit->I2c1ClockSelection);
+   \      0x112   0x....             LDR      R0,??DataTable1_7  ;; 0x40021054
+   \      0x114   0x6801             LDR      R1,[R0, #+0]
+   \      0x116   0x....             LDR      R2,??DataTable1_8  ;; 0xffffcfff
+   \      0x118   0x400A             ANDS     R2,R2,R1
+   \      0x11A   0x68A1             LDR      R1,[R4, #+8]
+   \      0x11C   0x4311             ORRS     R1,R1,R2
+   \      0x11E   0x6001             STR      R1,[R0, #+0]
+    265            }
+    266          
+    267          #if defined(RCC_CCIPR_RNGSEL)
+    268            /*-------------------------- RNG clock source configuration ----------------------*/
+    269            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_RNG) == (RCC_PERIPHCLK_RNG))
+    270            {
+    271              assert_param(IS_RCC_RNGCLKSOURCE(PeriphClkInit->RngClockSelection));
+    272              __HAL_RCC_RNG_CONFIG(PeriphClkInit->RngClockSelection);
+    273          
+    274              if (PeriphClkInit->RngClockSelection == RCC_RNGCLKSOURCE_PLL)
+    275              {
+    276                /* Enable PLLQCLK output */
+    277                __HAL_RCC_PLLCLKOUT_ENABLE(RCC_PLLQCLK);
+    278              }
+    279            }
+    280          #endif /* RCC_CCIPR_RNGSEL */
+    281            /*-------------------------- ADC clock source configuration ----------------------*/
+    282            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_ADC) == RCC_PERIPHCLK_ADC)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_11: (+1)
+   \      0x120   0x2080             MOVS     R0,#+128
+   \      0x122   0x01C0             LSLS     R0,R0,#+7        ;; #+16384
+   \      0x124   0x6821             LDR      R1,[R4, #+0]
+   \      0x126   0x4001             ANDS     R1,R1,R0
+   \      0x128   0x2900             CMP      R1,#+0
+   \      0x12A   0xD011             BEQ      ??HAL_RCCEx_PeriphCLKConfig_12
+    283            {
+    284              /* Check the parameters */
+    285              assert_param(IS_RCC_ADCCLKSOURCE(PeriphClkInit->AdcClockSelection));
+    286          
+    287              /* Configure the ADC interface clock source */
+    288              __HAL_RCC_ADC_CONFIG(PeriphClkInit->AdcClockSelection);
+   \      0x12C   0x....             LDR      R1,??DataTable1_7  ;; 0x40021054
+   \      0x12E   0x680A             LDR      R2,[R1, #+0]
+   \      0x130   0x0092             LSLS     R2,R2,#+2        ;; ZeroExtS R2,R2,#+2,#+2
+   \      0x132   0x0892             LSRS     R2,R2,#+2
+   \      0x134   0x6923             LDR      R3,[R4, #+16]
+   \      0x136   0x4313             ORRS     R3,R3,R2
+   \      0x138   0x600B             STR      R3,[R1, #+0]
+    289          
+    290              if (PeriphClkInit->AdcClockSelection == RCC_ADCCLKSOURCE_PLLADC)
+   \      0x13A   0x6921             LDR      R1,[R4, #+16]
+   \      0x13C   0x2280             MOVS     R2,#+128
+   \      0x13E   0x05D2             LSLS     R2,R2,#+23       ;; #+1073741824
+   \      0x140   0x4291             CMP      R1,R2
+   \      0x142   0xD105             BNE      ??HAL_RCCEx_PeriphCLKConfig_12
+    291              {
+    292                /* Enable PLLPCLK output */
+    293                __HAL_RCC_PLLCLKOUT_ENABLE(RCC_PLLPCLK);
+   \      0x144   0x....             LDR      R1,??DataTable2  ;; 0x4002100c
+   \      0x146   0x680A             LDR      R2,[R1, #+0]
+   \      0x148   0x2380             MOVS     R3,#+128
+   \      0x14A   0x025B             LSLS     R3,R3,#+9        ;; #+65536
+   \      0x14C   0x4313             ORRS     R3,R3,R2
+   \      0x14E   0x600B             STR      R3,[R1, #+0]
+    294              }
+    295            }
+    296          
+    297          #if defined(RCC_CCIPR_CECSEL)
+    298            /*-------------------------- CEC clock source configuration ---------------------*/
+    299            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_CEC) == RCC_PERIPHCLK_CEC)
+    300            {
+    301              /* Check the parameters */
+    302              assert_param(IS_RCC_CECCLKSOURCE(PeriphClkInit->CecClockSelection));
+    303          
+    304              /* Configure the CEC clock source */
+    305              __HAL_RCC_CEC_CONFIG(PeriphClkInit->CecClockSelection);
+    306            }
+    307          #endif /* RCC_CCIPR_CECSEL */
+    308          
+    309          #if defined(RCC_CCIPR_TIM1SEL)
+    310            /*-------------------------- TIM1 clock source configuration ---------------------*/
+    311            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_TIM1) == RCC_PERIPHCLK_TIM1)
+    312            {
+    313              /* Check the parameters */
+    314              assert_param(IS_RCC_TIM1CLKSOURCE(PeriphClkInit->Tim1ClockSelection));
+    315          
+    316              /* Configure the TIM1 clock source */
+    317              __HAL_RCC_TIM1_CONFIG(PeriphClkInit->Tim1ClockSelection);
+    318          
+    319              if (PeriphClkInit->Tim1ClockSelection == RCC_TIM1CLKSOURCE_PLL)
+    320              {
+    321                /* Enable PLLQCLK output */
+    322                __HAL_RCC_PLLCLKOUT_ENABLE(RCC_PLLQCLK);
+    323              }
+    324            }
+    325          #endif /* RCC_CCIPR_TIM1SEL */
+    326          
+    327          #if defined(RCC_CCIPR_TIM15SEL)
+    328            /*-------------------------- TIM15 clock source configuration ---------------------*/
+    329            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_TIM15) == RCC_PERIPHCLK_TIM15)
+    330            {
+    331              /* Check the parameters */
+    332              assert_param(IS_RCC_TIM15CLKSOURCE(PeriphClkInit->Tim15ClockSelection));
+    333          
+    334              /* Configure the TIM15 clock source */
+    335              __HAL_RCC_TIM15_CONFIG(PeriphClkInit->Tim15ClockSelection);
+    336          
+    337              if (PeriphClkInit->Tim15ClockSelection == RCC_TIM15CLKSOURCE_PLL)
+    338              {
+    339                /* Enable PLLQCLK output */
+    340                __HAL_RCC_PLLCLKOUT_ENABLE(RCC_PLLQCLK);
+    341              }
+    342            }
+    343          #endif /* RCC_CCIPR_TIM15SEL */
+    344          
+    345            /*-------------------------- I2S1 clock source configuration ---------------------*/
+    346            if (((PeriphClkInit->PeriphClockSelection) & RCC_PERIPHCLK_I2S1) == RCC_PERIPHCLK_I2S1)
+   \                     ??HAL_RCCEx_PeriphCLKConfig_12: (+1)
+   \      0x150   0x6821             LDR      R1,[R4, #+0]
+   \      0x152   0x0509             LSLS     R1,R1,#+20
+   \      0x154   0xD50F             BPL      ??HAL_RCCEx_PeriphCLKConfig_13
+    347            {
+    348              /* Check the parameters */
+    349              assert_param(IS_RCC_I2S1CLKSOURCE(PeriphClkInit->I2s1ClockSelection));
+    350          
+    351              /* Configure the I2S1 clock source */
+    352              __HAL_RCC_I2S1_CONFIG(PeriphClkInit->I2s1ClockSelection);
+   \      0x156   0x....             LDR      R1,??DataTable1_7  ;; 0x40021054
+   \      0x158   0x680A             LDR      R2,[R1, #+0]
+   \      0x15A   0x....             LDR      R3,??DataTable2_1  ;; 0xffff3fff
+   \      0x15C   0x4013             ANDS     R3,R3,R2
+   \      0x15E   0x68E2             LDR      R2,[R4, #+12]
+   \      0x160   0x431A             ORRS     R2,R2,R3
+   \      0x162   0x600A             STR      R2,[R1, #+0]
+    353          
+    354              if (PeriphClkInit->I2s1ClockSelection == RCC_I2S1CLKSOURCE_PLL)
+   \      0x164   0x68E1             LDR      R1,[R4, #+12]
+   \      0x166   0x4281             CMP      R1,R0
+   \      0x168   0xD105             BNE      ??HAL_RCCEx_PeriphCLKConfig_13
+    355              {
+    356                /* Enable PLLPCLK output */
+    357                __HAL_RCC_PLLCLKOUT_ENABLE(RCC_PLLPCLK);
+   \      0x16A   0x....             LDR      R0,??DataTable2  ;; 0x4002100c
+   \      0x16C   0x6801             LDR      R1,[R0, #+0]
+   \      0x16E   0x2280             MOVS     R2,#+128
+   \      0x170   0x0252             LSLS     R2,R2,#+9        ;; #+65536
+   \      0x172   0x430A             ORRS     R2,R2,R1
+   \      0x174   0x6002             STR      R2,[R0, #+0]
+    358              }
+    359            }
+    360          
+    361            return status;
+   \                     ??HAL_RCCEx_PeriphCLKConfig_13: (+1)
+   \      0x176   0x4668             MOV      R0,SP
+   \      0x178   0x7800             LDRB     R0,[R0, #+0]
+   \      0x17A   0xB005             ADD      SP,SP,#+20
+   \      0x17C   0xBDF0             POP      {R4-R7,PC}       ;; return
+    362          }
+    363          
+    364          /**
+    365            * @brief  Get the RCC_ClkInitStruct according to the internal RCC configuration registers.
+    366            * @param  PeriphClkInit pointer to an RCC_PeriphCLKInitTypeDef structure that
+    367            *         returns the configuration information for the Extended Peripherals
+    368            *         clocks: I2C1, I2S1, USART1, RTC, ADC,
+    369            *         LPTIM1 (1), LPTIM2 (1), TIM1 (2), TIM15 (1)(2), USART2 (2), LPUART1 (1), CEC (1) and RNG (1)
+    370            * @note (1) Peripheral is not available on all devices
+    371            * @note (2) Peripheral clock selection is not available on all devices
+    372            * @retval None
+    373            */
+
+   \                                 In section .text, align 2, keep-with-next
+    374          void HAL_RCCEx_GetPeriphCLKConfig(RCC_PeriphCLKInitTypeDef  *PeriphClkInit)
+    375          {
+    376            /* Set all possible values for the extended clock type parameter------------*/
+    377            PeriphClkInit->PeriphClockSelection = RCC_PERIPHCLK_USART1 | RCC_PERIPHCLK_I2C1 | RCC_PERIPHCLK_I2S1 | \
+    378                                                  RCC_PERIPHCLK_ADC     | RCC_PERIPHCLK_RTC ;
+   \                     HAL_RCCEx_GetPeriphCLKConfig: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable2_2  ;; 0x24841
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    379          
+    380          #if defined(RCC_CCIPR_LPTIM1SEL) && defined(RCC_CCIPR_LPTIM2SEL)
+    381            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_LPTIM2  | RCC_PERIPHCLK_LPTIM1;
+    382          #endif /* RCC_CCIPR_LPTIM1SEL && RCC_CCIPR_LPTIM2SEL */
+    383          #if defined(RCC_CCIPR_RNGSEL)
+    384            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_RNG;
+    385          #endif /* RCC_CCIPR_RNGSEL */
+    386          #if defined(RCC_CCIPR_LPUART1SEL)
+    387            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_LPUART1;
+    388          #endif /* RCC_CCIPR_LPUART1SEL */
+    389          #if defined(RCC_CCIPR_CECSEL)
+    390            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_CEC;
+    391          #endif /* RCC_CCIPR_CECSEL */
+    392          #if defined(RCC_CCIPR_TIM1SEL)
+    393            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_TIM1;
+    394          #endif /* RCC_CCIPR_TIM1SEL */
+    395          #if defined(RCC_CCIPR_TIM15SEL)
+    396            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_TIM15;
+    397          #endif /* RCC_CCIPR_TIM15SEL */
+    398          #if defined(RCC_CCIPR_USART2SEL)
+    399            PeriphClkInit->PeriphClockSelection |=  RCC_PERIPHCLK_USART2;
+    400          #endif /* RCC_CCIPR_USART2SEL */
+    401          
+    402            /* Get the USART1 clock source ---------------------------------------------*/
+    403            PeriphClkInit->Usart1ClockSelection  = __HAL_RCC_GET_USART1_SOURCE();
+   \        0x4   0x....             LDR      R1,??DataTable1_7  ;; 0x40021054
+   \        0x6   0x680A             LDR      R2,[R1, #+0]
+   \        0x8   0x0792             LSLS     R2,R2,#+30       ;; ZeroExtS R2,R2,#+30,#+30
+   \        0xA   0x0F92             LSRS     R2,R2,#+30
+   \        0xC   0x6042             STR      R2,[R0, #+4]
+    404          #if defined(RCC_CCIPR_USART2SEL)
+    405            /* Get the USART2 clock source ---------------------------------------------*/
+    406            PeriphClkInit->Usart2ClockSelection  = __HAL_RCC_GET_USART2_SOURCE();
+    407          #endif /* RCC_CCIPR_USART2SEL */
+    408          #if defined(RCC_CCIPR_LPUART1SEL)
+    409            /* Get the LPUART1 clock source --------------------------------------------*/
+    410            PeriphClkInit->Lpuart1ClockSelection = __HAL_RCC_GET_LPUART1_SOURCE();
+    411          #endif /* RCC_CCIPR_LPUART1SEL */
+    412            /* Get the I2C1 clock source -----------------------------------------------*/
+    413            PeriphClkInit->I2c1ClockSelection    = __HAL_RCC_GET_I2C1_SOURCE();
+   \        0xE   0x680A             LDR      R2,[R1, #+0]
+   \       0x10   0x23C0             MOVS     R3,#+192
+   \       0x12   0x019B             LSLS     R3,R3,#+6        ;; #+12288
+   \       0x14   0x4013             ANDS     R3,R3,R2
+   \       0x16   0x6083             STR      R3,[R0, #+8]
+    414          #if defined(RCC_CCIPR_LPTIM1SEL)
+    415            /* Get the LPTIM1 clock source ---------------------------------------------*/
+    416            PeriphClkInit->Lptim1ClockSelection  = __HAL_RCC_GET_LPTIM1_SOURCE();
+    417          #endif /* RCC_CCIPR_LPTIM1SEL */
+    418          #if defined(RCC_CCIPR_LPTIM2SEL)
+    419            /* Get the LPTIM2 clock source ---------------------------------------------*/
+    420            PeriphClkInit->Lptim2ClockSelection  = __HAL_RCC_GET_LPTIM2_SOURCE();
+    421          #endif /* RCC_CCIPR_LPTIM2SEL */
+    422          #if defined(RCC_CCIPR_TIM1SEL)
+    423            /* Get the TIM1 clock source ---------------------------------------------*/
+    424            PeriphClkInit->Tim1ClockSelection  = __HAL_RCC_GET_TIM1_SOURCE();
+    425          #endif /* RCC_CCIPR_TIM1SEL */
+    426          #if defined(RCC_CCIPR_TIM15SEL)
+    427            /* Get the TIM15 clock source ---------------------------------------------*/
+    428            PeriphClkInit->Tim15ClockSelection  = __HAL_RCC_GET_TIM15_SOURCE();
+    429          #endif /* RCC_CCIPR_TIM15SEL */
+    430            /* Get the RTC clock source ------------------------------------------------*/
+    431            PeriphClkInit->RTCClockSelection     = __HAL_RCC_GET_RTC_SOURCE();
+   \       0x18   0x....             LDR      R2,??DataTable3  ;; 0x4002105c
+   \       0x1A   0x6812             LDR      R2,[R2, #+0]
+   \       0x1C   0x23C0             MOVS     R3,#+192
+   \       0x1E   0x009B             LSLS     R3,R3,#+2        ;; #+768
+   \       0x20   0x4013             ANDS     R3,R3,R2
+   \       0x22   0x6143             STR      R3,[R0, #+20]
+    432          #if defined(RCC_CCIPR_RNGSEL)
+    433            /* Get the RNG clock source ------------------------------------------------*/
+    434            PeriphClkInit->RngClockSelection     = __HAL_RCC_GET_RNG_SOURCE();
+    435          #endif  /* RCC_CCIPR_RNGSEL */
+    436            /* Get the ADC clock source -----------------------------------------------*/
+    437            PeriphClkInit->AdcClockSelection     = __HAL_RCC_GET_ADC_SOURCE();
+   \       0x24   0x680A             LDR      R2,[R1, #+0]
+   \       0x26   0x0F92             LSRS     R2,R2,#+30
+   \       0x28   0x0792             LSLS     R2,R2,#+30
+   \       0x2A   0x6102             STR      R2,[R0, #+16]
+    438          #if defined(RCC_CCIPR_CECSEL)
+    439            /* Get the CEC clock source -----------------------------------------------*/
+    440            PeriphClkInit->CecClockSelection     = __HAL_RCC_GET_CEC_SOURCE();
+    441          #endif  /* RCC_CCIPR_CECSEL */
+    442            /* Get the I2S1 clock source -----------------------------------------------*/
+    443            PeriphClkInit->I2s1ClockSelection    = __HAL_RCC_GET_I2S1_SOURCE();
+   \       0x2C   0x6809             LDR      R1,[R1, #+0]
+   \       0x2E   0x22C0             MOVS     R2,#+192
+   \       0x30   0x0212             LSLS     R2,R2,#+8        ;; #+49152
+   \       0x32   0x400A             ANDS     R2,R2,R1
+   \       0x34   0x60C2             STR      R2,[R0, #+12]
+    444          }
+   \       0x36   0x4770             BX       LR               ;; return
+    445          
+    446          /**
+    447            * @brief  Return the peripheral clock frequency for peripherals with clock source from PLL
+    448            * @note   Return 0 if peripheral clock identifier not managed by this API
+    449            * @param  PeriphClk  Peripheral clock identifier
+    450            *         This parameter can be one of the following values:
+    451            *            @arg @ref RCC_PERIPHCLK_RTC     RTC peripheral clock
+    452            *            @arg @ref RCC_PERIPHCLK_ADC     ADC peripheral clock
+    453            *            @arg @ref RCC_PERIPHCLK_I2C1    I2C1 peripheral clock
+    454            *            @arg @ref RCC_PERIPHCLK_I2S1    I2S1 peripheral clock
+    455            *            @arg @ref RCC_PERIPHCLK_USART1  USART1 peripheral clock
+    456            *            @arg @ref RCC_PERIPHCLK_RNG     RNG peripheral clock    (1)
+    457            *            @arg @ref RCC_PERIPHCLK_TIM15   TIM15 peripheral clock  (1)(2)
+    458            *            @arg @ref RCC_PERIPHCLK_TIM1    TIM1 peripheral clock   (1)(2)
+    459            *            @arg @ref RCC_PERIPHCLK_LPTIM1  LPTIM1 peripheral clock (1)
+    460            *            @arg @ref RCC_PERIPHCLK_LPTIM2  LPTIM2 peripheral clock (1)
+    461            *            @arg @ref RCC_PERIPHCLK_LPUART1 LPUART1 peripheral clock(1)
+    462            *            @arg @ref RCC_PERIPHCLK_CEC     CEC peripheral clock    (1)
+    463            *            @arg @ref RCC_PERIPHCLK_USART2  USART2 peripheral clock (1)(2)
+    464            * @note   (1) Peripheral not available on all devices
+    465            * @note   (2) Peripheral Clock configuration not available on all devices
+    466            * @retval Frequency in Hz
+    467            */
+
+   \                                 In section .text, align 2, keep-with-next
+    468          uint32_t HAL_RCCEx_GetPeriphCLKFreq(uint32_t PeriphClk)
+    469          {
+   \                     HAL_RCCEx_GetPeriphCLKFreq: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB082             SUB      SP,SP,#+8
+    470            uint32_t frequency = 0U;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x0005             MOVS     R5,R0
+    471            uint32_t srcclk;
+    472            uint32_t pllvco;
+    473            uint32_t plln;
+    474          #if defined(RCC_CCIPR_RNGSEL)
+    475            uint32_t rngclk;
+    476            uint32_t rngdiv;
+    477          #endif
+    478            /* Check the parameters */
+    479            assert_param(IS_RCC_PERIPHCLOCK(PeriphClk));
+    480          
+    481            if (PeriphClk == RCC_PERIPHCLK_RTC)
+   \        0x8   0x2180             MOVS     R1,#+128
+   \        0xA   0x0289             LSLS     R1,R1,#+10       ;; #+131072
+   \        0xC   0x9A02             LDR      R2,[SP, #+8]
+   \        0xE   0x428A             CMP      R2,R1
+   \       0x10   0xD12B             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_0
+    482            {
+    483              /* Get the current RTC source */
+    484              srcclk = __HAL_RCC_GET_RTC_SOURCE();
+   \       0x12   0x20C0             MOVS     R0,#+192
+   \       0x14   0x0080             LSLS     R0,R0,#+2        ;; #+768
+   \       0x16   0x....             LDR      R3,??DataTable3  ;; 0x4002105c
+   \       0x18   0x681A             LDR      R2,[R3, #+0]
+   \       0x1A   0x4002             ANDS     R2,R2,R0
+   \       0x1C   0x0014             MOVS     R4,R2
+    485          
+    486              /* Check if LSE is ready and if RTC clock selection is LSE */
+    487              if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_RTCCLKSOURCE_LSE))
+   \       0x1E   0x2202             MOVS     R2,#+2
+   \       0x20   0x681B             LDR      R3,[R3, #+0]
+   \       0x22   0x4013             ANDS     R3,R3,R2
+   \       0x24   0x2B00             CMP      R3,#+0
+   \       0x26   0xD007             BEQ      ??HAL_RCCEx_GetPeriphCLKFreq_1
+   \       0x28   0x2380             MOVS     R3,#+128
+   \       0x2A   0x005B             LSLS     R3,R3,#+1        ;; #+256
+   \       0x2C   0x429C             CMP      R4,R3
+   \       0x2E   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_1
+    488              {
+    489                frequency = LSE_VALUE;
+   \       0x30   0x2080             MOVS     R0,#+128
+   \       0x32   0x0200             LSLS     R0,R0,#+8        ;; #+32768
+   \       0x34   0x0005             MOVS     R5,R0
+   \       0x36   0xE0DC             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    490              }
+    491              /* Check if LSI is ready and if RTC clock selection is LSI */
+    492              else if ((HAL_IS_BIT_SET(RCC->CSR, RCC_CSR_LSIRDY)) && (srcclk == RCC_RTCCLKSOURCE_LSI))
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_1: (+1)
+   \       0x38   0x....             LDR      R3,??DataTable3_1  ;; 0x40021060
+   \       0x3A   0x681B             LDR      R3,[R3, #+0]
+   \       0x3C   0x401A             ANDS     R2,R2,R3
+   \       0x3E   0x2A00             CMP      R2,#+0
+   \       0x40   0xD007             BEQ      ??HAL_RCCEx_GetPeriphCLKFreq_3
+   \       0x42   0x2280             MOVS     R2,#+128
+   \       0x44   0x0092             LSLS     R2,R2,#+2        ;; #+512
+   \       0x46   0x4294             CMP      R4,R2
+   \       0x48   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_3
+    493              {
+    494                frequency = LSI_VALUE;
+   \       0x4A   0x20FA             MOVS     R0,#+250
+   \       0x4C   0x01C0             LSLS     R0,R0,#+7        ;; #+32000
+   \       0x4E   0x0005             MOVS     R5,R0
+   \       0x50   0xE0CF             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    495              }
+    496              /* Check if HSE is ready  and if RTC clock selection is HSI_DIV32*/
+    497              else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSERDY)) &&(srcclk == RCC_RTCCLKSOURCE_HSE_DIV32))
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_3: (+1)
+   \       0x52   0x....             LDR      R2,??DataTable3_2  ;; 0x40021000
+   \       0x54   0x6812             LDR      R2,[R2, #+0]
+   \       0x56   0x4011             ANDS     R1,R1,R2
+   \       0x58   0x2900             CMP      R1,#+0
+   \       0x5A   0xD100             BNE      .+4
+   \       0x5C   0xE0C9             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+   \       0x5E   0x4284             CMP      R4,R0
+   \       0x60   0xD000             BEQ      .+4
+   \       0x62   0xE0C6             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    498              {
+    499                frequency = HSE_VALUE / 32U;
+   \       0x64   0x....             LDR      R0,??DataTable4  ;; 0x3d090
+   \       0x66   0x0005             MOVS     R5,R0
+   \       0x68   0xE0C3             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    500              }
+    501              /* Clock not enabled for RTC*/
+    502              else
+    503              {
+    504                /* Nothing to do as frequency already initialized to 0U */
+    505              }
+    506            }
+    507            else
+    508            {
+    509              /* Other external peripheral clock source than RTC */
+    510          
+    511              /* Compute PLL clock input */
+    512              if (__HAL_RCC_GET_PLL_OSCSOURCE() == RCC_PLLSOURCE_HSI)  /* HSI ? */
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_0: (+1)
+   \       0x6A   0x2603             MOVS     R6,#+3
+   \       0x6C   0x....             LDR      R7,??DataTable2  ;; 0x4002100c
+   \       0x6E   0x6839             LDR      R1,[R7, #+0]
+   \       0x70   0x4031             ANDS     R1,R1,R6
+   \       0x72   0x2902             CMP      R1,#+2
+   \       0x74   0xD101             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_4
+    513              {
+    514                pllvco = HSI_VALUE;
+   \       0x76   0x....             LDR      R0,??DataTable4_1  ;; 0xf42400
+   \       0x78   0xE005             B        ??HAL_RCCEx_GetPeriphCLKFreq_5
+    515              }
+    516              else if (__HAL_RCC_GET_PLL_OSCSOURCE() == RCC_PLLSOURCE_HSE)  /* HSE ? */
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_4: (+1)
+   \       0x7A   0x6839             LDR      R1,[R7, #+0]
+   \       0x7C   0x4031             ANDS     R1,R1,R6
+   \       0x7E   0x2903             CMP      R1,#+3
+   \       0x80   0xD101             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_6
+    517              {
+    518                pllvco = HSE_VALUE;
+   \       0x82   0x....             LDR      R0,??DataTable4_2  ;; 0x7a1200
+   \       0x84   0xE7FF             B        ??HAL_RCCEx_GetPeriphCLKFreq_5
+    519              }
+    520              else /* No source */
+    521              {
+    522                pllvco = 0U;
+    523              }
+    524          
+    525              /* f(PLL Source) / PLLM */
+    526              pllvco = (pllvco / ((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLM) >> RCC_PLLCFGR_PLLM_Pos) + 1U));
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_6: (+1)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_5: (+1)
+   \       0x86   0x6839             LDR      R1,[R7, #+0]
+   \       0x88   0x0909             LSRS     R1,R1,#+4
+   \       0x8A   0x0749             LSLS     R1,R1,#+29       ;; ZeroExtS R1,R1,#+29,#+29
+   \       0x8C   0x0F49             LSRS     R1,R1,#+29
+   \       0x8E   0x1C49             ADDS     R1,R1,#+1
+   \       0x90   0x....'....        BL       __aeabi_uidiv
+   \       0x94   0x9001             STR      R0,[SP, #+4]
+    527          
+    528              switch (PeriphClk)
+   \       0x96   0x9802             LDR      R0,[SP, #+8]
+   \       0x98   0x2801             CMP      R0,#+1
+   \       0x9A   0xD00A             BEQ      ??HAL_RCCEx_GetPeriphCLKFreq_7
+   \       0x9C   0x2840             CMP      R0,#+64
+   \       0x9E   0xD055             BEQ      ??HAL_RCCEx_GetPeriphCLKFreq_8
+   \       0xA0   0x2180             MOVS     R1,#+128
+   \       0xA2   0x0109             LSLS     R1,R1,#+4        ;; #+2048
+   \       0xA4   0x4288             CMP      R0,R1
+   \       0xA6   0xD070             BEQ      ??HAL_RCCEx_GetPeriphCLKFreq_9
+   \       0xA8   0x2180             MOVS     R1,#+128
+   \       0xAA   0x01C9             LSLS     R1,R1,#+7        ;; #+16384
+   \       0xAC   0x4288             CMP      R0,R1
+   \       0xAE   0xD023             BEQ      ??HAL_RCCEx_GetPeriphCLKFreq_10
+   \       0xB0   0xE09F             B        ??HAL_RCCEx_GetPeriphCLKFreq_11
+    529              {
+    530          #if defined(RCC_CCIPR_RNGSEL)
+    531                case RCC_PERIPHCLK_RNG:
+    532          
+    533                  srcclk = READ_BIT(RCC->CCIPR, RCC_CCIPR_RNGSEL);
+    534                  if (srcclk == RCC_RNGCLKSOURCE_HSI_DIV8)  /* HSI_DIV8 ? */
+    535                  {
+    536                    rngclk = HSI_VALUE / 8U;
+    537                  }
+    538                  else if (srcclk == RCC_RNGCLKSOURCE_PLL) /* PLL ? */
+    539                  {
+    540                    /* f(PLLQ) = f(VCO input) * PLLN / PLLQ */
+    541                    plln = READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >> RCC_PLLCFGR_PLLN_Pos;
+    542                    rngclk = (pllvco * plln) / ((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQ) >> RCC_PLLCFGR_PLLQ_Pos) + 1U);
+    543                  }
+    544                  else if (srcclk == RCC_RNGCLKSOURCE_SYSCLK) /* SYSCLK ? */
+    545                  {
+    546                    rngclk = HAL_RCC_GetSysClockFreq();
+    547                  }
+    548                  else /* No clock source */
+    549                  {
+    550                    rngclk = 0U;
+    551                  }
+    552          
+    553                  rngdiv = (1UL << ((READ_BIT(RCC->CCIPR, RCC_CCIPR_RNGDIV)) >> RCC_CCIPR_RNGDIV_Pos));
+    554                  frequency = (rngclk / rngdiv);
+    555          
+    556                  break;
+    557          #endif  /* RCC_CCIPR_RNGSEL */
+    558                case RCC_PERIPHCLK_USART1:
+    559                  /* Get the current USART1 source */
+    560                  srcclk = __HAL_RCC_GET_USART1_SOURCE();
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_7: (+1)
+   \       0xB2   0x....             LDR      R0,??DataTable4_3  ;; 0x40021054
+   \       0xB4   0x6800             LDR      R0,[R0, #+0]
+   \       0xB6   0x4006             ANDS     R6,R6,R0
+   \       0xB8   0x0034             MOVS     R4,R6
+    561          
+    562                  if (srcclk == RCC_USART1CLKSOURCE_PCLK1)            /* PCLK1 ? */
+   \       0xBA   0x2C00             CMP      R4,#+0
+   \       0xBC   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_12
+    563                  {
+    564                    frequency = HAL_RCC_GetPCLK1Freq();
+   \       0xBE   0x....'....        BL       HAL_RCC_GetPCLK1Freq
+   \       0xC2   0x0005             MOVS     R5,R0
+   \       0xC4   0xE017             B        ??HAL_RCCEx_GetPeriphCLKFreq_13
+    565                  }
+    566                  else if (srcclk == RCC_USART1CLKSOURCE_SYSCLK)     /* SYSCLK ? */
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_12: (+1)
+   \       0xC6   0x2C01             CMP      R4,#+1
+   \       0xC8   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_14
+    567                  {
+    568                    frequency = HAL_RCC_GetSysClockFreq();
+   \       0xCA   0x....'....        BL       HAL_RCC_GetSysClockFreq
+   \       0xCE   0x0005             MOVS     R5,R0
+   \       0xD0   0xE011             B        ??HAL_RCCEx_GetPeriphCLKFreq_13
+    569                  }
+    570                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_USART1CLKSOURCE_HSI))
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_14: (+1)
+   \       0xD2   0x....             LDR      R0,??DataTable3_2  ;; 0x40021000
+   \       0xD4   0x6800             LDR      R0,[R0, #+0]
+   \       0xD6   0x0540             LSLS     R0,R0,#+21
+   \       0xD8   0xD504             BPL      ??HAL_RCCEx_GetPeriphCLKFreq_15
+   \       0xDA   0x2C02             CMP      R4,#+2
+   \       0xDC   0xD102             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_15
+    571                  {
+    572                    frequency = HSI_VALUE;
+   \       0xDE   0x....             LDR      R0,??DataTable4_1  ;; 0xf42400
+   \       0xE0   0x0005             MOVS     R5,R0
+   \       0xE2   0xE008             B        ??HAL_RCCEx_GetPeriphCLKFreq_13
+    573                  }
+    574                  else if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_USART1CLKSOURCE_LSE))
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_15: (+1)
+   \       0xE4   0x....             LDR      R0,??DataTable3  ;; 0x4002105c
+   \       0xE6   0x6800             LDR      R0,[R0, #+0]
+   \       0xE8   0x0780             LSLS     R0,R0,#+30
+   \       0xEA   0xD504             BPL      ??HAL_RCCEx_GetPeriphCLKFreq_13
+   \       0xEC   0x2C03             CMP      R4,#+3
+   \       0xEE   0xD102             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_13
+    575                  {
+    576                    frequency = LSE_VALUE;
+   \       0xF0   0x2080             MOVS     R0,#+128
+   \       0xF2   0x0200             LSLS     R0,R0,#+8        ;; #+32768
+   \       0xF4   0x0005             MOVS     R5,R0
+    577                  }
+    578                  /* Clock not enabled for USART1 */
+    579                  else
+    580                  {
+    581                    /* Nothing to do as frequency already initialized to 0U */
+    582                  }
+    583                  break;
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_13: (+1)
+   \       0xF6   0xE07C             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    584          #if defined(RCC_CCIPR_USART2SEL)
+    585                case RCC_PERIPHCLK_USART2:
+    586                  /* Get the current USART2 source */
+    587                  srcclk = __HAL_RCC_GET_USART2_SOURCE();
+    588          
+    589                  if (srcclk == RCC_USART2CLKSOURCE_PCLK1)
+    590                  {
+    591                    frequency = HAL_RCC_GetPCLK1Freq();
+    592                  }
+    593                  else if (srcclk == RCC_USART2CLKSOURCE_SYSCLK)
+    594                  {
+    595                    frequency = HAL_RCC_GetSysClockFreq();
+    596                  }
+    597                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_USART2CLKSOURCE_HSI))
+    598                  {
+    599                    frequency = HSI_VALUE;
+    600                  }
+    601                  else if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_USART2CLKSOURCE_LSE))
+    602                  {
+    603                    frequency = LSE_VALUE;
+    604                  }
+    605                  /* Clock not enabled for USART2 */
+    606                  else
+    607                  {
+    608                    /* Nothing to do as frequency already initialized to 0U */
+    609                  }
+    610                  break;
+    611          #endif /* RCC_CCIPR_USART2SEL */
+    612          #if defined(RCC_CCIPR_CECSEL)
+    613                case RCC_PERIPHCLK_CEC:
+    614                  /* Get the current CEC source */
+    615                  srcclk = __HAL_RCC_GET_CEC_SOURCE();
+    616          
+    617                  if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_CECCLKSOURCE_HSI_DIV488))
+    618                  {
+    619                    frequency = (HSI_VALUE / 488U);
+    620                  }
+    621                  else if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_CECCLKSOURCE_LSE))
+    622                  {
+    623                    frequency = LSE_VALUE;
+    624                  }
+    625                  /* Clock not enabled for CEC */
+    626                  else
+    627                  {
+    628                    /* Nothing to do as frequency already initialized to 0U */
+    629                  }
+    630                  break;
+    631          #endif /* RCC_CCIPR_CECSEL */
+    632          
+    633          #if defined(RCC_CCIPR_LPUART1SEL)
+    634                case RCC_PERIPHCLK_LPUART1:
+    635                  /* Get the current LPUART1 source */
+    636                  srcclk = __HAL_RCC_GET_LPUART1_SOURCE();
+    637          
+    638                  if (srcclk == RCC_LPUART1CLKSOURCE_PCLK1)
+    639                  {
+    640                    frequency = HAL_RCC_GetPCLK1Freq();
+    641                  }
+    642                  else if (srcclk == RCC_LPUART1CLKSOURCE_SYSCLK)
+    643                  {
+    644                    frequency = HAL_RCC_GetSysClockFreq();
+    645                  }
+    646                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_LPUART1CLKSOURCE_HSI))
+    647                  {
+    648                    frequency = HSI_VALUE;
+    649                  }
+    650                  else if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_LPUART1CLKSOURCE_LSE))
+    651                  {
+    652                    frequency = LSE_VALUE;
+    653                  }
+    654                  /* Clock not enabled for LPUART1 */
+    655                  else
+    656                  {
+    657                    /* Nothing to do as frequency already initialized to 0U */
+    658                  }
+    659                  break;
+    660          #endif /* RCC_CCIPR_LPUART1SEL */
+    661          
+    662                case RCC_PERIPHCLK_ADC:
+    663          
+    664                  srcclk = __HAL_RCC_GET_ADC_SOURCE();
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_10: (+1)
+   \       0xF8   0x....             LDR      R0,??DataTable4_3  ;; 0x40021054
+   \       0xFA   0x6800             LDR      R0,[R0, #+0]
+   \       0xFC   0x0F80             LSRS     R0,R0,#+30
+   \       0xFE   0x0780             LSLS     R0,R0,#+30
+   \      0x100   0x0004             MOVS     R4,R0
+    665          
+    666                  if (srcclk == RCC_ADCCLKSOURCE_SYSCLK)
+   \      0x102   0x2C00             CMP      R4,#+0
+   \      0x104   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_16
+    667                  {
+    668                    frequency = HAL_RCC_GetSysClockFreq();
+   \      0x106   0x....'....        BL       HAL_RCC_GetSysClockFreq
+   \      0x10A   0x0005             MOVS     R5,R0
+   \      0x10C   0xE01D             B        ??HAL_RCCEx_GetPeriphCLKFreq_17
+    669                  }
+    670                  else if (srcclk == RCC_ADCCLKSOURCE_HSI)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_16: (+1)
+   \      0x10E   0x2080             MOVS     R0,#+128
+   \      0x110   0x0600             LSLS     R0,R0,#+24       ;; #-2147483648
+   \      0x112   0x4284             CMP      R4,R0
+   \      0x114   0xD102             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_18
+    671                  {
+    672                    frequency = HSI_VALUE;
+   \      0x116   0x....             LDR      R0,??DataTable4_1  ;; 0xf42400
+   \      0x118   0x0005             MOVS     R5,R0
+   \      0x11A   0xE016             B        ??HAL_RCCEx_GetPeriphCLKFreq_17
+    673                  }
+    674                  else if (srcclk == RCC_ADCCLKSOURCE_PLLADC)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_18: (+1)
+   \      0x11C   0x2080             MOVS     R0,#+128
+   \      0x11E   0x05C0             LSLS     R0,R0,#+23       ;; #+1073741824
+   \      0x120   0x4284             CMP      R4,R0
+   \      0x122   0xD112             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_17
+    675                  {
+    676                    if (__HAL_RCC_GET_PLLCLKOUT_CONFIG(RCC_PLLPCLK) != 0U)
+   \      0x124   0x6838             LDR      R0,[R7, #+0]
+   \      0x126   0x03C0             LSLS     R0,R0,#+15
+   \      0x128   0xD50F             BPL      ??HAL_RCCEx_GetPeriphCLKFreq_17
+    677                    {
+    678                      /* f(PLLP) = f(VCO input) * PLLN / PLLP */
+    679                      plln = READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >> RCC_PLLCFGR_PLLN_Pos;
+   \      0x12A   0x6838             LDR      R0,[R7, #+0]
+   \      0x12C   0x0A00             LSRS     R0,R0,#+8
+   \      0x12E   0x0640             LSLS     R0,R0,#+25       ;; ZeroExtS R0,R0,#+25,#+25
+   \      0x130   0x0E40             LSRS     R0,R0,#+25
+   \      0x132   0x9000             STR      R0,[SP, #+0]
+    680                      frequency = (pllvco * plln) / ((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLP) >> RCC_PLLCFGR_PLLP_Pos) + 1U);
+   \      0x134   0x9801             LDR      R0,[SP, #+4]
+   \      0x136   0x9900             LDR      R1,[SP, #+0]
+   \      0x138   0x4348             MULS     R0,R1,R0
+   \      0x13A   0x6839             LDR      R1,[R7, #+0]
+   \      0x13C   0x0C49             LSRS     R1,R1,#+17
+   \      0x13E   0x06C9             LSLS     R1,R1,#+27       ;; ZeroExtS R1,R1,#+27,#+27
+   \      0x140   0x0EC9             LSRS     R1,R1,#+27
+   \      0x142   0x1C49             ADDS     R1,R1,#+1
+   \      0x144   0x....'....        BL       __aeabi_uidiv
+   \      0x148   0x0005             MOVS     R5,R0
+    681                    }
+    682                  }
+    683                  /* Clock not enabled for ADC */
+    684                  else
+    685                  {
+    686                    /* Nothing to do as frequency already initialized to 0U */
+    687                  }
+    688                  break;
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_17: (+1)
+   \      0x14A   0xE052             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    689          
+    690                case RCC_PERIPHCLK_I2C1:
+    691                  /* Get the current I2C1 source */
+    692                  srcclk = __HAL_RCC_GET_I2C1_SOURCE();
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_8: (+1)
+   \      0x14C   0x....             LDR      R0,??DataTable4_3  ;; 0x40021054
+   \      0x14E   0x6800             LDR      R0,[R0, #+0]
+   \      0x150   0x21C0             MOVS     R1,#+192
+   \      0x152   0x0189             LSLS     R1,R1,#+6        ;; #+12288
+   \      0x154   0x4001             ANDS     R1,R1,R0
+   \      0x156   0x000C             MOVS     R4,R1
+    693          
+    694                  if (srcclk == RCC_I2C1CLKSOURCE_PCLK1)
+   \      0x158   0x2C00             CMP      R4,#+0
+   \      0x15A   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_19
+    695                  {
+    696                    frequency = HAL_RCC_GetPCLK1Freq();
+   \      0x15C   0x....'....        BL       HAL_RCC_GetPCLK1Freq
+   \      0x160   0x0005             MOVS     R5,R0
+   \      0x162   0xE011             B        ??HAL_RCCEx_GetPeriphCLKFreq_20
+    697                  }
+    698                  else if (srcclk == RCC_I2C1CLKSOURCE_SYSCLK)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_19: (+1)
+   \      0x164   0x2080             MOVS     R0,#+128
+   \      0x166   0x0140             LSLS     R0,R0,#+5        ;; #+4096
+   \      0x168   0x4284             CMP      R4,R0
+   \      0x16A   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_21
+    699                  {
+    700                    frequency = HAL_RCC_GetSysClockFreq();
+   \      0x16C   0x....'....        BL       HAL_RCC_GetSysClockFreq
+   \      0x170   0x0005             MOVS     R5,R0
+   \      0x172   0xE009             B        ??HAL_RCCEx_GetPeriphCLKFreq_20
+    701                  }
+    702                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_I2C1CLKSOURCE_HSI))
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_21: (+1)
+   \      0x174   0x....             LDR      R0,??DataTable3_2  ;; 0x40021000
+   \      0x176   0x6800             LDR      R0,[R0, #+0]
+   \      0x178   0x0540             LSLS     R0,R0,#+21
+   \      0x17A   0xD505             BPL      ??HAL_RCCEx_GetPeriphCLKFreq_20
+   \      0x17C   0x2080             MOVS     R0,#+128
+   \      0x17E   0x0180             LSLS     R0,R0,#+6        ;; #+8192
+   \      0x180   0x4284             CMP      R4,R0
+   \      0x182   0xD101             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_20
+    703                  {
+    704                    frequency = HSI_VALUE;
+   \      0x184   0x....             LDR      R0,??DataTable4_1  ;; 0xf42400
+   \      0x186   0x0005             MOVS     R5,R0
+    705                  }
+    706                  /* Clock not enabled for I2C1 */
+    707                  else
+    708                  {
+    709                    /* Nothing to do as frequency already initialized to 0U */
+    710                  }
+    711                  break;
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_20: (+1)
+   \      0x188   0xE033             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    712          
+    713                case RCC_PERIPHCLK_I2S1:
+    714                  /* Get the current I2S1 source */
+    715                  srcclk = __HAL_RCC_GET_I2S1_SOURCE();
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_9: (+1)
+   \      0x18A   0x20C0             MOVS     R0,#+192
+   \      0x18C   0x0200             LSLS     R0,R0,#+8        ;; #+49152
+   \      0x18E   0x....             LDR      R1,??DataTable4_3  ;; 0x40021054
+   \      0x190   0x6809             LDR      R1,[R1, #+0]
+   \      0x192   0x4001             ANDS     R1,R1,R0
+   \      0x194   0x000C             MOVS     R4,R1
+    716          
+    717                  if (srcclk == RCC_I2S1CLKSOURCE_PLL)
+   \      0x196   0x2180             MOVS     R1,#+128
+   \      0x198   0x01C9             LSLS     R1,R1,#+7        ;; #+16384
+   \      0x19A   0x428C             CMP      R4,R1
+   \      0x19C   0xD113             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_22
+    718                  {
+    719                    if (__HAL_RCC_GET_PLLCLKOUT_CONFIG(RCC_PLLPCLK) != 0U)
+   \      0x19E   0x6838             LDR      R0,[R7, #+0]
+   \      0x1A0   0x03C0             LSLS     R0,R0,#+15
+   \      0x1A2   0xD525             BPL      ??HAL_RCCEx_GetPeriphCLKFreq_23
+    720                    {
+    721                      /* f(PLLP) = f(VCO input) * PLLN / PLLP */
+    722                      plln = READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >> RCC_PLLCFGR_PLLN_Pos;
+   \      0x1A4   0x6838             LDR      R0,[R7, #+0]
+   \      0x1A6   0x0A00             LSRS     R0,R0,#+8
+   \      0x1A8   0x0640             LSLS     R0,R0,#+25       ;; ZeroExtS R0,R0,#+25,#+25
+   \      0x1AA   0x0E40             LSRS     R0,R0,#+25
+   \      0x1AC   0x9000             STR      R0,[SP, #+0]
+    723                      frequency = (pllvco * plln) / ((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLP) >> RCC_PLLCFGR_PLLP_Pos) + 1U);
+   \      0x1AE   0x9801             LDR      R0,[SP, #+4]
+   \      0x1B0   0x9900             LDR      R1,[SP, #+0]
+   \      0x1B2   0x4348             MULS     R0,R1,R0
+   \      0x1B4   0x6839             LDR      R1,[R7, #+0]
+   \      0x1B6   0x0C49             LSRS     R1,R1,#+17
+   \      0x1B8   0x06C9             LSLS     R1,R1,#+27       ;; ZeroExtS R1,R1,#+27,#+27
+   \      0x1BA   0x0EC9             LSRS     R1,R1,#+27
+   \      0x1BC   0x1C49             ADDS     R1,R1,#+1
+   \      0x1BE   0x....'....        BL       __aeabi_uidiv
+   \      0x1C2   0x0005             MOVS     R5,R0
+   \      0x1C4   0xE014             B        ??HAL_RCCEx_GetPeriphCLKFreq_23
+    724                    }
+    725                  }
+    726                  else if (srcclk == RCC_I2S1CLKSOURCE_SYSCLK)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_22: (+1)
+   \      0x1C6   0x2C00             CMP      R4,#+0
+   \      0x1C8   0xD103             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_24
+    727                  {
+    728                    frequency = HAL_RCC_GetSysClockFreq();
+   \      0x1CA   0x....'....        BL       HAL_RCC_GetSysClockFreq
+   \      0x1CE   0x0005             MOVS     R5,R0
+   \      0x1D0   0xE00E             B        ??HAL_RCCEx_GetPeriphCLKFreq_23
+    729                  }
+    730                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_I2S1CLKSOURCE_HSI))
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_24: (+1)
+   \      0x1D2   0x....             LDR      R1,??DataTable3_2  ;; 0x40021000
+   \      0x1D4   0x6809             LDR      R1,[R1, #+0]
+   \      0x1D6   0x0549             LSLS     R1,R1,#+21
+   \      0x1D8   0xD506             BPL      ??HAL_RCCEx_GetPeriphCLKFreq_25
+   \      0x1DA   0x2180             MOVS     R1,#+128
+   \      0x1DC   0x0209             LSLS     R1,R1,#+8        ;; #+32768
+   \      0x1DE   0x428C             CMP      R4,R1
+   \      0x1E0   0xD102             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_25
+    731                  {
+    732                    frequency = HSI_VALUE;
+   \      0x1E2   0x....             LDR      R0,??DataTable4_1  ;; 0xf42400
+   \      0x1E4   0x0005             MOVS     R5,R0
+   \      0x1E6   0xE003             B        ??HAL_RCCEx_GetPeriphCLKFreq_23
+    733                  }
+    734                  else if (srcclk == RCC_I2S1CLKSOURCE_EXT)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_25: (+1)
+   \      0x1E8   0x4284             CMP      R4,R0
+   \      0x1EA   0xD101             BNE      ??HAL_RCCEx_GetPeriphCLKFreq_23
+    735                  {
+    736                    /* External clock used.*/
+    737                    frequency = EXTERNAL_I2S1_CLOCK_VALUE;
+   \      0x1EC   0x....             LDR      R0,??DataTable4_4  ;; 0xbb8000
+   \      0x1EE   0x0005             MOVS     R5,R0
+    738                  }
+    739                  /* Clock not enabled for I2S1 */
+    740                  else
+    741                  {
+    742                    /* Nothing to do as frequency already initialized to 0U */
+    743                  }
+    744                  break;
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_23: (+1)
+   \      0x1F0   0xE7FF             B        ??HAL_RCCEx_GetPeriphCLKFreq_2
+    745          
+    746          #if defined(RCC_CCIPR_LPTIM1SEL)
+    747                case RCC_PERIPHCLK_LPTIM1:
+    748                  /* Get the current LPTIM1 source */
+    749                  srcclk = __HAL_RCC_GET_LPTIM1_SOURCE();
+    750          
+    751                  if (srcclk == RCC_LPTIM1CLKSOURCE_PCLK1)
+    752                  {
+    753                    frequency = HAL_RCC_GetPCLK1Freq();
+    754                  }
+    755                  else if ((HAL_IS_BIT_SET(RCC->CSR, RCC_CSR_LSIRDY)) && (srcclk == RCC_LPTIM1CLKSOURCE_LSI))
+    756                  {
+    757                    frequency = LSI_VALUE;
+    758                  }
+    759                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_LPTIM1CLKSOURCE_HSI))
+    760                  {
+    761                    frequency = HSI_VALUE;
+    762                  }
+    763                  else if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_LPTIM1CLKSOURCE_LSE))
+    764                  {
+    765                    frequency = LSE_VALUE;
+    766                  }
+    767                  /* Clock not enabled for LPTIM1 */
+    768                  else
+    769                  {
+    770                    /* Nothing to do as frequency already initialized to 0U */
+    771                  }
+    772                  break;
+    773          #endif /* RCC_CCIPR_LPTIM1SEL */
+    774          
+    775          #if defined(RCC_CCIPR_LPTIM2SEL)
+    776                case RCC_PERIPHCLK_LPTIM2:
+    777                  /* Get the current LPTIM2 source */
+    778                  srcclk = __HAL_RCC_GET_LPTIM2_SOURCE();
+    779          
+    780                  if (srcclk == RCC_LPTIM2CLKSOURCE_PCLK1)
+    781                  {
+    782                    frequency = HAL_RCC_GetPCLK1Freq();
+    783                  }
+    784                  else if ((HAL_IS_BIT_SET(RCC->CSR, RCC_CSR_LSIRDY)) && (srcclk == RCC_LPTIM2CLKSOURCE_LSI))
+    785                  {
+    786                    frequency = LSI_VALUE;
+    787                  }
+    788                  else if ((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_LPTIM2CLKSOURCE_HSI))
+    789                  {
+    790                    frequency = HSI_VALUE;
+    791                  }
+    792                  else if ((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY)) && (srcclk == RCC_LPTIM2CLKSOURCE_LSE))
+    793                  {
+    794                    frequency = LSE_VALUE;
+    795                  }
+    796                  /* Clock not enabled for LPTIM2 */
+    797                  else
+    798                  {
+    799                    /* Nothing to do as frequency already initialized to 0U */
+    800                  }
+    801                  break;
+    802          #endif /* RCC_CCIPR_LPTIM2SEL */
+    803          
+    804          #if defined(RCC_CCIPR_TIM1SEL)
+    805                case RCC_PERIPHCLK_TIM1:
+    806          
+    807                  srcclk = READ_BIT(RCC->CCIPR, RCC_CCIPR_TIM1SEL);
+    808          
+    809                  if (srcclk == RCC_TIM1CLKSOURCE_PLL) /* PLL ? */
+    810                  {
+    811                    if (__HAL_RCC_GET_PLLCLKOUT_CONFIG(RCC_PLLQCLK) != 0U)
+    812                    {
+    813                      /* f(PLLQ) = f(VCO input) * PLLN / PLLQ */
+    814                      plln = READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >> RCC_PLLCFGR_PLLN_Pos;
+    815                      frequency = (pllvco * plln) / ((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQ) >> RCC_PLLCFGR_PLLQ_Pos) + 1U);
+    816                    }
+    817                  }
+    818                  else if (srcclk == RCC_TIM1CLKSOURCE_PCLK1) /* PCLK1 ? */
+    819                  {
+    820                    frequency = HAL_RCC_GetPCLK1Freq();
+    821                  }
+    822                  else /* No clock source */
+    823                  {
+    824                    /* Nothing to do as frequency already initialized to 0U */
+    825                  }
+    826                  break;
+    827          #endif /* RCC_CCIPR_TIM1SEL */
+    828          
+    829          #if defined(RCC_CCIPR_TIM15SEL)
+    830                case RCC_PERIPHCLK_TIM15:
+    831          
+    832                  srcclk = READ_BIT(RCC->CCIPR, RCC_CCIPR_TIM15SEL);
+    833          
+    834                  if (srcclk == RCC_TIM15CLKSOURCE_PLL) /* PLL ? */
+    835                  {
+    836                    if (__HAL_RCC_GET_PLLCLKOUT_CONFIG(RCC_PLLQCLK) != 0U)
+    837                    {
+    838                      /* f(PLLQ) = f(VCO input) * PLLN / PLLQ */
+    839                      plln = READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >> RCC_PLLCFGR_PLLN_Pos;
+    840                      frequency = (pllvco * plln) / ((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQ) >> RCC_PLLCFGR_PLLQ_Pos) + 1U);
+    841                    }
+    842                  }
+    843                  else if (srcclk == RCC_TIM15CLKSOURCE_PCLK1) /* PCLK1 ? */
+    844                  {
+    845                    frequency = HAL_RCC_GetPCLK1Freq();
+    846                  }
+    847                  else /* No clock source */
+    848                  {
+    849                    /* Nothing to do as frequency already initialized to 0U */
+    850                  }
+    851                  break;
+    852          #endif /* RCC_CCIPR_TIM15SEL */
+    853          
+    854                default:
+    855                  break;
+    856              }
+    857            }
+    858          
+    859            return (frequency);
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_11: (+1)
+   \                     ??HAL_RCCEx_GetPeriphCLKFreq_2: (+1)
+   \      0x1F2   0x0028             MOVS     R0,R5
+   \      0x1F4   0xBDFE             POP      {R1-R7,PC}       ;; return
+    860          }
+    861          
+    862          /**
+    863            * @}
+    864            */
+    865          
+    866          /** @defgroup RCCEx_Exported_Functions_Group2 Extended Clock management functions
+    867           *  @brief  Extended Clock management functions
+    868           *
+    869          @verbatim
+    870           ===============================================================================
+    871                          ##### Extended clock management functions  #####
+    872           ===============================================================================
+    873              [..]
+    874              This subsection provides a set of functions allowing to control the
+    875              activation or deactivation of LSE CSS, Low speed clock output and
+    876              clock after wake-up from STOP mode.
+    877          @endverbatim
+    878            * @{
+    879            */
+    880          
+    881          /**
+    882            * @brief  Select the Low Speed clock source to output on LSCO pin (PA2).
+    883            * @param  LSCOSource  specifies the Low Speed clock source to output.
+    884            *          This parameter can be one of the following values:
+    885            *            @arg @ref RCC_LSCOSOURCE_LSI  LSI clock selected as LSCO source
+    886            *            @arg @ref RCC_LSCOSOURCE_LSE  LSE clock selected as LSCO source
+    887            * @retval None
+    888            */
+
+   \                                 In section .text, align 2, keep-with-next
+    889          void HAL_RCCEx_EnableLSCO(uint32_t LSCOSource)
+    890          {
+   \                     HAL_RCCEx_EnableLSCO: (+1)
+   \        0x0   0xB5F1             PUSH     {R0,R4-R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+    891            GPIO_InitTypeDef GPIO_InitStruct;
+    892            FlagStatus       pwrclkchanged = RESET;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x0007             MOVS     R7,R0
+    893            FlagStatus       backupchanged = RESET;
+   \        0x8   0x0004             MOVS     R4,R0
+    894          
+    895            /* Check the parameters */
+    896            assert_param(IS_RCC_LSCOSOURCE(LSCOSource));
+    897          
+    898            /* LSCO Pin Clock Enable */
+    899            LSCO_CLK_ENABLE();
+   \        0xA   0x2501             MOVS     R5,#+1
+   \        0xC   0x....             LDR      R1,??DataTable4_5  ;; 0x40021034
+   \        0xE   0x680A             LDR      R2,[R1, #+0]
+   \       0x10   0x432A             ORRS     R2,R2,R5
+   \       0x12   0x600A             STR      R2,[R1, #+0]
+   \       0x14   0x6809             LDR      R1,[R1, #+0]
+   \       0x16   0x4029             ANDS     R1,R1,R5
+   \       0x18   0x9100             STR      R1,[SP, #+0]
+   \       0x1A   0x9900             LDR      R1,[SP, #+0]
+    900          
+    901            /* Configue the LSCO pin in analog mode */
+    902            GPIO_InitStruct.Pin = LSCO_PIN;
+   \       0x1C   0x2104             MOVS     R1,#+4
+   \       0x1E   0x9101             STR      R1,[SP, #+4]
+    903            GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+   \       0x20   0x2103             MOVS     R1,#+3
+   \       0x22   0x9102             STR      R1,[SP, #+8]
+    904            GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+   \       0x24   0x9104             STR      R1,[SP, #+16]
+    905            GPIO_InitStruct.Pull = GPIO_NOPULL;
+   \       0x26   0x9003             STR      R0,[SP, #+12]
+    906            HAL_GPIO_Init(LSCO_GPIO_PORT, &GPIO_InitStruct);
+   \       0x28   0xA901             ADD      R1,SP,#+4
+   \       0x2A   0x20A0             MOVS     R0,#+160
+   \       0x2C   0x05C0             LSLS     R0,R0,#+23       ;; #+1342177280
+   \       0x2E   0x....'....        BL       HAL_GPIO_Init
+    907          
+    908            /* Update LSCOSEL clock source in Backup Domain control register */
+    909            if (__HAL_RCC_PWR_IS_CLK_DISABLED())
+   \       0x32   0x2080             MOVS     R0,#+128
+   \       0x34   0x0540             LSLS     R0,R0,#+21       ;; #+268435456
+   \       0x36   0x....             LDR      R6,??DataTable4_6  ;; 0x4002103c
+   \       0x38   0x6831             LDR      R1,[R6, #+0]
+   \       0x3A   0x4001             ANDS     R1,R1,R0
+   \       0x3C   0x2900             CMP      R1,#+0
+   \       0x3E   0xD108             BNE      ??HAL_RCCEx_EnableLSCO_0
+    910            {
+    911              __HAL_RCC_PWR_CLK_ENABLE();
+   \       0x40   0x6831             LDR      R1,[R6, #+0]
+   \       0x42   0x4301             ORRS     R1,R1,R0
+   \       0x44   0x6031             STR      R1,[R6, #+0]
+   \       0x46   0x6831             LDR      R1,[R6, #+0]
+   \       0x48   0x4008             ANDS     R0,R0,R1
+   \       0x4A   0x9000             STR      R0,[SP, #+0]
+   \       0x4C   0x9800             LDR      R0,[SP, #+0]
+    912              pwrclkchanged = SET;
+   \       0x4E   0x0028             MOVS     R0,R5
+   \       0x50   0x0007             MOVS     R7,R0
+    913            }
+    914            if (HAL_IS_BIT_CLR(PWR->CR1, PWR_CR1_DBP))
+   \                     ??HAL_RCCEx_EnableLSCO_0: (+1)
+   \       0x52   0x....             LDR      R0,??DataTable4_7  ;; 0x40007000
+   \       0x54   0x6800             LDR      R0,[R0, #+0]
+   \       0x56   0x05C0             LSLS     R0,R0,#+23
+   \       0x58   0xD402             BMI      ??HAL_RCCEx_EnableLSCO_1
+    915            {
+    916              HAL_PWR_EnableBkUpAccess();
+   \       0x5A   0x....'....        BL       HAL_PWR_EnableBkUpAccess
+    917              backupchanged = SET;
+   \       0x5E   0x002C             MOVS     R4,R5
+    918            }
+    919          
+    920            MODIFY_REG(RCC->BDCR, RCC_BDCR_LSCOSEL | RCC_BDCR_LSCOEN, LSCOSource | RCC_BDCR_LSCOEN);
+   \                     ??HAL_RCCEx_EnableLSCO_1: (+1)
+   \       0x60   0x....             LDR      R0,??DataTable3  ;; 0x4002105c
+   \       0x62   0x6801             LDR      R1,[R0, #+0]
+   \       0x64   0x....             LDR      R2,??DataTable4_8  ;; 0xfcffffff
+   \       0x66   0x400A             ANDS     R2,R2,R1
+   \       0x68   0x9906             LDR      R1,[SP, #+24]
+   \       0x6A   0x4311             ORRS     R1,R1,R2
+   \       0x6C   0x2280             MOVS     R2,#+128
+   \       0x6E   0x0452             LSLS     R2,R2,#+17       ;; #+16777216
+   \       0x70   0x430A             ORRS     R2,R2,R1
+   \       0x72   0x6002             STR      R2,[R0, #+0]
+    921          
+    922            if (backupchanged == SET)
+   \       0x74   0x0020             MOVS     R0,R4
+   \       0x76   0xB2C0             UXTB     R0,R0
+   \       0x78   0x2801             CMP      R0,#+1
+   \       0x7A   0xD101             BNE      ??HAL_RCCEx_EnableLSCO_2
+    923            {
+    924              HAL_PWR_DisableBkUpAccess();
+   \       0x7C   0x....'....        BL       HAL_PWR_DisableBkUpAccess
+    925            }
+    926            if (pwrclkchanged == SET)
+   \                     ??HAL_RCCEx_EnableLSCO_2: (+1)
+   \       0x80   0x0038             MOVS     R0,R7
+   \       0x82   0xB2C0             UXTB     R0,R0
+   \       0x84   0x2801             CMP      R0,#+1
+   \       0x86   0xD103             BNE      ??HAL_RCCEx_EnableLSCO_3
+    927            {
+    928              __HAL_RCC_PWR_CLK_DISABLE();
+   \       0x88   0x6830             LDR      R0,[R6, #+0]
+   \       0x8A   0x....             LDR      R1,??DataTable4_9  ;; 0xefffffff
+   \       0x8C   0x4001             ANDS     R1,R1,R0
+   \       0x8E   0x6031             STR      R1,[R6, #+0]
+    929            }
+    930          }
+   \                     ??HAL_RCCEx_EnableLSCO_3: (+1)
+   \       0x90   0xB007             ADD      SP,SP,#+28
+   \       0x92   0xBDF0             POP      {R4-R7,PC}       ;; return
+    931          
+    932          /**
+    933            * @brief  Disable the Low Speed clock output.
+    934            * @retval None
+    935            */
+
+   \                                 In section .text, align 2, keep-with-next
+    936          void HAL_RCCEx_DisableLSCO(void)
+    937          {
+   \                     HAL_RCCEx_DisableLSCO: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+    938            FlagStatus       pwrclkchanged = RESET;
+   \        0x2   0x2400             MOVS     R4,#+0
+   \        0x4   0x0025             MOVS     R5,R4
+    939            FlagStatus       backupchanged = RESET;
+    940          
+    941            /* Update LSCOEN bit in Backup Domain control register */
+    942            if (__HAL_RCC_PWR_IS_CLK_DISABLED())
+   \        0x6   0x2080             MOVS     R0,#+128
+   \        0x8   0x0540             LSLS     R0,R0,#+21       ;; #+268435456
+   \        0xA   0x....             LDR      R6,??DataTable4_6  ;; 0x4002103c
+   \        0xC   0x6831             LDR      R1,[R6, #+0]
+   \        0xE   0x4001             ANDS     R1,R1,R0
+   \       0x10   0x2900             CMP      R1,#+0
+   \       0x12   0xD108             BNE      ??HAL_RCCEx_DisableLSCO_0
+    943            {
+    944              __HAL_RCC_PWR_CLK_ENABLE();
+   \       0x14   0x6831             LDR      R1,[R6, #+0]
+   \       0x16   0x4301             ORRS     R1,R1,R0
+   \       0x18   0x6031             STR      R1,[R6, #+0]
+   \       0x1A   0x6831             LDR      R1,[R6, #+0]
+   \       0x1C   0x4008             ANDS     R0,R0,R1
+   \       0x1E   0x9000             STR      R0,[SP, #+0]
+   \       0x20   0x9800             LDR      R0,[SP, #+0]
+    945              pwrclkchanged = SET;
+   \       0x22   0x2001             MOVS     R0,#+1
+   \       0x24   0x0005             MOVS     R5,R0
+    946            }
+    947            if (HAL_IS_BIT_CLR(PWR->CR1, PWR_CR1_DBP))
+   \                     ??HAL_RCCEx_DisableLSCO_0: (+1)
+   \       0x26   0x....             LDR      R0,??DataTable4_7  ;; 0x40007000
+   \       0x28   0x6800             LDR      R0,[R0, #+0]
+   \       0x2A   0x05C0             LSLS     R0,R0,#+23
+   \       0x2C   0xD403             BMI      ??HAL_RCCEx_DisableLSCO_1
+    948            {
+    949              /* Enable access to the backup domain */
+    950              HAL_PWR_EnableBkUpAccess();
+   \       0x2E   0x....'....        BL       HAL_PWR_EnableBkUpAccess
+    951              backupchanged = SET;
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0x0004             MOVS     R4,R0
+    952            }
+    953          
+    954            CLEAR_BIT(RCC->BDCR, RCC_BDCR_LSCOEN);
+   \                     ??HAL_RCCEx_DisableLSCO_1: (+1)
+   \       0x36   0x....             LDR      R0,??DataTable4_10  ;; 0x4002105c
+   \       0x38   0x6801             LDR      R1,[R0, #+0]
+   \       0x3A   0x....             LDR      R2,??DataTable4_11  ;; 0xfeffffff
+   \       0x3C   0x400A             ANDS     R2,R2,R1
+   \       0x3E   0x6002             STR      R2,[R0, #+0]
+    955          
+    956            /* Restore previous configuration */
+    957            if (backupchanged == SET)
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0xB2C0             UXTB     R0,R0
+   \       0x44   0x2801             CMP      R0,#+1
+   \       0x46   0xD101             BNE      ??HAL_RCCEx_DisableLSCO_2
+    958            {
+    959              /* Disable access to the backup domain */
+    960              HAL_PWR_DisableBkUpAccess();
+   \       0x48   0x....'....        BL       HAL_PWR_DisableBkUpAccess
+    961            }
+    962            if (pwrclkchanged == SET)
+   \                     ??HAL_RCCEx_DisableLSCO_2: (+1)
+   \       0x4C   0x0028             MOVS     R0,R5
+   \       0x4E   0xB2C0             UXTB     R0,R0
+   \       0x50   0x2801             CMP      R0,#+1
+   \       0x52   0xD103             BNE      ??HAL_RCCEx_DisableLSCO_3
+    963            {
+    964              __HAL_RCC_PWR_CLK_DISABLE();
+   \       0x54   0x6830             LDR      R0,[R6, #+0]
+   \       0x56   0x....             LDR      R1,??DataTable4_9  ;; 0xefffffff
+   \       0x58   0x4001             ANDS     R1,R1,R0
+   \       0x5A   0x6031             STR      R1,[R6, #+0]
+    965            }
+    966          }
+   \                     ??HAL_RCCEx_DisableLSCO_3: (+1)
+   \       0x5C   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x4002'103C        DC32     0x4002103c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x4000'7000        DC32     0x40007000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x4002'105C        DC32     0x4002105c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0xFFFF'FCFF        DC32     0xfffffcff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \        0x0   0xFFFE'FFFF        DC32     0xfffeffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \        0x0   0x0000'1389        DC32     0x1389
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \        0x0   0xEFFF'FFFF        DC32     0xefffffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \        0x0   0x4002'1054        DC32     0x40021054
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \        0x0   0xFFFF'CFFF        DC32     0xffffcfff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x4002'100C        DC32     0x4002100c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0xFFFF'3FFF        DC32     0xffff3fff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \        0x0   0x0002'4841        DC32     0x24841
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x4002'105C        DC32     0x4002105c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x4002'1060        DC32     0x40021060
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x4002'1000        DC32     0x40021000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x0003'D090        DC32     0x3d090
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x00F4'2400        DC32     0xf42400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x007A'1200        DC32     0x7a1200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x4002'1054        DC32     0x40021054
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x00BB'8000        DC32     0xbb8000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x4002'1034        DC32     0x40021034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x4002'103C        DC32     0x4002103c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x4000'7000        DC32     0x40007000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0xFCFF'FFFF        DC32     0xfcffffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \        0x0   0xEFFF'FFFF        DC32     0xefffffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \        0x0   0x4002'105C        DC32     0x4002105c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \        0x0   0xFEFF'FFFF        DC32     0xfeffffff
+    967          
+    968          /**
+    969            * @}
+    970            */
+    971          
+    972          
+    973          /**
+    974            * @}
+    975            */
+    976          
+    977          /**
+    978            * @}
+    979            */
+    980          
+    981          #endif /* HAL_RCC_MODULE_ENABLED */
+    982          /**
+    983            * @}
+    984            */
+    985          
+    986          /**
+    987            * @}
+    988            */
+    989          
+    990          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   HAL_RCCEx_DisableLSCO
+        24   -> HAL_PWR_DisableBkUpAccess
+        24   -> HAL_PWR_EnableBkUpAccess
+      48   HAL_RCCEx_EnableLSCO
+        48   -> HAL_GPIO_Init
+        48   -> HAL_PWR_DisableBkUpAccess
+        48   -> HAL_PWR_EnableBkUpAccess
+       0   HAL_RCCEx_GetPeriphCLKConfig
+      32   HAL_RCCEx_GetPeriphCLKFreq
+        32   -> HAL_RCC_GetPCLK1Freq
+        32   -> HAL_RCC_GetSysClockFreq
+        32 __aeabi_uidiv
+      40   HAL_RCCEx_PeriphCLKConfig
+        40   -> HAL_GetTick
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+      94  HAL_RCCEx_DisableLSCO
+     148  HAL_RCCEx_EnableLSCO
+      56  HAL_RCCEx_GetPeriphCLKConfig
+     502  HAL_RCCEx_GetPeriphCLKFreq
+     382  HAL_RCCEx_PeriphCLKConfig
+
+ 
+ 1'290 bytes in section .text
+ 
+ 1'290 bytes of CODE memory
+
+Errors: none
+Warnings: none

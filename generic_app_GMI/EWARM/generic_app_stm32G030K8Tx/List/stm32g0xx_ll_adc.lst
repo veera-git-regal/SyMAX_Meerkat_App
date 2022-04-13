@@ -1,0 +1,1413 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:57
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_adc.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWB69.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_adc.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_ll_adc.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_ll_adc.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_adc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_ll_adc.c
+      4            * @author  MCD Application Team
+      5            * @brief   ADC LL module driver
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          #if defined(USE_FULL_LL_DRIVER)
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "stm32g0xx_ll_adc.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_SetCommonClock(ADC_Common_TypeDef *, uint32_t)
+   \                     LL_ADC_SetCommonClock: (+1)
+   \        0x0   0x6802             LDR      R2,[R0, #+0]
+   \        0x2   0x....             LDR      R3,??DataTable9  ;; 0xffc3ffff
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x6003             STR      R3,[R0, #+0]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_SetTriggerSource(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_REG_SetTriggerSource: (+1)
+   \        0x0   0x68C2             LDR      R2,[R0, #+12]
+   \        0x2   0x....             LDR      R3,??DataTable9_1  ;; 0xfffff23f
+   \        0x4   0x4013             ANDS     R3,R3,R2
+   \        0x6   0x430B             ORRS     R3,R3,R1
+   \        0x8   0x60C3             STR      R3,[R0, #+12]
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_REG_GetSequencerConfigurable(ADC_TypeDef *)
+   \                     LL_ADC_REG_GetSequencerConfigurable: (+1)
+   \        0x0   0x68C0             LDR      R0,[R0, #+12]
+   \        0x2   0x2180             MOVS     R1,#+128
+   \        0x4   0x0389             LSLS     R1,R1,#+14       ;; #+2097152
+   \        0x6   0x4008             ANDS     R0,R0,R1
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_SetSequencerLength(ADC_TypeDef *, uint32_t)
+   \                     LL_ADC_REG_SetSequencerLength: (+1)
+   \        0x0   0x6A82             LDR      R2,[R0, #+40]
+   \        0x2   0x430A             ORRS     R2,R2,R1
+   \        0x4   0x6282             STR      R2,[R0, #+40]
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_Disable(ADC_TypeDef *)
+   \                     LL_ADC_Disable: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable9_2  ;; 0x7fffffe8
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x2102             MOVS     R1,#+2
+   \        0x8   0x4311             ORRS     R1,R1,R2
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_IsEnabled(ADC_TypeDef *)
+   \                     LL_ADC_IsEnabled: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x6   0x0FC0             LSRS     R0,R0,#+31
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_IsDisableOngoing(ADC_TypeDef *)
+   \                     LL_ADC_IsDisableOngoing: (+1)
+   \        0x0   0x6880             LDR      R0,[R0, #+8]
+   \        0x2   0x0841             LSRS     R1,R0,#+1
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_REG_StopConversion(ADC_TypeDef *)
+   \                     LL_ADC_REG_StopConversion: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable9_2  ;; 0x7fffffe8
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x2110             MOVS     R1,#+16
+   \        0x8   0x4311             ORRS     R1,R1,R2
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_REG_IsConversionOngoing(ADC_TypeDef *)
+   \                     LL_ADC_REG_IsConversionOngoing: (+1)
+   \        0x0   0x6880             LDR      R0,[R0, #+8]
+   \        0x2   0x0881             LSRS     R1,R0,#+2
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_REG_IsStopConversionOngoing(ADC_TypeDef *)
+   \                     LL_ADC_REG_IsStopConversionOngoing: (+1)
+   \        0x0   0x6880             LDR      R0,[R0, #+8]
+   \        0x2   0x0901             LSRS     R1,R0,#+4
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_ADC_IsActiveFlag_CCRDY(ADC_TypeDef *)
+   \                     LL_ADC_IsActiveFlag_CCRDY: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x0B41             LSRS     R1,R0,#+13
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_ADC_ClearFlag_CCRDY(ADC_TypeDef *)
+   \                     LL_ADC_ClearFlag_CCRDY: (+1)
+   \        0x0   0x2180             MOVS     R1,#+128
+   \        0x2   0x0189             LSLS     R1,R1,#+6        ;; #+8192
+   \        0x4   0x6001             STR      R1,[R0, #+0]
+   \        0x6   0x4770             BX       LR               ;; return
+     23          #include "stm32g0xx_ll_bus.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_ForceReset(uint32_t)
+   \                     LL_APB2_GRP1_ForceReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable9_3  ;; 0x40021030
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB2_GRP1_ReleaseReset(uint32_t)
+   \                     LL_APB2_GRP1_ReleaseReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable9_3  ;; 0x40021030
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+     24          
+     25          #ifdef  USE_FULL_ASSERT
+     26            #include "stm32_assert.h"
+     27          #else
+     28            #define assert_param(expr) ((void)0U)
+     29          #endif
+     30          
+     31          /** @addtogroup STM32G0xx_LL_Driver
+     32            * @{
+     33            */
+     34          
+     35          #if defined (ADC1)
+     36          
+     37          /** @addtogroup ADC_LL ADC
+     38            * @{
+     39            */
+     40          
+     41          /* Private types -------------------------------------------------------------*/
+     42          /* Private variables ---------------------------------------------------------*/
+     43          /* Private constants ---------------------------------------------------------*/
+     44          /** @addtogroup ADC_LL_Private_Constants
+     45            * @{
+     46            */
+     47          
+     48          /* Definitions of ADC hardware constraints delays */
+     49          /* Note: Only ADC peripheral HW delays are defined in ADC LL driver driver,   */
+     50          /*       not timeout values:                                                  */
+     51          /*       Timeout values for ADC operations are dependent to device clock      */
+     52          /*       configuration (system clock versus ADC clock),                       */
+     53          /*       and therefore must be defined in user application.                   */
+     54          /*       Refer to @ref ADC_LL_EC_HW_DELAYS for description of ADC timeout     */
+     55          /*       values definition.                                                   */
+     56          /* Note: ADC timeout values are defined here in CPU cycles to be independent  */
+     57          /*       of device clock setting.                                             */
+     58          /*       In user application, ADC timeout values should be defined with       */
+     59          /*       temporal values, in function of device clock settings.               */
+     60          /*       Highest ratio CPU clock frequency vs ADC clock frequency:            */
+     61          /*        - ADC clock from synchronous clock with AHB prescaler 512,          */
+     62          /*          APB prescaler 16, ADC prescaler 4.                                */
+     63          /*        - ADC clock from asynchronous clock (HSI) with prescaler 1,         */
+     64          /*          with highest ratio CPU clock frequency vs HSI clock frequency:    */
+     65          /*          CPU clock frequency max 56MHz, HSI frequency 16MHz: ratio 4.      */
+     66          /* Unit: CPU cycles.                                                          */
+     67          #define ADC_CLOCK_RATIO_VS_CPU_HIGHEST          (512UL * 16UL * 4UL)
+     68          #define ADC_TIMEOUT_DISABLE_CPU_CYCLES          (ADC_CLOCK_RATIO_VS_CPU_HIGHEST * 1UL)
+     69          #define ADC_TIMEOUT_STOP_CONVERSION_CPU_CYCLES  (ADC_CLOCK_RATIO_VS_CPU_HIGHEST * 1UL)
+     70          /* Note: CCRDY handshake requires 1APB + 2 ADC + 3 APB cycles                 */
+     71          /*       after the channel configuration has been changed.                    */
+     72          /*       Driver timeout is approximated to 6 CPU cycles.                      */
+     73          #define ADC_TIMEOUT_CCRDY_CPU_CYCLES            (ADC_CLOCK_RATIO_VS_CPU_HIGHEST * 6UL)
+     74          
+     75          /**
+     76            * @}
+     77            */
+     78          
+     79          /* Private macros ------------------------------------------------------------*/
+     80          
+     81          /** @addtogroup ADC_LL_Private_Macros
+     82            * @{
+     83            */
+     84          
+     85          /* Check of parameters for configuration of ADC hierarchical scope:           */
+     86          /* common to several ADC instances.                                           */
+     87          #define IS_LL_ADC_COMMON_CLOCK(__CLOCK__)                                      \
+     88            (   ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV1)                                 \
+     89             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV2)                                 \
+     90             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV4)                                 \
+     91             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV6)                                 \
+     92             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV8)                                 \
+     93             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV10)                                \
+     94             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV12)                                \
+     95             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV16)                                \
+     96             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV32)                                \
+     97             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV64)                                \
+     98             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV128)                               \
+     99             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC_DIV256)                               \
+    100            )
+    101          
+    102          #define IS_LL_ADC_CLOCK_FREQ_MODE(__CLOCK_FREQ_MODE__)                         \
+    103            (   ((__CLOCK_FREQ_MODE__) == LL_ADC_CLOCK_FREQ_MODE_HIGH)                   \
+    104             || ((__CLOCK_FREQ_MODE__) == LL_ADC_CLOCK_FREQ_MODE_LOW)                    \
+    105            )
+    106          
+    107          /* Check of parameters for configuration of ADC hierarchical scope:           */
+    108          /* ADC instance.                                                              */
+    109          #define IS_LL_ADC_CLOCK(__CLOCK__)                                             \
+    110            (   ((__CLOCK__) == LL_ADC_CLOCK_SYNC_PCLK_DIV4)                             \
+    111             || ((__CLOCK__) == LL_ADC_CLOCK_SYNC_PCLK_DIV2)                             \
+    112             || ((__CLOCK__) == LL_ADC_CLOCK_SYNC_PCLK_DIV1)                             \
+    113             || ((__CLOCK__) == LL_ADC_CLOCK_ASYNC)                                      \
+    114            )
+    115          
+    116          #define IS_LL_ADC_RESOLUTION(__RESOLUTION__)                                   \
+    117            (   ((__RESOLUTION__) == LL_ADC_RESOLUTION_12B)                              \
+    118             || ((__RESOLUTION__) == LL_ADC_RESOLUTION_10B)                              \
+    119             || ((__RESOLUTION__) == LL_ADC_RESOLUTION_8B)                               \
+    120             || ((__RESOLUTION__) == LL_ADC_RESOLUTION_6B)                               \
+    121            )
+    122          
+    123          #define IS_LL_ADC_DATA_ALIGN(__DATA_ALIGN__)                                   \
+    124            (   ((__DATA_ALIGN__) == LL_ADC_DATA_ALIGN_RIGHT)                            \
+    125             || ((__DATA_ALIGN__) == LL_ADC_DATA_ALIGN_LEFT)                             \
+    126            )
+    127          
+    128          #define IS_LL_ADC_LOW_POWER(__LOW_POWER__)                                     \
+    129            (   ((__LOW_POWER__) == LL_ADC_LP_MODE_NONE)                                 \
+    130             || ((__LOW_POWER__) == LL_ADC_LP_AUTOWAIT)                                  \
+    131             || ((__LOW_POWER__) == LL_ADC_LP_AUTOPOWEROFF)                              \
+    132             || ((__LOW_POWER__) == LL_ADC_LP_AUTOWAIT_AUTOPOWEROFF)                     \
+    133            )
+    134          
+    135          /* Check of parameters for configuration of ADC hierarchical scope:           */
+    136          /* ADC group regular                                                          */
+    137          #if defined(TIM15) && defined(TIM6) && defined(TIM2)
+    138          #define IS_LL_ADC_REG_TRIG_SOURCE(__REG_TRIG_SOURCE__)                         \
+    139            (   ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_SOFTWARE)                      \
+    140             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_TRGO2)                \
+    141             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_CH4 )                 \
+    142             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM2_TRGO)                 \
+    143             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM3_TRGO)                 \
+    144             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM6_TRGO)                 \
+    145             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM15_TRGO)                \
+    146             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_EXTI_LINE11)               \
+    147            )
+    148          #elif defined(TIM15) && defined(TIM6)
+    149          #define IS_LL_ADC_REG_TRIG_SOURCE(__REG_TRIG_SOURCE__)                         \
+    150            (   ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_SOFTWARE)                      \
+    151             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_TRGO2)                \
+    152             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_CH4 )                 \
+    153             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM3_TRGO)                 \
+    154             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM6_TRGO)                 \
+    155             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM15_TRGO)                \
+    156             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_EXTI_LINE11)               \
+    157            )
+    158          #elif defined(TIM2)
+    159          #define IS_LL_ADC_REG_TRIG_SOURCE(__REG_TRIG_SOURCE__)                         \
+    160            (   ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_SOFTWARE)                      \
+    161             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_TRGO2)                \
+    162             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_CH4 )                 \
+    163             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM2_TRGO)                 \
+    164             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM3_TRGO)                 \
+    165             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_EXTI_LINE11)               \
+    166            )
+    167          #else
+    168          #define IS_LL_ADC_REG_TRIG_SOURCE(__REG_TRIG_SOURCE__)                         \
+    169            (   ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_SOFTWARE)                      \
+    170             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_TRGO2)                \
+    171             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM1_CH4 )                 \
+    172             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_TIM3_TRGO)                 \
+    173             || ((__REG_TRIG_SOURCE__) == LL_ADC_REG_TRIG_EXT_EXTI_LINE11)               \
+    174            )
+    175          #endif
+    176          
+    177          #define IS_LL_ADC_REG_CONTINUOUS_MODE(__REG_CONTINUOUS_MODE__)                 \
+    178            (   ((__REG_CONTINUOUS_MODE__) == LL_ADC_REG_CONV_SINGLE)                    \
+    179             || ((__REG_CONTINUOUS_MODE__) == LL_ADC_REG_CONV_CONTINUOUS)                \
+    180            )
+    181          
+    182          #define IS_LL_ADC_REG_DMA_TRANSFER(__REG_DMA_TRANSFER__)                       \
+    183            (   ((__REG_DMA_TRANSFER__) == LL_ADC_REG_DMA_TRANSFER_NONE)                 \
+    184             || ((__REG_DMA_TRANSFER__) == LL_ADC_REG_DMA_TRANSFER_LIMITED)              \
+    185             || ((__REG_DMA_TRANSFER__) == LL_ADC_REG_DMA_TRANSFER_UNLIMITED)            \
+    186            )
+    187          
+    188          #define IS_LL_ADC_REG_OVR_DATA_BEHAVIOR(__REG_OVR_DATA_BEHAVIOR__)             \
+    189            (   ((__REG_OVR_DATA_BEHAVIOR__) == LL_ADC_REG_OVR_DATA_PRESERVED)           \
+    190             || ((__REG_OVR_DATA_BEHAVIOR__) == LL_ADC_REG_OVR_DATA_OVERWRITTEN)         \
+    191            )
+    192          
+    193          #define IS_LL_ADC_REG_SEQ_MODE(__REG_SEQ_MODE__)                               \
+    194            (   ((__REG_SEQ_MODE__) == LL_ADC_REG_SEQ_FIXED)                             \
+    195             || ((__REG_SEQ_MODE__) == LL_ADC_REG_SEQ_CONFIGURABLE)                      \
+    196            )
+    197          
+    198          #define IS_LL_ADC_REG_SEQ_SCAN_LENGTH(__REG_SEQ_SCAN_LENGTH__)                 \
+    199            (   ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_DISABLE)               \
+    200             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_2RANKS)         \
+    201             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_3RANKS)         \
+    202             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_4RANKS)         \
+    203             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_5RANKS)         \
+    204             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_6RANKS)         \
+    205             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_7RANKS)         \
+    206             || ((__REG_SEQ_SCAN_LENGTH__) == LL_ADC_REG_SEQ_SCAN_ENABLE_8RANKS)         \
+    207            )
+    208          
+    209          #define IS_LL_ADC_REG_SEQ_SCAN_DISCONT_MODE(__REG_SEQ_DISCONT_MODE__)          \
+    210            (   ((__REG_SEQ_DISCONT_MODE__) == LL_ADC_REG_SEQ_DISCONT_DISABLE)           \
+    211             || ((__REG_SEQ_DISCONT_MODE__) == LL_ADC_REG_SEQ_DISCONT_1RANK)             \
+    212            )
+    213          
+    214          /**
+    215            * @}
+    216            */
+    217          
+    218          
+    219          /* Private function prototypes -----------------------------------------------*/
+    220          
+    221          /* Exported functions --------------------------------------------------------*/
+    222          /** @addtogroup ADC_LL_Exported_Functions
+    223            * @{
+    224            */
+    225          
+    226          /** @addtogroup ADC_LL_EF_Init
+    227            * @{
+    228            */
+    229          
+    230          /**
+    231            * @brief  De-initialize registers of all ADC instances belonging to
+    232            *         the same ADC common instance to their default reset values.
+    233            * @note   This function is performing a hard reset, using high level
+    234            *         clock source RCC ADC reset.
+    235            * @param  ADCxy_COMMON ADC common instance
+    236            *         (can be set directly from CMSIS definition or by using helper macro @ref __LL_ADC_COMMON_INSTANCE() )
+    237            * @retval An ErrorStatus enumeration value:
+    238            *          - SUCCESS: ADC common registers are de-initialized
+    239            *          - ERROR: not applicable
+    240            */
+
+   \                                 In section .text, align 2, keep-with-next
+    241          ErrorStatus LL_ADC_CommonDeInit(ADC_Common_TypeDef *ADCxy_COMMON)
+    242          {
+   \                     LL_ADC_CommonDeInit: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    243            /* Check the parameters */
+    244            assert_param(IS_ADC_COMMON_INSTANCE(ADCxy_COMMON));
+    245            
+    246            /* Force reset of ADC clock (core clock) */
+    247            LL_APB2_GRP1_ForceReset(LL_APB2_GRP1_PERIPH_ADC);
+   \        0x4   0x2580             MOVS     R5,#+128
+   \        0x6   0x036D             LSLS     R5,R5,#+13       ;; #+1048576
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       LL_APB2_GRP1_ForceReset
+    248            
+    249            /* Release reset of ADC clock (core clock) */
+    250            LL_APB2_GRP1_ReleaseReset(LL_APB2_GRP1_PERIPH_ADC);
+   \        0xE   0x0028             MOVS     R0,R5
+   \       0x10   0x....'....        BL       LL_APB2_GRP1_ReleaseReset
+    251            
+    252            return SUCCESS;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    253          }
+    254          
+    255          /**
+    256            * @brief  Initialize some features of ADC common parameters
+    257            *         (all ADC instances belonging to the same ADC common instance)
+    258            *         and multimode (for devices with several ADC instances available).
+    259            * @note   The setting of ADC common parameters is conditioned to
+    260            *         ADC instances state:
+    261            *         All ADC instances belonging to the same ADC common instance
+    262            *         must be disabled.
+    263            * @param  ADCxy_COMMON ADC common instance
+    264            *         (can be set directly from CMSIS definition or by using helper macro @ref __LL_ADC_COMMON_INSTANCE() )
+    265            * @param  ADC_CommonInitStruct Pointer to a @ref LL_ADC_CommonInitTypeDef structure
+    266            * @retval An ErrorStatus enumeration value:
+    267            *          - SUCCESS: ADC common registers are initialized
+    268            *          - ERROR: ADC common registers are not initialized
+    269            */
+
+   \                                 In section .text, align 2, keep-with-next
+    270          ErrorStatus LL_ADC_CommonInit(ADC_Common_TypeDef *ADCxy_COMMON, LL_ADC_CommonInitTypeDef *ADC_CommonInitStruct)
+    271          {
+   \                     LL_ADC_CommonInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    272            ErrorStatus status = SUCCESS;
+   \        0x6   0x2500             MOVS     R5,#+0
+    273            
+    274            /* Check the parameters */
+    275            assert_param(IS_ADC_COMMON_INSTANCE(ADCxy_COMMON));
+    276            assert_param(IS_LL_ADC_COMMON_CLOCK(ADC_CommonInitStruct->CommonClock));
+    277            
+    278            /* Note: Hardware constraint (refer to description of functions             */
+    279            /*       "LL_ADC_SetCommonXXX()":                                           */
+    280            /*       On this STM32 serie, setting of these features is conditioned to   */
+    281            /*       ADC state:                                                         */
+    282            /*       All ADC instances of the ADC common group must be disabled.        */
+    283            if(__LL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE(ADCxy_COMMON) == 0UL)
+   \        0x8   0x....             LDR      R0,??DataTable9_4  ;; 0x40012400
+   \        0xA   0x....'....        BL       LL_ADC_IsEnabled
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD104             BNE      ??LL_ADC_CommonInit_0
+    284            {
+    285              /* Configuration of ADC hierarchical scope:                               */
+    286              /*  - common to several ADC                                               */
+    287              /*    (all ADC instances belonging to the same ADC common instance)       */
+    288              /*    - Set ADC clock (conversion clock)                                  */
+    289              LL_ADC_SetCommonClock(ADCxy_COMMON, ADC_CommonInitStruct->CommonClock);
+   \       0x12   0x6821             LDR      R1,[R4, #+0]
+   \       0x14   0x0030             MOVS     R0,R6
+   \       0x16   0x....'....        BL       LL_ADC_SetCommonClock
+   \       0x1A   0xE001             B        ??LL_ADC_CommonInit_1
+    290            }
+    291            else
+    292            {
+    293              /* Initialization error: One or several ADC instances belonging to        */
+    294              /* the same ADC common instance are not disabled.                         */
+    295              status = ERROR;
+   \                     ??LL_ADC_CommonInit_0: (+1)
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x0005             MOVS     R5,R0
+    296            }
+    297            
+    298            return status;
+   \                     ??LL_ADC_CommonInit_1: (+1)
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0xBD70             POP      {R4-R6,PC}       ;; return
+    299          }
+    300          
+    301          /**
+    302            * @brief  Set each @ref LL_ADC_CommonInitTypeDef field to default value.
+    303            * @param  ADC_CommonInitStruct Pointer to a @ref LL_ADC_CommonInitTypeDef structure
+    304            *                              whose fields will be set to default values.
+    305            * @retval None
+    306            */
+
+   \                                 In section .text, align 2, keep-with-next
+    307          void LL_ADC_CommonStructInit(LL_ADC_CommonInitTypeDef *ADC_CommonInitStruct)
+    308          {
+    309            /* Set ADC_CommonInitStruct fields to default values */
+    310            /* Set fields of ADC common */
+    311            /* (all ADC instances belonging to the same ADC common instance) */
+    312            ADC_CommonInitStruct->CommonClock = LL_ADC_CLOCK_ASYNC_DIV2;
+   \                     LL_ADC_CommonStructInit: (+1)
+   \        0x0   0x2180             MOVS     R1,#+128
+   \        0x2   0x02C9             LSLS     R1,R1,#+11       ;; #+262144
+   \        0x4   0x6001             STR      R1,[R0, #+0]
+    313            
+    314          }
+   \        0x6   0x4770             BX       LR               ;; return
+    315          
+    316          /**
+    317            * @brief  De-initialize registers of the selected ADC instance
+    318            *         to their default reset values.
+    319            * @note   To reset all ADC instances quickly (perform a hard reset),
+    320            *         use function @ref LL_ADC_CommonDeInit().
+    321            * @note   If this functions returns error status, it means that ADC instance
+    322            *         is in an unknown state.
+    323            *         In this case, perform a hard reset using high level
+    324            *         clock source RCC ADC reset.
+    325            *         Refer to function @ref LL_ADC_CommonDeInit().
+    326            * @param  ADCx ADC instance
+    327            * @retval An ErrorStatus enumeration value:
+    328            *          - SUCCESS: ADC registers are de-initialized
+    329            *          - ERROR: ADC registers are not de-initialized
+    330            */
+
+   \                                 In section .text, align 2, keep-with-next
+    331          ErrorStatus LL_ADC_DeInit(ADC_TypeDef *ADCx)
+    332          {
+   \                     LL_ADC_DeInit: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    333            ErrorStatus status = SUCCESS;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x0005             MOVS     R5,R0
+    334            
+    335            __IO uint32_t timeout_cpu_cycles = 0UL;
+   \        0x8   0x9000             STR      R0,[SP, #+0]
+    336            
+    337            /* Check the parameters */
+    338            assert_param(IS_ADC_ALL_INSTANCE(ADCx));
+    339            
+    340            /* Disable ADC instance if not already disabled.                            */
+    341            if(LL_ADC_IsEnabled(ADCx) == 1UL)
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x....'....        BL       LL_ADC_IsEnabled
+   \       0x10   0x2801             CMP      R0,#+1
+   \       0x12   0xD131             BNE      ??LL_ADC_DeInit_0
+    342            {
+    343              /* Set ADC group regular trigger source to SW start to ensure to not      */
+    344              /* have an external trigger event occurring during the conversion stop    */
+    345              /* ADC disable process.                                                   */
+    346              LL_ADC_REG_SetTriggerSource(ADCx, LL_ADC_REG_TRIG_SOFTWARE);
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x....'....        BL       LL_ADC_REG_SetTriggerSource
+    347              
+    348              /* Stop potential ADC conversion on going on ADC group regular.           */
+    349              if(LL_ADC_REG_IsConversionOngoing(ADCx) != 0UL)
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x....'....        BL       LL_ADC_REG_IsConversionOngoing
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD007             BEQ      ??LL_ADC_DeInit_1
+    350              {
+    351                if(LL_ADC_REG_IsStopConversionOngoing(ADCx) == 0UL)
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0x....'....        BL       LL_ADC_REG_IsStopConversionOngoing
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD102             BNE      ??LL_ADC_DeInit_1
+    352                {
+    353                  LL_ADC_REG_StopConversion(ADCx);
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x....'....        BL       LL_ADC_REG_StopConversion
+    354                }
+    355              }
+    356              
+    357              /* Wait for ADC conversions are effectively stopped                       */
+    358              timeout_cpu_cycles = ADC_TIMEOUT_STOP_CONVERSION_CPU_CYCLES;
+   \                     ??LL_ADC_DeInit_1: (+1)
+   \       0x36   0x2680             MOVS     R6,#+128
+   \       0x38   0x0236             LSLS     R6,R6,#+8        ;; #+32768
+   \       0x3A   0x9600             STR      R6,[SP, #+0]
+    359              while (LL_ADC_REG_IsStopConversionOngoing(ADCx) == 1UL)
+   \                     ??LL_ADC_DeInit_2: (+1)
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0x....'....        BL       LL_ADC_REG_IsStopConversionOngoing
+   \       0x42   0x2801             CMP      R0,#+1
+   \       0x44   0xD107             BNE      ??LL_ADC_DeInit_3
+    360              {
+    361                timeout_cpu_cycles--;
+   \       0x46   0x9800             LDR      R0,[SP, #+0]
+   \       0x48   0x1E40             SUBS     R0,R0,#+1
+   \       0x4A   0x9000             STR      R0,[SP, #+0]
+    362                if(timeout_cpu_cycles == 0UL)
+   \       0x4C   0x9800             LDR      R0,[SP, #+0]
+   \       0x4E   0x2800             CMP      R0,#+0
+   \       0x50   0xD1F4             BNE      ??LL_ADC_DeInit_2
+    363                {
+    364                  /* Time-out error */
+    365                  status = ERROR;
+   \       0x52   0x2001             MOVS     R0,#+1
+   \       0x54   0x0005             MOVS     R5,R0
+    366                  break;
+    367                }
+    368              }
+    369              
+    370              /* Disable the ADC instance */
+    371              LL_ADC_Disable(ADCx);
+   \                     ??LL_ADC_DeInit_3: (+1)
+   \       0x56   0x0020             MOVS     R0,R4
+   \       0x58   0x....'....        BL       LL_ADC_Disable
+    372              
+    373              /* Wait for ADC instance is effectively disabled */
+    374              timeout_cpu_cycles = ADC_TIMEOUT_DISABLE_CPU_CYCLES;
+   \       0x5C   0x9600             STR      R6,[SP, #+0]
+    375              while (LL_ADC_IsDisableOngoing(ADCx) == 1UL)
+   \                     ??LL_ADC_DeInit_4: (+1)
+   \       0x5E   0x0020             MOVS     R0,R4
+   \       0x60   0x....'....        BL       LL_ADC_IsDisableOngoing
+   \       0x64   0x2801             CMP      R0,#+1
+   \       0x66   0xD107             BNE      ??LL_ADC_DeInit_0
+    376              {
+    377                timeout_cpu_cycles--;
+   \       0x68   0x9800             LDR      R0,[SP, #+0]
+   \       0x6A   0x1E40             SUBS     R0,R0,#+1
+   \       0x6C   0x9000             STR      R0,[SP, #+0]
+    378                if(timeout_cpu_cycles == 0UL)
+   \       0x6E   0x9800             LDR      R0,[SP, #+0]
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD1F4             BNE      ??LL_ADC_DeInit_4
+    379                {
+    380                  /* Time-out error */
+    381                  status = ERROR;
+   \       0x74   0x2001             MOVS     R0,#+1
+   \       0x76   0x0005             MOVS     R5,R0
+    382                  break;
+    383                }
+    384              }
+    385            }
+    386            
+    387            /* Check whether ADC state is compliant with expected state */
+    388            if(READ_BIT(ADCx->CR,
+    389                        (  ADC_CR_ADSTP | ADC_CR_ADSTART
+    390                         | ADC_CR_ADDIS | ADC_CR_ADEN   )
+    391                       )
+    392               == 0UL)
+   \                     ??LL_ADC_DeInit_0: (+1)
+   \       0x78   0x68A0             LDR      R0,[R4, #+8]
+   \       0x7A   0x2117             MOVS     R1,#+23
+   \       0x7C   0x4001             ANDS     R1,R1,R0
+   \       0x7E   0x2900             CMP      R1,#+0
+   \       0x80   0xD143             BNE      ??LL_ADC_DeInit_5
+    393            {
+    394              /* ========== Reset ADC registers ========== */
+    395              /* Reset register IER */
+    396              CLEAR_BIT(ADCx->IER,
+    397                        (  LL_ADC_IT_ADRDY
+    398                         | LL_ADC_IT_EOC
+    399                         | LL_ADC_IT_EOS
+    400                         | LL_ADC_IT_OVR
+    401                         | LL_ADC_IT_EOSMP
+    402                         | LL_ADC_IT_AWD1
+    403                         | LL_ADC_IT_AWD2
+    404                         | LL_ADC_IT_AWD3
+    405                         | LL_ADC_IT_EOCAL
+    406                         | LL_ADC_IT_CCRDY
+    407                        )
+    408                       );
+   \       0x82   0x6860             LDR      R0,[R4, #+4]
+   \       0x84   0x....             LDR      R1,??DataTable9_5  ;; 0xffffd460
+   \       0x86   0x4001             ANDS     R1,R1,R0
+   \       0x88   0x6061             STR      R1,[R4, #+4]
+    409              
+    410              /* Reset register ISR */
+    411              SET_BIT(ADCx->ISR,
+    412                      (  LL_ADC_FLAG_ADRDY
+    413                       | LL_ADC_FLAG_EOC
+    414                       | LL_ADC_FLAG_EOS
+    415                       | LL_ADC_FLAG_OVR
+    416                       | LL_ADC_FLAG_EOSMP
+    417                       | LL_ADC_FLAG_AWD1
+    418                       | LL_ADC_FLAG_AWD2
+    419                       | LL_ADC_FLAG_AWD3
+    420                       | LL_ADC_FLAG_EOCAL
+    421                       | LL_ADC_FLAG_CCRDY
+    422                      )
+    423                     );
+   \       0x8A   0x6820             LDR      R0,[R4, #+0]
+   \       0x8C   0x....             LDR      R1,??DataTable9_6  ;; 0x2b9f
+   \       0x8E   0x4301             ORRS     R1,R1,R0
+   \       0x90   0x6021             STR      R1,[R4, #+0]
+    424              
+    425              /* Reset register CR */
+    426              /* Bits ADC_CR_ADCAL, ADC_CR_ADSTP, ADC_CR_ADSTART are in access mode     */
+    427              /* "read-set": no direct reset applicable.                                */
+    428              CLEAR_BIT(ADCx->CR, ADC_CR_ADVREGEN);
+   \       0x92   0x68A0             LDR      R0,[R4, #+8]
+   \       0x94   0x....             LDR      R1,??DataTable9_7  ;; 0xefffffff
+   \       0x96   0x4001             ANDS     R1,R1,R0
+   \       0x98   0x60A1             STR      R1,[R4, #+8]
+    429              
+    430              /* Reset register CFGR1 */
+    431              CLEAR_BIT(ADCx->CFGR1,
+    432                        (  ADC_CFGR1_AWD1CH  | ADC_CFGR1_AWD1EN | ADC_CFGR1_AWD1SGL | ADC_CFGR1_DISCEN
+    433                         | ADC_CFGR1_AUTOFF  | ADC_CFGR1_WAIT   | ADC_CFGR1_CONT    | ADC_CFGR1_OVRMOD
+    434                         | ADC_CFGR1_EXTEN   | ADC_CFGR1_EXTSEL | ADC_CFGR1_ALIGN   | ADC_CFGR1_RES
+    435                         | ADC_CFGR1_SCANDIR | ADC_CFGR1_DMACFG | ADC_CFGR1_DMAEN                     )
+    436                       );
+   \       0x9A   0x68E0             LDR      R0,[R4, #+12]
+   \       0x9C   0x....             LDR      R1,??DataTable9_8  ;; 0x833e0200
+   \       0x9E   0x4001             ANDS     R1,R1,R0
+   \       0xA0   0x60E1             STR      R1,[R4, #+12]
+    437              
+    438              /* Reset register CFGR2 */
+    439              /* Note: Update of ADC clock mode is conditioned to ADC state disabled:   */
+    440              /*       already done above.                                              */
+    441              CLEAR_BIT(ADCx->CFGR2,
+    442                        (  ADC_CFGR2_CKMODE
+    443                         | ADC_CFGR2_TOVS   | ADC_CFGR2_OVSS  | ADC_CFGR2_OVSR
+    444                         | ADC_CFGR2_OVSE                                     )
+    445                       );
+   \       0xA2   0x6920             LDR      R0,[R4, #+16]
+   \       0xA4   0x....             LDR      R1,??DataTable9_9  ;; 0x3ffffc02
+   \       0xA6   0x4001             ANDS     R1,R1,R0
+   \       0xA8   0x6121             STR      R1,[R4, #+16]
+    446              
+    447              /* Reset register SMPR */
+    448              CLEAR_BIT(ADCx->SMPR, ADC_SMPR_SMP1 | ADC_SMPR_SMP2 | ADC_SMPR_SMPSEL);
+   \       0xAA   0x6960             LDR      R0,[R4, #+20]
+   \       0xAC   0x....             LDR      R1,??DataTable9_10  ;; 0xf8000088
+   \       0xAE   0x4001             ANDS     R1,R1,R0
+   \       0xB0   0x6161             STR      R1,[R4, #+20]
+    449          
+    450              /* Reset register TR1 */
+    451              MODIFY_REG(ADCx->TR1, ADC_TR1_HT1 | ADC_TR1_LT1, ADC_TR1_HT1);
+   \       0xB2   0x....             LDR      R0,??DataTable9_11  ;; 0xfff0000
+   \       0xB4   0x....             LDR      R1,??DataTable9_12  ;; 0xf000f000
+   \       0xB6   0x6A22             LDR      R2,[R4, #+32]
+   \       0xB8   0x400A             ANDS     R2,R2,R1
+   \       0xBA   0x4302             ORRS     R2,R2,R0
+   \       0xBC   0x6222             STR      R2,[R4, #+32]
+    452              
+    453              /* Reset register TR2 */
+    454              MODIFY_REG(ADCx->TR2, ADC_TR2_HT2 | ADC_TR2_LT2, ADC_TR2_HT2);
+   \       0xBE   0x6A62             LDR      R2,[R4, #+36]
+   \       0xC0   0x400A             ANDS     R2,R2,R1
+   \       0xC2   0x4302             ORRS     R2,R2,R0
+   \       0xC4   0x6262             STR      R2,[R4, #+36]
+    455              
+    456              /* Reset register TR3 */
+    457              MODIFY_REG(ADCx->TR3, ADC_TR3_HT3 | ADC_TR3_LT3, ADC_TR3_HT3);
+   \       0xC6   0x6AE2             LDR      R2,[R4, #+44]
+   \       0xC8   0x4011             ANDS     R1,R1,R2
+   \       0xCA   0x4308             ORRS     R0,R0,R1
+   \       0xCC   0x62E0             STR      R0,[R4, #+44]
+    458              
+    459              /* Reset register CHSELR */
+    460              CLEAR_BIT(ADCx->CHSELR,
+    461                        (  ADC_CHSELR_CHSEL18 | ADC_CHSELR_CHSEL17 | ADC_CHSELR_CHSEL16
+    462                         | ADC_CHSELR_CHSEL15 | ADC_CHSELR_CHSEL14 | ADC_CHSELR_CHSEL13 | ADC_CHSELR_CHSEL12
+    463                         | ADC_CHSELR_CHSEL11 | ADC_CHSELR_CHSEL10 | ADC_CHSELR_CHSEL9  | ADC_CHSELR_CHSEL8
+    464                         | ADC_CHSELR_CHSEL7  | ADC_CHSELR_CHSEL6  | ADC_CHSELR_CHSEL5  | ADC_CHSELR_CHSEL4
+    465                         | ADC_CHSELR_CHSEL3  | ADC_CHSELR_CHSEL2  | ADC_CHSELR_CHSEL1  | ADC_CHSELR_CHSEL0 )
+    466                       );
+   \       0xCE   0x6AA0             LDR      R0,[R4, #+40]
+   \       0xD0   0x0CC0             LSRS     R0,R0,#+19
+   \       0xD2   0x04C0             LSLS     R0,R0,#+19
+   \       0xD4   0x62A0             STR      R0,[R4, #+40]
+    467              
+    468              /* Wait for ADC channel configuration ready */
+    469              timeout_cpu_cycles = ADC_TIMEOUT_CCRDY_CPU_CYCLES;
+   \       0xD6   0x20C0             MOVS     R0,#+192
+   \       0xD8   0x0280             LSLS     R0,R0,#+10       ;; #+196608
+   \       0xDA   0x9000             STR      R0,[SP, #+0]
+    470              while (LL_ADC_IsActiveFlag_CCRDY(ADCx) == 0UL)
+   \                     ??LL_ADC_DeInit_6: (+1)
+   \       0xDC   0x0020             MOVS     R0,R4
+   \       0xDE   0x....'....        BL       LL_ADC_IsActiveFlag_CCRDY
+   \       0xE2   0x2800             CMP      R0,#+0
+   \       0xE4   0xD107             BNE      ??LL_ADC_DeInit_7
+    471              {
+    472                timeout_cpu_cycles--;
+   \       0xE6   0x9800             LDR      R0,[SP, #+0]
+   \       0xE8   0x1E40             SUBS     R0,R0,#+1
+   \       0xEA   0x9000             STR      R0,[SP, #+0]
+    473                if(timeout_cpu_cycles == 0UL)
+   \       0xEC   0x9800             LDR      R0,[SP, #+0]
+   \       0xEE   0x2800             CMP      R0,#+0
+   \       0xF0   0xD1F4             BNE      ??LL_ADC_DeInit_6
+    474                {
+    475                  /* Time-out error */
+    476                  status = ERROR;
+   \       0xF2   0x2001             MOVS     R0,#+1
+   \       0xF4   0x0005             MOVS     R5,R0
+    477                  break;
+    478                }
+    479              }
+    480              
+    481              /* Clear flag ADC channel configuration ready */
+    482              LL_ADC_ClearFlag_CCRDY(ADCx);
+   \                     ??LL_ADC_DeInit_7: (+1)
+   \       0xF6   0x0020             MOVS     R0,R4
+   \       0xF8   0x....'....        BL       LL_ADC_ClearFlag_CCRDY
+    483              
+    484              /* Reset register DR */
+    485              /* bits in access mode read only, no direct reset applicable */
+    486              
+    487              /* Reset register CALFACT */
+    488              CLEAR_BIT(ADCx->CALFACT, ADC_CALFACT_CALFACT);
+   \       0xFC   0x20B4             MOVS     R0,#+180
+   \       0xFE   0x5820             LDR      R0,[R4, R0]
+   \      0x100   0x217F             MOVS     R1,#+127
+   \      0x102   0x4388             BICS     R0,R0,R1
+   \      0x104   0x21B4             MOVS     R1,#+180
+   \      0x106   0x5060             STR      R0,[R4, R1]
+   \      0x108   0xE001             B        ??LL_ADC_DeInit_8
+    489              
+    490            }
+    491            else
+    492            {
+    493              /* ADC instance is in an unknown state */
+    494              /* Need to performing a hard reset of ADC instance, using high level      */
+    495              /* clock source RCC ADC reset.                                            */
+    496              /* Caution: On this STM32 serie, if several ADC instances are available   */
+    497              /*          on the selected device, RCC ADC reset will reset              */
+    498              /*          all ADC instances belonging to the common ADC instance.       */
+    499              status = ERROR;
+   \                     ??LL_ADC_DeInit_5: (+1)
+   \      0x10A   0x2001             MOVS     R0,#+1
+   \      0x10C   0x0005             MOVS     R5,R0
+    500            }
+    501            
+    502            return status;
+   \                     ??LL_ADC_DeInit_8: (+1)
+   \      0x10E   0x0028             MOVS     R0,R5
+   \      0x110   0xB2C0             UXTB     R0,R0
+   \      0x112   0xBD76             POP      {R1,R2,R4-R6,PC}  ;; return
+    503          }
+    504          
+    505          /**
+    506            * @brief  Initialize some features of ADC instance.
+    507            * @note   These parameters have an impact on ADC scope: ADC instance.
+    508            *         Refer to corresponding unitary functions into
+    509            *         @ref ADC_LL_EF_Configuration_ADC_Instance .
+    510            * @note   The setting of these parameters by function @ref LL_ADC_Init()
+    511            *         is conditioned to ADC state:
+    512            *         ADC instance must be disabled.
+    513            *         This condition is applied to all ADC features, for efficiency
+    514            *         and compatibility over all STM32 families. However, the different
+    515            *         features can be set under different ADC state conditions
+    516            *         (setting possible with ADC enabled without conversion on going,
+    517            *         ADC enabled with conversion on going, ...)
+    518            *         Each feature can be updated afterwards with a unitary function
+    519            *         and potentially with ADC in a different state than disabled,
+    520            *         refer to description of each function for setting
+    521            *         conditioned to ADC state.
+    522            * @note   After using this function, some other features must be configured
+    523            *         using LL unitary functions.
+    524            *         The minimum configuration remaining to be done is:
+    525            *          - Set ADC group regular sequencer:
+    526            *            Depending on the sequencer mode (refer to
+    527            *            function @ref LL_ADC_REG_SetSequencerConfigurable() ):
+    528            *            - map channel on the selected sequencer rank.
+    529            *              Refer to function @ref LL_ADC_REG_SetSequencerRanks();
+    530            *            - map channel on rank corresponding to channel number.
+    531            *              Refer to function @ref LL_ADC_REG_SetSequencerChannels();
+    532            *          - Set ADC channel sampling time
+    533            *            Refer to function LL_ADC_SetSamplingTimeCommonChannels();
+    534            *            Refer to function LL_ADC_SetChannelSamplingTime();
+    535            * @param  ADCx ADC instance
+    536            * @param  ADC_InitStruct Pointer to a @ref LL_ADC_REG_InitTypeDef structure
+    537            * @retval An ErrorStatus enumeration value:
+    538            *          - SUCCESS: ADC registers are initialized
+    539            *          - ERROR: ADC registers are not initialized
+    540            */
+
+   \                                 In section .text, align 2, keep-with-next
+    541          ErrorStatus LL_ADC_Init(ADC_TypeDef *ADCx, LL_ADC_InitTypeDef *ADC_InitStruct)
+    542          {
+   \                     LL_ADC_Init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    543            ErrorStatus status = SUCCESS;
+   \        0x6   0x2600             MOVS     R6,#+0
+    544            
+    545            /* Check the parameters */
+    546            assert_param(IS_ADC_ALL_INSTANCE(ADCx));
+    547            
+    548            assert_param(IS_LL_ADC_CLOCK(ADC_InitStruct->Clock));
+    549            assert_param(IS_LL_ADC_RESOLUTION(ADC_InitStruct->Resolution));
+    550            assert_param(IS_LL_ADC_DATA_ALIGN(ADC_InitStruct->DataAlignment));
+    551            assert_param(IS_LL_ADC_LOW_POWER(ADC_InitStruct->LowPowerMode));
+    552            
+    553            /* Note: Hardware constraint (refer to description of this function):       */
+    554            /*       ADC instance must be disabled.                                     */
+    555            if(LL_ADC_IsEnabled(ADCx) == 0UL)
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x....'....        BL       LL_ADC_IsEnabled
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD110             BNE      ??LL_ADC_Init_0
+    556            {
+    557              /* Configuration of ADC hierarchical scope:                               */
+    558              /*  - ADC instance                                                        */
+    559              /*    - Set ADC data resolution                                           */
+    560              /*    - Set ADC conversion data alignment                                 */
+    561              /*    - Set ADC low power mode                                            */
+    562              MODIFY_REG(ADCx->CFGR1,
+    563                           ADC_CFGR1_RES
+    564                         | ADC_CFGR1_ALIGN
+    565                         | ADC_CFGR1_WAIT
+    566                         | ADC_CFGR1_AUTOFF
+    567                        ,
+    568                           ADC_InitStruct->Resolution
+    569                         | ADC_InitStruct->DataAlignment
+    570                         | ADC_InitStruct->LowPowerMode
+    571                        );
+   \       0x12   0x68E8             LDR      R0,[R5, #+12]
+   \       0x14   0x....             LDR      R1,??DataTable9_13  ;; 0xffff3fc7
+   \       0x16   0x4001             ANDS     R1,R1,R0
+   \       0x18   0x6860             LDR      R0,[R4, #+4]
+   \       0x1A   0x4308             ORRS     R0,R0,R1
+   \       0x1C   0x68A1             LDR      R1,[R4, #+8]
+   \       0x1E   0x4301             ORRS     R1,R1,R0
+   \       0x20   0x68E0             LDR      R0,[R4, #+12]
+   \       0x22   0x4308             ORRS     R0,R0,R1
+   \       0x24   0x60E8             STR      R0,[R5, #+12]
+    572              
+    573              MODIFY_REG(ADCx->CFGR2,
+    574                         ADC_CFGR2_CKMODE
+    575                        ,
+    576                         ADC_InitStruct->Clock
+    577                        );
+   \       0x26   0x6928             LDR      R0,[R5, #+16]
+   \       0x28   0x0080             LSLS     R0,R0,#+2        ;; ZeroExtS R0,R0,#+2,#+2
+   \       0x2A   0x0880             LSRS     R0,R0,#+2
+   \       0x2C   0x6821             LDR      R1,[R4, #+0]
+   \       0x2E   0x4301             ORRS     R1,R1,R0
+   \       0x30   0x6129             STR      R1,[R5, #+16]
+   \       0x32   0xE001             B        ??LL_ADC_Init_1
+    578            }
+    579            else
+    580            {
+    581              /* Initialization error: ADC instance is not disabled. */
+    582              status = ERROR;
+   \                     ??LL_ADC_Init_0: (+1)
+   \       0x34   0x2001             MOVS     R0,#+1
+   \       0x36   0x0006             MOVS     R6,R0
+    583            }
+    584            
+    585            return status;
+   \                     ??LL_ADC_Init_1: (+1)
+   \       0x38   0x0030             MOVS     R0,R6
+   \       0x3A   0xB2C0             UXTB     R0,R0
+   \       0x3C   0xBD70             POP      {R4-R6,PC}       ;; return
+    586          }
+    587          
+    588          /**
+    589            * @brief  Set each @ref LL_ADC_InitTypeDef field to default value.
+    590            * @param  ADC_InitStruct Pointer to a @ref LL_ADC_InitTypeDef structure
+    591            *                        whose fields will be set to default values.
+    592            * @retval None
+    593            */
+
+   \                                 In section .text, align 2, keep-with-next
+    594          void LL_ADC_StructInit(LL_ADC_InitTypeDef *ADC_InitStruct)
+    595          {
+    596            /* Set ADC_InitStruct fields to default values */
+    597            /* Set fields of ADC instance */
+    598            ADC_InitStruct->Clock         = LL_ADC_CLOCK_SYNC_PCLK_DIV2;
+   \                     LL_ADC_StructInit: (+1)
+   \        0x0   0x2180             MOVS     R1,#+128
+   \        0x2   0x05C9             LSLS     R1,R1,#+23       ;; #+1073741824
+   \        0x4   0x6001             STR      R1,[R0, #+0]
+    599            ADC_InitStruct->Resolution    = LL_ADC_RESOLUTION_12B;
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x6041             STR      R1,[R0, #+4]
+    600            ADC_InitStruct->DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+    601            ADC_InitStruct->LowPowerMode  = LL_ADC_LP_MODE_NONE;
+   \        0xC   0x60C1             STR      R1,[R0, #+12]
+    602            
+    603          }
+   \        0xE   0x4770             BX       LR               ;; return
+    604          
+    605          /**
+    606            * @brief  Initialize some features of ADC group regular.
+    607            * @note   These parameters have an impact on ADC scope: ADC group regular.
+    608            *         Refer to corresponding unitary functions into
+    609            *         @ref ADC_LL_EF_Configuration_ADC_Group_Regular
+    610            *         (functions with prefix "REG").
+    611            * @note   The setting of these parameters by function @ref LL_ADC_Init()
+    612            *         is conditioned to ADC state:
+    613            *         ADC instance must be disabled.
+    614            *         This condition is applied to all ADC features, for efficiency
+    615            *         and compatibility over all STM32 families. However, the different
+    616            *         features can be set under different ADC state conditions
+    617            *         (setting possible with ADC enabled without conversion on going,
+    618            *         ADC enabled with conversion on going, ...)
+    619            *         Each feature can be updated afterwards with a unitary function
+    620            *         and potentially with ADC in a different state than disabled,
+    621            *         refer to description of each function for setting
+    622            *         conditioned to ADC state.
+    623            * @note   After using this function, other features must be configured
+    624            *         using LL unitary functions.
+    625            *         The minimum configuration remaining to be done is:
+    626            *          - Set ADC group regular sequencer:
+    627            *            Depending on the sequencer mode (refer to
+    628            *            function @ref LL_ADC_REG_SetSequencerConfigurable() ):
+    629            *            - map channel on the selected sequencer rank.
+    630            *              Refer to function @ref LL_ADC_REG_SetSequencerRanks();
+    631            *            - map channel on rank corresponding to channel number.
+    632            *              Refer to function @ref LL_ADC_REG_SetSequencerChannels();
+    633            *          - Set ADC channel sampling time
+    634            *            Refer to function LL_ADC_SetSamplingTimeCommonChannels();
+    635            *            Refer to function LL_ADC_SetChannelSamplingTime();
+    636            * @param  ADCx ADC instance
+    637            * @param  ADC_REG_InitStruct Pointer to a @ref LL_ADC_REG_InitTypeDef structure
+    638            * @retval An ErrorStatus enumeration value:
+    639            *          - SUCCESS: ADC registers are initialized
+    640            *          - ERROR: ADC registers are not initialized
+    641            */
+
+   \                                 In section .text, align 2, keep-with-next
+    642          ErrorStatus LL_ADC_REG_Init(ADC_TypeDef *ADCx, LL_ADC_REG_InitTypeDef *ADC_REG_InitStruct)
+    643          {
+   \                     LL_ADC_REG_Init: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    644            ErrorStatus status = SUCCESS;
+   \        0x6   0x2600             MOVS     R6,#+0
+    645            
+    646            /* Check the parameters */
+    647            assert_param(IS_ADC_ALL_INSTANCE(ADCx));
+    648            assert_param(IS_LL_ADC_REG_TRIG_SOURCE(ADC_REG_InitStruct->TriggerSource));
+    649            assert_param(IS_LL_ADC_REG_SEQ_SCAN_LENGTH(ADC_REG_InitStruct->SequencerLength));
+    650            if(ADC_REG_InitStruct->SequencerLength != LL_ADC_REG_SEQ_SCAN_DISABLE)
+   \        0x8   0x6868             LDR      R0,[R5, #+4]
+   \        0xA   0x28F0             CMP      R0,#+240
+    651            {
+    652              assert_param(IS_LL_ADC_REG_SEQ_SCAN_DISCONT_MODE(ADC_REG_InitStruct->SequencerDiscont));
+    653            }
+    654            assert_param(IS_LL_ADC_REG_CONTINUOUS_MODE(ADC_REG_InitStruct->ContinuousMode));
+    655            assert_param(IS_LL_ADC_REG_DMA_TRANSFER(ADC_REG_InitStruct->DMATransfer));
+    656            assert_param(IS_LL_ADC_REG_OVR_DATA_BEHAVIOR(ADC_REG_InitStruct->Overrun));
+    657            
+    658            /* Note: Hardware constraint (refer to description of this function):       */
+    659            /*       ADC instance must be disabled.                                     */
+    660            if(LL_ADC_IsEnabled(ADCx) == 0UL)
+   \                     ??LL_ADC_REG_Init_0: (+1)
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x....'....        BL       LL_ADC_IsEnabled
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD127             BNE      ??LL_ADC_REG_Init_1
+    661            {
+    662              /* Configuration of ADC hierarchical scope:                               */
+    663              /*  - ADC group regular                                                   */
+    664              /*    - Set ADC group regular trigger source                              */
+    665              /*    - Set ADC group regular sequencer length                            */
+    666              /*    - Set ADC group regular sequencer discontinuous mode                */
+    667              /*    - Set ADC group regular continuous mode                             */
+    668              /*    - Set ADC group regular conversion data transfer: no transfer or    */
+    669              /*      transfer by DMA, and DMA requests mode                            */
+    670              /*    - Set ADC group regular overrun behavior                            */
+    671              /* Note: On this STM32 serie, ADC trigger edge is set to value 0x0 by     */
+    672              /*       setting of trigger source to SW start.                           */
+    673              if(   (LL_ADC_REG_GetSequencerConfigurable(ADCx) == LL_ADC_REG_SEQ_FIXED)
+    674                 || (ADC_REG_InitStruct->SequencerLength != LL_ADC_REG_SEQ_SCAN_DISABLE)
+    675                )
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x....'....        BL       LL_ADC_REG_GetSequencerConfigurable
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD002             BEQ      ??LL_ADC_REG_Init_2
+   \       0x20   0x6868             LDR      R0,[R5, #+4]
+   \       0x22   0x28F0             CMP      R0,#+240
+   \       0x24   0xD00E             BEQ      ??LL_ADC_REG_Init_3
+    676              {
+    677                MODIFY_REG(ADCx->CFGR1,
+    678                             ADC_CFGR1_EXTSEL
+    679                           | ADC_CFGR1_EXTEN
+    680                           | ADC_CFGR1_DISCEN
+    681                           | ADC_CFGR1_CONT
+    682                           | ADC_CFGR1_DMAEN
+    683                           | ADC_CFGR1_DMACFG
+    684                           | ADC_CFGR1_OVRMOD
+    685                          ,
+    686                             ADC_REG_InitStruct->TriggerSource
+    687                           | ADC_REG_InitStruct->SequencerDiscont
+    688                           | ADC_REG_InitStruct->ContinuousMode
+    689                           | ADC_REG_InitStruct->DMATransfer
+    690                           | ADC_REG_InitStruct->Overrun
+    691                          );
+   \                     ??LL_ADC_REG_Init_2: (+1)
+   \       0x26   0x68E0             LDR      R0,[R4, #+12]
+   \       0x28   0x....             LDR      R1,??DataTable9_14  ;; 0xfffec23c
+   \       0x2A   0x4001             ANDS     R1,R1,R0
+   \       0x2C   0x6828             LDR      R0,[R5, #+0]
+   \       0x2E   0x4308             ORRS     R0,R0,R1
+   \       0x30   0x68A9             LDR      R1,[R5, #+8]
+   \       0x32   0x4301             ORRS     R1,R1,R0
+   \       0x34   0x68E8             LDR      R0,[R5, #+12]
+   \       0x36   0x4308             ORRS     R0,R0,R1
+   \       0x38   0x6929             LDR      R1,[R5, #+16]
+   \       0x3A   0x4301             ORRS     R1,R1,R0
+   \       0x3C   0x6968             LDR      R0,[R5, #+20]
+   \       0x3E   0x4308             ORRS     R0,R0,R1
+   \       0x40   0x60E0             STR      R0,[R4, #+12]
+   \       0x42   0xE00B             B        ??LL_ADC_REG_Init_4
+    692              }
+    693              else
+    694              {
+    695                MODIFY_REG(ADCx->CFGR1,
+    696                             ADC_CFGR1_EXTSEL
+    697                           | ADC_CFGR1_EXTEN
+    698                           | ADC_CFGR1_DISCEN
+    699                           | ADC_CFGR1_CONT
+    700                           | ADC_CFGR1_DMAEN
+    701                           | ADC_CFGR1_DMACFG
+    702                           | ADC_CFGR1_OVRMOD
+    703                          ,
+    704                             ADC_REG_InitStruct->TriggerSource
+    705                           | LL_ADC_REG_SEQ_DISCONT_DISABLE
+    706                           | ADC_REG_InitStruct->ContinuousMode
+    707                           | ADC_REG_InitStruct->DMATransfer
+    708                           | ADC_REG_InitStruct->Overrun
+    709                          );
+   \                     ??LL_ADC_REG_Init_3: (+1)
+   \       0x44   0x68E0             LDR      R0,[R4, #+12]
+   \       0x46   0x....             LDR      R1,??DataTable9_14  ;; 0xfffec23c
+   \       0x48   0x4001             ANDS     R1,R1,R0
+   \       0x4A   0x6828             LDR      R0,[R5, #+0]
+   \       0x4C   0x4308             ORRS     R0,R0,R1
+   \       0x4E   0x68E9             LDR      R1,[R5, #+12]
+   \       0x50   0x4301             ORRS     R1,R1,R0
+   \       0x52   0x6928             LDR      R0,[R5, #+16]
+   \       0x54   0x4308             ORRS     R0,R0,R1
+   \       0x56   0x6969             LDR      R1,[R5, #+20]
+   \       0x58   0x4301             ORRS     R1,R1,R0
+   \       0x5A   0x60E1             STR      R1,[R4, #+12]
+    710              }
+    711          
+    712              /* Set ADC group regular sequencer length and scan direction */
+    713              LL_ADC_REG_SetSequencerLength(ADCx, ADC_REG_InitStruct->SequencerLength);
+   \                     ??LL_ADC_REG_Init_4: (+1)
+   \       0x5C   0x6869             LDR      R1,[R5, #+4]
+   \       0x5E   0x0020             MOVS     R0,R4
+   \       0x60   0x....'....        BL       LL_ADC_REG_SetSequencerLength
+   \       0x64   0xE001             B        ??LL_ADC_REG_Init_5
+    714            }
+    715            else
+    716            {
+    717              /* Initialization error: ADC instance is not disabled. */
+    718              status = ERROR;
+   \                     ??LL_ADC_REG_Init_1: (+1)
+   \       0x66   0x2001             MOVS     R0,#+1
+   \       0x68   0x0006             MOVS     R6,R0
+    719            }
+    720            return status;
+   \                     ??LL_ADC_REG_Init_5: (+1)
+   \       0x6A   0x0030             MOVS     R0,R6
+   \       0x6C   0xB2C0             UXTB     R0,R0
+   \       0x6E   0xBD70             POP      {R4-R6,PC}       ;; return
+    721          }
+    722          
+    723          /**
+    724            * @brief  Set each @ref LL_ADC_REG_InitTypeDef field to default value.
+    725            * @param  ADC_REG_InitStruct Pointer to a @ref LL_ADC_REG_InitTypeDef structure
+    726            *                            whose fields will be set to default values.
+    727            * @retval None
+    728            */
+
+   \                                 In section .text, align 2, keep-with-next
+    729          void LL_ADC_REG_StructInit(LL_ADC_REG_InitTypeDef *ADC_REG_InitStruct)
+    730          {
+    731            /* Set ADC_REG_InitStruct fields to default values */
+    732            /* Set fields of ADC group regular */
+    733            /* Note: On this STM32 serie, ADC trigger edge is set to value 0x0 by       */
+    734            /*       setting of trigger source to SW start.                             */
+    735            ADC_REG_InitStruct->TriggerSource    = LL_ADC_REG_TRIG_SOFTWARE;
+   \                     LL_ADC_REG_StructInit: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    736            ADC_REG_InitStruct->SequencerLength  = LL_ADC_REG_SEQ_SCAN_DISABLE;
+   \        0x4   0x22F0             MOVS     R2,#+240
+   \        0x6   0x6042             STR      R2,[R0, #+4]
+    737            ADC_REG_InitStruct->SequencerDiscont = LL_ADC_REG_SEQ_DISCONT_DISABLE;
+   \        0x8   0x6081             STR      R1,[R0, #+8]
+    738            ADC_REG_InitStruct->ContinuousMode   = LL_ADC_REG_CONV_SINGLE;
+   \        0xA   0x60C1             STR      R1,[R0, #+12]
+    739            ADC_REG_InitStruct->DMATransfer      = LL_ADC_REG_DMA_TRANSFER_NONE;
+   \        0xC   0x6101             STR      R1,[R0, #+16]
+    740            ADC_REG_InitStruct->Overrun          = LL_ADC_REG_OVR_DATA_OVERWRITTEN;
+   \        0xE   0x2180             MOVS     R1,#+128
+   \       0x10   0x0149             LSLS     R1,R1,#+5        ;; #+4096
+   \       0x12   0x6141             STR      R1,[R0, #+20]
+    741          }
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \        0x0   0xFFC3'FFFF        DC32     0xffc3ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \        0x0   0xFFFF'F23F        DC32     0xfffff23f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \        0x0   0x7FFF'FFE8        DC32     0x7fffffe8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \        0x0   0x4002'1030        DC32     0x40021030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \        0x0   0x4001'2400        DC32     0x40012400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \        0x0   0xFFFF'D460        DC32     0xffffd460
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \        0x0   0x0000'2B9F        DC32     0x2b9f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_7:
+   \        0x0   0xEFFF'FFFF        DC32     0xefffffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_8:
+   \        0x0   0x833E'0200        DC32     0x833e0200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_9:
+   \        0x0   0x3FFF'FC02        DC32     0x3ffffc02
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_10:
+   \        0x0   0xF800'0088        DC32     0xf8000088
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_11:
+   \        0x0   0x0FFF'0000        DC32     0xfff0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_12:
+   \        0x0   0xF000'F000        DC32     0xf000f000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_13:
+   \        0x0   0xFFFF'3FC7        DC32     0xffff3fc7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_14:
+   \        0x0   0xFFFE'C23C        DC32     0xfffec23c
+    742          
+    743          /**
+    744            * @}
+    745            */
+    746          
+    747          /**
+    748            * @}
+    749            */
+    750          
+    751          /**
+    752            * @}
+    753            */
+    754          
+    755          #endif /* ADC1 */
+    756          
+    757          /**
+    758            * @}
+    759            */
+    760          
+    761          #endif /* USE_FULL_LL_DRIVER */
+    762          
+    763          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LL_ADC_ClearFlag_CCRDY
+      16   LL_ADC_CommonDeInit
+        16   -> LL_APB2_GRP1_ForceReset
+        16   -> LL_APB2_GRP1_ReleaseReset
+      16   LL_ADC_CommonInit
+        16   -> LL_ADC_IsEnabled
+        16   -> LL_ADC_SetCommonClock
+       0   LL_ADC_CommonStructInit
+      24   LL_ADC_DeInit
+        24   -> LL_ADC_ClearFlag_CCRDY
+        24   -> LL_ADC_Disable
+        24   -> LL_ADC_IsActiveFlag_CCRDY
+        24   -> LL_ADC_IsDisableOngoing
+        24   -> LL_ADC_IsEnabled
+        24   -> LL_ADC_REG_IsConversionOngoing
+        24   -> LL_ADC_REG_IsStopConversionOngoing
+        24   -> LL_ADC_REG_SetTriggerSource
+        24   -> LL_ADC_REG_StopConversion
+       0   LL_ADC_Disable
+      16   LL_ADC_Init
+        16   -> LL_ADC_IsEnabled
+       0   LL_ADC_IsActiveFlag_CCRDY
+       0   LL_ADC_IsDisableOngoing
+       0   LL_ADC_IsEnabled
+       0   LL_ADC_REG_GetSequencerConfigurable
+      16   LL_ADC_REG_Init
+        16   -> LL_ADC_IsEnabled
+        16   -> LL_ADC_REG_GetSequencerConfigurable
+        16   -> LL_ADC_REG_SetSequencerLength
+       0   LL_ADC_REG_IsConversionOngoing
+       0   LL_ADC_REG_IsStopConversionOngoing
+       0   LL_ADC_REG_SetSequencerLength
+       0   LL_ADC_REG_SetTriggerSource
+       0   LL_ADC_REG_StopConversion
+       0   LL_ADC_REG_StructInit
+       0   LL_ADC_SetCommonClock
+       0   LL_ADC_StructInit
+       0   LL_APB2_GRP1_ForceReset
+       0   LL_APB2_GRP1_ReleaseReset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_10
+       4  ??DataTable9_11
+       4  ??DataTable9_12
+       4  ??DataTable9_13
+       4  ??DataTable9_14
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+       8  LL_ADC_ClearFlag_CCRDY
+      24  LL_ADC_CommonDeInit
+      38  LL_ADC_CommonInit
+       8  LL_ADC_CommonStructInit
+     276  LL_ADC_DeInit
+      14  LL_ADC_Disable
+      62  LL_ADC_Init
+      12  LL_ADC_IsActiveFlag_CCRDY
+      12  LL_ADC_IsDisableOngoing
+      10  LL_ADC_IsEnabled
+      10  LL_ADC_REG_GetSequencerConfigurable
+     112  LL_ADC_REG_Init
+      12  LL_ADC_REG_IsConversionOngoing
+      12  LL_ADC_REG_IsStopConversionOngoing
+       8  LL_ADC_REG_SetSequencerLength
+      12  LL_ADC_REG_SetTriggerSource
+      14  LL_ADC_REG_StopConversion
+      22  LL_ADC_REG_StructInit
+      12  LL_ADC_SetCommonClock
+      16  LL_ADC_StructInit
+      10  LL_APB2_GRP1_ForceReset
+      10  LL_APB2_GRP1_ReleaseReset
+
+ 
+ 774 bytes in section .text
+ 
+ 774 bytes of CODE memory
+
+Errors: none
+Warnings: none

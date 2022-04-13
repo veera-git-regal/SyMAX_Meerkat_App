@@ -1,0 +1,737 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:45
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_gpio.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWD98D.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_gpio.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_gpio.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_gpio.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_gpio.c
+      1          /**
+      2          ********************************************************************************************************************************
+      3          * @file    module_gpio.c 
+      4          * @author  Satya Akkina
+      5          * @brief   Main driver module for GPIO
+      6          * @details    
+      7          ********************************************************************************************************************************
+      8          */
+      9          
+     10          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     11          //#include "driver_gpio.h"
+     12          #include "module_gpio.h"
+     13          
+     14          //#include <stdio.h> // Only needed when using printf
+     15          
+     16          /* scheduler handle declaration */
+     17          #include "scheduler.h"
+     18          #include "structured_memory.h"
+     19          
+     20          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     21          // Function prototypes
+     22          uint16_t updateGpioStatus(uint16_t current_value, uint8_t position, uint8_t new_bit_value);
+     23          void AssignModuleMemGpio(void);
+     24          uint8_t GetDebouncedDigitalInputValue(uint8_t input_no_u8, uint8_t new_bit_value);
+     25          void InitGpioSettingsData(void);
+     26          
+     27          // -- Module States
+     28          enum {
+     29            MEMORY_INIT_MODULE,
+     30            INIT_MODULE,
+     31            RUN_MODULE,
+     32            // additional states to be added here as necessary.
+     33            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     34            KILL_MODULE = KILL_APP
+     35          };
+     36          
+     37          // - External Variables
+     38          extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     39          extern ProcessInfo processInfoTable[]; 
+     40          
+     41          // - Global variables specific to this module
+
+   \                                 In section .bss, align 4
+     42          Gpio_Control gpio_Control;
+   \                     gpio_Control:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 4
+     43          static Ram_Buf_Handle gpio_StructMem_u32;
+   \                     gpio_StructMem_u32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     44          uint8_t current_debounce_count[TOTAL_DIGITAL_INPUTS];
+   \                     current_debounce_count:
+   \        0x0                      DS8 8
+     45          
+     46          /**
+     47          ********************************************************************************************************************************
+     48          * @brief   State machine for gpio module
+     49          * @details
+     50          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+     51          * @retval  return_state_u8
+     52          ********************************************************************************************************************************
+     53          */
+
+   \                                 In section .text, align 2, keep-with-next
+     54          uint8_t moduleGPIO_u32(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8, uint8_t irq_id_u8) 
+     55          {
+   \                     moduleGPIO_u32: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB081             SUB      SP,SP,#+4
+     56            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4669             MOV      R1,SP
+   \        0x8   0x7048             STRB     R0,[R1, #+1]
+     57            switch (next_state_u8) 
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x7B00             LDRB     R0,[R0, #+12]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD006             BEQ      ??moduleGPIO_u32_0
+   \       0x12   0x2801             CMP      R0,#+1
+   \       0x14   0xD008             BEQ      ??moduleGPIO_u32_1
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD00C             BEQ      ??moduleGPIO_u32_2
+   \       0x1A   0x28FF             CMP      R0,#+255
+   \       0x1C   0xD02B             BEQ      ??moduleGPIO_u32_3
+   \       0x1E   0xE03D             B        ??moduleGPIO_u32_4
+     58            {
+     59            case MEMORY_INIT_MODULE:
+     60              {
+     61                AssignModuleMemGpio(); // Assign structured memory
+   \                     ??moduleGPIO_u32_0: (+1)
+   \       0x20   0x....'....        BL       AssignModuleMemGpio
+     62                return_state_u8 = INIT_MODULE;
+   \       0x24   0x2001             MOVS     R0,#+1
+     63                break;
+   \       0x26   0xE03A             B        ??moduleGPIO_u32_5
+     64              }
+     65            case INIT_MODULE: 
+     66              {
+     67                //AssignModuleMemGpio();
+     68                InitGpioSettingsData();
+   \                     ??moduleGPIO_u32_1: (+1)
+   \       0x28   0x....'....        BL       InitGpioSettingsData
+     69                // Initialize GPIO.
+     70                GPIOInit();
+   \       0x2C   0x....'....        BL       GPIOInit
+     71                return_state_u8 = RUN_MODULE;
+   \       0x30   0x2002             MOVS     R0,#+2
+     72                break;
+   \       0x32   0xE034             B        ??moduleGPIO_u32_5
+     73              }
+     74            case RUN_MODULE: 
+     75              {
+     76                // Loop through all inputs and update the status variable. 
+     77                for (uint8_t input_number_u8 = 0; input_number_u8 < TOTAL_DIGITAL_INPUTS; input_number_u8++){
+   \                     ??moduleGPIO_u32_2: (+1)
+   \       0x34   0x2500             MOVS     R5,#+0
+   \                     ??moduleGPIO_u32_6: (+1)
+   \       0x36   0x0028             MOVS     R0,R5
+   \       0x38   0xB2C0             UXTB     R0,R0
+   \       0x3A   0x2805             CMP      R0,#+5
+   \       0x3C   0xDA19             BGE      ??moduleGPIO_u32_7
+     78                  uint8_t state_value_u8=0;
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0x4669             MOV      R1,SP
+   \       0x42   0x7008             STRB     R0,[R1, #+0]
+     79                  state_value_u8 = Gpio_Driver_ReadGpioInputState(input_number_u8);
+   \       0x44   0x0028             MOVS     R0,R5
+   \       0x46   0xB2C0             UXTB     R0,R0
+   \       0x48   0x....'....        BL       Gpio_Driver_ReadGpioInputState
+   \       0x4C   0x0007             MOVS     R7,R0
+     80                  state_value_u8 = GetDebouncedDigitalInputValue(input_number_u8, state_value_u8); // Debounce input state
+   \       0x4E   0x0039             MOVS     R1,R7
+   \       0x50   0xB2C9             UXTB     R1,R1
+   \       0x52   0x0028             MOVS     R0,R5
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x....'....        BL       GetDebouncedDigitalInputValue
+   \       0x5A   0x0006             MOVS     R6,R0
+     81                  gpio_Control.gpio_Result.gpio_Status_u16 = updateGpioStatus(gpio_Control.gpio_Result.gpio_Status_u16, input_number_u8, state_value_u8);            
+   \       0x5C   0x....             LDR      R4,??DataTable3
+   \       0x5E   0x0032             MOVS     R2,R6
+   \       0x60   0xB2D2             UXTB     R2,R2
+   \       0x62   0x0029             MOVS     R1,R5
+   \       0x64   0xB2C9             UXTB     R1,R1
+   \       0x66   0x8860             LDRH     R0,[R4, #+2]
+   \       0x68   0x....'....        BL       updateGpioStatus
+   \       0x6C   0x8060             STRH     R0,[R4, #+2]
+     82                }          
+   \       0x6E   0x1C6D             ADDS     R5,R5,#+1
+   \       0x70   0xE7E1             B        ??moduleGPIO_u32_6
+     83                return_state_u8 = RUN_MODULE;
+   \                     ??moduleGPIO_u32_7: (+1)
+   \       0x72   0x2002             MOVS     R0,#+2
+     84                break;
+   \       0x74   0xE013             B        ??moduleGPIO_u32_5
+     85              }
+     86            case KILL_MODULE: 
+     87              {
+     88                // The GPIO driver module must only be executed once.
+     89                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+     90                uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+   \                     ??moduleGPIO_u32_3: (+1)
+   \       0x76   0x4668             MOV      R0,SP
+   \       0x78   0x7900             LDRB     R0,[R0, #+4]
+   \       0x7A   0x....'....        BL       getProcessInfoIndex
+   \       0x7E   0x0001             MOVS     R1,R0
+     91                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x80   0x0008             MOVS     R0,R1
+   \       0x82   0xB2C0             UXTB     R0,R0
+   \       0x84   0x28FF             CMP      R0,#+255
+   \       0x86   0xD007             BEQ      ??moduleGPIO_u32_8
+     92                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0x88   0x20FF             MOVS     R0,#+255
+   \       0x8A   0x....             LDR      R2,??DataTable3_1
+   \       0x8C   0x000B             MOVS     R3,R1
+   \       0x8E   0xB2DB             UXTB     R3,R3
+   \       0x90   0x2416             MOVS     R4,#+22
+   \       0x92   0x4363             MULS     R3,R4,R3
+   \       0x94   0x18D2             ADDS     R2,R2,R3
+   \       0x96   0x7290             STRB     R0,[R2, #+10]
+     93                }
+     94                return_state_u8 = KILL_MODULE;
+   \                     ??moduleGPIO_u32_8: (+1)
+   \       0x98   0x20FF             MOVS     R0,#+255
+     95                break;
+   \       0x9A   0xE000             B        ??moduleGPIO_u32_5
+     96              }
+     97            default:
+     98              {
+     99                return_state_u8 = 10;
+   \                     ??moduleGPIO_u32_4: (+1)
+   \       0x9C   0x200A             MOVS     R0,#+10
+    100                break;
+    101              }
+    102            }
+    103            return return_state_u8;
+   \                     ??moduleGPIO_u32_5: (+1)
+   \       0x9E   0xB2C0             UXTB     R0,R0
+   \       0xA0   0xB005             ADD      SP,SP,#+20
+   \       0xA2   0xBDF0             POP      {R4-R7,PC}       ;; return
+    104          }
+    105          
+    106          
+    107          /**
+    108          ********************************************************************************************************************************
+    109          * @brief   Assign structured memory
+    110          * @details Assign structured memory gpio_Control
+    111          * @param   None
+    112          * @retval  None
+    113          ********************************************************************************************************************************
+    114          */
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void AssignModuleMemGpio(void){   
+   \                     AssignModuleMemGpio: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    116            gpio_StructMem_u32 =  StructMem_CreateInstance(MODULE_GPIO, sizeof(Gpio_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R4,??DataTable3_2
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2106             MOVS     R1,#+6
+   \        0xE   0x2001             MOVS     R0,#+1
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    117            (*gpio_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&gpio_Control ;    // Map the ADC1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable3
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    118            uint8_t module_gpio_index_u8 = getProcessInfoIndex(MODULE_GPIO);
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    119            processInfoTable[module_gpio_index_u8].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)gpio_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable3_1
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    120          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    121          
+    122          
+
+   \                                 In section .text, align 2, keep-with-next
+    123          void InitGpioSettingsData(void)
+    124          {
+   \                     InitGpioSettingsData: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    125            gpio_Control.gpio_Settings.debounceCountLimit_u8 = 4;
+   \        0x2   0x2004             MOVS     R0,#+4
+   \        0x4   0x....             LDR      R1,??DataTable3
+   \        0x6   0x7008             STRB     R0,[R1, #+0]
+    126            
+    127            // Init local variables
+    128            for (uint8_t input_number_u8 = 0; input_number_u8 < TOTAL_DIGITAL_INPUTS; input_number_u8++){
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x0008             MOVS     R0,R1
+   \                     ??InitGpioSettingsData_0: (+1)
+   \        0xC   0x0002             MOVS     R2,R0
+   \        0xE   0xB2D2             UXTB     R2,R2
+   \       0x10   0x2A05             CMP      R2,#+5
+   \       0x12   0xDA05             BGE      ??InitGpioSettingsData_1
+    129              current_debounce_count[input_number_u8] = 0;
+   \       0x14   0x....             LDR      R2,??DataTable3_3
+   \       0x16   0x0003             MOVS     R3,R0
+   \       0x18   0xB2DB             UXTB     R3,R3
+   \       0x1A   0x54D1             STRB     R1,[R2, R3]
+    130            }
+   \       0x1C   0x1C40             ADDS     R0,R0,#+1
+   \       0x1E   0xE7F5             B        ??InitGpioSettingsData_0
+    131          }
+   \                     ??InitGpioSettingsData_1: (+1)
+   \       0x20   0xBD00             POP      {PC}             ;; return
+    132          
+    133          /**
+    134          ********************************************************************************************************************************
+    135          * @brief   Debounce Digital Inputs
+    136          * @details Apply debounce to input. If the new value does not stay the same for at least debounceCountLimit_u8, revert to previous know good value
+    137          * @param   input_num_u8, new_bit_value
+    138          * @param   
+    139          * @retval  debounced_value_u8
+    140          ********************************************************************************************************************************
+    141          */
+
+   \                                 In section .text, align 2, keep-with-next
+    142          uint8_t GetDebouncedDigitalInputValue(uint8_t input_num_u8, uint8_t new_bit_value){
+   \                     GetDebouncedDigitalInputValue: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0001             MOVS     R1,R0
+    143            uint16_t mask = 1 << input_num_u8; 
+   \        0x4   0x2201             MOVS     R2,#+1
+   \        0x6   0x408A             LSLS     R2,R2,R1
+    144            uint8_t stable_value_u8 =   (gpio_Control.gpio_Result.gpio_Status_u16 & mask) >> input_num_u8;
+   \        0x8   0x....             LDR      R4,??DataTable3
+   \        0xA   0x8860             LDRH     R0,[R4, #+2]
+   \        0xC   0x0013             MOVS     R3,R2
+   \        0xE   0xB29B             UXTH     R3,R3
+   \       0x10   0x4003             ANDS     R3,R3,R0
+   \       0x12   0x410B             ASRS     R3,R3,R1
+    145            
+    146            uint8_t debounced_value_u8 = stable_value_u8;
+   \       0x14   0x0018             MOVS     R0,R3
+    147            if(new_bit_value != stable_value_u8) // Input state changed.
+   \       0x16   0x466D             MOV      R5,SP
+   \       0x18   0x782D             LDRB     R5,[R5, #+0]
+   \       0x1A   0x001E             MOVS     R6,R3
+   \       0x1C   0xB2F6             UXTB     R6,R6
+   \       0x1E   0x42B5             CMP      R5,R6
+   \       0x20   0xD011             BEQ      ??GetDebouncedDigitalInputValue_0
+    148            {
+    149              current_debounce_count[input_num_u8]++;
+   \       0x22   0x....             LDR      R5,??DataTable3_3
+   \       0x24   0x000E             MOVS     R6,R1
+   \       0x26   0xB2F6             UXTB     R6,R6
+   \       0x28   0x5DAE             LDRB     R6,[R5, R6]
+   \       0x2A   0x1C76             ADDS     R6,R6,#+1
+   \       0x2C   0x000F             MOVS     R7,R1
+   \       0x2E   0xB2FF             UXTB     R7,R7
+   \       0x30   0x55EE             STRB     R6,[R5, R7]
+    150              if(current_debounce_count[input_num_u8] >= gpio_Control.gpio_Settings.debounceCountLimit_u8)
+   \       0x32   0x000E             MOVS     R6,R1
+   \       0x34   0xB2F6             UXTB     R6,R6
+   \       0x36   0x5DAD             LDRB     R5,[R5, R6]
+   \       0x38   0x7824             LDRB     R4,[R4, #+0]
+   \       0x3A   0x42A5             CMP      R5,R4
+   \       0x3C   0xD309             BCC      ??GetDebouncedDigitalInputValue_1
+    151              { // Debounce count satisified
+    152                debounced_value_u8 = new_bit_value;
+   \       0x3E   0x466C             MOV      R4,SP
+   \       0x40   0x7824             LDRB     R4,[R4, #+0]
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0xE005             B        ??GetDebouncedDigitalInputValue_1
+    153              }
+    154            } else{ // No change in input state.
+    155              current_debounce_count[input_num_u8]=0;
+   \                     ??GetDebouncedDigitalInputValue_0: (+1)
+   \       0x46   0x2400             MOVS     R4,#+0
+   \       0x48   0x....             LDR      R5,??DataTable3_3
+   \       0x4A   0x000E             MOVS     R6,R1
+   \       0x4C   0xB2F6             UXTB     R6,R6
+   \       0x4E   0x55AC             STRB     R4,[R5, R6]
+    156              debounced_value_u8 = stable_value_u8;
+   \       0x50   0x0018             MOVS     R0,R3
+    157            } 
+    158            return(debounced_value_u8);
+   \                     ??GetDebouncedDigitalInputValue_1: (+1)
+   \       0x52   0xB2C0             UXTB     R0,R0
+   \       0x54   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    159          }
+    160          
+    161          /**
+    162          ********************************************************************************************************************************
+    163          * @brief   Get status of GPIO input and update the status flags
+    164          * @details 
+    165          * @param   current_value, position, new_bit_value
+    166          * @retval  new value of status flags
+    167          ********************************************************************************************************************************
+    168          */
+
+   \                                 In section .text, align 2, keep-with-next
+    169          uint16_t updateGpioStatus(uint16_t current_value, uint8_t position, uint8_t new_bit_value) 
+    170          { 
+   \                     updateGpioStatus: (+1)
+   \        0x0   0x0003             MOVS     R3,R0
+    171            uint16_t mask = 1 << position; 
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x4088             LSLS     R0,R0,R1
+    172            return (current_value & ~mask) | (((uint16_t)(new_bit_value << position)) & mask); 
+   \        0x6   0x4383             BICS     R3,R3,R0
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x408A             LSLS     R2,R2,R1
+   \        0xC   0x4010             ANDS     R0,R0,R2
+   \        0xE   0x4318             ORRS     R0,R0,R3
+   \       0x10   0xB280             UXTH     R0,R0
+   \       0x12   0x4770             BX       LR               ;; return
+    173          } 
+    174          
+    175          /**
+    176          ********************************************************************************************************************************
+    177          * @brief   Start PWM output
+    178          * @details 
+    179          * @param   output_num_u8
+    180          * @retval  None
+    181          ********************************************************************************************************************************
+    182          */
+
+   \                                 In section .text, align 2, keep-with-next
+    183          void Module_Gpio_StartPwmOut(uint8_t output_num_u8){
+   \                     Module_Gpio_StartPwmOut: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    184            Driver_Gpio_StartPwmOut(output_num_u8);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x....'....        BL       Driver_Gpio_StartPwmOut
+    185          }
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+    186          
+    187          /**
+    188          ********************************************************************************************************************************
+    189          * @brief   Stop PWM output
+    190          * @details 
+    191          * @param   output_num_u8
+    192          * @retval  None
+    193          ********************************************************************************************************************************
+    194          */
+
+   \                                 In section .text, align 2, keep-with-next
+    195          void Module_Gpio_StopPwmOut(uint8_t output_num_u8){
+   \                     Module_Gpio_StopPwmOut: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    196            Driver_Gpio_StopPwmOut(output_num_u8);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x....'....        BL       Driver_Gpio_StopPwmOut
+    197          }
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+    198          
+    199          /**
+    200          ********************************************************************************************************************************
+    201          * @brief   Set PWM output polarity
+    202          * @details 
+    203          * @param   output_num_u8, polarity_value
+    204          * @retval  None
+    205          ********************************************************************************************************************************
+    206          */
+
+   \                                 In section .text, align 2, keep-with-next
+    207          void Module_Gpio_SetPwmOutPolarity(uint8_t output_num_u8, uint8_t polarity_value){
+   \                     Module_Gpio_SetPwmOutPolarity: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    208            Driver_Gpio_SetPwmOutPolarity(output_num_u8, polarity_value);
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0xB2C9             UXTB     R1,R1
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x....'....        BL       Driver_Gpio_SetPwmOutPolarity
+    209          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    210          
+    211          /**
+    212          ********************************************************************************************************************************
+    213          * @brief   Set PWM output period
+    214          * @details 
+    215          * @param   output_num_u8, pwm_frequency
+    216          * @retval  None
+    217          ********************************************************************************************************************************
+    218          */
+
+   \                                 In section .text, align 2, keep-with-next
+    219          void Module_Gpio_SetPwmOutPeriod(uint8_t output_num_u8, uint16_t pwm_frequency){
+   \                     Module_Gpio_SetPwmOutPeriod: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    220            Driver_Gpio_SetPwmOutPeriod(output_num_u8, pwm_frequency);
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0xB289             UXTH     R1,R1
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x....'....        BL       Driver_Gpio_SetPwmOutPeriod
+    221          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    222          
+    223          /**
+    224          ********************************************************************************************************************************
+    225          * @brief   Set PWM output duty cycle
+    226          * @details 
+    227          * @param   output_num_u8, pwm_period
+    228          * @retval  None
+    229          ********************************************************************************************************************************
+    230          */
+
+   \                                 In section .text, align 2, keep-with-next
+    231          void Module_Gpio_SetPwmOutDutyCycle(uint8_t output_num_u8, uint16_t pwm_period){
+   \                     Module_Gpio_SetPwmOutDutyCycle: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    232            Driver_Gpio_SetPwmOutDutyCycle(output_num_u8, pwm_period);
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0xB289             UXTH     R1,R1
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x....'....        BL       Driver_Gpio_SetPwmOutDutyCycle
+    233          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    234          
+    235          /**
+    236          ********************************************************************************************************************************
+    237          * @brief   Read GPIO state
+    238          * @details 
+    239          * @param   output_num_u8
+    240          * @retval  GPIO state
+    241          ********************************************************************************************************************************
+    242          */
+
+   \                                 In section .text, align 2, keep-with-next
+    243          uint8_t Module_Gpio_ReadGpioOutputState(uint8_t output_num_u8)
+    244          {
+   \                     Module_Gpio_ReadGpioOutputState: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    245            return(Driver_Gpio_ReadGpioOutputState(output_num_u8));
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x....'....        BL       Driver_Gpio_ReadGpioOutputState
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+    246          }
+    247          
+    248          /**
+    249          ********************************************************************************************************************************
+    250          * @brief   Toggle GPIO output state
+    251          * @details 
+    252          * @param   output_num_u8
+    253          * @retval  None
+    254          ********************************************************************************************************************************
+    255          */
+
+   \                                 In section .text, align 2, keep-with-next
+    256          void Module_Gpio_TogglePin(uint8_t output_num_u8){
+   \                     Module_Gpio_TogglePin: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    257            Driver_Gpio_TogglePin(output_num_u8);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x....'....        BL       Driver_Gpio_TogglePin
+    258          }
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+    259          
+    260          /**
+    261          ********************************************************************************************************************************
+    262          * @brief   Set GPIO output state
+    263          * @details 
+    264          * @param   output_num_u8, pin_State_u8
+    265          * @retval  None
+    266          ********************************************************************************************************************************
+    267          */
+
+   \                                 In section .text, align 2, keep-with-next
+    268          void Module_Gpio_WriteGpioState(uint8_t output_num_u8, uint8_t pin_State_u8){
+   \                     Module_Gpio_WriteGpioState: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    269            Driver_Gpio_WriteGpioState(output_num_u8, pin_State_u8);  
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0xB2C9             UXTB     R1,R1
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x....'....        BL       Driver_Gpio_WriteGpioState
+    270          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    271          
+    272          /**
+    273          ********************************************************************************************************************************
+    274          * @brief   Init Dout1 as GPIO output
+    275          * @details 
+    276          * @param   output_num_u8, pin_State_u8
+    277          * @retval  None
+    278          ********************************************************************************************************************************
+    279          */
+
+   \                                 In section .text, align 2, keep-with-next
+    280          void Module_Gpio_Dout1_Init(uint8_t input_no_u8)
+    281          {
+   \                     Module_Gpio_Dout1_Init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    282            Driver_GPIO_Dout1_Init(input_no_u8);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x....'....        BL       Driver_GPIO_Dout1_Init
+    283          }
+   \        0xC   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     gpio_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     gpio_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x....'....        DC32     current_debounce_count
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   AssignModuleMemGpio
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+      24   GetDebouncedDigitalInputValue
+       4   InitGpioSettingsData
+       8   Module_Gpio_Dout1_Init
+         8   -> Driver_GPIO_Dout1_Init
+       8   Module_Gpio_ReadGpioOutputState
+         8   -> Driver_Gpio_ReadGpioOutputState
+      16   Module_Gpio_SetPwmOutDutyCycle
+        16   -> Driver_Gpio_SetPwmOutDutyCycle
+      16   Module_Gpio_SetPwmOutPeriod
+        16   -> Driver_Gpio_SetPwmOutPeriod
+      16   Module_Gpio_SetPwmOutPolarity
+        16   -> Driver_Gpio_SetPwmOutPolarity
+       8   Module_Gpio_StartPwmOut
+         8   -> Driver_Gpio_StartPwmOut
+       8   Module_Gpio_StopPwmOut
+         8   -> Driver_Gpio_StopPwmOut
+       8   Module_Gpio_TogglePin
+         8   -> Driver_Gpio_TogglePin
+      16   Module_Gpio_WriteGpioState
+        16   -> Driver_Gpio_WriteGpioState
+      40   moduleGPIO_u32
+        40   -> AssignModuleMemGpio
+        40   -> GPIOInit
+        40   -> GetDebouncedDigitalInputValue
+        40   -> Gpio_Driver_ReadGpioInputState
+        40   -> InitGpioSettingsData
+        40   -> getProcessInfoIndex
+        40   -> updateGpioStatus
+       0   updateGpioStatus
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+      60  AssignModuleMemGpio
+      86  GetDebouncedDigitalInputValue
+      34  InitGpioSettingsData
+      14  Module_Gpio_Dout1_Init
+      14  Module_Gpio_ReadGpioOutputState
+      20  Module_Gpio_SetPwmOutDutyCycle
+      20  Module_Gpio_SetPwmOutPeriod
+      20  Module_Gpio_SetPwmOutPolarity
+      14  Module_Gpio_StartPwmOut
+      14  Module_Gpio_StopPwmOut
+      14  Module_Gpio_TogglePin
+      20  Module_Gpio_WriteGpioState
+       8  current_debounce_count
+       8  gpio_Control
+       4  gpio_StructMem_u32
+     164  moduleGPIO_u32
+      20  updateGpioStatus
+
+ 
+  20 bytes in section .bss
+ 530 bytes in section .text
+ 
+ 530 bytes of CODE memory
+  20 bytes of DATA memory
+
+Errors: none
+Warnings: none

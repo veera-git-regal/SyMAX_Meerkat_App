@@ -1,0 +1,321 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:59:01
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\structured_memory.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW1C1D.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\structured_memory.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\structured_memory.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\structured_memory.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\structured_memory.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    struct_memory.c 
+      4            * @author  Oscar Guevara
+      5            * @brief   This file implements the memory abstraction API for the FlexMouse structured memory data structure.
+      6            * @details FlexMouse has two types of available memory: sequential and structured memory. Structured memory, defined in this
+      7            *             file, allows the user to store and retrieve data. Unlike sequential memory, structured memory allows the user to
+      8            *             retrieve any data previously stored at any time, regardless of in what order the data was stored.
+      9            ********************************************************************************************************************************
+     10            */
+     11          
+     12          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     13          #include "scheduler.h"
+     14          #include "structured_memory.h"
+     15          
+
+   \                                 In section .bss, align 4
+     16          Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE]; // Allocate space for structured memory instances
+   \                     sharedMemArray:
+   \        0x0                      DS8 340
+     17          
+
+   \                                 In section .text, align 2, keep-with-next
+     18          Ram_Buf_Handle StructMem_CreateInstance(uint8_t owner_u8, uint8_t ram_buf_size_u8, uint8_t access_mode_u8,
+     19                                                            uint8_t *p_user_list_u8, uint8_t user_list_size_u8) {
+   \                     StructMem_CreateInstance: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB083             SUB      SP,SP,#+12
+     20              Ram_Buf_Handle this_ram_buf_u32;
+     21              uint8_t instance_index_u8 = 0;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x0025             MOVS     R5,R4
+     22              uint8_t max_process_index_u8 = 0;
+   \        0x8   0x0026             MOVS     R6,R4
+     23              for (; instance_index_u8 < TOTAL_NUM_OF_STRUCT_MEM_INSTANCES; instance_index_u8++) {
+   \                     ??StructMem_CreateInstance_0: (+1)
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2811             CMP      R0,#+17
+   \       0x10   0xDA1A             BGE      ??StructMem_CreateInstance_1
+     24                  this_ram_buf_u32 = &sharedMemArray[instance_index_u8];
+   \       0x12   0x....             LDR      R0,??DataTable2
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0xB2C9             UXTB     R1,R1
+   \       0x18   0x2214             MOVS     R2,#+20
+   \       0x1A   0x4351             MULS     R1,R2,R1
+   \       0x1C   0x1840             ADDS     R0,R0,R1
+   \       0x1E   0x0007             MOVS     R7,R0
+     25                  if (RamBuf_GetOwner(this_ram_buf_u32) == owner_u8) {
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0x....'....        BL       RamBuf_GetOwner
+   \       0x26   0x4669             MOV      R1,SP
+   \       0x28   0x7B09             LDRB     R1,[R1, #+12]
+   \       0x2A   0x4288             CMP      R0,R1
+   \       0x2C   0xD10A             BNE      ??StructMem_CreateInstance_2
+     26                      if (RamBuf_GetProcessInstanceIndex(this_ram_buf_u32) > max_process_index_u8) {
+   \       0x2E   0x0038             MOVS     R0,R7
+   \       0x30   0x....'....        BL       RamBuf_GetProcessInstanceIndex
+   \       0x34   0x0031             MOVS     R1,R6
+   \       0x36   0xB2C9             UXTB     R1,R1
+   \       0x38   0x4281             CMP      R1,R0
+   \       0x3A   0xD203             BCS      ??StructMem_CreateInstance_2
+     27                          max_process_index_u8 = RamBuf_GetProcessInstanceIndex(this_ram_buf_u32);
+   \       0x3C   0x0038             MOVS     R0,R7
+   \       0x3E   0x....'....        BL       RamBuf_GetProcessInstanceIndex
+   \       0x42   0x0006             MOVS     R6,R0
+     28                      }
+     29                  }
+     30              }
+   \                     ??StructMem_CreateInstance_2: (+1)
+   \       0x44   0x1C6D             ADDS     R5,R5,#+1
+   \       0x46   0xE7E0             B        ??StructMem_CreateInstance_0
+     31              for (instance_index_u8 = 0; instance_index_u8 < TOTAL_NUM_OF_STRUCT_MEM_INSTANCES; instance_index_u8++) {
+   \                     ??StructMem_CreateInstance_1: (+1)
+   \                     ??StructMem_CreateInstance_3: (+1)
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0xB2C0             UXTB     R0,R0
+   \       0x4C   0x2811             CMP      R0,#+17
+   \       0x4E   0xDA24             BGE      ??StructMem_CreateInstance_4
+     32                  this_ram_buf_u32 = &sharedMemArray[instance_index_u8];
+   \       0x50   0x....             LDR      R5,??DataTable2
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x2114             MOVS     R1,#+20
+   \       0x58   0x4348             MULS     R0,R1,R0
+   \       0x5A   0x1828             ADDS     R0,R5,R0
+   \       0x5C   0x0007             MOVS     R7,R0
+     33                  if (RamBuf_GetOwner(this_ram_buf_u32) == 255) {
+   \       0x5E   0x0038             MOVS     R0,R7
+   \       0x60   0x....'....        BL       RamBuf_GetOwner
+   \       0x64   0x28FF             CMP      R0,#+255
+   \       0x66   0xD116             BNE      ??StructMem_CreateInstance_5
+     34                      RamBuf_Initialize(this_ram_buf_u32, owner_u8, ram_buf_size_u8, 0, 0, 0);
+   \       0x68   0x2000             MOVS     R0,#+0
+   \       0x6A   0x9001             STR      R0,[SP, #+4]
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \       0x6E   0x9000             STR      R0,[SP, #+0]
+   \       0x70   0x2300             MOVS     R3,#+0
+   \       0x72   0x4668             MOV      R0,SP
+   \       0x74   0x7C02             LDRB     R2,[R0, #+16]
+   \       0x76   0x4668             MOV      R0,SP
+   \       0x78   0x7B01             LDRB     R1,[R0, #+12]
+   \       0x7A   0x0038             MOVS     R0,R7
+   \       0x7C   0x....'....        BL       RamBuf_Initialize
+     35                      RamBuf_SetProcessInstanceIndex(this_ram_buf_u32, max_process_index_u8 + 1);
+   \       0x80   0x0031             MOVS     R1,R6
+   \       0x82   0x1C49             ADDS     R1,R1,#+1
+   \       0x84   0xB2C9             UXTB     R1,R1
+   \       0x86   0x0038             MOVS     R0,R7
+   \       0x88   0x....'....        BL       RamBuf_SetProcessInstanceIndex
+     36                      return (&sharedMemArray[instance_index_u8]);
+   \       0x8C   0xB2E4             UXTB     R4,R4
+   \       0x8E   0x2014             MOVS     R0,#+20
+   \       0x90   0x4344             MULS     R4,R0,R4
+   \       0x92   0x1928             ADDS     R0,R5,R4
+   \       0x94   0xE002             B        ??StructMem_CreateInstance_6
+     37                  }
+     38              }
+   \                     ??StructMem_CreateInstance_5: (+1)
+   \       0x96   0x1C64             ADDS     R4,R4,#+1
+   \       0x98   0xE7D6             B        ??StructMem_CreateInstance_3
+     39              return (0);
+   \                     ??StructMem_CreateInstance_4: (+1)
+   \       0x9A   0x2000             MOVS     R0,#+0
+   \                     ??StructMem_CreateInstance_6: (+1)
+   \       0x9C   0xB007             ADD      SP,SP,#+28
+   \       0x9E   0xBDF0             POP      {R4-R7,PC}       ;; return
+     40          }
+     41          
+
+   \                                 In section .text, align 2, keep-with-next
+     42          uint8_t StructMem_DestroyInstance(uint8_t owner_u8, Ram_Buf_Handle this_ram_buf_u32) {
+   \                     StructMem_DestroyInstance: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     43              Ram_Buf_Handle temp_ram_buf_u32;
+     44              uint8_t instance_index_u8 = 0;
+   \        0x6   0x2600             MOVS     R6,#+0
+     45              for (; instance_index_u8 < TOTAL_NUM_OF_STRUCT_MEM_INSTANCES; instance_index_u8++) {
+   \                     ??StructMem_DestroyInstance_0: (+1)
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2811             CMP      R0,#+17
+   \        0xE   0xDA18             BGE      ??StructMem_DestroyInstance_1
+     46                  temp_ram_buf_u32 = &sharedMemArray[instance_index_u8];
+   \       0x10   0x....             LDR      R0,??DataTable2
+   \       0x12   0x0031             MOVS     R1,R6
+   \       0x14   0xB2C9             UXTB     R1,R1
+   \       0x16   0x2214             MOVS     R2,#+20
+   \       0x18   0x4351             MULS     R1,R2,R1
+   \       0x1A   0x1840             ADDS     R0,R0,R1
+   \       0x1C   0x0007             MOVS     R7,R0
+     47                  if (RamBuf_GetOwner(temp_ram_buf_u32) == owner_u8) {
+   \       0x1E   0x0038             MOVS     R0,R7
+   \       0x20   0x....'....        BL       RamBuf_GetOwner
+   \       0x24   0x0029             MOVS     R1,R5
+   \       0x26   0xB2C9             UXTB     R1,R1
+   \       0x28   0x4288             CMP      R0,R1
+   \       0x2A   0xD108             BNE      ??StructMem_DestroyInstance_2
+     48                      if ((this_ram_buf_u32 == 0) || (this_ram_buf_u32 == temp_ram_buf_u32)) {
+   \       0x2C   0x2C00             CMP      R4,#+0
+   \       0x2E   0xD001             BEQ      ??StructMem_DestroyInstance_3
+   \       0x30   0x42BC             CMP      R4,R7
+   \       0x32   0xD104             BNE      ??StructMem_DestroyInstance_2
+     49                          RamBuf_Release(this_ram_buf_u32);
+   \                     ??StructMem_DestroyInstance_3: (+1)
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x....'....        BL       RamBuf_Release
+     50                          return (TRUE);
+   \       0x3A   0x2001             MOVS     R0,#+1
+   \       0x3C   0xE002             B        ??StructMem_DestroyInstance_4
+     51                      }
+     52                  }
+     53              }
+   \                     ??StructMem_DestroyInstance_2: (+1)
+   \       0x3E   0x1C76             ADDS     R6,R6,#+1
+   \       0x40   0xE7E2             B        ??StructMem_DestroyInstance_0
+     54              return (FALSE);
+   \                     ??StructMem_DestroyInstance_1: (+1)
+   \       0x42   0x2000             MOVS     R0,#+0
+   \                     ??StructMem_DestroyInstance_4: (+1)
+   \       0x44   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     55          }
+     56          
+
+   \                                 In section .text, align 2, keep-with-next
+     57          uint8_t StructMem_InitBufs(void) {
+   \                     StructMem_InitBufs: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+     58              Ram_Buf_Handle this_ram_buf_u32;
+     59              for (uint8_t instance_index_u8 = 0; instance_index_u8 < TOTAL_NUM_OF_STRUCT_MEM_INSTANCES; instance_index_u8++) {
+   \        0x2   0x2500             MOVS     R5,#+0
+   \                     ??StructMem_InitBufs_0: (+1)
+   \        0x4   0x0028             MOVS     R0,R5
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x2811             CMP      R0,#+17
+   \        0xA   0xDA10             BGE      ??StructMem_InitBufs_1
+     60                  this_ram_buf_u32 = &sharedMemArray[instance_index_u8];
+   \        0xC   0x....             LDR      R0,??DataTable2
+   \        0xE   0x0029             MOVS     R1,R5
+   \       0x10   0xB2C9             UXTB     R1,R1
+   \       0x12   0x2214             MOVS     R2,#+20
+   \       0x14   0x4351             MULS     R1,R2,R1
+   \       0x16   0x1840             ADDS     R0,R0,R1
+   \       0x18   0x0004             MOVS     R4,R0
+     61                  RamBuf_SetOwner(this_ram_buf_u32, NO_OWNER);
+   \       0x1A   0x21FF             MOVS     R1,#+255
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x....'....        BL       RamBuf_SetOwner
+     62                  RamBuf_SetProcessInstanceIndex(this_ram_buf_u32, NO_OWNER_ID);
+   \       0x22   0x21FF             MOVS     R1,#+255
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       RamBuf_SetProcessInstanceIndex
+     63              }
+   \       0x2A   0x1C6D             ADDS     R5,R5,#+1
+   \       0x2C   0xE7EA             B        ??StructMem_InitBufs_0
+     64              return TRUE;
+   \                     ??StructMem_InitBufs_1: (+1)
+   \       0x2E   0x2001             MOVS     R0,#+1
+   \       0x30   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     65          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     sharedMemArray
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   StructMem_CreateInstance
+        48   -> RamBuf_GetOwner
+        48   -> RamBuf_GetProcessInstanceIndex
+        48   -> RamBuf_Initialize
+        48   -> RamBuf_SetProcessInstanceIndex
+      24   StructMem_DestroyInstance
+        24   -> RamBuf_GetOwner
+        24   -> RamBuf_Release
+      16   StructMem_InitBufs
+        16   -> RamBuf_SetOwner
+        16   -> RamBuf_SetProcessInstanceIndex
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+     160  StructMem_CreateInstance
+      70  StructMem_DestroyInstance
+      50  StructMem_InitBufs
+     340  sharedMemArray
+
+ 
+ 340 bytes in section .bss
+ 284 bytes in section .text
+ 
+ 284 bytes of CODE memory
+ 340 bytes of DATA memory
+
+Errors: none
+Warnings: none

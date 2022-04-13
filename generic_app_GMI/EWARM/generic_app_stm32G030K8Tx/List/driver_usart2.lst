@@ -1,0 +1,2315 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         09/Feb/2022  11:13:35
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_usart2.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWD48F.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_usart2.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\driver_usart2.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\driver_usart2.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\driver_usart2.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    drv_usart2.c 
+      4            * @author  Pamela Lee
+      5            * @brief   Main Driver function/s for serial protocol with Usart2 hardware
+      6            * @details Protocol Usart2, after decode a whole valid frame from serial port2,
+      7            *          trigger the system control to execute the relative APP in the int stage
+      8            *          the Rx data is in usart2SeqMemRX_u32.
+      9            *          To Transmitt data : put data into usart2SeqMemTX_u32, and call this function
+     10            *                              USART_ITConfig(USART2, USART_IT_TXE, ENABLE);
+     11            ********************************************************************************************************************************
+     12            */
+     13          
+     14          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     15          #include "driver_usart2.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void __NVIC_EnableIRQ(IRQn_Type)
+   \                     __NVIC_EnableIRQ: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x0001             MOVS     R1,R0
+   \        0x4   0xB249             SXTB     R1,R1
+   \        0x6   0x2900             CMP      R1,#+0
+   \        0x8   0xD405             BMI      ??__NVIC_EnableIRQ_0
+   \        0xA   0x2101             MOVS     R1,#+1
+   \        0xC   0x06C2             LSLS     R2,R0,#+27       ;; ZeroExtS R2,R0,#+27,#+27
+   \        0xE   0x0ED2             LSRS     R2,R2,#+27
+   \       0x10   0x4091             LSLS     R1,R1,R2
+   \       0x12   0x....             LDR      R2,??DataTable10  ;; 0xe000e100
+   \       0x14   0x6011             STR      R1,[R2, #+0]
+   \                     ??__NVIC_EnableIRQ_0: (+1)
+   \       0x16   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void __NVIC_DisableIRQ(IRQn_Type)
+   \                     __NVIC_DisableIRQ: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+   \        0x2   0x0001             MOVS     R1,R0
+   \        0x4   0xB249             SXTB     R1,R1
+   \        0x6   0x2900             CMP      R1,#+0
+   \        0x8   0xD409             BMI      ??__NVIC_DisableIRQ_0
+   \        0xA   0x2101             MOVS     R1,#+1
+   \        0xC   0x06C2             LSLS     R2,R0,#+27       ;; ZeroExtS R2,R0,#+27,#+27
+   \        0xE   0x0ED2             LSRS     R2,R2,#+27
+   \       0x10   0x4091             LSLS     R1,R1,R2
+   \       0x12   0x....             LDR      R2,??DataTable10_1  ;; 0xe000e180
+   \       0x14   0x6011             STR      R1,[R2, #+0]
+   \       0x16   0xF3BF 0x8F4F      DSB      SY
+   \       0x1A   0xF3BF 0x8F6F      ISB      SY
+   \                     ??__NVIC_DisableIRQ_0: (+1)
+   \       0x1E   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void __NVIC_SetPriority(IRQn_Type, uint32_t)
+   \                     __NVIC_SetPriority: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0x0002             MOVS     R2,R0
+   \        0x4   0xB252             SXTB     R2,R2
+   \        0x6   0x2A00             CMP      R2,#+0
+   \        0x8   0xD41C             BMI      ??__NVIC_SetPriority_0
+   \        0xA   0x2203             MOVS     R2,#+3
+   \        0xC   0x....             LDR      R3,??DataTable10_2  ;; 0xe000e400
+   \        0xE   0x0004             MOVS     R4,R0
+   \       0x10   0xB264             SXTB     R4,R4
+   \       0x12   0x08A4             LSRS     R4,R4,#+2
+   \       0x14   0x2504             MOVS     R5,#+4
+   \       0x16   0x436C             MULS     R4,R5,R4
+   \       0x18   0x591C             LDR      R4,[R3, R4]
+   \       0x1A   0x25FF             MOVS     R5,#+255
+   \       0x1C   0x0016             MOVS     R6,R2
+   \       0x1E   0x4006             ANDS     R6,R6,R0
+   \       0x20   0x2708             MOVS     R7,#+8
+   \       0x22   0x437E             MULS     R6,R7,R6
+   \       0x24   0x40B5             LSLS     R5,R5,R6
+   \       0x26   0x43AC             BICS     R4,R4,R5
+   \       0x28   0x018D             LSLS     R5,R1,#+6
+   \       0x2A   0xB2ED             UXTB     R5,R5
+   \       0x2C   0x4002             ANDS     R2,R2,R0
+   \       0x2E   0x2608             MOVS     R6,#+8
+   \       0x30   0x4372             MULS     R2,R6,R2
+   \       0x32   0x4095             LSLS     R5,R5,R2
+   \       0x34   0x4325             ORRS     R5,R5,R4
+   \       0x36   0x0002             MOVS     R2,R0
+   \       0x38   0xB252             SXTB     R2,R2
+   \       0x3A   0x0892             LSRS     R2,R2,#+2
+   \       0x3C   0x2404             MOVS     R4,#+4
+   \       0x3E   0x4362             MULS     R2,R4,R2
+   \       0x40   0x509D             STR      R5,[R3, R2]
+   \       0x42   0xE022             B        ??__NVIC_SetPriority_1
+   \                     ??__NVIC_SetPriority_0: (+1)
+   \       0x44   0x240F             MOVS     R4,#+15
+   \       0x46   0x....             LDR      R2,??DataTable10_3  ;; 0xe000ed1c
+   \       0x48   0x2303             MOVS     R3,#+3
+   \       0x4A   0x0005             MOVS     R5,R0
+   \       0x4C   0xB26D             SXTB     R5,R5
+   \       0x4E   0x4025             ANDS     R5,R5,R4
+   \       0x50   0x3D08             SUBS     R5,R5,#+8
+   \       0x52   0x08AD             LSRS     R5,R5,#+2
+   \       0x54   0x2604             MOVS     R6,#+4
+   \       0x56   0x4375             MULS     R5,R6,R5
+   \       0x58   0x0006             MOVS     R6,R0
+   \       0x5A   0xB276             SXTB     R6,R6
+   \       0x5C   0x4034             ANDS     R4,R4,R6
+   \       0x5E   0x3C08             SUBS     R4,R4,#+8
+   \       0x60   0x08A4             LSRS     R4,R4,#+2
+   \       0x62   0x2604             MOVS     R6,#+4
+   \       0x64   0x4374             MULS     R4,R6,R4
+   \       0x66   0x5916             LDR      R6,[R2, R4]
+   \       0x68   0x27FF             MOVS     R7,#+255
+   \       0x6A   0x46BC             MOV      R12,R7
+   \       0x6C   0x001C             MOVS     R4,R3
+   \       0x6E   0x4004             ANDS     R4,R4,R0
+   \       0x70   0x2708             MOVS     R7,#+8
+   \       0x72   0x437C             MULS     R4,R7,R4
+   \       0x74   0x4667             MOV      R7,R12
+   \       0x76   0x40A7             LSLS     R7,R7,R4
+   \       0x78   0x43BE             BICS     R6,R6,R7
+   \       0x7A   0x018C             LSLS     R4,R1,#+6
+   \       0x7C   0xB2E4             UXTB     R4,R4
+   \       0x7E   0x4003             ANDS     R3,R3,R0
+   \       0x80   0x2708             MOVS     R7,#+8
+   \       0x82   0x437B             MULS     R3,R7,R3
+   \       0x84   0x409C             LSLS     R4,R4,R3
+   \       0x86   0x4334             ORRS     R4,R4,R6
+   \       0x88   0x5154             STR      R4,[R2, R5]
+   \                     ??__NVIC_SetPriority_1: (+1)
+   \       0x8A   0xBDF0             POP      {R4-R7,PC}       ;; return
+
+   \                                 In section .data, align 1
+   \   static __absolute uint8_t frameID
+   \                     frameID:
+   \        0x0   0x01               DC8 1
+     16          
+     17          #include "main.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_APB1_GRP1_EnableClock(uint32_t)
+   \                     LL_APB1_GRP1_EnableClock: (+1)
+   \        0x0   0xB081             SUB      SP,SP,#+4
+   \        0x2   0x....             LDR      R1,??DataTable10_4  ;; 0x4002103c
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x4302             ORRS     R2,R2,R0
+   \        0x8   0x600A             STR      R2,[R1, #+0]
+   \        0xA   0x6809             LDR      R1,[R1, #+0]
+   \        0xC   0x4001             ANDS     R1,R1,R0
+   \        0xE   0x9100             STR      R1,[SP, #+0]
+   \       0x10   0x9900             LDR      R1,[SP, #+0]
+   \       0x12   0xB001             ADD      SP,SP,#+4
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_IOP_GRP1_EnableClock(uint32_t)
+   \                     LL_IOP_GRP1_EnableClock: (+1)
+   \        0x0   0xB081             SUB      SP,SP,#+4
+   \        0x2   0x....             LDR      R1,??DataTable10_5  ;; 0x40021034
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x4302             ORRS     R2,R2,R0
+   \        0x8   0x600A             STR      R2,[R1, #+0]
+   \        0xA   0x6809             LDR      R1,[R1, #+0]
+   \        0xC   0x4001             ANDS     R1,R1,R0
+   \        0xE   0x9100             STR      R1,[SP, #+0]
+   \       0x10   0x9900             LDR      R1,[SP, #+0]
+   \       0x12   0xB001             ADD      SP,SP,#+4
+   \       0x14   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_Enable(USART_TypeDef *)
+   \                     LL_USART_Enable: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2201             MOVS     R2,#+1
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6002             STR      R2,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_ConfigAsyncMode(USART_TypeDef *)
+   \                     LL_USART_ConfigAsyncMode: (+1)
+   \        0x0   0x6841             LDR      R1,[R0, #+4]
+   \        0x2   0x....             LDR      R2,??DataTable10_6  ;; 0xffffb7ff
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x6042             STR      R2,[R0, #+4]
+   \        0x8   0x6881             LDR      R1,[R0, #+8]
+   \        0xA   0x222A             MOVS     R2,#+42
+   \        0xC   0x4391             BICS     R1,R1,R2
+   \        0xE   0x6081             STR      R1,[R0, #+8]
+   \       0x10   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_NE(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_NE: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0881             LSRS     R1,R0,#+2
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_RXNE_RXFNE(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_RXNE_RXFNE: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0941             LSRS     R1,R0,#+5
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_TC(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_TC: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0981             LSRS     R1,R0,#+6
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_TXE_TXFNF: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x09C1             LSRS     R1,R0,#+7
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_TEACK(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_TEACK: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0D41             LSRS     R1,R0,#+21
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsActiveFlag_REACK(USART_TypeDef *)
+   \                     LL_USART_IsActiveFlag_REACK: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x0D81             LSRS     R1,R0,#+22
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_ClearFlag_ORE(USART_TypeDef *)
+   \                     LL_USART_ClearFlag_ORE: (+1)
+   \        0x0   0x2108             MOVS     R1,#+8
+   \        0x2   0x6201             STR      R1,[R0, #+32]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_ClearFlag_TC(USART_TypeDef *)
+   \                     LL_USART_ClearFlag_TC: (+1)
+   \        0x0   0x2140             MOVS     R1,#+64
+   \        0x2   0x6201             STR      R1,[R0, #+32]
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_EnableIT_RXNE_RXFNE(USART_TypeDef *)
+   \                     LL_USART_EnableIT_RXNE_RXFNE: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2220             MOVS     R2,#+32
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6002             STR      R2,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_EnableIT_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_EnableIT_TXE_TXFNF: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2280             MOVS     R2,#+128
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6002             STR      R2,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_DisableIT_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_DisableIT_TXE_TXFNF: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2280             MOVS     R2,#+128
+   \        0x4   0x4391             BICS     R1,R1,R2
+   \        0x6   0x6001             STR      R1,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_DisableIT_ERROR(USART_TypeDef *)
+   \                     LL_USART_DisableIT_ERROR: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x2201             MOVS     R2,#+1
+   \        0x4   0x4391             BICS     R1,R1,R2
+   \        0x6   0x6081             STR      R1,[R0, #+8]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_DisableIT_CTS(USART_TypeDef *)
+   \                     LL_USART_DisableIT_CTS: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x....             LDR      R2,??DataTable10_7  ;; 0xfffffbff
+   \        0x4   0x400A             ANDS     R2,R2,R1
+   \        0x6   0x6082             STR      R2,[R0, #+8]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsEnabledIT_RXNE_RXFNE(USART_TypeDef *)
+   \                     LL_USART_IsEnabledIT_RXNE_RXFNE: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x0941             LSRS     R1,R0,#+5
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsEnabledIT_TC(USART_TypeDef *)
+   \                     LL_USART_IsEnabledIT_TC: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x0981             LSRS     R1,R0,#+6
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsEnabledIT_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_IsEnabledIT_TXE_TXFNF: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x09C1             LSRS     R1,R0,#+7
+   \        0x4   0x0008             MOVS     R0,R1
+   \        0x6   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_USART_IsEnabledIT_ERROR(USART_TypeDef *)
+   \                     LL_USART_IsEnabledIT_ERROR: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0x6   0x0FC0             LSRS     R0,R0,#+31
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint8_t LL_USART_ReceiveData8(USART_TypeDef *)
+   \                     LL_USART_ReceiveData8: (+1)
+   \        0x0   0x6A40             LDR      R0,[R0, #+36]
+   \        0x2   0xB2C0             UXTB     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_TransmitData8(USART_TypeDef *, uint8_t)
+   \                     LL_USART_TransmitData8: (+1)
+   \        0x0   0x000A             MOVS     R2,R1
+   \        0x2   0xB2D2             UXTB     R2,R2
+   \        0x4   0x6282             STR      R2,[R0, #+40]
+   \        0x6   0x4770             BX       LR               ;; return
+     18          
+     19          /* Private variables ---------------------------------------------------------*/
+     20          //UART_HandleTypeDef huart2; //SPA
+     21          
+
+   \                                 In section .bss, align 4
+     22          Usart2_Control usart2Control;
+   \                     usart2Control:
+   \        0x0                      DS8 36
+     23          //extern uint64_t irqRequestReg_u64;            //superseded by SoftwareIrqBitPt[0 to 3] for all 254 module ID bit pointer                  
+     24          extern volatile uint64_t tickCounter; //SPA
+     25          
+
+   \                                 In section .bss, align 1
+     26          __IO ITStatus UartReady = RESET;
+   \                     UartReady:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+     27          uint8_t usart2CaptureLen;                     //default Universal Protocol header length
+   \                     usart2CaptureLen:
+   \        0x0                      DS8 1
+     28          //uint8_t counter = 0;
+
+   \                                 In section .bss, align 2
+     29          uint16_t uwCRCValue = 0;
+   \                     uwCRCValue:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 8
+     30          uint64_t lastRxTime_u64 = 0;
+   \                     lastRxTime_u64:
+   \        0x0                      DS8 8
+     31          
+     32          /**
+     33            * @brief USART2 Initialization Function
+     34            * @param None
+     35            * @retval None
+     36            */
+
+   \                                 In section .text, align 2, keep-with-next
+     37          void MX_USART2_UART_Init(void)
+     38          {
+   \                     MX_USART2_UART_Init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB08E             SUB      SP,SP,#+56
+   \        0x4   0x2220             MOVS     R2,#+32
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0xA806             ADD      R0,SP,#+24
+   \        0xA   0x....'....        BL       memset
+   \        0xE   0x2218             MOVS     R2,#+24
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x....'....        BL       memset
+     39          
+     40            /* USER CODE BEGIN USART2_Init 0 */
+     41          
+     42            /* USER CODE END USART2_Init 0 */
+     43          
+     44            LL_USART_InitTypeDef USART_InitStruct = {0};
+     45          
+     46            LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+     47          
+     48            /* Peripheral clock enable */
+     49            LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART2);
+   \       0x18   0x2080             MOVS     R0,#+128
+   \       0x1A   0x0280             LSLS     R0,R0,#+10       ;; #+131072
+   \       0x1C   0x....'....        BL       LL_APB1_GRP1_EnableClock
+     50            LL_IOP_GRP1_EnableClock(USART_IOP_GRP1_PERIPH_PORT);
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0x....'....        BL       LL_IOP_GRP1_EnableClock
+     51            /**USART2 GPIO Configuration  
+     52            PA2   ------> USART2_TX
+     53            PA3   ------> USART2_RX 
+     54            */
+     55            GPIO_InitStruct.Pin = USART_TX_Pin;
+   \       0x26   0x2004             MOVS     R0,#+4
+   \       0x28   0x9000             STR      R0,[SP, #+0]
+     56            GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+   \       0x2A   0x2402             MOVS     R4,#+2
+   \       0x2C   0x9401             STR      R4,[SP, #+4]
+     57            GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
+   \       0x2E   0x9402             STR      R4,[SP, #+8]
+     58            GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+   \       0x30   0x2500             MOVS     R5,#+0
+   \       0x32   0x9503             STR      R5,[SP, #+12]
+     59            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x34   0x9504             STR      R5,[SP, #+16]
+     60            GPIO_InitStruct.Alternate = USART_GPIO_AF;
+   \       0x36   0x2601             MOVS     R6,#+1
+   \       0x38   0x9605             STR      R6,[SP, #+20]
+     61            LL_GPIO_Init(USART_TX_GPIO_Port, &GPIO_InitStruct);
+   \       0x3A   0x27A0             MOVS     R7,#+160
+   \       0x3C   0x05FF             LSLS     R7,R7,#+23       ;; #+1342177280
+   \       0x3E   0x4669             MOV      R1,SP
+   \       0x40   0x0038             MOVS     R0,R7
+   \       0x42   0x....'....        BL       LL_GPIO_Init
+     62          
+     63            GPIO_InitStruct.Pin = USART_RX_Pin;
+   \       0x46   0x2008             MOVS     R0,#+8
+   \       0x48   0x9000             STR      R0,[SP, #+0]
+     64            GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+   \       0x4A   0x9401             STR      R4,[SP, #+4]
+     65            GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
+   \       0x4C   0x9402             STR      R4,[SP, #+8]
+     66            GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+   \       0x4E   0x9503             STR      R5,[SP, #+12]
+     67            GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+   \       0x50   0x9504             STR      R5,[SP, #+16]
+     68            GPIO_InitStruct.Alternate = USART_GPIO_AF;
+   \       0x52   0x9605             STR      R6,[SP, #+20]
+     69            LL_GPIO_Init(USART_RX_GPIO_Port, &GPIO_InitStruct);
+   \       0x54   0x4669             MOV      R1,SP
+   \       0x56   0x0038             MOVS     R0,R7
+   \       0x58   0x....'....        BL       LL_GPIO_Init
+     70          
+     71            /* USART2 interrupt Init */
+     72            NVIC_SetPriority(USART2_IRQn, 0);
+   \       0x5C   0x2100             MOVS     R1,#+0
+   \       0x5E   0x201C             MOVS     R0,#+28
+   \       0x60   0x....'....        BL       __NVIC_SetPriority
+     73            NVIC_EnableIRQ(USART2_IRQn);
+   \       0x64   0x201C             MOVS     R0,#+28
+   \       0x66   0x....'....        BL       __NVIC_EnableIRQ
+     74          
+     75            /* USER CODE BEGIN USART2_Init 1 */
+     76          
+     77            /* USER CODE END USART2_Init 1 */
+     78            USART_InitStruct.PrescalerValue = LL_USART_PRESCALER_DIV1;
+   \       0x6A   0x9506             STR      R5,[SP, #+24]
+     79            USART_InitStruct.BaudRate = 115200;
+   \       0x6C   0x20E1             MOVS     R0,#+225
+   \       0x6E   0x0240             LSLS     R0,R0,#+9        ;; #+115200
+   \       0x70   0x9007             STR      R0,[SP, #+28]
+     80            USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
+   \       0x72   0x9508             STR      R5,[SP, #+32]
+     81            USART_InitStruct.StopBits = LL_USART_STOPBITS_1;
+   \       0x74   0x9509             STR      R5,[SP, #+36]
+     82            USART_InitStruct.Parity = LL_USART_PARITY_NONE;
+   \       0x76   0x950A             STR      R5,[SP, #+40]
+     83            USART_InitStruct.TransferDirection = LL_USART_DIRECTION_TX_RX;
+   \       0x78   0x200C             MOVS     R0,#+12
+   \       0x7A   0x900B             STR      R0,[SP, #+44]
+     84            USART_InitStruct.HardwareFlowControl = LL_USART_HWCONTROL_NONE;
+   \       0x7C   0x950C             STR      R5,[SP, #+48]
+     85            USART_InitStruct.OverSampling = LL_USART_OVERSAMPLING_16;
+   \       0x7E   0x950D             STR      R5,[SP, #+52]
+     86            LL_USART_Init(USART2, &USART_InitStruct);
+   \       0x80   0x....             LDR      R4,??DataTable11  ;; 0x40004400
+   \       0x82   0xA906             ADD      R1,SP,#+24
+   \       0x84   0x0020             MOVS     R0,R4
+   \       0x86   0x....'....        BL       LL_USART_Init
+     87            
+     88            LL_USART_DisableIT_CTS(USART2);
+   \       0x8A   0x0020             MOVS     R0,R4
+   \       0x8C   0x....'....        BL       LL_USART_DisableIT_CTS
+     89            LL_USART_DisableIT_ERROR(USART2); // REVIEW: This should disable the ORE Interrupt, but doesn't appear to
+   \       0x90   0x0020             MOVS     R0,R4
+   \       0x92   0x....'....        BL       LL_USART_DisableIT_ERROR
+     90            // LL_USART_DisableDMADeactOnRxErr(USART2);
+     91            LL_USART_ConfigAsyncMode(USART2);
+   \       0x96   0x0020             MOVS     R0,R4
+   \       0x98   0x....'....        BL       LL_USART_ConfigAsyncMode
+     92            //LL_USART_EnableIT_IDLE(USART2); // Idle line detection, interrupt is not required for use of Flag outside of ISRs
+     93            /* USER CODE BEGIN WKUPType USART2 */
+     94          
+     95            /* USER CODE END WKUPType USART2 */
+     96          
+     97            LL_USART_Enable(USART2);
+   \       0x9C   0x0020             MOVS     R0,R4
+   \       0x9E   0x....'....        BL       LL_USART_Enable
+     98            // LL_USART_ClearFlag_ORE(USART2);               //reset all usart error bit
+     99          
+    100            /* Polling USART2 initialisation */
+    101            while((!(LL_USART_IsActiveFlag_TEACK(USART2))) || (!(LL_USART_IsActiveFlag_REACK(USART2))))
+   \                     ??MX_USART2_UART_Init_0: (+1)
+   \       0xA2   0x0020             MOVS     R0,R4
+   \       0xA4   0x....'....        BL       LL_USART_IsActiveFlag_TEACK
+   \       0xA8   0x2800             CMP      R0,#+0
+   \       0xAA   0xD0FA             BEQ      ??MX_USART2_UART_Init_0
+   \       0xAC   0x0020             MOVS     R0,R4
+   \       0xAE   0x....'....        BL       LL_USART_IsActiveFlag_REACK
+   \       0xB2   0x2800             CMP      R0,#+0
+   \       0xB4   0xD0F5             BEQ      ??MX_USART2_UART_Init_0
+    102            {
+    103            }
+    104            LL_USART_EnableIT_RXNE(USART2);
+   \       0xB6   0x0020             MOVS     R0,R4
+   \       0xB8   0x....'....        BL       LL_USART_EnableIT_RXNE_RXFNE
+    105            /* USER CODE BEGIN USART2_Init 2 */
+    106          
+    107          
+    108            /* USER CODE END USART2_Init 2 */
+    109          
+    110          }
+   \       0xBC   0xB00F             ADD      SP,SP,#+60
+   \       0xBE   0xBDF0             POP      {R4-R7,PC}       ;; return
+    111          
+    112          
+    113          //void assign_UART2_DrvMem(){  
+    114          //  usart2InternalSeqMem_u32 = SeqMem_CreateInstance(DRV_USART2, TX_RX_BUF_SIZE, 
+    115          //                              ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for this driver need to be bigger than 1 complete frame 
+    116          //  usart2SeqMemRX_u32 = SeqMem_CreateInstance(DRV_USART2, TX_RX_BUF_SIZE, 
+    117          //                              ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for final packet receiver buffer 
+    118          //  usart2SeqMemTX_u32 = SeqMem_CreateInstance(DRV_USART2, TX_RX_BUF_SIZE, 
+    119          //                              ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a buffer for Tx data 
+    120          //  usart2StructMem_u32 =  StructMem_CreateInstance(DRV_USART2, sizeof(Usart2_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);//System call create a structured memory for this driver [should map it back to this driver local struct]
+    121          //  
+    122          //  usart2Control = (Usart2_Control*)(*usart2StructMem_u32).p_ramBuf_u8;
+    123          //  
+    124          //  usart2Control->seqMemTX_u32 = usart2SeqMemTX_u32;
+    125          //  usart2Control->seqMemRX_u32 = usart2SeqMemRX_u32;
+    126          //  usart2Control->seqMem_InternalPipe_u32 = usart2InternalSeqMem_u32;
+    127          //  usart2Control->errorCode_u8 = 0;
+    128          //  
+    129          //  
+    130          // // Usart2InternalPipe =GetPipe(DM_Usart2, 80, 2, NULL, 0);                       //System call create a pipe for this driver  need to be bigger than 1 complete frame
+    131          //  //Usart2RxPipe = GetPipe(DM_Usart2, 80, 2, NULL, 0);                           //System call create a pipe for final packet receiver buffer 
+    132          //  //Usart2TxPipe = GetPipe(DM_Usart2, 80, 2, NULL, 0);                           //System call create a pipe for Tx data    
+    133          //  //Usart2ShMem = GetShMem(DM_Usart2, sizeof(Usart2Control) , 2, NULL, 0);        //System call create a Shared memory for this driver [should map it back to this driver local struct]
+    134          //  //usart2Control = (Usart2Control*)(*Usart2ShMem).ShMemBuf;                      //map the Uart2Control memory into the shared memory
+    135          //  //usart2Control->TxPipe = Usart2TxPipe;                                         //put Tx pipe pipe pointer into shared memory
+    136          //  //usart2Control->RxPipe = Usart2RxPipe;                                         //put Rx pipe pipe pointer into shared memory
+    137          //  //usart2Control->InternalPipe = Usart2InternalPipe;                             //put internal pipe pipe pointer into shared memory
+    138          //  //usart2Control->ErrorCode = 0;                                                 //clear the error code//
+    139          //}
+    140          
+    141          
+
+   \                                 In section .text, align 2, keep-with-next
+    142          void usart2_Init(){
+   \                     usart2_Init: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    143            MX_USART2_UART_Init();
+   \        0x2   0x....'....        BL       MX_USART2_UART_Init
+    144          }
+   \        0x6   0xBD01             POP      {R0,PC}          ;; return
+    145          
+    146          
+    147          
+    148          /**
+    149            * @brief USART2 Initialization Function
+    150            * @param None
+    151            * @retval None
+    152            */
+    153          //void MX_USART2_UART_Init(void)
+    154          //{
+    155          //
+    156          //  /* USER CODE BEGIN USART2_Init 0 */
+    157          //
+    158          //  /* USER CODE END USART2_Init 0 */
+    159          //
+    160          //  LL_USART_InitTypeDef USART_InitStruct = {0};
+    161          //
+    162          //  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+    163          //
+    164          //  /* Peripheral clock enable */
+    165          //  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART2);
+    166          //  
+    167          //  LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+    168          //  /**USART2 GPIO Configuration  
+    169          //  PA2   ------> USART2_TX
+    170          //  PA3   ------> USART2_RX 
+    171          //  */
+    172          //  GPIO_InitStruct.Pin = USART_TX_Pin;
+    173          //  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+    174          //  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+    175          //  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+    176          //  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+    177          //  GPIO_InitStruct.Alternate = LL_GPIO_AF_1;
+    178          //  LL_GPIO_Init(USART_TX_GPIO_Port, &GPIO_InitStruct);
+    179          //
+    180          //  GPIO_InitStruct.Pin = USART_RX_Pin;
+    181          //  GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
+    182          //  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+    183          //  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+    184          //  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+    185          //  GPIO_InitStruct.Alternate = LL_GPIO_AF_1;
+    186          //  LL_GPIO_Init(USART_RX_GPIO_Port, &GPIO_InitStruct);
+    187          //
+    188          //  /* USART2 interrupt Init */
+    189          //  NVIC_SetPriority(USART2_IRQn, 0);
+    190          //  NVIC_EnableIRQ(USART2_IRQn);
+    191          //
+    192          //  /* USER CODE BEGIN USART2_Init 1 */
+    193          //
+    194          //  /* USER CODE END USART2_Init 1 */
+    195          //  USART_InitStruct.PrescalerValue = LL_USART_PRESCALER_DIV1;
+    196          //  USART_InitStruct.BaudRate = 115200;
+    197          //  USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
+    198          //  USART_InitStruct.StopBits = LL_USART_STOPBITS_1;
+    199          //  USART_InitStruct.Parity = LL_USART_PARITY_NONE;
+    200          //  USART_InitStruct.TransferDirection = LL_USART_DIRECTION_TX_RX;
+    201          //  USART_InitStruct.HardwareFlowControl = LL_USART_HWCONTROL_NONE;
+    202          //  USART_InitStruct.OverSampling = LL_USART_OVERSAMPLING_16;
+    203          //  LL_USART_Init(USART2, &USART_InitStruct);
+    204          //  LL_USART_ConfigAsyncMode(USART2);
+    205          //
+    206          //  /* USER CODE BEGIN WKUPType USART2 */
+    207          //
+    208          //  /* USER CODE END WKUPType USART2 */
+    209          //
+    210          //  LL_USART_Enable(USART2);
+    211          //
+    212          //  /* Polling USART2 initialisation */
+    213          //  while((!(LL_USART_IsActiveFlag_TEACK(USART2))) || (!(LL_USART_IsActiveFlag_REACK(USART2))))
+    214          //  {
+    215          //  }
+    216          //  /* USER CODE BEGIN USART2_Init 2 */
+    217          //
+    218          //  /* USER CODE END USART2_Init 2 */
+    219          //
+    220          //}
+    221          
+    222          /*
+    223          uint8_t Usart2_IRQCallback(void) {
+    224              uint8_t rxDat2;
+    225              if (USART_GetITStatus(USART2, USART_IT_RXNE) != RESET) { //  Received characters added to fifo
+    226                  rxDat2 = (uint8_t) USART_RxData(USART2);
+    227                  (*usart2InternalSeqMem_u32).Write(&rxDat2);
+    228          #ifdef M_TALK
+    229                  if (MtalkGetDat(usart2InternalSeqMem_u32, usart2SeqMemRX_u32, usart2SeqMemTX_u32)) {
+    230                      irqRequestReg_u64 |=
+    231                          0x2; // Setup driver interrupt request for Uart2 driver2, note bit oriented setting, can call more than one apps
+    232                  }
+    233          #endif
+    234          #ifdef EASY_LINK
+    235                  if (EasyLinkGetDat(usart2InternalSeqMem_u32, usart2SeqMemRX_u32, usart2SeqMemTX_u32)) {
+    236                      irqRequestReg_u64 |=
+    237                          0x2; // Setup driver interrupt request for Uart2 driver2, note bit oriented setting, can call more than one apps;
+    238                  }
+    239          #endif
+    240          #ifdef UNIVERSAL
+    241                  if (UniversalGetDat(usart2InternalSeqMem_u32, usart2SeqMemRX_u32, usart2SeqMemTX_u32)) {
+    242                      irqRequestReg_u64 |=
+    243                          0x2; // Setup driver interrupt request for Uart2 driver2, note bit oriented setting, can call more than one apps;
+    244                  }
+    245          #endif
+    246              }
+    247          
+    248              if (USART_GetITStatus(USART2, USART_IT_TXE) != RESET) {
+    249                  uint8_t txDat2;
+    250                  uint32_t length = 1;
+    251                  if (usart2SeqMemTX_u32->IsEmpty()) {
+    252                      USART_ITConfig(USART2, USART_IT_TXE, DISABLE); //  Suppress interrupt when empty
+    253                  } else {
+    254                      (*usart2SeqMemTX_u32).Read(&txDat2, &length);
+    255                      USART_SendData(USART2, (uint16_t) txDat2); //  Transmit the character
+    256                  }
+    257              }
+    258              return 1;
+    259          }
+    260          */
+    261          
+    262          /**
+    263            * @brief  Function called from USART IRQ Handler when RXNE flag is set
+    264            *         Function is in charge of reading character received on USART RX line.
+    265            * @param  None
+    266            * @retval None
+    267            */
+
+   \                                 In section .text, align 2, keep-with-next
+    268          void USART2_CharReception_Callback(void)
+    269          {
+   \                     USART2_CharReception_Callback: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    270            /*
+    271            __IO uint32_t received_char;
+    272          
+    273            // Read Received character. RXNE flag is cleared by reading of RDR register //
+    274            received_char = LL_USART_ReceiveData8(USART2);
+    275            */
+    276           
+    277            unsigned char rxDat2;
+    278            rxDat2 = LL_USART_ReceiveData8(USART2);
+   \        0x2   0x....             LDR      R0,??DataTable11  ;; 0x40004400
+   \        0x4   0x....'....        BL       LL_USART_ReceiveData8
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+    279            if(usart2Control.UsartMode_u8 == 1)          //check this is universal protocol mode or transparent mode
+   \        0xC   0x....             LDR      R0,??DataTable11_1
+   \        0xE   0x2122             MOVS     R1,#+34
+   \       0x10   0x5C41             LDRB     R1,[R0, R1]
+   \       0x12   0x2901             CMP      R1,#+1
+   \       0x14   0xD104             BNE      ??USART2_CharReception_Callback_0
+    280            {
+    281              RingBuf_WriteCharacter((usart2Control).seqMemRX_transparentMode_u32,&rxDat2);      //In transparent mode will directly push in the Usart transparent pipe
+   \       0x16   0x4669             MOV      R1,SP
+   \       0x18   0x6800             LDR      R0,[R0, #+0]
+   \       0x1A   0x....'....        BL       RingBuf_WriteCharacter
+   \       0x1E   0xE003             B        ??USART2_CharReception_Callback_1
+    282            }
+    283            else
+    284            {
+    285              RingBuf_WriteCharacter((usart2Control).seqMem_InternalPipe_u32,&rxDat2);
+   \                     ??USART2_CharReception_Callback_0: (+1)
+   \       0x20   0x4669             MOV      R1,SP
+   \       0x22   0x68C0             LDR      R0,[R0, #+12]
+   \       0x24   0x....'....        BL       RingBuf_WriteCharacter
+    286            }
+    287            lastRxTime_u64 = tickCounter;
+   \                     ??USART2_CharReception_Callback_1: (+1)
+   \       0x28   0x....             LDR      R0,??DataTable11_2
+   \       0x2A   0xC803             LDM      R0,{R0,R1}
+   \       0x2C   0x....             LDR      R2,??DataTable11_3
+   \       0x2E   0xC203             STM      R2!,{R0,R1}
+   \       0x30   0x3A08             SUBS     R2,R2,#+8
+    288            //RBWrite(usart2InternalSeqMem_u32->systemInstanceIndex_u8,&rxDat2); 
+    289            
+    290            /* Echo received character on TX */
+    291           // LL_USART_TransmitData8(USART2, received_char);
+    292          }
+   \       0x32   0xBD01             POP      {R0,PC}          ;; return
+    293          
+    294          // USART2 does not appear to support IDLE line detection
+    295          // - this function is a patch to emulate the behavior by comparing 
+    296          // -- Systick to the time the last data byte was received.
+    297          #define USART2_IDLE_PATCH_RX_TIMEOUT_MS 10 // @115200 Baud: Byte Transmission time is 0.07ms.
+
+   \                                 In section .text, align 2, keep-with-next
+    298          uint8_t Usart2IdlePatch_RxIsIdle(void) { 
+   \                     Usart2IdlePatch_RxIsIdle: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    299            return (tickCounter - lastRxTime_u64 > USART2_IDLE_PATCH_RX_TIMEOUT_MS ? 1 : 0);
+   \        0x2   0x....             LDR      R0,??DataTable11_2
+   \        0x4   0xC80C             LDM      R0!,{R2,R3}
+   \        0x6   0x3808             SUBS     R0,R0,#+8
+   \        0x8   0x....             LDR      R0,??DataTable11_3
+   \        0xA   0xC803             LDM      R0,{R0,R1}
+   \        0xC   0x1A12             SUBS     R2,R2,R0
+   \        0xE   0x418B             SBCS     R3,R3,R1
+   \       0x10   0x2B00             CMP      R3,#+0
+   \       0x12   0xD304             BCC      ??Usart2IdlePatch_RxIsIdle_0
+   \       0x14   0xD801             BHI      ??Usart2IdlePatch_RxIsIdle_1
+   \       0x16   0x2A0B             CMP      R2,#+11
+   \       0x18   0xD301             BCC      ??Usart2IdlePatch_RxIsIdle_0
+   \                     ??Usart2IdlePatch_RxIsIdle_1: (+1)
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0xE000             B        ??Usart2IdlePatch_RxIsIdle_2
+   \                     ??Usart2IdlePatch_RxIsIdle_0: (+1)
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \                     ??Usart2IdlePatch_RxIsIdle_2: (+1)
+   \       0x20   0xB2C0             UXTB     R0,R0
+   \       0x22   0xBD00             POP      {PC}             ;; return
+    300          }
+    301          /******************* variable for Usart2 TX interrupt **************************/
+
+   \                                 In section .bss, align 1
+    302          __IO uint8_t indexTx = 0;
+   \                     indexTx:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    303          uint8_t ubSizeToSend = 0;
+   \                     ubSizeToSend:
+   \        0x0                      DS8 1
+    304          
+    305          
+    306          #define ENABLE_WHOLEFRAME_USART2_BUF_FIXED_LEN 1
+    307          #if ENABLE_WHOLEFRAME_USART2_BUF_FIXED_LEN >= 1
+    308            // This is a one-shot buffer, that is written to and read from in single calls.
+    309            // - it does not currently need to be tracked for current index because of this.
+    310            #define FIXED_WHOLEFRAME_USART2_MAX_LENGTH TX_RX_BUF_SIZE // Inclusive (this value is accepted) 
+
+   \                                 In section .bss, align 1
+    311            unsigned char fixedwholeFrameBuf_Usart2_Length = 0;
+   \                     fixedwholeFrameBuf_Usart2_Length:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    312            unsigned char fixedwholeFrameBuf_Usart2[FIXED_WHOLEFRAME_USART2_MAX_LENGTH];
+   \                     fixedwholeFrameBuf_Usart2:
+   \        0x0                      DS8 80
+
+   \                                 In section .data, align 4
+    313            unsigned char* wholeFrameBuf_Usart2 = fixedwholeFrameBuf_Usart2;
+   \                     wholeFrameBuf_Usart2:
+   \        0x0   0x....'....        DC32 fixedwholeFrameBuf_Usart2
+    314          #else // if ENABLE_WHOLEFRAME_USART2_BUF_FIXED_LEN <= 0
+    315            unsigned char* wholeFrameBuf_Usart2;
+    316          #endif
+    317          
+    318          
+    319          
+    320          
+    321          /*******************************************************************************/
+    322          /**
+    323            * @brief  Function called for achieving next TX Byte sending
+    324            * @param  None
+    325            * @retval None
+    326            */
+
+   \                                 In section .text, align 2, keep-with-next
+    327          void USART2_TXEmpty_Callback(void)
+    328          {
+   \                     USART2_TXEmpty_Callback: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    329            if((usart2Control).UsartMode_u8 == 1)
+   \        0x2   0x....             LDR      R0,??DataTable11_4
+   \        0x4   0x7800             LDRB     R0,[R0, #+0]
+   \        0x6   0x2801             CMP      R0,#+1
+   \        0x8   0xD103             BNE      ??USART2_TXEmpty_Callback_0
+    330            {
+    331              /* Disable TXE interrupt */
+    332                LL_USART_DisableIT_TXE(USART2);    
+   \        0xA   0x....             LDR      R0,??DataTable11  ;; 0x40004400
+   \        0xC   0x....'....        BL       LL_USART_DisableIT_TXE_TXFNF
+   \       0x10   0xE016             B        ??USART2_TXEmpty_Callback_1
+    333            }
+    334            else
+    335            {
+    336              /* Fill TDR with a new char */
+    337              LL_USART_TransmitData8(USART2, wholeFrameBuf_Usart2[indexTx++]);
+   \                     ??USART2_TXEmpty_Callback_0: (+1)
+   \       0x12   0x....             LDR      R4,??DataTable11_5
+   \       0x14   0x7820             LDRB     R0,[R4, #+0]
+   \       0x16   0x0001             MOVS     R1,R0
+   \       0x18   0x1C49             ADDS     R1,R1,#+1
+   \       0x1A   0x7021             STRB     R1,[R4, #+0]
+   \       0x1C   0x....             LDR      R5,??DataTable11  ;; 0x40004400
+   \       0x1E   0x....             LDR      R1,??DataTable11_6
+   \       0x20   0x6809             LDR      R1,[R1, #+0]
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0x5C09             LDRB     R1,[R1, R0]
+   \       0x26   0x0028             MOVS     R0,R5
+   \       0x28   0x....'....        BL       LL_USART_TransmitData8
+    338              
+    339              if (indexTx == (ubSizeToSend ))
+   \       0x2C   0x7820             LDRB     R0,[R4, #+0]
+   \       0x2E   0x....             LDR      R1,??DataTable11_7
+   \       0x30   0x7809             LDRB     R1,[R1, #+0]
+   \       0x32   0x4288             CMP      R0,R1
+   \       0x34   0xD104             BNE      ??USART2_TXEmpty_Callback_1
+    340              {
+    341                /* Disable TXE interrupt */
+    342                LL_USART_DisableIT_TXE(USART2);
+   \       0x36   0x0028             MOVS     R0,R5
+   \       0x38   0x....'....        BL       LL_USART_DisableIT_TXE_TXFNF
+    343                indexTx = 0;
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0x7020             STRB     R0,[R4, #+0]
+    344              } 
+    345            }
+    346          }
+   \                     ??USART2_TXEmpty_Callback_1: (+1)
+   \       0x40   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    347          
+    348          /**
+    349            * @brief  Function called at completion of last byte transmission
+    350            * @param  None
+    351            * @retval None
+    352            */
+
+   \                                 In section .text, align 2, keep-with-next
+    353          void USART2_CharTransmitComplete_Callback(void)
+    354          {
+    355          //  if (indexTx == sizeof(ubSizeToSend))
+    356          //  {
+    357          //    indexTx = 0;
+    358          
+    359              /* Disable TC interrupt */
+    360          //    LL_USART_DisableIT_TC(USART2);
+    361          //  }
+    362          }
+   \                     USART2_CharTransmitComplete_Callback: (+1)
+   \        0x0   0x4770             BX       LR               ;; return
+    363          
+    364          
+
+   \                                 In section .bss, align 1
+    365          static uint8_t dataLen = 0;                                         //length of data byte/s plus CRC expected
+   \                     dataLen:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 1
+    366          uint8_t UniProtocolState = protocolstart;
+   \                     UniProtocolState:
+   \        0x0                      DS8 1
+    367          #define ENABLE_PROTOCOLBUF_USART2_FIXED_LEN 1
+    368          #if ENABLE_PROTOCOLBUF_USART2_FIXED_LEN >= 1
+    369            // This is a one-shot buffer, that is written to and read from in single calls.
+    370            // - it does not currently need to be tracked for current index because of this.
+    371            #define FIXED_PROTOCOLBUF_USART2_MAX_LENGTH USART2_SINGLE_MESSAGE_RX_BUF_SIZE // Inclusive (this value is accepted) 
+
+   \                                 In section .bss, align 1
+    372            unsigned char fixedProtocolBuf_Usart2_Length = 0;
+   \                     fixedProtocolBuf_Usart2_Length:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    373            unsigned char fixedProtocolBuf_Usart2[FIXED_PROTOCOLBUF_USART2_MAX_LENGTH];
+   \                     fixedProtocolBuf_Usart2:
+   \        0x0                      DS8 32
+
+   \                                 In section .data, align 4
+    374            unsigned char* protocolBuf_Usart2 = fixedProtocolBuf_Usart2; // !start here: Test Me!
+   \                     protocolBuf_Usart2:
+   \        0x0   0x....'....        DC32 fixedProtocolBuf_Usart2
+
+   \                                 In section .bss, align 1
+    375            unsigned char protocolBuf_Usart2_OverflowCounter = 0;
+   \                     protocolBuf_Usart2_OverflowCounter:
+   \        0x0                      DS8 1
+    376          #else
+    377            unsigned char* protocolBuf_Usart2;
+    378          #endif
+    379          
+    380          /**
+    381            *@brief   Function for decode a valid frame of universal protocol
+    382            *         the Rx data will put into an internal pipe and process after 
+    383            *         the first 5 byte contain sync byte and then wait for the whole header 
+    384            *         bytes in side the internal pipe, then perform the header veification.
+    385            *         If the the header bytes are valid, then prepare for getting the whole data fields 
+    386            *         and perform CRC check.
+    387            * @param  None
+    388            * @retval None
+    389            */
+
+   \                                 In section .text, align 2, keep-with-next
+    390          void protocolHeaderfetch(void)
+    391          {  
+   \                     protocolHeaderfetch: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB08B             SUB      SP,SP,#+44
+    392            // TODO: 20210303a - Universal Protocol Misses Messages Frequently by checking for full messages when transmission is not complete.
+    393            // - The longer the message, the more likely it will be discarded for a missing byte. Easy to duplicate at message size 32.
+    394            // -- REVIEW: Is this an issue on Motor Side? Or has this been patched there?
+    395            
+    396          //  usart2SeqMemRX_u32 = (usart2Control).seqMemRX_u32;   //pam bug without
+    397            switch(UniProtocolState)
+   \        0x4   0x....             LDR      R0,??DataTable11_8
+   \        0x6   0x7800             LDRB     R0,[R0, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD004             BEQ      ??protocolHeaderfetch_0
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD100             BNE      .+4
+   \       0x10   0xE092             B        ??protocolHeaderfetch_1
+   \       0x12   0xD32C             BCC      ??protocolHeaderfetch_2
+   \       0x14   0xE0FC             B        ??protocolHeaderfetch_3
+    398            {
+    399              case  protocolstart:
+    400               Reentryprotocalstart: 
+    401                { // assume this is very beginning of universal-frame, check and clear any garble before sync byte
+    402                  usart2CaptureLen = UniHeaderlen; 
+   \                     ??protocolHeaderfetch_0: (+1)
+   \       0x16   0x2507             MOVS     R5,#+7
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x....             LDR      R1,??DataTable11_9
+   \       0x1C   0x7008             STRB     R0,[R1, #+0]
+    403                  dataLen = 0;
+   \       0x1E   0x2400             MOVS     R4,#+0
+   \       0x20   0x....             LDR      R7,??DataTable11_10
+   \       0x22   0x0020             MOVS     R0,R4
+   \       0x24   0x7038             STRB     R0,[R7, #+0]
+    404                  unsigned int SyncPosition = RingBuf_Search((usart2Control).seqMem_InternalPipe_u32, RxSyncChr, 0);              //search sync byte within internal pipe,[return position or 0xf000 == not found 0xffff == error]
+   \       0x26   0x....             LDR      R6,??DataTable11_1
+   \       0x28   0x2200             MOVS     R2,#+0
+   \       0x2A   0x21AA             MOVS     R1,#+170
+   \       0x2C   0x68F0             LDR      R0,[R6, #+12]
+   \       0x2E   0x....'....        BL       RingBuf_Search
+   \       0x32   0x9002             STR      R0,[SP, #+8]
+    405                  if (SyncPosition != 0) 
+   \       0x34   0x9802             LDR      R0,[SP, #+8]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD016             BEQ      ??protocolHeaderfetch_4
+    406                  {
+    407                    if(SyncPosition & 0xf000)                                                            
+   \       0x3A   0x9802             LDR      R0,[SP, #+8]
+   \       0x3C   0x21F0             MOVS     R1,#+240
+   \       0x3E   0x0209             LSLS     R1,R1,#+8        ;; #+61440
+   \       0x40   0x4001             ANDS     R1,R1,R0
+   \       0x42   0x2900             CMP      R1,#+0
+   \       0x44   0xD000             BEQ      ??protocolHeaderfetch_5
+    408                    { //sync byte not found or error, then clear the first 5 bytes
+    409                      SyncPosition = UniHeaderlen;                                                                // this will clear all 5 byte                                       
+   \       0x46   0x9502             STR      R5,[SP, #+8]
+    410                    }
+    411                    #if ENABLE_PROTOCOLBUF_USART2_FIXED_LEN >= 1
+    412                        // Clear Pre-Sync Bytes from the buffer by 'Read'ing them from the RingBuf
+    413                        fixedProtocolBuf_Usart2_Length = SyncPosition;
+   \                     ??protocolHeaderfetch_5: (+1)
+   \       0x48   0x9802             LDR      R0,[SP, #+8]
+   \       0x4A   0x....             LDR      R1,??DataTable11_11
+   \       0x4C   0x7008             STRB     R0,[R1, #+0]
+    414                        RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, protocolBuf_Usart2, &SyncPosition);                          //truncate any char before SYNC char 
+   \       0x4E   0xAA02             ADD      R2,SP,#+8
+   \       0x50   0x....             LDR      R0,??DataTable11_12
+   \       0x52   0x6801             LDR      R1,[R0, #+0]
+   \       0x54   0x68F0             LDR      R0,[R6, #+12]
+   \       0x56   0x....'....        BL       RingBuf_ReadBlock
+    415                        // Clear Message Parsing Data and Exit Routine
+    416                        usart2CaptureLen = UniHeaderlen; 
+   \       0x5A   0x....             LDR      R0,??DataTable11_9
+   \       0x5C   0x7005             STRB     R5,[R0, #+0]
+    417                        dataLen = 0;
+   \       0x5E   0x0020             MOVS     R0,R4
+   \       0x60   0x7038             STRB     R0,[R7, #+0]
+    418                        UniProtocolState = protocolstart;
+   \       0x62   0x....             LDR      R0,??DataTable11_8
+   \       0x64   0x7004             STRB     R4,[R0, #+0]
+    419                        break;
+   \       0x66   0xE0DC             B        ??protocolHeaderfetch_6
+    420                    #else // ENABLE_PROTOCOLBUF_FIXED_LEN == 0
+    421                      if((protocolBuf_Usart2 = (unsigned char*) realloc(protocolBuf_Usart2,SyncPosition)) == NULL) reallocError++;
+    422                      RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, protocolBuf_Usart2, &SyncPosition);                          //truncate any char before SYNC char 
+    423                      if((protocolBuf_Usart2 = (unsigned char*)realloc(protocolBuf_Usart2,1)) == NULL) reallocError++;
+    424                      usart2CaptureLen = UniHeaderlen; 
+    425                      UniProtocolState = protocolstart;                                                             // still to back here next stage for complete header frame 
+    426                      break;
+    427                    #endif // ENABLE_PROTOCOLBUF_FIXED_LEN == 0
+    428                    break;
+    429                  }
+    430                  // otherwise mean the the first byte in buffer is sync byte, then can directly process to header Validate state !!!!!!!!!
+    431                  UniProtocolState = headerValidate;
+   \                     ??protocolHeaderfetch_4: (+1)
+   \       0x68   0x2001             MOVS     R0,#+1
+   \       0x6A   0x....             LDR      R1,??DataTable11_8
+   \       0x6C   0x7008             STRB     R0,[R1, #+0]
+   \                     ??protocolHeaderfetch_2: (+1)
+   \       0x6E   0x2209             MOVS     R2,#+9
+   \       0x70   0x2100             MOVS     R1,#+0
+   \       0x72   0xA808             ADD      R0,SP,#+32
+   \       0x74   0x....'....        BL       memset
+    432                }
+    433              case headerValidate:
+    434                { //check this is a valid header frame in internal pipe
+    435                  unsigned char headerBuf[]={ 0, 0, 0, 0, 0, 0, 0, 0, 0};                 //9 byte array  for header including advanced CMD 
+    436                  unsigned int headerLen = 9;     
+   \       0x78   0x2609             MOVS     R6,#+9
+   \       0x7A   0x9607             STR      R6,[SP, #+28]
+    437                  RingBuf_Observe((usart2Control).seqMem_InternalPipe_u32, headerBuf, 0, &headerLen);      //get the pipe data without clear internal pipe, headerLen will return number of bytes in pipe if less than 9 byte
+   \       0x7C   0x....             LDR      R5,??DataTable11_1
+   \       0x7E   0xAB07             ADD      R3,SP,#+28
+   \       0x80   0x2200             MOVS     R2,#+0
+   \       0x82   0xA908             ADD      R1,SP,#+32
+   \       0x84   0x68E8             LDR      R0,[R5, #+12]
+   \       0x86   0x....'....        BL       RingBuf_Observe
+    438          
+    439                  uint8_t dataA ;
+    440                  uint8_t headerCRCLen = 7;                                               //default normal frame header + CRC bytes = 7 byte
+   \       0x8A   0x2407             MOVS     R4,#+7
+   \       0x8C   0x0027             MOVS     R7,R4
+    441                  uint8_t dataC = (uint8_t) headerBuf[1] & 0xC0;
+   \       0x8E   0xA808             ADD      R0,SP,#+32
+   \       0x90   0x7841             LDRB     R1,[R0, #+1]
+   \       0x92   0x22C0             MOVS     R2,#+192
+   \       0x94   0x400A             ANDS     R2,R2,R1
+   \       0x96   0x4669             MOV      R1,SP
+   \       0x98   0x704A             STRB     R2,[R1, #+1]
+    442                  if (dataC == 0)                                                         //check this is advanced frame [00]+[data length]
+   \       0x9A   0x4669             MOV      R1,SP
+   \       0x9C   0x7849             LDRB     R1,[R1, #+1]
+   \       0x9E   0x2900             CMP      R1,#+0
+   \       0xA0   0xD105             BNE      ??protocolHeaderfetch_7
+    443                  {
+    444                    dataA = (uint8_t)headerBuf[4] & 0xf0 ;                                //this is normal frame, store dataA as the expected Header-end in byte 5
+   \       0xA2   0x7901             LDRB     R1,[R0, #+4]
+   \       0xA4   0x22F0             MOVS     R2,#+240
+   \       0xA6   0x400A             ANDS     R2,R2,R1
+   \       0xA8   0x4669             MOV      R1,SP
+   \       0xAA   0x700A             STRB     R2,[R1, #+0]
+   \       0xAC   0xE01F             B        ??protocolHeaderfetch_8
+    445                  }
+    446                  else
+    447                  {  //this is advanced frame [11]+[data length]   or  garbage 
+    448                    if (dataC == 0xC0)
+   \                     ??protocolHeaderfetch_7: (+1)
+   \       0xAE   0x4669             MOV      R1,SP
+   \       0xB0   0x7849             LDRB     R1,[R1, #+1]
+   \       0xB2   0x29C0             CMP      R1,#+192
+   \       0xB4   0xD106             BNE      ??protocolHeaderfetch_9
+    449                    { //this is advanced frame 
+    450                      dataA = (uint8_t)headerBuf[6] & 0xf0 ;                              //this is Advanced frame,  store dataA as the expected Header-end in byte 7 
+   \       0xB6   0x7981             LDRB     R1,[R0, #+6]
+   \       0xB8   0x22F0             MOVS     R2,#+240
+   \       0xBA   0x400A             ANDS     R2,R2,R1
+   \       0xBC   0x4669             MOV      R1,SP
+   \       0xBE   0x700A             STRB     R2,[R1, #+0]
+    451                      headerCRCLen = 9;                                                   //header + CRC bytes = 9 byte
+   \       0xC0   0x0037             MOVS     R7,R6
+   \       0xC2   0xE014             B        ??protocolHeaderfetch_8
+    452                    }
+    453                    else
+    454                    { //this is garbage, because the frame type pointer not valid
+    455                      unsigned char tmpbuf3;
+    456                      unsigned int truncateLen = 1;   
+   \                     ??protocolHeaderfetch_9: (+1)
+   \       0xC4   0x2001             MOVS     R0,#+1
+   \       0xC6   0x9006             STR      R0,[SP, #+24]
+    457                      RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, &tmpbuf3, &truncateLen);                             //truncate the first byte incase the garbage is the same of sync byte
+   \       0xC8   0xAA06             ADD      R2,SP,#+24
+   \       0xCA   0xA901             ADD      R1,SP,#+4
+   \       0xCC   0x1C49             ADDS     R1,R1,#+1
+   \       0xCE   0x68E8             LDR      R0,[R5, #+12]
+   \       0xD0   0x....'....        BL       RingBuf_ReadBlock
+    458                      usart2CaptureLen = UniHeaderlen; 
+   \       0xD4   0x....             LDR      R6,??DataTable11_9
+   \       0xD6   0x7034             STRB     R4,[R6, #+0]
+    459                      UniProtocolState = protocolstart;    
+   \       0xD8   0x2000             MOVS     R0,#+0
+   \       0xDA   0x....             LDR      R1,??DataTable11_8
+   \       0xDC   0x7008             STRB     R0,[R1, #+0]
+    460                      if( *RingBuf_GetPointerToRingBuf((usart2Control).seqMem_InternalPipe_u32) >= usart2CaptureLen)                     //after truncase the carbage byte still contain more then header length then goto back to do again
+   \       0xDE   0x68E8             LDR      R0,[R5, #+12]
+   \       0xE0   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \       0xE4   0x7800             LDRB     R0,[R0, #+0]
+   \       0xE6   0x7831             LDRB     R1,[R6, #+0]
+   \       0xE8   0x4288             CMP      R0,R1
+   \       0xEA   0xD294             BCS      ??protocolHeaderfetch_0
+    461                      {
+    462                        goto Reentryprotocalstart;                                                                 //this line needed to use goto for finish the frame check in one go
+    463                      }
+    464                      break;   
+   \                     ??protocolHeaderfetch_10: (+1)
+   \       0xEC   0xE099             B        ??protocolHeaderfetch_6
+    465                    }
+    466                  }
+    467                 if(dataA != (~((uint8_t)RxSyncChr) & 0xf0))                                  //check header-end byte is valid
+   \                     ??protocolHeaderfetch_8: (+1)
+   \       0xEE   0x4669             MOV      R1,SP
+   \       0xF0   0x7809             LDRB     R1,[R1, #+0]
+   \       0xF2   0x2950             CMP      R1,#+80
+   \       0xF4   0xD014             BEQ      ??protocolHeaderfetch_11
+    468                  {// this is a valid header        
+    469                   // if the header frame is not valid, then delete the first byte only
+    470                    unsigned char tmpbuf3;
+    471                    unsigned int truncateLen = 1;   
+   \       0xF6   0x2001             MOVS     R0,#+1
+   \       0xF8   0x9005             STR      R0,[SP, #+20]
+    472                    RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, &tmpbuf3, &truncateLen);                             //truncate the first byte incase the garbage is the same of sync byte
+   \       0xFA   0xAA05             ADD      R2,SP,#+20
+   \       0xFC   0xA901             ADD      R1,SP,#+4
+   \       0xFE   0x68E8             LDR      R0,[R5, #+12]
+   \      0x100   0x....'....        BL       RingBuf_ReadBlock
+    473                    usart2CaptureLen = UniHeaderlen; 
+   \      0x104   0x....             LDR      R6,??DataTable11_9
+   \      0x106   0x7034             STRB     R4,[R6, #+0]
+    474                    UniProtocolState = protocolstart;    
+   \      0x108   0x2000             MOVS     R0,#+0
+   \      0x10A   0x....             LDR      R1,??DataTable11_8
+   \      0x10C   0x7008             STRB     R0,[R1, #+0]
+    475                    if( *RingBuf_GetPointerToRingBuf((usart2Control).seqMem_InternalPipe_u32) >= usart2CaptureLen)                     //after truncase the carbage byte still contain more then header length then goto back to do again
+   \      0x10E   0x68E8             LDR      R0,[R5, #+12]
+   \      0x110   0x....'....        BL       RingBuf_GetPointerToRingBuf
+   \      0x114   0x7800             LDRB     R0,[R0, #+0]
+   \      0x116   0x7831             LDRB     R1,[R6, #+0]
+   \      0x118   0x4288             CMP      R0,R1
+   \      0x11A   0xD300             BCC      .+4
+   \      0x11C   0xE77B             B        ??protocolHeaderfetch_0
+    476                    {
+    477                      goto Reentryprotocalstart;                  //this line needed to use goto for finish the frame check in one go
+    478                    }
+    479                    break;
+   \                     ??protocolHeaderfetch_12: (+1)
+   \      0x11E   0xE080             B        ??protocolHeaderfetch_6
+    480                  }
+    481                  else
+    482                  {
+    483                    dataLen = (uint8_t) headerBuf[1] & 0x3F;     
+   \                     ??protocolHeaderfetch_11: (+1)
+   \      0x120   0x....             LDR      R1,??DataTable11_10
+   \      0x122   0x7840             LDRB     R0,[R0, #+1]
+   \      0x124   0x0680             LSLS     R0,R0,#+26       ;; ZeroExtS R0,R0,#+26,#+26
+   \      0x126   0x0E80             LSRS     R0,R0,#+26
+   \      0x128   0x7008             STRB     R0,[R1, #+0]
+    484                    usart2CaptureLen = (uint8_t)(dataLen + headerCRCLen) ; // header+ CRC +data length = number of bytes for next capture
+   \      0x12A   0x7808             LDRB     R0,[R1, #+0]
+   \      0x12C   0x19C0             ADDS     R0,R0,R7
+   \      0x12E   0x....             LDR      R1,??DataTable11_9
+   \      0x130   0x7008             STRB     R0,[R1, #+0]
+    485                    UniProtocolState = frameCRC;
+   \      0x132   0x2002             MOVS     R0,#+2
+   \      0x134   0x....             LDR      R1,??DataTable11_8
+   \      0x136   0x7008             STRB     R0,[R1, #+0]
+    486                    //valid header so fall through to checksum
+    487                  }
+    488                }
+    489              case frameCRC:
+    490                {
+    491                  #if ENABLE_PROTOCOLBUF_USART2_FIXED_LEN >= 1
+    492                    // Clear Pre-Sync Bytes from the buffer by 'Read'ing them from the RingBuf
+    493                    if (usart2CaptureLen <= FIXED_PROTOCOLBUF_USART2_MAX_LENGTH) { // Normal Case
+   \                     ??protocolHeaderfetch_1: (+1)
+   \      0x138   0x....             LDR      R4,??DataTable11_9
+   \      0x13A   0x7820             LDRB     R0,[R4, #+0]
+   \      0x13C   0x2821             CMP      R0,#+33
+   \      0x13E   0xDA28             BGE      ??protocolHeaderfetch_13
+    494                      fixedProtocolBuf_Usart2_Length = usart2CaptureLen; // TODO: Make this segment use DataLen2 (assigned below), just like the others.
+   \      0x140   0x7820             LDRB     R0,[R4, #+0]
+   \      0x142   0x....             LDR      R1,??DataTable11_11
+   \      0x144   0x7008             STRB     R0,[R1, #+0]
+    495                      // REVIEW: usart2CaptureLen is calculated from Data Length (and not where the CRC was)
+    496                    } else { // Overflow Case
+    497                      protocolBuf_Usart2_OverflowCounter++; // !errorRemove: Testing
+    498                      // Read All Data (Clear the Buffer)
+    499                      while (usart2CaptureLen > 0) {
+    500                        if (usart2CaptureLen > FIXED_PROTOCOLBUF_USART2_MAX_LENGTH) {
+    501                          // REVIEW: Replace with RingBuf_ClearContents? Much less processing
+    502                          unsigned int read_length = FIXED_PROTOCOLBUF_USART2_MAX_LENGTH;
+    503                          RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, protocolBuf_Usart2, &read_length); //extract the whole frame
+    504                          // RingBuf_ReadBlock((usart2Control).seqMemTX_u32, headerFramebuf, &read_length);             //copy the complete frame into buffer
+    505                          usart2CaptureLen -= FIXED_PROTOCOLBUF_USART2_MAX_LENGTH;
+    506                        } else {
+    507                          unsigned int read_length = usart2CaptureLen;
+    508                          RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, protocolBuf_Usart2, &read_length); //extract the whole frame
+    509                          // RingBuf_ReadBlock((usart2Control).seqMemTX_u32, headerFramebuf, &DataLen2);             //copy the complete frame into buffer
+    510                          usart2CaptureLen = 0;
+    511                        }
+    512                      }
+    513                      // Clear Message Parsing Data and Exit Routine
+    514                      usart2CaptureLen = UniHeaderlen; 
+    515                      dataLen = 0;
+    516                      UniProtocolState = protocolstart;
+    517                      break;
+    518                    }
+    519                  #else // ENABLE_PROTOCOLBUF_FIXED_LEN == 0
+    520                    if((protocolBuf_Usart2 = (unsigned char*) realloc(protocolBuf_Usart2,usart2CaptureLen)) == NULL) reallocError++;        
+    521                  #endif
+    522          
+    523                  unsigned int DataLen2 = (unsigned int)usart2CaptureLen;
+   \      0x146   0x7820             LDRB     R0,[R4, #+0]
+   \      0x148   0x9000             STR      R0,[SP, #+0]
+    524                  RingBuf_Observe((usart2Control).seqMem_InternalPipe_u32, protocolBuf_Usart2, 0, &DataLen2);                             //copy the whole frame into buffer
+   \      0x14A   0x....             LDR      R6,??DataTable11_12
+   \      0x14C   0x....             LDR      R5,??DataTable11_1
+   \      0x14E   0x466B             MOV      R3,SP
+   \      0x150   0x2200             MOVS     R2,#+0
+   \      0x152   0x6831             LDR      R1,[R6, #+0]
+   \      0x154   0x68E8             LDR      R0,[R5, #+12]
+   \      0x156   0x....'....        BL       RingBuf_Observe
+    525                  uint16_t frameCRC = (((uint16_t)protocolBuf_Usart2[DataLen2 - 2]) << 8) + ((uint16_t)protocolBuf_Usart2[DataLen2 - 1]) ;
+   \      0x15A   0x6830             LDR      R0,[R6, #+0]
+   \      0x15C   0x9900             LDR      R1,[SP, #+0]
+   \      0x15E   0x1840             ADDS     R0,R0,R1
+   \      0x160   0x1E80             SUBS     R0,R0,#+2
+   \      0x162   0x7800             LDRB     R0,[R0, #+0]
+   \      0x164   0x0200             LSLS     R0,R0,#+8
+   \      0x166   0x6831             LDR      R1,[R6, #+0]
+   \      0x168   0x9A00             LDR      R2,[SP, #+0]
+   \      0x16A   0x1889             ADDS     R1,R1,R2
+   \      0x16C   0x1E49             SUBS     R1,R1,#+1
+   \      0x16E   0x7809             LDRB     R1,[R1, #+0]
+   \      0x170   0x1840             ADDS     R0,R0,R1
+   \      0x172   0x4669             MOV      R1,SP
+   \      0x174   0x80C8             STRH     R0,[R1, #+6]
+    526                  
+    527                  uwCRCValue = Calculate_CRC((DataLen2 - 2) , protocolBuf_Usart2);                                       //Get calculated CRC of this frame
+   \      0x176   0x....             LDR      R7,??DataTable13
+   \      0x178   0x6831             LDR      R1,[R6, #+0]
+   \      0x17A   0x9800             LDR      R0,[SP, #+0]
+   \      0x17C   0x1E80             SUBS     R0,R0,#+2
+   \      0x17E   0xB2C0             UXTB     R0,R0
+   \      0x180   0x....'....        BL       Calculate_CRC
+   \      0x184   0x8038             STRH     R0,[R7, #+0]
+    528                  if(uwCRCValue == frameCRC)
+   \      0x186   0x8838             LDRH     R0,[R7, #+0]
+   \      0x188   0x4669             MOV      R1,SP
+   \      0x18A   0x88C9             LDRH     R1,[R1, #+6]
+   \      0x18C   0x4288             CMP      R0,R1
+   \      0x18E   0xD132             BNE      ??protocolHeaderfetch_14
+   \      0x190   0xE02B             B        ??protocolHeaderfetch_15
+   \                     ??protocolHeaderfetch_13: (+1)
+   \      0x192   0x....             LDR      R0,??DataTable14
+   \      0x194   0x7801             LDRB     R1,[R0, #+0]
+   \      0x196   0x1C49             ADDS     R1,R1,#+1
+   \      0x198   0x7001             STRB     R1,[R0, #+0]
+   \                     ??protocolHeaderfetch_16: (+1)
+   \      0x19A   0x7820             LDRB     R0,[R4, #+0]
+   \      0x19C   0x2800             CMP      R0,#+0
+   \      0x19E   0xD01B             BEQ      ??protocolHeaderfetch_17
+   \      0x1A0   0x7820             LDRB     R0,[R4, #+0]
+   \      0x1A2   0x2821             CMP      R0,#+33
+   \      0x1A4   0xDB0C             BLT      ??protocolHeaderfetch_18
+   \      0x1A6   0x2020             MOVS     R0,#+32
+   \      0x1A8   0x9004             STR      R0,[SP, #+16]
+   \      0x1AA   0xAA04             ADD      R2,SP,#+16
+   \      0x1AC   0x....             LDR      R0,??DataTable11_12
+   \      0x1AE   0x6801             LDR      R1,[R0, #+0]
+   \      0x1B0   0x....             LDR      R0,??DataTable11_1
+   \      0x1B2   0x68C0             LDR      R0,[R0, #+12]
+   \      0x1B4   0x....'....        BL       RingBuf_ReadBlock
+   \      0x1B8   0x7820             LDRB     R0,[R4, #+0]
+   \      0x1BA   0x3820             SUBS     R0,R0,#+32
+   \      0x1BC   0x7020             STRB     R0,[R4, #+0]
+   \      0x1BE   0xE7EC             B        ??protocolHeaderfetch_16
+   \                     ??protocolHeaderfetch_18: (+1)
+   \      0x1C0   0x7820             LDRB     R0,[R4, #+0]
+   \      0x1C2   0x9003             STR      R0,[SP, #+12]
+   \      0x1C4   0xAA03             ADD      R2,SP,#+12
+   \      0x1C6   0x....             LDR      R0,??DataTable11_12
+   \      0x1C8   0x6801             LDR      R1,[R0, #+0]
+   \      0x1CA   0x....             LDR      R0,??DataTable11_1
+   \      0x1CC   0x68C0             LDR      R0,[R0, #+12]
+   \      0x1CE   0x....'....        BL       RingBuf_ReadBlock
+   \      0x1D2   0x2000             MOVS     R0,#+0
+   \      0x1D4   0x7020             STRB     R0,[R4, #+0]
+   \      0x1D6   0xE7E0             B        ??protocolHeaderfetch_16
+   \                     ??protocolHeaderfetch_17: (+1)
+   \      0x1D8   0x2007             MOVS     R0,#+7
+   \      0x1DA   0x7020             STRB     R0,[R4, #+0]
+   \      0x1DC   0x2000             MOVS     R0,#+0
+   \      0x1DE   0x0001             MOVS     R1,R0
+   \      0x1E0   0x....             LDR      R2,??DataTable11_10
+   \      0x1E2   0x7011             STRB     R1,[R2, #+0]
+   \      0x1E4   0x....             LDR      R1,??DataTable11_8
+   \      0x1E6   0x7008             STRB     R0,[R1, #+0]
+   \      0x1E8   0xE01B             B        ??protocolHeaderfetch_6
+    529                  { //CRC match put whole frame into RX pipe      
+    530                    RingBuf_WriteBlock((usart2Control).seqMemRX_u32, protocolBuf_Usart2, &DataLen2);  //put fully checked (Valid) Rx frame into Rx Pipe
+   \                     ??protocolHeaderfetch_15: (+1)
+   \      0x1EA   0x466A             MOV      R2,SP
+   \      0x1EC   0x6831             LDR      R1,[R6, #+0]
+   \      0x1EE   0x6868             LDR      R0,[R5, #+4]
+   \      0x1F0   0x....'....        BL       RingBuf_WriteBlock
+   \      0x1F4   0xE001             B        ??protocolHeaderfetch_19
+    531              /*      if((protocolBuf_Usart2[3]) && (protocolBuf_Usart2[2] != 0x3f))                                                                            //if auto ACK
+    532                    {
+    533                      unsigned char ackTx[] = {0x55, 0x00, 0x3F, protocolBuf_Usart2[3], 0x00, 0xCC, 0xCC};
+    534                      unsigned int TxLen = sizeof(ackTx);
+    535                      RingBuf_WriteBlock((usart2Control).seqMemTX_u32, ackTx, &TxLen); 
+    536                    }     
+    537           */         
+    538                    
+    539                    /*********** this part only for testing the Tx message *************/
+    540                    /*
+    541                    //Echo back the full valid frame to sender
+    542                    protocolBuf_Usart2[DataLen2 - 2] = 0xCC;                                                             //Tx frame always use 0xCC as CRC byte, the Tx sending routine should process it with the final CRC value
+    543                    protocolBuf_Usart2[DataLen2 - 1] = 0xCC;                                                             //Tx frame always use 0xCC as CRC byte, the Tx sending routine should process it with the final CRC value
+    544                    protocolBuf_Usart2[0] = 0x55;                                                                           //Tx frame always use 0x55 as Sync, the Tx sending routine should process it for Leader or Follower
+    545                    if(protocolBuf_Usart2[1] & 0xC0)
+    546                    {//Advanced frame
+    547                      protocolBuf_Usart2[5] = 0x00;                                                                         //Tx frame always use 0xFF as Source Frame ID for ACK require, and 0x00 as non-ACK frame, the Tx sending routine should process with the value for ACK frame        
+    548                      protocolBuf_Usart2[6] = 0x01;                                                                         //Tx frame slways put motor address to lower nibble, and leave upper nibble as 0 for Tx routine to put the Header-end value to this field
+    549                    }
+    550                    else
+    551                    {//Normal frame
+    552                      protocolBuf_Usart2[3] = 0x00;                                                                         //Tx frame always use 0xFF as Source Frame ID for ACK require, and 0x00 as non-ACK frame, the Tx sending routine should process with the value for ACK frame        
+    553                      protocolBuf_Usart2[4] = 0x01;                                                                         //Tx frame slways put motor address to lower nibble, and leave upper nibble as 0 for Tx routine to put the Header-end value to this field
+    554                    }
+    555                    RingBuf_WriteBlock(usart2SeqMemTX_u32->systemInstanceIndex_u8, protocolBuf_Usart2, &DataLen2);        
+    556          */
+    557                    /*********** this part only for testing the Tx message End End End *************/
+    558                  }                                
+    559                  else
+    560                  { 
+    561                    DataLen2 = UniHeaderlen;                                                                   //only truncase the header         
+   \                     ??protocolHeaderfetch_14: (+1)
+   \      0x1F6   0x2007             MOVS     R0,#+7
+   \      0x1F8   0x9000             STR      R0,[SP, #+0]
+    562                  }                                                                  
+    563          
+    564                  RingBuf_ReadBlock((usart2Control).seqMem_InternalPipe_u32, protocolBuf_Usart2, &DataLen2);                              //extract the whole frame         
+   \                     ??protocolHeaderfetch_19: (+1)
+   \      0x1FA   0x466A             MOV      R2,SP
+   \      0x1FC   0x6831             LDR      R1,[R6, #+0]
+   \      0x1FE   0x68E8             LDR      R0,[R5, #+12]
+   \      0x200   0x....'....        BL       RingBuf_ReadBlock
+    565                  #if ENABLE_PROTOCOLBUF_USART2_FIXED_LEN <= 0
+    566                  protocolBuf_Usart2 = (unsigned char*) realloc(protocolBuf_Usart2,1);                                          //free heap only leave 1 byte 
+    567                  #endif // ENABLE_PROTOCOLBUF_USART2_FIXED_LEN <= 0
+    568                  usart2CaptureLen = UniHeaderlen; 
+   \      0x204   0x2007             MOVS     R0,#+7
+   \      0x206   0x7020             STRB     R0,[R4, #+0]
+    569                  UniProtocolState = protocolstart;    
+   \      0x208   0x2000             MOVS     R0,#+0
+   \      0x20A   0x....             LDR      R1,??DataTable11_8
+   \      0x20C   0x7008             STRB     R0,[R1, #+0]
+    570                  break;
+   \      0x20E   0xE008             B        ??protocolHeaderfetch_6
+    571                }
+    572          
+    573              default:
+    574                {
+    575                  usart2CaptureLen = UniHeaderlen; 
+   \                     ??protocolHeaderfetch_3: (+1)
+   \      0x210   0x2007             MOVS     R0,#+7
+   \      0x212   0x....             LDR      R1,??DataTable11_9
+   \      0x214   0x7008             STRB     R0,[R1, #+0]
+    576                  dataLen = 0;
+   \      0x216   0x2000             MOVS     R0,#+0
+   \      0x218   0x0001             MOVS     R1,R0
+   \      0x21A   0x....             LDR      R2,??DataTable11_10
+   \      0x21C   0x7011             STRB     R1,[R2, #+0]
+    577                  UniProtocolState = protocolstart;
+   \      0x21E   0x....             LDR      R1,??DataTable11_8
+   \      0x220   0x7008             STRB     R0,[R1, #+0]
+    578                  break;
+    579                } 
+    580              
+    581            }
+    582          
+    583          }
+   \                     ??protocolHeaderfetch_6: (+1)
+   \      0x222   0xB00B             ADD      SP,SP,#+44
+   \      0x224   0xBDF0             POP      {R4-R7,PC}       ;; return
+    584          
+    585          unsigned char* headerFrameBuf_Usart2;
+    586          #define ENABLE_HEADERFRAME_BUF_USART2_FIXED_LEN 1
+    587          #if ENABLE_HEADERFRAME_BUF_USART2_FIXED_LEN >= 1
+    588            // This is a one-shot buffer, that is written to and read from in single calls.
+    589            // - it does not currently need to be tracked for current index because of this.
+    590            // #define FIXED_HEADERFRAMEBUF_MAX_LENGTH 21 // Inclusive (this value is accepted) 
+    591            #define FIXED_HEADERFRAMEBUF_USART2_MAX_LENGTH UniHeaderlen // Inclusive (only used to read universal protocol headers)
+
+   \                                 In section .bss, align 1
+    592            unsigned char fixedHeaderFrameBuf_Usart2_Length = 0;
+   \                     fixedHeaderFrameBuf_Usart2_Length:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+    593            unsigned char fixedHeaderFrameBuf_Usart2[FIXED_HEADERFRAMEBUF_USART2_MAX_LENGTH];
+   \                     fixedHeaderFrameBuf_Usart2:
+   \        0x0                      DS8 8
+
+   \                                 In section .data, align 4
+    594            unsigned char* headerFrameBuf_Usart2 = fixedHeaderFrameBuf_Usart2;
+   \                     headerFrameBuf_Usart2:
+   \        0x0   0x....'....        DC32 fixedHeaderFrameBuf_Usart2
+    595          #else
+    596            unsigned char* headerFrameBuf_Usart2;
+    597          #endif
+    598          
+    599          
+
+   \                                 In section .text, align 2, keep-with-next
+    600          uint8_t TxProcess(void)
+    601          { //process Tx frame in Tx pipe
+   \                     TxProcess: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    602            int txHeaderSize = UniHeaderlen;
+   \        0x2   0x2407             MOVS     R4,#+7
+   \        0x4   0x9401             STR      R4,[SP, #+4]
+    603          
+    604            #if ENABLE_HEADERFRAME_BUF_USART2_FIXED_LEN >= 1
+    605              // length checking not necessary. Since only used to look at universal protocol headers
+    606              fixedHeaderFrameBuf_Usart2_Length = txHeaderSize;
+   \        0x6   0x9801             LDR      R0,[SP, #+4]
+   \        0x8   0x....             LDR      R1,??DataTable14_1
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+    607            #else // if ENABLE_HEADERFRAME_BUF_USART2_FIXED_LEN <= 0
+    608              if((headerFrameBuf_Usart2 = (unsigned char*) realloc(headerFrameBuf_Usart2, txHeaderSize)) == NULL) reallocError++;
+    609            #endif
+    610            unsigned int DataLenTx = (unsigned int)txHeaderSize;
+   \        0xC   0x9801             LDR      R0,[SP, #+4]
+   \        0xE   0x9000             STR      R0,[SP, #+0]
+    611            if(indexTx == 0)
+   \       0x10   0x....             LDR      R7,??DataTable14_2
+   \       0x12   0x7838             LDRB     R0,[R7, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD000             BEQ      .+4
+   \       0x18   0xE096             B        ??TxProcess_0
+    612            {
+    613              if(RingBuf_GetUsedNumOfElements((usart2Control).seqMemTX_u32) >= txHeaderSize)
+   \       0x1A   0x....             LDR      R5,??DataTable14_3
+   \       0x1C   0x68A8             LDR      R0,[R5, #+8]
+   \       0x1E   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x22   0x9901             LDR      R1,[SP, #+4]
+   \       0x24   0x4288             CMP      R0,R1
+   \       0x26   0xDB10             BLT      ??TxProcess_1
+    614              {
+    615                RingBuf_Observe((usart2Control).seqMemTX_u32, headerFrameBuf_Usart2, 0, &DataLenTx);   //pam bug!!!!!!!!!!!!!!!!!!!!                          //copy the whole header frame into buffer
+   \       0x28   0x....             LDR      R6,??DataTable14_4
+   \       0x2A   0x466B             MOV      R3,SP
+   \       0x2C   0x2200             MOVS     R2,#+0
+   \       0x2E   0x6831             LDR      R1,[R6, #+0]
+   \       0x30   0x68A8             LDR      R0,[R5, #+8]
+   \       0x32   0x....'....        BL       RingBuf_Observe
+    616                if(headerFrameBuf_Usart2[1] & 0xc0) 
+   \       0x36   0x6830             LDR      R0,[R6, #+0]
+   \       0x38   0x7840             LDRB     R0,[R0, #+1]
+   \       0x3A   0x21C0             MOVS     R1,#+192
+   \       0x3C   0x4001             ANDS     R1,R1,R0
+   \       0x3E   0x2900             CMP      R1,#+0
+   \       0x40   0xD002             BEQ      ??TxProcess_2
+    617                {
+    618                  DataLenTx = 9; //Advanced frame +CRC
+   \       0x42   0x2009             MOVS     R0,#+9
+   \       0x44   0x9000             STR      R0,[SP, #+0]
+   \       0x46   0xE000             B        ??TxProcess_1
+    619                }
+    620                else
+    621                {
+    622                  DataLenTx = 7; //normal frame +CRC
+   \                     ??TxProcess_2: (+1)
+   \       0x48   0x9400             STR      R4,[SP, #+0]
+    623                }
+    624              }
+    625              DataLenTx += ((unsigned int)(headerFrameBuf_Usart2[1] & 0x3F)); 
+   \                     ??TxProcess_1: (+1)
+   \       0x4A   0x9800             LDR      R0,[SP, #+0]
+   \       0x4C   0x....             LDR      R1,??DataTable14_4
+   \       0x4E   0x6809             LDR      R1,[R1, #+0]
+   \       0x50   0x7849             LDRB     R1,[R1, #+1]
+   \       0x52   0x0689             LSLS     R1,R1,#+26       ;; ZeroExtS R1,R1,#+26,#+26
+   \       0x54   0x0E89             LSRS     R1,R1,#+26
+   \       0x56   0x1840             ADDS     R0,R0,R1
+   \       0x58   0x9000             STR      R0,[SP, #+0]
+    626          
+    627          
+    628              #if ENABLE_HEADERFRAME_BUF_USART2_FIXED_LEN <= 0
+    629                headerFrameBuf_Usart2= (unsigned char*) realloc(headerFrameBuf_Usart2, 1);                                   //free heap only leave 1 byte 
+    630              #endif //ENABLE_HEADERFRAME_BUF_USART2_FIXED_LEN <= 0
+    631          
+    632          
+    633              #if ENABLE_WHOLEFRAME_USART2_BUF_FIXED_LEN >= 1
+    634                if (DataLenTx <= FIXED_WHOLEFRAME_USART2_MAX_LENGTH) { // Normal Case: Prepare Message for Send
+   \       0x5A   0x9800             LDR      R0,[SP, #+0]
+   \       0x5C   0x2851             CMP      R0,#+81
+   \       0x5E   0xD20C             BCS      ??TxProcess_3
+    635                  RingBuf_ReadBlock((usart2Control).seqMemTX_u32, wholeFrameBuf_Usart2, &DataLenTx);                                //copy the complete frame into buffer
+   \       0x60   0x....             LDR      R4,??DataTable14_5
+   \       0x62   0x466A             MOV      R2,SP
+   \       0x64   0x6821             LDR      R1,[R4, #+0]
+   \       0x66   0x68A8             LDR      R0,[R5, #+8]
+   \       0x68   0x....'....        BL       RingBuf_ReadBlock
+    636                } else { // Overflow Case: Discard All Data
+    637                  // Overflow leads to unknown data state, don't send any of it
+    638                  // - Clear All Data
+    639                  // -- Read into the Header Buffer, just in case the wholeFrameBuf is currently active.
+    640                  while (DataLenTx > 0) {
+    641                    if (DataLenTx > FIXED_WHOLEFRAME_USART2_MAX_LENGTH) {
+    642                      // REVIEW: Replace with RingBuf_ClearContents? Much less processing, but clears whole buffer, and not just one message
+    643                      unsigned int read_length = FIXED_WHOLEFRAME_USART2_MAX_LENGTH;
+    644                      RingBuf_ReadBlock((usart2Control).seqMemTX_u32, wholeFrameBuf_Usart2, &read_length); //extract the whole frame
+    645                      DataLenTx -= FIXED_WHOLEFRAME_USART2_MAX_LENGTH;
+    646                    } else {
+    647                      RingBuf_ReadBlock((usart2Control).seqMemTX_u32, wholeFrameBuf_Usart2, &DataLenTx); //extract the whole frame
+    648                      DataLenTx = 0;
+    649                    }        
+    650                  }
+    651                  // - Exit Gracefully
+    652                  return 1;
+    653                }
+    654              #else // if ENABLE_WHOLEFRAME_USART2_BUF_FIXED_LEN <= 0
+    655                wholeFrameBuf_Usart2= (unsigned char*) realloc(wholeFrameBuf_Usart2, DataLenTx);       
+    656                RingBuf_ReadBlock((usart2Control).seqMemTX_u32, wholeFrameBuf_Usart2, &DataLenTx);                                //copy the complete frame into buffer
+    657              #endif
+    658          
+    659              if(wholeFrameBuf_Usart2[1] &0xC0)
+   \       0x6C   0x6820             LDR      R0,[R4, #+0]
+   \       0x6E   0x7840             LDRB     R0,[R0, #+1]
+   \       0x70   0x21C0             MOVS     R1,#+192
+   \       0x72   0x4001             ANDS     R1,R1,R0
+   \       0x74   0x2900             CMP      R1,#+0
+   \       0x76   0xD11D             BNE      ??TxProcess_4
+   \       0x78   0xE035             B        ??TxProcess_5
+   \                     ??TxProcess_3: (+1)
+   \       0x7A   0x9800             LDR      R0,[SP, #+0]
+   \       0x7C   0x2800             CMP      R0,#+0
+   \       0x7E   0xD017             BEQ      ??TxProcess_6
+   \       0x80   0x9800             LDR      R0,[SP, #+0]
+   \       0x82   0x2851             CMP      R0,#+81
+   \       0x84   0xD30B             BCC      ??TxProcess_7
+   \       0x86   0x2050             MOVS     R0,#+80
+   \       0x88   0x9002             STR      R0,[SP, #+8]
+   \       0x8A   0xAA02             ADD      R2,SP,#+8
+   \       0x8C   0x....             LDR      R0,??DataTable14_5
+   \       0x8E   0x6801             LDR      R1,[R0, #+0]
+   \       0x90   0x68A8             LDR      R0,[R5, #+8]
+   \       0x92   0x....'....        BL       RingBuf_ReadBlock
+   \       0x96   0x9800             LDR      R0,[SP, #+0]
+   \       0x98   0x3850             SUBS     R0,R0,#+80
+   \       0x9A   0x9000             STR      R0,[SP, #+0]
+   \       0x9C   0xE7ED             B        ??TxProcess_3
+   \                     ??TxProcess_7: (+1)
+   \       0x9E   0x466A             MOV      R2,SP
+   \       0xA0   0x....             LDR      R0,??DataTable14_5
+   \       0xA2   0x6801             LDR      R1,[R0, #+0]
+   \       0xA4   0x68A8             LDR      R0,[R5, #+8]
+   \       0xA6   0x....'....        BL       RingBuf_ReadBlock
+   \       0xAA   0x2000             MOVS     R0,#+0
+   \       0xAC   0x9000             STR      R0,[SP, #+0]
+   \       0xAE   0xE7E4             B        ??TxProcess_3
+   \                     ??TxProcess_6: (+1)
+   \       0xB0   0x2001             MOVS     R0,#+1
+   \       0xB2   0xE064             B        ??TxProcess_8
+    660              { //Advanced frame
+    661                wholeFrameBuf_Usart2[6] = (~TxSyncChr & 0xf0) + (wholeFrameBuf_Usart2[6] & 0xf);
+   \                     ??TxProcess_4: (+1)
+   \       0xB4   0x6820             LDR      R0,[R4, #+0]
+   \       0xB6   0x7980             LDRB     R0,[R0, #+6]
+   \       0xB8   0x0700             LSLS     R0,R0,#+28       ;; ZeroExtS R0,R0,#+28,#+28
+   \       0xBA   0x0F00             LSRS     R0,R0,#+28
+   \       0xBC   0x3860             SUBS     R0,R0,#+96
+   \       0xBE   0x6821             LDR      R1,[R4, #+0]
+   \       0xC0   0x7188             STRB     R0,[R1, #+6]
+    662                if (wholeFrameBuf_Usart2[5] == 0xFF)                                                                   //process Source Frame ID
+   \       0xC2   0x6820             LDR      R0,[R4, #+0]
+   \       0xC4   0x7940             LDRB     R0,[R0, #+5]
+   \       0xC6   0x28FF             CMP      R0,#+255
+   \       0xC8   0xD125             BNE      ??TxProcess_9
+    663                {
+    664                    wholeFrameBuf_Usart2[5] = frameID++;
+   \       0xCA   0x....             LDR      R0,??DataTable14_6
+   \       0xCC   0x7801             LDRB     R1,[R0, #+0]
+   \       0xCE   0x6822             LDR      R2,[R4, #+0]
+   \       0xD0   0x7151             STRB     R1,[R2, #+5]
+   \       0xD2   0x7801             LDRB     R1,[R0, #+0]
+   \       0xD4   0x1C49             ADDS     R1,R1,#+1
+   \       0xD6   0x7001             STRB     R1,[R0, #+0]
+    665                    if (frameID == 0) frameID++;        //preserve 0x00 as non-ACK frame
+   \       0xD8   0x7801             LDRB     R1,[R0, #+0]
+   \       0xDA   0x2900             CMP      R1,#+0
+   \       0xDC   0xD11B             BNE      ??TxProcess_9
+   \       0xDE   0x7801             LDRB     R1,[R0, #+0]
+   \       0xE0   0x1C49             ADDS     R1,R1,#+1
+   \       0xE2   0x7001             STRB     R1,[R0, #+0]
+   \       0xE4   0xE017             B        ??TxProcess_9
+    666                    ///To Do  setup ACK receive ringbuffer data to fulfil the whole ACK process
+    667                    ///end of To Do  setup ACK receive ringbuffer data to fulfil the whole ACK process
+    668                }
+    669              }  
+    670              else
+    671              { //Normal frame
+    672                wholeFrameBuf_Usart2[4] = (~TxSyncChr & 0xf0) + (wholeFrameBuf_Usart2[4] & 0xf);   
+   \                     ??TxProcess_5: (+1)
+   \       0xE6   0x6820             LDR      R0,[R4, #+0]
+   \       0xE8   0x7900             LDRB     R0,[R0, #+4]
+   \       0xEA   0x0700             LSLS     R0,R0,#+28       ;; ZeroExtS R0,R0,#+28,#+28
+   \       0xEC   0x0F00             LSRS     R0,R0,#+28
+   \       0xEE   0x3860             SUBS     R0,R0,#+96
+   \       0xF0   0x6821             LDR      R1,[R4, #+0]
+   \       0xF2   0x7108             STRB     R0,[R1, #+4]
+    673                if (wholeFrameBuf_Usart2[3] == 0xFF)                                                                   //process Source Frame ID
+   \       0xF4   0x6820             LDR      R0,[R4, #+0]
+   \       0xF6   0x78C0             LDRB     R0,[R0, #+3]
+   \       0xF8   0x28FF             CMP      R0,#+255
+   \       0xFA   0xD10C             BNE      ??TxProcess_9
+    674                {
+    675                    wholeFrameBuf_Usart2[3] = frameID++;
+   \       0xFC   0x....             LDR      R0,??DataTable14_6
+   \       0xFE   0x7801             LDRB     R1,[R0, #+0]
+   \      0x100   0x6822             LDR      R2,[R4, #+0]
+   \      0x102   0x70D1             STRB     R1,[R2, #+3]
+   \      0x104   0x7801             LDRB     R1,[R0, #+0]
+   \      0x106   0x1C49             ADDS     R1,R1,#+1
+   \      0x108   0x7001             STRB     R1,[R0, #+0]
+    676                    if (frameID == 0) frameID++;        //preserve 0x00 as non-ACK frame
+   \      0x10A   0x7801             LDRB     R1,[R0, #+0]
+   \      0x10C   0x2900             CMP      R1,#+0
+   \      0x10E   0xD102             BNE      ??TxProcess_9
+   \      0x110   0x7801             LDRB     R1,[R0, #+0]
+   \      0x112   0x1C49             ADDS     R1,R1,#+1
+   \      0x114   0x7001             STRB     R1,[R0, #+0]
+    677                    ///To Do  setup ACK receive ringbuffer data to fulfil the whole ACK process
+    678                    
+    679                    ///end of To Do  setup ACK receive ringbuffer data to fulfil the whole ACK process
+    680                } 
+    681              }
+    682              wholeFrameBuf_Usart2[0] = TxSyncChr;
+   \                     ??TxProcess_9: (+1)
+   \      0x116   0x2055             MOVS     R0,#+85
+   \      0x118   0x6821             LDR      R1,[R4, #+0]
+   \      0x11A   0x7008             STRB     R0,[R1, #+0]
+    683              uwCRCValue = Calculate_CRC((DataLenTx - 2) , wholeFrameBuf_Usart2);    
+   \      0x11C   0x....             LDR      R5,??DataTable13
+   \      0x11E   0x6821             LDR      R1,[R4, #+0]
+   \      0x120   0x9800             LDR      R0,[SP, #+0]
+   \      0x122   0x1E80             SUBS     R0,R0,#+2
+   \      0x124   0xB2C0             UXTB     R0,R0
+   \      0x126   0x....'....        BL       Calculate_CRC
+   \      0x12A   0x8028             STRH     R0,[R5, #+0]
+    684              wholeFrameBuf_Usart2[DataLenTx - 2] = (unsigned char)((uwCRCValue & 0xff00) >> 8);                  //put calculated CRC back into Tx frame
+   \      0x12C   0x8828             LDRH     R0,[R5, #+0]
+   \      0x12E   0xB280             UXTH     R0,R0
+   \      0x130   0x0A00             LSRS     R0,R0,#+8
+   \      0x132   0x6821             LDR      R1,[R4, #+0]
+   \      0x134   0x9A00             LDR      R2,[SP, #+0]
+   \      0x136   0x1889             ADDS     R1,R1,R2
+   \      0x138   0x1E89             SUBS     R1,R1,#+2
+   \      0x13A   0x7008             STRB     R0,[R1, #+0]
+    685              wholeFrameBuf_Usart2[DataLenTx - 1] = (unsigned char)(uwCRCValue & 0xff) ;                          //put calculated CRC back into Tx frame
+   \      0x13C   0x8828             LDRH     R0,[R5, #+0]
+   \      0x13E   0x6821             LDR      R1,[R4, #+0]
+   \      0x140   0x9A00             LDR      R2,[SP, #+0]
+   \      0x142   0x1889             ADDS     R1,R1,R2
+   \      0x144   0x1E49             SUBS     R1,R1,#+1
+   \      0x146   0x7008             STRB     R0,[R1, #+0]
+    686            }    
+    687            
+    688            if((!indexTx) && (LL_USART_IsActiveFlag_TXE(USART2)))
+   \                     ??TxProcess_0: (+1)
+   \      0x148   0x7838             LDRB     R0,[R7, #+0]
+   \      0x14A   0x2800             CMP      R0,#+0
+   \      0x14C   0xD116             BNE      ??TxProcess_10
+   \      0x14E   0x....             LDR      R4,??DataTable14_7  ;; 0x40004400
+   \      0x150   0x0020             MOVS     R0,R4
+   \      0x152   0x....'....        BL       LL_USART_IsActiveFlag_TXE_TXFNF
+   \      0x156   0x2800             CMP      R0,#+0
+   \      0x158   0xD010             BEQ      ??TxProcess_10
+    689            {
+    690              ubSizeToSend = DataLenTx;      //set TX length                                                      
+   \      0x15A   0x9800             LDR      R0,[SP, #+0]
+   \      0x15C   0x....             LDR      R1,??DataTable14_8
+   \      0x15E   0x7008             STRB     R0,[R1, #+0]
+    691              /* Start USART transmission : Will initiate TXE interrupt after TDR register is empty */
+    692              LL_USART_TransmitData8(USART2, wholeFrameBuf_Usart2[indexTx++]);                                       //put buffer in
+   \      0x160   0x7838             LDRB     R0,[R7, #+0]
+   \      0x162   0x0001             MOVS     R1,R0
+   \      0x164   0x1C49             ADDS     R1,R1,#+1
+   \      0x166   0x7039             STRB     R1,[R7, #+0]
+   \      0x168   0x....             LDR      R1,??DataTable14_5
+   \      0x16A   0x6809             LDR      R1,[R1, #+0]
+   \      0x16C   0xB2C0             UXTB     R0,R0
+   \      0x16E   0x5C09             LDRB     R1,[R1, R0]
+   \      0x170   0x0020             MOVS     R0,R4
+   \      0x172   0x....'....        BL       LL_USART_TransmitData8
+    693              /* Enable TXE interrupt */
+    694              LL_USART_EnableIT_TXE(USART2);
+   \      0x176   0x0020             MOVS     R0,R4
+   \      0x178   0x....'....        BL       LL_USART_EnableIT_TXE_TXFNF
+    695            }
+    696            /**********************for TX interrupt still using this variable , so don't free it!!!!!!!*******/
+    697            //wholeFrameBuf_Usart2= (unsigned char*) malloc(1);   //for 
+    698            return 0;
+   \                     ??TxProcess_10: (+1)
+   \      0x17C   0x2000             MOVS     R0,#+0
+   \                     ??TxProcess_8: (+1)
+   \      0x17E   0xBDFE             POP      {R1-R7,PC}       ;; return
+    699          }
+    700          
+    701          /**
+    702            * @brief  This function performs CRC calculation on BufSize bytes from input data buffer aDataBuf.
+    703            * @param  BufSize Nb of bytes to be processed for CRC calculation
+    704            * @retval 16-bit CRC value computed on input data buffer
+    705            */
+    706          /*uint16_t Calculate_CRC(uint8_t BufSize, unsigned char* aDataBuf)
+    707          {
+    708            register uint8_t index = 0;
+    709            LL_CRC_ResetCRCCalculationUnit(CRC);
+    710            // Compute the CRC of Data Buffer array
+    711            for (index = 0; index < BufSize ; index++)
+    712            {
+    713              LL_CRC_FeedData8(CRC,aDataBuf[index] );
+    714            }
+    715            // Return computed CRC value 
+    716            return (LL_CRC_ReadData16(CRC));
+    717          }*/
+    718          
+    719          
+    720          /**
+    721            * @brief  Function called in case of error detected in USART IT Handler
+    722            * @param  None
+    723            * @retval None
+    724            */
+
+   \                                 In section .text, align 2, keep-with-next
+    725          void Error_Callback(void)
+    726          {
+   \                     Error_Callback: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    727            __IO uint32_t isr_reg;
+    728          
+    729            /* Disable USARTx_IRQn */
+    730            NVIC_DisableIRQ(USART2_IRQn);
+   \        0x2   0x201C             MOVS     R0,#+28
+   \        0x4   0x....'....        BL       __NVIC_DisableIRQ
+    731          
+    732            /* Error handling example :
+    733              - Read USART ISR register to identify flag that leads to IT raising
+    734              - Perform corresponding error handling treatment according to flag
+    735            */
+    736            isr_reg = LL_USART_ReadReg(USART2, ISR);
+   \        0x8   0x....             LDR      R0,??DataTable14_9  ;; 0x4000441c
+   \        0xA   0x6800             LDR      R0,[R0, #+0]
+   \        0xC   0x9000             STR      R0,[SP, #+0]
+    737            if (isr_reg & LL_USART_ISR_NE)
+   \        0xE   0x9800             LDR      R0,[SP, #+0]
+    738            {
+    739              /* case Noise Error flag is raised : ... */
+    740          //    LED_Blinking(LED_BLINK_FAST);
+    741            }
+    742            else
+    743            {
+    744              /* Unexpected IT source : Set LED to Blinking mode to indicate error occurs */
+    745          //    LED_Blinking(LED_BLINK_ERROR);
+    746            }
+    747          }
+   \       0x10   0xBD01             POP      {R0,PC}          ;; return
+    748          
+    749          /**
+    750            * @brief This function handles USART2 global interrupt / USART2 wake-up interrupt through EXTI line 26.
+    751            */
+
+   \                                 In section .text, align 2, keep-with-next
+    752          void USART2_IRQHandler(void)
+    753          {
+   \                     USART2_IRQHandler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    754            /* USER CODE BEGIN USART2_IRQn 0 */
+    755            /* Check RXNE flag value in ISR register */
+    756            if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2))
+   \        0x2   0x....             LDR      R4,??DataTable14_7  ;; 0x40004400
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x....'....        BL       LL_USART_IsActiveFlag_RXNE_RXFNE
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD006             BEQ      ??USART2_IRQHandler_0
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       LL_USART_IsEnabledIT_RXNE_RXFNE
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD001             BEQ      ??USART2_IRQHandler_0
+    757            {
+    758              /* RXNE flag will be cleared by reading of RDR register (done in call) */
+    759              /* Call function in charge of handling Character reception */
+    760              USART2_CharReception_Callback();
+   \       0x18   0x....'....        BL       USART2_CharReception_Callback
+    761            }
+    762            
+    763            if (LL_USART_IsEnabledIT_TXE(USART2) && LL_USART_IsActiveFlag_TXE(USART2))
+   \                     ??USART2_IRQHandler_0: (+1)
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x....'....        BL       LL_USART_IsEnabledIT_TXE_TXFNF
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD006             BEQ      ??USART2_IRQHandler_1
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0x....'....        BL       LL_USART_IsActiveFlag_TXE_TXFNF
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD001             BEQ      ??USART2_IRQHandler_1
+    764            {
+    765              /* TXE flag will be automatically cleared when writing new data in TDR register */
+    766          
+    767              /* Call function in charge of handling empty DR => will lead to transmission of next character */
+    768              USART2_TXEmpty_Callback();
+   \       0x30   0x....'....        BL       USART2_TXEmpty_Callback
+    769            }
+    770          
+    771            if (LL_USART_IsEnabledIT_TC(USART2) && LL_USART_IsActiveFlag_TC(USART2))
+   \                     ??USART2_IRQHandler_1: (+1)
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x....'....        BL       LL_USART_IsEnabledIT_TC
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD009             BEQ      ??USART2_IRQHandler_2
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x....'....        BL       LL_USART_IsActiveFlag_TC
+   \       0x44   0x2800             CMP      R0,#+0
+   \       0x46   0xD004             BEQ      ??USART2_IRQHandler_2
+    772            {
+    773              /* Clear TC flag */
+    774              LL_USART_ClearFlag_TC(USART2);
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0x....'....        BL       LL_USART_ClearFlag_TC
+    775              /* Call function in charge of handling end of transmission of sent character
+    776                 and prepare next charcater transmission */
+    777              USART2_CharTransmitComplete_Callback();
+   \       0x4E   0x....'....        BL       USART2_CharTransmitComplete_Callback
+    778            }
+    779            
+    780            if (LL_USART_IsEnabledIT_ERROR(USART2) && LL_USART_IsActiveFlag_NE(USART2))
+   \                     ??USART2_IRQHandler_2: (+1)
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0x....'....        BL       LL_USART_IsEnabledIT_ERROR
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD006             BEQ      ??USART2_IRQHandler_3
+   \       0x5C   0x0020             MOVS     R0,R4
+   \       0x5E   0x....'....        BL       LL_USART_IsActiveFlag_NE
+   \       0x62   0x2800             CMP      R0,#+0
+   \       0x64   0xD001             BEQ      ??USART2_IRQHandler_3
+    781            {
+    782              /* Call Error function */
+    783              Error_Callback();
+   \       0x66   0x....'....        BL       Error_Callback
+    784            }
+    785          
+    786            LL_USART_ClearFlag_ORE(USART2); // TODO: Upgrade this temporary patch that keeps us from getting stuck in this ISR
+   \                     ??USART2_IRQHandler_3: (+1)
+   \       0x6A   0x0020             MOVS     R0,R4
+   \       0x6C   0x....'....        BL       LL_USART_ClearFlag_ORE
+    787          
+    788            /* USER CODE END USART2_IRQn 0 */
+    789            /* USER CODE BEGIN USART2_IRQn 1 */
+    790          
+    791            /* USER CODE END USART2_IRQn 1 */
+    792          }
+   \       0x70   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0xE000'E100        DC32     0xe000e100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0xE000'E180        DC32     0xe000e180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0xE000'E400        DC32     0xe000e400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0xE000'ED1C        DC32     0xe000ed1c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x4002'103C        DC32     0x4002103c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x4002'1034        DC32     0x40021034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0xFFFF'B7FF        DC32     0xffffb7ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \        0x0   0xFFFF'FBFF        DC32     0xfffffbff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0x4000'4400        DC32     0x40004400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0x....'....        DC32     usart2Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0x....'....        DC32     tickCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x....'....        DC32     lastRxTime_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x....'....        DC32     usart2Control+0x22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_5:
+   \        0x0   0x....'....        DC32     indexTx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_6:
+   \        0x0   0x....'....        DC32     wholeFrameBuf_Usart2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_7:
+   \        0x0   0x....'....        DC32     ubSizeToSend
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_8:
+   \        0x0   0x....'....        DC32     UniProtocolState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_9:
+   \        0x0   0x....'....        DC32     usart2CaptureLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_10:
+   \        0x0   0x....'....        DC32     dataLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_11:
+   \        0x0   0x....'....        DC32     fixedProtocolBuf_Usart2_Length
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_12:
+   \        0x0   0x....'....        DC32     protocolBuf_Usart2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0x....'....        DC32     uwCRCValue
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0x....'....        DC32     protocolBuf_Usart2_OverflowCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0x....'....        DC32     fixedHeaderFrameBuf_Usart2_Length
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \        0x0   0x....'....        DC32     indexTx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \        0x0   0x....'....        DC32     usart2Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \        0x0   0x....'....        DC32     headerFrameBuf_Usart2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \        0x0   0x....'....        DC32     wholeFrameBuf_Usart2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \        0x0   0x....'....        DC32     frameID
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \        0x0   0x4000'4400        DC32     0x40004400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_8:
+   \        0x0   0x....'....        DC32     ubSizeToSend
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_9:
+   \        0x0   0x4000'441C        DC32     0x4000441c
+    793          
+    794          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Error_Callback
+         8   -> __NVIC_DisableIRQ
+       4   LL_APB1_GRP1_EnableClock
+       4   LL_IOP_GRP1_EnableClock
+       0   LL_USART_ClearFlag_ORE
+       0   LL_USART_ClearFlag_TC
+       0   LL_USART_ConfigAsyncMode
+       0   LL_USART_DisableIT_CTS
+       0   LL_USART_DisableIT_ERROR
+       0   LL_USART_DisableIT_TXE_TXFNF
+       0   LL_USART_Enable
+       0   LL_USART_EnableIT_RXNE_RXFNE
+       0   LL_USART_EnableIT_TXE_TXFNF
+       0   LL_USART_IsActiveFlag_NE
+       0   LL_USART_IsActiveFlag_REACK
+       0   LL_USART_IsActiveFlag_RXNE_RXFNE
+       0   LL_USART_IsActiveFlag_TC
+       0   LL_USART_IsActiveFlag_TEACK
+       0   LL_USART_IsActiveFlag_TXE_TXFNF
+       0   LL_USART_IsEnabledIT_ERROR
+       0   LL_USART_IsEnabledIT_RXNE_RXFNE
+       0   LL_USART_IsEnabledIT_TC
+       0   LL_USART_IsEnabledIT_TXE_TXFNF
+       0   LL_USART_ReceiveData8
+       0   LL_USART_TransmitData8
+      80   MX_USART2_UART_Init
+        80   -> LL_APB1_GRP1_EnableClock
+        80   -> LL_GPIO_Init
+        80   -> LL_IOP_GRP1_EnableClock
+        80   -> LL_USART_ConfigAsyncMode
+        80   -> LL_USART_DisableIT_CTS
+        80   -> LL_USART_DisableIT_ERROR
+        80   -> LL_USART_Enable
+        80   -> LL_USART_EnableIT_RXNE_RXFNE
+        80   -> LL_USART_Init
+        80   -> LL_USART_IsActiveFlag_REACK
+        80   -> LL_USART_IsActiveFlag_TEACK
+        80   -> __NVIC_EnableIRQ
+        80   -> __NVIC_SetPriority
+        80   -> memset
+      32   TxProcess
+        32   -> Calculate_CRC
+        32   -> LL_USART_EnableIT_TXE_TXFNF
+        32   -> LL_USART_IsActiveFlag_TXE_TXFNF
+        32   -> LL_USART_TransmitData8
+        32   -> RingBuf_GetUsedNumOfElements
+        32   -> RingBuf_Observe
+        32   -> RingBuf_ReadBlock
+       8   USART2_CharReception_Callback
+         8   -> LL_USART_ReceiveData8
+         8   -> RingBuf_WriteCharacter
+       0   USART2_CharTransmitComplete_Callback
+       8   USART2_IRQHandler
+         8   -> Error_Callback
+         8   -> LL_USART_ClearFlag_ORE
+         8   -> LL_USART_ClearFlag_TC
+         8   -> LL_USART_IsActiveFlag_NE
+         8   -> LL_USART_IsActiveFlag_RXNE_RXFNE
+         8   -> LL_USART_IsActiveFlag_TC
+         8   -> LL_USART_IsActiveFlag_TXE_TXFNF
+         8   -> LL_USART_IsEnabledIT_ERROR
+         8   -> LL_USART_IsEnabledIT_RXNE_RXFNE
+         8   -> LL_USART_IsEnabledIT_TC
+         8   -> LL_USART_IsEnabledIT_TXE_TXFNF
+         8   -> USART2_CharReception_Callback
+         8   -> USART2_CharTransmitComplete_Callback
+         8   -> USART2_TXEmpty_Callback
+      16   USART2_TXEmpty_Callback
+        16   -> LL_USART_DisableIT_TXE_TXFNF
+        16   -> LL_USART_TransmitData8
+       4   Usart2IdlePatch_RxIsIdle
+       4   __NVIC_DisableIRQ
+       4   __NVIC_EnableIRQ
+      20   __NVIC_SetPriority
+      64   protocolHeaderfetch
+        64   -> Calculate_CRC
+        64   -> RingBuf_GetPointerToRingBuf
+        64   -> RingBuf_Observe
+        64   -> RingBuf_ReadBlock
+        64   -> RingBuf_Search
+        64   -> RingBuf_WriteBlock
+        64   -> memset
+       8   usart2_Init
+         8   -> MX_USART2_UART_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_10
+       4  ??DataTable11_11
+       4  ??DataTable11_12
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable11_5
+       4  ??DataTable11_6
+       4  ??DataTable11_7
+       4  ??DataTable11_8
+       4  ??DataTable11_9
+       4  ??DataTable13
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+      18  Error_Callback
+      22  LL_APB1_GRP1_EnableClock
+      22  LL_IOP_GRP1_EnableClock
+       6  LL_USART_ClearFlag_ORE
+       6  LL_USART_ClearFlag_TC
+      18  LL_USART_ConfigAsyncMode
+      10  LL_USART_DisableIT_CTS
+      10  LL_USART_DisableIT_ERROR
+      10  LL_USART_DisableIT_TXE_TXFNF
+      10  LL_USART_Enable
+      10  LL_USART_EnableIT_RXNE_RXFNE
+      10  LL_USART_EnableIT_TXE_TXFNF
+      12  LL_USART_IsActiveFlag_NE
+      12  LL_USART_IsActiveFlag_REACK
+      12  LL_USART_IsActiveFlag_RXNE_RXFNE
+      12  LL_USART_IsActiveFlag_TC
+      12  LL_USART_IsActiveFlag_TEACK
+      12  LL_USART_IsActiveFlag_TXE_TXFNF
+      10  LL_USART_IsEnabledIT_ERROR
+      12  LL_USART_IsEnabledIT_RXNE_RXFNE
+      12  LL_USART_IsEnabledIT_TC
+      12  LL_USART_IsEnabledIT_TXE_TXFNF
+       6  LL_USART_ReceiveData8
+       8  LL_USART_TransmitData8
+     192  MX_USART2_UART_Init
+     384  TxProcess
+      52  USART2_CharReception_Callback
+       2  USART2_CharTransmitComplete_Callback
+     114  USART2_IRQHandler
+      66  USART2_TXEmpty_Callback
+       1  UartReady
+       1  UniProtocolState
+      36  Usart2IdlePatch_RxIsIdle
+      32  __NVIC_DisableIRQ
+      24  __NVIC_EnableIRQ
+     140  __NVIC_SetPriority
+       1  dataLen
+       8  fixedHeaderFrameBuf_Usart2
+       1  fixedHeaderFrameBuf_Usart2_Length
+      32  fixedProtocolBuf_Usart2
+       1  fixedProtocolBuf_Usart2_Length
+      80  fixedwholeFrameBuf_Usart2
+       1  fixedwholeFrameBuf_Usart2_Length
+       1  frameID
+       4  headerFrameBuf_Usart2
+       1  indexTx
+       8  lastRxTime_u64
+       4  protocolBuf_Usart2
+       1  protocolBuf_Usart2_OverflowCounter
+     550  protocolHeaderfetch
+       1  ubSizeToSend
+       1  usart2CaptureLen
+      36  usart2Control
+       8  usart2_Init
+       2  uwCRCValue
+       4  wholeFrameBuf_Usart2
+
+ 
+   176 bytes in section .bss
+    13 bytes in section .data
+ 2'012 bytes in section .text
+ 
+ 2'012 bytes of CODE memory
+   189 bytes of DATA memory
+
+Errors: none
+Warnings: none

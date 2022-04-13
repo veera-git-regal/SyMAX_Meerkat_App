@@ -1,0 +1,334 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:42
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_adc1.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWCE59.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_adc1.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_adc1.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_adc1.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Drivers\module_adc1.c
+      1          /**
+      2          *************************************************************************************
+      3          * @file    module_adc1.c
+      4          * @author  Satya Akkina
+      5          * @version V1.0
+      6          * @date    18-Jun-2020
+      7          * @brief   Module for ADC1 hardware
+      8          * @note    
+      9          *************************************************************************************
+     10          */
+     11          #include "module_adc1.h"
+     12          
+     13          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+     14          // Function prototypes
+     15          void AssignModuleMemAdc1(void);
+     16          
+     17          // -- Module States
+     18          enum AppStates {
+     19            MEMORY_INIT_MODULE,
+     20            INIT_MODULE,
+     21            RUN_MODULE,
+     22            // additional states to be added here as necessary.
+     23            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     24            KILL_MODULE = KILL_APP
+     25          };
+     26          
+     27          // - External Variables
+     28          extern ProcessInfo processInfoTable[];
+     29          extern ADC1_Control adc1_Control; 
+     30          
+     31          // - Global variables specific to this module
+
+   \                                 In section .bss, align 4
+     32          static Ram_Buf_Handle adc1_Control_StructMem_u32;
+   \                     adc1_Control_StructMem_u32:
+   \        0x0                      DS8 4
+     33          
+     34          /**
+     35          ********************************************************************************************************************************
+     36          * @brief   State machine for adc1 module
+     37          * @details
+     38          * @param   drv_identifier_u8, previous_state_u8, next_stat_u8, irq_identfier_u8
+     39          * @retval  return_state_u8
+     40          ********************************************************************************************************************************
+     41          */
+
+   \                                 In section .text, align 2, keep-with-next
+     42          uint8_t moduleADC1_u32(uint8_t drv_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8,
+     43                                 uint8_t irq_id_u8)
+     44          {
+   \                     moduleADC1_u32: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0015             MOVS     R5,R2
+   \        0x6   0x001F             MOVS     R7,R3
+     45            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x8   0x2600             MOVS     R6,#+0
+     46            switch (next_state_u8)
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD006             BEQ      ??moduleADC1_u32_0
+   \       0x12   0x2801             CMP      R0,#+1
+   \       0x14   0xD008             BEQ      ??moduleADC1_u32_1
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD010             BEQ      ??moduleADC1_u32_2
+   \       0x1A   0x28FF             CMP      R0,#+255
+   \       0x1C   0xD010             BEQ      ??moduleADC1_u32_3
+   \       0x1E   0xE023             B        ??moduleADC1_u32_4
+     47            {
+     48            case MEMORY_INIT_MODULE:
+     49              {
+     50                AssignModuleMemAdc1(); // Assign structured memory
+   \                     ??moduleADC1_u32_0: (+1)
+   \       0x20   0x....'....        BL       AssignModuleMemAdc1
+     51                return_state_u8 = INIT_MODULE;
+   \       0x24   0x2101             MOVS     R1,#+1
+     52                break;
+   \       0x26   0xE020             B        ??moduleADC1_u32_5
+     53              }
+     54            case INIT_MODULE:
+     55              {
+     56                //AssignModuleMemAdc1(); //Assign RAM memory for ADC structures      
+     57                adc1_Init();
+   \                     ??moduleADC1_u32_1: (+1)
+   \       0x28   0x....'....        BL       adc1_Init
+     58                configDma();
+   \       0x2C   0x....'....        BL       configDma
+     59                
+     60                // Activate ADC 
+     61                // Perform ADC activation procedure to make it ready to convert. 
+     62                activate_ADC();
+   \       0x30   0x....'....        BL       activate_ADC
+     63                start_ADC1_Conversion();
+   \       0x34   0x....'....        BL       start_ADC1_Conversion
+     64                
+     65                return_state_u8 = RUN_MODULE;
+   \       0x38   0x2102             MOVS     R1,#+2
+     66                break;
+   \       0x3A   0xE016             B        ??moduleADC1_u32_5
+     67                
+     68              }   
+     69            case RUN_MODULE:                                                             
+     70              {
+     71                //This module need only execute once then kill this process, in case want to run it again programmer can enable this process again by 
+     72                //set the processStatus parameter to 0x00 and set the nextStage parameter to stage 0 or any stage 
+     73                return_state_u8 = KILL_MODULE;
+   \                     ??moduleADC1_u32_2: (+1)
+   \       0x3C   0x21FF             MOVS     R1,#+255
+     74                break;
+   \       0x3E   0xE014             B        ??moduleADC1_u32_5
+     75              }
+     76            case KILL_MODULE: 
+     77              {
+     78                // The adc1 module must only be executed once.
+     79                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+     80                uint8_t table_index_u8 = getProcessInfoIndex(drv_id_u8);
+   \                     ??moduleADC1_u32_3: (+1)
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0xB2C0             UXTB     R0,R0
+   \       0x44   0x....'....        BL       getProcessInfoIndex
+     81                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x48   0x0001             MOVS     R1,R0
+   \       0x4A   0xB2C9             UXTB     R1,R1
+   \       0x4C   0x29FF             CMP      R1,#+255
+   \       0x4E   0xD009             BEQ      ??moduleADC1_u32_6
+     82                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0x50   0x23FF             MOVS     R3,#+255
+   \       0x52   0x....             LDR      R1,??DataTable1
+   \       0x54   0x468C             MOV      R12,R1
+   \       0x56   0x0002             MOVS     R2,R0
+   \       0x58   0xB2D2             UXTB     R2,R2
+   \       0x5A   0x2116             MOVS     R1,#+22
+   \       0x5C   0x434A             MULS     R2,R1,R2
+   \       0x5E   0x4661             MOV      R1,R12
+   \       0x60   0x1889             ADDS     R1,R1,R2
+   \       0x62   0x728B             STRB     R3,[R1, #+10]
+     83                }
+     84                return_state_u8 = KILL_MODULE;
+   \                     ??moduleADC1_u32_6: (+1)
+   \       0x64   0x21FF             MOVS     R1,#+255
+     85                break;
+   \       0x66   0xE000             B        ??moduleADC1_u32_5
+     86              }
+     87            default:
+     88              {
+     89                return_state_u8 = 10; 
+   \                     ??moduleADC1_u32_4: (+1)
+   \       0x68   0x210A             MOVS     R1,#+10
+     90                break;
+     91              }
+     92            }
+     93            return return_state_u8;
+   \                     ??moduleADC1_u32_5: (+1)
+   \       0x6A   0x0008             MOVS     R0,R1
+   \       0x6C   0xB2C0             UXTB     R0,R0
+   \       0x6E   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     94          } 
+     95          
+     96          /**
+     97          ********************************************************************************************************************************
+     98          * @brief   Assign structured memory
+     99          * @details Assign structured memory for adc1_Control and init strcture variables
+    100          * @param   None
+    101          * @retval  None
+    102          ********************************************************************************************************************************
+    103          */
+
+   \                                 In section .text, align 2, keep-with-next
+    104          void AssignModuleMemAdc1(){  
+   \                     AssignModuleMemAdc1: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+    105            adc1_Control_StructMem_u32 =  StructMem_CreateInstance(MODULE_ADC1, sizeof(ADC1_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R5,??DataTable1_1
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x210E             MOVS     R1,#+14
+   \        0xE   0x2004             MOVS     R0,#+4
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6028             STR      R0,[R5, #+0]
+    106            (*adc1_Control_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&adc1_Control ;    //map the ADC1 memory into the structured memory
+   \       0x16   0x....             LDR      R4,??DataTable1_2
+   \       0x18   0x6828             LDR      R0,[R5, #+0]
+   \       0x1A   0x6004             STR      R4,[R0, #+0]
+    107            uint8_t Drv_ADC1Index = getProcessInfoIndex(MODULE_ADC1);
+   \       0x1C   0x2004             MOVS     R0,#+4
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0006             MOVS     R6,R0
+    108            processInfoTable[Drv_ADC1Index].Sched_DrvData.p_masterSharedMem_u32 = adc1_Control_StructMem_u32;  
+   \       0x24   0x....             LDR      R0,??DataTable1
+   \       0x26   0x0031             MOVS     R1,R6
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6828             LDR      R0,[R5, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    109            
+    110            adc1_Control.adc1_Result.adc1_0_10V_Result_u16 = 0;   //clear the ADC1 result
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x0001             MOVS     R1,R0
+   \       0x3E   0x8021             STRH     R1,[R4, #+0]
+    111            adc1_Control.adc1_Result.adc1_4_20mA_Result_u16 = 0;  //clear the ADC1 result
+   \       0x40   0x0001             MOVS     R1,R0
+   \       0x42   0x8061             STRH     R1,[R4, #+2]
+    112            adc1_Control.adc1_Result.adc1_Temp_Result_u16 = 0;    //clear the ADC1 result
+   \       0x44   0x0001             MOVS     R1,R0
+   \       0x46   0x80A1             STRH     R1,[R4, #+4]
+    113            
+    114            adc1_Control.adc1_ResultAvg.adc1_0_10V_Avg_u16 = 0;   //clear the ADC1 Avg result
+   \       0x48   0x0001             MOVS     R1,R0
+   \       0x4A   0x80E1             STRH     R1,[R4, #+6]
+    115            adc1_Control.adc1_ResultAvg.adc1_4_20mA_Avg_u16 = 0;  //clear the ADC1 Avg result
+   \       0x4C   0x0001             MOVS     R1,R0
+   \       0x4E   0x8121             STRH     R1,[R4, #+8]
+    116            adc1_Control.adc1_ResultAvg.adc1_Temp_Avg_u16 = 0;    //clear the ADC1 Avg result
+   \       0x50   0x0001             MOVS     R1,R0
+   \       0x52   0x8161             STRH     R1,[R4, #+10]
+    117            adc1_Control.adc1_ResultAvg.errorCode_u8 = 0;
+   \       0x54   0x7320             STRB     R0,[R4, #+12]
+    118          }
+   \       0x56   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     adc1_Control_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     adc1_Control
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   AssignModuleMemAdc1
+        24   -> StructMem_CreateInstance
+        24   -> getProcessInfoIndex
+        24 __aeabi_uwrite4
+      24   moduleADC1_u32
+        24   -> AssignModuleMemAdc1
+        24   -> activate_ADC
+        24   -> adc1_Init
+        24   -> configDma
+        24   -> getProcessInfoIndex
+        24   -> start_ADC1_Conversion
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      88  AssignModuleMemAdc1
+       4  adc1_Control_StructMem_u32
+     112  moduleADC1_u32
+
+ 
+   4 bytes in section .bss
+ 212 bytes in section .text
+ 
+ 212 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

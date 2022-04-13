@@ -1,0 +1,1037 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:50
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\scheduler.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWEEB7.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\scheduler.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\scheduler.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\scheduler.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\scheduler.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    scheduler.c
+      4            * @author  Pamela Lee
+      5            * @brief   Implementation of c++ function/s for the kernel scheduler. 
+      6            * @details Modules and drivers are collectively known as processes. This file contains the implementation of function related to
+      7            *             scheduling processes and handling their respective driver interrupts, if any. The function scheduler_run is the
+      8            *             'main loop' of the FlexMouse architecture.
+      9            ********************************************************************************************************************************
+     10            */
+     11          
+     12          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     13          #include "scheduler.h"
+     14          
+     15          #include "main.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_CRC_ResetCRCCalculationUnit(CRC_TypeDef *)
+   \                     LL_CRC_ResetCRCCalculationUnit: (+1)
+   \        0x0   0x6881             LDR      R1,[R0, #+8]
+   \        0x2   0x2201             MOVS     R2,#+1
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6082             STR      R2,[R0, #+8]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_CRC_FeedData8(CRC_TypeDef *, uint8_t)
+   \                     LL_CRC_FeedData8: (+1)
+   \        0x0   0x7001             STRB     R1,[R0, #+0]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_CRC_ReadData32(CRC_TypeDef *)
+   \                     LL_CRC_ReadData32: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint16_t LL_CRC_ReadData16(CRC_TypeDef *)
+   \                     LL_CRC_ReadData16: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+   \        0x2   0xB280             UXTH     R0,R0
+   \        0x4   0x4770             BX       LR               ;; return
+     16          //#include "stm32f3xx_ll_iwdg.h"
+     17          //volatile uint64_t tickCounter = 0;
+
+   \                                 In section app_crc32_rom, align 4, root
+     18          __root const uint32_t App_CRC @ "app_crc32_rom" = 0x00000000; // This is a placeholder for App Firmware Checksum (CRC32)
+   \                     App_CRC:
+   \        0x0   0x0000'0000        DC32 0
+     19          
+     20          /*Software interrupt variable in bit oriented
+     21            * SoftwareIrqBitPt[0] of binary IRQ process (from 0 to 63), 
+     22            * SoftwareIrqBitPt[1] of binary IRQ process (from 64 to 127)
+     23            * SoftwareIrqBitPt[2] of binary IRQ process (from 128 to 191)
+     24            * SoftwareIrqBitPt[3] of binary IRQ process (from 192 to 254)
+     25          */
+     26          
+
+   \                                 In section .bss, align 8
+     27          static uint64_t SoftwareIrqBitPt[] = { 0,0,0,0 };        
+   \                     SoftwareIrqBitPt:
+   \        0x0                      DS8 32
+
+   \                                 In section .data, align 1
+     28          static uint8_t  IrqTrigProcessID = 255;        //current module/process (ID) trigged IRQ 
+   \                     IrqTrigProcessID:
+   \        0x0   0xFF               DC8 255
+     29          
+     30          
+     31          extern volatile uint64_t tickCounter; //SPA
+     32          // REVIEW: Placement
+     33          
+     34          /* Content ---------------------------------------------------------------------------------------------------------------------*/
+
+   \                                 In section .data, align 4
+     35          ProcessInfo processInfoTable[TOTAL_NUM_OF_PROCESSES] = {
+   \                     processInfoTable:
+   \        0x0   0x00               DC8 0
+   \        0x1   0x....'....        DC32 moduleFlash_u32
+   \        0x5   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \        0xB   0x0000'0000        DC32 0x0
+   \        0xF                      DS8 2
+   \       0x11                      DS8 5
+   \       0x16   0x01               DC8 1
+   \       0x17   0x....'....        DC32 moduleGPIO_u32
+   \       0x1B   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0x21   0x0000'0000        DC32 0x0
+   \       0x25                      DS8 2
+   \       0x27                      DS8 5
+   \       0x2C   0x02               DC8 2
+   \       0x2D   0x....'....        DC32 moduleTim1_u32
+   \       0x31   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0x37   0x0000'0000        DC32 0x0
+   \       0x3B                      DS8 2
+   \       0x3D                      DS8 5
+   \       0x42   0x03               DC8 3
+   \       0x43   0x....'....        DC32 moduleUsart2_u32
+   \       0x47   0x04 0x01          DC8 4, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0x4D   0x0000'0000        DC32 0x0
+   \       0x51                      DS8 2
+   \       0x53                      DS8 5
+   \       0x58   0x04               DC8 4
+   \       0x59   0x....'....        DC32 moduleADC1_u32
+   \       0x5D   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0x63   0x0000'0000        DC32 0x0
+   \       0x67                      DS8 2
+   \       0x69                      DS8 5
+   \       0x6E   0x05               DC8 5
+   \       0x6F   0x....'....        DC32 moduleAnalog_0_10V
+   \       0x73   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0x79   0x0000'0000        DC32 0x0
+   \       0x7D                      DS8 2
+   \       0x7F                      DS8 5
+   \       0x84   0x06               DC8 6
+   \       0x85   0x....'....        DC32 moduleAnalog_4_20mA
+   \       0x89   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0x8F   0x0000'0000        DC32 0x0
+   \       0x93                      DS8 2
+   \       0x95                      DS8 5
+   \       0x9A   0x07               DC8 7
+   \       0x9B   0x....'....        DC32 module_Digital_Inputs_u32
+   \       0x9F   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0xA5   0x0000'0000        DC32 0x0
+   \       0xA9                      DS8 2
+   \       0xAB                      DS8 5
+   \       0xB0   0x08               DC8 8
+   \       0xB1   0x....'....        DC32 modulePWM_Input_u32
+   \       0xB5   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0xBB   0x0000'0000        DC32 0x0
+   \       0xBF                      DS8 2
+   \       0xC1                      DS8 5
+   \       0xC6   0x09               DC8 9
+   \       0xC7   0x....'....        DC32 moduleUsart1
+   \       0xCB   0x03 0x01          DC8 3, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0xD1   0x0000'0000        DC32 0x0
+   \       0xD5                      DS8 2
+   \       0xD7                      DS8 5
+   \       0xDC   0x0A               DC8 10
+   \       0xDD   0x....'....        DC32 moduleSPI1_u32
+   \       0xE1   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0xE7   0x0000'0000        DC32 0x0
+   \       0xEB                      DS8 2
+   \       0xED                      DS8 5
+   \       0xF2   0x0B               DC8 11
+   \       0xF3   0x....'....        DC32 moduleModbus
+   \       0xF7   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \       0xFD   0x0000'0000        DC32 0x0
+   \      0x101                      DS8 2
+   \      0x103                      DS8 5
+   \      0x108   0x0C               DC8 12
+   \      0x109   0x....'....        DC32 moduleMotorDemandMultiplexer_u32
+   \      0x10D   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \      0x113   0x0000'0000        DC32 0x0
+   \      0x117                      DS8 2
+   \      0x119                      DS8 5
+   \      0x11E   0x0D               DC8 13
+   \      0x11F   0x....'....        DC32 module_Motor_Com_u32
+   \      0x123   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \      0x129   0x0000'0000        DC32 0x0
+   \      0x12D                      DS8 2
+   \      0x12F                      DS8 5
+   \      0x134   0x0E               DC8 14
+   \      0x135   0x....'....        DC32 module_Digital_Outputs_u32
+   \      0x139   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \      0x13F   0x0000'0000        DC32 0x0
+   \      0x143                      DS8 2
+   \      0x145                      DS8 5
+   \      0x14A   0x0F               DC8 15
+   \      0x14B   0x....'....        DC32 moduleErrorLog_u32
+   \      0x14F   0x00 0x01          DC8 0, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \      0x155   0x0000'0000        DC32 0x0
+   \      0x159                      DS8 2
+   \      0x15B                      DS8 5
+   \      0x160   0x10               DC8 16
+   \      0x161   0x....'....        DC32 moduleTest_u32
+   \      0x165   0x02 0x01          DC8 2, 1, 0, 0, 200, 0
+
+   \              0x00 0x00    
+
+   \              0xC8 0x00
+   \      0x16B   0x0000'0000        DC32 0x0
+   \      0x16F                      DS8 2
+   \      0x171                      DS8 5
+   \      0x176                      DS8 2
+     36              // Application Modules
+     37              // - Driver Extensions
+     38              {MODULE_FLASH_ID, MODULE_FLASH_FUNCTION_POINTER, MODULE_FLASH_TOTAL_SEQ, MODULE_FLASH_TOTAL_STRUCT, MODULE_FLASH_PREV_STATE,
+     39               MODULE_FLASH_NEXT_STATE, MODULE_FLASH_IRQ_STATUS, MODULE_FLASH_PROCESS_STATUS, MODULE_FLASH_MASTER_SHARED_MEM},
+     40               
+     41              {MODULE_GPIO_ID, MODULE_GPIO_FUNCTION_POINTER, MODULE_GPIO_TOTAL_SEQ, MODULE_GPIO_TOTAL_STRUCT, MODULE_GPIO_PREV_STATE,
+     42               MODULE_GPIO_NEXT_STATE, MODULE_GPIO_IRQ_STATUS, MODULE_GPIO_PROCESS_STATUS, MODULE_GPIO_MASTER_SHARED_MEM},
+     43               
+     44              {MODULE_TIM1_ID, MODULE_TIM1_FUNCTION_POINTER, MODULE_TIM1_TOTAL_SEQ, MODULE_TIM1_TOTAL_STRUCT, MODULE_TIM1_PREV_STATE,
+     45               MODULE_TIM1_NEXT_STATE, MODULE_TIM1_IRQ_STATUS, MODULE_TIM1_PROCESS_STATUS, MODULE_TIM1_MASTER_SHARED_MEM},
+     46               
+     47              {MODULE_USART2_ID, MODULE_USART2_FUNCTION_POINTER, MODULE_USART2_TOTAL_SEQ, MODULE_USART2_TOTAL_STRUCT, MODULE_USART2_PREV_STATE,
+     48               MODULE_USART2_NEXT_STATE, MODULE_USART2_IRQ_STATUS, MODULE_USART2_PROCESS_STATUS, MODULE_USART2_MASTER_SHARED_MEM},
+     49               
+     50              {MODULE_ADC1_ID, MODULE_ADC1_FUNCTION_POINTER, MODULE_ADC1_TOTAL_SEQ, MODULE_ADC1_TOTAL_STRUCT, MODULE_ADC1_PREV_STATE,
+     51               MODULE_ADC1_NEXT_STATE, MODULE_ADC1_IRQ_STATUS, MODULE_ADC1_PROCESS_STATUS, MODULE_ADC1_MASTER_SHARED_MEM},
+     52              // - Input Sources
+     53              {MODULE_ANALOG_0_10V_ID, MODULE_ANALOG_0_10V_FUNCTION_POINTER, MODULE_ANALOG_0_10V_TOTAL_SEQ, MODULE_ANALOG_0_10V_TOTAL_STRUCT, MODULE_ANALOG_0_10V_PREV_STATE,
+     54               MODULE_ANALOG_0_10V_NEXT_STATE, MODULE_ANALOG_0_10V_IRQ_STATUS, MODULE_ANALOG_0_10V_PROCESS_STATUS, MODULE_ANALOG_0_10V_MASTER_SHARED_MEM},
+     55               // 4-20mA
+     56              {MODULE_ANALOG_4_20MA_ID, MODULE_ANALOG_4_20MA_FUNCTION_POINTER, MODULE_ANALOG_4_20MA_TOTAL_SEQ, MODULE_ANALOG_4_20MA_TOTAL_STRUCT, MODULE_ANALOG_4_20MA_PREV_STATE,
+     57               MODULE_ANALOG_4_20MA_NEXT_STATE, MODULE_ANALOG_4_20MA_IRQ_STATUS, MODULE_ANALOG_4_20MA_PROCESS_STATUS, MODULE_ANALOG_4_20MA_MASTER_SHARED_MEM},
+     58              // Digital Inputs 
+     59              {MODULE_DIGITAL_INPUTS_ID, MODULE_DIGITAL_INPUTS_FUNCTION_POINTER, MODULE_DIGITAL_INPUTS_TOTAL_SEQ, MODULE_DIGITAL_INPUTS_TOTAL_STRUCT, MODULE_DIGITAL_INPUTS_PREV_STATE,     
+     60               MODULE_DIGITAL_INPUTS_NEXT_STATE, MODULE_DIGITAL_INPUTS_IRQ_STATUS, MODULE_DIGITAL_INPUTS_PROCESS_STATUS, MODULE_DIGITAL_INPUTS_MASTER_SHARED_MEM},
+     61              // PWM Input
+     62              {MODULE_PWM_INPUT_ID, MODULE_PWM_INPUT_FUNCTION_POINTER, MODULE_PWM_INPUT_TOTAL_SEQ, MODULE_PWM_INPUT_TOTAL_STRUCT, MODULE_PWM_INPUT_PREV_STATE,     
+     63               MODULE_PWM_INPUT_NEXT_STATE, MODULE_PWM_INPUT_IRQ_STATUS, MODULE_PWM_INPUT_PROCESS_STATUS, MODULE_PWM_INPUT_MASTER_SHARED_MEM},
+     64                  
+     65              // - Modbus
+     66              {MODULE_USART1_ID, MODULE_USART1_FUNCTION_POINTER, MODULE_USART1_TOTAL_SEQ, MODULE_USART1_TOTAL_STRUCT, MODULE_USART1_PREV_STATE,
+     67              MODULE_USART1_NEXT_STATE, MODULE_USART1_IRQ_STATUS, MODULE_USART1_PROCESS_STATUS, MODULE_USART1_MASTER_SHARED_MEM},
+     68          
+     69              // SPI
+     70              {MODULE_SPI1_ID, MODULE_SPI1_FUNCTION_POINTER, MODULE_SPI1_TOTAL_SEQ, MODULE_SPI1_TOTAL_STRUCT, MODULE_SPI1_PREV_STATE,
+     71               MODULE_SPI1_NEXT_STATE, MODULE_SPI1_IRQ_STATUS, MODULE_SPI1_PROCESS_STATUS, MODULE_SPI1_MASTER_SHARED_MEM},
+     72              
+     73              {MODULE_MODBUS_ID, MODULE_MODBUS_FUNCTION_POINTER, MODULE_MODBUS_TOTAL_SEQ, MODULE_MODBUS_TOTAL_STRUCT, MODULE_MODBUS_PREV_STATE,
+     74              MODULE_MODBUS_NEXT_STATE, MODULE_MODBUS_IRQ_STATUS, MODULE_MODBUS_PROCESS_STATUS, MODULE_MODBUS_MASTER_SHARED_MEM},
+     75              
+     76              // - Input Source Selector
+     77              // MODULE_MOTOR_DEMAND_MUX must stay below all input sources, in order to accurately grab a pointer to each input sources structure.
+     78              {MODULE_MOTOR_DEMAND_MUX_ID, MODULE_MOTOR_DEMAND_MUX_FUNCTION_POINTER, MODULE_MOTOR_DEMAND_MUX_TOTAL_SEQ, MODULE_MOTOR_DEMAND_MUX_TOTAL_STRUCT, MODULE_MOTOR_DEMAND_MUX_PREV_STATE,     
+     79               MODULE_MOTOR_DEMAND_MUX_NEXT_STATE, MODULE_MOTOR_DEMAND_MUX_IRQ_STATUS, MODULE_MOTOR_DEMAND_MUX_PROCESS_STATUS, MODULE_MOTOR_DEMAND_MUX_MASTER_SHARED_MEM},
+     80               
+     81              // MODULE_MOTOR_COM must stay below MODULE_MOTOR_DEMAND_MUX, in order to accurately grab a pointer to the MOTOR_DEMAND_MUX structure.
+     82              {MODULE_MOTOR_COM_ID, MODULE_MOTOR_COM_FUNCTION_POINTER, MODULE_MOTOR_COM_TOTAL_SEQ, MODULE_MOTOR_COM_TOTAL_STRUCT, MODULE_MOTOR_COM_PREV_STATE,     
+     83               MODULE_MOTOR_COM_NEXT_STATE, MODULE_MOTOR_COM_IRQ_STATUS, MODULE_MOTOR_COM_PROCESS_STATUS, MODULE_MOTOR_COM_MASTER_SHARED_MEM},
+     84              
+     85              // - Digital Outputs
+     86              {MODULE_DIGITAL_OUTPUTS_ID, MODULE_DIGITAL_OUTPUTS_FUNCTION_POINTER, MODULE_DIGITAL_OUTPUTS_TOTAL_SEQ, MODULE_DIGITAL_OUTPUTS_TOTAL_STRUCT, MODULE_DIGITAL_OUTPUTS_PREV_STATE,     
+     87              MODULE_DIGITAL_OUTPUTS_NEXT_STATE, MODULE_DIGITAL_OUTPUTS_IRQ_STATUS, MODULE_DIGITAL_OUTPUTS_PROCESS_STATUS, MODULE_DIGITAL_OUTPUTS_MASTER_SHARED_MEM},
+     88              
+     89              {MODULE_ERR_LOGHANDLE_ID, MODULE_ERR_LOGHANDLE_FUNCTION_POINTER, MODULE_ERR_LOGHANDLE_TOTAL_SEQ, MODULE_ERR_LOGHANDLE_TOTAL_STRUCT, MODULE_ERR_LOGHANDLE_PREV_STATE,
+     90               MODULE_ERR_LOGHANDLE_NEXT_STATE, MODULE_ERR_LOGHANDLE_IRQ_STATUS, MODULE_ERR_LOGHANDLE_PROCESS_STATUS, MODULE_ERR_LOGHANDLE_MASTER_SHARED_MEM},
+     91          
+     92             // Test Module
+     93              {MODULE_TEST_ID, MODULE_TEST_FUNCTION_POINTER, MODULE_TEST_TOTAL_SEQ, MODULE_TEST_TOTAL_STRUCT, MODULE_TEST_PREV_STATE,
+     94               MODULE_TEST_NEXT_STATE, MODULE_TEST_IRQ_STATUS, MODULE_TEST_PROCESS_STATUS, MODULE_TEST_MASTER_SHARED_MEM},
+     95          
+     96          //    {MODULE_FLASH_BLK_SETTING_ID, MODULE_FLASH_BLK_SETTING_FUNCTION_POINTER, MODULE_FLASH_BLK_SETTING_TOTAL_SEQ, MODULE_FLASH_BLK_SETTING_TOTAL_STRUCT, MODULE_FLASH_BLK_SETTING_PREV_STATE,     
+     97          //     MODULE_FLASH_BLK_SETTING_NEXT_STATE, MODULE_FLASH_BLK_SETTING_IRQ_STATUS, MODULE_FLASH_BLK_SETTING_PROCESS_STATUS, MODULE_FLASH_BLK_SETTING_MASTER_SHARED_MEM},   
+     98               
+     99          //    {MODULE_MOTOR_FW_UPDATE_ID, MODULE_MOTOR_FW_UPDATE_FUNCTION_POINTER, MODULE_MOTOR_FW_UPDATE_TOTAL_SEQ, MODULE_MOTOR_FW_UPDATE_TOTAL_STRUCT, MODULE_MOTOR_FW_UPDATE_PREV_STATE,     
+    100          //     MODULE_MOTOR_FW_UPDATE_NEXT_STATE, MODULE_MOTOR_FW_UPDATE_IRQ_STATUS, MODULE_MOTOR_FW_UPDATE_PROCESS_STATUS, MODULE_MOTOR_FW_UPDATE_MASTER_SHARED_MEM},   
+    101               
+    102          };
+    103          
+    104          
+
+   \                                 In section .text, align 2, keep-with-next
+    105          uint8_t Sched_Initialize() {
+   \                     Sched_Initialize: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    106              StructMem_InitBufs();
+   \        0x2   0x....'....        BL       StructMem_InitBufs
+    107              SeqMem_InitBufs();
+   \        0x6   0x....'....        BL       SeqMem_InitBufs
+    108          
+    109          
+    110              // Watchdog_Initialize(NUM_OF_625_MS_INC);
+    111          
+    112              return TRUE;
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0xBD02             POP      {R1,PC}          ;; return
+    113          }
+    114          
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void Sched_Run() {
+   \                     Sched_Run: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    116              while (TRUE) {
+    117                  // Run each process with nextState_u8, save nextState_u8 as prevState_u8, and update nextState_u8 using return value.
+    118                  for (uint8_t table_index_u8 = 0; table_index_u8 < TOTAL_NUM_OF_PROCESSES; table_index_u8++) 
+   \                     ??Sched_Run_0: (+1)
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x4669             MOV      R1,SP
+   \        0x6   0x7008             STRB     R0,[R1, #+0]
+   \                     ??Sched_Run_1: (+1)
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x7800             LDRB     R0,[R0, #+0]
+   \        0xC   0x2811             CMP      R0,#+17
+   \        0xE   0xDAF8             BGE      ??Sched_Run_0
+    119                  {
+    120                      if (processInfoTable[table_index_u8].Sched_ModuleData.processStatus_u8 == PROCESS_STATUS_RUNNING) 
+   \       0x10   0x....             LDR      R0,??DataTable6
+   \       0x12   0x4669             MOV      R1,SP
+   \       0x14   0x7809             LDRB     R1,[R1, #+0]
+   \       0x16   0x2216             MOVS     R2,#+22
+   \       0x18   0x4351             MULS     R1,R2,R1
+   \       0x1A   0x1840             ADDS     R0,R0,R1
+   \       0x1C   0x7A80             LDRB     R0,[R0, #+10]
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD13A             BNE      ??Sched_Run_2
+    121                      {
+    122                          uint8_t current_state_u8 = processInfoTable[table_index_u8].Sched_ModuleData.nextState_u8;
+   \       0x22   0x....             LDR      R0,??DataTable6
+   \       0x24   0x4669             MOV      R1,SP
+   \       0x26   0x7809             LDRB     R1,[R1, #+0]
+   \       0x28   0x2216             MOVS     R2,#+22
+   \       0x2A   0x4351             MULS     R1,R2,R1
+   \       0x2C   0x1840             ADDS     R0,R0,R1
+   \       0x2E   0x7A04             LDRB     R4,[R0, #+8]
+    123                          processInfoTable[table_index_u8].Sched_ModuleData.nextState_u8 =
+    124                              (*processInfoTable[table_index_u8].Sched_ModuleData.p_module_u32)(
+    125                                  processInfoTable[table_index_u8].Sched_ModuleData.moduleId_u8,
+    126                                  processInfoTable[table_index_u8].Sched_ModuleData.prevState_u8,
+    127                                  processInfoTable[table_index_u8].Sched_ModuleData.nextState_u8,
+    128                                  processInfoTable[table_index_u8].Sched_ModuleData.irqState_u8);
+   \       0x30   0x....             LDR      R0,??DataTable6
+   \       0x32   0x4669             MOV      R1,SP
+   \       0x34   0x7809             LDRB     R1,[R1, #+0]
+   \       0x36   0x2216             MOVS     R2,#+22
+   \       0x38   0x4351             MULS     R1,R2,R1
+   \       0x3A   0x1840             ADDS     R0,R0,R1
+   \       0x3C   0x1C40             ADDS     R0,R0,#+1
+   \       0x3E   0x....'....        BL       __aeabi_uread4
+   \       0x42   0x0005             MOVS     R5,R0
+   \       0x44   0x....             LDR      R0,??DataTable6
+   \       0x46   0x4669             MOV      R1,SP
+   \       0x48   0x7809             LDRB     R1,[R1, #+0]
+   \       0x4A   0x2216             MOVS     R2,#+22
+   \       0x4C   0x4351             MULS     R1,R2,R1
+   \       0x4E   0x1840             ADDS     R0,R0,R1
+   \       0x50   0x7A43             LDRB     R3,[R0, #+9]
+   \       0x52   0x....             LDR      R0,??DataTable6
+   \       0x54   0x4669             MOV      R1,SP
+   \       0x56   0x7809             LDRB     R1,[R1, #+0]
+   \       0x58   0x2216             MOVS     R2,#+22
+   \       0x5A   0x4351             MULS     R1,R2,R1
+   \       0x5C   0x1840             ADDS     R0,R0,R1
+   \       0x5E   0x7A02             LDRB     R2,[R0, #+8]
+   \       0x60   0x....             LDR      R0,??DataTable6
+   \       0x62   0x4669             MOV      R1,SP
+   \       0x64   0x7809             LDRB     R1,[R1, #+0]
+   \       0x66   0x2616             MOVS     R6,#+22
+   \       0x68   0x4371             MULS     R1,R6,R1
+   \       0x6A   0x1840             ADDS     R0,R0,R1
+   \       0x6C   0x79C1             LDRB     R1,[R0, #+7]
+   \       0x6E   0x....             LDR      R0,??DataTable6
+   \       0x70   0x466E             MOV      R6,SP
+   \       0x72   0x7836             LDRB     R6,[R6, #+0]
+   \       0x74   0x2716             MOVS     R7,#+22
+   \       0x76   0x437E             MULS     R6,R7,R6
+   \       0x78   0x5D80             LDRB     R0,[R0, R6]
+   \       0x7A   0x47A8             BLX      R5
+   \       0x7C   0x....             LDR      R1,??DataTable6
+   \       0x7E   0x466A             MOV      R2,SP
+   \       0x80   0x7812             LDRB     R2,[R2, #+0]
+   \       0x82   0x2316             MOVS     R3,#+22
+   \       0x84   0x435A             MULS     R2,R3,R2
+   \       0x86   0x1889             ADDS     R1,R1,R2
+   \       0x88   0x7208             STRB     R0,[R1, #+8]
+    129                          processInfoTable[table_index_u8].Sched_ModuleData.prevState_u8 = current_state_u8;
+   \       0x8A   0x....             LDR      R0,??DataTable6
+   \       0x8C   0x4669             MOV      R1,SP
+   \       0x8E   0x7809             LDRB     R1,[R1, #+0]
+   \       0x90   0x2216             MOVS     R2,#+22
+   \       0x92   0x4351             MULS     R1,R2,R1
+   \       0x94   0x1840             ADDS     R0,R0,R1
+   \       0x96   0x71C4             STRB     R4,[R0, #+7]
+    130                      }
+    131                      // Iterate through the interrupt register when an interrupt is present.
+    132                      // Handle each event sequentially by calling the interrupt handler of the driver's respective associated module.
+    133                      // Clear each event from the register after being handled.
+    134                      // After the event is handled, the module's previousStage_u8 remains unchanged, so normal operation can resume.
+    135                      while (SoftwareIrqBitPt[0] || SoftwareIrqBitPt[1] || SoftwareIrqBitPt[2] || SoftwareIrqBitPt[3]) {    
+   \                     ??Sched_Run_2: (+1)
+   \       0x98   0x....             LDR      R0,??DataTable6_1
+   \       0x9A   0xC803             LDM      R0,{R0,R1}
+   \       0x9C   0x2900             CMP      R1,#+0
+   \       0x9E   0xD116             BNE      ??Sched_Run_3
+   \       0xA0   0x2800             CMP      R0,#+0
+   \       0xA2   0xD114             BNE      ??Sched_Run_3
+   \       0xA4   0x....             LDR      R0,??DataTable6_2
+   \       0xA6   0xC803             LDM      R0,{R0,R1}
+   \       0xA8   0x2900             CMP      R1,#+0
+   \       0xAA   0xD110             BNE      ??Sched_Run_3
+   \       0xAC   0x2800             CMP      R0,#+0
+   \       0xAE   0xD10E             BNE      ??Sched_Run_3
+   \       0xB0   0x....             LDR      R2,??DataTable6_1
+   \       0xB2   0x0010             MOVS     R0,R2
+   \       0xB4   0x3010             ADDS     R0,R0,#+16
+   \       0xB6   0xC803             LDM      R0,{R0,R1}
+   \       0xB8   0x2900             CMP      R1,#+0
+   \       0xBA   0xD108             BNE      ??Sched_Run_3
+   \       0xBC   0x2800             CMP      R0,#+0
+   \       0xBE   0xD106             BNE      ??Sched_Run_3
+   \       0xC0   0x0010             MOVS     R0,R2
+   \       0xC2   0x3018             ADDS     R0,R0,#+24
+   \       0xC4   0xC803             LDM      R0,{R0,R1}
+   \       0xC6   0x2900             CMP      R1,#+0
+   \       0xC8   0xD101             BNE      ??Sched_Run_4
+   \       0xCA   0x2800             CMP      R0,#+0
+   \       0xCC   0xD056             BEQ      ??Sched_Run_5
+    136                          uint64_t shifter_u8 = SHIFTER; 
+   \                     ??Sched_Run_4: (+1)
+   \                     ??Sched_Run_3: (+1)
+   \       0xCE   0x2601             MOVS     R6,#+1
+   \       0xD0   0x2700             MOVS     R7,#+0
+    137                          uint8_t IrqGroupIndx_u8 = 0;
+   \       0xD2   0x2400             MOVS     R4,#+0
+   \       0xD4   0x4668             MOV      R0,SP
+   \       0xD6   0x7044             STRB     R4,[R0, #+1]
+    138                          for (uint8_t drv_id_u8 = MIN_IRQ_ID; drv_id_u8 <= MAX_IRQ_ID; drv_id_u8++) 
+   \                     ??Sched_Run_6: (+1)
+   \       0xD8   0x0020             MOVS     R0,R4
+   \       0xDA   0xB2C0             UXTB     R0,R0
+   \       0xDC   0x28FF             CMP      R0,#+255
+   \       0xDE   0xD0DB             BEQ      ??Sched_Run_2
+    139                          {
+    140                              if (SoftwareIrqBitPt[IrqGroupIndx_u8] & shifter_u8) 
+   \       0xE0   0x....             LDR      R0,??DataTable6_1
+   \       0xE2   0x4669             MOV      R1,SP
+   \       0xE4   0x7849             LDRB     R1,[R1, #+1]
+   \       0xE6   0x2208             MOVS     R2,#+8
+   \       0xE8   0x4351             MULS     R1,R2,R1
+   \       0xEA   0x1840             ADDS     R0,R0,R1
+   \       0xEC   0xC803             LDM      R0,{R0,R1}
+   \       0xEE   0x4030             ANDS     R0,R0,R6
+   \       0xF0   0x4039             ANDS     R1,R1,R7
+   \       0xF2   0x2900             CMP      R1,#+0
+   \       0xF4   0xD101             BNE      ??Sched_Run_7
+   \       0xF6   0x2800             CMP      R0,#+0
+   \       0xF8   0xD037             BEQ      ??Sched_Run_8
+    141                              {
+    142                                  if (getProcessInfoIndex(drv_id_u8) != INDEX_NOT_FOUND) 
+   \                     ??Sched_Run_7: (+1)
+   \       0xFA   0x0020             MOVS     R0,R4
+   \       0xFC   0xB2C0             UXTB     R0,R0
+   \       0xFE   0x....'....        BL       getProcessInfoIndex
+   \      0x102   0x28FF             CMP      R0,#+255
+   \      0x104   0xD031             BEQ      ??Sched_Run_8
+    143                                  {
+    144                                      (*processInfoTable[drv_id_u8].Sched_ModuleData.p_module_u32)(
+    145                                           processInfoTable[drv_id_u8].Sched_ModuleData.moduleId_u8,      //which software isr module ID
+    146                                           1,                                                             //this meaningless for prevState in interrupt
+    147                                           processInfoTable[drv_id_u8].Sched_ModuleData.irqState_u8,      //entry point/state for interrupt call back
+    148                                           IrqTrigProcessID);                                             //the interrupt triggered module 
+   \      0x106   0x....             LDR      R5,??DataTable6
+   \      0x108   0x0020             MOVS     R0,R4
+   \      0x10A   0xB2C0             UXTB     R0,R0
+   \      0x10C   0x2116             MOVS     R1,#+22
+   \      0x10E   0x4348             MULS     R0,R1,R0
+   \      0x110   0x1828             ADDS     R0,R5,R0
+   \      0x112   0x1C40             ADDS     R0,R0,#+1
+   \      0x114   0x....'....        BL       __aeabi_uread4
+   \      0x118   0x9001             STR      R0,[SP, #+4]
+   \      0x11A   0x....             LDR      R0,??DataTable6_3
+   \      0x11C   0x7803             LDRB     R3,[R0, #+0]
+   \      0x11E   0x0020             MOVS     R0,R4
+   \      0x120   0xB2C0             UXTB     R0,R0
+   \      0x122   0x2116             MOVS     R1,#+22
+   \      0x124   0x4348             MULS     R0,R1,R0
+   \      0x126   0x1828             ADDS     R0,R5,R0
+   \      0x128   0x7A42             LDRB     R2,[R0, #+9]
+   \      0x12A   0x2101             MOVS     R1,#+1
+   \      0x12C   0x46AC             MOV      R12,R5
+   \      0x12E   0x0020             MOVS     R0,R4
+   \      0x130   0xB2C0             UXTB     R0,R0
+   \      0x132   0x2516             MOVS     R5,#+22
+   \      0x134   0x4368             MULS     R0,R5,R0
+   \      0x136   0x4665             MOV      R5,R12
+   \      0x138   0x5C28             LDRB     R0,[R5, R0]
+   \      0x13A   0x9D01             LDR      R5,[SP, #+4]
+   \      0x13C   0x47A8             BLX      R5
+    149                                      SoftwareIrqBitPt[IrqGroupIndx_u8] &= ~shifter_u8;
+   \      0x13E   0x....             LDR      R5,??DataTable6_1
+   \      0x140   0x4668             MOV      R0,SP
+   \      0x142   0x7840             LDRB     R0,[R0, #+1]
+   \      0x144   0x2108             MOVS     R1,#+8
+   \      0x146   0x4348             MULS     R0,R1,R0
+   \      0x148   0x1828             ADDS     R0,R5,R0
+   \      0x14A   0xC803             LDM      R0,{R0,R1}
+   \      0x14C   0x0032             MOVS     R2,R6
+   \      0x14E   0x003B             MOVS     R3,R7
+   \      0x150   0x43D2             MVNS     R2,R2
+   \      0x152   0x43DB             MVNS     R3,R3
+   \      0x154   0x4002             ANDS     R2,R2,R0
+   \      0x156   0x400B             ANDS     R3,R3,R1
+   \      0x158   0x0010             MOVS     R0,R2
+   \      0x15A   0x0019             MOVS     R1,R3
+   \      0x15C   0x466A             MOV      R2,SP
+   \      0x15E   0x7852             LDRB     R2,[R2, #+1]
+   \      0x160   0x2308             MOVS     R3,#+8
+   \      0x162   0x435A             MULS     R2,R3,R2
+   \      0x164   0x18AA             ADDS     R2,R5,R2
+   \      0x166   0xC203             STM      R2!,{R0,R1}
+   \      0x168   0x3A08             SUBS     R2,R2,#+8
+    150                                  }
+    151                              }
+    152                              shifter_u8 <<= 1;
+   \                     ??Sched_Run_8: (+1)
+   \      0x16A   0x19B6             ADDS     R6,R6,R6
+   \      0x16C   0x417F             ADCS     R7,R7,R7
+    153                              IrqGroupIndx_u8 = (drv_id_u8 & 0xC0) >> 6; //get the current interrupted module groups number 
+   \      0x16E   0x0020             MOVS     R0,R4
+   \      0x170   0xB2C0             UXTB     R0,R0
+   \      0x172   0x0980             LSRS     R0,R0,#+6
+   \      0x174   0x4669             MOV      R1,SP
+   \      0x176   0x7048             STRB     R0,[R1, #+1]
+    154                          }              
+   \      0x178   0x1C64             ADDS     R4,R4,#+1
+   \      0x17A   0xE7AD             B        ??Sched_Run_6
+    155                      }
+    156                  }
+   \                     ??Sched_Run_5: (+1)
+   \      0x17C   0x4668             MOV      R0,SP
+   \      0x17E   0x7800             LDRB     R0,[R0, #+0]
+   \      0x180   0x1C40             ADDS     R0,R0,#+1
+   \      0x182   0x4669             MOV      R1,SP
+   \      0x184   0x7008             STRB     R0,[R1, #+0]
+   \      0x186   0xE73F             B        ??Sched_Run_1
+    157                  // Watchdog_Reload(); // Reload IWDG counter. TODO: Only call when MEERKAT is disabled by compiler directive
+    158                  // HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_8); // Toggle GPIO PC8
+    159                  // Insert delay 100 ms
+    160                  // HAL_Delay(10);
+    161              }
+    162          }
+    163          
+    164          
+
+   \                                 In section .text, align 2, keep-with-next
+    165          uint8_t getProcessInfoIndex(uint8_t moduleId_u8)        //return Process index from processInfo array with the appID
+    166          {
+   \                     getProcessInfoIndex: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0001             MOVS     R1,R0
+    167              uint8_t idValue= 255;
+   \        0x4   0x20FF             MOVS     R0,#+255
+    168              for(int i =0; i < TOTAL_NUM_OF_PROCESSES ; i++)
+   \        0x6   0x2200             MOVS     R2,#+0
+   \                     ??getProcessInfoIndex_0: (+1)
+   \        0x8   0x2A11             CMP      R2,#+17
+   \        0xA   0xDA0B             BGE      ??getProcessInfoIndex_1
+    169              {
+    170                 if(processInfoTable[i].Sched_ModuleData.moduleId_u8 == moduleId_u8)                               //find system appInfo of this driver
+   \        0xC   0x....             LDR      R3,??DataTable6
+   \        0xE   0x2416             MOVS     R4,#+22
+   \       0x10   0x4354             MULS     R4,R2,R4
+   \       0x12   0x5D1B             LDRB     R3,[R3, R4]
+   \       0x14   0x000C             MOVS     R4,R1
+   \       0x16   0xB2E4             UXTB     R4,R4
+   \       0x18   0x42A3             CMP      R3,R4
+   \       0x1A   0xD101             BNE      ??getProcessInfoIndex_2
+    171                 {
+    172                    idValue = i;
+   \       0x1C   0x0013             MOVS     R3,R2
+   \       0x1E   0x0018             MOVS     R0,R3
+    173                 }
+    174              }
+   \                     ??getProcessInfoIndex_2: (+1)
+   \       0x20   0x1C52             ADDS     R2,R2,#+1
+   \       0x22   0xE7F1             B        ??getProcessInfoIndex_0
+    175              return idValue;                                                               //not found
+   \                     ??getProcessInfoIndex_1: (+1)
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0xBD10             POP      {R4,PC}          ;; return
+    176          }
+    177          
+    178          /**
+    179            * @brief  This function performs CRC calculation on BufSize bytes from input data buffer aDataBuf.
+    180            * @param  BufSize Nb of bytes to be processed for CRC calculation
+    181            * @retval 16-bit CRC value computed on input data buffer
+    182            */
+
+   \                                 In section .text, align 2, keep-with-next
+    183          uint16_t Calculate_CRC(uint8_t BufSize, unsigned char* aDataBuf)
+    184          {
+   \                     Calculate_CRC: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    185            register uint8_t index = 0;
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x7005             STRB     R5,[R0, #+0]
+    186            LL_CRC_ResetCRCCalculationUnit(CRC);
+   \        0xC   0x....             LDR      R4,??DataTable6_4  ;; 0x40023000
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       LL_CRC_ResetCRCCalculationUnit
+    187            /* Compute the CRC of Data Buffer array*/
+    188            for (index = 0; index < BufSize ; index++)
+   \                     ??Calculate_CRC_0: (+1)
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x0039             MOVS     R1,R7
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0xB2C9             UXTB     R1,R1
+   \       0x1C   0x4288             CMP      R0,R1
+   \       0x1E   0xD207             BCS      ??Calculate_CRC_1
+    189            {
+    190              LL_CRC_FeedData8(CRC,aDataBuf[index] );
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0x5C31             LDRB     R1,[R6, R0]
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0x....'....        BL       LL_CRC_FeedData8
+    191            }
+   \       0x2C   0x1C6D             ADDS     R5,R5,#+1
+   \       0x2E   0xE7F1             B        ??Calculate_CRC_0
+    192            /* Return computed CRC value */
+    193            return (LL_CRC_ReadData16(CRC));
+   \                     ??Calculate_CRC_1: (+1)
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x....'....        BL       LL_CRC_ReadData16
+   \       0x36   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    194          }
+    195          
+    196          
+
+   \                                 In section .text, align 2, keep-with-next
+    197          uint32_t Calculate_CRC32(uint8_t BufSize, unsigned char* aDataBuf)
+    198          {
+   \                     Calculate_CRC32: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    199            register uint8_t index = 0;
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x4668             MOV      R0,SP
+   \        0xA   0x7005             STRB     R5,[R0, #+0]
+    200            LL_CRC_ResetCRCCalculationUnit(CRC);
+   \        0xC   0x....             LDR      R4,??DataTable6_4  ;; 0x40023000
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       LL_CRC_ResetCRCCalculationUnit
+    201            /* Compute the CRC of Data Buffer array*/
+    202            for (index = 0; index < BufSize ; index++)
+   \                     ??Calculate_CRC32_0: (+1)
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0x0039             MOVS     R1,R7
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0xB2C9             UXTB     R1,R1
+   \       0x1C   0x4288             CMP      R0,R1
+   \       0x1E   0xD207             BCS      ??Calculate_CRC32_1
+    203            {
+    204              LL_CRC_FeedData8(CRC,aDataBuf[index] );
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0x5C31             LDRB     R1,[R6, R0]
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0x....'....        BL       LL_CRC_FeedData8
+    205            }
+   \       0x2C   0x1C6D             ADDS     R5,R5,#+1
+   \       0x2E   0xE7F1             B        ??Calculate_CRC32_0
+    206            /* Return computed CRC value */
+    207            return (LL_CRC_ReadData32(CRC));
+   \                     ??Calculate_CRC32_1: (+1)
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x....'....        BL       LL_CRC_ReadData32
+   \       0x36   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    208          }
+    209          
+    210          // void Watchdog_Initialize(uint32_t timeout_u8) {
+    211          //     IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable); // Enable write access to IWDG registers. (IWDG_PR and IWDG_RLR)
+    212          //     IWDG_SetPrescaler(IWDG_Prescaler_32);         // IWDG timer clock will be (LSI / 32).
+    213          //     IWDG_SetReload(timeout_u8 * LsiFreq / 32);   // Set counter reload value to obtain 250ms IWDG TimeOut.
+    214          //     IWDG_ReloadCounter();                         // Reload the IWDG counter (kick the dog for once!).
+    215          //     IWDG_Enable();                                // Enable IWDG (the LSI oscillator will be enabled by hardware).
+    216          // }
+    217          
+    218          //void HAL_SYSTICK_Callback(void) { //Using SysTick_Handler() instead //SPA
+    219              //tickCounter++; //SPA
+    220              ////Meerkat_SafetyCore_SysTickCallback(); //SPA
+    221          //}
+    222          
+
+   \                                 In section .text, align 2, keep-with-next
+    223          uint64_t getSysCount(void)
+    224          {
+    225            return tickCounter; 
+   \                     getSysCount: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable6_5
+   \        0x2   0xC803             LDM      R0,{R0,R1}
+   \        0x4   0x4770             BX       LR               ;; return
+    226          }
+    227          // void Watchdog_Initialize(uint8_t timeout_u8) {
+    228          //     LL_IWDG_Enable(IWDG);                             // Start the Independent Watchdog.
+    229          //     LL_IWDG_EnableWriteAccess(IWDG);                  // Enable write access to IWDG registers.
+    230          //     LL_IWDG_SetPrescaler(IWDG, LL_IWDG_PRESCALER_4);  // IWDG timer clock will be (LSI / 32).
+    231          //     LL_IWDG_SetReloadCounter(IWDG, timeout_u8 * 625); // (timeout_s * 625) must be between Min_Data=0 and Max_Data=0x0FFF
+    232          //     while (LL_IWDG_IsReady(IWDG) != TRUE)             // Wait for the registers to be updated
+    233          //     {
+    234          //     }
+    235          //     LL_IWDG_ReloadCounter(IWDG); // Reload the IWDG counter (kick the dog for once!).
+    236          // }
+    237          
+    238          // void Watchdog_Reload(void) {
+    239          //     LL_IWDG_ReloadCounter(IWDG);
+    240          // }
+    241          
+    242          /**
+    243            *************************************************************************************************************************************************************
+    244            * @brief   Setup a software interrupt 
+    245            * @details find out and set the correct bit in the software interrupt bit table SoftwareIrqBitPt[IrqGroupIndx_u8] 
+    246            *             parameters:     SENDER_MODULE_ID        the module ID for the source of this interrupt
+    247            *                             RECIVER_MODULE_ID       the module ID for the responding this interrupt
+    248            *                             _irqType_u8             interrupt category of this interrupt
+    249            *                             _irqDat_u8              data pass to the responding module
+    250            *                             _irqDat1_len_u8         if _irqDatPt_u8 not equal to NULL this is the second byte of data pass to the responding module
+    251            *                             _irqDatPt_u8            if data more than 2 byte can wrap it as pointer and use _irqDat1_len_u8 as the length of this data set
+    252            * @return  
+    253            *************************************************************************************************************************************************************
+    254            */
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void setupSoftwareIRQ(uint8_t SENDER_MODULE_ID, uint8_t RECIVER_MODULE_ID, uint8_t _irqType_u8, uint8_t _irqDat_u8, uint8_t _irqDat1_len_u8, uint8_t * _irqDatPt_u8) 
+    256          { /**prepare software interrupt for the Ack timeout module**/                  
+   \                     setupSoftwareIRQ: (+1)
+   \        0x0   0xB5FD             PUSH     {R0,R2-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x000E             MOVS     R6,R1
+   \        0x6   0x9F0C             LDR      R7,[SP, #+48]
+    257            uint8_t SoftwareIrqBitPtIndx = RECIVER_MODULE_ID / 64;     // get the interrupt pointer group of software IRQ point index
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2140             MOVS     R1,#+64
+   \        0xE   0x....'....        BL       __aeabi_idiv
+   \       0x12   0x0004             MOVS     R4,R0
+    258            uint64_t IrqBitTempry = 0x01;
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0x2100             MOVS     R1,#+0
+   \       0x18   0xAA02             ADD      R2,SP,#+8
+   \       0x1A   0xC203             STM      R2!,{R0,R1}
+   \       0x1C   0x3A08             SUBS     R2,R2,#+8
+    259            SoftwareIrqBitPt[SoftwareIrqBitPtIndx] |= IrqBitTempry << (RECIVER_MODULE_ID - (SoftwareIrqBitPtIndx * 64)); //set software interrupt trigger bit
+   \       0x1E   0x....             LDR      R5,??DataTable6_1
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0x2108             MOVS     R1,#+8
+   \       0x26   0x4348             MULS     R0,R1,R0
+   \       0x28   0x1828             ADDS     R0,R5,R0
+   \       0x2A   0xC803             LDM      R0,{R0,R1}
+   \       0x2C   0x9000             STR      R0,[SP, #+0]
+   \       0x2E   0x9101             STR      R1,[SP, #+4]
+   \       0x30   0xA802             ADD      R0,SP,#+8
+   \       0x32   0xC803             LDM      R0,{R0,R1}
+   \       0x34   0x0032             MOVS     R2,R6
+   \       0x36   0xB2D2             UXTB     R2,R2
+   \       0x38   0x4694             MOV      R12,R2
+   \       0x3A   0x0023             MOVS     R3,R4
+   \       0x3C   0xB2DB             UXTB     R3,R3
+   \       0x3E   0x2240             MOVS     R2,#+64
+   \       0x40   0x4353             MULS     R3,R2,R3
+   \       0x42   0x4662             MOV      R2,R12
+   \       0x44   0x1AD2             SUBS     R2,R2,R3
+   \       0x46   0x....'....        BL       __aeabi_llsl
+   \       0x4A   0x9A00             LDR      R2,[SP, #+0]
+   \       0x4C   0x9B01             LDR      R3,[SP, #+4]
+   \       0x4E   0x4310             ORRS     R0,R0,R2
+   \       0x50   0x4319             ORRS     R1,R1,R3
+   \       0x52   0x0022             MOVS     R2,R4
+   \       0x54   0xB2D2             UXTB     R2,R2
+   \       0x56   0x2308             MOVS     R3,#+8
+   \       0x58   0x435A             MULS     R2,R3,R2
+   \       0x5A   0x18AA             ADDS     R2,R5,R2
+   \       0x5C   0xC203             STM      R2!,{R0,R1}
+   \       0x5E   0x3A08             SUBS     R2,R2,#+8
+    260            IrqTrigProcessID = SENDER_MODULE_ID;                                     /**set current module ID to let the IRQ response module know who triggered this interrupt  **/          
+   \       0x60   0x4668             MOV      R0,SP
+   \       0x62   0x7C00             LDRB     R0,[R0, #+16]
+   \       0x64   0x....             LDR      R1,??DataTable6_3
+   \       0x66   0x7008             STRB     R0,[R1, #+0]
+    261            //find out the ISR module and enter all the parameter for it to respone the interrupt, "this ACK time out error"
+    262            uint8_t table_index_u8 = getProcessInfoIndex(RECIVER_MODULE_ID);  
+   \       0x68   0x0030             MOVS     R0,R6
+   \       0x6A   0xB2C0             UXTB     R0,R0
+   \       0x6C   0x....'....        BL       getProcessInfoIndex
+   \       0x70   0x0005             MOVS     R5,R0
+    263            if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0x72   0x0028             MOVS     R0,R5
+   \       0x74   0xB2C0             UXTB     R0,R0
+   \       0x76   0x28FF             CMP      R0,#+255
+   \       0x78   0xD020             BEQ      ??setupSoftwareIRQ_0
+    264              processInfoTable[table_index_u8].Sched_DrvData.irqType_u8 = _irqType_u8;                     /**inform the interrupt response module this is an error message**/
+   \       0x7A   0x....             LDR      R0,??DataTable6
+   \       0x7C   0x4669             MOV      R1,SP
+   \       0x7E   0x7D09             LDRB     R1,[R1, #+20]
+   \       0x80   0x002A             MOVS     R2,R5
+   \       0x82   0xB2D2             UXTB     R2,R2
+   \       0x84   0x2316             MOVS     R3,#+22
+   \       0x86   0x435A             MULS     R2,R3,R2
+   \       0x88   0x1882             ADDS     R2,R0,R2
+   \       0x8A   0x73D1             STRB     R1,[R2, #+15]
+    265              processInfoTable[table_index_u8].Sched_DrvData.irqDat_u8 = _irqDat_u8;                
+   \       0x8C   0x4669             MOV      R1,SP
+   \       0x8E   0x7E09             LDRB     R1,[R1, #+24]
+   \       0x90   0x002A             MOVS     R2,R5
+   \       0x92   0xB2D2             UXTB     R2,R2
+   \       0x94   0x2316             MOVS     R3,#+22
+   \       0x96   0x435A             MULS     R2,R3,R2
+   \       0x98   0x1882             ADDS     R2,R0,R2
+   \       0x9A   0x7411             STRB     R1,[R2, #+16]
+    266              processInfoTable[table_index_u8].Sched_DrvData.irqDat1_len_u8 = _irqDat1_len_u8;      
+   \       0x9C   0x0029             MOVS     R1,R5
+   \       0x9E   0xB2C9             UXTB     R1,R1
+   \       0xA0   0x2216             MOVS     R2,#+22
+   \       0xA2   0x4351             MULS     R1,R2,R1
+   \       0xA4   0x1841             ADDS     R1,R0,R1
+   \       0xA6   0x744F             STRB     R7,[R1, #+17]
+    267              processInfoTable[table_index_u8].Sched_DrvData.irqDatPt_u8 = _irqDatPt_u8;                          //if no extend data so point to NULL                  
+   \       0xA8   0x0029             MOVS     R1,R5
+   \       0xAA   0xB2C9             UXTB     R1,R1
+   \       0xAC   0x2216             MOVS     R2,#+22
+   \       0xAE   0x4351             MULS     R1,R2,R1
+   \       0xB0   0x1840             ADDS     R0,R0,R1
+   \       0xB2   0x0001             MOVS     R1,R0
+   \       0xB4   0x3112             ADDS     R1,R1,#+18
+   \       0xB6   0x980D             LDR      R0,[SP, #+52]
+   \       0xB8   0x....'....        BL       __aeabi_uwrite4
+    268            }
+    269          }
+   \                     ??setupSoftwareIRQ_0: (+1)
+   \       0xBC   0xB007             ADD      SP,SP,#+28
+   \       0xBE   0xBDF0             POP      {R4-R7,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     SoftwareIrqBitPt
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     SoftwareIrqBitPt+0x8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     IrqTrigProcessID
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x4002'3000        DC32     0x40023000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     tickCounter
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   Calculate_CRC
+        24   -> LL_CRC_FeedData8
+        24   -> LL_CRC_ReadData16
+        24   -> LL_CRC_ResetCRCCalculationUnit
+      24   Calculate_CRC32
+        24   -> LL_CRC_FeedData8
+        24   -> LL_CRC_ReadData32
+        24   -> LL_CRC_ResetCRCCalculationUnit
+       0   LL_CRC_FeedData8
+       0   LL_CRC_ReadData16
+       0   LL_CRC_ReadData32
+       0   LL_CRC_ResetCRCCalculationUnit
+       8   Sched_Initialize
+         8   -> SeqMem_InitBufs
+         8   -> StructMem_InitBufs
+      32   Sched_Run
+        32   -- Indirect call
+        32   -> getProcessInfoIndex
+        32 __aeabi_uread4
+       8   getProcessInfoIndex
+       0   getSysCount
+      48   setupSoftwareIRQ
+        48   -> getProcessInfoIndex
+        48 __aeabi_idiv
+        48 __aeabi_llsl
+        48 __aeabi_uwrite4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  App_CRC
+      56  Calculate_CRC
+      56  Calculate_CRC32
+       1  IrqTrigProcessID
+       4  LL_CRC_FeedData8
+       6  LL_CRC_ReadData16
+       4  LL_CRC_ReadData32
+      10  LL_CRC_ResetCRCCalculationUnit
+      14  Sched_Initialize
+     392  Sched_Run
+      32  SoftwareIrqBitPt
+      40  getProcessInfoIndex
+       6  getSysCount
+     376  processInfoTable
+     192  setupSoftwareIRQ
+
+ 
+  32 bytes in section .bss
+ 377 bytes in section .data
+ 804 bytes in section .text
+   4 bytes in section app_crc32_rom
+ 
+ 804 bytes of CODE  memory
+   4 bytes of CONST memory
+ 409 bytes of DATA  memory
+
+Errors: none
+Warnings: none

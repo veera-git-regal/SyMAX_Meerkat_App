@@ -1,0 +1,604 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:59
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_exti.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW1271.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_exti.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_ll_exti.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_ll_exti.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_exti.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_ll_exti.c
+      4            * @author  MCD Application Team
+      5            * @brief   EXTI LL module driver.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          #if defined(USE_FULL_LL_DRIVER)
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "stm32g0xx_ll_exti.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_EnableIT_0_31(uint32_t)
+   \                     LL_EXTI_EnableIT_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8  ;; 0x40021880
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_DisableIT_0_31(uint32_t)
+   \                     LL_EXTI_DisableIT_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8  ;; 0x40021880
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_EnableEvent_0_31(uint32_t)
+   \                     LL_EXTI_EnableEvent_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8_1  ;; 0x40021884
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_DisableEvent_0_31(uint32_t)
+   \                     LL_EXTI_DisableEvent_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8_1  ;; 0x40021884
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_EnableRisingTrig_0_31(uint32_t)
+   \                     LL_EXTI_EnableRisingTrig_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8_2  ;; 0x40021800
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_DisableRisingTrig_0_31(uint32_t)
+   \                     LL_EXTI_DisableRisingTrig_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8_2  ;; 0x40021800
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_EnableFallingTrig_0_31(uint32_t)
+   \                     LL_EXTI_EnableFallingTrig_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8_3  ;; 0x40021804
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_EXTI_DisableFallingTrig_0_31(uint32_t)
+   \                     LL_EXTI_DisableFallingTrig_0_31: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable8_3  ;; 0x40021804
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+     23          #ifdef  USE_FULL_ASSERT
+     24          #include "stm32_assert.h"
+     25          #else
+     26          #define assert_param(expr) ((void)0U)
+     27          #endif
+     28          
+     29          /** @addtogroup STM32G0xx_LL_Driver
+     30            * @{
+     31            */
+     32          
+     33          #if defined (EXTI)
+     34          
+     35          /** @defgroup EXTI_LL EXTI
+     36            * @{
+     37            */
+     38          
+     39          /* Private types -------------------------------------------------------------*/
+     40          /* Private variables ---------------------------------------------------------*/
+     41          /* Private constants ---------------------------------------------------------*/
+     42          /* Private macros ------------------------------------------------------------*/
+     43          /** @addtogroup EXTI_LL_Private_Macros
+     44            * @{
+     45            */
+     46          
+     47          #define IS_LL_EXTI_LINE_0_31(__VALUE__)              (((__VALUE__) & ~LL_EXTI_LINE_ALL_0_31) == 0x00000000U)
+     48          #if defined(STM32G081xx) || defined(STM32G071xx)
+     49          #define IS_LL_EXTI_LINE_32_63(__VALUE__)             (((__VALUE__) & ~LL_EXTI_LINE_ALL_32_63) == 0x00000000U)
+     50          #endif
+     51          #define IS_LL_EXTI_MODE(__VALUE__)                   (((__VALUE__) == LL_EXTI_MODE_IT)            \
+     52                                                             || ((__VALUE__) == LL_EXTI_MODE_EVENT)         \
+     53                                                             || ((__VALUE__) == LL_EXTI_MODE_IT_EVENT))
+     54          
+     55          
+     56          #define IS_LL_EXTI_TRIGGER(__VALUE__)                (((__VALUE__) == LL_EXTI_TRIGGER_NONE)       \
+     57                                                             || ((__VALUE__) == LL_EXTI_TRIGGER_RISING)     \
+     58                                                             || ((__VALUE__) == LL_EXTI_TRIGGER_FALLING)    \
+     59                                                             || ((__VALUE__) == LL_EXTI_TRIGGER_RISING_FALLING))
+     60          
+     61          /**
+     62            * @}
+     63            */
+     64          
+     65          /* Private function prototypes -----------------------------------------------*/
+     66          
+     67          /* Exported functions --------------------------------------------------------*/
+     68          /** @addtogroup EXTI_LL_Exported_Functions
+     69            * @{
+     70            */
+     71          
+     72          /** @addtogroup EXTI_LL_EF_Init
+     73            * @{
+     74            */
+     75          
+     76          /**
+     77            * @brief  De-initialize the EXTI registers to their default reset values.
+     78            * @retval An ErrorStatus enumeration value:
+     79            *          - 0x00: EXTI registers are de-initialized
+     80            */
+
+   \                                 In section .text, align 2, keep-with-next
+     81          uint32_t LL_EXTI_DeInit(void)
+     82          {
+     83            /* Interrupt mask register set to default reset values */
+     84            LL_EXTI_WriteReg(IMR1,   0xFFF80000U);
+   \                     LL_EXTI_DeInit: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable8_4  ;; 0xfff80000
+   \        0x2   0x....             LDR      R1,??DataTable8  ;; 0x40021880
+   \        0x4   0x6008             STR      R0,[R1, #+0]
+     85            /* Event mask register set to default reset values */
+     86            LL_EXTI_WriteReg(EMR1,   0x00000000U);
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x....             LDR      R1,??DataTable8_1  ;; 0x40021884
+   \        0xA   0x6008             STR      R0,[R1, #+0]
+     87            /* Rising Trigger selection register set to default reset values */
+     88            LL_EXTI_WriteReg(RTSR1,  0x00000000U);
+   \        0xC   0x....             LDR      R1,??DataTable8_2  ;; 0x40021800
+   \        0xE   0x6008             STR      R0,[R1, #+0]
+     89            /* Falling Trigger selection register set to default reset values */
+     90            LL_EXTI_WriteReg(FTSR1,  0x00000000U);
+   \       0x10   0x....             LDR      R1,??DataTable8_3  ;; 0x40021804
+   \       0x12   0x6008             STR      R0,[R1, #+0]
+     91            /* Software interrupt event register set to default reset values */
+     92            LL_EXTI_WriteReg(SWIER1, 0x00000000U);
+   \       0x14   0x....             LDR      R1,??DataTable8_5  ;; 0x40021808
+   \       0x16   0x6008             STR      R0,[R1, #+0]
+     93            /* Pending register set to default reset values */
+     94            LL_EXTI_WriteReg(RPR1,    0x0007FFFFU);
+   \       0x18   0x....             LDR      R0,??DataTable8_6  ;; 0x7ffff
+   \       0x1A   0x....             LDR      R1,??DataTable8_7  ;; 0x4002180c
+   \       0x1C   0x6008             STR      R0,[R1, #+0]
+     95            LL_EXTI_WriteReg(FPR1,    0x0007FFFFU);
+   \       0x1E   0x....             LDR      R1,??DataTable8_8  ;; 0x40021810
+   \       0x20   0x6008             STR      R0,[R1, #+0]
+     96          
+     97          #if defined(STM32G081xx) || defined(STM32G071xx)
+     98            /* Interrupt mask register 2 set to default reset values */
+     99            LL_EXTI_WriteReg(IMR2,        0x00000003U);
+    100            /* Event mask register 2 set to default reset values */
+    101            LL_EXTI_WriteReg(EMR2,        0x00000000U);
+    102          #endif
+    103          
+    104            return 0x00u;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x4770             BX       LR               ;; return
+    105          }
+    106          
+    107          /**
+    108            * @brief  Initialize the EXTI registers according to the specified parameters in EXTI_InitStruct.
+    109            * @param  EXTI_InitStruct pointer to a @ref LL_EXTI_InitTypeDef structure.
+    110            * @retval An ErrorStatus enumeration value:
+    111            *          - 0x00: EXTI registers are initialized
+    112            *          - any other calue : wrong configuration
+    113            */
+
+   \                                 In section .text, align 2, keep-with-next
+    114          uint32_t LL_EXTI_Init(LL_EXTI_InitTypeDef *EXTI_InitStruct)
+    115          {
+   \                     LL_EXTI_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    116            uint32_t status = 0x00u;
+   \        0x4   0x2500             MOVS     R5,#+0
+    117          
+    118            /* Check the parameters */
+    119            assert_param(IS_LL_EXTI_LINE_0_31(EXTI_InitStruct->Line_0_31));
+    120          #if defined(STM32G081xx) || defined(STM32G071xx)
+    121            assert_param(IS_LL_EXTI_LINE_32_63(EXTI_InitStruct->Line_32_63));
+    122          #endif
+    123            assert_param(IS_FUNCTIONAL_STATE(EXTI_InitStruct->LineCommand));
+    124            assert_param(IS_LL_EXTI_MODE(EXTI_InitStruct->Mode));
+    125          
+    126            /* ENABLE LineCommand */
+    127            if (EXTI_InitStruct->LineCommand != DISABLE)
+   \        0x6   0x7920             LDRB     R0,[R4, #+4]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD044             BEQ      ??LL_EXTI_Init_0
+    128            {
+    129              assert_param(IS_LL_EXTI_TRIGGER(EXTI_InitStruct->Trigger));
+    130          
+    131              /* Configure EXTI Lines in range from 0 to 31 */
+    132              if (EXTI_InitStruct->Line_0_31 != LL_EXTI_LINE_NONE)
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD047             BEQ      ??LL_EXTI_Init_1
+    133              {
+    134                switch (EXTI_InitStruct->Mode)
+   \       0x12   0x7960             LDRB     R0,[R4, #+5]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD003             BEQ      ??LL_EXTI_Init_2
+   \       0x18   0x2802             CMP      R0,#+2
+   \       0x1A   0xD00F             BEQ      ??LL_EXTI_Init_3
+   \       0x1C   0xD307             BCC      ??LL_EXTI_Init_4
+   \       0x1E   0xE014             B        ??LL_EXTI_Init_5
+    135                {
+    136                  case LL_EXTI_MODE_IT:
+    137                    /* First Disable Event on provided Lines */
+    138                    LL_EXTI_DisableEvent_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_2: (+1)
+   \       0x20   0x6820             LDR      R0,[R4, #+0]
+   \       0x22   0x....'....        BL       LL_EXTI_DisableEvent_0_31
+    139                    /* Then Enable IT on provided Lines */
+    140                    LL_EXTI_EnableIT_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x26   0x6820             LDR      R0,[R4, #+0]
+   \       0x28   0x....'....        BL       LL_EXTI_EnableIT_0_31
+    141                    break;
+   \       0x2C   0xE00F             B        ??LL_EXTI_Init_6
+    142                  case LL_EXTI_MODE_EVENT:
+    143                    /* First Disable IT on provided Lines */
+    144                    LL_EXTI_DisableIT_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_4: (+1)
+   \       0x2E   0x6820             LDR      R0,[R4, #+0]
+   \       0x30   0x....'....        BL       LL_EXTI_DisableIT_0_31
+    145                    /* Then Enable Event on provided Lines */
+    146                    LL_EXTI_EnableEvent_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       LL_EXTI_EnableEvent_0_31
+    147                    break;
+   \       0x3A   0xE008             B        ??LL_EXTI_Init_6
+    148                  case LL_EXTI_MODE_IT_EVENT:
+    149                    /* Directly Enable IT & Event on provided Lines */
+    150                    LL_EXTI_EnableIT_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_3: (+1)
+   \       0x3C   0x6820             LDR      R0,[R4, #+0]
+   \       0x3E   0x....'....        BL       LL_EXTI_EnableIT_0_31
+    151                    LL_EXTI_EnableEvent_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x42   0x6820             LDR      R0,[R4, #+0]
+   \       0x44   0x....'....        BL       LL_EXTI_EnableEvent_0_31
+    152                    break;
+   \       0x48   0xE001             B        ??LL_EXTI_Init_6
+    153                  default:
+    154                    status = 0x01u;
+   \                     ??LL_EXTI_Init_5: (+1)
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0x0005             MOVS     R5,R0
+    155                    break;
+    156                }
+    157                if (EXTI_InitStruct->Trigger != LL_EXTI_TRIGGER_NONE)
+   \                     ??LL_EXTI_Init_6: (+1)
+   \       0x4E   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x50   0x2800             CMP      R0,#+0
+   \       0x52   0xD026             BEQ      ??LL_EXTI_Init_1
+    158                {
+    159                  switch (EXTI_InitStruct->Trigger)
+   \       0x54   0x79A0             LDRB     R0,[R4, #+6]
+   \       0x56   0x2801             CMP      R0,#+1
+   \       0x58   0xD004             BEQ      ??LL_EXTI_Init_7
+   \       0x5A   0xD318             BCC      ??LL_EXTI_Init_8
+   \       0x5C   0x2803             CMP      R0,#+3
+   \       0x5E   0xD00F             BEQ      ??LL_EXTI_Init_9
+   \       0x60   0xD307             BCC      ??LL_EXTI_Init_10
+   \       0x62   0xE014             B        ??LL_EXTI_Init_8
+    160                  {
+    161                    case LL_EXTI_TRIGGER_RISING:
+    162                      /* First Disable Falling Trigger on provided Lines */
+    163                      LL_EXTI_DisableFallingTrig_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_7: (+1)
+   \       0x64   0x6820             LDR      R0,[R4, #+0]
+   \       0x66   0x....'....        BL       LL_EXTI_DisableFallingTrig_0_31
+    164                      /* Then Enable Rising Trigger on provided Lines */
+    165                      LL_EXTI_EnableRisingTrig_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x6A   0x6820             LDR      R0,[R4, #+0]
+   \       0x6C   0x....'....        BL       LL_EXTI_EnableRisingTrig_0_31
+    166                      break;
+   \       0x70   0xE017             B        ??LL_EXTI_Init_1
+    167                    case LL_EXTI_TRIGGER_FALLING:
+    168                      /* First Disable Rising Trigger on provided Lines */
+    169                      LL_EXTI_DisableRisingTrig_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_10: (+1)
+   \       0x72   0x6820             LDR      R0,[R4, #+0]
+   \       0x74   0x....'....        BL       LL_EXTI_DisableRisingTrig_0_31
+    170                      /* Then Enable Falling Trigger on provided Lines */
+    171                      LL_EXTI_EnableFallingTrig_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x78   0x6820             LDR      R0,[R4, #+0]
+   \       0x7A   0x....'....        BL       LL_EXTI_EnableFallingTrig_0_31
+    172                      break;
+   \       0x7E   0xE010             B        ??LL_EXTI_Init_1
+    173                    case LL_EXTI_TRIGGER_RISING_FALLING:
+    174                      LL_EXTI_EnableRisingTrig_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_9: (+1)
+   \       0x80   0x6820             LDR      R0,[R4, #+0]
+   \       0x82   0x....'....        BL       LL_EXTI_EnableRisingTrig_0_31
+    175                      LL_EXTI_EnableFallingTrig_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x86   0x6820             LDR      R0,[R4, #+0]
+   \       0x88   0x....'....        BL       LL_EXTI_EnableFallingTrig_0_31
+    176                      break;
+   \       0x8C   0xE009             B        ??LL_EXTI_Init_1
+    177                    default:
+    178                      status |= 0x02u;
+   \                     ??LL_EXTI_Init_8: (+1)
+   \       0x8E   0x0028             MOVS     R0,R5
+   \       0x90   0x2502             MOVS     R5,#+2
+   \       0x92   0x4305             ORRS     R5,R5,R0
+    179                      break;
+   \       0x94   0xE005             B        ??LL_EXTI_Init_1
+    180                  }
+    181                }
+    182              }
+    183          #if defined(STM32G081xx) || defined(STM32G071xx)
+    184              /* Configure EXTI Lines in range from 32 to 63 */
+    185              if (EXTI_InitStruct->Line_32_63 != LL_EXTI_LINE_NONE)
+    186              {
+    187                switch (EXTI_InitStruct->Mode)
+    188                {
+    189                  case LL_EXTI_MODE_IT:
+    190                    /* First Disable Event on provided Lines */
+    191                    LL_EXTI_DisableEvent_32_63(EXTI_InitStruct->Line_32_63);
+    192                    /* Then Enable IT on provided Lines */
+    193                    LL_EXTI_EnableIT_32_63(EXTI_InitStruct->Line_32_63);
+    194                    break;
+    195                  case LL_EXTI_MODE_EVENT:
+    196                    /* First Disable IT on provided Lines */
+    197                    LL_EXTI_DisableIT_32_63(EXTI_InitStruct->Line_32_63);
+    198                    /* Then Enable Event on provided Lines */
+    199                    LL_EXTI_EnableEvent_32_63(EXTI_InitStruct->Line_32_63);
+    200                    break;
+    201                  case LL_EXTI_MODE_IT_EVENT:
+    202                    /* Directly Enable IT & Event on provided Lines */
+    203                    LL_EXTI_EnableIT_32_63(EXTI_InitStruct->Line_32_63);
+    204                    LL_EXTI_EnableEvent_32_63(EXTI_InitStruct->Line_32_63);
+    205                    break;
+    206                  default:
+    207                    status |= 0x04u;
+    208                    break;
+    209                }
+    210              }
+    211          #endif
+    212            }
+    213            /* DISABLE LineCommand */
+    214            else
+    215            {
+    216              /* De-configure EXTI Lines in range from 0 to 31 */
+    217              LL_EXTI_DisableIT_0_31(EXTI_InitStruct->Line_0_31);
+   \                     ??LL_EXTI_Init_0: (+1)
+   \       0x96   0x6820             LDR      R0,[R4, #+0]
+   \       0x98   0x....'....        BL       LL_EXTI_DisableIT_0_31
+    218              LL_EXTI_DisableEvent_0_31(EXTI_InitStruct->Line_0_31);
+   \       0x9C   0x6820             LDR      R0,[R4, #+0]
+   \       0x9E   0x....'....        BL       LL_EXTI_DisableEvent_0_31
+    219          #if defined(STM32G081xx) || defined(STM32G071xx)
+    220              /* De-configure EXTI Lines in range from 32 to 63 */
+    221              LL_EXTI_DisableIT_32_63(EXTI_InitStruct->Line_32_63);
+    222              LL_EXTI_DisableEvent_32_63(EXTI_InitStruct->Line_32_63);
+    223          #endif
+    224            }
+    225          
+    226            return status;
+   \                     ??LL_EXTI_Init_1: (+1)
+   \       0xA2   0x0028             MOVS     R0,R5
+   \       0xA4   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    227          }
+    228          
+    229          /**
+    230            * @brief  Set each @ref LL_EXTI_InitTypeDef field to default value.
+    231            * @param  EXTI_InitStruct Pointer to a @ref LL_EXTI_InitTypeDef structure.
+    232            * @retval None
+    233            */
+
+   \                                 In section .text, align 2, keep-with-next
+    234          void LL_EXTI_StructInit(LL_EXTI_InitTypeDef *EXTI_InitStruct)
+    235          {
+    236            EXTI_InitStruct->Line_0_31      = LL_EXTI_LINE_NONE;
+   \                     LL_EXTI_StructInit: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+    237          #if defined(STM32G081xx) || defined(STM32G071xx)
+    238            EXTI_InitStruct->Line_32_63     = LL_EXTI_LINE_NONE;
+    239          #endif
+    240            EXTI_InitStruct->LineCommand    = DISABLE;
+   \        0x4   0x000A             MOVS     R2,R1
+   \        0x6   0x7102             STRB     R2,[R0, #+4]
+    241            EXTI_InitStruct->Mode           = LL_EXTI_MODE_IT;
+   \        0x8   0x7141             STRB     R1,[R0, #+5]
+    242            EXTI_InitStruct->Trigger        = LL_EXTI_TRIGGER_FALLING;
+   \        0xA   0x2102             MOVS     R1,#+2
+   \        0xC   0x7181             STRB     R1,[R0, #+6]
+    243          }
+   \        0xE   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x4002'1880        DC32     0x40021880
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x4002'1884        DC32     0x40021884
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x4002'1800        DC32     0x40021800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x4002'1804        DC32     0x40021804
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0xFFF8'0000        DC32     0xfff80000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x4002'1808        DC32     0x40021808
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \        0x0   0x0007'FFFF        DC32     0x7ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \        0x0   0x4002'180C        DC32     0x4002180c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \        0x0   0x4002'1810        DC32     0x40021810
+    244          
+    245          /**
+    246            * @}
+    247            */
+    248          
+    249          /**
+    250            * @}
+    251            */
+    252          
+    253          /**
+    254            * @}
+    255            */
+    256          
+    257          #endif /* defined (EXTI) */
+    258          
+    259          /**
+    260            * @}
+    261            */
+    262          
+    263          #endif /* USE_FULL_LL_DRIVER */
+    264          
+    265          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LL_EXTI_DeInit
+       0   LL_EXTI_DisableEvent_0_31
+       0   LL_EXTI_DisableFallingTrig_0_31
+       0   LL_EXTI_DisableIT_0_31
+       0   LL_EXTI_DisableRisingTrig_0_31
+       0   LL_EXTI_EnableEvent_0_31
+       0   LL_EXTI_EnableFallingTrig_0_31
+       0   LL_EXTI_EnableIT_0_31
+       0   LL_EXTI_EnableRisingTrig_0_31
+      16   LL_EXTI_Init
+        16   -> LL_EXTI_DisableEvent_0_31
+        16   -> LL_EXTI_DisableFallingTrig_0_31
+        16   -> LL_EXTI_DisableIT_0_31
+        16   -> LL_EXTI_DisableRisingTrig_0_31
+        16   -> LL_EXTI_EnableEvent_0_31
+        16   -> LL_EXTI_EnableFallingTrig_0_31
+        16   -> LL_EXTI_EnableIT_0_31
+        16   -> LL_EXTI_EnableRisingTrig_0_31
+       0   LL_EXTI_StructInit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+      38  LL_EXTI_DeInit
+      10  LL_EXTI_DisableEvent_0_31
+      10  LL_EXTI_DisableFallingTrig_0_31
+      10  LL_EXTI_DisableIT_0_31
+      10  LL_EXTI_DisableRisingTrig_0_31
+      10  LL_EXTI_EnableEvent_0_31
+      10  LL_EXTI_EnableFallingTrig_0_31
+      10  LL_EXTI_EnableIT_0_31
+      10  LL_EXTI_EnableRisingTrig_0_31
+     166  LL_EXTI_Init
+      16  LL_EXTI_StructInit
+
+ 
+ 336 bytes in section .text
+ 
+ 336 bytes of CODE memory
+
+Errors: none
+Warnings: none

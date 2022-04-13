@@ -1,0 +1,242 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:57
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_crc.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWB6A.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_crc.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_ll_crc.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_ll_crc.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_crc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_ll_crc.c
+      4            * @author  MCD Application Team
+      5            * @brief   CRC LL module driver.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          #if defined(USE_FULL_LL_DRIVER)
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "stm32g0xx_ll_crc.h"
+     23          #include "stm32g0xx_ll_bus.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_AHB1_GRP1_ForceReset(uint32_t)
+   \                     LL_AHB1_GRP1_ForceReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable2  ;; 0x40021028
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4302             ORRS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_AHB1_GRP1_ReleaseReset(uint32_t)
+   \                     LL_AHB1_GRP1_ReleaseReset: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable2  ;; 0x40021028
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x4382             BICS     R2,R2,R0
+   \        0x6   0x600A             STR      R2,[R1, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+     24          
+     25          #ifdef  USE_FULL_ASSERT
+     26          #include "stm32_assert.h"
+     27          #else
+     28          #define assert_param(expr) ((void)0U)
+     29          #endif
+     30          
+     31          /** @addtogroup STM32G0xx_LL_Driver
+     32            * @{
+     33            */
+     34          
+     35          #if defined (CRC)
+     36          
+     37          /** @addtogroup CRC_LL
+     38            * @{
+     39            */
+     40          
+     41          /* Private types -------------------------------------------------------------*/
+     42          /* Private variables ---------------------------------------------------------*/
+     43          /* Private constants ---------------------------------------------------------*/
+     44          /* Private macros ------------------------------------------------------------*/
+     45          /* Private function prototypes -----------------------------------------------*/
+     46          
+     47          /* Exported functions --------------------------------------------------------*/
+     48          /** @addtogroup CRC_LL_Exported_Functions
+     49            * @{
+     50            */
+     51          
+     52          /** @addtogroup CRC_LL_EF_Init
+     53            * @{
+     54            */
+     55          
+     56          /**
+     57            * @brief  De-initialize CRC registers (Registers restored to their default values).
+     58            * @param  CRCx CRC Instance
+     59            * @retval An ErrorStatus enumeration value:
+     60            *          - SUCCESS: CRC registers are de-initialized
+     61            *          - ERROR: CRC registers are not de-initialized
+     62            */
+
+   \                                 In section .text, align 2, keep-with-next
+     63          ErrorStatus LL_CRC_DeInit(CRC_TypeDef *CRCx)
+     64          {
+   \                     LL_CRC_DeInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     65            ErrorStatus status = SUCCESS;
+   \        0x4   0x2500             MOVS     R5,#+0
+     66          
+     67            /* Check the parameters */
+     68            assert_param(IS_CRC_ALL_INSTANCE(CRCx));
+     69          
+     70            if (CRCx == CRC)
+   \        0x6   0x....             LDR      R0,??DataTable2_1  ;; 0x40023000
+   \        0x8   0x4284             CMP      R4,R0
+   \        0xA   0xD108             BNE      ??LL_CRC_DeInit_0
+     71            {
+     72              /* Force CRC reset */
+     73              LL_AHB1_GRP1_ForceReset(LL_AHB1_GRP1_PERIPH_CRC);
+   \        0xC   0x2680             MOVS     R6,#+128
+   \        0xE   0x0176             LSLS     R6,R6,#+5        ;; #+4096
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x....'....        BL       LL_AHB1_GRP1_ForceReset
+     74          
+     75              /* Release CRC reset */
+     76              LL_AHB1_GRP1_ReleaseReset(LL_AHB1_GRP1_PERIPH_CRC);
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0x....'....        BL       LL_AHB1_GRP1_ReleaseReset
+   \       0x1C   0xE001             B        ??LL_CRC_DeInit_1
+     77            }
+     78            else
+     79            {
+     80              status = ERROR;
+   \                     ??LL_CRC_DeInit_0: (+1)
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0x0005             MOVS     R5,R0
+     81            }
+     82          
+     83            return (status);
+   \                     ??LL_CRC_DeInit_1: (+1)
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0xBD70             POP      {R4-R6,PC}       ;; return
+     84          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x4002'1028        DC32     0x40021028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x4002'3000        DC32     0x40023000
+     85          
+     86          /**
+     87            * @}
+     88            */
+     89          
+     90          /**
+     91            * @}
+     92            */
+     93          
+     94          /**
+     95            * @}
+     96            */
+     97          
+     98          #endif /* defined (CRC) */
+     99          
+    100          /**
+    101            * @}
+    102            */
+    103          
+    104          #endif /* USE_FULL_LL_DRIVER */
+    105          
+    106          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+    107          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   LL_AHB1_GRP1_ForceReset
+       0   LL_AHB1_GRP1_ReleaseReset
+      16   LL_CRC_DeInit
+        16   -> LL_AHB1_GRP1_ForceReset
+        16   -> LL_AHB1_GRP1_ReleaseReset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      10  LL_AHB1_GRP1_ForceReset
+      10  LL_AHB1_GRP1_ReleaseReset
+      40  LL_CRC_DeInit
+
+ 
+ 68 bytes in section .text
+ 
+ 68 bytes of CODE memory
+
+Errors: none
+Warnings: none

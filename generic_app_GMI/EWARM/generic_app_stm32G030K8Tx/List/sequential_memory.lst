@@ -1,0 +1,328 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:50
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\sequential_memory.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWEEC8.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\sequential_memory.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\sequential_memory.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\sequential_memory.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Kernel\sequential_memory.c
+      1          /**
+      2            ********************************************************************************************************************************
+      3            * @file    sequential_memory.c
+      4            * @author  Oscar Guevara
+      5            * @brief   This file implements the memory abstraction API for the FlexMouse sequential memory data structure.
+      6            * @details FlexMouse has two types of available memory: sequential and structured memory. Sequential memory, defined in this
+      7            *             file, allows the user to store and retrieve data. As the name implies, data can only be accessed in the same
+      8            *             order as it was stored. 
+      9            ********************************************************************************************************************************
+     10            */
+     11          
+     12          /* Includes --------------------------------------------------------------------------------------------------------------------*/
+     13          #include "scheduler.h"
+     14          #include "sequential_memory.h"
+     15          
+
+   \                                 In section .bss, align 4
+     16          Ring_Buf seqMemArray[SEQ_MEM_ARRAY_SIZE]; // Allocate space for sequential memory instances
+   \                     seqMemArray:
+   \        0x0                      DS8 224
+     17          
+
+   \                                 In section .text, align 2, keep-with-next
+     18          Ring_Buf_Handle SeqMem_CreateInstance(uint8_t owner_u8, uint8_t ring_buf_size_u8, uint8_t access_mode_u8,
+     19                                                             uint8_t *p_user_list_u8, uint8_t user_list_size_u8) {
+   \                     SeqMem_CreateInstance: (+1)
+   \        0x0   0xB5FF             PUSH     {R0-R7,LR}
+   \        0x2   0xB083             SUB      SP,SP,#+12
+     20              Ring_Buf_Handle this_ring_buf_u32;
+     21              uint8_t instance_index_u8 = 0;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x0025             MOVS     R5,R4
+     22              uint8_t max_process_index_u8 = 0;
+   \        0x8   0x0026             MOVS     R6,R4
+     23              for (; instance_index_u8 < TOTAL_NUM_OF_SEQ_MEM_INSTANCES; instance_index_u8++) {
+   \                     ??SeqMem_CreateInstance_0: (+1)
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2807             CMP      R0,#+7
+   \       0x10   0xDA1A             BGE      ??SeqMem_CreateInstance_1
+     24                  this_ring_buf_u32 = &seqMemArray[instance_index_u8];
+   \       0x12   0x....             LDR      R0,??DataTable2
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0xB2C9             UXTB     R1,R1
+   \       0x18   0x2220             MOVS     R2,#+32
+   \       0x1A   0x4351             MULS     R1,R2,R1
+   \       0x1C   0x1840             ADDS     R0,R0,R1
+   \       0x1E   0x0007             MOVS     R7,R0
+     25                  if (RingBuf_GetOwner(this_ring_buf_u32) == owner_u8) {
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0x....'....        BL       RingBuf_GetOwner
+   \       0x26   0x4669             MOV      R1,SP
+   \       0x28   0x7B09             LDRB     R1,[R1, #+12]
+   \       0x2A   0x4288             CMP      R0,R1
+   \       0x2C   0xD10A             BNE      ??SeqMem_CreateInstance_2
+     26                      if (RingBuf_GetProcessInstanceIndex(this_ring_buf_u32) > max_process_index_u8) {
+   \       0x2E   0x0038             MOVS     R0,R7
+   \       0x30   0x....'....        BL       RingBuf_GetProcessInstanceIndex
+   \       0x34   0x0031             MOVS     R1,R6
+   \       0x36   0xB2C9             UXTB     R1,R1
+   \       0x38   0x4281             CMP      R1,R0
+   \       0x3A   0xD203             BCS      ??SeqMem_CreateInstance_2
+     27                          max_process_index_u8 = RingBuf_GetProcessInstanceIndex(this_ring_buf_u32);
+   \       0x3C   0x0038             MOVS     R0,R7
+   \       0x3E   0x....'....        BL       RingBuf_GetProcessInstanceIndex
+   \       0x42   0x0006             MOVS     R6,R0
+     28                      }
+     29                  }
+     30              }
+   \                     ??SeqMem_CreateInstance_2: (+1)
+   \       0x44   0x1C6D             ADDS     R5,R5,#+1
+   \       0x46   0xE7E0             B        ??SeqMem_CreateInstance_0
+     31              instance_index_u8 = 0;
+     32              for (; instance_index_u8 < TOTAL_NUM_OF_SEQ_MEM_INSTANCES; instance_index_u8++) {
+   \                     ??SeqMem_CreateInstance_1: (+1)
+   \                     ??SeqMem_CreateInstance_3: (+1)
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0xB2C0             UXTB     R0,R0
+   \       0x4C   0x2807             CMP      R0,#+7
+   \       0x4E   0xDA29             BGE      ??SeqMem_CreateInstance_4
+     33                  this_ring_buf_u32 = &seqMemArray[instance_index_u8];
+   \       0x50   0x....             LDR      R5,??DataTable2
+   \       0x52   0x0020             MOVS     R0,R4
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0x2120             MOVS     R1,#+32
+   \       0x58   0x4348             MULS     R0,R1,R0
+   \       0x5A   0x1828             ADDS     R0,R5,R0
+   \       0x5C   0x0007             MOVS     R7,R0
+     34                  if (RingBuf_GetOwner(this_ring_buf_u32) == 255) {
+   \       0x5E   0x0038             MOVS     R0,R7
+   \       0x60   0x....'....        BL       RingBuf_GetOwner
+   \       0x64   0x28FF             CMP      R0,#+255
+   \       0x66   0xD11B             BNE      ??SeqMem_CreateInstance_5
+     35                      RingBuf_Initialize(this_ring_buf_u32, owner_u8, ring_buf_size_u8, 0, 0, 0);
+   \       0x68   0x2000             MOVS     R0,#+0
+   \       0x6A   0x9001             STR      R0,[SP, #+4]
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \       0x6E   0x9000             STR      R0,[SP, #+0]
+   \       0x70   0x2300             MOVS     R3,#+0
+   \       0x72   0x4668             MOV      R0,SP
+   \       0x74   0x7C02             LDRB     R2,[R0, #+16]
+   \       0x76   0x4668             MOV      R0,SP
+   \       0x78   0x7B01             LDRB     R1,[R0, #+12]
+   \       0x7A   0x0038             MOVS     R0,R7
+   \       0x7C   0x....'....        BL       RingBuf_Initialize
+     36                      RingBuf_SetProcessInstanceIndex(this_ring_buf_u32, max_process_index_u8 + 1);
+   \       0x80   0x0031             MOVS     R1,R6
+   \       0x82   0x1C49             ADDS     R1,R1,#+1
+   \       0x84   0xB2C9             UXTB     R1,R1
+   \       0x86   0x0038             MOVS     R0,R7
+   \       0x88   0x....'....        BL       RingBuf_SetProcessInstanceIndex
+     37                      RingBuf_SetSystemInstanceIndex(this_ring_buf_u32, instance_index_u8);
+   \       0x8C   0x0021             MOVS     R1,R4
+   \       0x8E   0xB2C9             UXTB     R1,R1
+   \       0x90   0x0038             MOVS     R0,R7
+   \       0x92   0x....'....        BL       RingBuf_SetSystemInstanceIndex
+     38                      return (&seqMemArray[instance_index_u8]);
+   \       0x96   0xB2E4             UXTB     R4,R4
+   \       0x98   0x2020             MOVS     R0,#+32
+   \       0x9A   0x4344             MULS     R4,R0,R4
+   \       0x9C   0x1928             ADDS     R0,R5,R4
+   \       0x9E   0xE002             B        ??SeqMem_CreateInstance_6
+     39                  }
+     40              }
+   \                     ??SeqMem_CreateInstance_5: (+1)
+   \       0xA0   0x1C64             ADDS     R4,R4,#+1
+   \       0xA2   0xE7D1             B        ??SeqMem_CreateInstance_3
+     41              return (0);
+   \                     ??SeqMem_CreateInstance_4: (+1)
+   \       0xA4   0x2000             MOVS     R0,#+0
+   \                     ??SeqMem_CreateInstance_6: (+1)
+   \       0xA6   0xB007             ADD      SP,SP,#+28
+   \       0xA8   0xBDF0             POP      {R4-R7,PC}       ;; return
+     42          }
+     43          
+
+   \                                 In section .text, align 2, keep-with-next
+     44          uint8_t SeqMem_DestroyInstance(uint8_t owner_u8, Ring_Buf_Handle this_ring_buf_u32) {
+   \                     SeqMem_DestroyInstance: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     45              Ring_Buf_Handle temp_ring_buf_u32;
+     46              uint8_t instance_index_u8 = 0;
+   \        0x6   0x2600             MOVS     R6,#+0
+     47              for (; instance_index_u8 < TOTAL_NUM_OF_SEQ_MEM_INSTANCES; instance_index_u8++) {
+   \                     ??SeqMem_DestroyInstance_0: (+1)
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2807             CMP      R0,#+7
+   \        0xE   0xDA18             BGE      ??SeqMem_DestroyInstance_1
+     48                  temp_ring_buf_u32 = &seqMemArray[instance_index_u8];
+   \       0x10   0x....             LDR      R0,??DataTable2
+   \       0x12   0x0031             MOVS     R1,R6
+   \       0x14   0xB2C9             UXTB     R1,R1
+   \       0x16   0x2220             MOVS     R2,#+32
+   \       0x18   0x4351             MULS     R1,R2,R1
+   \       0x1A   0x1840             ADDS     R0,R0,R1
+   \       0x1C   0x0007             MOVS     R7,R0
+     49                  if (RingBuf_GetOwner(temp_ring_buf_u32) == owner_u8) {
+   \       0x1E   0x0038             MOVS     R0,R7
+   \       0x20   0x....'....        BL       RingBuf_GetOwner
+   \       0x24   0x0029             MOVS     R1,R5
+   \       0x26   0xB2C9             UXTB     R1,R1
+   \       0x28   0x4288             CMP      R0,R1
+   \       0x2A   0xD108             BNE      ??SeqMem_DestroyInstance_2
+     50                      if ((this_ring_buf_u32 == NULL) || (this_ring_buf_u32 == temp_ring_buf_u32)) {
+   \       0x2C   0x2C00             CMP      R4,#+0
+   \       0x2E   0xD001             BEQ      ??SeqMem_DestroyInstance_3
+   \       0x30   0x42BC             CMP      R4,R7
+   \       0x32   0xD104             BNE      ??SeqMem_DestroyInstance_2
+     51                          RingBuf_ClearContents(this_ring_buf_u32);
+   \                     ??SeqMem_DestroyInstance_3: (+1)
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x....'....        BL       RingBuf_ClearContents
+     52                          return (TRUE);
+   \       0x3A   0x2001             MOVS     R0,#+1
+   \       0x3C   0xE002             B        ??SeqMem_DestroyInstance_4
+     53                      }
+     54                  }
+     55              }
+   \                     ??SeqMem_DestroyInstance_2: (+1)
+   \       0x3E   0x1C76             ADDS     R6,R6,#+1
+   \       0x40   0xE7E2             B        ??SeqMem_DestroyInstance_0
+     56              return (FALSE);
+   \                     ??SeqMem_DestroyInstance_1: (+1)
+   \       0x42   0x2000             MOVS     R0,#+0
+   \                     ??SeqMem_DestroyInstance_4: (+1)
+   \       0x44   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+     57          }
+     58          
+
+   \                                 In section .text, align 2, keep-with-next
+     59          uint8_t SeqMem_InitBufs(void) {
+   \                     SeqMem_InitBufs: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+     60              Ring_Buf_Handle this_ring_buf_u32;
+     61              for (uint8_t instance_index_u8 = 0; instance_index_u8 < TOTAL_NUM_OF_SEQ_MEM_INSTANCES; instance_index_u8++) {
+   \        0x2   0x2500             MOVS     R5,#+0
+   \                     ??SeqMem_InitBufs_0: (+1)
+   \        0x4   0x0028             MOVS     R0,R5
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x2807             CMP      R0,#+7
+   \        0xA   0xDA10             BGE      ??SeqMem_InitBufs_1
+     62                  this_ring_buf_u32 = &seqMemArray[instance_index_u8];
+   \        0xC   0x....             LDR      R0,??DataTable2
+   \        0xE   0x0029             MOVS     R1,R5
+   \       0x10   0xB2C9             UXTB     R1,R1
+   \       0x12   0x2220             MOVS     R2,#+32
+   \       0x14   0x4351             MULS     R1,R2,R1
+   \       0x16   0x1840             ADDS     R0,R0,R1
+   \       0x18   0x0004             MOVS     R4,R0
+     63                  RingBuf_SetOwner(this_ring_buf_u32, NO_OWNER);
+   \       0x1A   0x21FF             MOVS     R1,#+255
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x....'....        BL       RingBuf_SetOwner
+     64                  RingBuf_SetProcessInstanceIndex(this_ring_buf_u32, NO_OWNER_ID);
+   \       0x22   0x21FF             MOVS     R1,#+255
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x....'....        BL       RingBuf_SetProcessInstanceIndex
+     65              }
+   \       0x2A   0x1C6D             ADDS     R5,R5,#+1
+   \       0x2C   0xE7EA             B        ??SeqMem_InitBufs_0
+     66              return TRUE;
+   \                     ??SeqMem_InitBufs_1: (+1)
+   \       0x2E   0x2001             MOVS     R0,#+1
+   \       0x30   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     67          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     seqMemArray
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   SeqMem_CreateInstance
+        48   -> RingBuf_GetOwner
+        48   -> RingBuf_GetProcessInstanceIndex
+        48   -> RingBuf_Initialize
+        48   -> RingBuf_SetProcessInstanceIndex
+        48   -> RingBuf_SetSystemInstanceIndex
+      24   SeqMem_DestroyInstance
+        24   -> RingBuf_ClearContents
+        24   -> RingBuf_GetOwner
+      16   SeqMem_InitBufs
+        16   -> RingBuf_SetOwner
+        16   -> RingBuf_SetProcessInstanceIndex
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+     170  SeqMem_CreateInstance
+      70  SeqMem_DestroyInstance
+      50  SeqMem_InitBufs
+     224  seqMemArray
+
+ 
+ 224 bytes in section .bss
+ 294 bytes in section .text
+ 
+ 294 bytes of CODE memory
+ 224 bytes of DATA memory
+
+Errors: none
+Warnings: none

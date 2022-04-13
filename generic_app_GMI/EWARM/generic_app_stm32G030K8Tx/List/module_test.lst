@@ -1,0 +1,1207 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:47
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_test.c
+#    Command line                 =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWE5D8.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_test.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_test.lst
+#    Object file                  =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_test.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\FlexMouse\Features\module_test.c
+      1          /**
+      2          *************************************************************************************
+      3          * @file    module_test.c 
+      4          * @author  Regal, Satya Akkina
+      5          * @version V1.0
+      6          * @date    Oct 05th 2021
+      7          * @brief   module to support testers
+      8          * @note    Provide functions that support various test requirements for production and debug
+      9          *************************************************************************************
+     10          */
+     11          
+     12          // Includes -------------------------------------------------------------------
+     13          #include "module_test.h"
+     14          
+     15          
+     16          #include "module_gpio.h"
+     17          #include "driver_usart2.h"
+     18          #include "module_usart2.h"
+     19          // Content --------------------------------------------------------------------
+     20          // Function Prototypes
+     21          void AssignTestModuleMem(void);
+     22          void Init_Module_Test_Setting(void);
+     23          void Init_Module_Test_Data(void);
+     24          void ProcessTestMessages(void);
+     25          
+     26          Operating_Status Change_Operating_Mode(void);
+     27          void clear_Command_Data(void);
+     28          void clear_Password(void);
+     29          
+
+   \                                 In section .bss, align 4
+     30          Usart2_Control* moduleTest_usart2_Control_ptr;
+   \                     moduleTest_usart2_Control_ptr:
+   \        0x0                      DS8 4
+     31          
+     32          // Constants
+     33          #define ADMIN_PASSWORD (0X523667403141646d) // R6g@1Adm (ASCII) in Hex
+     34          
+     35          // Module States
+     36          enum {
+     37            MEMORY_INIT_MODULE,
+     38            INIT_MODULE,
+     39            RUN_MODULE,
+     40            // Ddditional states to be added here as necessary.
+     41            IRQ_MODULE = DEFAULT_IRQ_STATE,
+     42            KILL_MODULE = KILL_APP
+     43          };
+     44          
+     45          // External Variables
+     46          extern Ram_Buf sharedMemArray[TOTAL_NUM_OF_STRUCT_MEM_INSTANCES];
+     47          extern ProcessInfo processInfoTable[];
+     48          
+     49          // Global variables specific to this module
+
+   \                                 In section .bss, align 4
+     50          static  Ram_Buf_Handle module_test_StructMem_u32;
+   \                     module_test_StructMem_u32:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     51          ModuleTest_Control moduleTest_Control;
+   \                     moduleTest_Control:
+   \        0x0                      DS8 24
+
+   \                                 In section .bss, align 8
+     52          uint64_t module_test_time_u64 = 0;
+   \                     module_test_time_u64:
+   \        0x0                      DS8 8
+     53          
+     54          // Define Pointers that will be used as References to other Modules, where applicable
+     55          
+     56          // Local variable
+
+   \                                 In section .bss, align 2
+     57          Operating_Modes current_set_operating_mode_u16 = ENTER_STD_MODE;
+   \                     current_set_operating_mode_u16:
+   \        0x0                      DS8 2
+     58          
+     59          /**
+     60          ********************************************************************************************************************************
+     61          * @brief   State machine for Test Module
+     62          * @details
+     63          * @retval  return_state_u8
+     64          ********************************************************************************************************************************
+     65          */
+
+   \                                 In section .text, align 2, keep-with-next
+     66          uint8_t moduleTest_u32(uint8_t drv_identifier_u8, uint8_t previous_state_u8, uint8_t next_state_u8,
+     67                                      uint8_t irq_identifier_u8)
+     68          {
+   \                     moduleTest_u32: (+1)
+   \        0x0   0xB5FB             PUSH     {R0,R1,R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x0015             MOVS     R5,R2
+     69            //local variables  
+     70            uint8_t return_state_u8 = MEMORY_INIT_MODULE;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x7008             STRB     R0,[R1, #+0]
+     71            
+     72            switch (next_state_u8)
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD008             BEQ      ??moduleTest_u32_0
+   \       0x14   0x2801             CMP      R0,#+1
+   \       0x16   0xD00A             BEQ      ??moduleTest_u32_1
+   \       0x18   0x2802             CMP      R0,#+2
+   \       0x1A   0xD02A             BEQ      ??moduleTest_u32_2
+   \       0x1C   0x28C8             CMP      R0,#+200
+   \       0x1E   0xD04B             BEQ      ??moduleTest_u32_3
+   \       0x20   0x28FF             CMP      R0,#+255
+   \       0x22   0xD04B             BEQ      ??moduleTest_u32_4
+   \       0x24   0xE05D             B        ??moduleTest_u32_5
+     73            {
+     74            case MEMORY_INIT_MODULE:
+     75              {
+     76                AssignTestModuleMem(); // Assign structured memory 
+   \                     ??moduleTest_u32_0: (+1)
+   \       0x26   0x....'....        BL       AssignTestModuleMem
+     77                return_state_u8 = INIT_MODULE;
+   \       0x2A   0x2001             MOVS     R0,#+1
+     78                break;
+   \       0x2C   0xE05A             B        ??moduleTest_u32_6
+     79              }
+     80            case INIT_MODULE:
+     81              {          
+     82                Init_Module_Test_Setting();  // Initilize PWM Input settings        
+   \                     ??moduleTest_u32_1: (+1)
+   \       0x2E   0x....'....        BL       Init_Module_Test_Setting
+     83                Init_Module_Test_Data();     // Init PWM input live data
+   \       0x32   0x....'....        BL       Init_Module_Test_Data
+     84                
+     85                /*Attach Uart2 structured memory into this App*/         
+     86                uint8_t Usart2index  = getProcessInfoIndex(MODULE_USART2); //return Process index from processInfo array
+   \       0x36   0x2003             MOVS     R0,#+3
+   \       0x38   0x....'....        BL       getProcessInfoIndex
+   \       0x3C   0x0004             MOVS     R4,R0
+     87                moduleTest_usart2_Control_ptr = (Usart2_Control*)((*(processInfoTable[Usart2index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory for USART2
+   \       0x3E   0x....             LDR      R0,??DataTable5
+   \       0x40   0x0021             MOVS     R1,R4
+   \       0x42   0xB2C9             UXTB     R1,R1
+   \       0x44   0x2216             MOVS     R2,#+22
+   \       0x46   0x4351             MULS     R1,R2,R1
+   \       0x48   0x1840             ADDS     R0,R0,R1
+   \       0x4A   0x300B             ADDS     R0,R0,#+11
+   \       0x4C   0x....'....        BL       __aeabi_uread4
+   \       0x50   0x6800             LDR      R0,[R0, #+0]
+   \       0x52   0x....             LDR      R1,??DataTable5_1
+   \       0x54   0x6008             STR      R0,[R1, #+0]
+     88                
+     89          //      // Get structured memory for TIM1 data
+     90          //      uint8_t module_TIM1_Index = getProcessInfoIndex(MODULE_TIM1);
+     91          //      tim1_LocalControl = (TIM1_Control*)((*(processInfoTable[module_TIM1_Index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);
+     92          //      
+     93          //      // Get structured memory for GPIO module data
+     94          //      uint8_t module_gpio_index_u8 = getProcessInfoIndex(MODULE_GPIO);
+     95          //      gpio_PWMInputLocalControl = (Gpio_Control*)((*(processInfoTable[module_gpio_index_u8].Sched_ModuleData.p_masterSharedMem_u32)).p_ramBuf_u8);
+     96                
+     97                module_test_time_u64 = getSysCount() + moduleTest_Control.moduleTest_Settings.testCheckPeriod_u16;   // Store next poll time value for the module
+   \       0x56   0x....'....        BL       getSysCount
+   \       0x5A   0x0002             MOVS     R2,R0
+   \       0x5C   0x000B             MOVS     R3,R1
+   \       0x5E   0x....             LDR      R0,??DataTable5_2
+   \       0x60   0x8980             LDRH     R0,[R0, #+12]
+   \       0x62   0x2100             MOVS     R1,#+0
+   \       0x64   0x1880             ADDS     R0,R0,R2
+   \       0x66   0x4159             ADCS     R1,R1,R3
+   \       0x68   0x....             LDR      R2,??DataTable5_3
+   \       0x6A   0xC203             STM      R2!,{R0,R1}
+   \       0x6C   0x3A08             SUBS     R2,R2,#+8
+     98                return_state_u8 = RUN_MODULE;
+   \       0x6E   0x2002             MOVS     R0,#+2
+     99                break;
+   \       0x70   0xE038             B        ??moduleTest_u32_6
+    100              }   
+    101            case RUN_MODULE:                                                             
+    102              {
+    103                // Process test module every "testCheckPeriod" mSec
+    104                if (getSysCount() >= module_test_time_u64) 
+   \                     ??moduleTest_u32_2: (+1)
+   \       0x72   0x....'....        BL       getSysCount
+   \       0x76   0x....             LDR      R2,??DataTable5_3
+   \       0x78   0xCA0C             LDM      R2,{R2,R3}
+   \       0x7A   0x4299             CMP      R1,R3
+   \       0x7C   0xD31A             BCC      ??moduleTest_u32_7
+   \       0x7E   0xD801             BHI      ??moduleTest_u32_8
+   \       0x80   0x4290             CMP      R0,R2
+   \       0x82   0xD317             BCC      ??moduleTest_u32_7
+    105                { 
+    106                  if(current_set_operating_mode_u16 != moduleTest_Control.moduleTest_Settings.setOperatingMode_u16)
+   \                     ??moduleTest_u32_8: (+1)
+   \       0x84   0x....             LDR      R4,??DataTable5_2
+   \       0x86   0x....             LDR      R6,??DataTable5_4
+   \       0x88   0x8830             LDRH     R0,[R6, #+0]
+   \       0x8A   0x8821             LDRH     R1,[R4, #+0]
+   \       0x8C   0x4288             CMP      R0,R1
+   \       0x8E   0xD004             BEQ      ??moduleTest_u32_9
+    107                  { // Check to see if current operating mode needs to be changed
+    108                    moduleTest_Control.moduleTest_Data.operatingStatus_u16  = Change_Operating_Mode();
+   \       0x90   0x....'....        BL       Change_Operating_Mode
+   \       0x94   0x8220             STRH     R0,[R4, #+16]
+    109                    current_set_operating_mode_u16 = moduleTest_Control.moduleTest_Settings.setOperatingMode_u16 ;
+   \       0x96   0x8820             LDRH     R0,[R4, #+0]
+   \       0x98   0x8030             STRH     R0,[R6, #+0]
+    110                  }
+    111                  if(moduleTest_Control.moduleTest_Data.testCommandStatus_u16 != WAITING_TO_ENTER_TEST_MODE)
+   \                     ??moduleTest_u32_9: (+1)
+   \       0x9A   0x8A60             LDRH     R0,[R4, #+18]
+   \       0x9C   0x2800             CMP      R0,#+0
+   \       0x9E   0xD009             BEQ      ??moduleTest_u32_7
+    112                  { // In test mode already
+    113                    if( ( (moduleTest_Control.moduleTest_Settings.testCommand_u16)!= NO_TEST_CMD))
+   \       0xA0   0x8860             LDRH     R0,[R4, #+2]
+   \       0xA2   0x2800             CMP      R0,#+0
+   \       0xA4   0xD006             BEQ      ??moduleTest_u32_7
+    114                    {
+    115                      if((moduleTest_Control.moduleTest_Data.testCommandStatus_u16 == TEST_STATUS_OK) )
+   \       0xA6   0x8A60             LDRH     R0,[R4, #+18]
+   \       0xA8   0x2802             CMP      R0,#+2
+   \       0xAA   0xD103             BNE      ??moduleTest_u32_7
+    116                    { // Process test commands
+    117                      moduleTest_Control.moduleTest_Data.testCommandStatus_u16 = TEST_BUSY;
+   \       0xAC   0x2003             MOVS     R0,#+3
+   \       0xAE   0x8260             STRH     R0,[R4, #+18]
+    118                      ProcessTestMessages();
+   \       0xB0   0x....'....        BL       ProcessTestMessages
+    119                    }
+    120                    }
+    121                  }
+    122          
+    123                }     
+    124                return_state_u8 = RUN_MODULE;
+   \                     ??moduleTest_u32_7: (+1)
+   \       0xB4   0x2002             MOVS     R0,#+2
+    125                break;
+   \       0xB6   0xE015             B        ??moduleTest_u32_6
+    126              }
+    127            case IRQ_MODULE: 
+    128              {
+    129                // If there are more than one interrupts, from different drivers, you can identify each individually by:
+    130                return_state_u8 = RUN_MODULE;
+   \                     ??moduleTest_u32_3: (+1)
+   \       0xB8   0x2002             MOVS     R0,#+2
+    131                break;
+   \       0xBA   0xE013             B        ??moduleTest_u32_6
+    132              }
+    133              
+    134            case KILL_MODULE: 
+    135              {
+    136                // Setting processStatus_u8 to PROCESS_STATUS_KILLED prevents the scheduler main loop from calling this module again.
+    137                uint8_t table_index_u8 = getProcessInfoIndex(drv_identifier_u8);
+   \                     ??moduleTest_u32_4: (+1)
+   \       0xBC   0x0038             MOVS     R0,R7
+   \       0xBE   0xB2C0             UXTB     R0,R0
+   \       0xC0   0x....'....        BL       getProcessInfoIndex
+   \       0xC4   0x0001             MOVS     R1,R0
+    138                if (table_index_u8 != INDEX_NOT_FOUND) {
+   \       0xC6   0x0008             MOVS     R0,R1
+   \       0xC8   0xB2C0             UXTB     R0,R0
+   \       0xCA   0x28FF             CMP      R0,#+255
+   \       0xCC   0xD007             BEQ      ??moduleTest_u32_10
+    139                  processInfoTable[table_index_u8].Sched_DrvData.processStatus_u8 = PROCESS_STATUS_KILLED;
+   \       0xCE   0x20FF             MOVS     R0,#+255
+   \       0xD0   0x....             LDR      R2,??DataTable5
+   \       0xD2   0x000B             MOVS     R3,R1
+   \       0xD4   0xB2DB             UXTB     R3,R3
+   \       0xD6   0x2416             MOVS     R4,#+22
+   \       0xD8   0x4363             MULS     R3,R4,R3
+   \       0xDA   0x18D2             ADDS     R2,R2,R3
+   \       0xDC   0x7290             STRB     R0,[R2, #+10]
+    140                }
+    141                return_state_u8 = INIT_MODULE;
+   \                     ??moduleTest_u32_10: (+1)
+   \       0xDE   0x2001             MOVS     R0,#+1
+    142                break;
+   \       0xE0   0xE000             B        ??moduleTest_u32_6
+    143              }
+    144            default:
+    145              {
+    146                return_state_u8 = KILL_MODULE; //10; 
+   \                     ??moduleTest_u32_5: (+1)
+   \       0xE2   0x20FF             MOVS     R0,#+255
+    147                break;
+    148              }
+    149            }
+    150            return return_state_u8;
+   \                     ??moduleTest_u32_6: (+1)
+   \       0xE4   0xB2C0             UXTB     R0,R0
+   \       0xE6   0xBDFE             POP      {R1-R7,PC}       ;; return
+    151          } 
+    152          
+    153          /**
+    154          ********************************************************************************************************************************
+    155          * @brief   Assign structured memory
+    156          * @details Assign structured memory for Digital PWM control
+    157          * @retval  None
+    158          ********************************************************************************************************************************
+    159          */
+    160          //
+
+   \                                 In section .text, align 2, keep-with-next
+    161          void AssignTestModuleMem(void){   
+   \                     AssignTestModuleMem: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    162            module_test_StructMem_u32 =  StructMem_CreateInstance(MODULE_TEST, sizeof(ModuleTest_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST);
+   \        0x2   0x....             LDR      R4,??DataTable6
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x2116             MOVS     R1,#+22
+   \        0xE   0x2010             MOVS     R0,#+16
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    163            (*module_test_StructMem_u32).p_ramBuf_u8 = (uint8_t *)&moduleTest_Control ;    // Map the TIM1 memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable7
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    164            uint8_t Module_Digital_Pwm_Index = getProcessInfoIndex(MODULE_TEST);
+   \       0x1C   0x2010             MOVS     R0,#+16
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    165            processInfoTable[Module_Digital_Pwm_Index].Sched_ModuleData.p_masterSharedMem_u32 = (Ram_Buf_Handle)module_test_StructMem_u32;
+   \       0x24   0x....             LDR      R0,??DataTable5
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    166          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    167          
+    168          /**
+    169          ********************************************************************************************************************************
+    170          * @brief   Initilize settings for this module
+    171          * @details 
+    172          * @retval  None
+    173          ********************************************************************************************************************************
+    174          */
+
+   \                                 In section .text, align 2, keep-with-next
+    175          void Init_Module_Test_Setting()
+    176          {
+   \                     Init_Module_Test_Setting: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    177            clear_Password();     // Clear password
+   \        0x2   0x....'....        BL       clear_Password
+    178            moduleTest_Control.moduleTest_Settings.setOperatingMode_u16 = ENTER_STD_MODE;   // Operating mode set by Modbus or UP
+   \        0x6   0x....             LDR      R0,??DataTable7
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x8001             STRH     R1,[R0, #+0]
+    179            moduleTest_Control.moduleTest_Settings.testCommand_u16 = NO_TEST_CMD; // Test command to be processed
+   \        0xC   0x8041             STRH     R1,[R0, #+2]
+    180            moduleTest_Control.moduleTest_Settings.testCheckPeriod_u16 = 10; // Poll time for test module
+   \        0xE   0x210A             MOVS     R1,#+10
+   \       0x10   0x8181             STRH     R1,[R0, #+12]
+    181            moduleTest_Control.moduleTest_Settings.flags_u16.empty01 = 0;    // Coil/falgs
+   \       0x12   0x89C1             LDRH     R1,[R0, #+14]
+   \       0x14   0x....             LDR      R2,??DataTable8  ;; 0xfffe
+   \       0x16   0x400A             ANDS     R2,R2,R1
+   \       0x18   0x81C2             STRH     R2,[R0, #+14]
+    182            
+    183            clear_Command_Data(); // Clear command array
+   \       0x1A   0x....'....        BL       clear_Command_Data
+    184          }
+   \       0x1E   0xBD01             POP      {R0,PC}          ;; return
+    185          
+    186          /**
+    187          ********************************************************************************************************************************
+    188          * @brief   Initilize live data for this module
+    189          * @details 
+    190          * @retval  None
+    191          ********************************************************************************************************************************
+    192          */
+
+   \                                 In section .text, align 2, keep-with-next
+    193          void Init_Module_Test_Data()
+    194          {
+    195            moduleTest_Control.moduleTest_Data.operatingStatus_u16 = STD_MODE;       // Current operating mode. See Operating Modes
+   \                     Init_Module_Test_Data: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable7
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x8201             STRH     R1,[R0, #+16]
+    196            moduleTest_Control.moduleTest_Data.testCommandStatus_u16 = WAITING_TO_ENTER_TEST_MODE;     // Test command to be processed
+   \        0x6   0x8241             STRH     R1,[R0, #+18]
+    197            moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode = FALSE; // Disable Admin mode
+   \        0x8   0x0001             MOVS     R1,R0
+   \        0xA   0x3114             ADDS     R1,R1,#+20
+   \        0xC   0x8A82             LDRH     R2,[R0, #+20]
+   \        0xE   0x....             LDR      R3,??DataTable8  ;; 0xfffe
+   \       0x10   0x4013             ANDS     R3,R3,R2
+   \       0x12   0x800B             STRH     R3,[R1, #+0]
+    198            moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = FALSE;  // Disable test mode
+   \       0x14   0x8A80             LDRH     R0,[R0, #+20]
+   \       0x16   0x....             LDR      R2,??DataTable8_4  ;; 0xfffd
+   \       0x18   0x4002             ANDS     R2,R2,R0
+   \       0x1A   0x800A             STRH     R2,[R1, #+0]
+    199          }
+   \       0x1C   0x4770             BX       LR               ;; return
+    200          
+    201          /**
+    202          ********************************************************************************************************************************
+    203          * @brief   Process the test messages
+    204          * @details 
+    205          * @retval  None
+    206          ********************************************************************************************************************************
+    207          */
+
+   \                                 In section .text, align 2, keep-with-next
+    208          void ProcessTestMessages()
+    209          {
+   \                     ProcessTestMessages: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+    210            switch(moduleTest_Control.moduleTest_Settings.testCommand_u16)
+   \        0x4   0x....             LDR      R4,??DataTable7
+   \        0x6   0x8860             LDRH     R0,[R4, #+2]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD00C             BEQ      ??ProcessTestMessages_0
+   \        0xC   0xD340             BCC      ??ProcessTestMessages_1
+   \        0xE   0x2803             CMP      R0,#+3
+   \       0x10   0xD00B             BEQ      ??ProcessTestMessages_2
+   \       0x12   0xD309             BCC      ??ProcessTestMessages_3
+   \       0x14   0x2805             CMP      R0,#+5
+   \       0x16   0xD00A             BEQ      ??ProcessTestMessages_4
+   \       0x18   0xD308             BCC      ??ProcessTestMessages_5
+   \       0x1A   0x2807             CMP      R0,#+7
+   \       0x1C   0xD009             BEQ      ??ProcessTestMessages_6
+   \       0x1E   0xD307             BCC      ??ProcessTestMessages_7
+   \       0x20   0x2808             CMP      R0,#+8
+   \       0x22   0xD016             BEQ      ??ProcessTestMessages_8
+   \       0x24   0xE034             B        ??ProcessTestMessages_1
+    211            {
+    212              case ANALOG_VOLTS_INPUT_CALIB_CMD:
+    213              {
+    214          
+    215                break;   
+   \                     ??ProcessTestMessages_0: (+1)
+   \       0x26   0xE033             B        ??ProcessTestMessages_9
+    216              }
+    217              case ANALOG_AMPS_INPUT_CALIB_CMD:
+    218              {
+    219                
+    220                break;   
+   \                     ??ProcessTestMessages_3: (+1)
+   \       0x28   0xE032             B        ??ProcessTestMessages_9
+    221              }
+    222              case SET_USER_SETTINGS_CRC_CMD:
+    223              {
+    224                
+    225                break;   
+   \                     ??ProcessTestMessages_2: (+1)
+   \       0x2A   0xE031             B        ??ProcessTestMessages_9
+    226              }
+    227              case SET_DEFAULT_SETTINGS_CRC_CMD:
+    228              {
+    229                
+    230                break;   
+   \                     ??ProcessTestMessages_5: (+1)
+   \       0x2C   0xE030             B        ??ProcessTestMessages_9
+    231              }
+    232              case SET_APP_VERSION_CMD:
+    233              {
+    234                
+    235                break;   
+   \                     ??ProcessTestMessages_4: (+1)
+   \       0x2E   0xE02F             B        ??ProcessTestMessages_9
+    236              }
+    237              case SET_FLASH_VERSION_CMD:
+    238              {
+    239                
+    240                break;   
+   \                     ??ProcessTestMessages_7: (+1)
+   \       0x30   0xE02E             B        ??ProcessTestMessages_9
+    241              }
+    242              case SET_DIGITAL_OUTPUT_CMD:
+    243              {
+    244                uint8_t output_num_u8 = 0;
+   \                     ??ProcessTestMessages_6: (+1)
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x0005             MOVS     R5,R0
+    245                uint8_t pin_State_u8 = 0;
+   \       0x36   0x4669             MOV      R1,SP
+   \       0x38   0x7008             STRB     R0,[R1, #+0]
+    246                output_num_u8 = (uint8_t)(moduleTest_Control.moduleTest_Settings.testCommandData_u16[0] & 0x00FF);
+   \       0x3A   0x88A7             LDRH     R7,[R4, #+4]
+    247                pin_State_u8  = (uint8_t)((moduleTest_Control.moduleTest_Settings.testCommandData_u16[0] >>8) & 0x00FF);
+   \       0x3C   0x88A0             LDRH     R0,[R4, #+4]
+   \       0x3E   0x0006             MOVS     R6,R0
+   \       0x40   0xB2B6             UXTH     R6,R6
+   \       0x42   0x0A36             LSRS     R6,R6,#+8
+    248                Module_Gpio_WriteGpioState(output_num_u8, pin_State_u8 );
+   \       0x44   0x0031             MOVS     R1,R6
+   \       0x46   0xB2C9             UXTB     R1,R1
+   \       0x48   0x0038             MOVS     R0,R7
+   \       0x4A   0xB2C0             UXTB     R0,R0
+   \       0x4C   0x....'....        BL       Module_Gpio_WriteGpioState
+    249                
+    250                break;   
+   \       0x50   0xE01E             B        ??ProcessTestMessages_9
+    251              }
+    252              case SET_BURN_IN_CMD:
+    253              {
+    254                // Send burn-in command to motor control
+    255                unsigned char speedTx[] = {0x55, 0x03, 0x23, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0xCC, 0xCC};
+   \                     ??ProcessTestMessages_8: (+1)
+   \       0x52   0xA801             ADD      R0,SP,#+4
+   \       0x54   0x....             LDR      R1,??DataTable8_1
+   \       0x56   0xC92C             LDM      R1!,{R2,R3,R5}
+   \       0x58   0xC02C             STM      R0!,{R2,R3,R5}
+   \       0x5A   0x390C             SUBS     R1,R1,#+12
+   \       0x5C   0x380C             SUBS     R0,R0,#+12
+    256                
+    257                unsigned int speedLen = sizeof(speedTx);
+   \       0x5E   0x200B             MOVS     R0,#+11
+   \       0x60   0x9000             STR      R0,[SP, #+0]
+    258                
+    259                // Command 0 - Burn-in frequency
+    260                // Command 1 - Burn-in Current
+    261                // Command 2 - Burn-in Enable (LSB only)
+    262                speedTx[5] = (unsigned char) ( (moduleTest_Control.moduleTest_Settings.testCommandData_u16[0] >> 8) & ( 0x00FF) ); // Frequency MSB
+   \       0x62   0xA801             ADD      R0,SP,#+4
+   \       0x64   0x88A1             LDRH     R1,[R4, #+4]
+   \       0x66   0xB289             UXTH     R1,R1
+   \       0x68   0x0A09             LSRS     R1,R1,#+8
+   \       0x6A   0x7141             STRB     R1,[R0, #+5]
+    263                speedTx[6] = (unsigned char) (moduleTest_Control.moduleTest_Settings.testCommandData_u16[0] & 0x00FF); // Frequency LSB
+   \       0x6C   0x88A1             LDRH     R1,[R4, #+4]
+   \       0x6E   0x7181             STRB     R1,[R0, #+6]
+    264                speedTx[7] = (unsigned char) ( (moduleTest_Control.moduleTest_Settings.testCommandData_u16[1] >> 8) & ( 0x00FF) ); // Current MSB
+   \       0x70   0x88E1             LDRH     R1,[R4, #+6]
+   \       0x72   0xB289             UXTH     R1,R1
+   \       0x74   0x0A09             LSRS     R1,R1,#+8
+   \       0x76   0x71C1             STRB     R1,[R0, #+7]
+    265                speedTx[8] = (unsigned char) (moduleTest_Control.moduleTest_Settings.testCommandData_u16[1] & 0x00FF); // Current LSB
+   \       0x78   0x88E1             LDRH     R1,[R4, #+6]
+   \       0x7A   0x7201             STRB     R1,[R0, #+8]
+    266                speedTx[9] = (unsigned char) ( (moduleTest_Control.moduleTest_Settings.testCommandData_u16[2]) & ( 0x00FF) ); // Burn-in enable
+   \       0x7C   0x8921             LDRH     R1,[R4, #+8]
+   \       0x7E   0x7241             STRB     R1,[R0, #+9]
+    267                
+    268                RingBuf_WriteBlock((*moduleTest_usart2_Control_ptr).seqMemTX_u32, speedTx, &speedLen);
+   \       0x80   0x466A             MOV      R2,SP
+   \       0x82   0xA901             ADD      R1,SP,#+4
+   \       0x84   0x....             LDR      R0,??DataTable5_1
+   \       0x86   0x6800             LDR      R0,[R0, #+0]
+   \       0x88   0x6880             LDR      R0,[R0, #+8]
+   \       0x8A   0x....'....        BL       RingBuf_WriteBlock
+    269                
+    270                break; 
+   \       0x8E   0xE7FF             B        ??ProcessTestMessages_9
+    271              }
+    272              default:
+    273              {
+    274                
+    275                break;   
+    276              }   
+    277            }
+    278            clear_Command_Data();
+   \                     ??ProcessTestMessages_1: (+1)
+   \                     ??ProcessTestMessages_9: (+1)
+   \       0x90   0x....'....        BL       clear_Command_Data
+    279            moduleTest_Control.moduleTest_Settings.testCommand_u16 = NO_TEST_CMD;
+   \       0x94   0x2000             MOVS     R0,#+0
+   \       0x96   0x8060             STRH     R0,[R4, #+2]
+    280            moduleTest_Control.moduleTest_Data.testCommandStatus_u16 = TEST_STATUS_OK;
+   \       0x98   0x2002             MOVS     R0,#+2
+   \       0x9A   0x8260             STRH     R0,[R4, #+18]
+    281          }
+   \       0x9C   0xB005             ADD      SP,SP,#+20
+   \       0x9E   0xBDF0             POP      {R4-R7,PC}       ;; return
+    282          
+    283          /**
+    284          ********************************************************************************************************************************
+    285          * @brief   Verify the admin password and sets "isAdminMode" flag accordingly
+    286          * @details 
+    287          * @retval  Operating_Status: Returns the PASSWORD_PASS or PASSWORD_FAIL
+    288          ********************************************************************************************************************************
+    289          */
+
+   \                                 In section .text, align 2, keep-with-next
+    290          Operating_Status Verify_Password()
+    291          {
+   \                     Verify_Password: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+    292            uint64_t set_password_u64 = 0;
+   \        0x2   0x2600             MOVS     R6,#+0
+   \        0x4   0x2700             MOVS     R7,#+0
+    293            Operating_Status status_u16 = PASSWORD_FAIL;
+   \        0x6   0x2002             MOVS     R0,#+2
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x8108             STRH     R0,[R1, #+8]
+    294            moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode = FALSE;
+   \        0xC   0x....             LDR      R0,??DataTable7
+   \        0xE   0x....             LDR      R1,??DataTable8_2
+   \       0x10   0x8A82             LDRH     R2,[R0, #+20]
+   \       0x12   0x....             LDR      R3,??DataTable8  ;; 0xfffe
+   \       0x14   0x4013             ANDS     R3,R3,R2
+   \       0x16   0x800B             STRH     R3,[R1, #+0]
+    295            set_password_u64 = (((uint64_t)moduleTest_Control.moduleTest_Settings.testCommandData_u16[3]) << 48) + 
+    296                               (((uint64_t)moduleTest_Control.moduleTest_Settings.testCommandData_u16[2]) << 32) +
+    297                               (((uint64_t)moduleTest_Control.moduleTest_Settings.testCommandData_u16[1]) << 16) +
+    298                                ((uint64_t)moduleTest_Control.moduleTest_Settings.testCommandData_u16[0]);
+   \       0x18   0x8942             LDRH     R2,[R0, #+10]
+   \       0x1A   0x2300             MOVS     R3,#+0
+   \       0x1C   0x0413             LSLS     R3,R2,#+16
+   \       0x1E   0x2200             MOVS     R2,#+0
+   \       0x20   0x9200             STR      R2,[SP, #+0]
+   \       0x22   0x9301             STR      R3,[SP, #+4]
+   \       0x24   0x8902             LDRH     R2,[R0, #+8]
+   \       0x26   0x2300             MOVS     R3,#+0
+   \       0x28   0x0013             MOVS     R3,R2
+   \       0x2A   0x2200             MOVS     R2,#+0
+   \       0x2C   0x9C00             LDR      R4,[SP, #+0]
+   \       0x2E   0x9D01             LDR      R5,[SP, #+4]
+   \       0x30   0x1912             ADDS     R2,R2,R4
+   \       0x32   0x416B             ADCS     R3,R3,R5
+   \       0x34   0x9200             STR      R2,[SP, #+0]
+   \       0x36   0x9301             STR      R3,[SP, #+4]
+   \       0x38   0x88C2             LDRH     R2,[R0, #+6]
+   \       0x3A   0x2300             MOVS     R3,#+0
+   \       0x3C   0x041B             LSLS     R3,R3,#+16
+   \       0x3E   0x0C14             LSRS     R4,R2,#+16
+   \       0x40   0x4323             ORRS     R3,R3,R4
+   \       0x42   0x0412             LSLS     R2,R2,#+16
+   \       0x44   0x9C00             LDR      R4,[SP, #+0]
+   \       0x46   0x9D01             LDR      R5,[SP, #+4]
+   \       0x48   0x1912             ADDS     R2,R2,R4
+   \       0x4A   0x416B             ADCS     R3,R3,R5
+   \       0x4C   0x8884             LDRH     R4,[R0, #+4]
+   \       0x4E   0x2500             MOVS     R5,#+0
+   \       0x50   0x18A4             ADDS     R4,R4,R2
+   \       0x52   0x415D             ADCS     R5,R5,R3
+    299            if(set_password_u64 == ADMIN_PASSWORD)
+   \       0x54   0x....             ADR      R2,??DataTable8_5
+   \       0x56   0xCA0C             LDM      R2,{R2,R3}
+   \       0x58   0x429D             CMP      R5,R3
+   \       0x5A   0xD108             BNE      ??Verify_Password_0
+   \       0x5C   0x4294             CMP      R4,R2
+   \       0x5E   0xD106             BNE      ??Verify_Password_0
+    300            {  
+    301              status_u16 = PASSWORD_PASS;
+   \       0x60   0x2203             MOVS     R2,#+3
+   \       0x62   0x466B             MOV      R3,SP
+   \       0x64   0x811A             STRH     R2,[R3, #+8]
+    302              moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode = TRUE;
+   \       0x66   0x8A80             LDRH     R0,[R0, #+20]
+   \       0x68   0x2201             MOVS     R2,#+1
+   \       0x6A   0x4302             ORRS     R2,R2,R0
+   \       0x6C   0x800A             STRH     R2,[R1, #+0]
+    303            }
+    304            clear_Command_Data();
+   \                     ??Verify_Password_0: (+1)
+   \       0x6E   0x....'....        BL       clear_Command_Data
+    305            return(status_u16);
+   \       0x72   0x4668             MOV      R0,SP
+   \       0x74   0x8900             LDRH     R0,[R0, #+8]
+   \       0x76   0xBDFE             POP      {R1-R7,PC}       ;; return
+    306          }
+    307          
+    308          /**
+    309          ********************************************************************************************************************************
+    310          * @brief   Change the current operating mode
+    311          * @details 
+    312          * @retval  Operating_Status: Returns the status to change mode or fail
+    313          ********************************************************************************************************************************
+    314          */
+
+   \                                 In section .text, align 2, keep-with-next
+    315          Operating_Status Change_Operating_Mode()
+    316          {
+   \                     Change_Operating_Mode: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    317            Operating_Status Operating_status_u16 = UNKNOWN_OPERATING_STATUS;
+   \        0x2   0x....             LDR      R7,??DataTable8_3  ;; 0xffff
+    318            Test_Command_Status test_command_status_u16 = WAITING_TO_ENTER_TEST_MODE;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x0004             MOVS     R4,R0
+    319            switch(moduleTest_Control.moduleTest_Settings.setOperatingMode_u16)
+   \        0x8   0x....             LDR      R5,??DataTable7
+   \        0xA   0x8829             LDRH     R1,[R5, #+0]
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xD065             BEQ      ??Change_Operating_Mode_0
+   \       0x10   0x2901             CMP      R1,#+1
+   \       0x12   0xD00A             BEQ      ??Change_Operating_Mode_1
+   \       0x14   0x2902             CMP      R1,#+2
+   \       0x16   0xD016             BEQ      ??Change_Operating_Mode_2
+   \       0x18   0x2903             CMP      R1,#+3
+   \       0x1A   0xD023             BEQ      ??Change_Operating_Mode_3
+   \       0x1C   0x2904             CMP      R1,#+4
+   \       0x1E   0xD030             BEQ      ??Change_Operating_Mode_4
+   \       0x20   0x2905             CMP      R1,#+5
+   \       0x22   0xD03D             BEQ      ??Change_Operating_Mode_5
+   \       0x24   0x2907             CMP      R1,#+7
+   \       0x26   0xD04A             BEQ      ??Change_Operating_Mode_6
+   \       0x28   0xE067             B        ??Change_Operating_Mode_7
+    320            {
+    321            
+    322              case ENTER_ADMIN_MODE: // Admin mode. Includes admin access
+    323              {
+    324                Operating_status_u16 = Verify_Password();
+   \                     ??Change_Operating_Mode_1: (+1)
+   \       0x2A   0x....'....        BL       Verify_Password
+    325                
+    326                if(Operating_status_u16 == PASSWORD_PASS)
+   \       0x2E   0x0001             MOVS     R1,R0
+   \       0x30   0xB289             UXTH     R1,R1
+   \       0x32   0x2903             CMP      R1,#+3
+   \       0x34   0xD105             BNE      ??Change_Operating_Mode_8
+    327                {
+    328                  Operating_status_u16 = ADMIN_MODE;
+   \       0x36   0x2604             MOVS     R6,#+4
+    329                  moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = FALSE;
+   \       0x38   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0x3A   0x....             LDR      R2,??DataTable8_4  ;; 0xfffd
+   \       0x3C   0x400A             ANDS     R2,R2,R1
+   \       0x3E   0x82AA             STRH     R2,[R5, #+20]
+   \       0x40   0xE000             B        ??Change_Operating_Mode_9
+    330                } else
+    331                {
+    332                  Operating_status_u16 = ENTER_ADMIN_MODE_FAIL;
+   \                     ??Change_Operating_Mode_8: (+1)
+   \       0x42   0x260B             MOVS     R6,#+11
+    333                }
+    334                break;
+   \                     ??Change_Operating_Mode_9: (+1)
+   \       0x44   0xE05F             B        ??Change_Operating_Mode_10
+    335              }   
+    336              case ENTER_TEST_MODE:
+    337              {
+    338                Operating_status_u16= ENTER_TEST_MODE_FAIL;
+   \                     ??Change_Operating_Mode_2: (+1)
+   \       0x46   0x260C             MOVS     R6,#+12
+    339                if(moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode == TRUE)
+   \       0x48   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x4A   0x0001             MOVS     R1,R0
+   \       0x4C   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0x4E   0x0FC9             LSRS     R1,R1,#+31
+   \       0x50   0x2900             CMP      R1,#+0
+   \       0x52   0xD006             BEQ      ??Change_Operating_Mode_11
+    340                {
+    341                  Operating_status_u16 = TEST_MODE;
+   \       0x54   0x2005             MOVS     R0,#+5
+   \       0x56   0x0006             MOVS     R6,R0
+    342                  test_command_status_u16 = TEST_STATUS_OK;
+   \       0x58   0x2002             MOVS     R0,#+2
+   \       0x5A   0x0004             MOVS     R4,R0
+    343                  moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = TRUE;
+   \       0x5C   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0x5E   0x4308             ORRS     R0,R0,R1
+   \       0x60   0x82A8             STRH     R0,[R5, #+20]
+    344                } 
+    345                break;    
+   \                     ??Change_Operating_Mode_11: (+1)
+   \       0x62   0xE050             B        ??Change_Operating_Mode_10
+    346              }
+    347              case ENTER_HW_FCT_TEST_MODE: // FCT test mode. Includes admin access
+    348              {
+    349                Operating_status_u16= ENTER_HW_FCT_TEST_MODE_FAIL;
+   \                     ??Change_Operating_Mode_3: (+1)
+   \       0x64   0x260D             MOVS     R6,#+13
+    350                if(moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode == TRUE)
+   \       0x66   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x68   0x0001             MOVS     R1,R0
+   \       0x6A   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0x6C   0x0FC9             LSRS     R1,R1,#+31
+   \       0x6E   0x2900             CMP      R1,#+0
+   \       0x70   0xD006             BEQ      ??Change_Operating_Mode_12
+    351                {
+    352                  Operating_status_u16 = HW_FCT_TEST_MODE;
+   \       0x72   0x2006             MOVS     R0,#+6
+   \       0x74   0x0006             MOVS     R6,R0
+    353                  test_command_status_u16 = TEST_STATUS_OK;
+   \       0x76   0x2002             MOVS     R0,#+2
+   \       0x78   0x0004             MOVS     R4,R0
+    354                  moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = TRUE;
+   \       0x7A   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0x7C   0x4308             ORRS     R0,R0,R1
+   \       0x7E   0x82A8             STRH     R0,[R5, #+20]
+    355                }      
+    356                break;
+   \                     ??Change_Operating_Mode_12: (+1)
+   \       0x80   0xE041             B        ??Change_Operating_Mode_10
+    357              }
+    358              case ENTER_HW_ICT_TEST_MODE: // ICT test mode. Includes admin access
+    359              {  
+    360                Operating_status_u16 = ENTER_HW_ICT_TEST_MODE_FAIL;
+   \                     ??Change_Operating_Mode_4: (+1)
+   \       0x82   0x260E             MOVS     R6,#+14
+    361                if(moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode == TRUE)
+   \       0x84   0x7D28             LDRB     R0,[R5, #+20]
+   \       0x86   0x0001             MOVS     R1,R0
+   \       0x88   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0x8A   0x0FC9             LSRS     R1,R1,#+31
+   \       0x8C   0x2900             CMP      R1,#+0
+   \       0x8E   0xD006             BEQ      ??Change_Operating_Mode_13
+    362                {
+    363                  Operating_status_u16 = HW_ICT_TEST_MODE;
+   \       0x90   0x2007             MOVS     R0,#+7
+   \       0x92   0x0006             MOVS     R6,R0
+    364                  test_command_status_u16 = TEST_STATUS_OK;
+   \       0x94   0x2002             MOVS     R0,#+2
+   \       0x96   0x0004             MOVS     R4,R0
+    365                  moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = TRUE;
+   \       0x98   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0x9A   0x4308             ORRS     R0,R0,R1
+   \       0x9C   0x82A8             STRH     R0,[R5, #+20]
+    366                } 
+    367                break;
+   \                     ??Change_Operating_Mode_13: (+1)
+   \       0x9E   0xE032             B        ??Change_Operating_Mode_10
+    368              }
+    369              case ENTER_HW_BI_TEST_MODE:  // BI test mode. Includes admin access
+    370              {  
+    371                Operating_status_u16 = ENTER_HW_BI_TEST_MODE_FAIL;
+   \                     ??Change_Operating_Mode_5: (+1)
+   \       0xA0   0x260F             MOVS     R6,#+15
+    372                if(moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode == TRUE)
+   \       0xA2   0x7D28             LDRB     R0,[R5, #+20]
+   \       0xA4   0x0001             MOVS     R1,R0
+   \       0xA6   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0xA8   0x0FC9             LSRS     R1,R1,#+31
+   \       0xAA   0x2900             CMP      R1,#+0
+   \       0xAC   0xD006             BEQ      ??Change_Operating_Mode_14
+    373                {
+    374                  Operating_status_u16 = HW_BI_TEST_MODE;
+   \       0xAE   0x2008             MOVS     R0,#+8
+   \       0xB0   0x0006             MOVS     R6,R0
+    375                  test_command_status_u16 = TEST_STATUS_OK;
+   \       0xB2   0x2002             MOVS     R0,#+2
+   \       0xB4   0x0004             MOVS     R4,R0
+    376                  moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = TRUE;
+   \       0xB6   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0xB8   0x4308             ORRS     R0,R0,R1
+   \       0xBA   0x82A8             STRH     R0,[R5, #+20]
+    377                } 
+    378                break;
+   \                     ??Change_Operating_Mode_14: (+1)
+   \       0xBC   0xE023             B        ??Change_Operating_Mode_10
+    379              }
+    380              case ENTER_SW_TEST_MODE:  // Software test mode
+    381              {  
+    382                Operating_status_u16 = ENTER_HW_FCT_TEST_MODE_FAIL;
+   \                     ??Change_Operating_Mode_6: (+1)
+   \       0xBE   0x260D             MOVS     R6,#+13
+    383                if(moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode == TRUE)
+   \       0xC0   0x7D28             LDRB     R0,[R5, #+20]
+   \       0xC2   0x0001             MOVS     R1,R0
+   \       0xC4   0x07C9             LSLS     R1,R1,#+31       ;; ZeroExtS R1,R1,#+31,#+31
+   \       0xC6   0x0FC9             LSRS     R1,R1,#+31
+   \       0xC8   0x2900             CMP      R1,#+0
+   \       0xCA   0xD006             BEQ      ??Change_Operating_Mode_15
+    384                {
+    385                  Operating_status_u16 = SW_TEST_MODE;
+   \       0xCC   0x200A             MOVS     R0,#+10
+   \       0xCE   0x0006             MOVS     R6,R0
+    386                  test_command_status_u16 = TEST_STATUS_OK;
+   \       0xD0   0x2002             MOVS     R0,#+2
+   \       0xD2   0x0004             MOVS     R4,R0
+    387                  moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = TRUE;
+   \       0xD4   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0xD6   0x4308             ORRS     R0,R0,R1
+   \       0xD8   0x82A8             STRH     R0,[R5, #+20]
+    388                } 
+    389                break;
+   \                     ??Change_Operating_Mode_15: (+1)
+   \       0xDA   0xE014             B        ??Change_Operating_Mode_10
+    390              }
+    391              
+    392              case ENTER_STD_MODE: // Exit test mode and admin mode
+    393              {
+    394                Operating_status_u16 = STD_MODE;
+   \                     ??Change_Operating_Mode_0: (+1)
+   \       0xDC   0x0006             MOVS     R6,R0
+    395                test_command_status_u16 = WAITING_TO_ENTER_TEST_MODE;
+   \       0xDE   0x0004             MOVS     R4,R0
+    396                moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = FALSE;
+   \       0xE0   0x0028             MOVS     R0,R5
+   \       0xE2   0x3014             ADDS     R0,R0,#+20
+   \       0xE4   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0xE6   0x....             LDR      R2,??DataTable8_4  ;; 0xfffd
+   \       0xE8   0x400A             ANDS     R2,R2,R1
+   \       0xEA   0x8002             STRH     R2,[R0, #+0]
+    397                moduleTest_Control.moduleTest_Data.discretes_u16.isAdminMode = FALSE;
+   \       0xEC   0x8AA9             LDRH     R1,[R5, #+20]
+   \       0xEE   0x....             LDR      R2,??DataTable8  ;; 0xfffe
+   \       0xF0   0x400A             ANDS     R2,R2,R1
+   \       0xF2   0x8002             STRH     R2,[R0, #+0]
+    398                clear_Command_Data();      
+   \       0xF4   0x....'....        BL       clear_Command_Data
+    399                break;        
+   \       0xF8   0xE005             B        ??Change_Operating_Mode_10
+    400              }
+    401              default:
+    402              {
+    403                Operating_status_u16 = ENTER_SW_TEST_MODE_FAIL;
+   \                     ??Change_Operating_Mode_7: (+1)
+   \       0xFA   0x2610             MOVS     R6,#+16
+    404                moduleTest_Control.moduleTest_Settings.setOperatingMode_u16 = ENTER_STD_MODE;
+   \       0xFC   0x8028             STRH     R0,[R5, #+0]
+    405                moduleTest_Control.moduleTest_Data.discretes_u16.isTestMode = FALSE;
+   \       0xFE   0x8AA8             LDRH     R0,[R5, #+20]
+   \      0x100   0x....             LDR      R1,??DataTable8_4  ;; 0xfffd
+   \      0x102   0x4001             ANDS     R1,R1,R0
+   \      0x104   0x82A9             STRH     R1,[R5, #+20]
+    406                break;
+    407              }      
+    408            } 
+    409            moduleTest_Control.moduleTest_Data.testCommandStatus_u16 = test_command_status_u16;
+   \                     ??Change_Operating_Mode_10: (+1)
+   \      0x106   0x826C             STRH     R4,[R5, #+18]
+    410            return(Operating_status_u16);
+   \      0x108   0x0030             MOVS     R0,R6
+   \      0x10A   0xB280             UXTH     R0,R0
+   \      0x10C   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    411          }
+    412          
+    413          /**
+    414          ********************************************************************************************************************************
+    415          * @brief   Clear command array buffer
+    416          * @details 
+    417          * @retval  None
+    418          ********************************************************************************************************************************
+    419          */
+
+   \                                 In section .text, align 2, keep-with-next
+    420          void clear_Command_Data()
+    421          {
+   \                     clear_Command_Data: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    422            for(uint8_t index_u8=0; index_u8 < MAX_TEST_CMD_DATA_LENGTH_IN_WORDS; index_u8++)
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x0008             MOVS     R0,R1
+   \                     ??clear_Command_Data_0: (+1)
+   \        0x6   0x0002             MOVS     R2,R0
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x2A04             CMP      R2,#+4
+   \        0xC   0xDA08             BGE      ??clear_Command_Data_1
+    423            {
+    424              moduleTest_Control.moduleTest_Settings.testCommandData_u16[index_u8]=0;
+   \        0xE   0x....             LDR      R2,??DataTable7
+   \       0x10   0x0003             MOVS     R3,R0
+   \       0x12   0xB2DB             UXTB     R3,R3
+   \       0x14   0x2402             MOVS     R4,#+2
+   \       0x16   0x4363             MULS     R3,R4,R3
+   \       0x18   0x18D2             ADDS     R2,R2,R3
+   \       0x1A   0x8091             STRH     R1,[R2, #+4]
+    425            } 
+   \       0x1C   0x1C40             ADDS     R0,R0,#+1
+   \       0x1E   0xE7F2             B        ??clear_Command_Data_0
+    426          }
+   \                     ??clear_Command_Data_1: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}          ;; return
+    427          
+    428          
+    429          /**
+    430          ********************************************************************************************************************************
+    431          * @brief   Clear password
+    432          * @details 
+    433          * @retval  None
+    434          ********************************************************************************************************************************
+    435          */
+
+   \                                 In section .text, align 2, keep-with-next
+    436          void clear_Password()
+    437          {
+   \                     clear_Password: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    438            for(uint8_t index_u8=0; index_u8 < MAX_PASSWORD_LENGTH_IN_WORDS; index_u8++)
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x0008             MOVS     R0,R1
+   \                     ??clear_Password_0: (+1)
+   \        0x6   0x0002             MOVS     R2,R0
+   \        0x8   0xB2D2             UXTB     R2,R2
+   \        0xA   0x2A04             CMP      R2,#+4
+   \        0xC   0xDA08             BGE      ??clear_Password_1
+    439            {
+    440              moduleTest_Control.moduleTest_Settings.testCommandData_u16[index_u8]=0;
+   \        0xE   0x....             LDR      R2,??DataTable8_6
+   \       0x10   0x0003             MOVS     R3,R0
+   \       0x12   0xB2DB             UXTB     R3,R3
+   \       0x14   0x2402             MOVS     R4,#+2
+   \       0x16   0x4363             MULS     R3,R4,R3
+   \       0x18   0x18D2             ADDS     R2,R2,R3
+   \       0x1A   0x8091             STRH     R1,[R2, #+4]
+    441            } 
+   \       0x1C   0x1C40             ADDS     R0,R0,#+1
+   \       0x1E   0xE7F2             B        ??clear_Password_0
+    442          }
+   \                     ??clear_Password_1: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     moduleTest_usart2_Control_ptr
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     moduleTest_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     module_test_time_u64
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     current_set_operating_mode_u16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     module_test_StructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     moduleTest_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x0000'FFFE        DC32     0xfffe
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x....'....        DC32     moduleTest_Control+0x14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x0000'FFFF        DC32     0xffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0x0000'FFFD        DC32     0xfffd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x3141'646D        DC32     0x3141646D,0x52366740
+
+   \              0x5236'6740
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \        0x0   0x....'....        DC32     moduleTest_Control
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x55 0x03          DC8 85, 3, 35, 0, 0, 255, 255, 255, 255, 204, 204
+
+   \              0x23 0x00    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xCC    
+
+   \              0xCC
+   \        0xB                      DS8 1
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   AssignTestModuleMem
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+      24   Change_Operating_Mode
+        24   -> Verify_Password
+        24   -> clear_Command_Data
+       0   Init_Module_Test_Data
+       8   Init_Module_Test_Setting
+         8   -> clear_Command_Data
+         8   -> clear_Password
+      40   ProcessTestMessages
+        40   -> Module_Gpio_WriteGpioState
+        40   -> RingBuf_WriteBlock
+        40   -> clear_Command_Data
+      32   Verify_Password
+        32   -> clear_Command_Data
+       8   clear_Command_Data
+       8   clear_Password
+      32   moduleTest_u32
+        32   -> AssignTestModuleMem
+        32   -> Change_Operating_Mode
+        32   -> Init_Module_Test_Data
+        32   -> Init_Module_Test_Setting
+        32   -> ProcessTestMessages
+        32   -> getProcessInfoIndex
+        32   -> getSysCount
+        32 __aeabi_uread4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable6
+       4  ??DataTable7
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       8  ??DataTable8_5
+       4  ??DataTable8_6
+      12  ?_0
+      60  AssignTestModuleMem
+     270  Change_Operating_Mode
+      30  Init_Module_Test_Data
+      32  Init_Module_Test_Setting
+     160  ProcessTestMessages
+     120  Verify_Password
+      34  clear_Command_Data
+      34  clear_Password
+       2  current_set_operating_mode_u16
+      24  moduleTest_Control
+     232  moduleTest_u32
+       4  moduleTest_usart2_Control_ptr
+       4  module_test_StructMem_u32
+       8  module_test_time_u64
+
+ 
+    42 bytes in section .bss
+    12 bytes in section .rodata
+ 1'032 bytes in section .text
+ 
+ 1'032 bytes of CODE  memory
+    12 bytes of CONST memory
+    42 bytes of DATA  memory
+
+Errors: none
+Warnings: none

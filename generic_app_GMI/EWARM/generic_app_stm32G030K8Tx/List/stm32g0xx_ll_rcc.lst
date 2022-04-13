@@ -1,0 +1,1917 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:59
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EW134E.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_ll_rcc.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_ll_rcc.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_ll_rcc.c
+      4            * @author  MCD Application Team
+      5            * @brief   RCC LL module driver.
+      6            ******************************************************************************
+      7            * @attention
+      8            *
+      9            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     10            * All rights reserved.</center></h2>
+     11            *
+     12            * This software component is licensed by ST under BSD 3-Clause license,
+     13            * the "License"; You may not use this file except in compliance with the
+     14            * License. You may obtain a copy of the License at:
+     15            *                        opensource.org/licenses/BSD-3-Clause
+     16            *
+     17            ******************************************************************************
+     18            */
+     19          #if defined(USE_FULL_LL_DRIVER)
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "stm32g0xx_ll_rcc.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_HSE_IsReady(void)
+   \                     LL_RCC_HSE_IsReady: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable24  ;; 0x40021000
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0C41             LSRS     R1,R0,#+17
+   \        0x6   0x0008             MOVS     R0,R1
+   \        0x8   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0xA   0x0FC0             LSRS     R0,R0,#+31
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_RCC_HSI_Enable(void)
+   \                     LL_RCC_HSI_Enable: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable24  ;; 0x40021000
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x2280             MOVS     R2,#+128
+   \        0x6   0x0052             LSLS     R2,R2,#+1        ;; #+256
+   \        0x8   0x430A             ORRS     R2,R2,R1
+   \        0xA   0x6002             STR      R2,[R0, #+0]
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_HSI_IsReady(void)
+   \                     LL_RCC_HSI_IsReady: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable24  ;; 0x40021000
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0A81             LSRS     R1,R0,#+10
+   \        0x6   0x0008             MOVS     R0,R1
+   \        0x8   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0xA   0x0FC0             LSRS     R0,R0,#+31
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_RCC_HSI_SetCalibTrimming(uint32_t)
+   \                     LL_RCC_HSI_SetCalibTrimming: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable24_1  ;; 0x40021004
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x....             LDR      R3,??DataTable24_2  ;; 0xffff80ff
+   \        0x6   0x4013             ANDS     R3,R3,R2
+   \        0x8   0x0202             LSLS     R2,R0,#+8
+   \        0xA   0x431A             ORRS     R2,R2,R3
+   \        0xC   0x600A             STR      R2,[R1, #+0]
+   \        0xE   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_LSE_IsReady(void)
+   \                     LL_RCC_LSE_IsReady: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable24_3  ;; 0x4002105c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0841             LSRS     R1,R0,#+1
+   \        0x6   0x0008             MOVS     R0,R1
+   \        0x8   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0xA   0x0FC0             LSRS     R0,R0,#+31
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_LSI_IsReady(void)
+   \                     LL_RCC_LSI_IsReady: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable25  ;; 0x40021060
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0841             LSRS     R1,R0,#+1
+   \        0x6   0x0008             MOVS     R0,R1
+   \        0x8   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0xA   0x0FC0             LSRS     R0,R0,#+31
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetSysClkSource(void)
+   \                     LL_RCC_GetSysClkSource: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable25_1  ;; 0x40021008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x2038             MOVS     R0,#+56
+   \        0x6   0x4008             ANDS     R0,R0,R1
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetAHBPrescaler(void)
+   \                     LL_RCC_GetAHBPrescaler: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable25_1  ;; 0x40021008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x20F0             MOVS     R0,#+240
+   \        0x6   0x0100             LSLS     R0,R0,#+4        ;; #+3840
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetAPB1Prescaler(void)
+   \                     LL_RCC_GetAPB1Prescaler: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable25_1  ;; 0x40021008
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x20E0             MOVS     R0,#+224
+   \        0x6   0x01C0             LSLS     R0,R0,#+7        ;; #+28672
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetUSARTClockSource(uint32_t)
+   \                     LL_RCC_GetUSARTClockSource: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable26  ;; 0x40021054
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4001             ANDS     R1,R1,R0
+   \        0x6   0x0400             LSLS     R0,R0,#+16
+   \        0x8   0x4308             ORRS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetI2CClockSource(uint32_t)
+   \                     LL_RCC_GetI2CClockSource: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable26  ;; 0x40021054
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4008             ANDS     R0,R0,R1
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetADCClockSource(uint32_t)
+   \                     LL_RCC_GetADCClockSource: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable26  ;; 0x40021054
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4008             ANDS     R0,R0,R1
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetI2SClockSource(uint32_t)
+   \                     LL_RCC_GetI2SClockSource: (+1)
+   \        0x0   0x....             LDR      R1,??DataTable26  ;; 0x40021054
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4008             ANDS     R0,R0,R1
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_GetRTCClockSource(void)
+   \                     LL_RCC_GetRTCClockSource: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable24_3  ;; 0x4002105c
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x20C0             MOVS     R0,#+192
+   \        0x6   0x0080             LSLS     R0,R0,#+2        ;; #+768
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_PLL_IsReady(void)
+   \                     LL_RCC_PLL_IsReady: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable24  ;; 0x40021000
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0E41             LSRS     R1,R0,#+25
+   \        0x6   0x0008             MOVS     R0,R1
+   \        0x8   0x07C0             LSLS     R0,R0,#+31       ;; ZeroExtS R0,R0,#+31,#+31
+   \        0xA   0x0FC0             LSRS     R0,R0,#+31
+   \        0xC   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_PLL_GetN(void)
+   \                     LL_RCC_PLL_GetN: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable28  ;; 0x4002100c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0A00             LSRS     R0,R0,#+8
+   \        0x6   0x0640             LSLS     R0,R0,#+25       ;; ZeroExtS R0,R0,#+25,#+25
+   \        0x8   0x0E40             LSRS     R0,R0,#+25
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_PLL_GetP(void)
+   \                     LL_RCC_PLL_GetP: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable28  ;; 0x4002100c
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x20F8             MOVS     R0,#+248
+   \        0x6   0x0380             LSLS     R0,R0,#+14       ;; #+4063232
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_PLL_GetR(void)
+   \                     LL_RCC_PLL_GetR: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable28  ;; 0x4002100c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0F40             LSRS     R0,R0,#+29
+   \        0x6   0x0740             LSLS     R0,R0,#+29
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_PLL_GetMainSource(void)
+   \                     LL_RCC_PLL_GetMainSource: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable28  ;; 0x4002100c
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0780             LSLS     R0,R0,#+30       ;; ZeroExtS R0,R0,#+30,#+30
+   \        0x6   0x0F80             LSRS     R0,R0,#+30
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp uint32_t LL_RCC_PLL_GetDivider(void)
+   \                     LL_RCC_PLL_GetDivider: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable28  ;; 0x4002100c
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x2070             MOVS     R0,#+112
+   \        0x6   0x4008             ANDS     R0,R0,R1
+   \        0x8   0x4770             BX       LR               ;; return
+     23          #ifdef  USE_FULL_ASSERT
+     24          #include "stm32_assert.h"
+     25          #else
+     26          #define assert_param(expr) ((void)0U)
+     27          #endif
+     28          /** @addtogroup STM32G0xx_LL_Driver
+     29            * @{
+     30            */
+     31          
+     32          #if defined(RCC)
+     33          
+     34          /** @addtogroup RCC_LL
+     35            * @{
+     36            */
+     37          
+     38          /* Private types -------------------------------------------------------------*/
+     39          /* Private variables ---------------------------------------------------------*/
+     40          /* Private constants ---------------------------------------------------------*/
+     41          /* Private macros ------------------------------------------------------------*/
+     42          /** @addtogroup RCC_LL_Private_Macros
+     43            * @{
+     44            */
+     45          #if defined(STM32G081xx) || defined(STM32G071xx) || defined(STM32G070xx)
+     46          #define IS_LL_RCC_USART_CLKSOURCE(__VALUE__)  (((__VALUE__) == LL_RCC_USART1_CLKSOURCE) \
+     47                                                      || ((__VALUE__) == LL_RCC_USART2_CLKSOURCE))
+     48          #elif defined(STM32G041xx) || defined(STM32G031xx) || defined(STM32G030xx)
+     49          #define IS_LL_RCC_USART_CLKSOURCE(__VALUE__)  ((__VALUE__) == LL_RCC_USART1_CLKSOURCE)
+     50          #endif
+     51          
+     52          #if defined(LPUART1)
+     53          #define IS_LL_RCC_LPUART_CLKSOURCE(__VALUE__) (((__VALUE__) == LL_RCC_LPUART1_CLKSOURCE))
+     54          #endif
+     55          
+     56          #define IS_LL_RCC_I2C_CLKSOURCE(__VALUE__)     ((__VALUE__) == LL_RCC_I2C1_CLKSOURCE)
+     57          
+     58          #if defined(LPTIM1) || defined(LPTIM2)
+     59          #define IS_LL_RCC_LPTIM_CLKSOURCE(__VALUE__)  (((__VALUE__) == LL_RCC_LPTIM1_CLKSOURCE) \
+     60                                                      || ((__VALUE__) == LL_RCC_LPTIM2_CLKSOURCE))
+     61          #endif
+     62          
+     63          #if defined(RNG)
+     64          #define IS_LL_RCC_RNG_CLKSOURCE(__VALUE__)    (((__VALUE__) == LL_RCC_RNG_CLKSOURCE))
+     65          #endif
+     66          
+     67          #define IS_LL_RCC_ADC_CLKSOURCE(__VALUE__)    (((__VALUE__) == LL_RCC_ADC_CLKSOURCE))
+     68          
+     69          
+     70          #define IS_LL_RCC_I2S_CLKSOURCE(__VALUE__)    (((__VALUE__) == LL_RCC_I2S1_CLKSOURCE))
+     71          
+     72          #if defined(CEC)
+     73          #define IS_LL_RCC_CEC_CLKSOURCE(__VALUE__)    (((__VALUE__) == LL_RCC_CEC_CLKSOURCE))
+     74          #endif
+     75          
+     76          #if defined(RCC_CCIPR_TIM1SEL) && defined(RCC_CCIPR_TIM15SEL)
+     77          #define IS_LL_RCC_TIM_CLKSOURCE(__VALUE__)    (((__VALUE__) == LL_RCC_TIM1_CLKSOURCE) \
+     78                                                      || ((__VALUE__) == LL_RCC_TIM15_CLKSOURCE))
+     79          #elif defined(RCC_CCIPR_TIM1SEL)
+     80          #define IS_LL_RCC_TIM_CLKSOURCE(__VALUE__)    (((__VALUE__) == LL_RCC_TIM1_CLKSOURCE))
+     81          #endif
+     82          
+     83          
+     84          
+     85          /**
+     86            * @}
+     87            */
+     88          
+     89          /* Private function prototypes -----------------------------------------------*/
+     90          /** @defgroup RCC_LL_Private_Functions RCC Private functions
+     91            * @{
+     92            */
+     93          uint32_t RCC_GetSystemClockFreq(void);
+     94          uint32_t RCC_GetHCLKClockFreq(uint32_t SYSCLK_Frequency);
+     95          uint32_t RCC_GetPCLK1ClockFreq(uint32_t HCLK_Frequency);
+     96          uint32_t RCC_PLL_GetFreqDomain_SYS(void);
+     97          uint32_t RCC_PLL_GetFreqDomain_ADC(void);
+     98          uint32_t RCC_PLL_GetFreqDomain_I2S1(void);
+     99          uint32_t RCC_PLL_GetFreqDomain_RNG(void);
+    100          uint32_t RCC_PLL_GetFreqDomain_TIM1(void);
+    101          uint32_t RCC_PLL_GetFreqDomain_TIM15(void);
+    102          /**
+    103            * @}
+    104            */
+    105          
+    106          
+    107          /* Exported functions --------------------------------------------------------*/
+    108          /** @addtogroup RCC_LL_Exported_Functions
+    109            * @{
+    110            */
+    111          
+    112          /** @addtogroup RCC_LL_EF_Init
+    113            * @{
+    114            */
+    115          
+    116          /**
+    117            * @brief  Reset the RCC clock configuration to the default reset state.
+    118            * @note   The default reset state of the clock configuration is given below:
+    119            *         - HSI ON and used as system clock source
+    120            *         - HSE and PLL OFF
+    121            *         - AHB and APB1 prescaler set to 1.
+    122            *         - CSS, MCO OFF
+    123            *         - All interrupts disabled
+    124            * @note   This function does not modify the configuration of the
+    125            *         - Peripheral clocks
+    126            *         - LSI, LSE and RTC clocks
+    127            * @retval An ErrorStatus enumeration value:
+    128            *          - SUCCESS: RCC registers are de-initialized
+    129            *          - ERROR: not applicable
+    130            */
+
+   \                                 In section .text, align 2, keep-with-next
+    131          ErrorStatus LL_RCC_DeInit(void)
+    132          {
+   \                     LL_RCC_DeInit: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    133            /* Set HSION bit and wait for HSI READY bit */
+    134            LL_RCC_HSI_Enable();
+   \        0x2   0x....'....        BL       LL_RCC_HSI_Enable
+    135            while (LL_RCC_HSI_IsReady() != 1U)
+   \                     ??LL_RCC_DeInit_0: (+1)
+   \        0x6   0x....'....        BL       LL_RCC_HSI_IsReady
+   \        0xA   0x2801             CMP      R0,#+1
+   \        0xC   0xD1FB             BNE      ??LL_RCC_DeInit_0
+    136            {}
+    137          
+    138            /* Set HSITRIM bits to reset value*/
+    139            LL_RCC_HSI_SetCalibTrimming(0x40U);
+   \        0xE   0x2040             MOVS     R0,#+64
+   \       0x10   0x....'....        BL       LL_RCC_HSI_SetCalibTrimming
+    140          
+    141            /* Reset CFGR register */
+    142            LL_RCC_WriteReg(CFGR, 0x00000000U);
+   \       0x14   0x2400             MOVS     R4,#+0
+   \       0x16   0x....             LDR      R0,??DataTable25_1  ;; 0x40021008
+   \       0x18   0x6004             STR      R4,[R0, #+0]
+    143          
+    144            /* Reset whole CR register but HSI in 2 steps in case HSEBYP is set */
+    145            LL_RCC_WriteReg(CR, RCC_CR_HSION);
+   \       0x1A   0x....             LDR      R5,??DataTable24  ;; 0x40021000
+   \       0x1C   0x2680             MOVS     R6,#+128
+   \       0x1E   0x0076             LSLS     R6,R6,#+1        ;; #+256
+   \       0x20   0x602E             STR      R6,[R5, #+0]
+    146            while (LL_RCC_HSE_IsReady() != 0U)
+   \                     ??LL_RCC_DeInit_1: (+1)
+   \       0x22   0x....'....        BL       LL_RCC_HSE_IsReady
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD1FB             BNE      ??LL_RCC_DeInit_1
+    147            {}
+    148            LL_RCC_WriteReg(CR, RCC_CR_HSION);
+   \       0x2A   0x602E             STR      R6,[R5, #+0]
+    149          
+    150            /* Wait for PLL READY bit to be reset */
+    151            while (LL_RCC_PLL_IsReady() != 0U)
+   \                     ??LL_RCC_DeInit_2: (+1)
+   \       0x2C   0x....'....        BL       LL_RCC_PLL_IsReady
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD1FB             BNE      ??LL_RCC_DeInit_2
+    152            {}
+    153          
+    154            /* Reset PLLCFGR register */
+    155            LL_RCC_WriteReg(PLLCFGR, 16U << RCC_PLLCFGR_PLLN_Pos);
+   \       0x34   0x2080             MOVS     R0,#+128
+   \       0x36   0x0140             LSLS     R0,R0,#+5        ;; #+4096
+   \       0x38   0x....             LDR      R1,??DataTable28  ;; 0x4002100c
+   \       0x3A   0x6008             STR      R0,[R1, #+0]
+    156          
+    157            /* Disable all interrupts */
+    158            LL_RCC_WriteReg(CIER, 0x00000000U);
+   \       0x3C   0x....             LDR      R0,??DataTable30  ;; 0x40021018
+   \       0x3E   0x6004             STR      R4,[R0, #+0]
+    159          
+    160            /* Clear all interrupts flags */
+    161            LL_RCC_WriteReg(CICR, 0xFFFFFFFFU);
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x44   0x....             LDR      R1,??DataTable30_1  ;; 0x40021020
+   \       0x46   0x6008             STR      R0,[R1, #+0]
+    162          
+    163            return SUCCESS;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0xBD70             POP      {R4-R6,PC}       ;; return
+    164          }
+    165          
+    166          /**
+    167            * @}
+    168            */
+    169          
+    170          /** @addtogroup RCC_LL_EF_Get_Freq
+    171            * @brief  Return the frequencies of different on chip clocks;  System, AHB and APB1 buses clocks
+    172            *         and different peripheral clocks available on the device.
+    173            * @note   If SYSCLK source is HSI, function returns values based on HSI_VALUE divided by HSI division factor(**)
+    174            * @note   If SYSCLK source is HSE, function returns values based on HSE_VALUE(***)
+    175            * @note   If SYSCLK source is PLL, function returns values based on HSE_VALUE(***)
+    176            *         or HSI_VALUE(**) multiplied/divided by the PLL factors.
+    177            * @note   (**) HSI_VALUE is a constant defined in this file (default value
+    178            *              16 MHz) but the real value may vary depending on the variations
+    179            *              in voltage and temperature.
+    180            * @note   (***) HSE_VALUE is a constant defined in this file (default value
+    181            *               8 MHz), user has to ensure that HSE_VALUE is same as the real
+    182            *               frequency of the crystal used. Otherwise, this function may
+    183            *               have wrong result.
+    184            * @note   The result of this function could be incorrect when using fractional
+    185            *         value for HSE crystal.
+    186            * @note   This function can be used by the user application to compute the
+    187            *         baud-rate for the communication peripherals or configure other parameters.
+    188            * @{
+    189            */
+    190          
+    191          /**
+    192            * @brief  Return the frequencies of different on chip clocks;  System, AHB and APB1 buses clocks
+    193            * @note   Each time SYSCLK, HCLK and/or PCLK1 clock changes, this function
+    194            *         must be called to update structure fields. Otherwise, any
+    195            *         configuration based on this function will be incorrect.
+    196            * @param  RCC_Clocks pointer to a @ref LL_RCC_ClocksTypeDef structure which will hold the clocks frequencies
+    197            * @retval None
+    198            */
+
+   \                                 In section .text, align 2, keep-with-next
+    199          void LL_RCC_GetSystemClocksFreq(LL_RCC_ClocksTypeDef *RCC_Clocks)
+    200          {
+   \                     LL_RCC_GetSystemClocksFreq: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    201            /* Get SYSCLK frequency */
+    202            RCC_Clocks->SYSCLK_Frequency = RCC_GetSystemClockFreq();
+   \        0x4   0x....'....        BL       RCC_GetSystemClockFreq
+   \        0x8   0x6020             STR      R0,[R4, #+0]
+    203          
+    204            /* HCLK clock frequency */
+    205            RCC_Clocks->HCLK_Frequency   = RCC_GetHCLKClockFreq(RCC_Clocks->SYSCLK_Frequency);
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x....'....        BL       RCC_GetHCLKClockFreq
+   \       0x10   0x6060             STR      R0,[R4, #+4]
+    206          
+    207            /* PCLK1 clock frequency */
+    208            RCC_Clocks->PCLK1_Frequency  = RCC_GetPCLK1ClockFreq(RCC_Clocks->HCLK_Frequency);
+   \       0x12   0x6860             LDR      R0,[R4, #+4]
+   \       0x14   0x....'....        BL       RCC_GetPCLK1ClockFreq
+   \       0x18   0x60A0             STR      R0,[R4, #+8]
+    209          }
+   \       0x1A   0xBD10             POP      {R4,PC}          ;; return
+    210          
+    211          /**
+    212            * @brief  Return USARTx clock frequency
+    213            * @param  USARTxSource This parameter can be one of the following values:
+    214            *         @arg @ref LL_RCC_USART1_CLKSOURCE
+    215            *         @arg @ref LL_RCC_USART2_CLKSOURCE
+    216            * @retval USART clock frequency (in Hz)
+    217            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI or LSE) is not ready
+    218            */
+
+   \                                 In section .text, align 2, keep-with-next
+    219          uint32_t LL_RCC_GetUSARTClockFreq(uint32_t USARTxSource)
+    220          {
+   \                     LL_RCC_GetUSARTClockFreq: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    221            uint32_t usart_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+   \        0x4   0x2500             MOVS     R5,#+0
+    222          
+    223            /* Check parameter */
+    224            assert_param(IS_LL_RCC_USART_CLKSOURCE(USARTxSource));
+    225          
+    226            if (USARTxSource == LL_RCC_USART1_CLKSOURCE)
+   \        0x6   0x2C03             CMP      R4,#+3
+   \        0x8   0xD124             BNE      ??LL_RCC_GetUSARTClockFreq_0
+    227            {
+    228              /* USART1CLK clock frequency */
+    229              switch (LL_RCC_GetUSARTClockSource(USARTxSource))
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x....'....        BL       LL_RCC_GetUSARTClockSource
+   \       0x10   0x....             LDR      R1,??DataTable31  ;; 0x30001
+   \       0x12   0x1A40             SUBS     R0,R0,R1
+   \       0x14   0xD004             BEQ      ??LL_RCC_GetUSARTClockFreq_1
+   \       0x16   0x1E40             SUBS     R0,R0,#+1
+   \       0x18   0xD006             BEQ      ??LL_RCC_GetUSARTClockFreq_2
+   \       0x1A   0x1E40             SUBS     R0,R0,#+1
+   \       0x1C   0xD00B             BEQ      ??LL_RCC_GetUSARTClockFreq_3
+   \       0x1E   0xE012             B        ??LL_RCC_GetUSARTClockFreq_4
+    230              {
+    231                case LL_RCC_USART1_CLKSOURCE_SYSCLK: /* USART1 Clock is System Clock */
+    232                  usart_frequency = RCC_GetSystemClockFreq();
+   \                     ??LL_RCC_GetUSARTClockFreq_1: (+1)
+   \       0x20   0x....'....        BL       RCC_GetSystemClockFreq
+   \       0x24   0x0005             MOVS     R5,R0
+    233                  break;
+   \       0x26   0xE015             B        ??LL_RCC_GetUSARTClockFreq_0
+    234          
+    235                case LL_RCC_USART1_CLKSOURCE_HSI:    /* USART1 Clock is HSI Osc. */
+    236                  if (LL_RCC_HSI_IsReady() == 1U)
+   \                     ??LL_RCC_GetUSARTClockFreq_2: (+1)
+   \       0x28   0x....'....        BL       LL_RCC_HSI_IsReady
+   \       0x2C   0x2801             CMP      R0,#+1
+   \       0x2E   0xD101             BNE      ??LL_RCC_GetUSARTClockFreq_5
+    237                  {
+    238                    usart_frequency = HSI_VALUE;
+   \       0x30   0x....             LDR      R0,??DataTable31_1  ;; 0xf42400
+   \       0x32   0x0005             MOVS     R5,R0
+    239                  }
+    240                  break;
+   \                     ??LL_RCC_GetUSARTClockFreq_5: (+1)
+   \       0x34   0xE00E             B        ??LL_RCC_GetUSARTClockFreq_0
+    241          
+    242                case LL_RCC_USART1_CLKSOURCE_LSE:    /* USART1 Clock is LSE Osc. */
+    243                  if (LL_RCC_LSE_IsReady() == 1U)
+   \                     ??LL_RCC_GetUSARTClockFreq_3: (+1)
+   \       0x36   0x....'....        BL       LL_RCC_LSE_IsReady
+   \       0x3A   0x2801             CMP      R0,#+1
+   \       0x3C   0xD102             BNE      ??LL_RCC_GetUSARTClockFreq_6
+    244                  {
+    245                    usart_frequency = LSE_VALUE;
+   \       0x3E   0x2080             MOVS     R0,#+128
+   \       0x40   0x0200             LSLS     R0,R0,#+8        ;; #+32768
+   \       0x42   0x0005             MOVS     R5,R0
+    246                  }
+    247                  break;
+   \                     ??LL_RCC_GetUSARTClockFreq_6: (+1)
+   \       0x44   0xE006             B        ??LL_RCC_GetUSARTClockFreq_0
+    248          
+    249                case LL_RCC_USART1_CLKSOURCE_PCLK1:  /* USART1 Clock is PCLK1 */
+    250                default:
+    251                  usart_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+   \                     ??LL_RCC_GetUSARTClockFreq_4: (+1)
+   \       0x46   0x....'....        BL       RCC_GetSystemClockFreq
+   \       0x4A   0x....'....        BL       RCC_GetHCLKClockFreq
+   \       0x4E   0x....'....        BL       RCC_GetPCLK1ClockFreq
+   \       0x52   0x0005             MOVS     R5,R0
+    252                  break;
+    253              }
+    254            }
+    255          #if defined(RCC_CCIPR_USART2SEL)
+    256            else if (USARTxSource == LL_RCC_USART2_CLKSOURCE)
+    257            {
+    258              /* USART2CLK clock frequency */
+    259              switch (LL_RCC_GetUSARTClockSource(USARTxSource))
+    260              {
+    261                case LL_RCC_USART2_CLKSOURCE_SYSCLK: /* USART2 Clock is System Clock */
+    262                  usart_frequency = RCC_GetSystemClockFreq();
+    263                  break;
+    264          
+    265                case LL_RCC_USART2_CLKSOURCE_HSI:    /* USART2 Clock is HSI Osc. */
+    266                  if (LL_RCC_HSI_IsReady() == 1U)
+    267                  {
+    268                    usart_frequency = HSI_VALUE;
+    269                  }
+    270                  break;
+    271          
+    272                case LL_RCC_USART2_CLKSOURCE_LSE:    /* USART2 Clock is LSE Osc. */
+    273                  if (LL_RCC_LSE_IsReady() == 1U)
+    274                  {
+    275                    usart_frequency = LSE_VALUE;
+    276                  }
+    277                  break;
+    278          
+    279                case LL_RCC_USART2_CLKSOURCE_PCLK1:  /* USART2 Clock is PCLK1 */
+    280                default:
+    281                  usart_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+    282                  break;
+    283              }
+    284            }
+    285          #endif
+    286            else
+    287            {
+    288            }
+    289            return usart_frequency;
+   \                     ??LL_RCC_GetUSARTClockFreq_0: (+1)
+   \       0x54   0x0028             MOVS     R0,R5
+   \       0x56   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    290          }
+    291          
+    292          /**
+    293            * @brief  Return I2Cx clock frequency
+    294            * @param  I2CxSource This parameter can be one of the following values:
+    295            *         @arg @ref LL_RCC_I2C1_CLKSOURCE
+    296            * @retval I2C clock frequency (in Hz)
+    297            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that HSI oscillator is not ready
+    298            */
+
+   \                                 In section .text, align 2, keep-with-next
+    299          uint32_t LL_RCC_GetI2CClockFreq(uint32_t I2CxSource)
+    300          {
+   \                     LL_RCC_GetI2CClockFreq: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    301            uint32_t i2c_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+   \        0x4   0x2500             MOVS     R5,#+0
+    302          
+    303            /* Check parameter */
+    304            assert_param(IS_LL_RCC_I2C_CLKSOURCE(I2CxSource));
+    305          
+    306            if (I2CxSource == LL_RCC_I2C1_CLKSOURCE)
+   \        0x6   0x20C0             MOVS     R0,#+192
+   \        0x8   0x0180             LSLS     R0,R0,#+6        ;; #+12288
+   \        0xA   0x4284             CMP      R4,R0
+   \        0xC   0xD11D             BNE      ??LL_RCC_GetI2CClockFreq_0
+    307            {
+    308              /* I2C1 CLK clock frequency */
+    309              switch (LL_RCC_GetI2CClockSource(I2CxSource))
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       LL_RCC_GetI2CClockSource
+   \       0x14   0x2180             MOVS     R1,#+128
+   \       0x16   0x0149             LSLS     R1,R1,#+5        ;; #+4096
+   \       0x18   0x4288             CMP      R0,R1
+   \       0x1A   0xD004             BEQ      ??LL_RCC_GetI2CClockFreq_1
+   \       0x1C   0x2180             MOVS     R1,#+128
+   \       0x1E   0x0189             LSLS     R1,R1,#+6        ;; #+8192
+   \       0x20   0x4288             CMP      R0,R1
+   \       0x22   0xD004             BEQ      ??LL_RCC_GetI2CClockFreq_2
+   \       0x24   0xE00A             B        ??LL_RCC_GetI2CClockFreq_3
+    310              {
+    311                case LL_RCC_I2C1_CLKSOURCE_SYSCLK: /* I2C1 Clock is System Clock */
+    312                  i2c_frequency = RCC_GetSystemClockFreq();
+   \                     ??LL_RCC_GetI2CClockFreq_1: (+1)
+   \       0x26   0x....'....        BL       RCC_GetSystemClockFreq
+   \       0x2A   0x0005             MOVS     R5,R0
+    313                  break;
+   \       0x2C   0xE00D             B        ??LL_RCC_GetI2CClockFreq_0
+    314          
+    315                case LL_RCC_I2C1_CLKSOURCE_HSI:    /* I2C1 Clock is HSI Osc. */
+    316                  if (LL_RCC_HSI_IsReady() == 1U)
+   \                     ??LL_RCC_GetI2CClockFreq_2: (+1)
+   \       0x2E   0x....'....        BL       LL_RCC_HSI_IsReady
+   \       0x32   0x2801             CMP      R0,#+1
+   \       0x34   0xD101             BNE      ??LL_RCC_GetI2CClockFreq_4
+    317                  {
+    318                    i2c_frequency = HSI_VALUE;
+   \       0x36   0x....             LDR      R0,??DataTable31_1  ;; 0xf42400
+   \       0x38   0x0005             MOVS     R5,R0
+    319                  }
+    320                  break;
+   \                     ??LL_RCC_GetI2CClockFreq_4: (+1)
+   \       0x3A   0xE006             B        ??LL_RCC_GetI2CClockFreq_0
+    321          
+    322                case LL_RCC_I2C1_CLKSOURCE_PCLK1:  /* I2C1 Clock is PCLK1 */
+    323                default:
+    324                  i2c_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+   \                     ??LL_RCC_GetI2CClockFreq_3: (+1)
+   \       0x3C   0x....'....        BL       RCC_GetSystemClockFreq
+   \       0x40   0x....'....        BL       RCC_GetHCLKClockFreq
+   \       0x44   0x....'....        BL       RCC_GetPCLK1ClockFreq
+   \       0x48   0x0005             MOVS     R5,R0
+    325                  break;
+    326              }
+    327            }
+    328            else
+    329            {
+    330            }
+    331          
+    332            return i2c_frequency;
+   \                     ??LL_RCC_GetI2CClockFreq_0: (+1)
+   \       0x4A   0x0028             MOVS     R0,R5
+   \       0x4C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    333          }
+    334          
+    335          /**
+    336            * @brief  Return I2Sx clock frequency
+    337            * @param  I2SxSource This parameter can be one of the following values:
+    338            *         @arg @ref LL_RCC_I2S1_CLKSOURCE
+    339            * @retval I2S clock frequency (in Hz)
+    340            *         @arg @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator is not ready
+    341            */
+
+   \                                 In section .text, align 2, keep-with-next
+    342          uint32_t LL_RCC_GetI2SClockFreq(uint32_t I2SxSource)
+    343          {
+   \                     LL_RCC_GetI2SClockFreq: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    344            uint32_t i2s_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+   \        0x4   0x2500             MOVS     R5,#+0
+    345          
+    346            /* Check parameter */
+    347            assert_param(IS_LL_RCC_I2S_CLKSOURCE(I2SxSource));
+    348          
+    349            if (I2SxSource == LL_RCC_I2S1_CLKSOURCE)
+   \        0x6   0x20C0             MOVS     R0,#+192
+   \        0x8   0x0200             LSLS     R0,R0,#+8        ;; #+49152
+   \        0xA   0x4284             CMP      R4,R0
+   \        0xC   0xD120             BNE      ??LL_RCC_GetI2SClockFreq_0
+    350            {
+    351              /* I2S1 CLK clock frequency */
+    352              switch (LL_RCC_GetI2SClockSource(I2SxSource))
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x....'....        BL       LL_RCC_GetI2SClockSource
+   \       0x14   0x2180             MOVS     R1,#+128
+   \       0x16   0x01C9             LSLS     R1,R1,#+7        ;; #+16384
+   \       0x18   0x4288             CMP      R0,R1
+   \       0x1A   0xD00B             BEQ      ??LL_RCC_GetI2SClockFreq_1
+   \       0x1C   0x2180             MOVS     R1,#+128
+   \       0x1E   0x0209             LSLS     R1,R1,#+8        ;; #+32768
+   \       0x20   0x4288             CMP      R0,R1
+   \       0x22   0xD004             BEQ      ??LL_RCC_GetI2SClockFreq_2
+   \       0x24   0x21C0             MOVS     R1,#+192
+   \       0x26   0x0209             LSLS     R1,R1,#+8        ;; #+49152
+   \       0x28   0x4288             CMP      R0,R1
+   \       0x2A   0xD00B             BEQ      ??LL_RCC_GetI2SClockFreq_3
+   \       0x2C   0xE00D             B        ??LL_RCC_GetI2SClockFreq_4
+    353              {
+    354                case LL_RCC_I2S1_CLKSOURCE_HSI:    /* I2S1 Clock is HSI */
+    355                  i2s_frequency = HSI_VALUE;
+   \                     ??LL_RCC_GetI2SClockFreq_2: (+1)
+   \       0x2E   0x....             LDR      R0,??DataTable31_1  ;; 0xf42400
+   \       0x30   0x0005             MOVS     R5,R0
+    356                  break;
+   \       0x32   0xE00D             B        ??LL_RCC_GetI2SClockFreq_0
+    357          
+    358                case LL_RCC_I2S1_CLKSOURCE_PLL:    /* I2S1 Clock is PLL"P" */
+    359                  if (LL_RCC_PLL_IsReady() == 1U)
+   \                     ??LL_RCC_GetI2SClockFreq_1: (+1)
+   \       0x34   0x....'....        BL       LL_RCC_PLL_IsReady
+   \       0x38   0x2801             CMP      R0,#+1
+   \       0x3A   0xD102             BNE      ??LL_RCC_GetI2SClockFreq_5
+    360                  {
+    361                    i2s_frequency = RCC_PLL_GetFreqDomain_I2S1();
+   \       0x3C   0x....'....        BL       RCC_PLL_GetFreqDomain_I2S1
+   \       0x40   0x0005             MOVS     R5,R0
+    362                  }
+    363                  break;
+   \                     ??LL_RCC_GetI2SClockFreq_5: (+1)
+   \       0x42   0xE005             B        ??LL_RCC_GetI2SClockFreq_0
+    364          
+    365          
+    366                case LL_RCC_I2S1_CLKSOURCE_PIN:          /* I2S1 Clock is External clock */
+    367                  i2s_frequency = EXTERNAL_CLOCK_VALUE;
+   \                     ??LL_RCC_GetI2SClockFreq_3: (+1)
+   \       0x44   0x....             LDR      R0,??DataTable31_2  ;; 0x2dc6c00
+   \       0x46   0x0005             MOVS     R5,R0
+    368                  break;
+   \       0x48   0xE002             B        ??LL_RCC_GetI2SClockFreq_0
+    369          
+    370                case LL_RCC_I2S1_CLKSOURCE_SYSCLK: /* I2S1 Clock is System Clock */
+    371                default:
+    372                  i2s_frequency = RCC_GetSystemClockFreq();
+   \                     ??LL_RCC_GetI2SClockFreq_4: (+1)
+   \       0x4A   0x....'....        BL       RCC_GetSystemClockFreq
+   \       0x4E   0x0005             MOVS     R5,R0
+    373                  break;
+    374              }
+    375            }
+    376          
+    377            return i2s_frequency;
+   \                     ??LL_RCC_GetI2SClockFreq_0: (+1)
+   \       0x50   0x0028             MOVS     R0,R5
+   \       0x52   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    378          }
+    379          
+    380          #if defined(LPUART1)
+    381          /**
+    382            * @brief  Return LPUARTx clock frequency
+    383            * @param  LPUARTxSource This parameter can be one of the following values:
+    384            *         @arg @ref LL_RCC_LPUART1_CLKSOURCE
+    385            * @retval LPUART clock frequency (in Hz)
+    386            *         @arg @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI or LSE) is not ready
+    387            */
+    388          uint32_t LL_RCC_GetLPUARTClockFreq(uint32_t LPUARTxSource)
+    389          {
+    390            uint32_t lpuart_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+    391          
+    392            /* Check parameter */
+    393            assert_param(IS_LL_RCC_LPUART_CLKSOURCE(LPUARTxSource));
+    394          
+    395            /* LPUART1CLK clock frequency */
+    396            switch (LL_RCC_GetLPUARTClockSource(LPUARTxSource))
+    397            {
+    398              case LL_RCC_LPUART1_CLKSOURCE_SYSCLK: /* LPUART1 Clock is System Clock */
+    399                lpuart_frequency = RCC_GetSystemClockFreq();
+    400                break;
+    401          
+    402              case LL_RCC_LPUART1_CLKSOURCE_HSI:    /* LPUART1 Clock is HSI Osc. */
+    403                if (LL_RCC_HSI_IsReady() == 1U)
+    404                {
+    405                  lpuart_frequency = HSI_VALUE;
+    406                }
+    407                break;
+    408          
+    409              case LL_RCC_LPUART1_CLKSOURCE_LSE:    /* LPUART1 Clock is LSE Osc. */
+    410                if (LL_RCC_LSE_IsReady() == 1U)
+    411                {
+    412                  lpuart_frequency = LSE_VALUE;
+    413                }
+    414                break;
+    415          
+    416              case LL_RCC_LPUART1_CLKSOURCE_PCLK1:  /* LPUART1 Clock is PCLK1 */
+    417              default:
+    418                lpuart_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+    419                break;
+    420            }
+    421          
+    422            return lpuart_frequency;
+    423          }
+    424          #endif /* LPUART1 */
+    425          
+    426          #if defined(LPTIM1) && defined(LPTIM2)
+    427          /**
+    428            * @brief  Return LPTIMx clock frequency
+    429            * @param  LPTIMxSource This parameter can be one of the following values:
+    430            *         @arg @ref LL_RCC_LPTIM1_CLKSOURCE
+    431            *         @arg @ref LL_RCC_LPTIM2_CLKSOURCE
+    432            * @retval LPTIM clock frequency (in Hz)
+    433            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI, LSI or LSE) is not ready
+    434            */
+    435          uint32_t LL_RCC_GetLPTIMClockFreq(uint32_t LPTIMxSource)
+    436          {
+    437            uint32_t lptim_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+    438          
+    439            /* Check parameter */
+    440            assert_param(IS_LL_RCC_LPTIM_CLKSOURCE(LPTIMxSource));
+    441          
+    442            if (LPTIMxSource == LL_RCC_LPTIM1_CLKSOURCE)
+    443            {
+    444              /* LPTIM1CLK clock frequency */
+    445              switch (LL_RCC_GetLPTIMClockSource(LPTIMxSource))
+    446              {
+    447                case LL_RCC_LPTIM1_CLKSOURCE_LSI:    /* LPTIM1 Clock is LSI Osc. */
+    448                  if (LL_RCC_LSI_IsReady() == 1U)
+    449                  {
+    450                    lptim_frequency = LSI_VALUE;
+    451                  }
+    452                  break;
+    453          
+    454                case LL_RCC_LPTIM1_CLKSOURCE_HSI:    /* LPTIM1 Clock is HSI Osc. */
+    455                  if (LL_RCC_HSI_IsReady() == 1U)
+    456                  {
+    457                    lptim_frequency = HSI_VALUE;
+    458                  }
+    459                  break;
+    460          
+    461                case LL_RCC_LPTIM1_CLKSOURCE_LSE:    /* LPTIM1 Clock is LSE Osc. */
+    462                  if (LL_RCC_LSE_IsReady() == 1U)
+    463                  {
+    464                    lptim_frequency = LSE_VALUE;
+    465                  }
+    466                  break;
+    467          
+    468                case LL_RCC_LPTIM1_CLKSOURCE_PCLK1:  /* LPTIM1 Clock is PCLK1 */
+    469                default:
+    470                  lptim_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+    471                  break;
+    472              }
+    473            }
+    474            else
+    475            {
+    476              /* LPTIM2CLK clock frequency */
+    477              switch (LL_RCC_GetLPTIMClockSource(LPTIMxSource))
+    478              {
+    479                case LL_RCC_LPTIM2_CLKSOURCE_LSI:    /* LPTIM2 Clock is LSI Osc. */
+    480                  if (LL_RCC_LSI_IsReady() == 1U)
+    481                  {
+    482                    lptim_frequency = LSI_VALUE;
+    483                  }
+    484                  break;
+    485          
+    486                case LL_RCC_LPTIM2_CLKSOURCE_HSI:    /* LPTIM2 Clock is HSI Osc. */
+    487                  if (LL_RCC_HSI_IsReady() == 1U)
+    488                  {
+    489                    lptim_frequency = HSI_VALUE;
+    490                  }
+    491                  break;
+    492          
+    493                case LL_RCC_LPTIM2_CLKSOURCE_LSE:    /* LPTIM2 Clock is LSE Osc. */
+    494                  if (LL_RCC_LSE_IsReady() == 1U)
+    495                  {
+    496                    lptim_frequency = LSE_VALUE;
+    497                  }
+    498                  break;
+    499          
+    500                case LL_RCC_LPTIM2_CLKSOURCE_PCLK1:  /* LPTIM2 Clock is PCLK1 */
+    501                default:
+    502                  lptim_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+    503                  break;
+    504              }
+    505            }
+    506          
+    507            return lptim_frequency;
+    508          }
+    509          #endif /* LPTIM1 && LPTIM2 */
+    510          
+    511          #if defined(RCC_CCIPR_TIM1SEL) || defined(RCC_CCIPR_TIM15SEL)
+    512          /**
+    513            * @brief  Return TIMx clock frequency
+    514            * @param  TIMxSource This parameter can be one of the following values:
+    515            *         @arg @ref LL_RCC_TIM1_CLKSOURCE
+    516            * @if defined(STM32G081xx)
+    517            *         @arg @ref LL_RCC_TIM15_CLKSOURCE
+    518            * @endif
+    519            * @retval TIMx clock frequency (in Hz)
+    520            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI or LSE) is not ready
+    521            */
+    522          uint32_t LL_RCC_GetTIMClockFreq(uint32_t TIMxSource)
+    523          {
+    524            uint32_t tim_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+    525          
+    526            /* Check parameter */
+    527            assert_param(IS_LL_RCC_TIM_CLKSOURCE(TIMxSource));
+    528          
+    529            if (TIMxSource == LL_RCC_TIM1_CLKSOURCE)
+    530            {
+    531              /* TIM1CLK clock frequency */
+    532              switch (LL_RCC_GetTIMClockSource(TIMxSource))
+    533              {
+    534                case LL_RCC_TIM1_CLKSOURCE_PLL:    /* TIM1 Clock is PLLQ */
+    535                  if (LL_RCC_PLL_IsReady() == 1U)
+    536                  {
+    537                    tim_frequency = RCC_PLL_GetFreqDomain_TIM1();
+    538                  }
+    539                  break;
+    540          
+    541                case LL_RCC_TIM1_CLKSOURCE_PCLK1:  /* TIM1 Clock is PCLK1 */
+    542                default:
+    543                  tim_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+    544                  break;
+    545              }
+    546            }
+    547          #if defined(TIM15)
+    548            else
+    549            {
+    550              if (TIMxSource == LL_RCC_TIM15_CLKSOURCE)
+    551              {
+    552                /* TIM15CLK clock frequency */
+    553                switch (LL_RCC_GetTIMClockSource(TIMxSource))
+    554                {
+    555                  case LL_RCC_TIM15_CLKSOURCE_PLL:    /* TIM1 Clock is PLLQ */
+    556                    if (LL_RCC_PLL_IsReady() == 1U)
+    557                    {
+    558                      tim_frequency = RCC_PLL_GetFreqDomain_TIM15();
+    559                    }
+    560                    break;
+    561          
+    562                  case LL_RCC_TIM15_CLKSOURCE_PCLK1:  /* TIM15 Clock is PCLK1 */
+    563                  default:
+    564                    tim_frequency = RCC_GetPCLK1ClockFreq(RCC_GetHCLKClockFreq(RCC_GetSystemClockFreq()));
+    565                    break;
+    566                }
+    567              }
+    568            }
+    569          #endif
+    570            return tim_frequency;
+    571          }
+    572          #endif /* RCC_CCIPR_TIM1SEL && RCC_CCIPR_TIM15SEL */
+    573          
+    574          
+    575          #if defined(RNG)
+    576          /**
+    577            * @brief  Return RNGx clock frequency
+    578            * @param  RNGxSource This parameter can be one of the following values:
+    579            *         @arg @ref LL_RCC_RNG_CLKSOURCE
+    580            * @retval RNG clock frequency (in Hz)
+    581            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI) or PLL is not ready
+    582            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NA indicates that no clock source selected
+    583            */
+    584          uint32_t LL_RCC_GetRNGClockFreq(uint32_t RNGxSource)
+    585          {
+    586            uint32_t rng_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+    587            uint32_t rngdiv;
+    588          
+    589            /* Check parameter */
+    590            assert_param(IS_LL_RCC_RNG_CLKSOURCE(RNGxSource));
+    591          
+    592            /* RNGCLK clock frequency */
+    593            switch (LL_RCC_GetRNGClockSource(RNGxSource))
+    594            {
+    595              case LL_RCC_RNG_CLKSOURCE_PLL:           /* PLL clock used as RNG clock source */
+    596                if (LL_RCC_PLL_IsReady() == 1U)
+    597                {
+    598                  rng_frequency = RCC_PLL_GetFreqDomain_RNG();
+    599                  rngdiv = (1UL << ((READ_BIT(RCC->CCIPR, RCC_CCIPR_RNGDIV)) >> RCC_CCIPR_RNGDIV_Pos));
+    600                  rng_frequency = (rng_frequency / rngdiv);
+    601                }
+    602                break;
+    603          
+    604              case LL_RCC_RNG_CLKSOURCE_HSI_DIV8:      /* HSI clock divided by 8 used as RNG clock source */
+    605                rng_frequency = HSI_VALUE / 8U;
+    606                rngdiv = (1UL << ((READ_BIT(RCC->CCIPR, RCC_CCIPR_RNGDIV)) >> RCC_CCIPR_RNGDIV_Pos));
+    607                rng_frequency = (rng_frequency / rngdiv);
+    608                break;
+    609              case LL_RCC_RNG_CLKSOURCE_SYSCLK:        /* SYSCLK clock used as RNG clock source */
+    610                rng_frequency = RCC_GetSystemClockFreq();
+    611                rngdiv = (1UL << ((READ_BIT(RCC->CCIPR, RCC_CCIPR_RNGDIV)) >> RCC_CCIPR_RNGDIV_Pos));
+    612                rng_frequency = (rng_frequency / rngdiv);
+    613                break;
+    614          
+    615              case LL_RCC_RNG_CLKSOURCE_NONE:          /* No clock used as RNG clock source */
+    616              default:
+    617                rng_frequency = LL_RCC_PERIPH_FREQUENCY_NA;
+    618                break;
+    619          
+    620            }
+    621          
+    622            return rng_frequency;
+    623          }
+    624          #endif /* RNG */
+    625          
+    626          #if defined(CEC)
+    627          /**
+    628            * @brief  Return CEC clock frequency
+    629            * @param  CECxSource This parameter can be one of the following values:
+    630            *         @arg @ref LL_RCC_CEC_CLKSOURCE
+    631            * @retval CEC clock frequency (in Hz)
+    632            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI or LSE) is not ready
+    633            */
+    634          uint32_t LL_RCC_GetCECClockFreq(uint32_t CECxSource)
+    635          {
+    636            uint32_t cec_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+    637          
+    638            /* Check parameter */
+    639            assert_param(IS_LL_RCC_CEC_CLKSOURCE(CECxSource));
+    640          
+    641            /* CECCLK clock frequency */
+    642            switch (LL_RCC_GetCECClockSource(CECxSource))
+    643            {
+    644              case LL_RCC_CEC_CLKSOURCE_LSE:           /* CEC Clock is LSE Osc. */
+    645                if (LL_RCC_LSE_IsReady() == 1U)
+    646                {
+    647                  cec_frequency = LSE_VALUE;
+    648                }
+    649                break;
+    650          
+    651              case LL_RCC_CEC_CLKSOURCE_HSI_DIV488:    /* CEC Clock is HSI Osc. */
+    652              default:
+    653                if (LL_RCC_HSI_IsReady() == 1U)
+    654                {
+    655                  cec_frequency = (HSI_VALUE / 488U);
+    656                }
+    657                break;
+    658            }
+    659          
+    660            return cec_frequency;
+    661          }
+    662          #endif /* CEC */
+    663          
+    664          /**
+    665            * @brief  Return ADCx clock frequency
+    666            * @param  ADCxSource This parameter can be one of the following values:
+    667            *         @arg @ref LL_RCC_ADC_CLKSOURCE
+    668            * @retval ADC clock frequency (in Hz)
+    669            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillator (HSI) or PLL is not ready
+    670            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NA indicates that no clock source selected
+    671            */
+
+   \                                 In section .text, align 2, keep-with-next
+    672          uint32_t LL_RCC_GetADCClockFreq(uint32_t ADCxSource)
+    673          {
+   \                     LL_RCC_GetADCClockFreq: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    674            uint32_t adc_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+   \        0x4   0x2500             MOVS     R5,#+0
+    675          
+    676            /* Check parameter */
+    677            assert_param(IS_LL_RCC_ADC_CLKSOURCE(ADCxSource));
+    678          
+    679            /* ADCCLK clock frequency */
+    680            switch (LL_RCC_GetADCClockSource(ADCxSource))
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x....'....        BL       LL_RCC_GetADCClockSource
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD008             BEQ      ??LL_RCC_GetADCClockFreq_0
+   \       0x10   0x2180             MOVS     R1,#+128
+   \       0x12   0x05C9             LSLS     R1,R1,#+23       ;; #+1073741824
+   \       0x14   0x4288             CMP      R0,R1
+   \       0x16   0xD00B             BEQ      ??LL_RCC_GetADCClockFreq_1
+   \       0x18   0x21C0             MOVS     R1,#+192
+   \       0x1A   0x0609             LSLS     R1,R1,#+24       ;; #-1073741824
+   \       0x1C   0x4288             CMP      R0,R1
+   \       0x1E   0xD004             BEQ      ??LL_RCC_GetADCClockFreq_2
+   \       0x20   0xE00E             B        ??LL_RCC_GetADCClockFreq_3
+    681            {
+    682              case LL_RCC_ADC_CLKSOURCE_SYSCLK:        /* SYSCLK clock used as ADC clock source */
+    683                adc_frequency = RCC_GetSystemClockFreq();
+   \                     ??LL_RCC_GetADCClockFreq_0: (+1)
+   \       0x22   0x....'....        BL       RCC_GetSystemClockFreq
+   \       0x26   0x0005             MOVS     R5,R0
+    684                break;
+   \       0x28   0xE00D             B        ??LL_RCC_GetADCClockFreq_4
+    685              case LL_RCC_ADC_CLKSOURCE_HSI  :        /* HSI clock used as ADC clock source */
+    686                adc_frequency = HSI_VALUE;
+   \                     ??LL_RCC_GetADCClockFreq_2: (+1)
+   \       0x2A   0x....             LDR      R0,??DataTable31_1  ;; 0xf42400
+   \       0x2C   0x0005             MOVS     R5,R0
+    687                break;
+   \       0x2E   0xE00A             B        ??LL_RCC_GetADCClockFreq_4
+    688          
+    689              case LL_RCC_ADC_CLKSOURCE_PLL:         /* PLLP clock used as ADC clock source */
+    690                if (LL_RCC_PLL_IsReady() == 1U)
+   \                     ??LL_RCC_GetADCClockFreq_1: (+1)
+   \       0x30   0x....'....        BL       LL_RCC_PLL_IsReady
+   \       0x34   0x2801             CMP      R0,#+1
+   \       0x36   0xD102             BNE      ??LL_RCC_GetADCClockFreq_5
+    691                {
+    692                  adc_frequency = RCC_PLL_GetFreqDomain_ADC();
+   \       0x38   0x....'....        BL       RCC_PLL_GetFreqDomain_ADC
+   \       0x3C   0x0005             MOVS     R5,R0
+    693                }
+    694                break;
+   \                     ??LL_RCC_GetADCClockFreq_5: (+1)
+   \       0x3E   0xE002             B        ??LL_RCC_GetADCClockFreq_4
+    695              default:
+    696                adc_frequency = LL_RCC_PERIPH_FREQUENCY_NA;
+   \                     ??LL_RCC_GetADCClockFreq_3: (+1)
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x44   0x0005             MOVS     R5,R0
+    697                break;
+    698            }
+    699          
+    700            return adc_frequency;
+   \                     ??LL_RCC_GetADCClockFreq_4: (+1)
+   \       0x46   0x0028             MOVS     R0,R5
+   \       0x48   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    701          }
+    702          
+    703          /**
+    704            * @brief  Return RTC clock frequency
+    705            * @retval RTC clock frequency (in Hz)
+    706            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NO indicates that oscillators (LSI, LSE or HSE) are not ready
+    707            *         - @ref  LL_RCC_PERIPH_FREQUENCY_NA indicates that no clock source selected
+    708            */
+
+   \                                 In section .text, align 2, keep-with-next
+    709          uint32_t LL_RCC_GetRTCClockFreq(void)
+    710          {
+   \                     LL_RCC_GetRTCClockFreq: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    711            uint32_t rtc_frequency = LL_RCC_PERIPH_FREQUENCY_NO;
+   \        0x2   0x2400             MOVS     R4,#+0
+    712          
+    713            /* RTCCLK clock frequency */
+    714            switch (LL_RCC_GetRTCClockSource())
+   \        0x4   0x....'....        BL       LL_RCC_GetRTCClockSource
+   \        0x8   0x2180             MOVS     R1,#+128
+   \        0xA   0x0049             LSLS     R1,R1,#+1        ;; #+256
+   \        0xC   0x4288             CMP      R0,R1
+   \        0xE   0xD008             BEQ      ??LL_RCC_GetRTCClockFreq_0
+   \       0x10   0x2180             MOVS     R1,#+128
+   \       0x12   0x0089             LSLS     R1,R1,#+2        ;; #+512
+   \       0x14   0x4288             CMP      R0,R1
+   \       0x16   0xD00C             BEQ      ??LL_RCC_GetRTCClockFreq_1
+   \       0x18   0x21C0             MOVS     R1,#+192
+   \       0x1A   0x0089             LSLS     R1,R1,#+2        ;; #+768
+   \       0x1C   0x4288             CMP      R0,R1
+   \       0x1E   0xD010             BEQ      ??LL_RCC_GetRTCClockFreq_2
+   \       0x20   0xE012             B        ??LL_RCC_GetRTCClockFreq_3
+    715            {
+    716              case LL_RCC_RTC_CLKSOURCE_LSE:       /* LSE clock used as RTC clock source */
+    717                if (LL_RCC_LSE_IsReady() == 1U)
+   \                     ??LL_RCC_GetRTCClockFreq_0: (+1)
+   \       0x22   0x....'....        BL       LL_RCC_LSE_IsReady
+   \       0x26   0x2801             CMP      R0,#+1
+   \       0x28   0xD102             BNE      ??LL_RCC_GetRTCClockFreq_4
+    718                {
+    719                  rtc_frequency = LSE_VALUE;
+   \       0x2A   0x2080             MOVS     R0,#+128
+   \       0x2C   0x0200             LSLS     R0,R0,#+8        ;; #+32768
+   \       0x2E   0x0004             MOVS     R4,R0
+    720                }
+    721                break;
+   \                     ??LL_RCC_GetRTCClockFreq_4: (+1)
+   \       0x30   0xE00D             B        ??LL_RCC_GetRTCClockFreq_5
+    722          
+    723              case LL_RCC_RTC_CLKSOURCE_LSI:       /* LSI clock used as RTC clock source */
+    724                if (LL_RCC_LSI_IsReady() == 1U)
+   \                     ??LL_RCC_GetRTCClockFreq_1: (+1)
+   \       0x32   0x....'....        BL       LL_RCC_LSI_IsReady
+   \       0x36   0x2801             CMP      R0,#+1
+   \       0x38   0xD102             BNE      ??LL_RCC_GetRTCClockFreq_6
+    725                {
+    726                  rtc_frequency = LSI_VALUE;
+   \       0x3A   0x20FA             MOVS     R0,#+250
+   \       0x3C   0x01C0             LSLS     R0,R0,#+7        ;; #+32000
+   \       0x3E   0x0004             MOVS     R4,R0
+    727                }
+    728                break;
+   \                     ??LL_RCC_GetRTCClockFreq_6: (+1)
+   \       0x40   0xE005             B        ??LL_RCC_GetRTCClockFreq_5
+    729          
+    730              case LL_RCC_RTC_CLKSOURCE_HSE_DIV32:        /* HSE clock used as ADC clock source */
+    731                rtc_frequency = HSE_VALUE / 32U;
+   \                     ??LL_RCC_GetRTCClockFreq_2: (+1)
+   \       0x42   0x....             LDR      R0,??DataTable31_3  ;; 0x3d090
+   \       0x44   0x0004             MOVS     R4,R0
+    732                break;
+   \       0x46   0xE002             B        ??LL_RCC_GetRTCClockFreq_5
+    733          
+    734              case LL_RCC_RTC_CLKSOURCE_NONE:          /* No clock used as RTC clock source */
+    735              default:
+    736                rtc_frequency = LL_RCC_PERIPH_FREQUENCY_NA;
+   \                     ??LL_RCC_GetRTCClockFreq_3: (+1)
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x4C   0x0004             MOVS     R4,R0
+    737                break;
+    738            }
+    739          
+    740            return rtc_frequency;
+   \                     ??LL_RCC_GetRTCClockFreq_5: (+1)
+   \       0x4E   0x0020             MOVS     R0,R4
+   \       0x50   0xBD10             POP      {R4,PC}          ;; return
+    741          }
+    742          
+    743          /**
+    744            * @}
+    745            */
+    746          
+    747          /**
+    748            * @}
+    749            */
+    750          
+    751          /** @addtogroup RCC_LL_Private_Functions
+    752            * @{
+    753            */
+    754          
+    755          /**
+    756            * @brief  Return SYSTEM clock frequency
+    757            * @retval SYSTEM clock frequency (in Hz)
+    758            */
+
+   \                                 In section .text, align 2, keep-with-next
+    759          uint32_t RCC_GetSystemClockFreq(void)
+    760          {
+   \                     RCC_GetSystemClockFreq: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    761            uint32_t frequency;
+    762            uint32_t hsidiv;
+    763          
+    764            /* Get SYSCLK source -------------------------------------------------------*/
+    765            switch (LL_RCC_GetSysClkSource())
+   \        0x2   0x....'....        BL       LL_RCC_GetSysClkSource
+   \        0x6   0x2808             CMP      R0,#+8
+   \        0x8   0xD002             BEQ      ??RCC_GetSystemClockFreq_0
+   \        0xA   0x2810             CMP      R0,#+16
+   \        0xC   0xD002             BEQ      ??RCC_GetSystemClockFreq_1
+   \        0xE   0xE004             B        ??RCC_GetSystemClockFreq_2
+    766            {
+    767              case LL_RCC_SYS_CLKSOURCE_STATUS_HSE:  /* HSE used as system clock  source */
+    768                frequency = HSE_VALUE;
+   \                     ??RCC_GetSystemClockFreq_0: (+1)
+   \       0x10   0x....             LDR      R0,??DataTable31_4  ;; 0x7a1200
+    769                break;
+   \       0x12   0xE00E             B        ??RCC_GetSystemClockFreq_3
+    770          
+    771              case LL_RCC_SYS_CLKSOURCE_STATUS_PLL:  /* PLL used as system clock  source */
+    772                frequency = RCC_PLL_GetFreqDomain_SYS();
+   \                     ??RCC_GetSystemClockFreq_1: (+1)
+   \       0x14   0x....'....        BL       RCC_PLL_GetFreqDomain_SYS
+    773                break;
+   \       0x18   0xE00B             B        ??RCC_GetSystemClockFreq_3
+    774          
+    775              case LL_RCC_SYS_CLKSOURCE_STATUS_HSI:  /* HSI used as system clock  source */
+    776              default:
+    777                hsidiv = (1UL << ((READ_BIT(RCC->CR, RCC_CR_HSIDIV)) >> RCC_CR_HSIDIV_Pos));
+   \                     ??RCC_GetSystemClockFreq_2: (+1)
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x....             LDR      R1,??DataTable29  ;; 0x40021000
+   \       0x1E   0x6809             LDR      R1,[R1, #+0]
+   \       0x20   0x0AC9             LSRS     R1,R1,#+11
+   \       0x22   0x0749             LSLS     R1,R1,#+29       ;; ZeroExtS R1,R1,#+29,#+29
+   \       0x24   0x0F49             LSRS     R1,R1,#+29
+   \       0x26   0x4088             LSLS     R0,R0,R1
+   \       0x28   0x0004             MOVS     R4,R0
+    778                frequency = (HSI_VALUE / hsidiv);
+   \       0x2A   0x....             LDR      R0,??DataTable31_1  ;; 0xf42400
+   \       0x2C   0x0021             MOVS     R1,R4
+   \       0x2E   0x....'....        BL       __aeabi_uidiv
+    779                break;
+    780            }
+    781          
+    782            return frequency;
+   \                     ??RCC_GetSystemClockFreq_3: (+1)
+   \       0x32   0xBD10             POP      {R4,PC}          ;; return
+    783          }
+    784          
+    785          /**
+    786            * @brief  Return HCLK clock frequency
+    787            * @param  SYSCLK_Frequency SYSCLK clock frequency
+    788            * @retval HCLK clock frequency (in Hz)
+    789            */
+
+   \                                 In section .text, align 2, keep-with-next
+    790          uint32_t RCC_GetHCLKClockFreq(uint32_t SYSCLK_Frequency)
+    791          {
+   \                     RCC_GetHCLKClockFreq: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    792            /* HCLK clock frequency */
+    793            return __LL_RCC_CALC_HCLK_FREQ(SYSCLK_Frequency, LL_RCC_GetAHBPrescaler());
+   \        0x4   0x....'....        BL       LL_RCC_GetAHBPrescaler
+   \        0x8   0x....             LDR      R1,??DataTable31_5
+   \        0xA   0x0A00             LSRS     R0,R0,#+8
+   \        0xC   0x0700             LSLS     R0,R0,#+28       ;; ZeroExtS R0,R0,#+28,#+28
+   \        0xE   0x0F00             LSRS     R0,R0,#+28
+   \       0x10   0x2204             MOVS     R2,#+4
+   \       0x12   0x4350             MULS     R0,R2,R0
+   \       0x14   0x5C08             LDRB     R0,[R1, R0]
+   \       0x16   0x06C0             LSLS     R0,R0,#+27       ;; ZeroExtS R0,R0,#+27,#+27
+   \       0x18   0x0EC0             LSRS     R0,R0,#+27
+   \       0x1A   0x40C4             LSRS     R4,R4,R0
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0xBD10             POP      {R4,PC}          ;; return
+    794          }
+    795          
+    796          /**
+    797            * @brief  Return PCLK1 clock frequency
+    798            * @param  HCLK_Frequency HCLK clock frequency
+    799            * @retval PCLK1 clock frequency (in Hz)
+    800            */
+
+   \                                 In section .text, align 2, keep-with-next
+    801          uint32_t RCC_GetPCLK1ClockFreq(uint32_t HCLK_Frequency)
+    802          {
+   \                     RCC_GetPCLK1ClockFreq: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    803            /* PCLK1 clock frequency */
+    804            return __LL_RCC_CALC_PCLK1_FREQ(HCLK_Frequency, LL_RCC_GetAPB1Prescaler());
+   \        0x4   0x....'....        BL       LL_RCC_GetAPB1Prescaler
+   \        0x8   0x....             LDR      R1,??DataTable31_6
+   \        0xA   0x0B00             LSRS     R0,R0,#+12
+   \        0xC   0x2204             MOVS     R2,#+4
+   \        0xE   0x4350             MULS     R0,R2,R0
+   \       0x10   0x5C08             LDRB     R0,[R1, R0]
+   \       0x12   0x06C0             LSLS     R0,R0,#+27       ;; ZeroExtS R0,R0,#+27,#+27
+   \       0x14   0x0EC0             LSRS     R0,R0,#+27
+   \       0x16   0x40C4             LSRS     R4,R4,R0
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0xBD10             POP      {R4,PC}          ;; return
+    805          }
+    806          /**
+    807            * @brief  Return PLL clock frequency used for system domain
+    808            * @retval PLL clock frequency (in Hz)
+    809            */
+
+   \                                 In section .text, align 2, keep-with-next
+    810          uint32_t RCC_PLL_GetFreqDomain_SYS(void)
+    811          {
+   \                     RCC_PLL_GetFreqDomain_SYS: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    812            uint32_t pllinputfreq, pllsource;
+    813          
+    814            /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLLM) * PLLN
+    815               SYSCLK = PLL_VCO / PLLR
+    816            */
+    817            pllsource = LL_RCC_PLL_GetMainSource();
+   \        0x2   0x....'....        BL       LL_RCC_PLL_GetMainSource
+   \        0x6   0x0005             MOVS     R5,R0
+    818          
+    819            switch (pllsource)
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x2802             CMP      R0,#+2
+   \        0xC   0xD002             BEQ      ??RCC_PLL_GetFreqDomain_SYS_0
+   \        0xE   0x2803             CMP      R0,#+3
+   \       0x10   0xD002             BEQ      ??RCC_PLL_GetFreqDomain_SYS_1
+   \       0x12   0xE003             B        ??RCC_PLL_GetFreqDomain_SYS_2
+    820            {
+    821              case LL_RCC_PLLSOURCE_HSI:  /* HSI used as PLL clock source */
+    822                pllinputfreq = HSI_VALUE;
+   \                     ??RCC_PLL_GetFreqDomain_SYS_0: (+1)
+   \       0x14   0x....             LDR      R4,??DataTable31_1  ;; 0xf42400
+    823                break;
+   \       0x16   0xE002             B        ??RCC_PLL_GetFreqDomain_SYS_3
+    824          
+    825              case LL_RCC_PLLSOURCE_HSE:  /* HSE used as PLL clock source */
+    826                pllinputfreq = HSE_VALUE;
+   \                     ??RCC_PLL_GetFreqDomain_SYS_1: (+1)
+   \       0x18   0x....             LDR      R4,??DataTable31_4  ;; 0x7a1200
+    827                break;
+   \       0x1A   0xE000             B        ??RCC_PLL_GetFreqDomain_SYS_3
+    828          
+    829              default:
+    830                pllinputfreq = HSI_VALUE;
+   \                     ??RCC_PLL_GetFreqDomain_SYS_2: (+1)
+   \       0x1C   0x....             LDR      R4,??DataTable31_1  ;; 0xf42400
+    831                break;
+    832            }
+    833            return __LL_RCC_CALC_PLLCLK_FREQ(pllinputfreq, LL_RCC_PLL_GetDivider(),
+    834                                             LL_RCC_PLL_GetN(), LL_RCC_PLL_GetR());
+   \                     ??RCC_PLL_GetFreqDomain_SYS_3: (+1)
+   \       0x1E   0x....'....        BL       LL_RCC_PLL_GetN
+   \       0x22   0x0006             MOVS     R6,R0
+   \       0x24   0x....'....        BL       LL_RCC_PLL_GetDivider
+   \       0x28   0x0001             MOVS     R1,R0
+   \       0x2A   0x4366             MULS     R6,R4,R6
+   \       0x2C   0x0030             MOVS     R0,R6
+   \       0x2E   0x0909             LSRS     R1,R1,#+4
+   \       0x30   0x1C49             ADDS     R1,R1,#+1
+   \       0x32   0x....'....        BL       __aeabi_uidiv
+   \       0x36   0x0006             MOVS     R6,R0
+   \       0x38   0x....'....        BL       LL_RCC_PLL_GetR
+   \       0x3C   0x0F41             LSRS     R1,R0,#+29
+   \       0x3E   0x1C49             ADDS     R1,R1,#+1
+   \       0x40   0x0030             MOVS     R0,R6
+   \       0x42   0x....'....        BL       __aeabi_uidiv
+   \       0x46   0xBD70             POP      {R4-R6,PC}       ;; return
+    835          }
+    836          /**
+    837            * @brief  Return PLL clock frequency used for ADC domain
+    838            * @retval PLL clock frequency (in Hz)
+    839            */
+
+   \                                 In section .text, align 2, keep-with-next
+    840          uint32_t RCC_PLL_GetFreqDomain_ADC(void)
+    841          {
+   \                     RCC_PLL_GetFreqDomain_ADC: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    842            uint32_t pllinputfreq, pllsource;
+    843          
+    844            /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLLM) * PLLN
+    845               ADC Domain clock = PLL_VCO / PLLP
+    846            */
+    847            pllsource = LL_RCC_PLL_GetMainSource();
+   \        0x2   0x....'....        BL       LL_RCC_PLL_GetMainSource
+   \        0x6   0x0005             MOVS     R5,R0
+    848          
+    849            switch (pllsource)
+   \        0x8   0x2D03             CMP      R5,#+3
+   \        0xA   0xD101             BNE      ??RCC_PLL_GetFreqDomain_ADC_0
+    850            {
+    851              case LL_RCC_PLLSOURCE_HSE:  /* HSE used as PLL clock source */
+    852                pllinputfreq = HSE_VALUE;
+   \        0xC   0x....             LDR      R4,??DataTable31_4  ;; 0x7a1200
+    853                break;
+   \        0xE   0xE000             B        ??RCC_PLL_GetFreqDomain_ADC_1
+    854          
+    855              case LL_RCC_PLLSOURCE_HSI:  /* HSI used as PLL clock source */
+    856              default:
+    857                pllinputfreq = HSI_VALUE;
+   \                     ??RCC_PLL_GetFreqDomain_ADC_0: (+1)
+   \       0x10   0x....             LDR      R4,??DataTable31_1  ;; 0xf42400
+    858                break;
+    859            }
+    860            return __LL_RCC_CALC_PLLCLK_ADC_FREQ(pllinputfreq, LL_RCC_PLL_GetDivider(),
+    861                                                 LL_RCC_PLL_GetN(), LL_RCC_PLL_GetP());
+   \                     ??RCC_PLL_GetFreqDomain_ADC_1: (+1)
+   \       0x12   0x....'....        BL       LL_RCC_PLL_GetN
+   \       0x16   0x0006             MOVS     R6,R0
+   \       0x18   0x....'....        BL       LL_RCC_PLL_GetDivider
+   \       0x1C   0x0001             MOVS     R1,R0
+   \       0x1E   0x4366             MULS     R6,R4,R6
+   \       0x20   0x0030             MOVS     R0,R6
+   \       0x22   0x0909             LSRS     R1,R1,#+4
+   \       0x24   0x1C49             ADDS     R1,R1,#+1
+   \       0x26   0x....'....        BL       __aeabi_uidiv
+   \       0x2A   0x0006             MOVS     R6,R0
+   \       0x2C   0x....'....        BL       LL_RCC_PLL_GetP
+   \       0x30   0x0C41             LSRS     R1,R0,#+17
+   \       0x32   0x1C49             ADDS     R1,R1,#+1
+   \       0x34   0x0030             MOVS     R0,R6
+   \       0x36   0x....'....        BL       __aeabi_uidiv
+   \       0x3A   0xBD70             POP      {R4-R6,PC}       ;; return
+    862          }
+    863          
+    864          /**
+    865            * @brief  Return PLL clock frequency used for I2S1 domain
+    866            * @retval PLL clock frequency (in Hz)
+    867            */
+
+   \                                 In section .text, align 2, keep-with-next
+    868          uint32_t RCC_PLL_GetFreqDomain_I2S1(void)
+    869          {
+   \                     RCC_PLL_GetFreqDomain_I2S1: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    870            uint32_t pllinputfreq, pllsource;
+    871          
+    872            /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLLM) * PLLN
+    873               I2S1 Domain clock = PLL_VCO / PLLP
+    874            */
+    875            pllsource = LL_RCC_PLL_GetMainSource();
+   \        0x2   0x....'....        BL       LL_RCC_PLL_GetMainSource
+   \        0x6   0x0005             MOVS     R5,R0
+    876          
+    877            switch (pllsource)
+   \        0x8   0x2D03             CMP      R5,#+3
+   \        0xA   0xD101             BNE      ??RCC_PLL_GetFreqDomain_I2S1_0
+    878            {
+    879              case LL_RCC_PLLSOURCE_HSE:  /* HSE used as PLL clock source */
+    880                pllinputfreq = HSE_VALUE;
+   \        0xC   0x....             LDR      R4,??DataTable31_4  ;; 0x7a1200
+    881                break;
+   \        0xE   0xE000             B        ??RCC_PLL_GetFreqDomain_I2S1_1
+    882          
+    883              case LL_RCC_PLLSOURCE_HSI:  /* HSI used as PLL clock source */
+    884              default:
+    885                pllinputfreq = HSI_VALUE;
+   \                     ??RCC_PLL_GetFreqDomain_I2S1_0: (+1)
+   \       0x10   0x....             LDR      R4,??DataTable31_1  ;; 0xf42400
+    886                break;
+    887            }
+    888            return __LL_RCC_CALC_PLLCLK_I2S1_FREQ(pllinputfreq, LL_RCC_PLL_GetDivider(),
+    889                                                  LL_RCC_PLL_GetN(), LL_RCC_PLL_GetP());
+   \                     ??RCC_PLL_GetFreqDomain_I2S1_1: (+1)
+   \       0x12   0x....'....        BL       LL_RCC_PLL_GetN
+   \       0x16   0x0006             MOVS     R6,R0
+   \       0x18   0x....'....        BL       LL_RCC_PLL_GetDivider
+   \       0x1C   0x0001             MOVS     R1,R0
+   \       0x1E   0x4366             MULS     R6,R4,R6
+   \       0x20   0x0030             MOVS     R0,R6
+   \       0x22   0x0909             LSRS     R1,R1,#+4
+   \       0x24   0x1C49             ADDS     R1,R1,#+1
+   \       0x26   0x....'....        BL       __aeabi_uidiv
+   \       0x2A   0x0006             MOVS     R6,R0
+   \       0x2C   0x....'....        BL       LL_RCC_PLL_GetP
+   \       0x30   0x0C41             LSRS     R1,R0,#+17
+   \       0x32   0x1C49             ADDS     R1,R1,#+1
+   \       0x34   0x0030             MOVS     R0,R6
+   \       0x36   0x....'....        BL       __aeabi_uidiv
+   \       0x3A   0xBD70             POP      {R4-R6,PC}       ;; return
+    890          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24:
+   \        0x0   0x4002'1000        DC32     0x40021000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_1:
+   \        0x0   0x4002'1004        DC32     0x40021004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_2:
+   \        0x0   0xFFFF'80FF        DC32     0xffff80ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_3:
+   \        0x0   0x4002'105C        DC32     0x4002105c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25:
+   \        0x0   0x4002'1060        DC32     0x40021060
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable25_1:
+   \        0x0   0x4002'1008        DC32     0x40021008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable26:
+   \        0x0   0x4002'1054        DC32     0x40021054
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable28:
+   \        0x0   0x4002'100C        DC32     0x4002100c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable29:
+   \        0x0   0x4002'1000        DC32     0x40021000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable30:
+   \        0x0   0x4002'1018        DC32     0x40021018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable30_1:
+   \        0x0   0x4002'1020        DC32     0x40021020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31:
+   \        0x0   0x0003'0001        DC32     0x30001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_1:
+   \        0x0   0x00F4'2400        DC32     0xf42400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_2:
+   \        0x0   0x02DC'6C00        DC32     0x2dc6c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_3:
+   \        0x0   0x0003'D090        DC32     0x3d090
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_4:
+   \        0x0   0x007A'1200        DC32     0x7a1200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_5:
+   \        0x0   0x....'....        DC32     AHBPrescTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable31_6:
+   \        0x0   0x....'....        DC32     APBPrescTable
+    891          
+    892          #if defined(RNG)
+    893          /**
+    894            * @brief  Return PLL clock frequency used for RNG domain
+    895            * @retval PLL clock frequency (in Hz)
+    896            */
+    897          uint32_t RCC_PLL_GetFreqDomain_RNG(void)
+    898          {
+    899            uint32_t pllinputfreq, pllsource;
+    900          
+    901            /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLLM ) * PLLN
+    902          
+    903               RNG Domain clock = PLL_VCO / PLLQ
+    904            */
+    905            pllsource = LL_RCC_PLL_GetMainSource();
+    906          
+    907            switch (pllsource)
+    908            {
+    909              case LL_RCC_PLLSOURCE_HSE:  /* HSE used as PLL clock source */
+    910                pllinputfreq = HSE_VALUE;
+    911                break;
+    912          
+    913              case LL_RCC_PLLSOURCE_HSI:  /* HSI used as PLL clock source */
+    914              default:
+    915                pllinputfreq = HSI_VALUE;
+    916                break;
+    917            }
+    918            return __LL_RCC_CALC_PLLCLK_RNG_FREQ(pllinputfreq, LL_RCC_PLL_GetDivider(),
+    919                                                 LL_RCC_PLL_GetN(), LL_RCC_PLL_GetQ());
+    920          }
+    921          #endif /* RNG */
+    922          
+    923          #if defined(RCC_PLLQ_SUPPORT)
+    924          /**
+    925            * @brief  Return PLL clock frequency used for TIM1 domain
+    926            * @retval PLL clock frequency (in Hz)
+    927            */
+    928          uint32_t RCC_PLL_GetFreqDomain_TIM1(void)
+    929          {
+    930            uint32_t pllinputfreq, pllsource;
+    931          
+    932            /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLLM ) * PLLN
+    933          
+    934               TIM1 Domain clock = PLL_VCO / PLLQ
+    935            */
+    936            pllsource = LL_RCC_PLL_GetMainSource();
+    937          
+    938            switch (pllsource)
+    939            {
+    940              case LL_RCC_PLLSOURCE_HSE:  /* HSE used as PLL clock source */
+    941                pllinputfreq = HSE_VALUE;
+    942                break;
+    943          
+    944              case LL_RCC_PLLSOURCE_HSI:  /* HSI used as PLL clock source */
+    945              default:
+    946                pllinputfreq = HSI_VALUE;
+    947                break;
+    948            }
+    949            return __LL_RCC_CALC_PLLCLK_TIM1_FREQ(pllinputfreq, LL_RCC_PLL_GetDivider(),
+    950                                                  LL_RCC_PLL_GetN(), LL_RCC_PLL_GetQ());
+    951          }
+    952          #endif /* RCC_PLLQ_SUPPORT */
+    953          
+    954          #if defined(RCC_PLLQ_SUPPORT) && defined(TIM15)
+    955          /**
+    956            * @brief  Return PLL clock frequency used for TIM15 domain
+    957            * @retval PLL clock frequency (in Hz)
+    958            */
+    959          uint32_t RCC_PLL_GetFreqDomain_TIM15(void)
+    960          {
+    961            uint32_t pllinputfreq, pllsource;
+    962          
+    963            /* PLL_VCO = (HSE_VALUE or HSI_VALUE / PLLM ) * PLLN
+    964          
+    965               TIM15 Domain clock = PLL_VCO / PLLQ
+    966            */
+    967            pllsource = LL_RCC_PLL_GetMainSource();
+    968          
+    969            switch (pllsource)
+    970            {
+    971              case LL_RCC_PLLSOURCE_HSE:  /* HSE used as PLL clock source */
+    972                pllinputfreq = HSE_VALUE;
+    973                break;
+    974          
+    975              case LL_RCC_PLLSOURCE_HSI:  /* HSI used as PLL clock source */
+    976              default:
+    977                pllinputfreq = HSI_VALUE;
+    978                break;
+    979            }
+    980            return __LL_RCC_CALC_PLLCLK_TIM15_FREQ(pllinputfreq, LL_RCC_PLL_GetDivider(),
+    981                                                   LL_RCC_PLL_GetN(), LL_RCC_PLL_GetQ());
+    982          }
+    983          #endif /* RCC_PLLQ_SUPPORT && TIM15 */
+    984          /**
+    985            * @}
+    986            */
+    987          
+    988          /**
+    989            * @}
+    990            */
+    991          
+    992          #endif /* defined(RCC) */
+    993          
+    994          /**
+    995            * @}
+    996            */
+    997          
+    998          #endif /* USE_FULL_LL_DRIVER */
+    999          
+   1000          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   LL_RCC_DeInit
+        16   -> LL_RCC_HSE_IsReady
+        16   -> LL_RCC_HSI_Enable
+        16   -> LL_RCC_HSI_IsReady
+        16   -> LL_RCC_HSI_SetCalibTrimming
+        16   -> LL_RCC_PLL_IsReady
+      16   LL_RCC_GetADCClockFreq
+        16   -> LL_RCC_GetADCClockSource
+        16   -> LL_RCC_PLL_IsReady
+        16   -> RCC_GetSystemClockFreq
+        16   -> RCC_PLL_GetFreqDomain_ADC
+       0   LL_RCC_GetADCClockSource
+       0   LL_RCC_GetAHBPrescaler
+       0   LL_RCC_GetAPB1Prescaler
+      16   LL_RCC_GetI2CClockFreq
+        16   -> LL_RCC_GetI2CClockSource
+        16   -> LL_RCC_HSI_IsReady
+        16   -> RCC_GetHCLKClockFreq
+        16   -> RCC_GetPCLK1ClockFreq
+        16   -> RCC_GetSystemClockFreq
+       0   LL_RCC_GetI2CClockSource
+      16   LL_RCC_GetI2SClockFreq
+        16   -> LL_RCC_GetI2SClockSource
+        16   -> LL_RCC_PLL_IsReady
+        16   -> RCC_GetSystemClockFreq
+        16   -> RCC_PLL_GetFreqDomain_I2S1
+       0   LL_RCC_GetI2SClockSource
+       8   LL_RCC_GetRTCClockFreq
+         8   -> LL_RCC_GetRTCClockSource
+         8   -> LL_RCC_LSE_IsReady
+         8   -> LL_RCC_LSI_IsReady
+       0   LL_RCC_GetRTCClockSource
+       0   LL_RCC_GetSysClkSource
+       8   LL_RCC_GetSystemClocksFreq
+         8   -> RCC_GetHCLKClockFreq
+         8   -> RCC_GetPCLK1ClockFreq
+         8   -> RCC_GetSystemClockFreq
+      16   LL_RCC_GetUSARTClockFreq
+        16   -> LL_RCC_GetUSARTClockSource
+        16   -> LL_RCC_HSI_IsReady
+        16   -> LL_RCC_LSE_IsReady
+        16   -> RCC_GetHCLKClockFreq
+        16   -> RCC_GetPCLK1ClockFreq
+        16   -> RCC_GetSystemClockFreq
+       0   LL_RCC_GetUSARTClockSource
+       0   LL_RCC_HSE_IsReady
+       0   LL_RCC_HSI_Enable
+       0   LL_RCC_HSI_IsReady
+       0   LL_RCC_HSI_SetCalibTrimming
+       0   LL_RCC_LSE_IsReady
+       0   LL_RCC_LSI_IsReady
+       0   LL_RCC_PLL_GetDivider
+       0   LL_RCC_PLL_GetMainSource
+       0   LL_RCC_PLL_GetN
+       0   LL_RCC_PLL_GetP
+       0   LL_RCC_PLL_GetR
+       0   LL_RCC_PLL_IsReady
+       8   RCC_GetHCLKClockFreq
+         8   -> LL_RCC_GetAHBPrescaler
+       8   RCC_GetPCLK1ClockFreq
+         8   -> LL_RCC_GetAPB1Prescaler
+       8   RCC_GetSystemClockFreq
+         8   -> LL_RCC_GetSysClkSource
+         8   -> RCC_PLL_GetFreqDomain_SYS
+         8 __aeabi_uidiv
+      16   RCC_PLL_GetFreqDomain_ADC
+        16   -> LL_RCC_PLL_GetDivider
+        16   -> LL_RCC_PLL_GetMainSource
+        16   -> LL_RCC_PLL_GetN
+        16   -> LL_RCC_PLL_GetP
+        16 __aeabi_uidiv
+      16   RCC_PLL_GetFreqDomain_I2S1
+        16   -> LL_RCC_PLL_GetDivider
+        16   -> LL_RCC_PLL_GetMainSource
+        16   -> LL_RCC_PLL_GetN
+        16   -> LL_RCC_PLL_GetP
+        16 __aeabi_uidiv
+      16   RCC_PLL_GetFreqDomain_SYS
+        16   -> LL_RCC_PLL_GetDivider
+        16   -> LL_RCC_PLL_GetMainSource
+        16   -> LL_RCC_PLL_GetN
+        16   -> LL_RCC_PLL_GetR
+        16 __aeabi_uidiv
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable24
+       4  ??DataTable24_1
+       4  ??DataTable24_2
+       4  ??DataTable24_3
+       4  ??DataTable25
+       4  ??DataTable25_1
+       4  ??DataTable26
+       4  ??DataTable28
+       4  ??DataTable29
+       4  ??DataTable30
+       4  ??DataTable30_1
+       4  ??DataTable31
+       4  ??DataTable31_1
+       4  ??DataTable31_2
+       4  ??DataTable31_3
+       4  ??DataTable31_4
+       4  ??DataTable31_5
+       4  ??DataTable31_6
+      76  LL_RCC_DeInit
+      74  LL_RCC_GetADCClockFreq
+       8  LL_RCC_GetADCClockSource
+      12  LL_RCC_GetAHBPrescaler
+      12  LL_RCC_GetAPB1Prescaler
+      78  LL_RCC_GetI2CClockFreq
+       8  LL_RCC_GetI2CClockSource
+      84  LL_RCC_GetI2SClockFreq
+       8  LL_RCC_GetI2SClockSource
+      82  LL_RCC_GetRTCClockFreq
+      12  LL_RCC_GetRTCClockSource
+      10  LL_RCC_GetSysClkSource
+      28  LL_RCC_GetSystemClocksFreq
+      88  LL_RCC_GetUSARTClockFreq
+      12  LL_RCC_GetUSARTClockSource
+      14  LL_RCC_HSE_IsReady
+      14  LL_RCC_HSI_Enable
+      14  LL_RCC_HSI_IsReady
+      16  LL_RCC_HSI_SetCalibTrimming
+      14  LL_RCC_LSE_IsReady
+      14  LL_RCC_LSI_IsReady
+      10  LL_RCC_PLL_GetDivider
+      10  LL_RCC_PLL_GetMainSource
+      12  LL_RCC_PLL_GetN
+      12  LL_RCC_PLL_GetP
+      10  LL_RCC_PLL_GetR
+      14  LL_RCC_PLL_IsReady
+      32  RCC_GetHCLKClockFreq
+      28  RCC_GetPCLK1ClockFreq
+      52  RCC_GetSystemClockFreq
+      60  RCC_PLL_GetFreqDomain_ADC
+      60  RCC_PLL_GetFreqDomain_I2S1
+      72  RCC_PLL_GetFreqDomain_SYS
+
+ 
+ 1'122 bytes in section .text
+ 
+ 1'122 bytes of CODE memory
+
+Errors: none
+Warnings: none

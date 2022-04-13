@@ -1,0 +1,1495 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         04/Feb/2022  12:58:52
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode             
+#    Endian            =  little
+#    Source file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c
+#    Command line      =
+#        -f C:\Users\610126~1\AppData\Local\Temp\EWF835.tmp
+#        (C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale            =  C
+#    List file         =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\stm32g0xx_hal_flash_ex.lst
+#    Object file       =
+#        C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\stm32g0xx_hal_flash_ex.o
+#    Runtime model:       
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Project_data\ECM_data\symax_safetycore\Symax-sri_safetycore_unit_test\symax_sri_app-DQ_Test_6_Relay_Testing\generic_app_GMI\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32g0xx_hal_flash_ex.c
+      4            * @author  MCD Application Team
+      5            * @brief   Extended FLASH HAL module driver.
+      6            *          This file provides firmware functions to manage the following
+      7            *          functionalities of the FLASH extended peripheral:
+      8            *           + Extended programming operations functions
+      9            *
+     10           @verbatim
+     11           ==============================================================================
+     12                             ##### Flash Extended features #####
+     13            ==============================================================================
+     14          
+     15            [..] Comparing to other previous devices, the FLASH interface for STM32G0xx
+     16                 devices contains the following additional features
+     17          
+     18                 (+) Capacity up to 128 Kbytes with single bank architecture supporting read-while-write
+     19                     capability (RWW)
+     20                 (+) Single bank memory organization
+     21                 (+) PCROP protection
+     22          
+     23                                  ##### How to use this driver #####
+     24           ==============================================================================
+     25            [..] This driver provides functions to configure and program the FLASH memory
+     26                 of all STM32G0xx devices. It includes
+     27                (#) Flash Memory Erase functions:
+     28                     (++) Lock and Unlock the FLASH interface using HAL_FLASH_Unlock() and
+     29                          HAL_FLASH_Lock() functions
+     30                     (++) Erase function: Erase page, erase all sectors
+     31                     (++) There are two modes of erase :
+     32                       (+++) Polling Mode using HAL_FLASHEx_Erase()
+     33                       (+++) Interrupt Mode using HAL_FLASHEx_Erase_IT()
+     34          
+     35                (#) Option Bytes Programming function: Use HAL_FLASHEx_OBProgram() to :
+     36                  (++) Set/Reset the write protection
+     37                  (++) Set the Read protection Level
+     38                  (++) Program the user Option Bytes
+     39                  (++) Configure the PCROP protection
+     40                  (++) Set Securable memory area and boot entry point
+     41          
+     42                (#) Get Option Bytes Configuration function: Use HAL_FLASHEx_OBGetConfig() to :
+     43                  (++) Get the value of a write protection area
+     44                  (++) Know if the read protection is activated
+     45                  (++) Get the value of the user Option Bytes
+     46                  (++) Get Securable memory area and boot entry point informations
+     47          
+     48                (#) Enable or disable debugger usage using HAL_FLASHEx_EnableDebugger and
+     49                    HAL_FLASHEx_DisableDebugger.
+     50          
+     51                (#) Check is flash content is empty or not using HAL_FLASHEx_FlashEmptyCheck.
+     52                    and modify this setting (for flash loader purpose e.g.) using
+     53                    HAL_FLASHEx_ForceFlashEmpty.
+     54          
+     55                (#) Enable securable memory area protectionusing HAL_FLASHEx_EnableSecMemProtection
+     56          
+     57           @endverbatim
+     58            ******************************************************************************
+     59            * @attention
+     60            *
+     61            * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics.
+     62            * All rights reserved.</center></h2>
+     63            *
+     64            * This software component is licensed by ST under BSD 3-Clause license,
+     65            * the "License"; You may not use this file except in compliance with the
+     66            * License. You may obtain a copy of the License at:
+     67            *                        opensource.org/licenses/BSD-3-Clause
+     68            *
+     69            ******************************************************************************
+     70            */
+     71          
+     72          /* Includes ------------------------------------------------------------------*/
+     73          #include "stm32g0xx_hal.h"
+     74          
+     75          /** @addtogroup STM32G0xx_HAL_Driver
+     76            * @{
+     77            */
+     78          
+     79          /** @defgroup FLASHEx FLASHEx
+     80            * @brief FLASH Extended HAL module driver
+     81            * @{
+     82            */
+     83          
+     84          #ifdef HAL_FLASH_MODULE_ENABLED
+     85          
+     86          /* Private typedef -----------------------------------------------------------*/
+     87          /* Private define ------------------------------------------------------------*/
+     88          /* Private macro -------------------------------------------------------------*/
+     89          /* Private variables ---------------------------------------------------------*/
+     90          /* Private function prototypes -----------------------------------------------*/
+     91          /** @defgroup FLASHEx_Private_Functions FLASHEx Private Functions
+     92           * @{
+     93           */
+     94          static void               FLASH_MassErase(void);
+     95          void                      FLASH_FlushCaches(void);
+     96          static void               FLASH_OB_WRPConfig(uint32_t WRPArea, uint32_t WRPStartOffset, uint32_t WRDPEndOffset);
+     97          static void               FLASH_OB_OptrConfig(uint32_t UserType, uint32_t UserConfig, uint32_t RDPLevel);
+     98          #if defined(FLASH_PCROP_SUPPORT)
+     99          static void               FLASH_OB_PCROP1AConfig(uint32_t PCROPConfig, uint32_t PCROP1AStartAddr, uint32_t PCROP1AEndAddr);
+    100          static void               FLASH_OB_PCROP1BConfig(uint32_t PCROP1BStartAddr, uint32_t PCROP1BEndAddr);
+    101          #endif
+    102          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    103          static void               FLASH_OB_SecMemConfig(uint32_t BootEntry, uint32_t SecSize);
+    104          #endif
+    105          static void               FLASH_OB_GetWRP(uint32_t WRPArea, uint32_t *WRPStartOffset, uint32_t *WRDPEndOffset);
+    106          static uint32_t           FLASH_OB_GetRDP(void);
+    107          static uint32_t           FLASH_OB_GetUser(void);
+    108          #if defined(FLASH_PCROP_SUPPORT)
+    109          static void               FLASH_OB_GetPCROP1A(uint32_t *PCROPConfig, uint32_t *PCROP1AStartAddr, uint32_t *PCROP1AEndAddr);
+    110          static void               FLASH_OB_GetPCROP1B(uint32_t *PCROP1BStartAddr, uint32_t *PCROP1BEndAddr);
+    111          #endif
+    112          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    113          static void               FLASH_OB_GetSecMem(uint32_t *BootEntry, uint32_t *SecSize);
+    114          #endif
+    115          /**
+    116            * @}
+    117            */
+    118          
+    119          /* Exported functions -------------------------------------------------------*/
+    120          /** @defgroup FLASHEx_Exported_Functions FLASH Extended Exported Functions
+    121            * @{
+    122            */
+    123          
+    124          /** @defgroup FLASHEx_Exported_Functions_Group1 Extended IO operation functions
+    125           *  @brief   Extended IO operation functions
+    126           *
+    127          @verbatim
+    128           ===============================================================================
+    129                          ##### Extended programming operation functions #####
+    130           ===============================================================================
+    131              [..]
+    132              This subsection provides a set of functions allowing to manage the Extended FLASH
+    133              programming operations Operations.
+    134          
+    135          @endverbatim
+    136            * @{
+    137            */
+    138          /**
+    139            * @brief  Perform a mass erase or erase the specified FLASH memory pages.
+    140            * @param[in]  pEraseInit Pointer to an @ref FLASH_EraseInitTypeDef structure that
+    141            *         contains the configuration information for the erasing.
+    142            * @param[out]  PageError Pointer to variable that contains the configuration
+    143            *         information on faulty page in case of error (0xFFFFFFFF means that all
+    144            *         the pages have been correctly erased)
+    145            * @retval HAL Status
+    146            */
+
+   \                                 In section .text, align 2, keep-with-next
+    147          HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t *PageError)
+    148          {
+   \                     HAL_FLASHEx_Erase: (+1)
+   \        0x0   0xB5F3             PUSH     {R0,R1,R4-R7,LR}
+   \        0x2   0xB081             SUB      SP,SP,#+4
+    149            HAL_StatusTypeDef status;
+    150            uint32_t index;
+    151          
+    152            /* Check the parameters */
+    153            assert_param(IS_FLASH_TYPEERASE(pEraseInit->TypeErase));
+    154          
+    155            /* Process Locked */
+    156            __HAL_LOCK(&pFlash);
+   \        0x4   0x....             LDR      R0,??DataTable13
+   \        0x6   0x7800             LDRB     R0,[R0, #+0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD101             BNE      ??HAL_FLASHEx_Erase_0
+   \        0xC   0x2002             MOVS     R0,#+2
+   \        0xE   0xE043             B        ??HAL_FLASHEx_Erase_1
+   \                     ??HAL_FLASHEx_Erase_0: (+1)
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x....             LDR      R1,??DataTable13
+   \       0x14   0x7008             STRB     R0,[R1, #+0]
+    157          
+    158            /* Reset error code */
+    159            pFlash.ErrorCode = HAL_FLASH_ERROR_NONE;
+   \       0x16   0x2500             MOVS     R5,#+0
+   \       0x18   0x....             LDR      R0,??DataTable13
+   \       0x1A   0x6045             STR      R5,[R0, #+4]
+    160          
+    161            /* Wait for last operation to be completed */
+    162            status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
+   \       0x1C   0x27FA             MOVS     R7,#+250
+   \       0x1E   0x00BF             LSLS     R7,R7,#+2        ;; #+1000
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0x....'....        BL       FLASH_WaitForLastOperation
+   \       0x26   0x0006             MOVS     R6,R0
+    163          
+    164            if (status == HAL_OK)
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0xB2C0             UXTB     R0,R0
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD12F             BNE      ??HAL_FLASHEx_Erase_2
+    165            {
+    166              if (pEraseInit->TypeErase == FLASH_TYPEERASE_MASS)
+   \       0x30   0x9801             LDR      R0,[SP, #+4]
+   \       0x32   0x6800             LDR      R0,[R0, #+0]
+   \       0x34   0x2804             CMP      R0,#+4
+   \       0x36   0xD106             BNE      ??HAL_FLASHEx_Erase_3
+    167              {
+    168                /* Mass erase to be done */
+    169                FLASH_MassErase();
+   \       0x38   0x....'....        BL       FLASH_MassErase
+    170          
+    171                /* Wait for last operation to be completed */
+    172                status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
+   \       0x3C   0x0038             MOVS     R0,R7
+   \       0x3E   0x....'....        BL       FLASH_WaitForLastOperation
+   \       0x42   0x0006             MOVS     R6,R0
+   \       0x44   0xE024             B        ??HAL_FLASHEx_Erase_2
+    173              }
+    174              else
+    175              {
+    176                /*Initialization of PageError variable*/
+    177                *PageError = 0xFFFFFFFFU;
+   \                     ??HAL_FLASHEx_Erase_3: (+1)
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x4A   0x9902             LDR      R1,[SP, #+8]
+   \       0x4C   0x6008             STR      R0,[R1, #+0]
+    178          
+    179                for (index = pEraseInit->Page; index < (pEraseInit->Page + pEraseInit->NbPages); index++)
+   \       0x4E   0x9801             LDR      R0,[SP, #+4]
+   \       0x50   0x6840             LDR      R0,[R0, #+4]
+   \       0x52   0x0004             MOVS     R4,R0
+   \                     ??HAL_FLASHEx_Erase_4: (+1)
+   \       0x54   0x9801             LDR      R0,[SP, #+4]
+   \       0x56   0x6840             LDR      R0,[R0, #+4]
+   \       0x58   0x9901             LDR      R1,[SP, #+4]
+   \       0x5A   0x6889             LDR      R1,[R1, #+8]
+   \       0x5C   0x1840             ADDS     R0,R0,R1
+   \       0x5E   0x4284             CMP      R4,R0
+   \       0x60   0xD211             BCS      ??HAL_FLASHEx_Erase_5
+    180                {
+    181                  __disable_irq(); // TODO: possibly eliminate this disabling. The lock-up issue likely was USART 'ORE' flag getting stuck on
+   \       0x62   0xB672             CPSID    I
+    182                  /* Start erase page */
+    183                  FLASH_PageErase(index);
+   \       0x64   0x0020             MOVS     R0,R4
+   \       0x66   0x....'....        BL       FLASH_PageErase
+    184          
+    185                  /* Wait for last operation to be completed */
+    186                  status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
+   \       0x6A   0x0038             MOVS     R0,R7
+   \       0x6C   0x....'....        BL       FLASH_WaitForLastOperation
+   \       0x70   0x0006             MOVS     R6,R0
+    187                  __enable_irq(); // TODO: possibly eliminate this enabling. The lock-up issue likely was USART 'ORE' flag getting stuck on
+   \       0x72   0xB662             CPSIE    I
+    188          
+    189                  if (status != HAL_OK)
+   \       0x74   0x0030             MOVS     R0,R6
+   \       0x76   0xB2C0             UXTB     R0,R0
+   \       0x78   0x2800             CMP      R0,#+0
+   \       0x7A   0xD002             BEQ      ??HAL_FLASHEx_Erase_6
+    190                  {
+    191                    /* In case of error, stop erase procedure and return the faulty address */
+    192                    *PageError = index;
+   \       0x7C   0x9802             LDR      R0,[SP, #+8]
+   \       0x7E   0x6004             STR      R4,[R0, #+0]
+    193                    break;
+   \       0x80   0xE001             B        ??HAL_FLASHEx_Erase_5
+    194                  }
+    195                }
+   \                     ??HAL_FLASHEx_Erase_6: (+1)
+   \       0x82   0x1C64             ADDS     R4,R4,#+1
+   \       0x84   0xE7E6             B        ??HAL_FLASHEx_Erase_4
+    196          
+    197                /* If operation is completed or interrupted, disable the Page Erase Bit */
+    198                CLEAR_BIT(FLASH->CR, FLASH_CR_PER);
+   \                     ??HAL_FLASHEx_Erase_5: (+1)
+   \       0x86   0x....             LDR      R0,??DataTable13_1  ;; 0x40022014
+   \       0x88   0x6801             LDR      R1,[R0, #+0]
+   \       0x8A   0x2202             MOVS     R2,#+2
+   \       0x8C   0x4391             BICS     R1,R1,R2
+   \       0x8E   0x6001             STR      R1,[R0, #+0]
+    199              }
+    200            }
+    201          
+    202            /* Process Unlocked */
+    203            __HAL_UNLOCK(&pFlash);
+   \                     ??HAL_FLASHEx_Erase_2: (+1)
+   \       0x90   0x....             LDR      R0,??DataTable13
+   \       0x92   0x7005             STRB     R5,[R0, #+0]
+    204          
+    205            /* return status */
+    206            return status;
+   \       0x94   0x0030             MOVS     R0,R6
+   \       0x96   0xB2C0             UXTB     R0,R0
+   \                     ??HAL_FLASHEx_Erase_1: (+1)
+   \       0x98   0xBDFE             POP      {R1-R7,PC}       ;; return
+    207          }
+    208          
+    209          
+    210          /**
+    211            * @brief  Perform a mass erase or erase the specified FLASH memory pages with interrupt enabled.
+    212            * @param  pEraseInit Pointer to an @ref FLASH_EraseInitTypeDef structure that
+    213            *         contains the configuration information for the erasing.
+    214            * @retval HAL Status
+    215            */
+
+   \                                 In section .text, align 2, keep-with-next
+    216          HAL_StatusTypeDef HAL_FLASHEx_Erase_IT(FLASH_EraseInitTypeDef *pEraseInit)
+    217          {
+   \                     HAL_FLASHEx_Erase_IT: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    218            HAL_StatusTypeDef status;
+    219          
+    220            /* Check the parameters */
+    221            assert_param(IS_FLASH_TYPEERASE(pEraseInit->TypeErase));
+    222          
+    223            /* Process Locked */
+    224            __HAL_LOCK(&pFlash);
+   \        0x4   0x....             LDR      R5,??DataTable13
+   \        0x6   0x7828             LDRB     R0,[R5, #+0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD101             BNE      ??HAL_FLASHEx_Erase_IT_0
+   \        0xC   0x2002             MOVS     R0,#+2
+   \        0xE   0xE026             B        ??HAL_FLASHEx_Erase_IT_1
+   \                     ??HAL_FLASHEx_Erase_IT_0: (+1)
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x7028             STRB     R0,[R5, #+0]
+    225          
+    226            /* Reset error code */
+    227            pFlash.ErrorCode = HAL_FLASH_ERROR_NONE;
+   \       0x14   0x2600             MOVS     R6,#+0
+   \       0x16   0x606E             STR      R6,[R5, #+4]
+    228          
+    229            /* save procedure for interrupt treatment */
+    230            pFlash.ProcedureOnGoing = pEraseInit->TypeErase;
+   \       0x18   0x6820             LDR      R0,[R4, #+0]
+   \       0x1A   0x60A8             STR      R0,[R5, #+8]
+    231          
+    232            /* Wait for last operation to be completed */
+    233            status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
+   \       0x1C   0x20FA             MOVS     R0,#+250
+   \       0x1E   0x0080             LSLS     R0,R0,#+2        ;; #+1000
+   \       0x20   0x....'....        BL       FLASH_WaitForLastOperation
+   \       0x24   0x0007             MOVS     R7,R0
+    234          
+    235            if (status != HAL_OK)
+   \       0x26   0x0038             MOVS     R0,R7
+   \       0x28   0xB2C0             UXTB     R0,R0
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD001             BEQ      ??HAL_FLASHEx_Erase_IT_2
+    236            {
+    237              /* Process Unlocked */
+    238              __HAL_UNLOCK(&pFlash);
+   \       0x2E   0x702E             STRB     R6,[R5, #+0]
+   \       0x30   0xE013             B        ??HAL_FLASHEx_Erase_IT_3
+    239            }
+    240            else
+    241            {
+    242              /* Enable End of Operation and Error interrupts */
+    243              __HAL_FLASH_ENABLE_IT(FLASH_IT_EOP | FLASH_IT_OPERR);
+   \                     ??HAL_FLASHEx_Erase_IT_2: (+1)
+   \       0x32   0x....             LDR      R0,??DataTable13_1  ;; 0x40022014
+   \       0x34   0x6801             LDR      R1,[R0, #+0]
+   \       0x36   0x22C0             MOVS     R2,#+192
+   \       0x38   0x0492             LSLS     R2,R2,#+18       ;; #+50331648
+   \       0x3A   0x430A             ORRS     R2,R2,R1
+   \       0x3C   0x6002             STR      R2,[R0, #+0]
+    244          
+    245              if (pEraseInit->TypeErase == FLASH_TYPEERASE_MASS)
+   \       0x3E   0x6820             LDR      R0,[R4, #+0]
+   \       0x40   0x2804             CMP      R0,#+4
+   \       0x42   0xD103             BNE      ??HAL_FLASHEx_Erase_IT_4
+    246              {
+    247                /* Set Page to 0 for Interrupt callback managment */
+    248                pFlash.Page = 0;
+   \       0x44   0x612E             STR      R6,[R5, #+16]
+    249          
+    250                /* Proceed to Mass Erase */
+    251                FLASH_MassErase();
+   \       0x46   0x....'....        BL       FLASH_MassErase
+   \       0x4A   0xE006             B        ??HAL_FLASHEx_Erase_IT_3
+    252              }
+    253              else
+    254              {
+    255                /* Erase by page to be done */
+    256                pFlash.NbPagesToErase = pEraseInit->NbPages;
+   \                     ??HAL_FLASHEx_Erase_IT_4: (+1)
+   \       0x4C   0x68A0             LDR      R0,[R4, #+8]
+   \       0x4E   0x6168             STR      R0,[R5, #+20]
+    257                pFlash.Page = pEraseInit->Page;
+   \       0x50   0x6860             LDR      R0,[R4, #+4]
+   \       0x52   0x6128             STR      R0,[R5, #+16]
+    258          
+    259                /*Erase 1st page and wait for IT */
+    260                FLASH_PageErase(pEraseInit->Page);
+   \       0x54   0x6860             LDR      R0,[R4, #+4]
+   \       0x56   0x....'....        BL       FLASH_PageErase
+    261              }
+    262            }
+    263          
+    264            /* return status */
+    265            return status;
+   \                     ??HAL_FLASHEx_Erase_IT_3: (+1)
+   \       0x5A   0x0038             MOVS     R0,R7
+   \       0x5C   0xB2C0             UXTB     R0,R0
+   \                     ??HAL_FLASHEx_Erase_IT_1: (+1)
+   \       0x5E   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    266          }
+    267          
+    268          /**
+    269            * @brief  Program Option bytes.
+    270            * @param  pOBInit Pointer to an @ref FLASH_OBProgramInitTypeDef structure that
+    271            *         contains the configuration information for the programming.
+    272            * @note   To configure any option bytes, the option lock bit OPTLOCK must be
+    273            *         cleared with the call of @ref HAL_FLASH_OB_Unlock() function.
+    274            * @note   New option bytes configuration will be taken into account only
+    275            *         - after an option bytes launch through the call of @ref HAL_FLASH_OB_Launch()
+    276            *         - a Power On Reset
+    277            *         - an exit from Standby or Shutdown mode.
+    278            * @retval HAL Status
+    279            */
+
+   \                                 In section .text, align 2, keep-with-next
+    280          HAL_StatusTypeDef HAL_FLASHEx_OBProgram(FLASH_OBProgramInitTypeDef *pOBInit)
+    281          {
+   \                     HAL_FLASHEx_OBProgram: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    282            uint32_t optr;
+    283            HAL_StatusTypeDef status;
+    284          
+    285            /* Check the parameters */
+    286            assert_param(IS_OPTIONBYTE(pOBInit->OptionType));
+    287          
+    288            /* Process Locked */
+    289            __HAL_LOCK(&pFlash);
+   \        0x4   0x....             LDR      R0,??DataTable13
+   \        0x6   0x7800             LDRB     R0,[R0, #+0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD101             BNE      ??HAL_FLASHEx_OBProgram_0
+   \        0xC   0x2002             MOVS     R0,#+2
+   \        0xE   0xE04D             B        ??HAL_FLASHEx_OBProgram_1
+   \                     ??HAL_FLASHEx_OBProgram_0: (+1)
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0x0001             MOVS     R1,R0
+   \       0x14   0x....             LDR      R2,??DataTable13
+   \       0x16   0x7011             STRB     R1,[R2, #+0]
+    290          
+    291            pFlash.ErrorCode = HAL_FLASH_ERROR_NONE;
+   \       0x18   0x2500             MOVS     R5,#+0
+   \       0x1A   0x....             LDR      R1,??DataTable13
+   \       0x1C   0x604D             STR      R5,[R1, #+4]
+    292          
+    293            /* Write protection configuration */
+    294            if ((pOBInit->OptionType & OPTIONBYTE_WRP) != 0x00U)
+   \       0x1E   0x6821             LDR      R1,[R4, #+0]
+   \       0x20   0x4008             ANDS     R0,R0,R1
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD004             BEQ      ??HAL_FLASHEx_OBProgram_2
+    295            {
+    296              /* Configure of Write protection on the selected area */
+    297              FLASH_OB_WRPConfig(pOBInit->WRPArea, pOBInit->WRPStartOffset, pOBInit->WRPEndOffset);
+   \       0x26   0x68E2             LDR      R2,[R4, #+12]
+   \       0x28   0x68A1             LDR      R1,[R4, #+8]
+   \       0x2A   0x6860             LDR      R0,[R4, #+4]
+   \       0x2C   0x....'....        BL       FLASH_OB_WRPConfig
+    298            }
+    299          
+    300            /* Option register */
+    301            if ((pOBInit->OptionType & (OPTIONBYTE_RDP | OPTIONBYTE_USER)) == (OPTIONBYTE_RDP | OPTIONBYTE_USER))
+   \                     ??HAL_FLASHEx_OBProgram_2: (+1)
+   \       0x30   0x7820             LDRB     R0,[R4, #+0]
+   \       0x32   0x2106             MOVS     R1,#+6
+   \       0x34   0x4001             ANDS     R1,R1,R0
+   \       0x36   0x2906             CMP      R1,#+6
+   \       0x38   0xD105             BNE      ??HAL_FLASHEx_OBProgram_3
+    302            {
+    303              /* Fully modify OPTR register with RDP & user datas */
+    304              FLASH_OB_OptrConfig(pOBInit->USERType, pOBInit->USERConfig, pOBInit->RDPLevel);
+   \       0x3A   0x6922             LDR      R2,[R4, #+16]
+   \       0x3C   0x69A1             LDR      R1,[R4, #+24]
+   \       0x3E   0x6960             LDR      R0,[R4, #+20]
+   \       0x40   0x....'....        BL       FLASH_OB_OptrConfig
+   \       0x44   0xE016             B        ??HAL_FLASHEx_OBProgram_4
+    305            }
+    306            else if ((pOBInit->OptionType & OPTIONBYTE_RDP) != 0x00U)
+   \                     ??HAL_FLASHEx_OBProgram_3: (+1)
+   \       0x46   0x7820             LDRB     R0,[R4, #+0]
+   \       0x48   0x0780             LSLS     R0,R0,#+30
+   \       0x4A   0xD508             BPL      ??HAL_FLASHEx_OBProgram_5
+    307            {
+    308              /* Only modify RDP so get current user data */
+    309              optr = FLASH_OB_GetUser();
+   \       0x4C   0x....'....        BL       FLASH_OB_GetUser
+   \       0x50   0x9000             STR      R0,[SP, #+0]
+    310              FLASH_OB_OptrConfig(optr, optr, pOBInit->RDPLevel);
+   \       0x52   0x6922             LDR      R2,[R4, #+16]
+   \       0x54   0x9900             LDR      R1,[SP, #+0]
+   \       0x56   0x9800             LDR      R0,[SP, #+0]
+   \       0x58   0x....'....        BL       FLASH_OB_OptrConfig
+   \       0x5C   0xE00A             B        ??HAL_FLASHEx_OBProgram_4
+    311            }
+    312            else if ((pOBInit->OptionType & OPTIONBYTE_USER) != 0x00U)
+   \                     ??HAL_FLASHEx_OBProgram_5: (+1)
+   \       0x5E   0x7820             LDRB     R0,[R4, #+0]
+   \       0x60   0x0740             LSLS     R0,R0,#+29
+   \       0x62   0xD507             BPL      ??HAL_FLASHEx_OBProgram_4
+    313            {
+    314              /* Only modify user so get current RDP level */
+    315              optr = FLASH_OB_GetRDP();
+   \       0x64   0x....'....        BL       FLASH_OB_GetRDP
+   \       0x68   0x9000             STR      R0,[SP, #+0]
+    316              FLASH_OB_OptrConfig(pOBInit->USERType, pOBInit->USERConfig, optr);
+   \       0x6A   0x9A00             LDR      R2,[SP, #+0]
+   \       0x6C   0x69A1             LDR      R1,[R4, #+24]
+   \       0x6E   0x6960             LDR      R0,[R4, #+20]
+   \       0x70   0x....'....        BL       FLASH_OB_OptrConfig
+    317            }
+    318            else
+    319            {
+    320              /* nothing to do */
+    321            }
+    322          
+    323          #if defined(FLASH_PCROP_SUPPORT)
+    324            /* PCROP Configuration */
+    325            if ((pOBInit->OptionType & OPTIONBYTE_PCROP) != 0x00U)
+    326            {
+    327              /* Check the parameters */
+    328              assert_param(IS_OB_PCROP_CONFIG(pOBInit->PCROPConfig));
+    329          
+    330              if ((pOBInit->PCROPConfig & (OB_PCROP_ZONE_A | OB_PCROP_RDP_ERASE)) != 0x00U)
+    331              {
+    332                /* Configure the 1A Proprietary code readout protection */
+    333                FLASH_OB_PCROP1AConfig(pOBInit->PCROPConfig, pOBInit->PCROP1AStartAddr, pOBInit->PCROP1AEndAddr);
+    334              }
+    335          
+    336              if ((pOBInit->PCROPConfig & OB_PCROP_ZONE_B) != 0x00U)
+    337              {
+    338                /* Configure the 1B Proprietary code readout protection */
+    339                FLASH_OB_PCROP1BConfig(pOBInit->PCROP1BStartAddr, pOBInit->PCROP1BEndAddr);
+    340              }
+    341            }
+    342          #endif
+    343          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    344            /* Securable Memory Area Configuration */
+    345            if ((pOBInit->OptionType & OPTIONBYTE_SEC) != 0x00U)
+    346            {
+    347              /* Configure the securable memory area protection */
+    348              FLASH_OB_SecMemConfig(pOBInit->BootEntryPoint, pOBInit->SecSize);
+    349            }
+    350          #endif
+    351          
+    352            /* Wait for last operation to be completed */
+    353            status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
+   \                     ??HAL_FLASHEx_OBProgram_4: (+1)
+   \       0x74   0x20FA             MOVS     R0,#+250
+   \       0x76   0x0080             LSLS     R0,R0,#+2        ;; #+1000
+   \       0x78   0x....'....        BL       FLASH_WaitForLastOperation
+   \       0x7C   0x0007             MOVS     R7,R0
+    354          
+    355            if (status == HAL_OK)
+   \       0x7E   0x0038             MOVS     R0,R7
+   \       0x80   0xB2C0             UXTB     R0,R0
+   \       0x82   0x2800             CMP      R0,#+0
+   \       0x84   0xD10E             BNE      ??HAL_FLASHEx_OBProgram_6
+    356            {
+    357              /* Set OPTSTRT Bit */
+    358              SET_BIT(FLASH->CR, FLASH_CR_OPTSTRT);
+   \       0x86   0x....             LDR      R6,??DataTable13_1  ;; 0x40022014
+   \       0x88   0x6830             LDR      R0,[R6, #+0]
+   \       0x8A   0x2180             MOVS     R1,#+128
+   \       0x8C   0x0289             LSLS     R1,R1,#+10       ;; #+131072
+   \       0x8E   0x4301             ORRS     R1,R1,R0
+   \       0x90   0x6031             STR      R1,[R6, #+0]
+    359          
+    360              /* Wait for last operation to be completed */
+    361              status = FLASH_WaitForLastOperation(FLASH_TIMEOUT_VALUE);
+   \       0x92   0x20FA             MOVS     R0,#+250
+   \       0x94   0x0080             LSLS     R0,R0,#+2        ;; #+1000
+   \       0x96   0x....'....        BL       FLASH_WaitForLastOperation
+   \       0x9A   0x0007             MOVS     R7,R0
+    362          
+    363              /* If the option byte program operation is completed, disable the OPTSTRT Bit */
+    364              CLEAR_BIT(FLASH->CR, FLASH_CR_OPTSTRT);
+   \       0x9C   0x6830             LDR      R0,[R6, #+0]
+   \       0x9E   0x....             LDR      R1,??DataTable13_2  ;; 0xfffdffff
+   \       0xA0   0x4001             ANDS     R1,R1,R0
+   \       0xA2   0x6031             STR      R1,[R6, #+0]
+    365            }
+    366          
+    367            /* Process Unlocked */
+    368            __HAL_UNLOCK(&pFlash);
+   \                     ??HAL_FLASHEx_OBProgram_6: (+1)
+   \       0xA4   0x....             LDR      R0,??DataTable13
+   \       0xA6   0x7005             STRB     R5,[R0, #+0]
+    369          
+    370            /* return status */
+    371            return status;
+   \       0xA8   0x0038             MOVS     R0,R7
+   \       0xAA   0xB2C0             UXTB     R0,R0
+   \                     ??HAL_FLASHEx_OBProgram_1: (+1)
+   \       0xAC   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    372          }
+    373          
+    374          /**
+    375            * @brief  Get the Option bytes configuration.
+    376            * @note   warning: this API only read flash register, it does not reflect any
+    377            *         change that would have been programmed between previous Option byte
+    378            *         loading and current call.
+    379            * @param  pOBInit Pointer to an @ref FLASH_OBProgramInitTypeDef structure that contains the
+    380            *                  configuration information. The fields pOBInit->WRPArea and
+    381            *                  pOBInit->PCROPConfig should indicate which area is requested
+    382            *                  for the WRP and PCROP.
+    383            * @retval None
+    384            */
+
+   \                                 In section .text, align 2, keep-with-next
+    385          void HAL_FLASHEx_OBGetConfig(FLASH_OBProgramInitTypeDef *pOBInit)
+    386          {
+   \                     HAL_FLASHEx_OBGetConfig: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    387            pOBInit->OptionType = OPTIONBYTE_ALL;
+   \        0x4   0x2007             MOVS     R0,#+7
+   \        0x6   0x6020             STR      R0,[R4, #+0]
+    388          
+    389            /* Get write protection on the selected area */
+    390            FLASH_OB_GetWRP(pOBInit->WRPArea, &(pOBInit->WRPStartOffset), &(pOBInit->WRPEndOffset));
+   \        0x8   0x0022             MOVS     R2,R4
+   \        0xA   0x320C             ADDS     R2,R2,#+12
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x3108             ADDS     R1,R1,#+8
+   \       0x10   0x6860             LDR      R0,[R4, #+4]
+   \       0x12   0x....'....        BL       FLASH_OB_GetWRP
+    391          
+    392            /* Get Read protection level */
+    393            pOBInit->RDPLevel = FLASH_OB_GetRDP();
+   \       0x16   0x....'....        BL       FLASH_OB_GetRDP
+   \       0x1A   0x6120             STR      R0,[R4, #+16]
+    394          
+    395            /* Get the user option bytes */
+    396            pOBInit->USERConfig = FLASH_OB_GetUser();
+   \       0x1C   0x....'....        BL       FLASH_OB_GetUser
+   \       0x20   0x61A0             STR      R0,[R4, #+24]
+    397            pOBInit->USERType = OB_USER_ALL;
+   \       0x22   0x....             LDR      R0,??DataTable13_3  ;; 0x74f6000
+   \       0x24   0x6160             STR      R0,[R4, #+20]
+    398          
+    399          #if defined(FLASH_PCROP_SUPPORT)
+    400            /* Get the Proprietary code readout protection */
+    401            FLASH_OB_GetPCROP1A(&(pOBInit->PCROPConfig), &(pOBInit->PCROP1AStartAddr), &(pOBInit->PCROP1AEndAddr));
+    402            FLASH_OB_GetPCROP1B(&(pOBInit->PCROP1BStartAddr), &(pOBInit->PCROP1BEndAddr));
+    403            pOBInit->PCROPConfig |= (OB_PCROP_ZONE_A | OB_PCROP_ZONE_B);
+    404          #endif
+    405          
+    406          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    407            /* Get the Securable Memory Area protection */
+    408            FLASH_OB_GetSecMem(&(pOBInit->BootEntryPoint), &(pOBInit->SecSize));
+    409          #endif
+    410          }
+   \       0x26   0xBD10             POP      {R4,PC}          ;; return
+    411          
+    412          #if defined(FLASH_ACR_DBG_SWEN)
+    413          /**
+    414            * @brief  Enable Debugger.
+    415            * @note   After calling this API, flash interface allow debugger intrusion.
+    416            * @retval None
+    417            */
+    418          void HAL_FLASHEx_EnableDebugger(void)
+    419          {
+    420            FLASH->ACR |= FLASH_ACR_DBG_SWEN;
+    421          }
+    422          
+    423          
+    424          /**
+    425            * @brief  Disable Debugger.
+    426            * @note   After calling this API, Debugger is disabled: it is no more possible to
+    427            *         break, see CPU register, etc...
+    428            * @retval None
+    429            */
+    430          void HAL_FLASHEx_DisableDebugger(void)
+    431          {
+    432            FLASH->ACR &= ~FLASH_ACR_DBG_SWEN;
+    433          }
+    434          #endif /* FLASH_ACR_DBG_SWEN */
+    435          
+    436          /**
+    437            * @brief  Flash Empy check
+    438            * @note   This API checks if first location in Flash is programmed or not.
+    439            *         This check is done once by Option Byte Loader.
+    440            * @retval 0 if 1st location is not programmed else
+    441            */
+
+   \                                 In section .text, align 2, keep-with-next
+    442          uint32_t HAL_FLASHEx_FlashEmptyCheck(void)
+    443          {
+    444            return ((FLASH->ACR & FLASH_ACR_PROGEMPTY));
+   \                     HAL_FLASHEx_FlashEmptyCheck: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable13_4  ;; 0x40022000
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x2180             MOVS     R1,#+128
+   \        0x6   0x0249             LSLS     R1,R1,#+9        ;; #+65536
+   \        0x8   0x4008             ANDS     R0,R0,R1
+   \        0xA   0x4770             BX       LR               ;; return
+    445          }
+    446          
+    447          
+    448          /**
+    449            * @brief  Force Empty check value.
+    450            * @note   Allows to modify program empty check value in order to force this
+    451            *         infrmation in Flash Interface, for all next reset that do not launch
+    452            *         Option Byte Loader.
+    453            * @param  FlashEmpty this parameter can be a value of @ref FLASHEx_Empty_Check
+    454            * @retval None
+    455            */
+
+   \                                 In section .text, align 2, keep-with-next
+    456          void HAL_FLASHEx_ForceFlashEmpty(uint32_t FlashEmpty)
+    457          {
+    458            uint32_t acr;
+    459            assert_param(IS_FLASH_EMPTY_CHECK(FlashEmpty));
+    460          
+    461            acr = (FLASH->ACR & ~FLASH_ACR_PROGEMPTY);
+   \                     HAL_FLASHEx_ForceFlashEmpty: (+1)
+   \        0x0   0x....             LDR      R2,??DataTable13_4  ;; 0x40022000
+   \        0x2   0x6813             LDR      R3,[R2, #+0]
+   \        0x4   0x....             LDR      R1,??DataTable13_5  ;; 0xfffeffff
+   \        0x6   0x4019             ANDS     R1,R1,R3
+    462            FLASH->ACR = (acr | FlashEmpty);
+   \        0x8   0x0003             MOVS     R3,R0
+   \        0xA   0x430B             ORRS     R3,R3,R1
+   \        0xC   0x6013             STR      R3,[R2, #+0]
+    463          }
+   \        0xE   0x4770             BX       LR               ;; return
+    464          
+    465          
+    466          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    467          /**
+    468            * @brief  Securable memory area protection enable
+    469            * @param  Bank Select Bank to be secured. On G0, there is only 1 bank so
+    470            *         parameter has to be set to 0.
+    471            * @note   This API locks Securable memory area which is defined in SEC_SIZE option byte
+    472            *         (that can be retrieved calling HAL_FLASHEx_OBGetConfig API and checking
+    473            *         Secsize).
+    474            * @note   SEC_PROT bit can only be set, it will be reset by system reset.
+    475            * @retval None
+    476            */
+    477          void HAL_FLASHEx_EnableSecMemProtection(uint32_t Bank)
+    478          {
+    479            assert_param(IS_FLASH_BANK(Bank));
+    480            FLASH->CR |= FLASH_CR_SEC_PROT;
+    481          }
+    482          #endif
+    483          /**
+    484            * @}
+    485            */
+    486          
+    487          /**
+    488            * @}
+    489            */
+    490          
+    491          /* Private functions ---------------------------------------------------------*/
+    492          /** @addtogroup FLASHEx_Private_Functions
+    493            * @{
+    494            */
+    495          
+    496          /**
+    497            * @brief  Mass erase of FLASH memory.
+    498            * @retval None
+    499            */
+
+   \                                 In section .text, align 2, keep-with-next
+    500          static void FLASH_MassErase(void)
+    501          {
+    502            /* Set the Mass Erase Bit and start bit */
+    503            FLASH->CR |= (FLASH_CR_STRT | FLASH_CR_MER1);
+   \                     FLASH_MassErase: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable13_1  ;; 0x40022014
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x....             LDR      R2,??DataTable13_6  ;; 0x10004
+   \        0x6   0x430A             ORRS     R2,R2,R1
+   \        0x8   0x6002             STR      R2,[R0, #+0]
+    504          }
+   \        0xA   0x4770             BX       LR               ;; return
+    505          
+    506          /**
+    507            * @brief  Erase the specified FLASH memory page.
+    508            * @param  Page FLASH page to erase
+    509            *         This parameter must be a value between 0 and (max number of pages in Flash - 1)
+    510            * @retval None
+    511            */
+
+   \                                 In section .text, align 2, keep-with-next
+    512          void FLASH_PageErase(uint32_t Page)
+    513          {
+   \                     FLASH_PageErase: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+    514            uint32_t tmp;
+    515          
+    516            /* Check the parameters */
+    517            assert_param(IS_FLASH_PAGE(Page));
+    518          
+    519            /* Get configuration register, then clear page number */
+    520            tmp = (FLASH->CR & ~FLASH_CR_PNB);
+   \        0x2   0x....             LDR      R2,??DataTable13_1  ;; 0x40022014
+   \        0x4   0x6813             LDR      R3,[R2, #+0]
+   \        0x6   0x....             LDR      R1,??DataTable13_7  ;; 0xfffffe07
+   \        0x8   0x4019             ANDS     R1,R1,R3
+    521          
+    522            /* Set page number, Page Erase bit & Start bit */
+    523            FLASH->CR = (tmp | (FLASH_CR_STRT | (Page <<  FLASH_CR_PNB_Pos) | FLASH_CR_PER));
+   \        0xA   0x00C3             LSLS     R3,R0,#+3
+   \        0xC   0x430B             ORRS     R3,R3,R1
+   \        0xE   0x....             LDR      R4,??DataTable13_8  ;; 0x10002
+   \       0x10   0x431C             ORRS     R4,R4,R3
+   \       0x12   0x6014             STR      R4,[R2, #+0]
+    524          }
+   \       0x14   0xBC10             POP      {R4}
+   \       0x16   0x4770             BX       LR               ;; return
+    525          
+    526          /**
+    527            * @brief  Flush the instruction cache.
+    528            * @retval None
+    529            */
+
+   \                                 In section .text, align 2, keep-with-next
+    530          void FLASH_FlushCaches(void)
+    531          {
+   \                     FLASH_FlushCaches: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    532            /* Flush instruction cache  */
+    533            if (READ_BIT(FLASH->ACR, FLASH_ACR_ICEN) != 0U)
+   \        0x2   0x2080             MOVS     R0,#+128
+   \        0x4   0x0080             LSLS     R0,R0,#+2        ;; #+512
+   \        0x6   0x....             LDR      R1,??DataTable13_4  ;; 0x40022000
+   \        0x8   0x680A             LDR      R2,[R1, #+0]
+   \        0xA   0x4002             ANDS     R2,R2,R0
+   \        0xC   0x2A00             CMP      R2,#+0
+   \        0xE   0xD00F             BEQ      ??FLASH_FlushCaches_0
+    534            {
+    535              /* Disable instruction cache  */
+    536              __HAL_FLASH_INSTRUCTION_CACHE_DISABLE();
+   \       0x10   0x680A             LDR      R2,[R1, #+0]
+   \       0x12   0x....             LDR      R3,??DataTable13_9  ;; 0xfffffdff
+   \       0x14   0x4013             ANDS     R3,R3,R2
+   \       0x16   0x600B             STR      R3,[R1, #+0]
+    537              /* Reset instruction cache */
+    538              __HAL_FLASH_INSTRUCTION_CACHE_RESET();
+   \       0x18   0x680A             LDR      R2,[R1, #+0]
+   \       0x1A   0x2380             MOVS     R3,#+128
+   \       0x1C   0x011B             LSLS     R3,R3,#+4        ;; #+2048
+   \       0x1E   0x4313             ORRS     R3,R3,R2
+   \       0x20   0x600B             STR      R3,[R1, #+0]
+   \       0x22   0x680A             LDR      R2,[R1, #+0]
+   \       0x24   0x....             LDR      R3,??DataTable13_10  ;; 0xfffff7ff
+   \       0x26   0x4013             ANDS     R3,R3,R2
+   \       0x28   0x600B             STR      R3,[R1, #+0]
+    539              /* Enable instruction cache */
+    540              __HAL_FLASH_INSTRUCTION_CACHE_ENABLE();
+   \       0x2A   0x680A             LDR      R2,[R1, #+0]
+   \       0x2C   0x4310             ORRS     R0,R0,R2
+   \       0x2E   0x6008             STR      R0,[R1, #+0]
+    541            }
+    542          }
+   \                     ??FLASH_FlushCaches_0: (+1)
+   \       0x30   0xBD00             POP      {PC}             ;; return
+    543          
+    544          
+    545          /**
+    546            * @brief  Configure the write protection of the desired pages.
+    547            * @note   When WRP is active in a zone, it cannot be erased or programmed.
+    548            *         Consequently, a software mass erase cannot be performed if one zone
+    549            *         is write-protected.
+    550            * @note   When the memory read protection level is selected (RDP level = 1),
+    551            *         it is not possible to program or erase Flash memory if the CPU debug
+    552            *         features are connected (JTAG or single wire) or boot code is being
+    553            *         executed from RAM or System flash, even if WRP is not activated.
+    554            * @param  WRPArea  Specifies the area to be configured.
+    555            *         This parameter can be one of the following values:
+    556            *            @arg  @ref OB_WRPAREA_ZONE_A Flash Zone A
+    557            *            @arg  @ref OB_WRPAREA_ZONE_B Flash Zone B
+    558            * @param  WRPStartOffset  Specifies the start page of the write protected area
+    559            *         This parameter can be page number between 0 and (max number of pages in the Flash - 1)
+    560            * @param  WRDPEndOffset  Specifies the end page of the write protected area
+    561            *         This parameter can be page number between WRPStartOffset and (max number of pages in the Flash - 1)
+    562            * @retval None
+    563            */
+
+   \                                 In section .text, align 2, keep-with-next
+    564          static void FLASH_OB_WRPConfig(uint32_t WRPArea, uint32_t WRPStartOffset, uint32_t WRDPEndOffset)
+    565          {
+   \                     FLASH_OB_WRPConfig: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    566            /* Check the parameters */
+    567            assert_param(IS_OB_WRPAREA(WRPArea));
+    568            assert_param(IS_FLASH_PAGE(WRPStartOffset));
+    569            assert_param(IS_FLASH_PAGE(WRDPEndOffset));
+    570          
+    571            /* Configure the write protected area */
+    572            if (WRPArea != OB_WRPAREA_ZONE_A)
+   \        0x2   0x2801             CMP      R0,#+1
+   \        0x4   0xD004             BEQ      ??FLASH_OB_WRPConfig_0
+    573            {
+    574              FLASH->WRP1BR = ((WRDPEndOffset << FLASH_WRP1AR_WRP1A_END_Pos) | WRPStartOffset);
+   \        0x6   0x0413             LSLS     R3,R2,#+16
+   \        0x8   0x430B             ORRS     R3,R3,R1
+   \        0xA   0x....             LDR      R4,??DataTable13_11  ;; 0x40022030
+   \        0xC   0x6023             STR      R3,[R4, #+0]
+   \        0xE   0xE003             B        ??FLASH_OB_WRPConfig_1
+    575            }
+    576            else
+    577            {
+    578              FLASH->WRP1AR = ((WRDPEndOffset << FLASH_WRP1BR_WRP1B_END_Pos) | WRPStartOffset);
+   \                     ??FLASH_OB_WRPConfig_0: (+1)
+   \       0x10   0x0413             LSLS     R3,R2,#+16
+   \       0x12   0x430B             ORRS     R3,R3,R1
+   \       0x14   0x....             LDR      R4,??DataTable13_12  ;; 0x4002202c
+   \       0x16   0x6023             STR      R3,[R4, #+0]
+    579            }
+    580          }
+   \                     ??FLASH_OB_WRPConfig_1: (+1)
+   \       0x18   0xBD10             POP      {R4,PC}          ;; return
+    581          
+    582          /**
+    583            * @brief  Set user & RDP configuration
+    584            * @note   !!! Warning : When enabling OB_RDP level 2 it is no more possible
+    585            *         to go back to level 1 or 0 !!!
+    586            * @param  UserType  The FLASH User Option Bytes to be modified.
+    587            *         This parameter can be a combination of @ref FLASH_OB_USER_Type
+    588            * @param  UserConfig  The FLASH User Option Bytes values.
+    589            *         This parameter can be a combination of:
+    590            *         @arg @ref FLASH_OB_USER_BOR_ENABLE(*),
+    591            *         @arg @ref FLASH_OB_USER_BOR_LEVEL(*),
+    592            *         @arg @ref FLASH_OB_USER_RESET_CONFIG(*),
+    593            *         @arg @ref FLASH_OB_USER_nRST_STOP,
+    594            *         @arg @ref FLASH_OB_USER_nRST_STANDBY,
+    595            *         @arg @ref FLASH_OB_USER_nRST_SHUTDOWN(*),
+    596            *         @arg @ref FLASH_OB_USER_IWDG_SW,
+    597            *         @arg @ref FLASH_OB_USER_IWDG_STOP,
+    598            *         @arg @ref FLASH_OB_USER_IWDG_STANDBY,
+    599            *         @arg @ref FLASH_OB_USER_WWDG_SW,
+    600            *         @arg @ref FLASH_OB_USER_SRAM_PARITY,
+    601            *         @arg @ref FLASH_OB_USER_nBOOT_SEL,
+    602            *         @arg @ref FLASH_OB_USER_nBOOT1,
+    603            *         @arg @ref FLASH_OB_USER_nBOOT0,
+    604            *         @arg @ref FLASH_OB_USER_INPUT_RESET_HOLDER(*)
+    605            * @param  RDPLevel  specifies the read protection level.
+    606            *         This parameter can be one of the following values:
+    607            *            @arg @ref OB_RDP_LEVEL_0 No protection
+    608            *            @arg @ref OB_RDP_LEVEL_1 Memory Read protection
+    609            *            @arg @ref OB_RDP_LEVEL_2 Full chip protection
+    610            * @note  (*) availability depends on devices
+    611            * @retval None
+    612            */
+
+   \                                 In section .text, align 2, keep-with-next
+    613          static void FLASH_OB_OptrConfig(uint32_t UserType, uint32_t UserConfig, uint32_t RDPLevel)
+    614          {
+   \                     FLASH_OB_OptrConfig: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+    615            uint32_t optr;
+    616          
+    617            /* Check the parameters */
+    618            assert_param(IS_OB_USER_TYPE(UserType));
+    619            assert_param(IS_OB_USER_CONFIG(UserType, UserConfig));
+    620            assert_param(IS_OB_RDP_LEVEL(RDPLevel));
+    621          
+    622            /* Configure the RDP level in the option bytes register */
+    623            optr = FLASH->OPTR;
+   \        0x2   0x....             LDR      R4,??DataTable13_13  ;; 0x40022020
+   \        0x4   0x6823             LDR      R3,[R4, #+0]
+    624            optr &= ~(UserType | FLASH_OPTR_RDP);
+   \        0x6   0x25FF             MOVS     R5,#+255
+   \        0x8   0x4305             ORRS     R5,R5,R0
+   \        0xA   0x43AB             BICS     R3,R3,R5
+    625            FLASH->OPTR = (optr | UserConfig | RDPLevel);
+   \        0xC   0x000D             MOVS     R5,R1
+   \        0xE   0x431D             ORRS     R5,R5,R3
+   \       0x10   0x4315             ORRS     R5,R5,R2
+   \       0x12   0x6025             STR      R5,[R4, #+0]
+    626          }
+   \       0x14   0xBC30             POP      {R4,R5}
+   \       0x16   0x4770             BX       LR               ;; return
+    627          
+    628          #if defined(FLASH_PCROP_SUPPORT)
+    629          /**
+    630            * @brief  Configure the 1A Proprietary code readout protection & erase configuration on RDP regression.
+    631            * @note   It is recommended to align PCROP zone with page granularity when using PCROP_RDP or avoid
+    632            *         having some executable code in a page where PCROP zone starts or ends.
+    633            * @note   Minimum PCROP area size is 2 times the chosen granularity: PCROPA_STRT and PCROPA_END.
+    634            *         So if the requirement is to be able to read-protect 1KB areas, the ROP granularity
+    635            *         has to be set to 512 Bytes
+    636            * @param  PCROPConfig  specifies the erase configuration (OB_PCROP_RDP_NOT_ERASE or OB_PCROP_RDP_ERASE)
+    637            *         on RDP level 1 regression.
+    638            * @param  PCROP1AStartAddr Specifies the Zone 1A Start address of the Proprietary code readout protection
+    639            *          This parameter can be an address between begin and end of the flash
+    640            * @param  PCROP1AEndAddr Specifies the Zone 1A end address of the Proprietary code readout protection
+    641            *          This parameter can be an address between PCROP1AStartAddr and end of the flash
+    642            * @retval None
+    643            */
+    644          static void FLASH_OB_PCROP1AConfig(uint32_t PCROPConfig, uint32_t PCROP1AStartAddr, uint32_t PCROP1AEndAddr)
+    645          {
+    646            uint32_t startoffset;
+    647            uint32_t endoffset;
+    648            uint32_t pcrop1aend;
+    649          
+    650            /* Check the parameters */
+    651            assert_param(IS_OB_PCROP_CONFIG(PCROPConfig));
+    652            assert_param(IS_FLASH_MAIN_MEM_ADDRESS(PCROP1AStartAddr));
+    653            assert_param(IS_FLASH_MAIN_MEM_ADDRESS(PCROP1AEndAddr));
+    654          
+    655            /* get pcrop 1A end register */
+    656            pcrop1aend = FLASH->PCROP1AER;
+    657          
+    658            /* Configure the Proprietary code readout protection offset */
+    659            if ((PCROPConfig & OB_PCROP_ZONE_A) != 0x00U)
+    660            {
+    661              /* Compute offset depending on pcrop granularity */
+    662              startoffset = ((PCROP1AStartAddr - FLASH_BASE) >> FLASH_PCROP_GRANULARITY_OFFSET);
+    663              endoffset = ((PCROP1AEndAddr - FLASH_BASE) >> FLASH_PCROP_GRANULARITY_OFFSET);
+    664          
+    665              /* Set Zone A start offset */
+    666              FLASH->PCROP1ASR = startoffset;
+    667          
+    668              /* Set Zone A end offset */
+    669              pcrop1aend &= ~FLASH_PCROP1AER_PCROP1A_END;
+    670              pcrop1aend |= endoffset;
+    671            }
+    672          
+    673            /* Set RDP erase protection if needed. This bit is only set & will be reset by mass erase */
+    674            if ((PCROPConfig & OB_PCROP_RDP_ERASE) != 0x00U)
+    675            {
+    676              pcrop1aend |= FLASH_PCROP1AER_PCROP_RDP;
+    677            }
+    678          
+    679            /* set 1A End register */
+    680            FLASH->PCROP1AER = pcrop1aend;
+    681          }
+    682          
+    683          /**
+    684            * @brief  Configure the 1B Proprietary code readout protection.
+    685            * @note   It is recommended to align PCROP zone with page granularity when using PCROP_RDP or avoid
+    686            *         having some executable code in a page where PCROP zone starts or ends.
+    687            * @note   Minimum PCROP area size is 2 times the chosen granularity: PCROPA_STRT and PCROPA_END.
+    688            *         So if the requirement is to be able to read-protect 1KB areas, the ROP granularity
+    689            *         has to be set to 512 Bytes
+    690            * @param  PCROP1BStartAddr  Specifies the Zone 1B Start address of the Proprietary code readout protection
+    691            *         This parameter can be an address between begin and end of the flash
+    692            * @param  PCROP1BEndAddr  Specifies the Zone 1B end address of the Proprietary code readout protection
+    693            *         This parameter can be an address between PCROP1BStartAddr and end of the flash
+    694            * @retval None
+    695            */
+    696          static void FLASH_OB_PCROP1BConfig(uint32_t PCROP1BStartAddr, uint32_t PCROP1BEndAddr)
+    697          {
+    698            uint32_t startoffset;
+    699            uint32_t endoffset;
+    700          
+    701            /* Check the parameters */
+    702            assert_param(IS_FLASH_MAIN_MEM_ADDRESS(PCROP1BStartAddr));
+    703            assert_param(IS_FLASH_MAIN_MEM_ADDRESS(PCROP1BEndAddr));
+    704          
+    705            /* Configure the Proprietary code readout protection offset */
+    706            startoffset = ((PCROP1BStartAddr - FLASH_BASE) >> FLASH_PCROP_GRANULARITY_OFFSET);
+    707            endoffset = ((PCROP1BEndAddr - FLASH_BASE) >> FLASH_PCROP_GRANULARITY_OFFSET);
+    708          
+    709            /* Set Zone B start offset */
+    710            FLASH->PCROP1BSR = startoffset;
+    711            /* Set Zone B end offset */
+    712            FLASH->PCROP1BER = endoffset;
+    713          }
+    714          #endif
+    715          
+    716          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    717          /**
+    718            * @brief  Configure Securable Memory area feature.
+    719            * @param  BootEntry  specifies if boot scheme is forced to Flash (System or user) or not
+    720            *         This parameter can be one of the following values:
+    721            *           @arg @ref OB_BOOT_ENTRY_FORCED_NONE No boot entry forced
+    722            *           @arg @ref OB_BOOT_ENTRY_FORCED_FLASH FLash selected as unique entry boot
+    723            * @param  SecSize specifies number of pages to protect as securable memory area, starting from
+    724            *         beginning of the Flash (page 0).
+    725            * @retval None
+    726            */
+    727          static void FLASH_OB_SecMemConfig(uint32_t BootEntry, uint32_t SecSize)
+    728          {
+    729            uint32_t secmem;
+    730          
+    731            /* Check the parameters */
+    732            assert_param(IS_OB_SEC_BOOT_LOCK(BootEntry));
+    733            assert_param(IS_OB_SEC_SIZE(SecSize));
+    734          
+    735            /* Set securable memory area configuration */
+    736            secmem = (FLASH->SECR & ~(FLASH_SECR_BOOT_LOCK | FLASH_SECR_SEC_SIZE));
+    737            FLASH->SECR = (secmem | BootEntry | SecSize);
+    738          }
+    739          #endif
+    740          
+    741          
+    742          /**
+    743            * @brief  Return the FLASH Write Protection Option Bytes value.
+    744            * @param[in]  WRPArea Specifies the area to be returned.
+    745            *             This parameter can be one of the following values:
+    746            *               @arg @ref OB_WRPAREA_ZONE_A Flash Zone A
+    747            *               @arg @ref OB_WRPAREA_ZONE_B Flash Zone B
+    748            * @param[out]  WRPStartOffset  Specifies the address where to copied the start page
+    749            *                         of the write protected area
+    750            * @param[out]  WRDPEndOffset  Dpecifies the address where to copied the end page of
+    751            *                        the write protected area
+    752            * @retval None
+    753            */
+
+   \                                 In section .text, align 2, keep-with-next
+    754          static void FLASH_OB_GetWRP(uint32_t WRPArea, uint32_t *WRPStartOffset, uint32_t *WRDPEndOffset)
+    755          {
+   \                     FLASH_OB_GetWRP: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    756            /* Check the parameters */
+    757            assert_param(IS_OB_WRPAREA(WRPArea));
+    758          
+    759            /* Get the configuration of the write protected area */
+    760            if (WRPArea == OB_WRPAREA_ZONE_A)
+   \        0x2   0x2801             CMP      R0,#+1
+   \        0x4   0xD109             BNE      ??FLASH_OB_GetWRP_0
+    761            {
+    762              *WRPStartOffset = READ_BIT(FLASH->WRP1AR, FLASH_WRP1AR_WRP1A_STRT);
+   \        0x6   0x231F             MOVS     R3,#+31
+   \        0x8   0x....             LDR      R4,??DataTable13_12  ;; 0x4002202c
+   \        0xA   0x6825             LDR      R5,[R4, #+0]
+   \        0xC   0x401D             ANDS     R5,R5,R3
+   \        0xE   0x600D             STR      R5,[R1, #+0]
+    763              *WRDPEndOffset = (READ_BIT(FLASH->WRP1AR, FLASH_WRP1AR_WRP1A_END) >> FLASH_WRP1AR_WRP1A_END_Pos);
+   \       0x10   0x6824             LDR      R4,[R4, #+0]
+   \       0x12   0x0C24             LSRS     R4,R4,#+16
+   \       0x14   0x4023             ANDS     R3,R3,R4
+   \       0x16   0x6013             STR      R3,[R2, #+0]
+   \       0x18   0xE008             B        ??FLASH_OB_GetWRP_1
+    764            }
+    765            else
+    766            {
+    767              *WRPStartOffset = READ_BIT(FLASH->WRP1BR, FLASH_WRP1BR_WRP1B_STRT);
+   \                     ??FLASH_OB_GetWRP_0: (+1)
+   \       0x1A   0x....             LDR      R4,??DataTable13_11  ;; 0x40022030
+   \       0x1C   0x231F             MOVS     R3,#+31
+   \       0x1E   0x6825             LDR      R5,[R4, #+0]
+   \       0x20   0x401D             ANDS     R5,R5,R3
+   \       0x22   0x600D             STR      R5,[R1, #+0]
+    768              *WRDPEndOffset = (READ_BIT(FLASH->WRP1BR, FLASH_WRP1BR_WRP1B_END) >> FLASH_WRP1BR_WRP1B_END_Pos);
+   \       0x24   0x6824             LDR      R4,[R4, #+0]
+   \       0x26   0x0C24             LSRS     R4,R4,#+16
+   \       0x28   0x4023             ANDS     R3,R3,R4
+   \       0x2A   0x6013             STR      R3,[R2, #+0]
+    769            }
+    770          }
+   \                     ??FLASH_OB_GetWRP_1: (+1)
+   \       0x2C   0xBD30             POP      {R4,R5,PC}       ;; return
+    771          
+    772          /**
+    773            * @brief  Return the FLASH Read Protection level.
+    774            * @retval FLASH ReadOut Protection Status:
+    775            *         This return value can be one of the following values:
+    776            *            @arg @ref OB_RDP_LEVEL_0 No protection
+    777            *            @arg @ref OB_RDP_LEVEL_1 Read protection of the memory
+    778            *            @arg @ref OB_RDP_LEVEL_2 Full chip protection
+    779            */
+
+   \                                 In section .text, align 2, keep-with-next
+    780          static uint32_t FLASH_OB_GetRDP(void)
+    781          {
+   \                     FLASH_OB_GetRDP: (+1)
+   \        0x0   0xB500             PUSH     {LR}
+    782            uint32_t rdplvl = READ_BIT(FLASH->OPTR, FLASH_OPTR_RDP);
+   \        0x2   0x....             LDR      R0,??DataTable13_13  ;; 0x40022020
+   \        0x4   0x6800             LDR      R0,[R0, #+0]
+   \        0x6   0xB2C1             UXTB     R1,R0
+    783          
+    784            if ((rdplvl != OB_RDP_LEVEL_0) && (rdplvl != OB_RDP_LEVEL_2))
+   \        0x8   0x29AA             CMP      R1,#+170
+   \        0xA   0xD003             BEQ      ??FLASH_OB_GetRDP_0
+   \        0xC   0x29CC             CMP      R1,#+204
+   \        0xE   0xD001             BEQ      ??FLASH_OB_GetRDP_0
+    785            {
+    786              return (OB_RDP_LEVEL_1);
+   \       0x10   0x20BB             MOVS     R0,#+187
+   \       0x12   0xE000             B        ??FLASH_OB_GetRDP_1
+    787            }
+    788            else
+    789            {
+    790              return rdplvl;
+   \                     ??FLASH_OB_GetRDP_0: (+1)
+   \       0x14   0x0008             MOVS     R0,R1
+   \                     ??FLASH_OB_GetRDP_1: (+1)
+   \       0x16   0xBD00             POP      {PC}             ;; return
+    791            }
+    792          }
+    793          
+    794          /**
+    795            * @brief  Return the FLASH User Option Byte value.
+    796            * @retval The FLASH User Option Bytes values. It will be a combination of all the following values:
+    797            *         @ref FLASH_OB_USER_BOR_ENABLE(*),
+    798            *         @ref FLASH_OB_USER_BOR_LEVEL(*),
+    799            *         @ref FLASH_OB_USER_RESET_CONFIG(*),
+    800            *         @ref FLASH_OB_USER_nRST_STOP,
+    801            *         @ref FLASH_OB_USER_nRST_STANDBY,
+    802            *         @ref FLASH_OB_USER_nRST_SHUTDOWN(*),
+    803            *         @ref FLASH_OB_USER_IWDG_SW,
+    804            *         @ref FLASH_OB_USER_IWDG_STOP,
+    805            *         @ref FLASH_OB_USER_IWDG_STANDBY,
+    806            *         @ref FLASH_OB_USER_WWDG_SW,
+    807            *         @ref FLASH_OB_USER_SRAM_PARITY,
+    808            *         @ref FLASH_OB_USER_nBOOT_SEL,
+    809            *         @ref FLASH_OB_USER_nBOOT1,
+    810            *         @ref FLASH_OB_USER_nBOOT0,
+    811            *         @ref FLASH_OB_USER_INPUT_RESET_HOLDER(*)
+    812            * @note  (*) availability depends on devices
+    813            */
+
+   \                                 In section .text, align 2, keep-with-next
+    814          static uint32_t FLASH_OB_GetUser(void)
+    815          {
+    816            uint32_t user = ((FLASH->OPTR & ~FLASH_OPTR_RDP) & OB_USER_ALL);
+   \                     FLASH_OB_GetUser: (+1)
+   \        0x0   0x....             LDR      R0,??DataTable13_13  ;; 0x40022020
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x....             LDR      R0,??DataTable13_3  ;; 0x74f6000
+   \        0x6   0x4008             ANDS     R0,R0,R1
+    817            return user;
+   \        0x8   0x4770             BX       LR               ;; return
+    818          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0x....'....        DC32     pFlash
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \        0x0   0x4002'2014        DC32     0x40022014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_2:
+   \        0x0   0xFFFD'FFFF        DC32     0xfffdffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_3:
+   \        0x0   0x074F'6000        DC32     0x74f6000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_4:
+   \        0x0   0x4002'2000        DC32     0x40022000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_5:
+   \        0x0   0xFFFE'FFFF        DC32     0xfffeffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_6:
+   \        0x0   0x0001'0004        DC32     0x10004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_7:
+   \        0x0   0xFFFF'FE07        DC32     0xfffffe07
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_8:
+   \        0x0   0x0001'0002        DC32     0x10002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_9:
+   \        0x0   0xFFFF'FDFF        DC32     0xfffffdff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_10:
+   \        0x0   0xFFFF'F7FF        DC32     0xfffff7ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_11:
+   \        0x0   0x4002'2030        DC32     0x40022030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_12:
+   \        0x0   0x4002'202C        DC32     0x4002202c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_13:
+   \        0x0   0x4002'2020        DC32     0x40022020
+    819          
+    820          #if defined(FLASH_PCROP_SUPPORT)
+    821          /**
+    822            * @brief  Return the FLASH PCROP Protection Option Bytes value.
+    823            * @param  PCROPConfig [out]  specifies the configuration of PCROP_RDP option.
+    824            * @param  PCROP1AStartAddr [out]  Specifies the address where to copied the start address
+    825            *         of the 1A Proprietary code readout protection
+    826            * @param  PCROP1AEndAddr [out]  Specifies the address where to copied the end address of
+    827            *         the 1A Proprietary code readout protection
+    828            * @retval None
+    829            */
+    830          static void FLASH_OB_GetPCROP1A(uint32_t *PCROPConfig, uint32_t *PCROP1AStartAddr, uint32_t *PCROP1AEndAddr)
+    831          {
+    832            uint32_t pcrop;
+    833          
+    834            pcrop = (FLASH->PCROP1ASR & FLASH_PCROP1ASR_PCROP1A_STRT);
+    835            *PCROP1AStartAddr = (pcrop << FLASH_PCROP_GRANULARITY_OFFSET);
+    836            *PCROP1AStartAddr += FLASH_BASE;
+    837          
+    838            pcrop = FLASH->PCROP1AER;
+    839            *PCROP1AEndAddr = ((pcrop & FLASH_PCROP1AER_PCROP1A_END) << FLASH_PCROP_GRANULARITY_OFFSET);
+    840            *PCROP1AEndAddr += (FLASH_BASE + FLASH_PCROP_GRANULARITY - 1U);
+    841          
+    842            *PCROPConfig &= ~OB_PCROP_RDP_ERASE;
+    843            *PCROPConfig |= (pcrop & FLASH_PCROP1AER_PCROP_RDP);
+    844          }
+    845          
+    846          
+    847          /**
+    848            * @brief  Return the FLASH PCROP Protection Option Bytes value.
+    849            * @param  PCROP1BStartAddr [out]  Specifies the address where to copied the start address
+    850            *         of the 1B Proprietary code readout protection
+    851            * @param  PCROP1BEndAddr [out]  Specifies the address where to copied the end address of
+    852            *         the 1B Proprietary code readout protection
+    853            * @retval None
+    854            */
+    855          static void FLASH_OB_GetPCROP1B(uint32_t *PCROP1BStartAddr, uint32_t *PCROP1BEndAddr)
+    856          {
+    857            uint32_t pcrop;
+    858          
+    859            pcrop = (FLASH->PCROP1BSR & FLASH_PCROP1BSR_PCROP1B_STRT);
+    860            *PCROP1BStartAddr = (pcrop << FLASH_PCROP_GRANULARITY_OFFSET);
+    861            *PCROP1BStartAddr += FLASH_BASE;
+    862          
+    863            pcrop = (FLASH->PCROP1BER & FLASH_PCROP1BER_PCROP1B_END);
+    864            *PCROP1BEndAddr = (pcrop << FLASH_PCROP_GRANULARITY_OFFSET);
+    865            *PCROP1BEndAddr += (FLASH_BASE + FLASH_PCROP_GRANULARITY - 1U);
+    866          }
+    867          #endif
+    868          
+    869          #if defined(FLASH_SECURABLE_MEMORY_SUPPORT)
+    870          /**
+    871            * @brief  Return the FLASH Securable memory area protection Option Bytes value.
+    872            * @param  BootEntry  specifies boot scheme configuration
+    873            * @param  SecSize specifies number of pages to protect as secure memory area, starting from
+    874            *         beginning of the Flash (page 0).
+    875            * @retval None
+    876            */
+    877          static void FLASH_OB_GetSecMem(uint32_t *BootEntry, uint32_t *SecSize)
+    878          {
+    879            uint32_t secmem = FLASH->SECR;
+    880          
+    881            *BootEntry = (secmem & FLASH_SECR_BOOT_LOCK);
+    882            *SecSize = (secmem & FLASH_SECR_SEC_SIZE);
+    883          }
+    884          #endif
+    885          
+    886          /**
+    887            * @}
+    888            */
+    889          
+    890          /**
+    891            * @}
+    892            */
+    893          
+    894          #endif /* HAL_FLASH_MODULE_ENABLED */
+    895          
+    896          /**
+    897            * @}
+    898            */
+    899          
+    900          /**
+    901            * @}
+    902            */
+    903          
+    904          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   FLASH_FlushCaches
+       0   FLASH_MassErase
+       4   FLASH_OB_GetRDP
+       0   FLASH_OB_GetUser
+      12   FLASH_OB_GetWRP
+       8   FLASH_OB_OptrConfig
+       8   FLASH_OB_WRPConfig
+       4   FLASH_PageErase
+      32   HAL_FLASHEx_Erase
+        32   -> FLASH_MassErase
+        32   -> FLASH_PageErase
+        32   -> FLASH_WaitForLastOperation
+      24   HAL_FLASHEx_Erase_IT
+        24   -> FLASH_MassErase
+        24   -> FLASH_PageErase
+        24   -> FLASH_WaitForLastOperation
+       0   HAL_FLASHEx_FlashEmptyCheck
+       0   HAL_FLASHEx_ForceFlashEmpty
+       8   HAL_FLASHEx_OBGetConfig
+         8   -> FLASH_OB_GetRDP
+         8   -> FLASH_OB_GetUser
+         8   -> FLASH_OB_GetWRP
+      24   HAL_FLASHEx_OBProgram
+        24   -> FLASH_OB_GetRDP
+        24   -> FLASH_OB_GetUser
+        24   -> FLASH_OB_OptrConfig
+        24   -> FLASH_OB_WRPConfig
+        24   -> FLASH_WaitForLastOperation
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_10
+       4  ??DataTable13_11
+       4  ??DataTable13_12
+       4  ??DataTable13_13
+       4  ??DataTable13_2
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+       4  ??DataTable13_5
+       4  ??DataTable13_6
+       4  ??DataTable13_7
+       4  ??DataTable13_8
+       4  ??DataTable13_9
+      50  FLASH_FlushCaches
+      12  FLASH_MassErase
+      24  FLASH_OB_GetRDP
+      10  FLASH_OB_GetUser
+      46  FLASH_OB_GetWRP
+      24  FLASH_OB_OptrConfig
+      26  FLASH_OB_WRPConfig
+      24  FLASH_PageErase
+     154  HAL_FLASHEx_Erase
+      96  HAL_FLASHEx_Erase_IT
+      12  HAL_FLASHEx_FlashEmptyCheck
+      16  HAL_FLASHEx_ForceFlashEmpty
+      40  HAL_FLASHEx_OBGetConfig
+     174  HAL_FLASHEx_OBProgram
+
+ 
+ 764 bytes in section .text
+ 
+ 764 bytes of CODE memory
+
+Errors: none
+Warnings: none

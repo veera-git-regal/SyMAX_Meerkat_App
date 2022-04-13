@@ -1,0 +1,3430 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM         10/Nov/2021  12:35:18
+# Copyright 1999-2020 IAR Systems AB.
+#
+#    Cpu mode                        
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\FlexMouse\Features\module_Motor_FW_Update.c
+#    Command line                 =
+#        -f C:\Users\100001~1\AppData\Local\Temp\EWAF90.tmp
+#        (C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\FlexMouse\Features\module_Motor_FW_Update.c
+#        -D USE_FULL_LL_DRIVER -D STM32G030xx -D USE_HAL_DRIVER -lC
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List
+#        -o
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h"
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Inc\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Include\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/CMSIS/Device/ST/STM32G0xx/Source\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/CMSIS/Include\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Kernel\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Drivers\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Memory\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Features\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../FlexMouse/Regal\\
+#        -I
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM/../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy\\
+#        -On)
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\List\module_Motor_FW_Update.lst
+#    Object file                  =
+#        C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\EWARM\generic_app_stm32G030K8Tx\Obj\module_Motor_FW_Update.o
+#    Runtime model:                  
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  1
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\100001305\Documents\GitHub\symax_sri_app\generic_app_GMI\FlexMouse\Features\module_Motor_FW_Update.c
+      1          /**
+      2          ***************************************************************************************************
+      3          * @file    module_Motor_FW_Update.c 
+      4          * @author  Regal Pamela Lee
+      5          * @version V1.0
+      6          * @date    04-Jan-2021
+      7          * @brief   Main function/s of Motor firmware update
+      8          * @note    
+      9          ***************************************************************************************************
+     10          */
+     11          
+     12          #include "module_Motor_FW_Update.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_EnableIT_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_EnableIT_TXE_TXFNF: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2280             MOVS     R2,#+128
+   \        0x4   0x430A             ORRS     R2,R2,R1
+   \        0x6   0x6002             STR      R2,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_DisableIT_TXE_TXFNF(USART_TypeDef *)
+   \                     LL_USART_DisableIT_TXE_TXFNF: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x2280             MOVS     R2,#+128
+   \        0x4   0x4391             BICS     R1,R1,R2
+   \        0x6   0x6001             STR      R1,[R0, #+0]
+   \        0x8   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void LL_USART_TransmitData8(USART_TypeDef *, uint8_t)
+   \                     LL_USART_TransmitData8: (+1)
+   \        0x0   0x000A             MOVS     R2,R1
+   \        0x2   0xB2D2             UXTB     R2,R2
+   \        0x4   0x6282             STR      R2,[R0, #+40]
+   \        0x6   0x4770             BX       LR               ;; return
+
+   \                                 In section .bss, align 4
+   \   static __absolute Ram_Buf * Motor_FW_UpdateStructMem_u32
+   \                     Motor_FW_UpdateStructMem_u32:
+   \        0x0                      DS8 4
+     13          #include "driver_usart2.h"
+     14          
+     15          #define ADDR_FLASH_PAGE_0     ((uint32_t)0x08000000) // Base address of Page 0, 2 Kbytes //
+     16          #define NumOfFWTimeOutLoop 100 
+     17          
+     18          extern Ram_Buf sharedMemArray[STRUCT_MEM_ARRAY_SIZE];
+     19          extern ProcessInfo processInfoTable[];
+     20          
+
+   \                                 In section .bss, align 4
+     21          Usart2_Control* usart2Control_MotorFW_Update;
+   \                     usart2Control_MotorFW_Update:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     22          Motor_FW_Update_Control motor_FW_Update_Control;
+   \                     motor_FW_Update_Control:
+   \        0x0                      DS8 12
+     23          
+
+   \                                 In section .bss, align 8
+     24          uint64_t tt_FW_TxDelayTime;
+   \                     tt_FW_TxDelayTime:
+   \        0x0                      DS8 8
+     25          #define DemandFWDelayPeriod 2;                //tx delay wait period 2ms
+     26          
+
+   \                                 In section .bss, align 8
+     27          uint64_t tt_FW_WaitTime;
+   \                     tt_FW_WaitTime:
+   \        0x0                      DS8 8
+     28          #define DemandFWWaitPeriod 100;              //Motor reset waiting period after reset 500ms
+     29          
+
+   \                                 In section .data, align 2
+     30          int16_t previousWrittenBlkNO = -1;           //for 
+   \                     previousWrittenBlkNO:
+   \        0x0   0xFFFF             DC16 -1
+     31          
+     32          /** Firmware update to Target data  8x32 **/
+
+   \                                 In section .data, align 4
+     33          uint8_t FW_DatBuf[] = {0xff,  0x0f,  0x00,  0xff,  0xff,  0xff,  0xff,  0x64,  0x15,  0xd0,  0x07,  0x00,  0x00,  0x3c,  0x06,  0x71,  0x00, 0x10,  0x27,  0x61,  0x08,  0xa9,  0x07,  0x61,  0x08,  0xa9,  0x07,  0x4c,  0x1d,  0xf4,  0x01,  0x64,  0x15,\
+   \                     FW_DatBuf:
+   \        0x0   0xFF 0x0F          DC8 255, 15, 0, 255, 255, 255, 255, 100, 21, 208, 7, 0, 0, 60, 6, 113
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0x64    
+
+   \              0x15 0xD0    
+
+   \              0x07 0x00    
+
+   \              0x00 0x3C    
+
+   \              0x06 0x71
+   \       0x10   0x00 0x10          DC8 0, 16, 39, 97, 8, 169, 7, 97, 8, 169, 7, 76, 29, 244, 1, 100, 21, 0
+
+   \              0x27 0x61    
+
+   \              0x08 0xA9    
+
+   \              0x07 0x61    
+
+   \              0x08 0xA9    
+
+   \              0x07 0x4C    
+
+   \              0x1D 0xF4    
+
+   \              0x01 0x64    
+
+   \              0x15 0x00
+   \       0x22   0x00 0x26          DC8 0, 38, 2, 35, 0, 90, 0, 255, 255, 232, 3, 0, 0, 142, 8, 136, 19
+
+   \              0x02 0x23    
+
+   \              0x00 0x5A    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xE8    
+
+   \              0x03 0x00    
+
+   \              0x00 0x8E    
+
+   \              0x08 0x88    
+
+   \              0x13
+   \       0x33   0xA6 0x00          DC8 166, 0, 142, 8, 0, 0, 166, 0, 142, 8, 0, 0, 166, 0, 142, 8, 0, 0
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00    
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00    
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00
+   \       0x45   0xA6 0x00          DC8 166, 0, 142, 8, 25, 0, 255, 255, 255, 255, 255, 255, 24, 161, 179
+
+   \              0x8E 0x08    
+
+   \              0x19 0x00    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0x18 0xA1    
+
+   \              0xB3
+   \       0x54   0x6A 0x2C          DC8 106, 44, 1, 196, 9, 75, 0, 255, 255, 255, 255, 4, 0, 232, 3, 6, 0
+
+   \              0x01 0xC4    
+
+   \              0x09 0x4B    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0x04    
+
+   \              0x00 0xE8    
+
+   \              0x03 0x06    
+
+   \              0x00
+   \       0x65   0xD0 0x07          DC8 208, 7, 16, 39, 232, 3, 10, 0, 200, 0, 184, 11, 10, 0, 200, 0, 33
+
+   \              0x10 0x27    
+
+   \              0xE8 0x03    
+
+   \              0x0A 0x00    
+
+   \              0xC8 0x00    
+
+   \              0xB8 0x0B    
+
+   \              0x0A 0x00    
+
+   \              0xC8 0x00    
+
+   \              0x21
+   \       0x76   0x00 0x0A          DC8 0, 10, 0, 48, 117, 255, 255, 255, 255, 255, 255, 15, 0, 255, 255
+
+   \              0x00 0x30    
+
+   \              0x75 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0x0F    
+
+   \              0x00 0xFF    
+
+   \              0xFF
+   \       0x85   0xFF 0xFF          DC8 255, 255, 100, 21, 208, 7, 0, 0, 60, 6, 113, 0, 16, 39, 97, 8, 169
+
+   \              0x64 0x15    
+
+   \              0xD0 0x07    
+
+   \              0x00 0x00    
+
+   \              0x3C 0x06    
+
+   \              0x71 0x00    
+
+   \              0x10 0x27    
+
+   \              0x61 0x08    
+
+   \              0xA9
+   \       0x96   0x07 0x61          DC8 7, 97, 8, 169, 7, 76, 29, 244, 1, 100, 21, 0, 0, 38, 2, 35, 0, 90
+
+   \              0x08 0xA9    
+
+   \              0x07 0x4C    
+
+   \              0x1D 0xF4    
+
+   \              0x01 0x64    
+
+   \              0x15 0x00    
+
+   \              0x00 0x26    
+
+   \              0x02 0x23    
+
+   \              0x00 0x5A
+   \       0xA8   0x00 0xFF          DC8 0, 255, 255, 232, 3, 0, 0, 142, 8, 136, 19, 166, 0, 142, 8, 0, 0
+
+   \              0xFF 0xE8    
+
+   \              0x03 0x00    
+
+   \              0x00 0x8E    
+
+   \              0x08 0x88    
+
+   \              0x13 0xA6    
+
+   \              0x00 0x8E    
+
+   \              0x08 0x00    
+
+   \              0x00
+   \       0xB9   0xA6 0x00          DC8 166, 0, 142, 8, 0, 0, 166, 0, 142, 8, 0, 0, 166, 0, 142, 8, 25, 0
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00    
+
+   \              0x8E 0x08    
+
+   \              0x00 0x00    
+
+   \              0xA6 0x00    
+
+   \              0x8E 0x08    
+
+   \              0x19 0x00
+   \       0xCB   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 24, 161, 179, 106, 44, 1, 196, 9, 75
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0x18 0xA1    
+
+   \              0xB3 0x6A    
+
+   \              0x2C 0x01    
+
+   \              0xC4 0x09    
+
+   \              0x4B
+   \       0xDA   0x00 0xFF          DC8 0, 255, 255, 255, 255, 4, 0, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0x04    
+
+   \              0x00 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \       0xE9   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF
+   \       0xF6   0xFF 0xFF          DC8 255, 255, 255, 255, 255, 255, 255, 255, 255, 144, 8
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0xFF    
+
+   \              0xFF 0x90    
+
+   \              0x08
+   \      0x101                      DS8 3
+     34                                 0x00,  0x00,  0x26,  0x02,  0x23,  0x00,  0x5a,  0x00,  0xff,  0xff,  0xe8,  0x03,  0x00,  0x00,  0x8e,  0x08, 0x88,  0x13,  0xa6,  0x00,  0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,  0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,\
+     35                                 0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,  0x8e,  0x08,  0x19,  0x00,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff, 0x18,  0xa1,  0xb3,  0x6a,  0x2c,  0x01,  0xc4,  0x09,  0x4b,  0x00,  0xff,  0xff,  0xff,  0xff,  0x04,  0x00,\
+     36                                 0xe8,  0x03,  0x06,  0x00,  0xd0,  0x07,  0x10,  0x27,  0xe8,  0x03,  0x0a,  0x00,  0xc8,  0x00,  0xb8,  0x0b, 0x0a,  0x00,  0xc8,  0x00,  0x21,  0x00,  0x0a,  0x00,  0x30,  0x75,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,\
+     37                                 0x0f,  0x00,  0xff,  0xff,  0xff,  0xff,  0x64,  0x15,  0xd0,  0x07,  0x00,  0x00,  0x3c,  0x06,  0x71,  0x00, 0x10,  0x27,  0x61,  0x08,  0xa9,  0x07,  0x61,  0x08,  0xa9,  0x07,  0x4c,  0x1d,  0xf4,  0x01,  0x64,  0x15,\
+     38                                 0x00,  0x00,  0x26,  0x02,  0x23,  0x00,  0x5a,  0x00,  0xff,  0xff,  0xe8,  0x03,  0x00,  0x00,  0x8e,  0x08, 0x88,  0x13,  0xa6,  0x00,  0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,  0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,\
+     39                                 0x8e,  0x08,  0x00,  0x00,  0xa6,  0x00,  0x8e,  0x08,  0x19,  0x00,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff, 0x18,  0xa1,  0xb3,  0x6a,  0x2c,  0x01,  0xc4,  0x09,  0x4b,  0x00,  0xff,  0xff,  0xff,  0xff,  0x04,  0x00,\
+     40                                 0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff, 0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0xff,  0x90,  0x08};
+     41                   
+     42          
+     43          void AssignModuleMemMotorFWUpdate(void);
+     44          
+     45          enum                                                                            //Default APPs/Driver stage template
+     46          { 
+     47            MEMORY_INIT_MODULE,
+     48            AppInit,
+     49            AppStart,
+     50            //any other stage in here !!!
+     51            CMDGetVersionNRdProtect,
+     52            exeGetVersionNRdProtect,
+     53            
+     54            CMDGetID,
+     55            exeGetID,
+     56            
+     57            CMDBlkRead,
+     58            exeBlkRead,
+     59            
+     60            CMDGo,
+     61            exeGo,
+     62            
+     63            CMDBlkWrite,          //block write cmd group
+     64            exeBlkwrite,          //block write cmd group
+     65            
+     66            //above 200 will be all interrupt for this APP
+     67            AppIrq = 200,
+     68            killApp = 255
+     69          };
+     70          
+
+   \                                 In section .bss, align 2
+     71          uint16_t TXFWDatLen = 0;
+   \                     TXFWDatLen:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 4
+     72          uint8_t* _txFWdata;
+   \                     _txFWdata:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 2
+     73          uint16_t TXFWDatIndx = 0;
+   \                     TXFWDatIndx:
+   \        0x0                      DS8 2
+     74          
+     75          typedef enum                    //ST bootloader startup stateMachine                                                     
+     76          { 
+     77            PreFwStartUp,
+     78            AutoBaudFmBoot,
+     79            ABaudWaitAckAfterReset,
+     80            
+     81            ABaudSuccess,
+     82            ABaudFail
+     83          }FWAutoBaudState;
+
+   \                                 In section .bss, align 1
+     84          FWAutoBaudState fwAutoBaudState;
+   \                     fwAutoBaudState:
+   \        0x0                      DS8 1
+     85          
+     86          typedef enum                    //ST bootloader version and read protection status stateMachine                                                     
+     87          { 
+     88            PreFwRdVerNProtect,
+     89            waitAckRdVerNProtect,
+     90            FwRdVerNProtectDat,
+     91            RdVerNProtectSuccess,
+     92            RdVerNProtectFail
+     93          }FWRdVerNProtectState;
+
+   \                                 In section .bss, align 1
+     94          FWRdVerNProtectState fwRdVerNProtectState;
+   \                     fwRdVerNProtectState:
+   \        0x0                      DS8 1
+     95          
+     96          typedef enum                    //ST bootloader version and read protection status stateMachine                                                     
+     97          { 
+     98            PreFwGetID,
+     99            waitAckGetID,
+    100            FwGetIDDat,
+    101            GetIDSuccess,
+    102            GetIDFail
+    103          }FWGetIDState;
+
+   \                                 In section .bss, align 1
+    104          FWGetIDState fwGetIDState;
+   \                     fwGetIDState:
+   \        0x0                      DS8 1
+    105          
+    106          typedef enum                    //ST bootloader data read stateMachine                                                     
+    107          { 
+    108            PreFwRd,
+    109            waitAckRdFw,
+    110            FwRdAddr,
+    111            waitAddrAckRdFw,
+    112            FwRdLen,
+    113            waitLenAckRdFw,
+    114            FwRdData,
+    115            RdSuccess,
+    116            RdFail
+    117          }FWRdState;
+
+   \                                 In section .bss, align 1
+    118          FWRdState fwRdState;
+   \                     fwRdState:
+   \        0x0                      DS8 1
+    119          
+    120          typedef enum                    //ST bootloader go execute target stateMachine                                                     
+    121          { 
+    122            PreFwGo,
+    123            waitAckGoFw,
+    124            FwGoAddr,
+    125            waitAddrAckGoFw,
+    126            GoSuccess,
+    127            GoFail
+    128          }FWGoState;
+
+   \                                 In section .bss, align 1
+    129          FWGoState fwGoState;
+   \                     fwGoState:
+   \        0x0                      DS8 1
+    130          
+    131          typedef enum                    //Write flash stateMachine                                           
+    132          { 
+    133            WrFw_WithErase,  
+    134            WaitAckErase,
+    135            WholeFlashErase,
+    136            WaitAckEraseFinal,
+    137            
+    138            WrFw_WithOutErase,
+    139            waitAckWrFw,
+    140            WrFwAddr,
+    141            waitAddrAckWrFw,
+    142            WrFwData,
+    143            waitAckWrFwFinal,
+    144            
+    145            WrProtect,
+    146            JumpStart,
+    147            FWWrSuccess,
+    148            FWWrFail
+    149          }FWWrState;
+
+   \                                 In section .bss, align 1
+    150          FWWrState fwWrState;
+   \                     fwWrState:
+   \        0x0                      DS8 1
+    151          
+    152          
+    153          
+
+   \                                 In section .bss, align 4
+    154          uint8_t* FWRddataBuf; 
+   \                     FWRddataBuf:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    155          uint8_t* FWGetIDBuf; 
+   \                     FWGetIDBuf:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+    156          uint8_t* FW_RdVerNProtectBuf;
+   \                     FW_RdVerNProtectBuf:
+   \        0x0                      DS8 4
+    157          //^**Tips: APPs/Drivers adding process example step7 (Add the Additional funtion itself)
+
+   \                                 In section .text, align 2, keep-with-next
+    158          uint8_t module_Motor_FW_Update_u32(uint8_t module_id_u8, uint8_t prev_state_u8, uint8_t next_state_u8,
+    159                                             uint8_t irq_id_u8)
+    160          { 
+   \                     module_Motor_FW_Update_u32: (+1)
+   \        0x0   0xB5FB             PUSH     {R0,R1,R3-R7,LR}
+   \        0x2   0x0016             MOVS     R6,R2
+    161            uint8_t return_state_u8 = MEMORY_INIT_MODULE; 
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0x0025             MOVS     R5,R4
+    162            if((TXFWDatIndx) && (_txFWdata !=NULL)) FW_Tx();                   //Tx routine will send out all data,
+   \        0x8   0x....             LDR      R0,??DataTable3
+   \        0xA   0x8800             LDRH     R0,[R0, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD005             BEQ      ??module_Motor_FW_Update_u32_0
+   \       0x10   0x....             LDR      R0,??DataTable3_1
+   \       0x12   0x6800             LDR      R0,[R0, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD001             BEQ      ??module_Motor_FW_Update_u32_0
+   \       0x18   0x....'....        BL       FW_Tx
+    163            
+    164            switch (next_state_u8)
+   \                     ??module_Motor_FW_Update_u32_0: (+1)
+   \       0x1C   0x0030             MOVS     R0,R6
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD01C             BEQ      ??module_Motor_FW_Update_u32_1
+   \       0x24   0x2801             CMP      R0,#+1
+   \       0x26   0xD01F             BEQ      ??module_Motor_FW_Update_u32_2
+   \       0x28   0x2802             CMP      R0,#+2
+   \       0x2A   0xD032             BEQ      ??module_Motor_FW_Update_u32_3
+   \       0x2C   0x2803             CMP      R0,#+3
+   \       0x2E   0xD056             BEQ      ??module_Motor_FW_Update_u32_4
+   \       0x30   0x2804             CMP      R0,#+4
+   \       0x32   0xD05B             BEQ      ??module_Motor_FW_Update_u32_5
+   \       0x34   0x2805             CMP      R0,#+5
+   \       0x36   0xD064             BEQ      ??module_Motor_FW_Update_u32_6
+   \       0x38   0x2806             CMP      R0,#+6
+   \       0x3A   0xD06C             BEQ      ??module_Motor_FW_Update_u32_7
+   \       0x3C   0x2807             CMP      R0,#+7
+   \       0x3E   0xD02B             BEQ      ??module_Motor_FW_Update_u32_8
+   \       0x40   0x2808             CMP      R0,#+8
+   \       0x42   0xD033             BEQ      ??module_Motor_FW_Update_u32_9
+   \       0x44   0x2809             CMP      R0,#+9
+   \       0x46   0xD071             BEQ      ??module_Motor_FW_Update_u32_10
+   \       0x48   0x280A             CMP      R0,#+10
+   \       0x4A   0xD074             BEQ      ??module_Motor_FW_Update_u32_11
+   \       0x4C   0x280B             CMP      R0,#+11
+   \       0x4E   0xD038             BEQ      ??module_Motor_FW_Update_u32_12
+   \       0x50   0x280C             CMP      R0,#+12
+   \       0x52   0xD03B             BEQ      ??module_Motor_FW_Update_u32_13
+   \       0x54   0x28C8             CMP      R0,#+200
+   \       0x56   0xD072             BEQ      ??module_Motor_FW_Update_u32_14
+   \       0x58   0x28FF             CMP      R0,#+255
+   \       0x5A   0xD071             BEQ      ??module_Motor_FW_Update_u32_15
+   \       0x5C   0xE073             B        ??module_Motor_FW_Update_u32_16
+    165            {
+    166            case MEMORY_INIT_MODULE:
+    167              {
+    168                AssignModuleMemMotorFWUpdate(); // Assign structured memory to Analog 0-10V setting and data 
+   \                     ??module_Motor_FW_Update_u32_1: (+1)
+   \       0x5E   0x....'....        BL       AssignModuleMemMotorFWUpdate
+    169                return_state_u8 = AppInit;
+   \       0x62   0x2001             MOVS     R0,#+1
+   \       0x64   0x0005             MOVS     R5,R0
+    170                break;
+   \       0x66   0xE070             B        ??module_Motor_FW_Update_u32_17
+    171              }
+    172            case AppInit:                                                              //initial stage
+    173              {     
+    174                //init this module 
+    175                //AssignModuleMemMotorFWUpdate();
+    176                ////Motor_FW_UpdateStructMem_u32 =  StructMem_CreateInstance(MODULE_MOTOR_FW_UPDATE, sizeof(Motor_FW_Update_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST); //System call create a structured memory for this driver [should map it back to this driver local struct]
+    177                ////(*Motor_FW_UpdateStructMem_u32).p_ramBuf_u8 = (uint8_t *)&motor_FW_Update_Control ;    //map the generated module's control memory into the structured memory
+    178                ////uint8_t motor_FW_Update_Index = getProcessInfoIndex(MODULE_MOTOR_FW_UPDATE);
+    179                ////processInfoTable[motor_FW_Update_Index].Sched_ModuleData.p_masterSharedMem_u32 = Motor_FW_UpdateStructMem_u32;     //also map it back to module_paramters under kernel    
+    180                
+    181                
+    182                /*Attach Uart2 structured memory into this App*/ 
+    183                uint8_t Usart2index  = getProcessInfoIndex(MODULE_USART2); //return Process index from processInfo array
+   \                     ??module_Motor_FW_Update_u32_2: (+1)
+   \       0x68   0x2003             MOVS     R0,#+3
+   \       0x6A   0x....'....        BL       getProcessInfoIndex
+   \       0x6E   0x0007             MOVS     R7,R0
+    184                usart2Control_MotorFW_Update = (Usart2_Control*)((*(processInfoTable[Usart2index].Sched_DrvData.p_masterSharedMem_u32)).p_ramBuf_u8);    //Get structured memory for USART2   
+   \       0x70   0x....             LDR      R0,??DataTable4
+   \       0x72   0x0039             MOVS     R1,R7
+   \       0x74   0xB2C9             UXTB     R1,R1
+   \       0x76   0x2216             MOVS     R2,#+22
+   \       0x78   0x4351             MULS     R1,R2,R1
+   \       0x7A   0x1840             ADDS     R0,R0,R1
+   \       0x7C   0x300B             ADDS     R0,R0,#+11
+   \       0x7E   0x....'....        BL       __aeabi_uread4
+   \       0x82   0x6800             LDR      R0,[R0, #+0]
+   \       0x84   0x....             LDR      R1,??DataTable4_1
+   \       0x86   0x6008             STR      R0,[R1, #+0]
+    185                
+    186                
+    187                motor_FW_Update_Control.WrBufBlkNO_s16 = 0;
+   \       0x88   0x....             LDR      R0,??DataTable3_2
+   \       0x8A   0x8044             STRH     R4,[R0, #+2]
+    188                
+    189                /** serial handling
+    190                //rx part
+    191                unsigned char* FW_Updatebuf;
+    192                unsigned int DataLen2 = (unsigned int)UniHeaderlen;
+    193                RingBuf_Observe((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32, FW_Updatebuf, 0, &DataLen2);
+    194                RingBuf_ReadBlock((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32, FW_Updatebuf, &DataLen2); //extract the whole frame
+    195                
+    196                usart2Control_MotorFW_Update->UsartMode_u8 = 1; 
+    197                static uint8_t TestDat[] = {0x08, 0x00, 0xff, 0xee};
+    198                _txFWdata = TestDat;
+    199                //  _txFWdata= (uint8_t*) realloc(_txFWdata, sizeof(TestDat));
+    200                
+    201                TXFWDatLen = 4;
+    202                TXFWDatIndx = TXFWDatLen;
+    203                tt_FW_TxDelayTime = getSysCount();                          //store time tick value 
+    204                FW_Tx(); 
+    205                
+    206                **/     
+    207                
+    208                
+    209                
+    210                //       tt_FW_TxDelayTime = getSysCount() + DemandFWDelayPeriod;                          //store time tick value 
+    211                return_state_u8 = AppStart;
+   \       0x8C   0x2002             MOVS     R0,#+2
+   \       0x8E   0x0005             MOVS     R5,R0
+    212                break;
+   \       0x90   0xE05B             B        ??module_Motor_FW_Update_u32_17
+    213              }       
+    214            case AppStart:
+    215              { 
+    216                // just set return_state_u8 to the command to perform(like CMDBlkRead, CMDBlkWrite,CMDGetVersionNRdProtect ..... ,CMDGo)  , then the related stateMachine will be executed.
+    217                //   return_state_u8 = CMDBlkWrite; //direct test for the write with erase command
+    218                return_state_u8 = AppStart;
+   \                     ??module_Motor_FW_Update_u32_3: (+1)
+   \       0x92   0x2002             MOVS     R0,#+2
+   \       0x94   0x0005             MOVS     R5,R0
+    219                break;
+   \       0x96   0xE058             B        ??module_Motor_FW_Update_u32_17
+    220              }  
+    221              
+    222            case CMDBlkRead: /*****************************************************block Read cmd group****************************************************/
+    223              { 
+    224                fwRdState = PreFwRd;
+   \                     ??module_Motor_FW_Update_u32_8: (+1)
+   \       0x98   0x0020             MOVS     R0,R4
+   \       0x9A   0x....             LDR      R1,??DataTable4_2
+   \       0x9C   0x7008             STRB     R0,[R1, #+0]
+    225                fwAutoBaudState = PreFwStartUp;
+   \       0x9E   0x....             LDR      R0,??DataTable4_3
+   \       0xA0   0x7004             STRB     R4,[R0, #+0]
+    226                FWRddataBuf = (uint8_t*) malloc(255);        //setup receive data buffer
+   \       0xA2   0x20FF             MOVS     R0,#+255
+   \       0xA4   0x....'....        BL       malloc
+   \       0xA8   0x....             LDR      R1,??DataTable4_4
+   \       0xAA   0x6008             STR      R0,[R1, #+0]
+    227              }  
+    228            case exeBlkRead:
+    229              {         
+    230                if(FWAutoBaudStateMachine() == (FWAutoBaudState)ABaudSuccess)
+   \                     ??module_Motor_FW_Update_u32_9: (+1)
+   \       0xAC   0x....'....        BL       FWAutoBaudStateMachine
+   \       0xB0   0x2803             CMP      R0,#+3
+   \       0xB2   0xD103             BNE      ??module_Motor_FW_Update_u32_18
+    231                {
+    232                  FWBlkRead(FWRddataBuf);
+   \       0xB4   0x....             LDR      R0,??DataTable4_4
+   \       0xB6   0x6800             LDR      R0,[R0, #+0]
+   \       0xB8   0x....'....        BL       FWBlkRead
+    233                }
+    234                return_state_u8 = CMDBlkRead;
+   \                     ??module_Motor_FW_Update_u32_18: (+1)
+   \       0xBC   0x2007             MOVS     R0,#+7
+   \       0xBE   0x0005             MOVS     R5,R0
+    235                break;
+   \       0xC0   0xE043             B        ??module_Motor_FW_Update_u32_17
+    236              }   /********************************************************** End of block Read cmd group****************************************************/
+    237              
+    238            case CMDBlkWrite: /*****************************************************block write cmd group****************************************************/
+    239              {
+    240                fwAutoBaudState = PreFwStartUp;              
+   \                     ??module_Motor_FW_Update_u32_12: (+1)
+   \       0xC2   0x0020             MOVS     R0,R4
+   \       0xC4   0x....             LDR      R1,??DataTable4_3
+   \       0xC6   0x7008             STRB     R0,[R1, #+0]
+    241                fwWrState = WrFw_WithErase;
+   \       0xC8   0x....             LDR      R0,??DataTable4_5
+   \       0xCA   0x7004             STRB     R4,[R0, #+0]
+    242              }
+    243            case exeBlkwrite:                                 
+    244              {
+    245                if(FWAutoBaudStateMachine() == (FWAutoBaudState)ABaudSuccess)
+   \                     ??module_Motor_FW_Update_u32_13: (+1)
+   \       0xCC   0x....'....        BL       FWAutoBaudStateMachine
+   \       0xD0   0x2803             CMP      R0,#+3
+   \       0xD2   0xD101             BNE      ??module_Motor_FW_Update_u32_19
+    246                {
+    247                  FWWrStateMachine();
+   \       0xD4   0x....'....        BL       FWWrStateMachine
+    248                }
+    249                return_state_u8 = exeBlkwrite ;
+   \                     ??module_Motor_FW_Update_u32_19: (+1)
+   \       0xD8   0x200C             MOVS     R0,#+12
+   \       0xDA   0x0005             MOVS     R5,R0
+    250                break;
+   \       0xDC   0xE035             B        ??module_Motor_FW_Update_u32_17
+    251              }   /************************************************************ End of block write cmd group***************************************************/                                            
+    252              
+    253            case CMDGetVersionNRdProtect: /****************************Get Target boolder version and read protection status ID group**************************/
+    254              {
+    255                fwGetIDState = PreFwGetID;
+   \                     ??module_Motor_FW_Update_u32_4: (+1)
+   \       0xDE   0x....             LDR      R0,??FWGetID_0
+   \       0xE0   0x7004             STRB     R4,[R0, #+0]
+    256                FW_RdVerNProtectBuf = (uint8_t*) malloc(3);        //setup Target boolder version and read protection status data buffer
+   \       0xE2   0x2003             MOVS     R0,#+3
+   \       0xE4   0x....'....        BL       malloc
+   \       0xE8   0x....             LDR      R1,??DataTable4_6
+   \       0xEA   0x6008             STR      R0,[R1, #+0]
+    257              }
+    258            case exeGetVersionNRdProtect:
+    259              {
+    260                if(FWAutoBaudStateMachine() == (FWAutoBaudState)ABaudSuccess)
+   \                     ??module_Motor_FW_Update_u32_5: (+1)
+   \       0xEC   0x....'....        BL       FWAutoBaudStateMachine
+   \       0xF0   0x2803             CMP      R0,#+3
+   \       0xF2   0xD103             BNE      ??module_Motor_FW_Update_u32_20
+    261                {
+    262                  FWGetVerNRdProtection(FW_RdVerNProtectBuf) ;
+   \       0xF4   0x....             LDR      R0,??DataTable4_6
+   \       0xF6   0x6800             LDR      R0,[R0, #+0]
+   \       0xF8   0x....'....        BL       FWGetVerNRdProtection
+    263                }
+    264                return_state_u8 = exeGetVersionNRdProtect;
+   \                     ??module_Motor_FW_Update_u32_20: (+1)
+   \       0xFC   0x2004             MOVS     R0,#+4
+   \       0xFE   0x0005             MOVS     R5,R0
+    265                break;
+   \      0x100   0xE023             B        ??module_Motor_FW_Update_u32_17
+    266              }       /***************************************** End of Get Target boolder version and read protection status ID group**************************/
+    267              
+    268            case CMDGetID:    /*****************************************************Get Target ID group********************************************************/
+    269              {
+    270                fwAutoBaudState = PreFwStartUp;
+   \                     ??module_Motor_FW_Update_u32_6: (+1)
+   \      0x102   0x0020             MOVS     R0,R4
+   \      0x104   0x....             LDR      R1,??DataTable4_3
+   \      0x106   0x7008             STRB     R0,[R1, #+0]
+    271                fwGetIDState = PreFwGetID;
+   \      0x108   0x....             LDR      R0,??FWGetID_0
+   \      0x10A   0x7004             STRB     R4,[R0, #+0]
+    272                FWGetIDBuf = (uint8_t*) malloc(3);        //setup Target ID data buffer
+   \      0x10C   0x2003             MOVS     R0,#+3
+   \      0x10E   0x....'....        BL       malloc
+   \      0x112   0x....             LDR      R1,??DataTable4_7
+   \      0x114   0x6008             STR      R0,[R1, #+0]
+    273              }
+    274            case exeGetID:
+    275              {
+    276                if(FWAutoBaudStateMachine() == (FWAutoBaudState)ABaudSuccess)
+   \                     ??module_Motor_FW_Update_u32_7: (+1)
+   \      0x116   0x....'....        BL       FWAutoBaudStateMachine
+   \      0x11A   0x2803             CMP      R0,#+3
+   \      0x11C   0xD103             BNE      ??module_Motor_FW_Update_u32_21
+    277                {
+    278                  FWGetID(FWGetIDBuf);
+   \      0x11E   0x....             LDR      R0,??DataTable4_7
+   \      0x120   0x6800             LDR      R0,[R0, #+0]
+   \      0x122   0x....'....        BL       FWGetID
+    279                }
+    280                return_state_u8 = exeGetID ;
+   \                     ??module_Motor_FW_Update_u32_21: (+1)
+   \      0x126   0x2006             MOVS     R0,#+6
+   \      0x128   0x0005             MOVS     R5,R0
+    281                break;
+   \      0x12A   0xE00E             B        ??module_Motor_FW_Update_u32_17
+    282              }       /***************************************************** End of Get Target ID group********************************************************/
+    283              
+    284            case CMDGo:       /***************************************************** Go execute in Target group************************************************/
+    285              {
+    286                fwAutoBaudState = PreFwStartUp;
+   \                     ??module_Motor_FW_Update_u32_10: (+1)
+   \      0x12C   0x0020             MOVS     R0,R4
+   \      0x12E   0x....             LDR      R1,??DataTable4_3
+   \      0x130   0x7008             STRB     R0,[R1, #+0]
+    287                fwGoState = PreFwGo;
+   \      0x132   0x....             LDR      R0,??DataTable5
+   \      0x134   0x7004             STRB     R4,[R0, #+0]
+    288              }
+    289            case exeGo:
+    290              {
+    291                if(FWAutoBaudStateMachine() == (FWAutoBaudState)ABaudSuccess)
+   \                     ??module_Motor_FW_Update_u32_11: (+1)
+   \      0x136   0x....'....        BL       FWAutoBaudStateMachine
+    292                {
+    293                  // FWGo(StartingAddr); //need to define the starting address
+    294                }
+    295                return_state_u8 = exeGo;
+   \      0x13A   0x200A             MOVS     R0,#+10
+   \      0x13C   0x0005             MOVS     R5,R0
+    296              }       /***************************************************** End of Go execute in Target group************************************************/
+    297              
+    298            case AppIrq:
+    299              { 
+    300                break;
+   \                     ??module_Motor_FW_Update_u32_14: (+1)
+   \      0x13E   0xE004             B        ??module_Motor_FW_Update_u32_17
+    301              }               
+    302            case killApp:
+    303              {
+    304                return_state_u8 = AppInit;
+   \                     ??module_Motor_FW_Update_u32_15: (+1)
+   \      0x140   0x2001             MOVS     R0,#+1
+   \      0x142   0x0005             MOVS     R5,R0
+    305                break;
+   \      0x144   0xE001             B        ??module_Motor_FW_Update_u32_17
+    306              }
+    307            default:
+    308              return_state_u8 = killApp;   
+   \                     ??module_Motor_FW_Update_u32_16: (+1)
+   \      0x146   0x20FF             MOVS     R0,#+255
+   \      0x148   0x0005             MOVS     R5,R0
+    309            }
+    310            return return_state_u8;
+   \                     ??module_Motor_FW_Update_u32_17: (+1)
+   \      0x14A   0x0028             MOVS     R0,R5
+   \      0x14C   0xB2C0             UXTB     R0,R0
+   \      0x14E   0xBDFE             POP      {R1-R7,PC}       ;; return
+    311          }
+    312          
+
+   \                                 In section .text, align 2, keep-with-next
+    313          void AssignModuleMemMotorFWUpdate(void)
+    314          {
+   \                     AssignModuleMemMotorFWUpdate: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    315            Motor_FW_UpdateStructMem_u32 =  StructMem_CreateInstance(MODULE_MOTOR_FW_UPDATE, sizeof(Motor_FW_Update_Control), ACCESS_MODE_WRITE_ONLY, NULL, EMPTY_LIST); //System call create a structured memory for this driver [should map it back to this driver local struct]
+   \        0x2   0x....             LDR      R4,??DataTable4_8
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x9000             STR      R0,[SP, #+0]
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x210A             MOVS     R1,#+10
+   \        0xE   0x2012             MOVS     R0,#+18
+   \       0x10   0x....'....        BL       StructMem_CreateInstance
+   \       0x14   0x6020             STR      R0,[R4, #+0]
+    316            (*Motor_FW_UpdateStructMem_u32).p_ramBuf_u8 = (uint8_t *)&motor_FW_Update_Control ;    //map the generated module's control memory into the structured memory
+   \       0x16   0x....             LDR      R0,??DataTable3_2
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6008             STR      R0,[R1, #+0]
+    317            uint8_t motor_FW_Update_Index = getProcessInfoIndex(MODULE_MOTOR_FW_UPDATE);
+   \       0x1C   0x2012             MOVS     R0,#+18
+   \       0x1E   0x....'....        BL       getProcessInfoIndex
+   \       0x22   0x0005             MOVS     R5,R0
+    318            processInfoTable[motor_FW_Update_Index].Sched_ModuleData.p_masterSharedMem_u32 = Motor_FW_UpdateStructMem_u32;     //also map it back to module_paramters under kernel    
+   \       0x24   0x....             LDR      R0,??DataTable4
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x2216             MOVS     R2,#+22
+   \       0x2C   0x4351             MULS     R1,R2,R1
+   \       0x2E   0x1840             ADDS     R0,R0,R1
+   \       0x30   0x0001             MOVS     R1,R0
+   \       0x32   0x310B             ADDS     R1,R1,#+11
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x....'....        BL       __aeabi_uwrite4
+    319          }
+   \       0x3A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    320          
+    321          /** @section below -------------------------------------------------- All Local stateMachine functions (below this line)------------------------------------------------------------------
+    322          * @author  Pamela Lee
+    323          * @date    9 Jan 2021
+    324          * @version 1.0
+    325          * @brief   Contain all the stateMachine functions for each of the ST-bootloader commands 
+    326          *---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    327          **/
+
+   \                                 In section .bss, align 2
+    328          int16_t FW_TimeOutCounter = 0;
+   \                     FW_TimeOutCounter:
+   \        0x0                      DS8 2
+    329          /**
+    330          ********************************************************************************************************************************
+    331          * @brief   Function of AutoBaud setup for firmware into target flash.
+    332          * @author  Pamela Lee
+    333          * @details - flash data from input buffer into target flash
+    334          *          - The finction will run only once to either ABaudSuccess or ABaudFail stage
+    335          - if re-execute this function again, user need to reload the PreFwWr into fwAutoBaudState
+    336          - otherwise even keep running this function will not perform any further action!!!!!!
+    337          * @param   fwAutoBaudState  -- user should enter the startup state(PreFwWr) before execute this function
+    338          * @return  fwAutoBaudState  -- finially will end with either (ABaudSuccess or ABaudFail)
+    339          ********************************************************************************************************************************
+    340          */
+
+   \                                 In section .text, align 2, keep-with-next
+    341          uint8_t FWAutoBaudStateMachine(void)
+    342          {
+   \                     FWAutoBaudStateMachine: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    343            switch(fwAutoBaudState)
+   \        0x2   0x....             LDR      R4,??DataTable4_3
+   \        0x4   0x7820             LDRB     R0,[R4, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD006             BEQ      ??FWAutoBaudStateMachine_0
+   \        0xA   0x2802             CMP      R0,#+2
+   \        0xC   0xD046             BEQ      ??FWAutoBaudStateMachine_1
+   \        0xE   0xD310             BCC      ??FWAutoBaudStateMachine_2
+   \       0x10   0x2804             CMP      R0,#+4
+   \       0x12   0xD055             BEQ      ??FWAutoBaudStateMachine_3
+   \       0x14   0xD353             BCC      ??FWAutoBaudStateMachine_4
+   \       0x16   0xE054             B        ??FWAutoBaudStateMachine_5
+    344            {
+    345            case PreFwStartUp :                  
+    346              {
+    347                /** todo1 setup boot0 pin **/
+    348                /** todo2 send universal protocol for reboot motor **/      
+    349                tt_FW_WaitTime = getSysCount() + 1000;                          //store time tick value for target reset time
+   \                     ??FWAutoBaudStateMachine_0: (+1)
+   \       0x18   0x....'....        BL       getSysCount
+   \       0x1C   0x22FA             MOVS     R2,#+250
+   \       0x1E   0x0092             LSLS     R2,R2,#+2        ;; #+1000
+   \       0x20   0x2300             MOVS     R3,#+0
+   \       0x22   0x1812             ADDS     R2,R2,R0
+   \       0x24   0x414B             ADCS     R3,R3,R1
+   \       0x26   0x....             LDR      R0,??DataTable5_1
+   \       0x28   0xC00C             STM      R0!,{R2,R3}
+   \       0x2A   0x3808             SUBS     R0,R0,#+8
+    350                fwAutoBaudState = AutoBaudFmBoot;
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0x7020             STRB     R0,[R4, #+0]
+    351                break;
+   \       0x30   0xE047             B        ??FWAutoBaudStateMachine_6
+    352              }
+    353            case AutoBaudFmBoot:
+    354              {
+    355                if (getSysCount() >= tt_FW_WaitTime){
+   \                     ??FWAutoBaudStateMachine_2: (+1)
+   \       0x32   0x....'....        BL       getSysCount
+   \       0x36   0x....             LDR      R7,??DataTable5_1
+   \       0x38   0xCF0C             LDM      R7!,{R2,R3}
+   \       0x3A   0x3F08             SUBS     R7,R7,#+8
+   \       0x3C   0x4299             CMP      R1,R3
+   \       0x3E   0xD32C             BCC      ??FWAutoBaudStateMachine_7
+   \       0x40   0xD801             BHI      ??FWAutoBaudStateMachine_8
+   \       0x42   0x4290             CMP      R0,R2
+   \       0x44   0xD329             BCC      ??FWAutoBaudStateMachine_7
+    356                  usart2Control_MotorFW_Update->UsartMode_u8 = 1;                                                     //SET App-side Usart2 as transparent mode. All data will directly push into seqMemRX_transparentMode_u32 pipe  
+   \                     ??FWAutoBaudStateMachine_8: (+1)
+   \       0x46   0x2501             MOVS     R5,#+1
+   \       0x48   0x....             LDR      R0,??DataTable4_1
+   \       0x4A   0x0029             MOVS     R1,R5
+   \       0x4C   0x6802             LDR      R2,[R0, #+0]
+   \       0x4E   0x2322             MOVS     R3,#+34
+   \       0x50   0x54D1             STRB     R1,[R2, R3]
+    357                  RingBuf_ClearContents((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32);                //flush transparent mode ringbuffer
+   \       0x52   0x6800             LDR      R0,[R0, #+0]
+   \       0x54   0x6800             LDR      R0,[R0, #+0]
+   \       0x56   0x....'....        BL       RingBuf_ClearContents
+    358                  // prepare data for tx
+    359                  _txFWdata= (uint8_t*) malloc(1);
+   \       0x5A   0x....             LDR      R6,??DataTable3_1
+   \       0x5C   0x2001             MOVS     R0,#+1
+   \       0x5E   0x....'....        BL       malloc
+   \       0x62   0x6030             STR      R0,[R6, #+0]
+    360                  _txFWdata[0] = 0x7F;                                        //setup 115200 baud for motor bootloader with autobaud char 0x7F
+   \       0x64   0x207F             MOVS     R0,#+127
+   \       0x66   0x6831             LDR      R1,[R6, #+0]
+   \       0x68   0x7008             STRB     R0,[R1, #+0]
+    361                  TXFWDatLen = 1;
+   \       0x6A   0x....             LDR      R0,??DataTable5_2
+   \       0x6C   0x8005             STRH     R5,[R0, #+0]
+    362                  TXFWDatIndx = TXFWDatLen;
+   \       0x6E   0x8800             LDRH     R0,[R0, #+0]
+   \       0x70   0x....             LDR      R1,??DataTable3
+   \       0x72   0x8008             STRH     R0,[R1, #+0]
+    363                  tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0x74   0x....'....        BL       getSysCount
+   \       0x78   0x....             LDR      R2,??DataTable5_3
+   \       0x7A   0xC203             STM      R2!,{R0,R1}
+   \       0x7C   0x3A08             SUBS     R2,R2,#+8
+    364                  FW_Tx(); 
+   \       0x7E   0x....'....        BL       FW_Tx
+    365                  // end of prepare data for tx
+    366                  tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0x82   0x....'....        BL       getSysCount
+   \       0x86   0x2200             MOVS     R2,#+0
+   \       0x88   0x3064             ADDS     R0,R0,#+100
+   \       0x8A   0x4151             ADCS     R1,R1,R2
+   \       0x8C   0xC703             STM      R7!,{R0,R1}
+   \       0x8E   0x3F08             SUBS     R7,R7,#+8
+    367                  FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0x90   0x2064             MOVS     R0,#+100
+   \       0x92   0x....             LDR      R1,??DataTable5_4
+   \       0x94   0x8008             STRH     R0,[R1, #+0]
+    368                  fwAutoBaudState = ABaudWaitAckAfterReset;
+   \       0x96   0x2002             MOVS     R0,#+2
+   \       0x98   0x7020             STRB     R0,[R4, #+0]
+    369                }
+    370                break;
+   \                     ??FWAutoBaudStateMachine_7: (+1)
+   \       0x9A   0xE012             B        ??FWAutoBaudStateMachine_6
+    371              }
+    372            case ABaudWaitAckAfterReset:
+    373              {
+    374                switch(waitForACK())
+   \                     ??FWAutoBaudStateMachine_1: (+1)
+   \       0x9C   0x....'....        BL       waitForACK
+   \       0xA0   0x281F             CMP      R0,#+31
+   \       0xA2   0xD009             BEQ      ??FWAutoBaudStateMachine_9
+   \       0xA4   0x2879             CMP      R0,#+121
+   \       0xA6   0xD004             BEQ      ??FWAutoBaudStateMachine_10
+   \       0xA8   0x2100             MOVS     R1,#+0
+   \       0xAA   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0xAC   0x4288             CMP      R0,R1
+   \       0xAE   0xD003             BEQ      ??FWAutoBaudStateMachine_9
+   \       0xB0   0xE004             B        ??FWAutoBaudStateMachine_11
+    375                {
+    376                case 0x79:    //ACK
+    377                  { //ACK
+    378                    fwAutoBaudState = ABaudSuccess;
+   \                     ??FWAutoBaudStateMachine_10: (+1)
+   \       0xB2   0x2003             MOVS     R0,#+3
+   \       0xB4   0x7020             STRB     R0,[R4, #+0]
+    379                    break;
+   \       0xB6   0xE001             B        ??FWAutoBaudStateMachine_12
+    380                  }  
+    381                case 0x1F:    //NACK        
+    382                case -1:      //Timeout
+    383                  { //NACK and Timeout
+    384                    fwAutoBaudState = ABaudFail;         //fail will stay in fail state
+   \                     ??FWAutoBaudStateMachine_9: (+1)
+   \       0xB8   0x2004             MOVS     R0,#+4
+   \       0xBA   0x7020             STRB     R0,[R4, #+0]
+    385                  }
+    386                case 0:
+    387                default:
+    388                  break;
+    389                }
+    390                break;
+   \                     ??FWAutoBaudStateMachine_11: (+1)
+   \                     ??FWAutoBaudStateMachine_12: (+1)
+   \       0xBC   0xE001             B        ??FWAutoBaudStateMachine_6
+    391              }
+    392            case ABaudSuccess:          
+    393              {
+    394                break;
+   \                     ??FWAutoBaudStateMachine_4: (+1)
+   \       0xBE   0xE000             B        ??FWAutoBaudStateMachine_6
+    395              }
+    396            case ABaudFail:
+    397              {
+    398                break;
+   \                     ??FWAutoBaudStateMachine_3: (+1)
+   \       0xC0   0xE7FF             B        ??FWAutoBaudStateMachine_6
+    399              }
+    400            default:
+    401              break;
+    402            }
+    403            return((uint8_t)fwAutoBaudState);
+   \                     ??FWAutoBaudStateMachine_5: (+1)
+   \                     ??FWAutoBaudStateMachine_6: (+1)
+   \       0xC2   0x7820             LDRB     R0,[R4, #+0]
+   \       0xC4   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    404          }
+    405          
+    406          /**
+    407          ********************************************************************************************************************************
+    408          * @brief   Function of Read version and read protection from target flash.
+    409          * @author  Pamela Lee
+    410          * @details Read bootloader version and read protection status
+    411          *                
+    412          * @param   _FW_RdVerNProtectBuf read 3 bytes, byte0 = version number, byte1 = Read option byte0, byte2 = Read option byte1
+    413          * @return  - the current state of this stateMachine fwRdVerNProtectState 
+    414          *          - flash data should stored into buffer (_FW_RdVerNProtectBuf) from target flash
+    415          ********************************************************************************************************************************
+    416          */
+
+   \                                 In section .text, align 2, keep-with-next
+    417          uint8_t FWGetVerNRdProtection(uint8_t* _FW_RdVerNProtectBuf)                     //Get version and read protection status
+    418          {
+   \                     FWGetVerNRdProtection: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+    419            switch(fwRdVerNProtectState)
+   \        0x4   0x....             LDR      R5,??DataTable5_5
+   \        0x6   0x7828             LDRB     R0,[R5, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD006             BEQ      ??FWGetVerNRdProtection_0
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD03B             BEQ      ??FWGetVerNRdProtection_1
+   \       0x10   0xD329             BCC      ??FWGetVerNRdProtection_2
+   \       0x12   0x2804             CMP      R0,#+4
+   \       0x14   0xD049             BEQ      ??FWGetVerNRdProtection_3
+   \       0x16   0xD347             BCC      ??FWGetVerNRdProtection_4
+   \       0x18   0xE048             B        ??FWGetVerNRdProtection_5
+    420            {
+    421            case PreFwRdVerNProtect:                   
+    422              { 
+    423                _txFWdata= (uint8_t*) malloc(2);
+   \                     ??FWGetVerNRdProtection_0: (+1)
+   \       0x1A   0x....             LDR      R6,??DataTable5_6
+   \       0x1C   0x2002             MOVS     R0,#+2
+   \       0x1E   0x....'....        BL       malloc
+   \       0x22   0x6030             STR      R0,[R6, #+0]
+    424                _txFWdata[0] = 0x01;                                        //setup cmd as Read Version snd read protection status cmd
+   \       0x24   0x2401             MOVS     R4,#+1
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0x6831             LDR      R1,[R6, #+0]
+   \       0x2A   0x7008             STRB     R0,[R1, #+0]
+    425                _txFWdata[1] = 0xFE;
+   \       0x2C   0x20FE             MOVS     R0,#+254
+   \       0x2E   0x6831             LDR      R1,[R6, #+0]
+   \       0x30   0x7048             STRB     R0,[R1, #+1]
+    426                TXFWDatLen = 2;
+   \       0x32   0x....             LDR      R0,??DataTable5_2
+   \       0x34   0x2102             MOVS     R1,#+2
+   \       0x36   0x8001             STRH     R1,[R0, #+0]
+    427                TXFWDatIndx = TXFWDatLen;
+   \       0x38   0x8800             LDRH     R0,[R0, #+0]
+   \       0x3A   0x....             LDR      R1,??DataTable6
+   \       0x3C   0x8008             STRH     R0,[R1, #+0]
+    428                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0x3E   0x....'....        BL       getSysCount
+   \       0x42   0x....             LDR      R2,??DataTable5_3
+   \       0x44   0xC203             STM      R2!,{R0,R1}
+   \       0x46   0x3A08             SUBS     R2,R2,#+8
+    429                FW_Tx(); 
+   \       0x48   0x....'....        BL       FW_Tx
+    430                // end of prepare data for tx
+    431                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0x4C   0x....'....        BL       getSysCount
+   \       0x50   0x2200             MOVS     R2,#+0
+   \       0x52   0x3064             ADDS     R0,R0,#+100
+   \       0x54   0x4151             ADCS     R1,R1,R2
+   \       0x56   0x....             LDR      R2,??DataTable5_1
+   \       0x58   0xC203             STM      R2!,{R0,R1}
+   \       0x5A   0x3A08             SUBS     R2,R2,#+8
+    432                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0x5C   0x2064             MOVS     R0,#+100
+   \       0x5E   0x....             LDR      R1,??DataTable5_4
+   \       0x60   0x8008             STRH     R0,[R1, #+0]
+    433                fwRdVerNProtectState = waitAckRdVerNProtect;       
+   \       0x62   0x702C             STRB     R4,[R5, #+0]
+    434                break;
+   \       0x64   0xE022             B        ??FWGetVerNRdProtection_6
+    435              }
+    436            case waitAckRdVerNProtect:
+    437              {
+    438                switch(waitForACK())
+   \                     ??FWGetVerNRdProtection_2: (+1)
+   \       0x66   0x....'....        BL       waitForACK
+   \       0x6A   0x281F             CMP      R0,#+31
+   \       0x6C   0xD009             BEQ      ??FWGetVerNRdProtection_7
+   \       0x6E   0x2879             CMP      R0,#+121
+   \       0x70   0xD004             BEQ      ??FWGetVerNRdProtection_8
+   \       0x72   0x2100             MOVS     R1,#+0
+   \       0x74   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x76   0x4288             CMP      R0,R1
+   \       0x78   0xD003             BEQ      ??FWGetVerNRdProtection_7
+   \       0x7A   0xE004             B        ??FWGetVerNRdProtection_9
+    439                {
+    440                case 0x79:    //ACK
+    441                  { //ACK
+    442                    fwRdVerNProtectState = FwRdVerNProtectDat;
+   \                     ??FWGetVerNRdProtection_8: (+1)
+   \       0x7C   0x2002             MOVS     R0,#+2
+   \       0x7E   0x7028             STRB     R0,[R5, #+0]
+    443                    break;
+   \       0x80   0xE001             B        ??FWGetVerNRdProtection_10
+    444                  }  
+    445                case 0x1F:    //NACK        
+    446                case -1:      //Timeout
+    447                  { //NACK and Timeout
+    448                    fwRdVerNProtectState = RdVerNProtectFail;         //fail will stay in fail state
+   \                     ??FWGetVerNRdProtection_7: (+1)
+   \       0x82   0x2004             MOVS     R0,#+4
+   \       0x84   0x7028             STRB     R0,[R5, #+0]
+    449                  }
+    450                case 0:
+    451                default:
+    452                  break;
+    453                }
+    454                break;
+   \                     ??FWGetVerNRdProtection_9: (+1)
+   \                     ??FWGetVerNRdProtection_10: (+1)
+   \       0x86   0xE011             B        ??FWGetVerNRdProtection_6
+    455              }
+    456            case FwRdVerNProtectDat:
+    457              {
+    458                switch(waitForDatRd(_FW_RdVerNProtectBuf, 3))
+   \                     ??FWGetVerNRdProtection_1: (+1)
+   \       0x88   0x2103             MOVS     R1,#+3
+   \       0x8A   0x0038             MOVS     R0,R7
+   \       0x8C   0x....'....        BL       waitForDatRd
+   \       0x90   0x2801             CMP      R0,#+1
+   \       0x92   0xD004             BEQ      ??FWGetVerNRdProtection_11
+   \       0x94   0x2100             MOVS     R1,#+0
+   \       0x96   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x98   0x4288             CMP      R0,R1
+   \       0x9A   0xD003             BEQ      ??FWGetVerNRdProtection_12
+   \       0x9C   0xE004             B        ??FWGetVerNRdProtection_13
+    459                {
+    460                case 1:
+    461                  {
+    462                    fwRdVerNProtectState = RdVerNProtectSuccess;
+   \                     ??FWGetVerNRdProtection_11: (+1)
+   \       0x9E   0x2003             MOVS     R0,#+3
+   \       0xA0   0x7028             STRB     R0,[R5, #+0]
+    463                    break;
+   \       0xA2   0xE001             B        ??FWGetVerNRdProtection_4
+    464                  }
+    465                case -1:
+    466                  {
+    467                    fwRdVerNProtectState = RdVerNProtectFail;         //fail will stay in fail state
+   \                     ??FWGetVerNRdProtection_12: (+1)
+   \       0xA4   0x2004             MOVS     R0,#+4
+   \       0xA6   0x7028             STRB     R0,[R5, #+0]
+    468                  }
+    469                case 0:
+    470                default:
+    471                  break;   
+    472                }
+    473              }      
+    474            case RdVerNProtectSuccess:
+    475              {
+    476                break;
+   \                     ??FWGetVerNRdProtection_13: (+1)
+   \                     ??FWGetVerNRdProtection_4: (+1)
+   \       0xA8   0xE000             B        ??FWGetVerNRdProtection_6
+    477              }
+    478            case RdVerNProtectFail:
+    479              {
+    480                break;
+   \                     ??FWGetVerNRdProtection_3: (+1)
+   \       0xAA   0xE7FF             B        ??FWGetVerNRdProtection_6
+    481              }
+    482            default:
+    483              break;   
+    484            }   
+    485            return((uint8_t)fwRdVerNProtectState);
+   \                     ??FWGetVerNRdProtection_5: (+1)
+   \                     ??FWGetVerNRdProtection_6: (+1)
+   \       0xAC   0x7828             LDRB     R0,[R5, #+0]
+   \       0xAE   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    486          }
+    487          
+    488          /**
+    489          ********************************************************************************************************************************
+    490          * @brief   Function of Get Target ID from target flash.
+    491          * @author  Pamela Lee
+    492          * @details Get Target chip ID
+    493          *                
+    494          * @param   _FW_GetIDBuf read 3 bytes, byte0 = number of data, byte1 = PID =>0x04, byte2 = 0xXX
+    495          * @return  - the current state of this stateMachine fwGetIDState
+    496          *          - flash data should stored into buffer (_FW_GetIDBuf) from target flash
+    497          ********************************************************************************************************************************
+    498          */
+
+   \                                 In section .text, align 4, keep-with-next
+    499          uint8_t FWGetID(uint8_t* _FW_GetIDBuf)             //Get Target chip ID
+    500          {
+   \                     FWGetID: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    501            switch(fwGetIDState)
+   \        0x4   0x4C2A             LDR      R4,??FWGetID_0
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD006             BEQ      ??FWGetID_1
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD03B             BEQ      ??FWGetID_2
+   \       0x10   0xD329             BCC      ??FWGetID_3
+   \       0x12   0x2804             CMP      R0,#+4
+   \       0x14   0xD049             BEQ      ??FWGetID_4
+   \       0x16   0xD347             BCC      ??FWGetID_5
+   \       0x18   0xE048             B        ??FWGetID_6
+    502            {
+    503            case PreFwGetID:                   
+    504              { 
+    505                _txFWdata= (uint8_t*) malloc(2);
+   \                     ??FWGetID_1: (+1)
+   \       0x1A   0x....             LDR      R6,??DataTable5_6
+   \       0x1C   0x2002             MOVS     R0,#+2
+   \       0x1E   0x....'....        BL       malloc
+   \       0x22   0x6030             STR      R0,[R6, #+0]
+    506                _txFWdata[0] = 0x02;                                        //setup cmd as Read Version snd read protection status cmd
+   \       0x24   0x2002             MOVS     R0,#+2
+   \       0x26   0x0001             MOVS     R1,R0
+   \       0x28   0x6832             LDR      R2,[R6, #+0]
+   \       0x2A   0x7011             STRB     R1,[R2, #+0]
+    507                _txFWdata[1] = 0xFD;
+   \       0x2C   0x21FD             MOVS     R1,#+253
+   \       0x2E   0x6832             LDR      R2,[R6, #+0]
+   \       0x30   0x7051             STRB     R1,[R2, #+1]
+    508                TXFWDatLen = 2;
+   \       0x32   0x....             LDR      R1,??DataTable5_2
+   \       0x34   0x8008             STRH     R0,[R1, #+0]
+    509                TXFWDatIndx = TXFWDatLen;
+   \       0x36   0x8808             LDRH     R0,[R1, #+0]
+   \       0x38   0x....             LDR      R1,??DataTable6
+   \       0x3A   0x8008             STRH     R0,[R1, #+0]
+    510                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0x3C   0x....'....        BL       getSysCount
+   \       0x40   0x....             LDR      R2,??DataTable5_3
+   \       0x42   0xC203             STM      R2!,{R0,R1}
+   \       0x44   0x3A08             SUBS     R2,R2,#+8
+    511                FW_Tx(); 
+   \       0x46   0x....'....        BL       FW_Tx
+    512                // end of prepare data for tx
+    513                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0x4A   0x....'....        BL       getSysCount
+   \       0x4E   0x2200             MOVS     R2,#+0
+   \       0x50   0x3064             ADDS     R0,R0,#+100
+   \       0x52   0x4151             ADCS     R1,R1,R2
+   \       0x54   0x....             LDR      R2,??DataTable5_1
+   \       0x56   0xC203             STM      R2!,{R0,R1}
+   \       0x58   0x3A08             SUBS     R2,R2,#+8
+    514                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0x5A   0x2064             MOVS     R0,#+100
+   \       0x5C   0x....             LDR      R1,??DataTable5_4
+   \       0x5E   0x8008             STRH     R0,[R1, #+0]
+    515                fwGetIDState = waitAckGetID;       
+   \       0x60   0x2001             MOVS     R0,#+1
+   \       0x62   0x7020             STRB     R0,[R4, #+0]
+    516                break;
+   \       0x64   0xE022             B        ??FWGetID_7
+    517              }
+    518            case waitAckGetID:
+    519              {
+    520                switch(waitForACK())
+   \                     ??FWGetID_3: (+1)
+   \       0x66   0x....'....        BL       waitForACK
+   \       0x6A   0x281F             CMP      R0,#+31
+   \       0x6C   0xD009             BEQ      ??FWGetID_8
+   \       0x6E   0x2879             CMP      R0,#+121
+   \       0x70   0xD004             BEQ      ??FWGetID_9
+   \       0x72   0x2100             MOVS     R1,#+0
+   \       0x74   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x76   0x4288             CMP      R0,R1
+   \       0x78   0xD003             BEQ      ??FWGetID_8
+   \       0x7A   0xE004             B        ??FWGetID_10
+    521                {
+    522                case 0x79:    //ACK
+    523                  { //ACK
+    524                    fwGetIDState = FwGetIDDat;
+   \                     ??FWGetID_9: (+1)
+   \       0x7C   0x2002             MOVS     R0,#+2
+   \       0x7E   0x7020             STRB     R0,[R4, #+0]
+    525                    break;
+   \       0x80   0xE001             B        ??FWGetID_11
+    526                  }  
+    527                case 0x1F:    //NACK        
+    528                case -1:      //Timeout
+    529                  { //NACK and Timeout
+    530                    fwGetIDState = GetIDFail;         //fail will stay in fail state
+   \                     ??FWGetID_8: (+1)
+   \       0x82   0x2004             MOVS     R0,#+4
+   \       0x84   0x7020             STRB     R0,[R4, #+0]
+    531                  }
+    532                case 0:
+    533                default:
+    534                  break;
+    535                }
+    536                break;
+   \                     ??FWGetID_10: (+1)
+   \                     ??FWGetID_11: (+1)
+   \       0x86   0xE011             B        ??FWGetID_7
+    537              }
+    538            case FwGetIDDat:
+    539              {
+    540                switch(waitForDatRd(_FW_GetIDBuf, 3))
+   \                     ??FWGetID_2: (+1)
+   \       0x88   0x2103             MOVS     R1,#+3
+   \       0x8A   0x0028             MOVS     R0,R5
+   \       0x8C   0x....'....        BL       waitForDatRd
+   \       0x90   0x2801             CMP      R0,#+1
+   \       0x92   0xD004             BEQ      ??FWGetID_12
+   \       0x94   0x2100             MOVS     R1,#+0
+   \       0x96   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x98   0x4288             CMP      R0,R1
+   \       0x9A   0xD003             BEQ      ??FWGetID_13
+   \       0x9C   0xE004             B        ??FWGetID_14
+    541                {
+    542                case 1:
+    543                  {
+    544                    fwGetIDState = GetIDSuccess;
+   \                     ??FWGetID_12: (+1)
+   \       0x9E   0x2003             MOVS     R0,#+3
+   \       0xA0   0x7020             STRB     R0,[R4, #+0]
+    545                    break;
+   \       0xA2   0xE001             B        ??FWGetID_5
+    546                  }
+    547                case -1:
+    548                  {
+    549                    fwGetIDState = GetIDFail;         //fail will stay in fail state
+   \                     ??FWGetID_13: (+1)
+   \       0xA4   0x2004             MOVS     R0,#+4
+   \       0xA6   0x7020             STRB     R0,[R4, #+0]
+    550                  }
+    551                case 0:
+    552                default:
+    553                  break;   
+    554                }
+    555              }      
+    556            case GetIDSuccess:
+    557              {
+    558                break;
+   \                     ??FWGetID_14: (+1)
+   \                     ??FWGetID_5: (+1)
+   \       0xA8   0xE000             B        ??FWGetID_7
+    559              }
+    560            case GetIDFail:
+    561              {
+    562                break;
+   \                     ??FWGetID_4: (+1)
+   \       0xAA   0xE7FF             B        ??FWGetID_7
+    563              }
+    564            default:
+    565              break;   
+    566            }   
+    567            return((uint8_t)fwGetIDState);
+   \                     ??FWGetID_6: (+1)
+   \                     ??FWGetID_7: (+1)
+   \       0xAC   0x7820             LDRB     R0,[R4, #+0]
+   \       0xAE   0xBD70             POP      {R4-R6,PC}       ;; return
+   \                     ??FWGetID_0:
+   \       0xB0   0x....'....        DC32     fwGetIDState
+    568          }
+    569          
+    570          /**
+    571          ********************************************************************************************************************************
+    572          * @brief   Function of go execute target flash.
+    573          * @author  Pamela Lee
+    574          * @details 
+    575          * @param   StartingAddr starting address of Target system
+    576          * @return  - the current state of this stateMachine fwGoState 
+    577          ********************************************************************************************************************************
+    578          */
+
+   \                                 In section .text, align 2, keep-with-next
+    579          uint8_t FWGo(uint32_t StartingAddr)                     //Target system start execute at Starting Address
+    580          {
+   \                     FWGo: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    581            switch(fwGoState)
+   \        0x4   0x....             LDR      R4,??DataTable6_1
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD009             BEQ      ??FWGo_0
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD03E             BEQ      ??FWGo_1
+   \       0x10   0xD32C             BCC      ??FWGo_2
+   \       0x12   0x2804             CMP      R0,#+4
+   \       0x14   0xD100             BNE      .+4
+   \       0x16   0xE07E             B        ??FWGo_3
+   \       0x18   0xD36C             BCC      ??FWGo_4
+   \       0x1A   0x2805             CMP      R0,#+5
+   \       0x1C   0xD07C             BEQ      ??FWGo_5
+   \       0x1E   0xE07C             B        ??FWGo_6
+    582            {
+    583            case PreFwGo:                   
+    584              { 
+    585                _txFWdata= (uint8_t*) malloc(2);
+   \                     ??FWGo_0: (+1)
+   \       0x20   0x....             LDR      R5,??DataTable6_2
+   \       0x22   0x2002             MOVS     R0,#+2
+   \       0x24   0x....'....        BL       malloc
+   \       0x28   0x6028             STR      R0,[R5, #+0]
+    586                _txFWdata[0] = 0x21;                                        //setup cmd as Go command
+   \       0x2A   0x2021             MOVS     R0,#+33
+   \       0x2C   0x6829             LDR      R1,[R5, #+0]
+   \       0x2E   0x7008             STRB     R0,[R1, #+0]
+    587                _txFWdata[1] = 0xDE;
+   \       0x30   0x20DE             MOVS     R0,#+222
+   \       0x32   0x6829             LDR      R1,[R5, #+0]
+   \       0x34   0x7048             STRB     R0,[R1, #+1]
+    588                TXFWDatLen = 2;
+   \       0x36   0x....             LDR      R0,??DataTable6_3
+   \       0x38   0x2102             MOVS     R1,#+2
+   \       0x3A   0x8001             STRH     R1,[R0, #+0]
+    589                TXFWDatIndx = TXFWDatLen;
+   \       0x3C   0x8800             LDRH     R0,[R0, #+0]
+   \       0x3E   0x....             LDR      R1,??DataTable6
+   \       0x40   0x8008             STRH     R0,[R1, #+0]
+    590                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0x42   0x....'....        BL       getSysCount
+   \       0x46   0x....             LDR      R2,??DataTable6_4
+   \       0x48   0xC203             STM      R2!,{R0,R1}
+   \       0x4A   0x3A08             SUBS     R2,R2,#+8
+    591                FW_Tx(); 
+   \       0x4C   0x....'....        BL       FW_Tx
+    592                // end of prepare data for tx
+    593                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0x50   0x....'....        BL       getSysCount
+   \       0x54   0x2200             MOVS     R2,#+0
+   \       0x56   0x3064             ADDS     R0,R0,#+100
+   \       0x58   0x4151             ADCS     R1,R1,R2
+   \       0x5A   0x....             LDR      R2,??DataTable6_5
+   \       0x5C   0xC203             STM      R2!,{R0,R1}
+   \       0x5E   0x3A08             SUBS     R2,R2,#+8
+    594                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0x60   0x2064             MOVS     R0,#+100
+   \       0x62   0x....             LDR      R1,??DataTable6_6
+   \       0x64   0x8008             STRH     R0,[R1, #+0]
+    595                fwGoState = waitAckGoFw;       
+   \       0x66   0x2001             MOVS     R0,#+1
+   \       0x68   0x7020             STRB     R0,[R4, #+0]
+    596                break;
+   \       0x6A   0xE056             B        ??FWGo_7
+    597              }
+    598            case waitAckGoFw:
+    599              {
+    600                switch(waitForACK())
+   \                     ??FWGo_2: (+1)
+   \       0x6C   0x....'....        BL       waitForACK
+   \       0x70   0x281F             CMP      R0,#+31
+   \       0x72   0xD009             BEQ      ??FWGo_8
+   \       0x74   0x2879             CMP      R0,#+121
+   \       0x76   0xD004             BEQ      ??FWGo_9
+   \       0x78   0x2100             MOVS     R1,#+0
+   \       0x7A   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x7C   0x4288             CMP      R0,R1
+   \       0x7E   0xD003             BEQ      ??FWGo_8
+   \       0x80   0xE004             B        ??FWGo_10
+    601                {
+    602                case 0x79:    //ACK
+    603                  { //ACK
+    604                    fwGoState = FwGoAddr;
+   \                     ??FWGo_9: (+1)
+   \       0x82   0x2002             MOVS     R0,#+2
+   \       0x84   0x7020             STRB     R0,[R4, #+0]
+    605                    break;
+   \       0x86   0xE001             B        ??FWGo_11
+    606                  }  
+    607                case 0x1F:    //NACK        
+    608                case -1:      //Timeout
+    609                  { //NACK and Timeout
+    610                    fwGoState = GoFail;         //fail will stay in fail state
+   \                     ??FWGo_8: (+1)
+   \       0x88   0x2005             MOVS     R0,#+5
+   \       0x8A   0x7020             STRB     R0,[R4, #+0]
+    611                  }
+    612                case 0:
+    613                default:
+    614                  break;
+    615                }
+    616                break;
+   \                     ??FWGo_10: (+1)
+   \                     ??FWGo_11: (+1)
+   \       0x8C   0xE045             B        ??FWGo_7
+    617              }
+    618            case FwGoAddr:
+    619              { //ADDR_FLASH_PAGE_0
+    620                _txFWdata= (uint8_t*) malloc(5);
+   \                     ??FWGo_1: (+1)
+   \       0x8E   0x....             LDR      R5,??DataTable6_2
+   \       0x90   0x2005             MOVS     R0,#+5
+   \       0x92   0x....'....        BL       malloc
+   \       0x96   0x6028             STR      R0,[R5, #+0]
+    621                _txFWdata[0] = (uint8_t)(StartingAddr >> 24);                 
+   \       0x98   0x0E30             LSRS     R0,R6,#+24
+   \       0x9A   0x6829             LDR      R1,[R5, #+0]
+   \       0x9C   0x7008             STRB     R0,[R1, #+0]
+    622                _txFWdata[1] = (uint8_t)(StartingAddr >> 16); 
+   \       0x9E   0x0030             MOVS     R0,R6
+   \       0xA0   0x0C00             LSRS     R0,R0,#+16
+   \       0xA2   0x6829             LDR      R1,[R5, #+0]
+   \       0xA4   0x7048             STRB     R0,[R1, #+1]
+    623                _txFWdata[2] = (uint8_t)(StartingAddr >> 8); 
+   \       0xA6   0x0A30             LSRS     R0,R6,#+8
+   \       0xA8   0x6829             LDR      R1,[R5, #+0]
+   \       0xAA   0x7088             STRB     R0,[R1, #+2]
+    624                _txFWdata[3] = (uint8_t)StartingAddr;
+   \       0xAC   0x0030             MOVS     R0,R6
+   \       0xAE   0x6829             LDR      R1,[R5, #+0]
+   \       0xB0   0x70C8             STRB     R0,[R1, #+3]
+    625                _txFWdata[4] = XorBuf(_txFWdata, 4);
+   \       0xB2   0x2104             MOVS     R1,#+4
+   \       0xB4   0x6828             LDR      R0,[R5, #+0]
+   \       0xB6   0x....'....        BL       XorBuf
+   \       0xBA   0x6829             LDR      R1,[R5, #+0]
+   \       0xBC   0x7108             STRB     R0,[R1, #+4]
+    626                TXFWDatLen = 5;
+   \       0xBE   0x....             LDR      R0,??DataTable6_3
+   \       0xC0   0x2105             MOVS     R1,#+5
+   \       0xC2   0x8001             STRH     R1,[R0, #+0]
+    627                TXFWDatIndx = TXFWDatLen;
+   \       0xC4   0x8800             LDRH     R0,[R0, #+0]
+   \       0xC6   0x....             LDR      R1,??DataTable6
+   \       0xC8   0x8008             STRH     R0,[R1, #+0]
+    628                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0xCA   0x....'....        BL       getSysCount
+   \       0xCE   0x....             LDR      R2,??DataTable6_4
+   \       0xD0   0xC203             STM      R2!,{R0,R1}
+   \       0xD2   0x3A08             SUBS     R2,R2,#+8
+    629                FW_Tx(); 
+   \       0xD4   0x....'....        BL       FW_Tx
+    630                // end of prepare data for tx
+    631                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0xD8   0x....'....        BL       getSysCount
+   \       0xDC   0x2200             MOVS     R2,#+0
+   \       0xDE   0x3064             ADDS     R0,R0,#+100
+   \       0xE0   0x4151             ADCS     R1,R1,R2
+   \       0xE2   0x....             LDR      R2,??DataTable6_5
+   \       0xE4   0xC203             STM      R2!,{R0,R1}
+   \       0xE6   0x3A08             SUBS     R2,R2,#+8
+    632                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0xE8   0x2064             MOVS     R0,#+100
+   \       0xEA   0x....             LDR      R1,??DataTable6_6
+   \       0xEC   0x8008             STRH     R0,[R1, #+0]
+    633                fwGoState = waitAddrAckGoFw;  
+   \       0xEE   0x2003             MOVS     R0,#+3
+   \       0xF0   0x7020             STRB     R0,[R4, #+0]
+    634                break;
+   \       0xF2   0xE012             B        ??FWGo_7
+    635              }
+    636            case waitAddrAckGoFw:
+    637              {
+    638                switch(waitForACK())
+   \                     ??FWGo_4: (+1)
+   \       0xF4   0x....'....        BL       waitForACK
+   \       0xF8   0x281F             CMP      R0,#+31
+   \       0xFA   0xD009             BEQ      ??FWGo_12
+   \       0xFC   0x2879             CMP      R0,#+121
+   \       0xFE   0xD004             BEQ      ??FWGo_13
+   \      0x100   0x2100             MOVS     R1,#+0
+   \      0x102   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x104   0x4288             CMP      R0,R1
+   \      0x106   0xD003             BEQ      ??FWGo_12
+   \      0x108   0xE004             B        ??FWGo_14
+    639                {
+    640                case 0x79:    //ACK
+    641                  { //ACK
+    642                    fwGoState = GoSuccess;
+   \                     ??FWGo_13: (+1)
+   \      0x10A   0x2004             MOVS     R0,#+4
+   \      0x10C   0x7020             STRB     R0,[R4, #+0]
+    643                    break;
+   \      0x10E   0xE001             B        ??FWGo_15
+    644                  }  
+    645                case 0x1F:    //NACK        
+    646                case -1:      //Timeout
+    647                  { //NACK 
+    648                    fwGoState = GoFail;         //fail will stay in fail state
+   \                     ??FWGo_12: (+1)
+   \      0x110   0x2005             MOVS     R0,#+5
+   \      0x112   0x7020             STRB     R0,[R4, #+0]
+    649                  }
+    650                case 0:
+    651                default:
+    652                  break;
+    653                }
+    654                break;
+   \                     ??FWGo_14: (+1)
+   \                     ??FWGo_15: (+1)
+   \      0x114   0xE001             B        ??FWGo_7
+    655              }
+    656            case GoSuccess:                       
+    657              {
+    658                break;
+   \                     ??FWGo_3: (+1)
+   \      0x116   0xE000             B        ??FWGo_7
+    659              }
+    660            case GoFail:
+    661              {
+    662                break;
+   \                     ??FWGo_5: (+1)
+   \      0x118   0xE7FF             B        ??FWGo_7
+    663              }
+    664            default:
+    665              break;
+    666            }
+    667            return((uint8_t)fwGoState);
+   \                     ??FWGo_6: (+1)
+   \                     ??FWGo_7: (+1)
+   \      0x11A   0x7820             LDRB     R0,[R4, #+0]
+   \      0x11C   0xBD70             POP      {R4-R6,PC}       ;; return
+    668          }
+    669          
+    670          /**
+    671          ********************************************************************************************************************************
+    672          * @brief   Function of burnning firmware into target flash.
+    673          * @author  Pamela Lee
+    674          * @details - flash data should stored in input buffer (FW_DatBuf) into target flash
+    675          *          - the starting address is define in "ADDR_FLASH_PAGE_0"
+    676          *          - Block number store in  (motor_FW_Update_Control.WrBufBlkNO) ; each block is 256byte per block for example if 128kbyte flash MPU with be block number 0 to 511
+    677          *          - usage: first put data into "FW_DatBuf" and block number(data going to burn in target flash location), then choose fill in the starting-state (either WrFw_WithErase or  WrFw_WithOutErase).
+    678          *                   Call this function will burn the buffer data into target MPU. This function will return WrFw_WithOutErase (for successfully burnning data), the next burnning block can fill into 
+    679          *                   "FW_DatBuf" with the new block number, then the function will know this is next block of data to burn, until exhaust the whole firmware.
+    680          *                   The process can be finshed by putting a negative number into (motor_FW_Update_Control.WrBufBlkNO) = -1, the stateMachine will enter into the FWUpdateSuccess forever(endless loop)
+    681          *          - remark1: if any stage receive a negative acknowledgement(NAK), the stateMachine will enter into the FWUpdateSFail forever(endless loop)
+    682          *          - remark2: when stateMachine enter into a wait for external signal state( for example after finished the last block and jump to WrFw_WithOutErase )
+    683          *                     , stateMachine will keep running in this state without any further action!!!!!! until a new block of data or -1 in motor_FW_Update_Control.WrBufBlkNO.
+    684          *                
+    685          * @param   fwWrState  -- before execute contain startup state (either WrFw_WithErase or  WrFw_WithOutErase) for burning with or without Erase the whole flash
+    686          * @return  fwWrState  -- the current state of this stateMachine
+    687          ********************************************************************************************************************************
+    688          */
+
+   \                                 In section .text, align 2, keep-with-next
+    689          uint8_t FWWrStateMachine(void)
+    690          {
+   \                     FWWrStateMachine: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+    691            switch(fwWrState)
+   \        0x2   0x....             LDR      R4,??DataTable7
+   \        0x4   0x7820             LDRB     R0,[R4, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD01E             BEQ      ??FWWrStateMachine_0
+   \        0xA   0x2801             CMP      R0,#+1
+   \        0xC   0xD042             BEQ      ??FWWrStateMachine_1
+   \        0xE   0x2802             CMP      R0,#+2
+   \       0x10   0xD054             BEQ      ??FWWrStateMachine_2
+   \       0x12   0x2803             CMP      R0,#+3
+   \       0x14   0xD07A             BEQ      ??FWWrStateMachine_3
+   \       0x16   0x2804             CMP      R0,#+4
+   \       0x18   0xD100             BNE      .+4
+   \       0x1A   0xE08B             B        ??FWWrStateMachine_4
+   \       0x1C   0x2805             CMP      R0,#+5
+   \       0x1E   0xD100             BNE      .+4
+   \       0x20   0xE0C3             B        ??FWWrStateMachine_5
+   \       0x22   0x2806             CMP      R0,#+6
+   \       0x24   0xD100             BNE      .+4
+   \       0x26   0xE0D4             B        ??FWWrStateMachine_6
+   \       0x28   0x2807             CMP      R0,#+7
+   \       0x2A   0xD100             BNE      .+4
+   \       0x2C   0xE10D             B        ??FWWrStateMachine_7
+   \       0x2E   0x2808             CMP      R0,#+8
+   \       0x30   0xD100             BNE      .+4
+   \       0x32   0xE11E             B        ??FWWrStateMachine_8
+   \       0x34   0x2809             CMP      R0,#+9
+   \       0x36   0xD100             BNE      .+4
+   \       0x38   0xE147             B        ??FWWrStateMachine_9
+   \       0x3A   0x280C             CMP      R0,#+12
+   \       0x3C   0xD100             BNE      .+4
+   \       0x3E   0xE15B             B        ??FWWrStateMachine_10
+   \       0x40   0x280D             CMP      R0,#+13
+   \       0x42   0xD100             BNE      .+4
+   \       0x44   0xE15C             B        ??FWWrStateMachine_11
+   \       0x46   0xE15F             B        ??FWWrStateMachine_12
+    692            { /** ============================================================  Firmware download part to target ================================================================= **/   
+    693            case WrFw_WithErase:               /*******************************  Erase target whole flash stage ****************************************/
+    694              { //Erase the whole flash
+    695                // prepare data for tx
+    696                _txFWdata= (uint8_t*) malloc(2);
+   \                     ??FWWrStateMachine_0: (+1)
+   \       0x48   0x....             LDR      R5,??DataTable7_1
+   \       0x4A   0x2002             MOVS     R0,#+2
+   \       0x4C   0x....'....        BL       malloc
+   \       0x50   0x6028             STR      R0,[R5, #+0]
+    697                _txFWdata[0] = 0x44;                                        //setup cmd as extended erase
+   \       0x52   0x2044             MOVS     R0,#+68
+   \       0x54   0x6829             LDR      R1,[R5, #+0]
+   \       0x56   0x7008             STRB     R0,[R1, #+0]
+    698                _txFWdata[1] = 0xBB;
+   \       0x58   0x20BB             MOVS     R0,#+187
+   \       0x5A   0x6829             LDR      R1,[R5, #+0]
+   \       0x5C   0x7048             STRB     R0,[R1, #+1]
+    699                TXFWDatLen = 2;
+   \       0x5E   0x....             LDR      R0,??DataTable7_2
+   \       0x60   0x2102             MOVS     R1,#+2
+   \       0x62   0x8001             STRH     R1,[R0, #+0]
+    700                TXFWDatIndx = TXFWDatLen;
+   \       0x64   0x8800             LDRH     R0,[R0, #+0]
+   \       0x66   0x....             LDR      R1,??DataTable7_3
+   \       0x68   0x8008             STRH     R0,[R1, #+0]
+    701                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0x6A   0x....'....        BL       getSysCount
+   \       0x6E   0x....             LDR      R2,??DataTable7_4
+   \       0x70   0xC203             STM      R2!,{R0,R1}
+   \       0x72   0x3A08             SUBS     R2,R2,#+8
+    702                FW_Tx(); 
+   \       0x74   0x....'....        BL       FW_Tx
+    703                // end of prepare data for tx
+    704                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0x78   0x....'....        BL       getSysCount
+   \       0x7C   0x2200             MOVS     R2,#+0
+   \       0x7E   0x3064             ADDS     R0,R0,#+100
+   \       0x80   0x4151             ADCS     R1,R1,R2
+   \       0x82   0x....             LDR      R2,??DataTable7_5
+   \       0x84   0xC203             STM      R2!,{R0,R1}
+   \       0x86   0x3A08             SUBS     R2,R2,#+8
+    705                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0x88   0x2064             MOVS     R0,#+100
+   \       0x8A   0x....             LDR      R1,??DataTable7_6
+   \       0x8C   0x8008             STRH     R0,[R1, #+0]
+    706                fwWrState = WaitAckErase;     
+   \       0x8E   0x2001             MOVS     R0,#+1
+   \       0x90   0x7020             STRB     R0,[R4, #+0]
+    707                break;
+   \       0x92   0xE139             B        ??FWWrStateMachine_13
+    708              }
+    709            case WaitAckErase:  
+    710              {
+    711                switch(waitForACK())
+   \                     ??FWWrStateMachine_1: (+1)
+   \       0x94   0x....'....        BL       waitForACK
+   \       0x98   0x281F             CMP      R0,#+31
+   \       0x9A   0xD009             BEQ      ??FWWrStateMachine_14
+   \       0x9C   0x2879             CMP      R0,#+121
+   \       0x9E   0xD004             BEQ      ??FWWrStateMachine_15
+   \       0xA0   0x2100             MOVS     R1,#+0
+   \       0xA2   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0xA4   0x4288             CMP      R0,R1
+   \       0xA6   0xD003             BEQ      ??FWWrStateMachine_14
+   \       0xA8   0xE007             B        ??FWWrStateMachine_16
+    712                {
+    713                case 0x79:    //ACK
+    714                  { //ACK
+    715                    fwWrState = WholeFlashErase;
+   \                     ??FWWrStateMachine_15: (+1)
+   \       0xAA   0x2002             MOVS     R0,#+2
+   \       0xAC   0x7020             STRB     R0,[R4, #+0]
+    716                    break;
+   \       0xAE   0xE004             B        ??FWWrStateMachine_17
+    717                  }  
+    718                case 0x1F:    //NACK        
+    719                case -1:      //Timeout
+    720                  { //NACK and Timeout
+    721                    FW_TimeOutCounter = 0;
+   \                     ??FWWrStateMachine_14: (+1)
+   \       0xB0   0x2000             MOVS     R0,#+0
+   \       0xB2   0x....             LDR      R1,??DataTable7_6
+   \       0xB4   0x8008             STRH     R0,[R1, #+0]
+    722                    fwWrState = FWWrFail;         //fail will stay in fail state
+   \       0xB6   0x200D             MOVS     R0,#+13
+   \       0xB8   0x7020             STRB     R0,[R4, #+0]
+    723                  }
+    724                case 0:
+    725                default:
+    726                  break;
+    727                }
+    728                break;
+   \                     ??FWWrStateMachine_16: (+1)
+   \                     ??FWWrStateMachine_17: (+1)
+   \       0xBA   0xE125             B        ??FWWrStateMachine_13
+    729              }
+    730            case WholeFlashErase:
+    731              {    // prepare data for tx
+    732                _txFWdata= (uint8_t*) malloc(3);
+   \                     ??FWWrStateMachine_2: (+1)
+   \       0xBC   0x....             LDR      R5,??DataTable7_1
+   \       0xBE   0x2003             MOVS     R0,#+3
+   \       0xC0   0x....'....        BL       malloc
+   \       0xC4   0x6028             STR      R0,[R5, #+0]
+    733                _txFWdata[0] = 0xFF;                                        //global erase for target flash
+   \       0xC6   0x20FF             MOVS     R0,#+255
+   \       0xC8   0x6829             LDR      R1,[R5, #+0]
+   \       0xCA   0x7008             STRB     R0,[R1, #+0]
+    734                _txFWdata[1] = 0xFF;
+   \       0xCC   0x6829             LDR      R1,[R5, #+0]
+   \       0xCE   0x7048             STRB     R0,[R1, #+1]
+    735                _txFWdata[2] = 0x00;
+   \       0xD0   0x2000             MOVS     R0,#+0
+   \       0xD2   0x6829             LDR      R1,[R5, #+0]
+   \       0xD4   0x7088             STRB     R0,[R1, #+2]
+    736                TXFWDatLen = 3;
+   \       0xD6   0x2503             MOVS     R5,#+3
+   \       0xD8   0x....             LDR      R0,??DataTable7_2
+   \       0xDA   0x0029             MOVS     R1,R5
+   \       0xDC   0x8001             STRH     R1,[R0, #+0]
+    737                TXFWDatIndx = TXFWDatLen;
+   \       0xDE   0x8800             LDRH     R0,[R0, #+0]
+   \       0xE0   0x....             LDR      R1,??DataTable7_3
+   \       0xE2   0x8008             STRH     R0,[R1, #+0]
+    738                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0xE4   0x....'....        BL       getSysCount
+   \       0xE8   0x....             LDR      R2,??DataTable7_4
+   \       0xEA   0xC203             STM      R2!,{R0,R1}
+   \       0xEC   0x3A08             SUBS     R2,R2,#+8
+    739                FW_Tx(); 
+   \       0xEE   0x....'....        BL       FW_Tx
+    740                // end of prepare data for tx
+    741                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0xF2   0x....'....        BL       getSysCount
+   \       0xF6   0x2200             MOVS     R2,#+0
+   \       0xF8   0x3064             ADDS     R0,R0,#+100
+   \       0xFA   0x4151             ADCS     R1,R1,R2
+   \       0xFC   0x....             LDR      R2,??DataTable7_5
+   \       0xFE   0xC203             STM      R2!,{R0,R1}
+   \      0x100   0x3A08             SUBS     R2,R2,#+8
+    742                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \      0x102   0x2064             MOVS     R0,#+100
+   \      0x104   0x....             LDR      R1,??DataTable7_6
+   \      0x106   0x8008             STRH     R0,[R1, #+0]
+    743                fwWrState = WaitAckEraseFinal;     
+   \      0x108   0x7025             STRB     R5,[R4, #+0]
+    744                break;        
+   \      0x10A   0xE0FD             B        ??FWWrStateMachine_13
+    745              }
+    746            case WaitAckEraseFinal:  
+    747              {
+    748                switch(waitForACK())
+   \                     ??FWWrStateMachine_3: (+1)
+   \      0x10C   0x....'....        BL       waitForACK
+   \      0x110   0x281F             CMP      R0,#+31
+   \      0x112   0xD009             BEQ      ??FWWrStateMachine_18
+   \      0x114   0x2879             CMP      R0,#+121
+   \      0x116   0xD004             BEQ      ??FWWrStateMachine_19
+   \      0x118   0x2100             MOVS     R1,#+0
+   \      0x11A   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x11C   0x4288             CMP      R0,R1
+   \      0x11E   0xD003             BEQ      ??FWWrStateMachine_18
+   \      0x120   0xE007             B        ??FWWrStateMachine_20
+    749                {
+    750                case 0x79:    //ACK
+    751                  { //ACK
+    752                    fwWrState = WrFw_WithOutErase;
+   \                     ??FWWrStateMachine_19: (+1)
+   \      0x122   0x2004             MOVS     R0,#+4
+   \      0x124   0x7020             STRB     R0,[R4, #+0]
+    753                    break;
+   \      0x126   0xE004             B        ??FWWrStateMachine_21
+    754                  }  
+    755                case 0x1F:    //NACK        
+    756                case -1:      //Timeout
+    757                  { //NACK and Timeout
+    758                    FW_TimeOutCounter = 0;
+   \                     ??FWWrStateMachine_18: (+1)
+   \      0x128   0x2000             MOVS     R0,#+0
+   \      0x12A   0x....             LDR      R1,??DataTable7_6
+   \      0x12C   0x8008             STRH     R0,[R1, #+0]
+    759                    fwWrState = FWWrFail;         //fail will stay in fail state
+   \      0x12E   0x200D             MOVS     R0,#+13
+   \      0x130   0x7020             STRB     R0,[R4, #+0]
+    760                  }
+    761                case 0:
+    762                default:
+    763                  break;
+    764                }
+    765                break;
+   \                     ??FWWrStateMachine_20: (+1)
+   \                     ??FWWrStateMachine_21: (+1)
+   \      0x132   0xE0E9             B        ??FWWrStateMachine_13
+    766              } 
+    767            case WrFw_WithOutErase:                   /*******************************  Write target whole firmware stage ****************************************/
+    768              { 
+    769                if(motor_FW_Update_Control.WrBufBlkNO_s16 != previousWrittenBlkNO)
+   \                     ??FWWrStateMachine_4: (+1)
+   \      0x134   0x....             LDR      R0,??DataTable7_7
+   \      0x136   0x....             LDR      R1,??DataTable7_8
+   \      0x138   0x2202             MOVS     R2,#+2
+   \      0x13A   0x5E8A             LDRSH    R2,[R1, R2]
+   \      0x13C   0x2300             MOVS     R3,#+0
+   \      0x13E   0x5EC3             LDRSH    R3,[R0, R3]
+   \      0x140   0x429A             CMP      R2,R3
+   \      0x142   0xD031             BEQ      ??FWWrStateMachine_22
+    770                {
+    771                  if(motor_FW_Update_Control.WrBufBlkNO_s16 >= 0 )
+   \      0x144   0x2202             MOVS     R2,#+2
+   \      0x146   0x5E8A             LDRSH    R2,[R1, R2]
+   \      0x148   0x2A00             CMP      R2,#+0
+   \      0x14A   0xD429             BMI      ??FWWrStateMachine_23
+    772                  {//start a new block write
+    773                    motor_FW_Update_Control.Rd_Wr_busy_u16 = TRUE;
+   \      0x14C   0x2201             MOVS     R2,#+1
+   \      0x14E   0x80CA             STRH     R2,[R1, #+6]
+    774                    previousWrittenBlkNO = motor_FW_Update_Control.WrBufBlkNO_s16;
+   \      0x150   0x8849             LDRH     R1,[R1, #+2]
+   \      0x152   0x8001             STRH     R1,[R0, #+0]
+    775                    _txFWdata= (uint8_t*) malloc(2);
+   \      0x154   0x....             LDR      R5,??DataTable7_1
+   \      0x156   0x2002             MOVS     R0,#+2
+   \      0x158   0x....'....        BL       malloc
+   \      0x15C   0x6028             STR      R0,[R5, #+0]
+    776                    _txFWdata[0] = 0x31;                                        //setup cmd as extended erase
+   \      0x15E   0x2031             MOVS     R0,#+49
+   \      0x160   0x6829             LDR      R1,[R5, #+0]
+   \      0x162   0x7008             STRB     R0,[R1, #+0]
+    777                    _txFWdata[1] = 0xCE;
+   \      0x164   0x20CE             MOVS     R0,#+206
+   \      0x166   0x6829             LDR      R1,[R5, #+0]
+   \      0x168   0x7048             STRB     R0,[R1, #+1]
+    778                    TXFWDatLen = 2;
+   \      0x16A   0x....             LDR      R0,??DataTable7_2
+   \      0x16C   0x2102             MOVS     R1,#+2
+   \      0x16E   0x8001             STRH     R1,[R0, #+0]
+    779                    TXFWDatIndx = TXFWDatLen;
+   \      0x170   0x8800             LDRH     R0,[R0, #+0]
+   \      0x172   0x....             LDR      R1,??DataTable7_3
+   \      0x174   0x8008             STRH     R0,[R1, #+0]
+    780                    tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \      0x176   0x....'....        BL       getSysCount
+   \      0x17A   0x....             LDR      R2,??DataTable7_4
+   \      0x17C   0xC203             STM      R2!,{R0,R1}
+   \      0x17E   0x3A08             SUBS     R2,R2,#+8
+    781                    FW_Tx(); 
+   \      0x180   0x....'....        BL       FW_Tx
+    782                    // end of prepare data for tx
+    783                    tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \      0x184   0x....'....        BL       getSysCount
+   \      0x188   0x2200             MOVS     R2,#+0
+   \      0x18A   0x3064             ADDS     R0,R0,#+100
+   \      0x18C   0x4151             ADCS     R1,R1,R2
+   \      0x18E   0x....             LDR      R2,??DataTable7_5
+   \      0x190   0xC203             STM      R2!,{R0,R1}
+   \      0x192   0x3A08             SUBS     R2,R2,#+8
+    784                    FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \      0x194   0x2064             MOVS     R0,#+100
+   \      0x196   0x....             LDR      R1,??DataTable7_6
+   \      0x198   0x8008             STRH     R0,[R1, #+0]
+    785                    fwWrState = waitAckWrFw;
+   \      0x19A   0x2005             MOVS     R0,#+5
+   \      0x19C   0x7020             STRB     R0,[R4, #+0]
+   \      0x19E   0xE003             B        ??FWWrStateMachine_22
+    786                  }
+    787                  else
+    788                  {//the whole write process have been done
+    789                    motor_FW_Update_Control.Rd_Wr_busy_u16 = FALSE;
+   \                     ??FWWrStateMachine_23: (+1)
+   \      0x1A0   0x2000             MOVS     R0,#+0
+   \      0x1A2   0x80C8             STRH     R0,[R1, #+6]
+    790                    fwWrState = FWWrSuccess;         //all blk finish
+   \      0x1A4   0x200C             MOVS     R0,#+12
+   \      0x1A6   0x7020             STRB     R0,[R4, #+0]
+    791                  }         
+    792                }
+    793                break;
+   \                     ??FWWrStateMachine_22: (+1)
+   \      0x1A8   0xE0AE             B        ??FWWrStateMachine_13
+    794              }
+    795              
+    796            case waitAckWrFw:
+    797              {
+    798                switch(waitForACK())
+   \                     ??FWWrStateMachine_5: (+1)
+   \      0x1AA   0x....'....        BL       waitForACK
+   \      0x1AE   0x281F             CMP      R0,#+31
+   \      0x1B0   0xD009             BEQ      ??FWWrStateMachine_24
+   \      0x1B2   0x2879             CMP      R0,#+121
+   \      0x1B4   0xD004             BEQ      ??FWWrStateMachine_25
+   \      0x1B6   0x2100             MOVS     R1,#+0
+   \      0x1B8   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x1BA   0x4288             CMP      R0,R1
+   \      0x1BC   0xD003             BEQ      ??FWWrStateMachine_24
+   \      0x1BE   0xE007             B        ??FWWrStateMachine_26
+    799                {
+    800                case 0x79:    //ACK
+    801                  { //ACK
+    802                    fwWrState = WrFwAddr;
+   \                     ??FWWrStateMachine_25: (+1)
+   \      0x1C0   0x2006             MOVS     R0,#+6
+   \      0x1C2   0x7020             STRB     R0,[R4, #+0]
+    803                    break;
+   \      0x1C4   0xE004             B        ??FWWrStateMachine_27
+    804                  }  
+    805                case 0x1F:    //NACK        
+    806                case -1:      //Timeout
+    807                  { //NACK and Timeout
+    808                    FW_TimeOutCounter = 0;
+   \                     ??FWWrStateMachine_24: (+1)
+   \      0x1C6   0x2000             MOVS     R0,#+0
+   \      0x1C8   0x....             LDR      R1,??DataTable7_6
+   \      0x1CA   0x8008             STRH     R0,[R1, #+0]
+    809                    fwWrState = FWWrFail;         //fail will stay in fail state
+   \      0x1CC   0x200D             MOVS     R0,#+13
+   \      0x1CE   0x7020             STRB     R0,[R4, #+0]
+    810                  }
+    811                case 0:
+    812                default:
+    813                  break;
+    814                }
+    815                break;
+   \                     ??FWWrStateMachine_26: (+1)
+   \                     ??FWWrStateMachine_27: (+1)
+   \      0x1D0   0xE09A             B        ??FWWrStateMachine_13
+    816              }
+    817            case WrFwAddr:
+    818              { //ADDR_FLASH_PAGE_0
+    819                _txFWdata= (uint8_t*) malloc(5);
+   \                     ??FWWrStateMachine_6: (+1)
+   \      0x1D2   0x....             LDR      R5,??DataTable7_1
+   \      0x1D4   0x2005             MOVS     R0,#+5
+   \      0x1D6   0x....'....        BL       malloc
+   \      0x1DA   0x6028             STR      R0,[R5, #+0]
+    820                uint32_t blkStartAddr = ADDR_FLASH_PAGE_0 + (motor_FW_Update_Control.WrBufBlkNO_s16 * 256);
+   \      0x1DC   0x....             LDR      R0,??DataTable7_8
+   \      0x1DE   0x2102             MOVS     R1,#+2
+   \      0x1E0   0x5E40             LDRSH    R0,[R0, R1]
+   \      0x1E2   0x2180             MOVS     R1,#+128
+   \      0x1E4   0x0049             LSLS     R1,R1,#+1        ;; #+256
+   \      0x1E6   0x4341             MULS     R1,R0,R1
+   \      0x1E8   0x2080             MOVS     R0,#+128
+   \      0x1EA   0x0500             LSLS     R0,R0,#+20       ;; #+134217728
+   \      0x1EC   0x180E             ADDS     R6,R1,R0
+    821                _txFWdata[0] = (uint8_t)(blkStartAddr >> 24);                 
+   \      0x1EE   0x0E30             LSRS     R0,R6,#+24
+   \      0x1F0   0x6829             LDR      R1,[R5, #+0]
+   \      0x1F2   0x7008             STRB     R0,[R1, #+0]
+    822                _txFWdata[1] = (uint8_t)(blkStartAddr >> 16); 
+   \      0x1F4   0x0030             MOVS     R0,R6
+   \      0x1F6   0x0C00             LSRS     R0,R0,#+16
+   \      0x1F8   0x6829             LDR      R1,[R5, #+0]
+   \      0x1FA   0x7048             STRB     R0,[R1, #+1]
+    823                _txFWdata[2] = (uint8_t)(blkStartAddr >> 8); 
+   \      0x1FC   0x0A30             LSRS     R0,R6,#+8
+   \      0x1FE   0x6829             LDR      R1,[R5, #+0]
+   \      0x200   0x7088             STRB     R0,[R1, #+2]
+    824                _txFWdata[3] = (uint8_t)blkStartAddr;
+   \      0x202   0x0030             MOVS     R0,R6
+   \      0x204   0x6829             LDR      R1,[R5, #+0]
+   \      0x206   0x70C8             STRB     R0,[R1, #+3]
+    825                _txFWdata[4] = XorBuf(_txFWdata, 4);
+   \      0x208   0x2104             MOVS     R1,#+4
+   \      0x20A   0x6828             LDR      R0,[R5, #+0]
+   \      0x20C   0x....'....        BL       XorBuf
+   \      0x210   0x6829             LDR      R1,[R5, #+0]
+   \      0x212   0x7108             STRB     R0,[R1, #+4]
+    826                TXFWDatLen = 5;
+   \      0x214   0x....             LDR      R0,??DataTable7_2
+   \      0x216   0x2105             MOVS     R1,#+5
+   \      0x218   0x8001             STRH     R1,[R0, #+0]
+    827                TXFWDatIndx = TXFWDatLen;
+   \      0x21A   0x8800             LDRH     R0,[R0, #+0]
+   \      0x21C   0x....             LDR      R1,??DataTable7_3
+   \      0x21E   0x8008             STRH     R0,[R1, #+0]
+    828                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \      0x220   0x....'....        BL       getSysCount
+   \      0x224   0x....             LDR      R2,??DataTable7_4
+   \      0x226   0xC203             STM      R2!,{R0,R1}
+   \      0x228   0x3A08             SUBS     R2,R2,#+8
+    829                FW_Tx(); 
+   \      0x22A   0x....'....        BL       FW_Tx
+    830                // end of prepare data for tx
+    831                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \      0x22E   0x....'....        BL       getSysCount
+   \      0x232   0x2200             MOVS     R2,#+0
+   \      0x234   0x3064             ADDS     R0,R0,#+100
+   \      0x236   0x4151             ADCS     R1,R1,R2
+   \      0x238   0x....             LDR      R2,??DataTable7_5
+   \      0x23A   0xC203             STM      R2!,{R0,R1}
+   \      0x23C   0x3A08             SUBS     R2,R2,#+8
+    832                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \      0x23E   0x2064             MOVS     R0,#+100
+   \      0x240   0x....             LDR      R1,??DataTable7_6
+   \      0x242   0x8008             STRH     R0,[R1, #+0]
+    833                fwWrState = waitAddrAckWrFw;  
+   \      0x244   0x2007             MOVS     R0,#+7
+   \      0x246   0x7020             STRB     R0,[R4, #+0]
+    834                break;
+   \      0x248   0xE05E             B        ??FWWrStateMachine_13
+    835              }
+    836            case waitAddrAckWrFw:
+    837              {
+    838                switch(waitForACK())
+   \                     ??FWWrStateMachine_7: (+1)
+   \      0x24A   0x....'....        BL       waitForACK
+   \      0x24E   0x281F             CMP      R0,#+31
+   \      0x250   0xD009             BEQ      ??FWWrStateMachine_28
+   \      0x252   0x2879             CMP      R0,#+121
+   \      0x254   0xD004             BEQ      ??FWWrStateMachine_29
+   \      0x256   0x2100             MOVS     R1,#+0
+   \      0x258   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x25A   0x4288             CMP      R0,R1
+   \      0x25C   0xD003             BEQ      ??FWWrStateMachine_28
+   \      0x25E   0xE007             B        ??FWWrStateMachine_30
+    839                {
+    840                case 0x79:    //ACK
+    841                  { //ACK
+    842                    fwWrState = WrFwData;
+   \                     ??FWWrStateMachine_29: (+1)
+   \      0x260   0x2008             MOVS     R0,#+8
+   \      0x262   0x7020             STRB     R0,[R4, #+0]
+    843                    break;
+   \      0x264   0xE004             B        ??FWWrStateMachine_31
+    844                  }  
+    845                case 0x1F:    //NACK        
+    846                case -1:      //Timeout
+    847                  { //NACK and Timeout
+    848                    FW_TimeOutCounter = 0;
+   \                     ??FWWrStateMachine_28: (+1)
+   \      0x266   0x2000             MOVS     R0,#+0
+   \      0x268   0x....             LDR      R1,??DataTable7_6
+   \      0x26A   0x8008             STRH     R0,[R1, #+0]
+    849                    fwWrState = FWWrFail;         //fail will stay in fail state
+   \      0x26C   0x200D             MOVS     R0,#+13
+   \      0x26E   0x7020             STRB     R0,[R4, #+0]
+    850                  }
+    851                case 0:
+    852                default:
+    853                  break;
+    854                }
+    855                break;
+   \                     ??FWWrStateMachine_30: (+1)
+   \                     ??FWWrStateMachine_31: (+1)
+   \      0x270   0xE04A             B        ??FWWrStateMachine_13
+    856              }
+    857            case WrFwData:
+    858              { //Len + 256 byte data + Checksum byte
+    859                _txFWdata = (uint8_t*) malloc(258);
+   \                     ??FWWrStateMachine_8: (+1)
+   \      0x272   0x....             LDR      R6,??DataTable7_1
+   \      0x274   0x2581             MOVS     R5,#+129
+   \      0x276   0x006D             LSLS     R5,R5,#+1        ;; #+258
+   \      0x278   0x0028             MOVS     R0,R5
+   \      0x27A   0x....'....        BL       malloc
+   \      0x27E   0x6030             STR      R0,[R6, #+0]
+    860                _txFWdata = FW_DatBuf;                                      //start of data address                               
+   \      0x280   0x....             LDR      R0,??DataTable8
+   \      0x282   0x6030             STR      R0,[R6, #+0]
+    861                _txFWdata[257] = XorBuf(_txFWdata, 257);                    //send 256 byte
+   \      0x284   0x21FF             MOVS     R1,#+255
+   \      0x286   0x1C89             ADDS     R1,R1,#+2        ;; #+257
+   \      0x288   0x6830             LDR      R0,[R6, #+0]
+   \      0x28A   0x....'....        BL       XorBuf
+   \      0x28E   0x6831             LDR      R1,[R6, #+0]
+   \      0x290   0x22FF             MOVS     R2,#+255
+   \      0x292   0x1C92             ADDS     R2,R2,#+2        ;; #+257
+   \      0x294   0x5488             STRB     R0,[R1, R2]
+    862                TXFWDatLen = 258;
+   \      0x296   0x....             LDR      R0,??DataTable7_2
+   \      0x298   0x8005             STRH     R5,[R0, #+0]
+    863                TXFWDatIndx = TXFWDatLen;
+   \      0x29A   0x8800             LDRH     R0,[R0, #+0]
+   \      0x29C   0x....             LDR      R1,??DataTable7_3
+   \      0x29E   0x8008             STRH     R0,[R1, #+0]
+    864                tt_FW_TxDelayTime = getSysCount();                           //store time tick value  
+   \      0x2A0   0x....'....        BL       getSysCount
+   \      0x2A4   0x....             LDR      R2,??DataTable7_4
+   \      0x2A6   0xC203             STM      R2!,{R0,R1}
+   \      0x2A8   0x3A08             SUBS     R2,R2,#+8
+    865                FW_Tx(); 
+   \      0x2AA   0x....'....        BL       FW_Tx
+    866                // end of prepare data for tx
+    867                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;         //store time tick value 
+   \      0x2AE   0x....'....        BL       getSysCount
+   \      0x2B2   0x2200             MOVS     R2,#+0
+   \      0x2B4   0x3064             ADDS     R0,R0,#+100
+   \      0x2B6   0x4151             ADCS     R1,R1,R2
+   \      0x2B8   0x....             LDR      R2,??DataTable7_5
+   \      0x2BA   0xC203             STM      R2!,{R0,R1}
+   \      0x2BC   0x3A08             SUBS     R2,R2,#+8
+    868                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                    //setup timeout value for ACK wait timeout
+   \      0x2BE   0x2064             MOVS     R0,#+100
+   \      0x2C0   0x....             LDR      R1,??DataTable7_6
+   \      0x2C2   0x8008             STRH     R0,[R1, #+0]
+    869                fwWrState = waitAckWrFwFinal;  
+   \      0x2C4   0x2009             MOVS     R0,#+9
+   \      0x2C6   0x7020             STRB     R0,[R4, #+0]
+    870                break;
+   \      0x2C8   0xE01E             B        ??FWWrStateMachine_13
+    871              }
+    872            case waitAckWrFwFinal:     
+    873              {
+    874                switch(waitForACK())
+   \                     ??FWWrStateMachine_9: (+1)
+   \      0x2CA   0x....'....        BL       waitForACK
+   \      0x2CE   0x281F             CMP      R0,#+31
+   \      0x2D0   0xD00C             BEQ      ??FWWrStateMachine_32
+   \      0x2D2   0x2879             CMP      R0,#+121
+   \      0x2D4   0xD004             BEQ      ??FWWrStateMachine_33
+   \      0x2D6   0x2100             MOVS     R1,#+0
+   \      0x2D8   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x2DA   0x4288             CMP      R0,R1
+   \      0x2DC   0xD006             BEQ      ??FWWrStateMachine_32
+   \      0x2DE   0xE00A             B        ??FWWrStateMachine_34
+    875                {
+    876                case 0x79:    //ACK
+    877                  { //ACK
+    878                    motor_FW_Update_Control.Rd_Wr_busy_u16 = FALSE;
+   \                     ??FWWrStateMachine_33: (+1)
+   \      0x2E0   0x2000             MOVS     R0,#+0
+   \      0x2E2   0x....             LDR      R1,??DataTable7_8
+   \      0x2E4   0x80C8             STRH     R0,[R1, #+6]
+    879                    fwWrState = WrFw_WithOutErase;
+   \      0x2E6   0x2004             MOVS     R0,#+4
+   \      0x2E8   0x7020             STRB     R0,[R4, #+0]
+    880                    break;
+   \      0x2EA   0xE004             B        ??FWWrStateMachine_35
+    881                  }  
+    882                case 0x1F:    //NACK        
+    883                case -1:      //Timeout
+    884                  { //NACK and Timeout
+    885                    FW_TimeOutCounter = 0;
+   \                     ??FWWrStateMachine_32: (+1)
+   \      0x2EC   0x2000             MOVS     R0,#+0
+   \      0x2EE   0x....             LDR      R1,??DataTable7_6
+   \      0x2F0   0x8008             STRH     R0,[R1, #+0]
+    886                    fwWrState = FWWrFail;         //fail will stay in fail state
+   \      0x2F2   0x200D             MOVS     R0,#+13
+   \      0x2F4   0x7020             STRB     R0,[R4, #+0]
+    887                  }
+    888                case 0:
+    889                default:
+    890                  break;
+    891                }
+    892                break;
+   \                     ??FWWrStateMachine_34: (+1)
+   \                     ??FWWrStateMachine_35: (+1)
+   \      0x2F6   0xE007             B        ??FWWrStateMachine_13
+    893              }
+    894              /** ============================================================ end of Firmware download part to target ================================================================= **/          
+    895              
+    896            case FWWrSuccess:                       /*******************************  Write protection for target firmware stage ****************************************/
+    897              {
+    898                motor_FW_Update_Control.Rd_Wr_busy_u16 = FALSE;
+   \                     ??FWWrStateMachine_10: (+1)
+   \      0x2F8   0x2000             MOVS     R0,#+0
+   \      0x2FA   0x....             LDR      R1,??DataTable7_8
+   \      0x2FC   0x80C8             STRH     R0,[R1, #+6]
+    899                break;
+   \      0x2FE   0xE003             B        ??FWWrStateMachine_13
+    900              }
+    901            case FWWrFail:
+    902              {
+    903                motor_FW_Update_Control.Rd_Wr_busy_u16 = FALSE;
+   \                     ??FWWrStateMachine_11: (+1)
+   \      0x300   0x2000             MOVS     R0,#+0
+   \      0x302   0x....             LDR      R1,??DataTable7_8
+   \      0x304   0x80C8             STRH     R0,[R1, #+6]
+    904                break;
+   \      0x306   0xE7FF             B        ??FWWrStateMachine_13
+    905              }
+    906            default:
+    907              break;
+    908            }
+    909            return((uint8_t)fwWrState);
+   \                     ??FWWrStateMachine_12: (+1)
+   \                     ??FWWrStateMachine_13: (+1)
+   \      0x308   0x7820             LDRB     R0,[R4, #+0]
+   \      0x30A   0xBD70             POP      {R4-R6,PC}       ;; return
+    910          }
+    911          
+    912          /**
+    913          ********************************************************************************************************************************
+    914          * @brief   Function of Read block of firmware from target flash.
+    915          * @author  Pamela Lee
+    916          * @warning - The read size cannot larger than the Usart buffers(internal and transparent) 
+    917          *          - Current read data size will be 64byte(for both internal and transparent buffers are 80byte).
+    918          *             Size can be increase to 256 but need to also increase both internal and transparent buffers, with
+    919          *             the RingBuf_GetUsedNumOfElements() function return type increase from uint8_t to uint16_t.
+    920          * @details - flash data should stored in input buffer (FW_DatBuf) into target flash
+    921          *          - the starting address is define in "ADDR_FLASH_PAGE_0"
+    922          *          - Block number store in  (motor_FW_Update_Control.RdBufBlkNO) ; each block is 64byte per block for example if 128kbyte flash MPU with be block number 0 to 2048
+    923          *          - usage: Enter the block number(data going to read from target flash location), then just call this function.
+    924          *                
+    925          * @param   
+    926          * @return  - the current state of this stateMachine fwRdState 
+    927          *          - flash data should stored into buffer (_FW_RdDatBuf) from target flash
+    928          ********************************************************************************************************************************
+    929          */
+
+   \                                 In section .text, align 2, keep-with-next
+    930          uint8_t FWBlkRead(uint8_t* _FW_RdDatBuf)
+    931          {
+   \                     FWBlkRead: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    932            switch(fwRdState)
+   \        0x4   0x....             LDR      R4,??DataTable10
+   \        0x6   0x7820             LDRB     R0,[R4, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD011             BEQ      ??FWBlkRead_0
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD046             BEQ      ??FWBlkRead_1
+   \       0x10   0xD334             BCC      ??FWBlkRead_2
+   \       0x12   0x2804             CMP      R0,#+4
+   \       0x14   0xD100             BNE      .+4
+   \       0x16   0xE08F             B        ??FWBlkRead_3
+   \       0x18   0xD37D             BCC      ??FWBlkRead_4
+   \       0x1A   0x2806             CMP      R0,#+6
+   \       0x1C   0xD100             BNE      .+4
+   \       0x1E   0xE0C5             B        ??FWBlkRead_5
+   \       0x20   0xD200             BCS      .+4
+   \       0x22   0xE0B2             B        ??FWBlkRead_6
+   \       0x24   0x2808             CMP      R0,#+8
+   \       0x26   0xD100             BNE      .+4
+   \       0x28   0xE0D1             B        ??FWBlkRead_7
+   \       0x2A   0xD200             BCS      .+4
+   \       0x2C   0xE0CE             B        ??FWBlkRead_8
+   \       0x2E   0xE0CF             B        ??FWBlkRead_9
+    933            {
+    934            case PreFwRd:                   
+    935              { 
+    936                _txFWdata= (uint8_t*) malloc(2);
+   \                     ??FWBlkRead_0: (+1)
+   \       0x30   0x....             LDR      R5,??DataTable10_1
+   \       0x32   0x2002             MOVS     R0,#+2
+   \       0x34   0x....'....        BL       malloc
+   \       0x38   0x6028             STR      R0,[R5, #+0]
+    937                _txFWdata[0] = 0x11;                                        //setup cmd as Read Memory
+   \       0x3A   0x2011             MOVS     R0,#+17
+   \       0x3C   0x6829             LDR      R1,[R5, #+0]
+   \       0x3E   0x7008             STRB     R0,[R1, #+0]
+    938                _txFWdata[1] = 0xEE;
+   \       0x40   0x20EE             MOVS     R0,#+238
+   \       0x42   0x6829             LDR      R1,[R5, #+0]
+   \       0x44   0x7048             STRB     R0,[R1, #+1]
+    939                TXFWDatLen = 2;
+   \       0x46   0x....             LDR      R0,??DataTable10_2
+   \       0x48   0x2102             MOVS     R1,#+2
+   \       0x4A   0x8001             STRH     R1,[R0, #+0]
+    940                TXFWDatIndx = TXFWDatLen;
+   \       0x4C   0x8800             LDRH     R0,[R0, #+0]
+   \       0x4E   0x....             LDR      R1,??DataTable10_3
+   \       0x50   0x8008             STRH     R0,[R1, #+0]
+    941                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0x52   0x....'....        BL       getSysCount
+   \       0x56   0x....             LDR      R2,??DataTable10_4
+   \       0x58   0xC203             STM      R2!,{R0,R1}
+   \       0x5A   0x3A08             SUBS     R2,R2,#+8
+    942                FW_Tx(); 
+   \       0x5C   0x....'....        BL       FW_Tx
+    943                // end of prepare data for tx
+    944                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0x60   0x....'....        BL       getSysCount
+   \       0x64   0x2200             MOVS     R2,#+0
+   \       0x66   0x3064             ADDS     R0,R0,#+100
+   \       0x68   0x4151             ADCS     R1,R1,R2
+   \       0x6A   0x....             LDR      R2,??DataTable11
+   \       0x6C   0xC203             STM      R2!,{R0,R1}
+   \       0x6E   0x3A08             SUBS     R2,R2,#+8
+    945                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \       0x70   0x2064             MOVS     R0,#+100
+   \       0x72   0x....             LDR      R1,??DataTable11_1
+   \       0x74   0x8008             STRH     R0,[R1, #+0]
+    946                fwRdState = waitAckRdFw;       
+   \       0x76   0x2001             MOVS     R0,#+1
+   \       0x78   0x7020             STRB     R0,[R4, #+0]
+    947                break;
+   \       0x7A   0xE0A9             B        ??FWBlkRead_10
+    948              }
+    949            case waitAckRdFw:
+    950              {
+    951                switch(waitForACK())
+   \                     ??FWBlkRead_2: (+1)
+   \       0x7C   0x....'....        BL       waitForACK
+   \       0x80   0x281F             CMP      R0,#+31
+   \       0x82   0xD009             BEQ      ??FWBlkRead_11
+   \       0x84   0x2879             CMP      R0,#+121
+   \       0x86   0xD004             BEQ      ??FWBlkRead_12
+   \       0x88   0x2100             MOVS     R1,#+0
+   \       0x8A   0x43C9             MVNS     R1,R1            ;; #-1
+   \       0x8C   0x4288             CMP      R0,R1
+   \       0x8E   0xD003             BEQ      ??FWBlkRead_11
+   \       0x90   0xE004             B        ??FWBlkRead_13
+    952                {
+    953                case 0x79:    //ACK
+    954                  { //ACK
+    955                    fwRdState = FwRdAddr;
+   \                     ??FWBlkRead_12: (+1)
+   \       0x92   0x2002             MOVS     R0,#+2
+   \       0x94   0x7020             STRB     R0,[R4, #+0]
+    956                    break;
+   \       0x96   0xE001             B        ??FWBlkRead_14
+    957                  }  
+    958                case 0x1F:    //NACK        
+    959                case -1:      //Timeout
+    960                  { //NACK and Timeout
+    961                    fwRdState = RdFail;         //fail will stay in fail state
+   \                     ??FWBlkRead_11: (+1)
+   \       0x98   0x2008             MOVS     R0,#+8
+   \       0x9A   0x7020             STRB     R0,[R4, #+0]
+    962                  }
+    963                case 0:
+    964                default:
+    965                  break;
+    966                }
+    967                break;
+   \                     ??FWBlkRead_13: (+1)
+   \                     ??FWBlkRead_14: (+1)
+   \       0x9C   0xE098             B        ??FWBlkRead_10
+    968              }
+    969            case FwRdAddr:
+    970              { //ADDR_FLASH_PAGE_0
+    971                _txFWdata= (uint8_t*) malloc(5);
+   \                     ??FWBlkRead_1: (+1)
+   \       0x9E   0x....             LDR      R5,??DataTable10_1
+   \       0xA0   0x2005             MOVS     R0,#+5
+   \       0xA2   0x....'....        BL       malloc
+   \       0xA6   0x6028             STR      R0,[R5, #+0]
+    972                uint32_t blkStartAddr = ADDR_FLASH_PAGE_0 + (motor_FW_Update_Control.RdBufBlkNO_s16 * 256);
+   \       0xA8   0x....             LDR      R0,??DataTable11_2
+   \       0xAA   0x2104             MOVS     R1,#+4
+   \       0xAC   0x5E40             LDRSH    R0,[R0, R1]
+   \       0xAE   0x2180             MOVS     R1,#+128
+   \       0xB0   0x0049             LSLS     R1,R1,#+1        ;; #+256
+   \       0xB2   0x4341             MULS     R1,R0,R1
+   \       0xB4   0x2080             MOVS     R0,#+128
+   \       0xB6   0x0500             LSLS     R0,R0,#+20       ;; #+134217728
+   \       0xB8   0x180F             ADDS     R7,R1,R0
+    973                _txFWdata[0] = (uint8_t)(blkStartAddr >> 24);                 
+   \       0xBA   0x0E38             LSRS     R0,R7,#+24
+   \       0xBC   0x6829             LDR      R1,[R5, #+0]
+   \       0xBE   0x7008             STRB     R0,[R1, #+0]
+    974                _txFWdata[1] = (uint8_t)(blkStartAddr >> 16); 
+   \       0xC0   0x0038             MOVS     R0,R7
+   \       0xC2   0x0C00             LSRS     R0,R0,#+16
+   \       0xC4   0x6829             LDR      R1,[R5, #+0]
+   \       0xC6   0x7048             STRB     R0,[R1, #+1]
+    975                _txFWdata[2] = (uint8_t)(blkStartAddr >> 8); 
+   \       0xC8   0x0A38             LSRS     R0,R7,#+8
+   \       0xCA   0x6829             LDR      R1,[R5, #+0]
+   \       0xCC   0x7088             STRB     R0,[R1, #+2]
+    976                _txFWdata[3] = (uint8_t)blkStartAddr;
+   \       0xCE   0x0038             MOVS     R0,R7
+   \       0xD0   0x6829             LDR      R1,[R5, #+0]
+   \       0xD2   0x70C8             STRB     R0,[R1, #+3]
+    977                _txFWdata[4] = XorBuf(_txFWdata, 4);
+   \       0xD4   0x2104             MOVS     R1,#+4
+   \       0xD6   0x6828             LDR      R0,[R5, #+0]
+   \       0xD8   0x....'....        BL       XorBuf
+   \       0xDC   0x6829             LDR      R1,[R5, #+0]
+   \       0xDE   0x7108             STRB     R0,[R1, #+4]
+    978                TXFWDatLen = 5;
+   \       0xE0   0x....             LDR      R0,??DataTable10_2
+   \       0xE2   0x2105             MOVS     R1,#+5
+   \       0xE4   0x8001             STRH     R1,[R0, #+0]
+    979                TXFWDatIndx = TXFWDatLen;
+   \       0xE6   0x8800             LDRH     R0,[R0, #+0]
+   \       0xE8   0x....             LDR      R1,??DataTable10_3
+   \       0xEA   0x8008             STRH     R0,[R1, #+0]
+    980                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \       0xEC   0x....'....        BL       getSysCount
+   \       0xF0   0x....             LDR      R2,??DataTable10_4
+   \       0xF2   0xC203             STM      R2!,{R0,R1}
+   \       0xF4   0x3A08             SUBS     R2,R2,#+8
+    981                FW_Tx(); 
+   \       0xF6   0x....'....        BL       FW_Tx
+    982                // end of prepare data for tx
+    983                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \       0xFA   0x....'....        BL       getSysCount
+   \       0xFE   0x2200             MOVS     R2,#+0
+   \      0x100   0x3064             ADDS     R0,R0,#+100
+   \      0x102   0x4151             ADCS     R1,R1,R2
+   \      0x104   0x....             LDR      R2,??DataTable11
+   \      0x106   0xC203             STM      R2!,{R0,R1}
+   \      0x108   0x3A08             SUBS     R2,R2,#+8
+    984                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \      0x10A   0x2064             MOVS     R0,#+100
+   \      0x10C   0x....             LDR      R1,??DataTable11_1
+   \      0x10E   0x8008             STRH     R0,[R1, #+0]
+    985                fwRdState = waitAddrAckRdFw;  
+   \      0x110   0x2003             MOVS     R0,#+3
+   \      0x112   0x7020             STRB     R0,[R4, #+0]
+    986                break;
+   \      0x114   0xE05C             B        ??FWBlkRead_10
+    987              }
+    988            case waitAddrAckRdFw:
+    989              {
+    990                switch(waitForACK())
+   \                     ??FWBlkRead_4: (+1)
+   \      0x116   0x....'....        BL       waitForACK
+   \      0x11A   0x281F             CMP      R0,#+31
+   \      0x11C   0xD009             BEQ      ??FWBlkRead_15
+   \      0x11E   0x2879             CMP      R0,#+121
+   \      0x120   0xD004             BEQ      ??FWBlkRead_16
+   \      0x122   0x2100             MOVS     R1,#+0
+   \      0x124   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x126   0x4288             CMP      R0,R1
+   \      0x128   0xD003             BEQ      ??FWBlkRead_15
+   \      0x12A   0xE004             B        ??FWBlkRead_17
+    991                {
+    992                case 0x79:    //ACK
+    993                  { //ACK
+    994                    fwRdState = FwRdLen;
+   \                     ??FWBlkRead_16: (+1)
+   \      0x12C   0x2004             MOVS     R0,#+4
+   \      0x12E   0x7020             STRB     R0,[R4, #+0]
+    995                    break;
+   \      0x130   0xE001             B        ??FWBlkRead_18
+    996                  }  
+    997                case 0x1F:    //NACK        
+    998                case -1:      //Timeout
+    999                  { //NACK 
+   1000                    fwRdState = RdFail;         //fail will stay in fail state
+   \                     ??FWBlkRead_15: (+1)
+   \      0x132   0x2008             MOVS     R0,#+8
+   \      0x134   0x7020             STRB     R0,[R4, #+0]
+   1001                  }
+   1002                case 0:
+   1003                default:
+   1004                  break;
+   1005                }
+   1006                break;
+   \                     ??FWBlkRead_17: (+1)
+   \                     ??FWBlkRead_18: (+1)
+   \      0x136   0xE04B             B        ??FWBlkRead_10
+   1007              }
+   1008            case FwRdLen: 
+   1009              {
+   1010                _txFWdata= (uint8_t*) malloc(2);
+   \                     ??FWBlkRead_3: (+1)
+   \      0x138   0x....             LDR      R5,??DataTable10_1
+   \      0x13A   0x2002             MOVS     R0,#+2
+   \      0x13C   0x....'....        BL       malloc
+   \      0x140   0x6028             STR      R0,[R5, #+0]
+   1011                _txFWdata[0] = 0x3f;                                        //data length = 0x3f =>63
+   \      0x142   0x203F             MOVS     R0,#+63
+   \      0x144   0x6829             LDR      R1,[R5, #+0]
+   \      0x146   0x7008             STRB     R0,[R1, #+0]
+   1012                _txFWdata[1] = _txFWdata[0] ^ 0xFF;                          //Checksum: XOR byte 8 (complement of byte 8)
+   \      0x148   0x6828             LDR      R0,[R5, #+0]
+   \      0x14A   0x7800             LDRB     R0,[R0, #+0]
+   \      0x14C   0x21FF             MOVS     R1,#+255
+   \      0x14E   0x4041             EORS     R1,R1,R0
+   \      0x150   0x6828             LDR      R0,[R5, #+0]
+   \      0x152   0x7041             STRB     R1,[R0, #+1]
+   1013                TXFWDatLen = 2;
+   \      0x154   0x....             LDR      R0,??DataTable10_2
+   \      0x156   0x2102             MOVS     R1,#+2
+   \      0x158   0x8001             STRH     R1,[R0, #+0]
+   1014                TXFWDatIndx = TXFWDatLen;
+   \      0x15A   0x8800             LDRH     R0,[R0, #+0]
+   \      0x15C   0x....             LDR      R1,??DataTable10_3
+   \      0x15E   0x8008             STRH     R0,[R1, #+0]
+   1015                tt_FW_TxDelayTime = getSysCount();                          //store time tick value  
+   \      0x160   0x....'....        BL       getSysCount
+   \      0x164   0x....             LDR      R2,??DataTable10_4
+   \      0x166   0xC203             STM      R2!,{R0,R1}
+   \      0x168   0x3A08             SUBS     R2,R2,#+8
+   1016                FW_Tx(); 
+   \      0x16A   0x....'....        BL       FW_Tx
+   1017                // end of prepare data for tx
+   1018                tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;                          //store time tick value 
+   \      0x16E   0x....'....        BL       getSysCount
+   \      0x172   0x2200             MOVS     R2,#+0
+   \      0x174   0x3064             ADDS     R0,R0,#+100
+   \      0x176   0x4151             ADCS     R1,R1,R2
+   \      0x178   0x....             LDR      R2,??DataTable11
+   \      0x17A   0xC203             STM      R2!,{R0,R1}
+   \      0x17C   0x3A08             SUBS     R2,R2,#+8
+   1019                FW_TimeOutCounter = NumOfFWTimeOutLoop;                                     //setup timeout value for ACK wait timeout
+   \      0x17E   0x2064             MOVS     R0,#+100
+   \      0x180   0x....             LDR      R1,??DataTable11_1
+   \      0x182   0x8008             STRH     R0,[R1, #+0]
+   1020                fwRdState = waitLenAckRdFw;       
+   \      0x184   0x2005             MOVS     R0,#+5
+   \      0x186   0x7020             STRB     R0,[R4, #+0]
+   1021                break;
+   \      0x188   0xE022             B        ??FWBlkRead_10
+   1022              }
+   1023            case waitLenAckRdFw:
+   1024              {
+   1025                switch(waitForACK())
+   \                     ??FWBlkRead_6: (+1)
+   \      0x18A   0x....'....        BL       waitForACK
+   \      0x18E   0x281F             CMP      R0,#+31
+   \      0x190   0xD009             BEQ      ??FWBlkRead_19
+   \      0x192   0x2879             CMP      R0,#+121
+   \      0x194   0xD004             BEQ      ??FWBlkRead_20
+   \      0x196   0x2100             MOVS     R1,#+0
+   \      0x198   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x19A   0x4288             CMP      R0,R1
+   \      0x19C   0xD003             BEQ      ??FWBlkRead_19
+   \      0x19E   0xE004             B        ??FWBlkRead_21
+   1026                {
+   1027                case 0x79:    //ACK
+   1028                  { //ACK
+   1029                    
+   1030                    fwRdState = FwRdData;
+   \                     ??FWBlkRead_20: (+1)
+   \      0x1A0   0x2006             MOVS     R0,#+6
+   \      0x1A2   0x7020             STRB     R0,[R4, #+0]
+   1031                    break;
+   \      0x1A4   0xE001             B        ??FWBlkRead_22
+   1032                  }  
+   1033                case 0x1F:    //NACK        
+   1034                case -1:      //Timeout
+   1035                  { //NACK 
+   1036                    fwRdState = RdFail;         //fail will stay in fail state
+   \                     ??FWBlkRead_19: (+1)
+   \      0x1A6   0x2008             MOVS     R0,#+8
+   \      0x1A8   0x7020             STRB     R0,[R4, #+0]
+   1037                  }
+   1038                case 0:
+   1039                default:
+   1040                  break;
+   1041                }
+   1042                break;
+   \                     ??FWBlkRead_21: (+1)
+   \                     ??FWBlkRead_22: (+1)
+   \      0x1AA   0xE011             B        ??FWBlkRead_10
+   1043              }   
+   1044            case FwRdData:
+   1045              {
+   1046                switch(waitForDatRd(_FW_RdDatBuf, 64))
+   \                     ??FWBlkRead_5: (+1)
+   \      0x1AC   0x2140             MOVS     R1,#+64
+   \      0x1AE   0x0030             MOVS     R0,R6
+   \      0x1B0   0x....'....        BL       waitForDatRd
+   \      0x1B4   0x2801             CMP      R0,#+1
+   \      0x1B6   0xD004             BEQ      ??FWBlkRead_23
+   \      0x1B8   0x2100             MOVS     R1,#+0
+   \      0x1BA   0x43C9             MVNS     R1,R1            ;; #-1
+   \      0x1BC   0x4288             CMP      R0,R1
+   \      0x1BE   0xD003             BEQ      ??FWBlkRead_24
+   \      0x1C0   0xE004             B        ??FWBlkRead_25
+   1047                {
+   1048                case 1:
+   1049                  {
+   1050                    fwRdState = RdSuccess;
+   \                     ??FWBlkRead_23: (+1)
+   \      0x1C2   0x2007             MOVS     R0,#+7
+   \      0x1C4   0x7020             STRB     R0,[R4, #+0]
+   1051                    break;
+   \      0x1C6   0xE001             B        ??FWBlkRead_8
+   1052                  }
+   1053                case -1:
+   1054                  {
+   1055                    fwRdState = RdFail;         //fail will stay in fail state
+   \                     ??FWBlkRead_24: (+1)
+   \      0x1C8   0x2008             MOVS     R0,#+8
+   \      0x1CA   0x7020             STRB     R0,[R4, #+0]
+   1056                  }
+   1057                case 0:
+   1058                default:
+   1059                  break;   
+   1060                }
+   1061              }      
+   1062            case RdSuccess:                       
+   1063              {
+   1064                break;
+   \                     ??FWBlkRead_25: (+1)
+   \                     ??FWBlkRead_8: (+1)
+   \      0x1CC   0xE000             B        ??FWBlkRead_10
+   1065              }
+   1066            case RdFail:
+   1067              {
+   1068                break;
+   \                     ??FWBlkRead_7: (+1)
+   \      0x1CE   0xE7FF             B        ??FWBlkRead_10
+   1069              }
+   1070            default:
+   1071              break;
+   1072            }
+   1073            return((uint8_t)fwRdState);
+   \                     ??FWBlkRead_9: (+1)
+   \                     ??FWBlkRead_10: (+1)
+   \      0x1D0   0x7820             LDRB     R0,[R4, #+0]
+   \      0x1D2   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+   1074          }
+   1075          
+   1076          /*************************************************** Local Functions **************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+   1077          uint8_t XorBuf(uint8_t* _buf, uint16_t _len)
+   1078          {
+   \                     XorBuf: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0x0003             MOVS     R3,R0
+   1079            uint8_t Ans = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x0002             MOVS     R2,R0
+   1080            if(_len == 1) return(*_buf ^ 0xff);
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0xB2A4             UXTH     R4,R4
+   \        0xC   0x2C01             CMP      R4,#+1
+   \        0xE   0xD104             BNE      ??XorBuf_0
+   \       0x10   0x781B             LDRB     R3,[R3, #+0]
+   \       0x12   0x20FF             MOVS     R0,#+255
+   \       0x14   0x4058             EORS     R0,R0,R3
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0xE00E             B        ??XorBuf_1
+   1081            for( uint16_t Indx = 0; Indx < _len; Indx++) {
+   \                     ??XorBuf_0: (+1)
+   \                     ??XorBuf_2: (+1)
+   \       0x1A   0x0004             MOVS     R4,R0
+   \       0x1C   0x000D             MOVS     R5,R1
+   \       0x1E   0xB2A4             UXTH     R4,R4
+   \       0x20   0xB2AD             UXTH     R5,R5
+   \       0x22   0x42AC             CMP      R4,R5
+   \       0x24   0xD206             BCS      ??XorBuf_3
+   1082              Ans ^= _buf[Indx];
+   \       0x26   0x0014             MOVS     R4,R2
+   \       0x28   0x0002             MOVS     R2,R0
+   \       0x2A   0xB292             UXTH     R2,R2
+   \       0x2C   0x5C9A             LDRB     R2,[R3, R2]
+   \       0x2E   0x4062             EORS     R2,R2,R4
+   1083            }  
+   \       0x30   0x1C40             ADDS     R0,R0,#+1
+   \       0x32   0xE7F2             B        ??XorBuf_2
+   1084            return Ans;
+   \                     ??XorBuf_3: (+1)
+   \       0x34   0x0010             MOVS     R0,R2
+   \       0x36   0xB2C0             UXTB     R0,R0
+   \                     ??XorBuf_1: (+1)
+   \       0x38   0xBD30             POP      {R4,R5,PC}       ;; return
+   1085          }
+   1086          
+   1087          /** @caution this function need to run as background function and control 
+   1088          by TxIndx, so please set the data length before call this function 
+   1089          **/
+
+   \                                 In section .text, align 2, keep-with-next
+   1090          uint8_t FW_Tx(void)                 
+   1091          {
+   \                     FW_Tx: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   1092            if(TXFWDatIndx) 
+   \        0x2   0x....             LDR      R5,??DataTable10_3
+   \        0x4   0x8828             LDRH     R0,[R5, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD026             BEQ      ??FW_Tx_0
+   1093            {
+   1094              if (getSysCount() >= tt_FW_TxDelayTime) {
+   \        0xA   0x....'....        BL       getSysCount
+   \        0xE   0x....             LDR      R4,??DataTable10_4
+   \       0x10   0xCC0C             LDM      R4!,{R2,R3}
+   \       0x12   0x3C08             SUBS     R4,R4,#+8
+   \       0x14   0x4299             CMP      R1,R3
+   \       0x16   0xD323             BCC      ??FW_Tx_1
+   \       0x18   0xD801             BHI      ??FW_Tx_2
+   \       0x1A   0x4290             CMP      R0,R2
+   \       0x1C   0xD320             BCC      ??FW_Tx_1
+   1095                //Tx part   
+   1096                LL_USART_TransmitData8(USART2,  _txFWdata[TXFWDatLen - TXFWDatIndx-- ]);       //put buffer in
+   \                     ??FW_Tx_2: (+1)
+   \       0x1E   0x8828             LDRH     R0,[R5, #+0]
+   \       0x20   0x1E41             SUBS     R1,R0,#+1
+   \       0x22   0x8029             STRH     R1,[R5, #+0]
+   \       0x24   0x....             LDR      R5,??DataTable11_3  ;; 0x40004400
+   \       0x26   0x....             LDR      R1,??DataTable10_1
+   \       0x28   0x6809             LDR      R1,[R1, #+0]
+   \       0x2A   0x....             LDR      R2,??DataTable10_2
+   \       0x2C   0x8812             LDRH     R2,[R2, #+0]
+   \       0x2E   0xB280             UXTH     R0,R0
+   \       0x30   0x1A10             SUBS     R0,R2,R0
+   \       0x32   0x5C09             LDRB     R1,[R1, R0]
+   \       0x34   0x0028             MOVS     R0,R5
+   \       0x36   0x....'....        BL       LL_USART_TransmitData8
+   1097                // Enable TXE interrupt //
+   1098                LL_USART_EnableIT_TXE(USART2);
+   \       0x3A   0x0028             MOVS     R0,R5
+   \       0x3C   0x....'....        BL       LL_USART_EnableIT_TXE_TXFNF
+   1099                /* Disable TXE interrupt */
+   1100                LL_USART_DisableIT_TXE(USART2);
+   \       0x40   0x0028             MOVS     R0,R5
+   \       0x42   0x....'....        BL       LL_USART_DisableIT_TXE_TXFNF
+   1101                tt_FW_TxDelayTime = getSysCount() + DemandFWDelayPeriod;                          //store time tick value 
+   \       0x46   0x....'....        BL       getSysCount
+   \       0x4A   0x2200             MOVS     R2,#+0
+   \       0x4C   0x1C80             ADDS     R0,R0,#+2
+   \       0x4E   0x4151             ADCS     R1,R1,R2
+   \       0x50   0xC403             STM      R4!,{R0,R1}
+   \       0x52   0x3C08             SUBS     R4,R4,#+8
+   1102                return 1;
+   \       0x54   0x2001             MOVS     R0,#+1
+   \       0x56   0xE004             B        ??FW_Tx_3
+   1103              }
+   1104            }
+   1105            else    free(_txFWdata);
+   \                     ??FW_Tx_0: (+1)
+   \       0x58   0x....             LDR      R0,??DataTable10_1
+   \       0x5A   0x6800             LDR      R0,[R0, #+0]
+   \       0x5C   0x....'....        BL       free
+   1106            return 0;
+   \                     ??FW_Tx_1: (+1)
+   \       0x60   0x2000             MOVS     R0,#+0
+   \                     ??FW_Tx_3: (+1)
+   \       0x62   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+   1107          }
+   1108          
+
+   \                                 In section .text, align 2, keep-with-next
+   1109          int16_t waitForACK(void)
+   1110          {
+   \                     waitForACK: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+   1111            if (getSysCount() >= tt_FW_WaitTime)  
+   \        0x2   0x....'....        BL       getSysCount
+   \        0x6   0x....             LDR      R4,??DataTable11
+   \        0x8   0xCC0C             LDM      R4!,{R2,R3}
+   \        0xA   0x3C08             SUBS     R4,R4,#+8
+   \        0xC   0x4299             CMP      R1,R3
+   \        0xE   0xD32A             BCC      ??waitForACK_0
+   \       0x10   0xD801             BHI      ??waitForACK_1
+   \       0x12   0x4290             CMP      R0,R2
+   \       0x14   0xD327             BCC      ??waitForACK_0
+   1112            {
+   1113              if(RingBuf_GetUsedNumOfElements((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32) >= 1 )
+   \                     ??waitForACK_1: (+1)
+   \       0x16   0x....             LDR      R5,??DataTable11_4
+   \       0x18   0x6828             LDR      R0,[R5, #+0]
+   \       0x1A   0x6800             LDR      R0,[R0, #+0]
+   \       0x1C   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD00E             BEQ      ??waitForACK_2
+   1114              {
+   1115                uint32_t DataLen2 = 1;
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x9001             STR      R0,[SP, #+4]
+   1116                uint8_t FW_RxBuf = 0x00; 
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x4669             MOV      R1,SP
+   \       0x2C   0x7008             STRB     R0,[R1, #+0]
+   1117                RingBuf_ReadBlock((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32, &FW_RxBuf, &DataLen2); //extract data
+   \       0x2E   0xAA01             ADD      R2,SP,#+4
+   \       0x30   0x4669             MOV      R1,SP
+   \       0x32   0x6828             LDR      R0,[R5, #+0]
+   \       0x34   0x6800             LDR      R0,[R0, #+0]
+   \       0x36   0x....'....        BL       RingBuf_ReadBlock
+   1118                return(FW_RxBuf);
+   \       0x3A   0x4668             MOV      R0,SP
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0xB200             SXTH     R0,R0
+   \       0x40   0xE012             B        ??waitForACK_3
+   1119              }
+   1120              if(FW_TimeOutCounter-- <= 0) return -1;                             //TimeOut will stay in fail state   
+   \                     ??waitForACK_2: (+1)
+   \       0x42   0x....             LDR      R0,??DataTable11_1
+   \       0x44   0x2100             MOVS     R1,#+0
+   \       0x46   0x5E41             LDRSH    R1,[R0, R1]
+   \       0x48   0x1E4A             SUBS     R2,R1,#+1
+   \       0x4A   0x8002             STRH     R2,[R0, #+0]
+   \       0x4C   0xB209             SXTH     R1,R1
+   \       0x4E   0x2901             CMP      R1,#+1
+   \       0x50   0xDA02             BGE      ??waitForACK_4
+   \       0x52   0x2000             MOVS     R0,#+0
+   \       0x54   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x56   0xE007             B        ??waitForACK_3
+   1121              tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;             //store time tick value 
+   \                     ??waitForACK_4: (+1)
+   \       0x58   0x....'....        BL       getSysCount
+   \       0x5C   0x2200             MOVS     R2,#+0
+   \       0x5E   0x3064             ADDS     R0,R0,#+100
+   \       0x60   0x4151             ADCS     R1,R1,R2
+   \       0x62   0xC403             STM      R4!,{R0,R1}
+   \       0x64   0x3C08             SUBS     R4,R4,#+8
+   1122            }
+   1123            return 0;
+   \                     ??waitForACK_0: (+1)
+   \       0x66   0x2000             MOVS     R0,#+0
+   \                     ??waitForACK_3: (+1)
+   \       0x68   0xBD3E             POP      {R1-R5,PC}       ;; return
+   1124          }
+   1125          
+
+   \                                 In section .text, align 2, keep-with-next
+   1126          int8_t waitForDatRd(uint8_t* _FW_RxBuf, uint8_t Len)
+   1127          {
+   \                     waitForDatRd: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000E             MOVS     R6,R1
+   1128            if (getSysCount() >= tt_FW_WaitTime)  
+   \        0x6   0x....'....        BL       getSysCount
+   \        0xA   0x0002             MOVS     R2,R0
+   \        0xC   0x000B             MOVS     R3,R1
+   \        0xE   0x....             LDR      R4,??DataTable11
+   \       0x10   0xCC03             LDM      R4!,{R0,R1}
+   \       0x12   0x3C08             SUBS     R4,R4,#+8
+   \       0x14   0x428B             CMP      R3,R1
+   \       0x16   0xD328             BCC      ??waitForDatRd_0
+   \       0x18   0xD801             BHI      ??waitForDatRd_1
+   \       0x1A   0x4282             CMP      R2,R0
+   \       0x1C   0xD325             BCC      ??waitForDatRd_0
+   1129            {
+   1130              if(RingBuf_GetUsedNumOfElements((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32) >= Len )
+   \                     ??waitForDatRd_1: (+1)
+   \       0x1E   0x....             LDR      R5,??DataTable11_4
+   \       0x20   0x6828             LDR      R0,[R5, #+0]
+   \       0x22   0x6800             LDR      R0,[R0, #+0]
+   \       0x24   0x....'....        BL       RingBuf_GetUsedNumOfElements
+   \       0x28   0x0031             MOVS     R1,R6
+   \       0x2A   0xB2C9             UXTB     R1,R1
+   \       0x2C   0x4288             CMP      R0,R1
+   \       0x2E   0xD30A             BCC      ??waitForDatRd_2
+   1131              {
+   1132                uint32_t DataLen2 = Len;
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0xB2C0             UXTB     R0,R0
+   \       0x34   0x9000             STR      R0,[SP, #+0]
+   1133                RingBuf_ReadBlock((*usart2Control_MotorFW_Update).seqMemRX_transparentMode_u32, _FW_RxBuf, &DataLen2); //extract data
+   \       0x36   0x466A             MOV      R2,SP
+   \       0x38   0x0039             MOVS     R1,R7
+   \       0x3A   0x6828             LDR      R0,[R5, #+0]
+   \       0x3C   0x6800             LDR      R0,[R0, #+0]
+   \       0x3E   0x....'....        BL       RingBuf_ReadBlock
+   1134                return 1;
+   \       0x42   0x2001             MOVS     R0,#+1
+   \       0x44   0xE012             B        ??waitForDatRd_3
+   1135              }
+   1136              if(FW_TimeOutCounter-- <= 0) return -1;                             //TimeOut will stay in fail state   
+   \                     ??waitForDatRd_2: (+1)
+   \       0x46   0x....             LDR      R0,??DataTable11_1
+   \       0x48   0x2100             MOVS     R1,#+0
+   \       0x4A   0x5E41             LDRSH    R1,[R0, R1]
+   \       0x4C   0x1E4A             SUBS     R2,R1,#+1
+   \       0x4E   0x8002             STRH     R2,[R0, #+0]
+   \       0x50   0xB209             SXTH     R1,R1
+   \       0x52   0x2901             CMP      R1,#+1
+   \       0x54   0xDA02             BGE      ??waitForDatRd_4
+   \       0x56   0x2000             MOVS     R0,#+0
+   \       0x58   0x43C0             MVNS     R0,R0            ;; #-1
+   \       0x5A   0xE007             B        ??waitForDatRd_3
+   1137              tt_FW_WaitTime = getSysCount() + DemandFWWaitPeriod;             //store time tick value 
+   \                     ??waitForDatRd_4: (+1)
+   \       0x5C   0x....'....        BL       getSysCount
+   \       0x60   0x2200             MOVS     R2,#+0
+   \       0x62   0x3064             ADDS     R0,R0,#+100
+   \       0x64   0x4151             ADCS     R1,R1,R2
+   \       0x66   0xC403             STM      R4!,{R0,R1}
+   \       0x68   0x3C08             SUBS     R4,R4,#+8
+   1138            }
+   1139            return 0;
+   \                     ??waitForDatRd_0: (+1)
+   \       0x6A   0x2000             MOVS     R0,#+0
+   \                     ??waitForDatRd_3: (+1)
+   \       0x6C   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+   1140          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     TXFWDatIndx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     _txFWdata
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     motor_FW_Update_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     processInfoTable
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \        0x0   0x....'....        DC32     usart2Control_MotorFW_Update
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \        0x0   0x....'....        DC32     fwRdState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \        0x0   0x....'....        DC32     fwAutoBaudState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \        0x0   0x....'....        DC32     FWRddataBuf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \        0x0   0x....'....        DC32     fwWrState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \        0x0   0x....'....        DC32     FW_RdVerNProtectBuf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \        0x0   0x....'....        DC32     FWGetIDBuf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \        0x0   0x....'....        DC32     Motor_FW_UpdateStructMem_u32
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     fwGoState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     tt_FW_WaitTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     TXFWDatLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     tt_FW_TxDelayTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     FW_TimeOutCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     fwRdVerNProtectState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \        0x0   0x....'....        DC32     _txFWdata
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     TXFWDatIndx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     fwGoState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     _txFWdata
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     TXFWDatLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     tt_FW_TxDelayTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     tt_FW_WaitTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x....'....        DC32     FW_TimeOutCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     fwWrState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x....'....        DC32     _txFWdata
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x....'....        DC32     TXFWDatLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x....'....        DC32     TXFWDatIndx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x....'....        DC32     tt_FW_TxDelayTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x....'....        DC32     tt_FW_WaitTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x....'....        DC32     FW_TimeOutCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0x....'....        DC32     previousWrittenBlkNO
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0x....'....        DC32     motor_FW_Update_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x....'....        DC32     FW_DatBuf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x....'....        DC32     fwRdState
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x....'....        DC32     _txFWdata
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x....'....        DC32     TXFWDatLen
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x....'....        DC32     TXFWDatIndx
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x....'....        DC32     tt_FW_TxDelayTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0x....'....        DC32     tt_FW_WaitTime
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0x....'....        DC32     FW_TimeOutCounter
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0x....'....        DC32     motor_FW_Update_Control
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x4000'4400        DC32     0x40004400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x....'....        DC32     usart2Control_MotorFW_Update
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   AssignModuleMemMotorFWUpdate
+        16   -> StructMem_CreateInstance
+        16   -> getProcessInfoIndex
+        16 __aeabi_uwrite4
+      24   FWAutoBaudStateMachine
+        24   -> FW_Tx
+        24   -> RingBuf_ClearContents
+        24   -> getSysCount
+        24   -> malloc
+        24   -> waitForACK
+      24   FWBlkRead
+        24   -> FW_Tx
+        24   -> XorBuf
+        24   -> getSysCount
+        24   -> malloc
+        24   -> waitForACK
+        24   -> waitForDatRd
+      16   FWGetID
+        16   -> FW_Tx
+        16   -> getSysCount
+        16   -> malloc
+        16   -> waitForACK
+        16   -> waitForDatRd
+      24   FWGetVerNRdProtection
+        24   -> FW_Tx
+        24   -> getSysCount
+        24   -> malloc
+        24   -> waitForACK
+        24   -> waitForDatRd
+      16   FWGo
+        16   -> FW_Tx
+        16   -> XorBuf
+        16   -> getSysCount
+        16   -> malloc
+        16   -> waitForACK
+      16   FWWrStateMachine
+        16   -> FW_Tx
+        16   -> XorBuf
+        16   -> getSysCount
+        16   -> malloc
+        16   -> waitForACK
+      16   FW_Tx
+        16   -> LL_USART_DisableIT_TXE_TXFNF
+        16   -> LL_USART_EnableIT_TXE_TXFNF
+        16   -> LL_USART_TransmitData8
+        16   -> free
+        16   -> getSysCount
+       0   LL_USART_DisableIT_TXE_TXFNF
+       0   LL_USART_EnableIT_TXE_TXFNF
+       0   LL_USART_TransmitData8
+      12   XorBuf
+      32   module_Motor_FW_Update_u32
+        32   -> AssignModuleMemMotorFWUpdate
+        32   -> FWAutoBaudStateMachine
+        32   -> FWBlkRead
+        32   -> FWGetID
+        32   -> FWGetVerNRdProtection
+        32   -> FWWrStateMachine
+        32   -> FW_Tx
+        32   -> getProcessInfoIndex
+        32   -> malloc
+        32 __aeabi_uread4
+      24   waitForACK
+        24   -> RingBuf_GetUsedNumOfElements
+        24   -> RingBuf_ReadBlock
+        24   -> getSysCount
+      24   waitForDatRd
+        24   -> RingBuf_GetUsedNumOfElements
+        24   -> RingBuf_ReadBlock
+        24   -> getSysCount
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable8
+      60  AssignModuleMemMotorFWUpdate
+     198  FWAutoBaudStateMachine
+     468  FWBlkRead
+     180  FWGetID
+       4  FWGetIDBuf
+     176  FWGetVerNRdProtection
+     286  FWGo
+       4  FWRddataBuf
+     780  FWWrStateMachine
+     260  FW_DatBuf
+       4  FW_RdVerNProtectBuf
+       2  FW_TimeOutCounter
+     100  FW_Tx
+      10  LL_USART_DisableIT_TXE_TXFNF
+      10  LL_USART_EnableIT_TXE_TXFNF
+       8  LL_USART_TransmitData8
+       4  Motor_FW_UpdateStructMem_u32
+       2  TXFWDatIndx
+       2  TXFWDatLen
+      58  XorBuf
+       4  _txFWdata
+       1  fwAutoBaudState
+       1  fwGetIDState
+       1  fwGoState
+       1  fwRdState
+       1  fwRdVerNProtectState
+       1  fwWrState
+     336  module_Motor_FW_Update_u32
+      12  motor_FW_Update_Control
+       2  previousWrittenBlkNO
+       8  tt_FW_TxDelayTime
+       8  tt_FW_WaitTime
+       4  usart2Control_MotorFW_Update
+     106  waitForACK
+     110  waitForDatRd
+
+ 
+    64 bytes in section .bss
+   262 bytes in section .data
+ 3'070 bytes in section .text
+ 
+ 3'070 bytes of CODE memory
+   326 bytes of DATA memory
+
+Errors: none
+Warnings: none
